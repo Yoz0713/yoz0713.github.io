@@ -1,0 +1,201 @@
+$white_color: #fff;
+$gold_color: #dcb078;
+
+//-- banner 底色 --
+$banner_bg_color: #271C1B;
+//-- 內容 遮罩底色 --
+$content_bg_color: rgb(32 23 22 / 95%);
+//-- footer 底色 --
+$footer_color: #270F06;
+
+//-- 標題字體粗細：300, 400, 500 --
+$title_font_family: 'Noto Serif TC', serif;
+//-- 內文字體粗細：300, 400, 500 --
+$content_font_family: 'Noto Sans TC', sans-serif;
+//-- 英文字體粗細：400, 500 --
+$en_font_family:'Playfair Display', serif;
+
+//-- 大字字級(中文) --
+$big_font_size: 42px;
+
+//-- 大字字級(英文) --
+$en_big_font_size: 53px;
+
+//-- 內文字級 --
+$content_font_size: 15px;
+
+body{
+  margin: 0;
+  
+
+}
+
+//-- 標題 --
+h1,h2,h3,h4,h5{
+  font-family: $title_font_family; 
+  color: $gold_color;
+}
+
+//-- 內文 --
+p{
+  font-family: $content_font_family;
+  font-weight: 100;
+  font-size: $content_font_size;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: $white_color;
+}
+
+.en_family{
+  font-family: $en_font_family;
+}
+
+//-- menu  --
+.menu_box{
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 2vw 5vw;
+    justify-content: space-between;
+    z-index: 20;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.805) 0%,rgba(0, 0, 0, 0.629) 5% ,transparent 100%);
+    .logo_box{
+      img{
+        width: 165px;
+      }
+    }
+
+    .list_box{
+      display: flex;
+
+      a.ch_text{
+        color: $white_color;
+        writing-mode: tb;
+        font-size: 18px;
+        letter-spacing: 0.3vw;
+        text-decoration: none;
+        padding: 0 0.9vw;
+        font-family: $title_font_family;
+        font-weight: 300;
+  
+       .en_text{
+        font-family: monospace;
+        color: $white_color;
+        writing-mode: tb;
+        font-size: 12px;
+        letter-spacing: 0.1vw;
+        font-weight: 200;
+        display: block;
+       }
+     }
+    }
+   
+   
+}
+
+//-- banner 文字 --
+.banner_box{
+  .ch_title_font{
+    font-size: 42px;
+    color: $white_color;
+    font-weight: 500;
+    letter-spacing: 12px;
+  }
+
+  .en_title_font{
+    color: $white_color;
+    font-family: $en_font_family;
+    font-weight: 500;
+    font-size: 52px;
+    letter-spacing: 7px;
+  }
+
+  .p_font{
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 2.1;
+  }
+}
+
+
+//-- top_title --
+.title_top{
+  .en_txt{
+    font-family: $en_font_family;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.2;
+    color: $gold_color;
+  }
+  .ch_txt{
+    font-weight: 500;
+    font-size: 18px;
+    color: $gold_color;
+  }
+}
+
+//-- 最新消息 & 鉅璽札記 --
+.news_blog{
+
+  //-- 小主標 --
+  .title_font{
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 4px;
+    color: $gold_color;
+  }
+
+  //-- 內文 --
+  .p_font{
+    font-size: 15px;
+    letter-spacing: 4px;
+    line-height: 2;
+  }
+
+  //-- 小字 --
+  .small_p_font{
+    font-size: 14px;
+    color: $gold_color;
+  }
+
+  //-- 列表選單字 --
+  .menu_font{
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: $gold_color;
+  }
+
+  //-- 內容主標 --
+  .dt_title_font{
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: $gold_color;
+  }
+  
+}
+
+//-- read More --
+.readmore_word{
+  font-family: $en_font_family;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+
+footer{
+  text-align: center;
+  padding: 30px 0;
+  background-color: $footer_color;
+  color: $gold_color;
+
+  span{
+    font-family: $content_font_family;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+}

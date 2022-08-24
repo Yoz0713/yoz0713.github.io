@@ -1,0 +1,290 @@
+.blog{
+    .first-page{
+        display: flex;
+        flex-direction: column;
+       
+        width: 100%;
+        height: 100vh;
+        img{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            &-2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 16%;
+                background-color: $banner_bg_color;
+                padding: 1vw;
+                h3{
+                    font-size: 20px;
+                    letter-spacing: 0.3vw;
+                    font-weight: 450;
+                }
+                h2{
+                    font-weight: 450;
+                    font-size: $big_font_size;
+                    font-family: $en_font_family;
+                    letter-spacing: 0.1vw;
+                }
+                svg{
+                    rect{
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        &-title{
+            position: relative;
+            width: 30vw;
+            z-index: 11;
+            margin: 0vw 6vw 3vw;
+            h2{
+                font-size: $en_big_font_size;
+                color: #fff;
+                font-weight: 550;
+                font-family: $en_font_family;
+                letter-spacing: 4px;
+          }
+          p{
+            line-height: 40px;
+            letter-spacing: 0.2vw;
+          }
+          svg{
+               
+            position: absolute;
+            left: -4.5vw;
+            top: -4.5vw;
+            .g1{
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: rotate 10s linear 4.5s infinite;
+                .square1{
+                    stroke-dashoffset: 2000;
+                    stroke-dasharray: 2000;
+                    animation: drawSquare 8s linear forwards;
+                    transform-box: fill-box;
+                    transform-origin: center;
+                    transform: rotate(43deg);
+                    }
+            }
+            .g2{
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: rotate 20s linear 6s infinite;
+                .square2{
+                    stroke-dashoffset: 2000;
+                    stroke-dasharray: 2000;
+                    animation: drawSquare 8s linear 2s forwards;
+                    transform-box: fill-box;
+                    transform-origin: center;
+                    transform: rotate(56deg);
+                    }
+            }
+   
+        }
+        }
+        &-shadow{
+            position: absolute;
+            width: 100%;
+            height: 20vw;
+            background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+            bottom: 0;
+            z-index: 10;
+        }
+    }
+    .second-page{
+        width: 100%;
+        height: 100vh;
+        padding:5vw 14vw;
+        &-top{
+            width: 100%;
+            height: 10%;
+            margin: 3vw 0 6vw;
+            nav{
+                width: 100%;
+                height: 100%;
+                border-top: 1px solid $gold_color;
+                border-bottom: 1px solid $gold_color;
+                padding: 0.1vw 0;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: 1px solid #dcb1785b;
+                    border-bottom: 1px solid #dcb1785b;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1.3vw 0;
+                    li{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .menu_font{
+                            position: relative;
+                            font-size: 16px;
+                            letter-spacing: 4px;
+                            color: $gold_color;
+                            cursor: pointer;
+                            z-index: 10;
+                            &::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 0;
+                                height: 1px;
+                                background-color: $gold_color;
+                                left: 0;
+                                right: 0;
+                                margin: 0 auto;
+                                bottom: 0;
+                                transition: 0.5s;
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
+                          }
+                        img{
+                          
+                            margin: 1vw;
+                            transform: scale(0.4);
+                            width:3%;
+                            height: fit-content;
+                        }
+                    }
+                }
+            }
+        }
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 90%;
+            position: relative;
+            img{
+                cursor: pointer;
+                border-radius: 40px 0 40px 0;
+                width: 50%;
+                height: fit-content;
+                object-fit: contain;
+                z-index: 10;
+            }
+            &-right{
+                position: absolute;
+  
+                left: 37%;
+                top: -2.5vw;
+                
+                &-para{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    left: 18vw;
+                    top: 6vw;
+                    > h3{
+                        letter-spacing: 4px;
+                       font-weight: 450;
+                       margin-bottom: -0.5vw;
+                    }
+                    > svg{
+                        margin-bottom: 0.5vw;
+                    }
+                    > p{
+                        letter-spacing: 4px;
+                    }
+                    .readmore{
+                        display: flex;
+                        margin-top: 6vw;
+                        cursor: pointer;
+                        p,h3{
+                            color: $gold_color;
+                            line-height: 75px;
+                        }
+                        svg{
+                            transform: scale(0.8);
+                            margin: 0 0.5vw ;
+                        }
+                        &:hover .arrow{
+                            animation: arrow 2.5s ease-in-out infinite;
+                        }
+                    }
+                }
+              
+            }
+        }
+    }
+    .third-page{
+        width: 100%;
+        height: 150vh;
+        padding:3vw 14vw 0vw;
+        &-box{
+            display: flex;
+           
+            width: 100%;
+            height: 30%;
+            padding: 4vw 0 4vw;
+            border-bottom: 1px solid $gold_color;
+            &-left{
+                margin-right: 5vw;
+                width: 31%;
+                height: 100%;
+                img{
+                    cursor: pointer;
+                    border-radius: 40px 0 40px 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &-right{
+                width: 70%;
+                > h3{
+                    font-weight: 450;
+                    margin-bottom: 2vw;
+                    letter-spacing: 4px;
+                }
+                > p{
+                    letter-spacing: 4px;
+                }
+                .readmore{
+                    display: flex;
+                   
+                    justify-content: flex-end;
+                    margin-top: 6vw;
+                    cursor: pointer;
+                   
+                    p,h3{
+                        color: $gold_color;
+                        line-height: 75px;
+                    }
+                    svg{
+                        transform: scale(0.8);
+                        margin: 0 0.5vw ;
+                    }
+                   
+                }
+            }
+            &:hover .arrow{
+                animation: arrow 2.5s ease-in-out infinite;
+            }
+           
+        }
+        
+    }
+
+
+
+}
