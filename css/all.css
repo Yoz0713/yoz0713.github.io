@@ -649,12 +649,22 @@ footer span {
 }
 .portfolioInner .fifth-page-left {
   width: 45%;
+  position: relative;
   height: 100%;
 }
 .portfolioInner .fifth-page-left-box {
-  width: 100%;
-  height: 100%;
-  padding: 25% 2.5vw 25% 7.5vw;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 .portfolioInner .fifth-page-left-box h3 {
   line-height: 35px;
@@ -697,18 +707,26 @@ footer span {
   display: flex;
   width: 100%;
   height: 80vh;
-  padding: 4vw 10vw 0;
+  padding: 4vw 10vw 6vw;
 }
 .portfolioInner .sixth-page-right {
+  position: relative;
   width: 45%;
   height: 100%;
-  border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
-  padding-bottom: 6vw;
 }
 .portfolioInner .sixth-page-right-box {
-  width: 100%;
-  height: 100%;
-  padding: 25% 6vw 25% 5vw;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
 .portfolioInner .sixth-page-right-box h3 {
   line-height: 35px;
@@ -722,10 +740,19 @@ footer span {
   letter-spacing: 0.2vw;
 }
 .portfolioInner .sixth-page-left {
+  position: relative;
   width: 55%;
   height: 100%;
-  border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
-  padding-bottom: 6vw;
+}
+.portfolioInner .sixth-page-left::after {
+  content: "";
+  display: block;
+  width: 181%;
+  height: 1px;
+  background-color: rgba(220, 177, 120, 0.4705882353);
+  position: absolute;
+  bottom: -6.5vw;
+  left: 0;
 }
 .portfolioInner .sixth-page-left-box {
   width: 100%;
@@ -794,7 +821,6 @@ footer span {
 .portfolioInner .seventh-page-right form .form-box-word p {
   color: #dcb078;
   font-size: 20px;
-  margin-right: 1vw;
 }
 .portfolioInner .seventh-page-right form .form-box input {
   width: 80%;
