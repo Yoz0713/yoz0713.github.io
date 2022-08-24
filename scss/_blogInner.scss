@@ -118,8 +118,6 @@
             justify-content: center;
             margin-bottom: 2vw;
             h3{
-                letter-spacing: 4px;
-                font-size: 32px;
                 margin-bottom: 1vw;
             }
         }
@@ -145,14 +143,9 @@
             padding-left: 6vw;
             height: fit-content;
             h3{
-                font-size: 20px;
-                letter-spacing: 4px;
                 margin-bottom: 2vw;
-                font-weight: 450;
             }
-            p{
-                line-height: 35px;
-            }
+           
         }
         &-right{
             width: 55%;
@@ -178,13 +171,7 @@
             padding-left: 4.5vw;
             height: fit-content;
             h3{
-                font-size: 20px;
-                letter-spacing: 4px;
                 margin-bottom: 2vw;
-                font-weight: 450;
-            }
-            p{
-                line-height: 35px;
             }
         }
         &-left{
@@ -204,11 +191,11 @@
             width: 100%;
             padding-bottom: 5vw;
             height: fit-content;
-            border-bottom: 1px solid $gold_color;
+            border-bottom: 1px solid $gold_color_opacity;
             button{
                 width: 8.5vw;
                 background-color: transparent;
-                border: 1px solid $gold_color;
+                border: 1px solid $gold_color_opacity;
                 color: $gold_color;
                 padding: 0.7vw 0;
                 font-size: 16px;
@@ -255,11 +242,8 @@
                 
                 height: 30%;
                 > h3{
-                    font-size: 20px;
-                    font-weight: 450;
-                }
-                > p{
-                    line-height: 35px;
+                    width: 110%;
+                    text-align: center;
                 }
                 svg{
                     margin: -0.5vw 0 1.5vw;
@@ -296,7 +280,7 @@
                 display: block;
                 width: 1px;
                 height: 100%;
-                background-color: $gold_color;
+                background-color: $gold_color_opacity;
                 position: absolute;
                 right: -4vw;
             }
@@ -305,7 +289,7 @@
                 display: block;
                 width: 1px;
                 height: 100%;
-                background-color: $gold_color;
+                background-color: $gold_color_opacity;
                 position: absolute;
                 right: -4vw;
             }

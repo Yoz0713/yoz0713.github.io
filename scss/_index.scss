@@ -4,7 +4,15 @@
         width: 100%;
         height: 100vh;
         position: relative;
-
+        &-shadow{
+            position: fixed;
+            width: 100%;
+            height: 20vw;
+            background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+            bottom: 0;
+            left: 0;
+            z-index: 15;
+        }
         .swiper{
             width: 100%;
             height: 100%;
@@ -115,7 +123,7 @@
             position: absolute;
             width: 100%;
             height: 20vw;
-            background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+      
             bottom: 0;
             z-index: 10;
             button{
@@ -325,11 +333,7 @@
                         position: relative;
                         margin-bottom: 2vw;
                     }
-                    > h3{
-                        font-size: 20px;
-                        color: $gold_color;
-                        font-weight: 450;
-                    }
+                
                     .readmore{
                         cursor: pointer;
                         display: flex;
@@ -419,7 +423,6 @@
                             height: 100%;
                             object-fit: cover;
                             cursor: pointer;
-                        
                         }
                     }
                     .newsDate{
@@ -436,11 +439,7 @@
                         flex-direction: column;
                         align-items: flex-start;
                         h2{
-                            color: $gold_color;
-                            font-size: 22px;
-                            font-weight: 450;
                             margin-bottom: 0.5vw;
-                            letter-spacing: 0.1vw;
                         }
                     }
                     &:not(:last-child){

@@ -187,6 +187,20 @@ function seondPageRight(){
         opacity:1,
         duration:1.2
     },"<")
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:`.home-second-page-top`,
+            start:"top bottom",
+            toggleActions:"play none none reverse"
+        }
+    })
+    gg2.fromTo(".home-first-page-shadow",{
+      
+    },{
+        duration:0.3,
+        opacity:0,
+        height:0
+    },"<")
 }
 seondPageRight()
 

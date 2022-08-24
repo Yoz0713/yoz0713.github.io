@@ -10,7 +10,7 @@ function bannerGray(){
         filter:"brightness(1)",
     },{
         duration:0.8,
-        filter:"brightness(0.15)",
+        filter:"brightness(0.3)",
     }).to(".blog .first-page-title",{
         opacity:0,
         duration:0.8
@@ -18,8 +18,12 @@ function bannerGray(){
       
     },{
         duration:0.8,
-        opacity:0
-    },"<")
+        opacity:0,
+        height:1
+    },"<").to(".blogInner",{
+        duration:0.8,
+        backgroundColor:"#170a05aa"
+     },"<")
 }
 bannerGray()
 function bannerTitleIn(){

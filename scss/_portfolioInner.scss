@@ -30,7 +30,7 @@
           }
         }
         &-shadow{
-            position: absolute;
+            position: fixed;
             width: 100%;
             height: 20vw;
             background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
@@ -62,7 +62,7 @@
                 font-weight: 450;
                 font-size: 20px;
                 margin-bottom: 0.8vw;
-                border-bottom: 1px solid $gold_color;
+                border-bottom: 1px solid $gold_color_opacity;
                 padding: 0 0 0.8vw;
                 letter-spacing: 2px;
             }
@@ -73,7 +73,7 @@
                 font-weight: 450;
                 font-size: 20px;
                 margin:1vw 0 1vw;
-                border-bottom: 1px solid $gold_color;
+                border-bottom: 1px solid $gold_color_opacity;
                 padding: 0 0 0.8vw;
                 letter-spacing: 2px;
             }
@@ -87,7 +87,7 @@
                 font-weight: 450;
                 font-size: 20px;
                 margin:1vw 0 1vw;
-                border-bottom: 1px solid $gold_color;
+                border-bottom: 1px solid $gold_color_opacity;
                 padding: 0 0 0.8vw;
                 letter-spacing: 2px;
             }
@@ -101,7 +101,7 @@
                     cursor: pointer;
                     align-items: center;
                     width: 45%;
-                    border: 1px solid $gold_color;
+                    border: 1px solid $gold_color_opacity;
                     img{
                         width:1vw;
                         height: 1vw;
@@ -119,7 +119,7 @@
                     cursor: pointer;
                     align-items: center;
                     width: 45%;
-                    border: 1px solid $gold_color;
+                    border: 1px solid $gold_color_opacity;
                     padding: 0.2vw 0;
                     img{
                         width:1vw;
@@ -216,7 +216,7 @@
         &-right{
             width: 45%;
             height: 100%;
-            border-bottom: 2px solid $gold_color;
+            border-bottom: 1px solid $gold_color_opacity;
             padding-bottom: 6vw;
             &-box{
                 width: 100%;
@@ -238,7 +238,7 @@
         &-left{
             width: 55%;
             height: 100%;
-            border-bottom: 2px solid $gold_color;
+            border-bottom: 1px solid $gold_color_opacity;
             padding-bottom: 6vw;
             &-box{
                 width: 100%;
@@ -285,6 +285,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
+                z-index: 15;
                 h3{
                    font-size: 32px;
                     font-family: $en_font_family;
@@ -297,17 +298,19 @@
                     width: 100%;
                    margin-bottom: 2.4vw;
                     position: relative;
-                    
-                    p{
-                        color: $gold_color;
-                        font-size: 20px;
-                        margin-right: 1vw;
+                    &-word{
+                        width: 20%;
+                        p{
+                            color: $gold_color;
+                            font-size: 20px;
+                            margin-right: 1vw;
+                        }
                     }
                     input{
-                        width: 25.55vw;
+                        width: 80%;
                         background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid $gold_color;
+                        border-bottom: 1px solid $gold_color_opacity;
                         font-size: 26px;
                         color: $gold_color;
                         padding: 0vw 0vw 1.5vw;
@@ -316,12 +319,13 @@
                         }
                     }
                     textarea{
-                        width: 25.55vw;
+                        width: 80%;
                         background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid $gold_color;
+                        border-bottom: 1px solid $gold_color_opacity;
                         font-size: 26px;
                         color: $gold_color;
+                        z-index: 15;
                         padding: 0vw 0vw 1.5vw;
                         &:focus{
                             outline: none;
@@ -336,7 +340,7 @@
                         padding: 10px 0;
                         font-size: 15px;
                         width: 30%;
-                        border: 1px solid $gold_color;
+                        border: 1px solid $gold_color_opacity;
                         &:hover{
                             color: #fff;
                             background-color: #dcb178;

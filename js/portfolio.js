@@ -46,7 +46,7 @@ function bannerGray(){
         filter:"brightness(1)",
     },{
         duration:0.8,
-        filter:"brightness(0.15)",
+        filter:"brightness(0.3)",
     }).to(".portfolioInner .first-page-title p",{
         opacity:0,
         duration:0.01
@@ -54,8 +54,14 @@ function bannerGray(){
       
     },{
         duration:0.8,
-        opacity:0
-    },"<")
+        opacity:0,
+        height:1
+    },"<").to(".portfolio",{
+        duration:0.8,
+        backgroundColor:"#170a05aa"
+     },"<")
 }
 bannerGray()
+
+
 
