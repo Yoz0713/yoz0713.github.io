@@ -541,6 +541,7 @@ footer span {
   padding: 8vw 16vw;
 }
 .portfolioInner .second-page-left {
+  height: 28vw;
   width: 68%;
 }
 .portfolioInner .second-page-left-box {
@@ -548,19 +549,24 @@ footer span {
   height: 100%;
 }
 .portfolioInner .second-page-left-box img {
-  width: 98%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .portfolioInner .second-page-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 23%;
+  height: 28vw;
 }
 .portfolioInner .second-page-right > :nth-child(1) {
   font-weight: 450;
   font-size: 20px;
   margin-bottom: 0.8vw;
   border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
-  padding: 0 0 0.8vw;
+  padding: 0 0 1vw;
   letter-spacing: 2px;
 }
 .portfolioInner .second-page-right > :nth-child(2) {
@@ -573,9 +579,6 @@ footer span {
   border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
   padding: 0 0 0.8vw;
   letter-spacing: 2px;
-}
-.portfolioInner .second-page-right > :nth-child(4) {
-  margin-bottom: 0.8vw;
 }
 .portfolioInner .second-page-right > :nth-child(5) {
   margin-bottom: 0.8vw;
