@@ -53,13 +53,7 @@
             width: 30vw;
             z-index: 11;
             margin: 0vw 6vw 3vw;
-            h2{
-                font-size: $en_big_font_size;
-                color: #fff;
-                font-weight: 550;
-                font-family: $en_font_family;
-                letter-spacing: 4px;
-          }
+
           p{
             line-height: 40px;
             letter-spacing: 0.2vw;
@@ -85,7 +79,7 @@
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 20s linear 6s infinite;
+                animation: rotate 10s linear 4.5s infinite;
                 .square2{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -194,9 +188,10 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+          
                     position: absolute;
-                    left: 18vw;
-                    top: 6vw;
+                    left: 10vw;
+                    top: 5vw;
                     > h3{
                    
                        margin-bottom: -0.5vw;
@@ -206,11 +201,14 @@
                     }
                     a{
                         height: fit-content;
-                        margin-top: 6vw;
+                        margin-top: 5vw;
+                    }
+                    > p{
+                        width: 47%;
                     }
                     .readmore{
                         display: flex;
-               
+              
                         cursor: pointer;
                         p,h3{
                             color: $gold_color;

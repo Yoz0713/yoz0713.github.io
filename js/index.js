@@ -197,13 +197,110 @@ function seondPageRight(){
     gg2.fromTo(".home-first-page-shadow",{
       
     },{
-        duration:0.3,
+ 
+        duration:0.8,
         opacity:0,
         height:0
+    },"<").fromTo(".home-first-page img",{
+        filter:"brightness(1)",
+    },{
+        filter:"brightness(0.3)",
+        duration:0.8,
+  
     },"<")
 }
 seondPageRight()
 
+// third-page
+function thirdPageAnimation(){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".home-third-page",
+            start:"top center",
+            toggleActions:"play none none reverse",
+       
+        }
+    })
+
+    gg.fromTo(".path1",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 300,
+        duration:6,
+    }).fromTo(".path2",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 300,
+        duration:6,
+    },"<+0.3").fromTo(".path3",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 300,
+        duration:6,
+    },"<+0.3")
+}
+thirdPageAnimation()
+// third-page
 
 
-// second-page-right in
+// waveline
+
+// const path = document.querySelectorAll(".home-third-page-bottom li svg path")
+// const wavePart = document.querySelectorAll(".home-third-page-bottom li")
+// let timer;
+
+// wavePart.forEach((i,index)=>{
+//     i.addEventListener("mouseenter",()=>{
+//         waveLine(index)
+//         console.log(index)
+//     })
+//     i.addEventListener("mouseleave",()=>{
+//         clearInterval(timer);
+//         path.forEach((i)=>{
+//             i.setAttribute("d",`M0 10 L1200 0`)
+//          })
+//     })
+// })
+// function waveLine(index){
+// let string = `M0 10 Q40 15 80 10 120 5 160 10 200 15 240 10 280 5 320 10 360 15 400 10 440 5 480 10 520 15 560 10 600 5 640 10 680 15 720 10 760 5 800 10 840 15 880 10 920 5 960 10 1000 15 1040 10 1080 5 1120 10 1160 15 1200 10`
+// let stArr = string.split(" ")
+// let stArr2 = string.split(" ")
+
+//    timer = setInterval(()=>{
+//         let stringAfter = [];
+//         stArr2.forEach((item)=>{
+//             let random = parseInt(Math.random()*20)
+//             item = parseInt(item)
+//             item = item+random
+//             stringAfter.push(item)
+//         })
+//         stringAfter[0] = `M0`
+//         stringAfter[2] = `Q40`
+
+
+//         for(let i = 0 ; i < stringAfter.length ; i++){
+//             stArr[i] = parseInt(stArr[i])
+        
+//             if(stArr[i] <= stringAfter[i]){
+               
+            
+//                 stArr[i]++
+
+//             }else if (stArr[i] > stringAfter[i]){
+      
+//                 stArr[i]--
+//             }
+//             stArr[0] = `M0`
+         
+//             stArr[2] = `Q40`
+//             stArr[61] = `10`
+
+//             path[index].setAttribute("d",`${stArr}`)
+//         }    
+//     },150)
+// }
+
+// waveline

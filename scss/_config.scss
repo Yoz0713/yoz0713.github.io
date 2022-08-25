@@ -2,7 +2,7 @@ $white_color: #fff;
 $gold_color: #dcb078;
 $gold_color_opacity:#dcb17878;
 //-- banner 底色 --
-$banner_bg_color: #271C1B;
+$banner_bg_color: #271c1be0;
 //-- 內容 遮罩底色 --
 $content_bg_color: rgb(32 23 22 / 95%);
 //-- footer 底色 --
@@ -10,8 +10,8 @@ $footer_color: #270F06;
 
 //-- 標題字體粗細：300, 400, 500 --
 $title_font_family: 'Noto Serif TC', serif;
-//-- 內文字體粗細：300, 400, 500 --
-$content_font_family: 'Noto Sans TC', sans-serif;
+//-- 內文字體粗細：400, 500 --
+$content_font_family: 'Microsoft JhengHei';
 //-- 英文字體粗細：400, 500 --
 $en_font_family:'Playfair Display', serif;
 
@@ -39,8 +39,8 @@ h1,h2,h3,h4,h5{
 //-- 內文 --
 p{
   font-family: $content_font_family;
-  font-weight: 100;
   font-size: $content_font_size;
+  font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.8;
   color: $white_color;
@@ -193,7 +193,6 @@ footer{
 
   span{
     font-family: $content_font_family;
-    font-weight: 300;
     letter-spacing: 2px;
     padding: 0 10px;
     font-size: 15px;
