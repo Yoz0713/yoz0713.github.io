@@ -222,24 +222,45 @@ function thirdPageAnimation(){
         }
     })
 
-    gg.fromTo(".path1",{
+    gg.fromTo(".home-third-page .li1",{
+        y:30,
+        opacity:0
+    },{
+        duration:0.8,
+        opacity:1,
+        y:0
+    }).fromTo(".home-third-page .li2",{
+        y:30,
+        opacity:0
+    },{
+        duration:0.8,
+        opacity:1,
+        y:0
+    }).fromTo(".home-third-page .li3",{
+        y:30,
+        opacity:0
+    },{
+        duration:0.8,
+        opacity:1,
+        y:0
+    }).fromTo(".path1",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
-        strokeDashoffset: 300,
-        duration:6,
+        strokeDashoffset: 800,
+        duration:2,
     }).fromTo(".path2",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
-        strokeDashoffset: 300,
-        duration:6,
+        strokeDashoffset: 800,
+        duration:2,
     },"<+0.3").fromTo(".path3",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
-        strokeDashoffset: 300,
-        duration:6,
+        strokeDashoffset: 800,
+        duration:2,
     },"<+0.3")
 }
 thirdPageAnimation()

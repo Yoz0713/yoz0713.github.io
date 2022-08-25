@@ -156,7 +156,7 @@ footer span {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: rgba(32, 23, 22, 0.95);
+  background-color: rgba(39, 28, 27, 0.8784313725);
   color: #dcb078;
   padding: 1vw;
 }
@@ -226,6 +226,7 @@ footer span {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   transition: 1.5s;
+  cursor: pointer;
 }
 .portfolio .second-page-top-left-box .second-page-top-left-box2 {
   opacity: 0;
@@ -349,6 +350,7 @@ footer span {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   transition: 1.5s;
+  cursor: pointer;
 }
 .portfolio .second-page-bottom-left-box .second-page-bottom-left-box2 {
   opacity: 0;
@@ -539,7 +541,6 @@ footer span {
   padding: 8vw 16vw;
 }
 .portfolioInner .second-page-left {
-  padding: 2vw 0;
   width: 68%;
 }
 .portfolioInner .second-page-left-box {
@@ -1260,7 +1261,7 @@ footer span {
 .home-third-page-bottom ul li svg {
   position: absolute;
   left: 0;
-  bottom: -2.8vw;
+  bottom: -2.75vw;
   width: 100%;
   height: 30%;
 }
