@@ -91,7 +91,7 @@
             position: absolute;
             right: 1vw;
             bottom: 2.5vw;
-            z-index: 13;
+            z-index: 20;
           
             a{
          
@@ -216,9 +216,17 @@
                         position: relative;
                         width: fit-content;
                         p{
-                            color: #dcb1787f;
+                            font-weight: 500;
+                            font-size: 16px;
+                            letter-spacing: 4px;
+                            color: $gold_color_opacity;
                             span{
+                                font-family: monospace;
+
                                 font-size: 25px;
+                                letter-spacing: 0.1vw;
+                                font-weight: 200;
+    
                             }
                         }
                         &::after{
@@ -326,7 +334,7 @@
                     margin-top: 5vw;
                     svg{
                         position: relative;
-                        margin-bottom: 2vw;
+                        margin-bottom: 1.5vw;
                     }
                     p{
                         width: 33%;
@@ -429,7 +437,10 @@
                         font-size: 18px;
                         font-weight: 450;
                         color: $gold_color;
-
+                        span{
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
                     }
                     .para{
                         display: flex;

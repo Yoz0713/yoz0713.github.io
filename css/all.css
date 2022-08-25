@@ -967,7 +967,7 @@ footer span {
   position: absolute;
   right: 1vw;
   bottom: 2.5vw;
-  z-index: 13;
+  z-index: 20;
 }
 .home-first-page-icon a {
   text-align: center;
@@ -1086,10 +1086,16 @@ footer span {
   width: fit-content;
 }
 .home-second-page-bottom-left ul li p {
-  color: rgba(220, 177, 120, 0.4980392157);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: rgba(220, 177, 120, 0.4705882353);
 }
 .home-second-page-bottom-left ul li p span {
+  font-family: monospace;
   font-size: 25px;
+  letter-spacing: 0.1vw;
+  font-weight: 200;
 }
 .home-second-page-bottom-left ul li::after {
   display: none;
@@ -1188,7 +1194,7 @@ footer span {
 }
 .home-second-page-bottom-right-para svg {
   position: relative;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5vw;
 }
 .home-second-page-bottom-right-para p {
   width: 33%;
@@ -1285,6 +1291,10 @@ footer span {
   font-size: 18px;
   font-weight: 450;
   color: #dcb078;
+}
+.home-third-page-bottom ul li .newsDate span {
+  font-size: 14px;
+  font-weight: 600;
 }
 .home-third-page-bottom ul li .para {
   display: flex;
