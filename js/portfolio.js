@@ -67,7 +67,7 @@ function gcLogo (){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-top",
-            toggleActions:"play none none reverse",
+      
             start:"top center",
         
         }
@@ -99,7 +99,7 @@ function gcLogo (){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-bottom",
-            toggleActions:"play none none reverse",
+
             start:"top center",
         
         }

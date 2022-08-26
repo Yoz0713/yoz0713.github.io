@@ -56,7 +56,7 @@ p{
     position: fixed;
     display: flex;
     width: 100%;
-    padding: 2vw 5vw;
+    padding: 2vw 5vw 0vw 5vw;
     justify-content: space-between;
     z-index: 20;
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.805) 0%,rgba(0, 0, 0, 0.629) 5% ,transparent 100%);
@@ -97,6 +97,7 @@ p{
 //-- banner 文字 --
 .banner_box{
   .ch_title_font{
+    font-family: $title_font_family;
     font-size: 42px;
     color: $white_color;
     font-weight: 500;
@@ -126,11 +127,14 @@ p{
     font-weight: 500;
     font-size: 45px;
     line-height: 1.2;
+    letter-spacing: 5px;
     color: $gold_color;
   }
   .ch_txt{
+    font-family: $title_font_family;
     font-weight: 500;
     font-size: 18px;
+    letter-spacing: 8px;
     color: $gold_color;
   }
 }
@@ -140,6 +144,7 @@ p{
 
   //-- 小主標 --
   .title_font{
+    font-family: $title_font_family;
     font-weight: 500;
     font-size: 21px;
     letter-spacing: 4px;
@@ -161,13 +166,17 @@ p{
 
   //-- 列表選單字 --
   .menu_font{
+    font-family: $title_font_family;
     font-size: 16px;
     letter-spacing: 4px;
     color: $gold_color;
+  
+    
   }
 
   //-- 內容主標 --
   .dt_title_font{
+    font-family: $title_font_family;
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 5px;

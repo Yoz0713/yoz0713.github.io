@@ -26,18 +26,9 @@
                 margin-top: 16%;
                 background-color: $banner_bg_color;
                 padding: 1vw;
-                h3{
-                    font-size: 20px;
-                    letter-spacing: 0.3vw;
-                    font-weight: 450;
-                }
-                h2{
-                    font-weight: 450;
-                    font-size: $big_font_size;
-                    font-family: $en_font_family;
-                    letter-spacing: 0.1vw;
-                }
+      
                 svg{
+                    transform: translateX(-6px);
                     rect{
                         transform-box: fill-box;
                         transform-origin: center;
@@ -83,7 +74,7 @@
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 20s linear 6s infinite;
+                animation: rotate 10s linear 4.5s infinite;
                 .square2{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -119,6 +110,9 @@
             margin-bottom: 2vw;
             h3{
                 margin-bottom: 1vw;
+            }
+            svg{
+                margin-right: 8px;
             }
         }
         &-img{
@@ -234,15 +228,16 @@
     .fifth-page{
         display: flex;
         justify-content: space-between;
-    
-        width: 100%;
+        
+        width: 100vw;
         height: 100vh;
         padding: 0.5vw 12vw;
         &-box{
+       
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 33%;
+            width:28%;
             height: 75%;
             position: relative;
             &-top{
@@ -257,6 +252,7 @@
                 }
             }
             &-bottom{
+             
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -264,9 +260,9 @@
                 
                 height: 30%;
                 > h3{
-                    width: 110%;
                     text-align: center;
                 }
+              
                 svg{
                     margin: -0.5vw 0 1.5vw;
                 }
@@ -297,7 +293,7 @@
                 
             }
             &:not(:last-child){
-                margin-right: 8vw;
+                margin-right: 8%;
             }
             &:nth-child(1)::after{
                 content: "";
@@ -306,7 +302,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -4vw;
+                right: -3.3vw;
             }
             &:nth-child(2)::after{
                 content: "";
@@ -315,7 +311,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -4vw;
+                right: -3.3vw;
             }
            
         }

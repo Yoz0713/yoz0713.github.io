@@ -11,7 +11,7 @@ function bannerGray(){
     },{
         duration:0.8,
         filter:"brightness(0.3)",
-    }).to(".blog .first-page-title",{
+    }).to(".blogInner .first-page-title",{
         opacity:0,
         duration:0.8
      },"<").fromTo(".first-page-shadow",{

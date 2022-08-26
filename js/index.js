@@ -97,7 +97,7 @@ bannerTitleIn()
 // banner title in
 
 //page title in 
-function pageTitleIn(page){
+function pageTitleIn(page,gap){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:`.home-${page}-page-top`,
@@ -118,7 +118,7 @@ function pageTitleIn(page){
         opacity:1,
         y:0,
         duration:0.8,
-    }).fromTo(`.home-${page}-page-top .text-decoration`,{
+    },`${gap}`).fromTo(`.home-${page}-page-top .text-decoration`,{
         opacity:0,
         y:30
     },{
@@ -133,8 +133,8 @@ function pageTitleIn(page){
         duration:25,
     })
 }
-pageTitleIn("second")
-pageTitleIn("third")
+pageTitleIn("second",)
+pageTitleIn("third","<+0.5")
 // page title in
 
 // second-page-right in
@@ -151,7 +151,7 @@ function seondPageRight(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 500,
-        duration:4,
+        duration:3,
     }).fromTo(".home-second-page-bottom-right-para > h3",{
         opacity:0,
         y:30,
@@ -159,7 +159,7 @@ function seondPageRight(){
         y:0,
         opacity:1,
         duration:1.2
-    },"<+3").fromTo(".home-second-page-bottom-right-para > svg",{
+    },"<+2.5").fromTo(".home-second-page-bottom-right-para > svg",{
         opacity:0,
         y:30
     },{
@@ -170,8 +170,9 @@ function seondPageRight(){
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
-        strokeDashoffset: 1900,
+        strokeDashoffset: 1800,
         duration:1.2,
+      
     },"<+1").fromTo(".home-second-page-bottom-right-para p",{
         opacity:0,
         y:30
@@ -217,7 +218,7 @@ function thirdPageAnimation(){
         scrollTrigger:{
             trigger:".home-third-page",
             start:"top center",
-            toggleActions:"play none none reverse",
+          
        
         }
     })
@@ -236,14 +237,14 @@ function thirdPageAnimation(){
         duration:0.8,
         opacity:1,
         y:0
-    }).fromTo(".home-third-page .li3",{
+    },"<+0.5").fromTo(".home-third-page .li3",{
         y:30,
         opacity:0
     },{
         duration:0.8,
         opacity:1,
         y:0
-    }).fromTo(".path1",{
+    },"<+0.5").fromTo(".path1",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
@@ -264,64 +265,26 @@ function thirdPageAnimation(){
     },"<+0.3")
 }
 thirdPageAnimation()
-// third-page
+
+if(window.innerWidth <= 1920 && window.innerWidth >= 1650){
+    let widthGap = 1920 - innerWidth
+    widthGap = widthGap/5
+    let vbWidth = 1000 + widthGap
+    let viewBox = document.querySelector(".lineBox")
+    console.log(1)
+    viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
+ 
+}else if(window.innerWidth < 1650){
+    let widthGap = 1920 - innerWidth
+    widthGap = widthGap/1.5
+    let vbWidth = 1070 + widthGap
+    let viewBox = document.querySelector(".lineBox")
+
+    viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
+ 
+}
 
 
-// waveline
+   
 
-// const path = document.querySelectorAll(".home-third-page-bottom li svg path")
-// const wavePart = document.querySelectorAll(".home-third-page-bottom li")
-// let timer;
-
-// wavePart.forEach((i,index)=>{
-//     i.addEventListener("mouseenter",()=>{
-//         waveLine(index)
-//         console.log(index)
-//     })
-//     i.addEventListener("mouseleave",()=>{
-//         clearInterval(timer);
-//         path.forEach((i)=>{
-//             i.setAttribute("d",`M0 10 L1200 0`)
-//          })
-//     })
-// })
-// function waveLine(index){
-// let string = `M0 10 Q40 15 80 10 120 5 160 10 200 15 240 10 280 5 320 10 360 15 400 10 440 5 480 10 520 15 560 10 600 5 640 10 680 15 720 10 760 5 800 10 840 15 880 10 920 5 960 10 1000 15 1040 10 1080 5 1120 10 1160 15 1200 10`
-// let stArr = string.split(" ")
-// let stArr2 = string.split(" ")
-
-//    timer = setInterval(()=>{
-//         let stringAfter = [];
-//         stArr2.forEach((item)=>{
-//             let random = parseInt(Math.random()*20)
-//             item = parseInt(item)
-//             item = item+random
-//             stringAfter.push(item)
-//         })
-//         stringAfter[0] = `M0`
-//         stringAfter[2] = `Q40`
-
-
-//         for(let i = 0 ; i < stringAfter.length ; i++){
-//             stArr[i] = parseInt(stArr[i])
-        
-//             if(stArr[i] <= stringAfter[i]){
-               
-            
-//                 stArr[i]++
-
-//             }else if (stArr[i] > stringAfter[i]){
-      
-//                 stArr[i]--
-//             }
-//             stArr[0] = `M0`
-         
-//             stArr[2] = `Q40`
-//             stArr[61] = `10`
-
-//             path[index].setAttribute("d",`${stArr}`)
-//         }    
-//     },150)
-// }
-
-// waveline
+   

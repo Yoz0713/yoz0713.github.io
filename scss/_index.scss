@@ -173,19 +173,7 @@
             text-align: center;
             width: 100%;
             height: 25%;
-            h3{
-                color: $gold_color;
-                font-size: 20px;
-                letter-spacing: 0.4vw;
-          
-            }
-            h2{
-                font-family: $en_font_family;
-                color: $gold_color;
-                font-size: $big_font_size;
-                letter-spacing: 0.4vw;
-                font-weight: 450;
-            }
+           
             .text-decoration{
                 width: 100%;
                 position: relative;
@@ -219,9 +207,10 @@
                             font-weight: 500;
                             font-size: 16px;
                             letter-spacing: 4px;
+                            font-family: 'Noto Serif TC', serif;
                             color: $gold_color_opacity;
                             span{
-                                font-family: monospace;
+                                font-family: 'Shippori Mincho B1', serif;
 
                                 font-size: 25px;
                                 letter-spacing: 0.1vw;
@@ -334,10 +323,11 @@
                     margin-top: 5vw;
                     svg{
                         position: relative;
+                        margin-right: 8px;
                         margin-bottom: 1.5vw;
                     }
                     p{
-                        width: 33%;
+                        width: fit-content;
                     }
                     .readmore{
                         cursor: pointer;
@@ -381,18 +371,7 @@
             width: 100%;
             height: 25%;
             font-family: $en_font_family;
-            h3{
-                color: $gold_color;
-                font-size: 20px;
-                letter-spacing: 0.4vw;
-          
-            }
-            h2{
-                color: $gold_color;
-                font-size: $big_font_size;
-                letter-spacing: 0.4vw;
-                font-weight: 450;
-            }
+
             .text-decoration{
                 width: 100%;
                 position: relative;
@@ -425,21 +404,30 @@
                         width: 12vw;
                         height: 6vw;
                         img{
+                            border-radius: 10px 0 10px 0;
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                             cursor: pointer;
                         }
                     }
-                    .newsDate{
-                        text-align: center;
+                    .newsDate1{
+                       
                         width: 15vw;
-                        font-size: 18px;
+                       
+                       .newsDate2{
+                        text-align: center;
+                        font-size: 21px;
                         font-weight: 450;
                         color: $gold_color;
-                        span{
-                            font-size: 14px;
-                            font-weight: 600;
+                        font-family: 'Shippori Mincho B1', serif;
+                        color: $gold_color;
+                       }
+                        .span{
+                            color: $gold_color;
+                            text-align: center;
+                            font-size: 15px;
+                            font-weight: 450;
                         }
                     }
                     .para{
