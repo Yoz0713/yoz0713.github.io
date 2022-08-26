@@ -119,6 +119,13 @@ function secondPageAnimaiton(){
     
         opacity:1,
         duration:1.5
+    },"<").fromTo(".second-page-bottom img",{
+        opacity:0,
+        y:30
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
     },"<").fromTo(".second-page-bottom-right-para",{
         opacity:0,
         y:30
@@ -140,19 +147,14 @@ function thirdPageAnimation(li){
     })
 
     gg.fromTo(`${li} .third-page-box-left img`,{
-        x:"25vw",
+
         opacity:0,
         clipPath:"circle(0% at 0% 0%)"
     },{
         opacity:1,
         clipPath:"circle(150% at 0% 0%)",
         duration:1.5
-    }).fromTo(`${li} .third-page-box-left img`,{
-        x:"25vw",
-    },{
-        x:0,
-        duration:1
-    },"<+1").fromTo(`${li} .third-page-box-right `,{
+    }).fromTo(`${li} .third-page-box-right `,{
        
         opacity:0,
         clipPath:"circle(0% at 0% 0%)"
@@ -161,7 +163,7 @@ function thirdPageAnimation(li){
         opacity:1,
         clipPath:"circle(150% at 0% 0%)",
         duration:2.2
-    })
+    },"<+1.2")
 }
 thirdPageAnimation(".third-page-box1")
 thirdPageAnimation(".third-page-box2")
