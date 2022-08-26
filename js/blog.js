@@ -133,7 +133,7 @@ function secondPageAnimaiton(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+2.5")
+    },"<+1.2")
 }
 secondPageAnimaiton()
 
@@ -155,11 +155,11 @@ function thirdPageAnimation(li){
         clipPath:"circle(150% at 0% 0%)",
         duration:1.5
     }).fromTo(`${li} .third-page-box-right `,{
-       
+   
         opacity:0,
         clipPath:"circle(0% at 0% 0%)"
     },{
-        
+ 
         opacity:1,
         clipPath:"circle(150% at 0% 0%)",
         duration:2.2
