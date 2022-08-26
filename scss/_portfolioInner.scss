@@ -86,9 +86,12 @@
                 padding: 0 0 0.8vw;
                 letter-spacing: 2px;
             }
-      
+            & > :nth-child(4){
+               line-height: 40px;
+            }
             & > :nth-child(5){
-                margin-bottom: 0.8vw;
+                line-height: 40px;
+            
             }
             & > :nth-child(6){
                 font-weight: 450;
@@ -332,7 +335,7 @@
                         p{
                             color: $gold_color;
                             font-size: 20px;
-                          
+                            font-family: $title_font_family;
                         }
                     }
                     input{

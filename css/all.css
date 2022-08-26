@@ -589,8 +589,11 @@ footer span {
   padding: 0 0 0.8vw;
   letter-spacing: 2px;
 }
+.portfolioInner .second-page-right > :nth-child(4) {
+  line-height: 40px;
+}
 .portfolioInner .second-page-right > :nth-child(5) {
-  margin-bottom: 0.8vw;
+  line-height: 40px;
 }
 .portfolioInner .second-page-right > :nth-child(6) {
   font-weight: 450;
@@ -835,6 +838,7 @@ footer span {
 .portfolioInner .seventh-page-right form .form-box-word p {
   color: #dcb078;
   font-size: 20px;
+  font-family: "Noto Serif TC", serif;
 }
 .portfolioInner .seventh-page-right form .form-box input {
   width: 80%;
