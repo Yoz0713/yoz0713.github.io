@@ -60,7 +60,7 @@
             .g1{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 4.5s infinite;
+                animation: rotate 10s linear 1.5s infinite;
                 .square1{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -73,7 +73,7 @@
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 4.5s infinite;
+                animation: rotate 10s linear 1.5s infinite;
                 .square2{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -200,14 +200,17 @@
                     a{
                         height: fit-content;
                         margin-top: 5vw;
+                  
                     }
                     > p{
                         width: 50%;
                     }
                     .readmore{
                         display: flex;
- 
-                        cursor: pointer;
+                        
+                        a{
+                            display: flex;
+                        }
                         p,h3{
                             color: $gold_color;
                             line-height: 75px;
@@ -216,9 +219,7 @@
                             transform: scale(0.8);
                             margin: 0 0.5vw ;
                         }
-                        &:hover .arrow{
-                            animation: arrow 2.5s ease-in-out infinite;
-                        }
+                       
                     }
                 }
               
@@ -258,28 +259,34 @@
                 > p{
                     height: 20%;
                 }
-                .readmore{
+                .box{
                     display: flex;
                    width: 100%;
                    height: 60%;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    cursor: pointer;
-                   
+                   justify-content: flex-end;
+                   align-items: flex-end;
+                   .readmore{
+                    display: flex;
+                    width: fit-content;
+                    height: 3.5vw;
+           
+         
                     p,h3{
                         color: $gold_color;
+                        height: fit-content;
                         line-height: 75px;
                     }
                     svg{
+                        height: fit-content;
                         transform: scale(0.8);
                         margin: 0 0.5vw ;
                     }
+                   }
+               
                    
                 }
             }
-            &:hover .arrow{
-                animation: arrow 2.5s ease-in-out infinite;
-            }
+      
            
         }
         

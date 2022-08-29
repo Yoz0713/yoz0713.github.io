@@ -118,8 +118,30 @@
                         margin-right: 0.3vw;
                     }
                     p{
-                      
+                        
                         color: $gold_color;
+                    }
+                    &::after{
+                        content:"";
+                        display: block;
+                        width: 45%;
+                        height: 100%;
+                        clip-path: circle(10% at 0% 80%);
+                        background-color: transparent;
+                        transition: 0.5s;
+                        position: absolute;
+                        left:51.5% ;
+                        top: 0;
+                      
+                    }
+                    &:hover{
+                        color: #fff;
+               
+                    }
+                    &:hover::after{
+                        clip-path: circle(150% at 0% 80%);
+                        background-color:$gold_color_opacity;
+                        z-index: -10;
                     }
                 }
                 &-left{
@@ -131,14 +153,40 @@
                     width: 45%;
                     border: 1px solid $gold_color_opacity;
                     padding: 0.2vw 0;
+                    transition: 0.5s;
+                  
                     img{
                         width:1vw;
                         height: 1vw;
                         margin-right: 0.3vw;
+                     
                     }
                     p{
                       
                         color: $gold_color;
+                    
+                    }
+                    &::after{
+                        content:"";
+                        display: block;
+                        width: 45%;
+                        height: 100%;
+                        clip-path: circle(10% at 0% 80%);
+                        background-color: transparent;
+                        transition: 0.5s;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                      
+                    }
+                    &:hover{
+                        color: #fff;
+               
+                    }
+                    &:hover::after{
+                        clip-path: circle(150% at 0% 80%);
+                        background-color:$gold_color_opacity;
+                        z-index: -10;
                     }
                 }
             }
@@ -306,6 +354,7 @@
             iframe{
                 width: 100%;
                 height: 100%;
+       
             }
         }
         &-right{
@@ -316,19 +365,22 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-between;
                 width: 100%;
+                height: 100%;
                 z-index: 15;
                 h3{
                    font-size: 32px;
                     font-family: $en_font_family;
                     font-weight: 450;
                     letter-spacing: 0.2vw;
-                    margin-bottom: 3vw;
+              
                 }
                 .form-box{
                     display: flex;
+                    justify-content: center;
                     width: 100%;
-                   margin-bottom: 2.4vw;
+                    
                     position: relative;
                     &-word{
                         width: 20%;
@@ -363,24 +415,47 @@
                             outline: none;
                         }
                     }
-                    .submit{
-                        position: absolute;
-                        right: 0;
-                        left: 0;
-                        margin: 1.5vw auto 0;
-                        cursor: pointer;
-                        padding: 10px 0;
-                        font-size: 15px;
+                    &-inner{
+                
+                  
                         width: 30%;
-                        border: 1px solid $gold_color_opacity;
+                        height: fit-content;
+                        .submit{
+                            cursor: pointer;
+                            padding: 10px 0;
+                            font-size: 15px;
+                            width: 100%;
+                            transition: 0.5s;
+                            border: 1px solid $gold_color_opacity;
+                   
+                        }
+                        &::after{
+                            content:"";
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            clip-path: circle(10% at 0% 80%);
+                            background-color: transparent;
+                            transition: 0.5s;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                          
+                        }
                         &:hover{
                             color: #fff;
-                            background-color: #dcb178;
-                            border: none;
+                   
+                        }
+                        &:hover::after{
+                            clip-path: circle(150% at 0% 80%);
+                            background-color:$gold_color_opacity;
+                        z-index: -10;
                         }
                     }
+                    
+                    
                 }
-                
+            
             }
         }
     }

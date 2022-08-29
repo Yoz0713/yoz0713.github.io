@@ -1,4 +1,6 @@
 .blogInner{
+    width: 100%;
+    overflow-x: hidden;
     .first-page{
         display: flex;
         flex-direction: column;
@@ -61,7 +63,7 @@
             .g1{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 4.5s infinite;
+                animation: rotate 10s linear 1.5s infinite;
                 .square1{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -74,7 +76,7 @@
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 4.5s infinite;
+                animation: rotate 10s linear 1.5s infinite;
                 .square2{
                     stroke-dashoffset: 2000;
                     stroke-dasharray: 2000;
@@ -130,7 +132,7 @@
         display: flex;
     
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         padding: 5vw 12vw;
         &-left{
             position: relative;
@@ -139,7 +141,7 @@
             height: 100%;
             &-para{
                 position: absolute;
-                width: 75%;
+                width: 80%;
                 height: fit-content;
                 left: 0;
                 top: 0;
@@ -178,7 +180,7 @@
           
             &-para{
                 position: absolute;
-                width: 75%;
+                width: 80%;
                 height: fit-content;
                 left: 0;
                 top: 0;
@@ -209,6 +211,7 @@
             height: fit-content;
             border-bottom: 1px solid $gold_color_opacity;
             button{
+                position: relative;
                 width: 8.5vw;
                 background-color: transparent;
                 border: 1px solid $gold_color_opacity;
@@ -217,10 +220,28 @@
                 font-size: 16px;
                 font-weight: 600;
                 cursor: pointer;
+                transition: 0.5s;
+                &::after{
+                    content:"";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: circle(10% at 0% 80%);
+                    background-color: transparent;
+                    transition: 0.5s;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
                 &:hover{
                     color: #fff;
-                    background-color: #dcb178;
-                    border: none;
+           
+                }
+                &:hover::after{
+                  
+                    clip-path: circle(150% at 0% 80%);
+                    background-color:$gold_color_opacity;
+                    z-index: 10;
                 }
             }
         }
@@ -237,7 +258,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width:28%;
+            width:30%;
             height: 75%;
             position: relative;
             &-top{
@@ -266,6 +287,9 @@
                 svg{
                     margin: -0.5vw 0 1.5vw;
                 }
+                > p{
+                    width: 95%;
+                }
                 .readmore{
                     display: flex;
                     justify-content: space-between;
@@ -275,25 +299,25 @@
                     z-index: 15;
                     cursor: pointer;
                     margin-top: 5vw;
-                    
-                    svg{
-                        transform: scale(0.7);
-                        margin-right: -15%;
-                    
-                    }
                     h3,p{
                         line-height: 57px;
                         color: $gold_color;
                         height: fit-content;
                     }
-                    &:hover .arrow{
-                        animation: arrow 2.5s ease-in-out infinite;
+                    &-box{
+                        display: flex;
+                        svg{
+                            transform: scale(0.7);
+                        }
+                    
                     }
+          
+                 
                 }
                 
             }
             &:not(:last-child){
-                margin-right: 8%;
+                margin-right: 5%;
             }
             &:nth-child(1)::after{
                 content: "";
@@ -302,7 +326,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -3.3vw;
+                right: -2vw;
             }
             &:nth-child(2)::after{
                 content: "";
@@ -311,7 +335,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -3.3vw;
+                right: -2vw;
             }
            
         }
@@ -323,3 +347,5 @@
     font-size: 15px;
     letter-spacing: 2px;
   }
+
+ 

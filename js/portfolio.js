@@ -2,34 +2,41 @@
 function bannerTitleIn(){
     let gg =gsap.timeline()
 
-    gg.fromTo(".first-page-title h3",{
+    gg.fromTo(".first-page-title",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-title h2",{
+    }).fromTo(".first-page-title h3",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-title .text-decoration",{
+    },"<+0.3").fromTo(".first-page-title h2",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(`.first-page-title .text-decoration line`,{
+    },"<+0.3").fromTo(".first-page-title .text-decoration",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        duration:0.8,
+        y:0
+    },"<+0.3").fromTo(`.first-page-title .text-decoration line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
         duration:25,
-    })
+    },"<+0.5")
     
 }
 bannerTitleIn()
@@ -92,7 +99,7 @@ function gcLogo (){
     },{
         strokeDashoffset: 1700,
         duration:3,
-    })
+    },"<+1")
     
 
 
@@ -235,3 +242,39 @@ function gcLogo (){
 }
 gcLogo()
 
+let readmore = document.querySelectorAll(".readmore");
+let arrow = document.querySelectorAll(".arrow");
+let ggArrow ;
+let timer1;
+for(let i = 0 ; i<readmore.length ; i++){
+    readmore[i].addEventListener("mouseenter",()=>{
+
+        ggArrow = gsap.timeline();
+        timer1 = setInterval(()=>{
+            ggArrow.fromTo(arrow[i],{
+                x:0,
+                opacity:1
+            },{
+                x:30,
+                opacity:0,
+                duration:0.8,
+            
+            }).fromTo(arrow[i],{
+                x:-45,
+                opacity:0
+            },{
+                x:0,
+                opacity:1,
+                duration:0.8,
+                
+            })
+           
+        },100)
+    })
+    readmore[i].addEventListener("mouseleave",()=>{
+        clearInterval(timer1)
+        ggArrow.reverse(1);
+       
+      })
+    
+}

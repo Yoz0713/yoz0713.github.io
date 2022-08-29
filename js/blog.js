@@ -6,6 +6,8 @@ function bannerGray(){
             toggleActions:"play none none reverse"
         }
     })
+
+
     gg.fromTo(".first-page img",{
         filter:"brightness(1)",
     },{
@@ -52,34 +54,41 @@ bannerTitleIn()
 function bannerBoxIn(){
     let gg =gsap.timeline()
 
-    gg.fromTo(".first-page-box-2 h3",{
+    gg.fromTo(".first-page-box-2",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-box-2 h2",{
+    }).fromTo(".first-page-box-2 h3",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-box-2 .text-decoration",{
+    },"<+0.3").fromTo(".first-page-box-2 h2",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(`.first-page-box-2 .text-decoration line`,{
+    },"<+0.3").fromTo(".first-page-box-2 .text-decoration",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        duration:0.8,
+        y:0
+    },"<+0.3").fromTo(`.first-page-box-2 .text-decoration line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
         duration:25,
-    })
+    },"<+0.5")
     
 }
 bannerBoxIn()
@@ -99,27 +108,20 @@ function secondPageAnimaiton(){
         height:"100%",
         opacity:1,
         duration:1.5
-    }).fromTo(".lineBox polyline",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 500,
-        duration:3,
-    },).fromTo(".second-page-top nav ul",{
+    }).fromTo(".second-page-top nav ul",{
         opacity:0,
       
     },{
        
         opacity:1,
         duration:0.8
-    },"<").fromTo(".second-page-top .news_blog",{
-        opacity:0,
-        height:0
+    },"<0.5").fromTo(".lineBox polyline",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
     },{
-    
-        opacity:1,
-        duration:1.5
-    },"<").fromTo(".second-page-bottom img",{
+        strokeDashoffset: 500,
+        duration:3,
+    },"<+0.6").fromTo(".second-page-bottom img",{
         opacity:0,
         y:30
     },{
@@ -133,7 +135,7 @@ function secondPageAnimaiton(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+1.2")
+    },"<+1")
 }
 secondPageAnimaiton()
 
@@ -149,21 +151,23 @@ function thirdPageAnimation(li){
     gg.fromTo(`${li} .third-page-box-left img`,{
 
         opacity:0,
-        clipPath:"circle(0% at 0% 0%)"
+        y:30
+     
     },{
         opacity:1,
-        clipPath:"circle(150% at 0% 0%)",
-        duration:1.5
+       y:0,
+        duration:2,
+    
     }).fromTo(`${li} .third-page-box-right `,{
    
         opacity:0,
-        clipPath:"circle(0% at 0% 0%)"
+        y:30
     },{
  
         opacity:1,
-        clipPath:"circle(150% at 0% 0%)",
-        duration:2.2
-    },"<+1.2")
+        y:0,
+        duration:1.5
+    },"<+0.5")
 }
 thirdPageAnimation(".third-page-box1")
 thirdPageAnimation(".third-page-box2")
@@ -187,4 +191,39 @@ thirdPageAnimation(".third-page-box3")
     }
 
 
-
+    let readmore = document.querySelectorAll(".readmore");
+    let arrow = document.querySelectorAll(".arrow");
+    let ggArrow ;
+    let timer1;
+    for(let i = 0 ; i<readmore.length ; i++){
+        readmore[i].addEventListener("mouseenter",()=>{
+    
+            ggArrow = gsap.timeline();
+            timer1 = setInterval(()=>{
+                ggArrow.fromTo(arrow[i],{
+                    x:0,
+                    opacity:1
+                },{
+                    x:30,
+                    opacity:0,
+                    duration:0.8,
+                
+                }).fromTo(arrow[i],{
+                    x:-45,
+                    opacity:0
+                },{
+                    x:0,
+                    opacity:1,
+                    duration:0.8,
+                    
+                })
+               
+            },100)
+        })
+        readmore[i].addEventListener("mouseleave",()=>{
+            clearInterval(timer1)
+            ggArrow.reverse(1);
+           
+          })
+        
+    }

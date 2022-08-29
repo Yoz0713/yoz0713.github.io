@@ -52,34 +52,41 @@ bannerTitleIn()
 function bannerBoxIn(){
     let gg =gsap.timeline()
 
-    gg.fromTo(".first-page-box-2 h3",{
+    gg.fromTo(".first-page-box-2",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-box-2 h2",{
+    }).fromTo(".first-page-box-2 h3",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-box-2 .text-decoration",{
+    },"<+0.3").fromTo(".first-page-box-2 h2",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(`.first-page-box-2 .text-decoration line`,{
+    },"<+0.3").fromTo(".first-page-box-2 .text-decoration",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        duration:0.8,
+        y:0
+    },"<+0.3").fromTo(`.first-page-box-2 .text-decoration line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
         duration:25,
-    })
+    },"<+0.5")
     
 }
 bannerBoxIn()
@@ -88,7 +95,7 @@ function svgIn(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page",
-            start:"top bottom",
+            start:"top center",
         }
     })
     gg.fromTo(".second-page-title h3",{
@@ -105,47 +112,61 @@ function svgIn(){
         opacity:1,
         y:0,
         duration:0.8
-    }).fromTo(`.second-page-title svg line`,{
+    },"<+0.3").fromTo(`.second-page-title svg line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
         duration:25,
-    })
+    },"<+0.5").fromTo(`.second-page img`,{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3")
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".fifth-page",
-            start:"top bottom",
+            start:"top center",
         }
     })
-    gg2.fromTo(".fifth-page-box-bottom h3",{
+    gg2.fromTo(".fifth-page-box img",{
         opacity:0,
         y:30
     },{
         opacity:1,
         y:0,
         duration:0.8
-    }).fromTo(".fifth-page-box-bottom svg",{
+    }).fromTo(".fifth-page-box-bottom h3",{
         opacity:0,
         y:30
     },{
         opacity:1,
         y:0,
         duration:0.8
-    }).fromTo(`.fifth-page-box-bottom svg line`,{
+    },"<+0.3").fromTo(".fifth-page-box-bottom svg",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.5").fromTo(`.fifth-page-box-bottom svg line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 1800,
         duration:1.2,
-    }).fromTo(".fifth-page-box-bottom > p",{
+    },"<+0.5").fromTo(".fifth-page-box-bottom > p",{
         opacity:0,
         y:30
     },{
         opacity:1,
         y:0,
         duration:0.8
-    },"<+0.8").fromTo(".fifth-page-box-bottom .readmore",{
+    },"<+0.3").fromTo(".fifth-page-box-bottom .readmore",{
         opacity:0,
         y:30
     },{
@@ -155,3 +176,112 @@ function svgIn(){
     },"<")
 }
 svgIn()
+
+function thirdPageAnimation (){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".third-page",
+            start:"top center",
+        }
+    })
+    gg.fromTo(".third-page img",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    }).fromTo(".third-page-left h3",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3").fromTo(`.third-page-left p`,{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3")
+}
+thirdPageAnimation()
+
+function forthPageAnimation (){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".forth-page",
+            start:"top center",
+        }
+    })
+    gg.fromTo(".forth-page img",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    }).fromTo(".forth-page-right h3",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3").fromTo(`.forth-page-right p`,{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3").fromTo(`.forth-page-bottom `,{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3")
+}
+forthPageAnimation()
+
+
+let readmore = document.querySelectorAll(".readmore");
+let arrow = document.querySelectorAll(".arrow");
+let ggArrow ;
+let timer1;
+for(let i = 0 ; i<readmore.length ; i++){
+    readmore[i].addEventListener("mouseenter",()=>{
+
+        ggArrow = gsap.timeline();
+        timer1 = setInterval(()=>{
+            ggArrow.fromTo(arrow[i],{
+                x:0,
+                opacity:1
+            },{
+                x:30,
+                opacity:0,
+                duration:0.8,
+            
+            }).fromTo(arrow[i],{
+                x:-45,
+                opacity:0
+            },{
+                x:0,
+                opacity:1,
+                duration:0.8,
+                
+            })
+           
+        },100)
+    })
+    readmore[i].addEventListener("mouseleave",()=>{
+        clearInterval(timer1)
+        ggArrow.reverse(1);
+       
+      })
+    
+}

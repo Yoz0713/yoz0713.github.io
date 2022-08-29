@@ -33,12 +33,15 @@ let swiper1 = new Swiper(".swiper1",{
 
 function banner1In(){
     let gg = gsap.timeline();
+
     gg.fromTo(".swiper1 .home-img1",{
         scale:1.3,
     },{
         scale:1,
         duration:6,
     })
+
+   
 }
 function banner2In(){
     let gg = gsap.timeline();
@@ -125,16 +128,16 @@ function pageTitleIn(page,gap){
         opacity:1,
         y:0,
         duration:0.8,
-    }).fromTo(`.home-${page}-page-top .text-decoration .line`,{
+    },`${gap}`).fromTo(`.home-${page}-page-top .text-decoration .line`,{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
         duration:25,
-    })
+    },"<+0.5")
 }
-pageTitleIn("second",)
-pageTitleIn("third","<+0.5")
+pageTitleIn("second","<+0.3")
+pageTitleIn("third","<+0.3")
 // page title in
 
 // second-page-right in
@@ -159,21 +162,21 @@ function seondPageRight(){
         y:0,
         opacity:1,
         duration:1.2
-    },"<+2.5").fromTo(".home-second-page-bottom-right-para > svg",{
+    },"<+1").fromTo(".home-second-page-bottom-right-para > svg",{
         opacity:0,
         y:30
     },{
         y:0,
         opacity:1,
         duration:1.2
-    },"<+0.8").fromTo(".home-second-page-bottom-right-para > svg line",{
+    },"<+0.5").fromTo(".home-second-page-bottom-right-para > svg line",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 1800,
         duration:1.2,
       
-    },"<+1").fromTo(".home-second-page-bottom-right-para p",{
+    },"<+0.5").fromTo(".home-second-page-bottom-right-para p",{
         opacity:0,
         y:30
     },{
@@ -202,13 +205,61 @@ function seondPageRight(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").fromTo(".home-first-page img",{
+    },"<").fromTo(".home-first-page .home-img1",{
         filter:"brightness(1)",
     },{
         filter:"brightness(0.3)",
         duration:0.8,
-  
+    },"<").fromTo(".home-first-page .home-img2",{
+        filter:"brightness(1)",
+    },{
+        filter:"brightness(0.3)",
+        duration:0.8,
     },"<")
+
+    let gg3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:`.home-second-page-top`,
+            start:"top bottom"
+        }
+    })
+
+    gg3.fromTo(".switchImg :nth-child(1)",{
+        y:30,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    }).fromTo(".switchImg :nth-child(2)",{
+        y:30,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3").fromTo(".switchImg :nth-child(3)",{
+        y:30,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3").fromTo(".switchImg :nth-child(4)",{
+        y:30,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3").fromTo(".switchImg :nth-child(5)",{
+        y:30,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3")
 }
 seondPageRight()
 
@@ -227,6 +278,7 @@ function thirdPageAnimation(){
         y:30,
         opacity:0
     },{
+        delay:1,
         duration:0.8,
         opacity:1,
         y:0
@@ -237,20 +289,27 @@ function thirdPageAnimation(){
         duration:0.8,
         opacity:1,
         y:0
-    },"<+0.5").fromTo(".home-third-page .li3",{
+    },"<+0.3").fromTo(".home-third-page .li3",{
         y:30,
         opacity:0
     },{
         duration:0.8,
         opacity:1,
         y:0
-    },"<+0.5").fromTo(".path1",{
+    },"<+0.3").fromTo(".home-third-page .readmore",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8,
+    },"<+0.3").fromTo(".path1",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 800,
         duration:2,
-    }).fromTo(".path2",{
+    },"<+0.3").fromTo(".path2",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
@@ -265,6 +324,50 @@ function thirdPageAnimation(){
     },"<+0.3")
 }
 thirdPageAnimation()
+
+let readmore = document.querySelectorAll(".readmore");
+let arrow = document.querySelectorAll(".arrow");
+let ggArrow ;
+let timer1;
+for(let i = 0 ; i<readmore.length ; i++){
+    readmore[i].addEventListener("mouseenter",()=>{
+
+        ggArrow = gsap.timeline();
+        timer1 = setInterval(()=>{
+            ggArrow.fromTo(arrow[i],{
+                x:0,
+                opacity:1
+            },{
+                x:30,
+                opacity:0,
+                duration:0.8,
+            
+            }).fromTo(arrow[i],{
+                x:-45,
+                opacity:0
+            },{
+                x:0,
+                opacity:1,
+                duration:0.8,
+                
+            })
+           
+        },100)
+    })
+    readmore[i].addEventListener("mouseleave",()=>{
+        clearInterval(timer1)
+        ggArrow.reverse(1);
+       
+      })
+    
+}
+
+
+
+
+
+  
+
 
 if(window.innerWidth <= 1920 && window.innerWidth >= 1650){
     let widthGap = 1920 - innerWidth

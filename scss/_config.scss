@@ -1,3 +1,15 @@
+@mixin tablet {
+  @media (max-width: 800px) {
+      @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+      @content;
+  }
+}
+
 $white_color: #fff;
 $gold_color: #dcb078;
 $gold_color_opacity:#dcb17878;
@@ -46,6 +58,14 @@ p{
   color: $white_color;
 }
 
+
+.w-100{
+  width: 100%;
+}
+
+
+//-- 英文字型 --
+
 .en_family{
   font-family: $en_font_family;
 }
@@ -58,8 +78,26 @@ p{
     width: 100%;
     padding: 2vw 5vw 0vw 5vw;
     justify-content: space-between;
+
     z-index: 20;
+   
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.805) 0%,rgba(0, 0, 0, 0.629) 5% ,transparent 100%);
+
+
+    .hamburger{
+      display: none;
+
+      .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+        background-color: #fff;
+      }
+      &.is-active{
+        .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+          background-color: #fff;
+        }
+      }
+    }
+
+
     .logo_box{
       img{
         width: 165px;
@@ -91,7 +129,80 @@ p{
      }
     }
    
-   
+   @include tablet{
+    align-items: center;
+
+     .hamburger{
+       display: inline-block;
+       z-index: 110;
+     }
+     .list_box{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 100%;
+      background-color: #271c1be0;
+      backdrop-filter: blur(15px);
+      z-index: 100;
+      //transition: all 1s;
+
+
+       a.ch_text{
+        font-size: 22px;
+        letter-spacing: .5vw;
+        padding: 0 3vw;
+       }
+     }
+   }
+
+   .logo_box{
+      img{
+        width: 150px;
+      }
+    }
+
+   @include mobile{
+     padding: 4vw 5vw 0vw 5vw;
+
+     .list_box{
+      a.ch_text{
+        font-size: 16px;
+        letter-spacing: 1vw;
+        padding: 0 3vw;
+       }
+     }
+
+     .logo_box{
+      img{
+        width: 110px;
+      }
+     }
+
+     .hamburger{
+       padding: 5px;
+
+       .hamburger-box{
+        width: 25px;
+        height: 20px;
+       }
+
+       &-inner, &-inner:after, &-inner:before{
+        width: 25px;
+        height: 2px;
+       }
+
+       &-inner:before{
+         top: -7px;
+       }
+
+       &-inner:after{
+        bottom: -7px;
+      }
+     }
+   }
 }
 
 //-- banner 文字 --
@@ -118,7 +229,6 @@ p{
     line-height: 2.1;
   }
 }
-
 
 //-- top_title --
 .title_top{
@@ -205,5 +315,20 @@ footer{
     letter-spacing: 2px;
     padding: 0 10px;
     font-size: 15px;
+  }
+
+  @include tablet{
+    padding: 25px 0;
+    span{
+      display: block;
+      padding: 4px;
+      font-size: 2vw;
+    }
+  }
+
+  @include mobile{
+    span{
+      font-size: 3vw;
+    }
   }
 }

@@ -21,14 +21,14 @@ function bannerTitleIn(){
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-title p",{
+    },"<+0.5").fromTo(".first-page-title p",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    })
+    },"<+0.5")
 }
 
 function bannerGray(){
@@ -86,7 +86,7 @@ function secondPageAnimation(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+1").fromTo(".second-page-right > :nth-child(2)",{
+    },"<+0.5").fromTo(".second-page-right > :nth-child(2)",{
         y:30,
         opacity:0
     },{
@@ -194,7 +194,7 @@ function fifthPageAnimation(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+1").fromTo(".fifth-page p",{
+    },"<+0.6").fromTo(".fifth-page p",{
         y:30,
         opacity:0
     },{
@@ -228,7 +228,7 @@ function sixthPageAnimation(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+1").fromTo(".sixth-page p",{
+    },"<+0.6").fromTo(".sixth-page p",{
         y:30,
         opacity:0
     },{
@@ -262,7 +262,7 @@ function seventhPageAnimation(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<+1").fromTo(".seventh-page-right :nth-child(2)",{
+    },"<+0.6").fromTo(".seventh-page-right :nth-child(2)",{
         y:30,
         opacity:0
     },{
@@ -300,3 +300,4 @@ function seventhPageAnimation(){
     },"<+0.2")
 }
 seventhPageAnimation()
+
