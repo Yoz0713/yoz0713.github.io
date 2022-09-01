@@ -1,0 +1,281 @@
+.contact{
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        img{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+        &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $banner_bg_color;
+            color: $gold_color;
+            padding: 1vw;
+           
+            svg{
+                transform: translateX(-7.8px);
+                rect{
+                    transform-box: fill-box;
+                    transform-origin: center;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+        &-shadow{
+            position: fixed;
+            width: 100%;
+            height: 20vw;
+            background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+    }
+    .second-page{
+        display: flex;
+        width: 100%;
+        height: 85vh;
+        padding: 6vw 10vw 4vw;
+        &-left{
+            width: 55%;
+            height: 100%;
+            iframe{
+                width: 100%;
+                height: 100%;
+       
+            }
+        }
+        &-right{
+            width: 45%;
+            height: 100%;
+            padding-left: 5vw;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                z-index: 15;
+                h3{
+                   font-size: 32px;
+                    font-family: $en_font_family;
+                    font-weight: 450;
+                    letter-spacing: 0.2vw;
+              
+                }
+                .form-box{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    
+                    position: relative;
+                    &-word{
+                        width: 20%;
+                        p{
+                            color: $gold_color;
+                            font-size: 20px;
+                            font-family: $title_font_family;
+                        }
+                    }
+                    input{
+                        width: 80%;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $gold_color_opacity;
+                        font-size: 26px;
+                        color: $gold_color;
+                        padding: 0vw 0vw 1.5vw;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    textarea{
+                        width: 80%;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $gold_color_opacity;
+                        font-size: 26px;
+                        color: $gold_color;
+                        z-index: 15;
+                        padding: 0vw 0vw 1.5vw;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    &-inner{
+                
+                  
+                        width: 30%;
+                        height: fit-content;
+                        .submit{
+                            cursor: pointer;
+                            padding: 10px 0;
+                            font-size: 15px;
+                            width: 100%;
+                            transition: 0.5s;
+                            border: 1px solid $gold_color_opacity;
+                   
+                        }
+                        &::after{
+                            content:"";
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            clip-path: circle(10% at 0% 80%);
+                            background-color: transparent;
+                            transition: 0.5s;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                          
+                        }
+                        &:hover{
+                            color: #fff;
+                   
+                        }
+                        &:hover::after{
+                            clip-path: circle(150% at 0% 80%);
+                            background-color:$gold_color_opacity;
+                        z-index: -10;
+                        }
+                    }
+                    
+                    
+                }
+            
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:1440px){
+    .contact{
+        .second-page{
+            display: flex;
+            width: 100%;
+            height: 85vh;
+            padding: 6vw 10vw 4vw;
+            &-left{
+                width: 55%;
+                height: 100%;
+                iframe{
+                    width: 100%;
+                    height: 100%;
+           
+                }
+            }
+            &-right{
+                width: 45%;
+                height: 100%;
+                padding-left: 5vw;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 15;
+                    h3{
+                       font-size: 32px;
+                        font-family: $en_font_family;
+                        font-weight: 450;
+                        letter-spacing: 0.2vw;
+                  
+                    }
+                    .form-box{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        
+                        position: relative;
+                        &-word{
+                            width: 30%;
+                            p{
+                                color: $gold_color;
+                                font-size: 18px;
+                                font-family: $title_font_family;
+                            }
+                        }
+                        input{
+                            width: 70%;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $gold_color_opacity;
+                            font-size: 26px;
+                            color: $gold_color;
+                            padding: 0vw 0vw 1.5vw;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        textarea{
+                            width: 70%;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $gold_color_opacity;
+                            font-size: 26px;
+                            color: $gold_color;
+                            z-index: 15;
+                            padding: 0vw 0vw 1.5vw;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        &-inner{
+                    
+                      
+                            width: 30%;
+                            height: fit-content;
+                            .submit{
+                                cursor: pointer;
+                                padding: 10px 0;
+                                font-size: 15px;
+                                width: 100%;
+                                transition: 0.5s;
+                                border: 1px solid $gold_color_opacity;
+                              
+                            }
+                            &::after{
+                                content:"";
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                clip-path: circle(10% at 0% 80%);
+                                background-color: transparent;
+                                transition: 0.5s;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                              
+                            }
+                            &:hover{
+                                color: #fff;
+                       
+                            }
+                            &:hover::after{
+                                clip-path: circle(150% at 0% 80%);
+                                background-color:$gold_color_opacity;
+                            z-index: -10;
+                            }
+                        }
+                        
+                        
+                    }
+                
+                }
+            }
+        }
+    }
+}

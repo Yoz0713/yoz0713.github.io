@@ -332,3 +332,70 @@ footer{
     }
   }
 }
+
+@media all and (max-width:1440px){
+  footer{
+    padding: 25px 0;
+    span{
+      letter-spacing: 2px;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+  .banner_box{
+    .ch_title_font{
+      font-size: 38px;
+      letter-spacing: 10px;
+    }
+  
+    .en_title_font{
+      font-weight: 500;
+      font-size: 46px;
+      letter-spacing: 6px;
+    }
+  
+    .p_font{
+      font-size: 14px;
+      letter-spacing: 3px;
+      line-height: 2.1;
+    }
+  }
+  .news_blog{
+
+    //-- 小主標 --
+    .title_font{
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: 4px;
+    }
+  
+    //-- 內文 --
+    .p_font{
+      font-size: 12px;
+      letter-spacing: 4px;
+      line-height: 2;
+    }
+  
+    //-- 小字 --
+    .small_p_font{
+      font-size: 10px;
+  
+    }
+  
+    //-- 列表選單字 --
+    .menu_font{
+      font-size: 15px;
+      letter-spacing: 4px;
+    
+      
+    }
+  
+    //-- 內容主標 --
+    .dt_title_font{
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
+    
+  }
+}

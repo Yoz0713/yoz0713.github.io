@@ -11,7 +11,7 @@ function bannerGray(){
     },{
         duration:0.8,
         filter:"brightness(0.3)",
-    }).to(".blogInner .first-page-title",{
+    }).to(".newsInner .first-page-title",{
         opacity:0,
         duration:0.8
      },"<").fromTo(".first-page-shadow",{
@@ -20,7 +20,7 @@ function bannerGray(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").to(".blogInner",{
+    },"<").to(".newsInner",{
         duration:0.8,
         backgroundColor:"#170a05aa"
      },"<")

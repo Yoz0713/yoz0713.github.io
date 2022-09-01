@@ -1,6 +1,4 @@
-.blogInner{
-    width: 100%;
-    overflow-x: hidden;
+.newsInner{
     .first-page{
         display: flex;
         flex-direction: column;
@@ -109,6 +107,7 @@
             justify-content: center;
             margin-bottom: 2vw;
             h3{
+                text-align: center;
                 margin-bottom: 1vw;
             }
             svg{
@@ -366,120 +365,107 @@
         }
     }
 }
-.readmore_word{
-    font-family: $en_font_family;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-  @media all and (max-width:1440px){
-    .blogInner{
-        width: 100%;
-        overflow-x: hidden;
-        .first-page{
 
-       
-         
-        }
-        .second-page{
-            height: 60vw;
+@media all and (max-width:1440px){
+   .newsInner{
+    .second-page{
+        height: 60vw;
         
-            &-img{
-          
-                img{
-                
-                    object-fit: contain;
-                }
-            }
-        }
-        .third-page{
-            height: 60vw;
-            &-left{
-                height: 100%;
-            }
-            &-right{
-                height: 100%;
-            }
-        }
-        .forth-page{
-            height: 60vw;
-            &-right{
-                position: relative;
-       
-            }
-
-       
-        }
-        .fifth-page{
-
-            height: 50vw;
-
-            &-box{
-                height: 100%;
- 
-                &-bottom{
-
-                    height: 30%;
-                    &-box{
-                   
-                        width: 3vw;
-                
-                    }
-                    > h3{
-                        text-align: center;
-                    }
-                  
-                    svg{
-                        margin: -0.5vw 0 1.5vw;
-                    }
-          
-                    .readmore{
-          
-                        justify-content:center;
-                        bottom: -9vw;
-                     
-    
-                        flex-wrap: wrap;
-                        &-box{
-                            transform: translate(0);
-                            margin-right: 1vw;
-                        }
-                        h3,p{
-                            line-height:4.15vw;
-                     
-                        }
-                        h3{
-                            font-size: 1vw;
-                            margin-right: 3vw;
-                        }
-                        p{
-                            order: 10;
-                            margin-top: -3vw;
-                            position: relative;
-                            text-align: center;
-                            width: 100%;
-                            font-size: 0.75vw;
-                          
-                        }
-                        &-box{
-                            cursor: pointer;
-                            display: flex;
-                            svg{
-                                transform: scale(0.7);
-                            }
-                        
-                        }
-              
-                     
-                    }
-                    
-                }
-
-
-
-               
+        &-img{
+      
+            img{
+            
+                object-fit: contain;
             }
         }
     }
+    .third-page{
+        height: 60vw;
+        &-left{
+            height: 100%;
+        }
+        &-right{
+            height: 100%;
+        }
+    }
+    .forth-page{
+        height: 60vw;
+        &-right{
+            position: relative;
+   
+        }
+
+   
+    }
+    .fifth-page{
+
+        height: 50vw;
+
+        &-box{
+            height: 100%;
+
+            &-bottom{
+
+                height: 30%;
+                &-box{
+               
+                    width: 3vw;
+            
+                }
+                > h3{
+                    text-align: center;
+                }
+              
+                svg{
+                    margin: -0.5vw 0 1.5vw;
+                }
+      
+                .readmore{
+      
+                    justify-content:center;
+                    bottom: -9vw;
+                 
+
+                    flex-wrap: wrap;
+                    &-box{
+                        transform: translate(0);
+                        margin-right: 1vw;
+                    }
+                    h3,p{
+                        line-height:4.15vw;
+                 
+                    }
+                    h3{
+                        font-size: 1vw;
+                        margin-right: 3vw;
+                    }
+                    p{
+                        order: 10;
+                        margin-top: -3vw;
+                        position: relative;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 0.75vw;
+                      
+                    }
+                    &-box{
+                        cursor: pointer;
+                        display: flex;
+                        svg{
+                            transform: scale(0.7);
+                        }
+                    
+                    }
+          
+                 
+                }
+                
+            }
+
+
+
+           
+        }
+    }
+   }
 }
- 

@@ -4,6 +4,10 @@
 @import "index";
 @import "blog";
 @import "blogInner";
+@import "news";
+@import "newsInner";
+@import "contact";
+@import "about";
 *{
     margin: 0;
     padding: 0;
@@ -71,3 +75,11 @@
     }
    
 }
+@keyframes text-clip {
+    from {
+      clip-path: circle(10%)
+    }
+    to {
+      clip-path: circle(100%)
+    }
+  }

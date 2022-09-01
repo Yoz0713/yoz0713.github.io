@@ -54,7 +54,7 @@ function bannerGray(){
     },{
         duration:0.8,
         filter:"brightness(0.3)",
-    }).to(".portfolioInner .first-page-title p",{
+    }).to(".portfolio .first-page-title p",{
         opacity:0,
         duration:0.01
      },"<").fromTo(".first-page-shadow",{
@@ -242,7 +242,7 @@ function gcLogo (){
 }
 gcLogo()
 
-let readmore = document.querySelectorAll(".readmore");
+let readmore = document.querySelectorAll(".a");
 let arrow = document.querySelectorAll(".arrow");
 let ggArrow ;
 let timer1;

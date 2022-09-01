@@ -13,7 +13,7 @@ function bannerGray(){
     },{
         duration:0.8,
         filter:"brightness(0.3)",
-    }).to(".blog .first-page-title",{
+    }).to(".news .first-page-title",{
         opacity:0,
         duration:0.8
      },"<").fromTo(".first-page-shadow",{
@@ -22,7 +22,7 @@ function bannerGray(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").to(".blog",{
+    },"<").to(".news",{
         duration:0.8,
         backgroundColor:"#170a05aa"
      },"<")
@@ -92,7 +92,6 @@ function bannerBoxIn(){
     
 }
 bannerBoxIn()
-
 function secondPageAnimaiton(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -139,75 +138,100 @@ function secondPageAnimaiton(){
 }
 secondPageAnimaiton()
 
-function thirdPageAnimation(li){
-    let gg = gsap.timeline({
+function thirdPageAnimation(){
+    let gg2 = gsap.timeline({
         scrollTrigger:{
-            trigger:`${li}`,
-            start:"top 60%",
-      
+            trigger:".third-page",
+            start:"top center",
         }
     })
-
-    gg.fromTo(`${li} .third-page-box-left img`,{
-
-        opacity:0,
-        y:30
-     
-    },{
-        opacity:1,
-       y:0,
-        duration:2,
-    
-    }).fromTo(`${li} .third-page-box-right `,{
-   
+    gg2.fromTo(".third-page-box",{
         opacity:0,
         y:30
     },{
- 
         opacity:1,
         y:0,
-        duration:1.5
-    },"<+0.5")
+        duration:0.8
+    }).fromTo(".third-page-box img",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<").fromTo(".third-page-box-bottom h3",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3").fromTo(".third-page-box-bottom svg",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.5").fromTo(`.third-page-box-bottom svg line`,{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 1800,
+        duration:1.2,
+    },"<+0.5").fromTo(".third-page-box-bottom > p",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<+0.3").fromTo(".third-page-box-bottom .readmore",{
+        opacity:0,
+        y:30
+    },{
+        opacity:1,
+        y:0,
+        duration:0.8
+    },"<")
 }
-thirdPageAnimation(".third-page-box1")
-thirdPageAnimation(".third-page-box2")
-thirdPageAnimation(".third-page-box3")
-   
+thirdPageAnimation()
 
 
-    let readmore = document.querySelectorAll(".readmore");
-    let arrow = document.querySelectorAll(".arrow");
-    let ggArrow ;
-    let timer1;
-    for(let i = 0 ; i<readmore.length ; i++){
-        readmore[i].addEventListener("mouseenter",()=>{
-    
-            ggArrow = gsap.timeline();
-            timer1 = setInterval(()=>{
-                ggArrow.fromTo(arrow[i],{
-                    x:0,
-                    opacity:1
-                },{
-                    x:30,
-                    opacity:0,
-                    duration:0.8,
+
+let readmore = document.querySelectorAll(".readmore");
+let arrow = document.querySelectorAll(".arrow");
+let ggArrow ;
+let timer1;
+for(let i = 0 ; i<readmore.length ; i++){
+    readmore[i].addEventListener("mouseenter",()=>{
+
+        ggArrow = gsap.timeline();
+        timer1 = setInterval(()=>{
+            ggArrow.fromTo(arrow[i],{
+                x:0,
+                opacity:1
+            },{
+                x:30,
+                opacity:0,
+                duration:0.8,
+            
+            }).fromTo(arrow[i],{
+                x:-45,
+                opacity:0
+            },{
+                x:0,
+                opacity:1,
+                duration:0.8,
                 
-                }).fromTo(arrow[i],{
-                    x:-45,
-                    opacity:0
-                },{
-                    x:0,
-                    opacity:1,
-                    duration:0.8,
-                    
-                })
-               
-            },100)
-        })
-        readmore[i].addEventListener("mouseleave",()=>{
-            clearInterval(timer1)
-            ggArrow.reverse(1);
+            })
            
-          })
-        
-    }
+        },100)
+    })
+    readmore[i].addEventListener("mouseleave",()=>{
+        clearInterval(timer1)
+        ggArrow.reverse(1);
+       
+      })
+    
+}

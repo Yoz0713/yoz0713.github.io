@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/hamburgers.min.css">
 
 </head>
 <body>
@@ -31,11 +32,11 @@
           </a>
       </div>  
       <div class="list_box">
-        <a href="" class="ch_text">關於鉅璽<span class="en_text">ABOUT</span></a>
+        <a href="./about.html" class="ch_text">關於鉅璽<span class="en_text">ABOUT</span></a>
         <a href="./portfolio.html" class="ch_text">新作鑑賞<span class="en_text">PORTFOLIO</span></a>
         <a href="./blog.html" class="ch_text">鉅璽札記<span class="en_text">BLOG</span></a>
-        <a href="" class="ch_text">最新消息<span class="en_text">NEWS</span></a>
-        <a href="" class="ch_text">聯絡我們<span class="en_text">CONTACT</span></a>
+        <a href="./news.html" class="ch_text">最新消息<span class="en_text">NEWS</span></a>
+        <a href="./contact.html" class="ch_text">聯絡我們<span class="en_text">CONTACT</span></a>
       </div>  
   </div>
     <!-- MENU END -->
@@ -72,28 +73,28 @@
             </svg>
           </div>
           <div class="home-first-page-icon">
-            <a href="">
-              <img src="./img/index/SVG/fb_icon.svg" alt="facebook">
-              <svg width ="200%" height="170%">
-                <circle cx=50% cy=50% r="16" stroke="#fff" stroke-width="1" fill="none" />
+            <a href="" class="facebook">
+              <img src="./img/index/SVG/fb_icon.svg" alt="facebook" >
+              <svg width ="200%" height="170%" viewBox="0 0 100% 100%">
+                <circle cx=50% cy=50% r="0.8vw" stroke="rgba(204, 204, 204, 0.919)" stroke-width="1.5" fill="none" />
               </svg>
             </a>
-            <a href="">
-              <img src="./img/index/SVG/ig_icon.svg" alt="IG">
+            <a href="" class="ig">
+              <img src="./img/index/SVG/ig_icon.svg" alt="IG" >
               <svg width ="200%" height="170%">
-                <circle cx=50% cy=50% r="16" stroke="#fff" stroke-width="1" fill="none" />
+                <circle cx=50% cy=50% r="0.8vw" stroke="rgba(204, 204, 204, 0.919)" stroke-width="1.5" fill="none" />
               </svg>
             </a>
-            <a href="">
-              <img src="./img/index/SVG/line_icon.svg" alt="Line">
+            <a href="" class="line">
+              <img src="./img/index/SVG/line_icon.svg" alt="Line" >
               <svg width ="200%" height="170%">
-                <circle cx=50% cy=50% r="16" stroke="#fff" stroke-width="1" fill="none" />
+                <circle cx=50% cy=50% r="0.8vw" stroke="rgba(204, 204, 204, 0.919)" stroke-width="1.5" fill="none" />
               </svg>
             </a>
-            <a href="">
-              <img src="./img/index/SVG/yt_icon.svg" alt="YT">
+            <a href="" class="yt">
+              <img src="./img/index/SVG/yt_icon.svg" alt="YT" >
               <svg width ="200%" height="170%">
-                <circle cx=50% cy=50% r="16" stroke="#fff" stroke-width="1" fill="none" />
+                <circle cx=50% cy=50% r="0.8vw" stroke="rgba(204, 204, 204, 0.919)" stroke-width="1.5" fill="none" />
               </svg>
             </a>
           </div>
@@ -149,40 +150,44 @@
               </div>
             </div>
             <div class="home-second-page-bottom-right">
-              <svg width="900" height="600" class="lineBox" >
-                <polyline points="0,0 800,0 900,90 900,600"
-                stroke="#dcb17870" fill="transparent" stroke-width="1.5"/>
-                <polyline points="0,0 0,600 900,600"
-                stroke="#dcb17870" fill="transparent" stroke-width="1.5"/>
-              </svg>
-              <div class="home-second-page-bottom-right-para news_blog">
-                <h3 class="title_font">鉅璽鉅砌</h3>
-                <svg width="500" height="50">
-                  <rect x="250" y="25" width="6.5" height="6.5" fill="#dcb078" class="cube"/>
-                  <line x1="235" y1="27.5" x2="120" y2="27.5" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
-                 
-                  <line x1="271.5" y1="27.5" x2="386.5" y2="27.5" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
-              
+              <div class="lineBox">
+                <svg viewBox="0 0 900 600">
+                  <polyline points="0,0 900,0 1000,90 1000,600"
+                  stroke="#dcb17870" fill="transparent" stroke-width="1.5"/>
+                  <polyline points="0,0 0,600 1000,600"
+                  stroke="#dcb17870" fill="transparent" stroke-width="1.5"/>
                 </svg>
-                <p class="p_font">都市山水 成己之美<br>
-                  在都會裡，看見一生嚮往的悠境<br> 
-                  鉅石為山，綠海闊境，<br>
-                  收藏一座藝術，成就自己的美好!</p>
-                <div class="readmore">
-                  <svg width="55.8" height="100">
-                    <g class="cube">
-                      <polyline points="20,20 50,20 50,50 20,50 20,20"
-                      stroke="#dcb17870" fill="transparent" stroke-width="1" />
-                    </g>
-                    <g class="arrow">
-                      <line x1="0" y1="35" x2="40" y2="35" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
-                      <line x1="40" y1="35" x2="35" y2="30" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
-                      <line x1="40" y1="35" x2="35" y2="40" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
-                    </g>
+                <div class="home-second-page-bottom-right-para news_blog">
+                  <h3 class="title_font">鉅璽鉅砌</h3>
+                  <svg width="250" height="50">
+                    <rect x="125" y="25" width="6.5" height="6.5" fill="#dcb078" class="cube"/>
+                    <line x1="110" y1="27.5" x2="5.5" y2="27.5" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
+                   
+                    <line x1="146.5" y1="27.5" x2="250" y2="27.5" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
+                
                   </svg>
-                  <h3 class="readmore_word">READ MORE</h3>
+                  <p class="p_font">都市山水 成己之美<br>
+                    在都會裡，看見一生嚮往的悠境<br> 
+                    鉅石為山，綠海闊境，<br>
+                    收藏一座藝術，成就自己的美好!</p>
+                  <div class="readmore">
+                    <svg width="55.8" height="100">
+                      <g class="cube">
+                        <polyline points="20,20 50,20 50,50 20,50 20,20"
+                        stroke="#dcb17870" fill="transparent" stroke-width="1" />
+                      </g>
+                      <g class="arrow">
+                        <line x1="0" y1="35" x2="40" y2="35" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
+                        <line x1="40" y1="35" x2="35" y2="30" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
+                        <line x1="40" y1="35" x2="35" y2="40" stroke="#dcb078" fill="transparent" stroke-width="0.5"/>
+                      </g>
+                    </svg>
+                    <h3 class="readmore_word">READ MORE</h3>
+                  </div>
                 </div>
               </div>
+             
+             
             </div>
           </div>
         </div>
@@ -308,7 +313,8 @@
     <!-- footer END -->
 
 
-
+    <script src="js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>

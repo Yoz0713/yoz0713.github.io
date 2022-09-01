@@ -164,7 +164,8 @@ function seondPageRight(){
         duration:1.2
     },"<+1").fromTo(".home-second-page-bottom-right-para > svg",{
         opacity:0,
-        y:30
+        y:30,
+        x:-5
     },{
         y:0,
         opacity:1,
@@ -369,23 +370,39 @@ for(let i = 0 ; i<readmore.length ; i++){
   
 
 
-if(window.innerWidth <= 1920 && window.innerWidth >= 1650){
-    let widthGap = 1920 - innerWidth
-    widthGap = widthGap/5
-    let vbWidth = 1000 + widthGap
-    let viewBox = document.querySelector(".lineBox")
-    console.log(1)
-    viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
+// if(window.innerWidth <= 1920 && window.innerWidth >= 1650){
+//     let widthGap = 1920 - innerWidth
+//     widthGap = widthGap/5
+//     let vbWidth = 1000 + widthGap
+//     let viewBox = document.querySelector(".lineBox")
+//     console.log(1)
+//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
  
-}else if(window.innerWidth < 1650){
-    let widthGap = 1920 - innerWidth
-    widthGap = widthGap/1.5
-    let vbWidth = 1070 + widthGap
-    let viewBox = document.querySelector(".lineBox")
+// }else if(window.innerWidth < 1650 && window.innerWidth >= 1440){
+//     let widthGap = 1920 - innerWidth
+//     widthGap = widthGap/5
+//     let vbWidth = 1070 + widthGap
+//     let viewBox = document.querySelector(".lineBox")
 
-    viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
+//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
  
-}
+// }else if(window.innerWidth < 1440 && window.innerWidth >= 1100){
+//     let widthGap = 1920 - innerWidth
+//     widthGap = widthGap/2
+//     let vbWidth = 1070 + widthGap
+//     let viewBox = document.querySelector(".lineBox")
+
+//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
+ 
+// }else if(window.innerWidth < 1100){
+//     let widthGap = 1920 - innerWidth
+//     widthGap = widthGap/1.5
+//     let vbWidth = 1070 + widthGap
+//     let viewBox = document.querySelector(".lineBox")
+
+//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*5.9}`)
+ 
+// }
 
 
    
