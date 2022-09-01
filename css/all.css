@@ -170,12 +170,12 @@ p {
 .news_blog .title_font {
   font-family: "Noto Serif TC", serif;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 1.1vw;
   letter-spacing: 4px;
   color: #dcb078;
 }
 .news_blog .p_font {
-  font-size: 15px;
+  font-size: 0.75vw;
   letter-spacing: 4px;
   line-height: 2;
 }
@@ -2793,10 +2793,17 @@ body {
   height: 90%;
   position: relative;
 }
-.blog .second-page-bottom img {
+.blog .second-page-bottom > a {
+  z-index: 10;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.blog .second-page-bottom > a img {
   cursor: pointer;
   border-radius: 40px 0 40px 0;
-  width: 50%;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -3335,7 +3342,7 @@ body {
 }
 .blogInner .third-page-left-para {
   position: absolute;
-  width: 80%;
+  width: 88%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -3377,7 +3384,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  width: 80%;
+  width: 88%;
   height: 100%;
   left: 0;
   top: 0;
@@ -3807,10 +3814,17 @@ body {
   height: 90%;
   position: relative;
 }
-.news .second-page-bottom img {
+.news .second-page-bottom > a {
+  z-index: 10;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.news .second-page-bottom > a img {
   cursor: pointer;
   border-radius: 40px 0 40px 0;
-  width: 50%;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -4382,7 +4396,7 @@ body {
 }
 .newsInner .third-page-left-para {
   position: absolute;
-  width: 80%;
+  width: 88%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -4424,7 +4438,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  width: 80%;
+  width: 88%;
   height: 100%;
   left: 0;
   top: 0;
@@ -4953,6 +4967,7 @@ body {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: rgb(48, 48, 48);
 }
 .about .first-page-box {
   display: flex;
@@ -5299,7 +5314,6 @@ body {
 footer {
   position: relative;
   z-index: 10;
-  background-color: rgba(27, 15, 8, 0.8823529412);
 }
 
 * {

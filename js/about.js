@@ -23,7 +23,7 @@ function bannerGray(){
        
     },{
         duration:0.8,
-        background:"radial-gradient(circle at var(--x) var(--y), transparent 3%, #1b0f08e1 5%",
+        background:"radial-gradient(circle at var(--x) var(--y), transparent 0.01%, #1b0f086c 1%, #1b0f08e1 30%",
        
      },"<")
 }
@@ -354,7 +354,7 @@ for(let i = 0 ; i < g1.length ; i++){
         // console.log(mouseX,mouseY,g1,g2)
         let gg = gsap.timeline();
         gg.to(g1[i],{
-            x:-(mouseX/12),
+            x:-(mouseX/25),
         
         })
         

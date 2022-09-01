@@ -2,6 +2,7 @@
     width: 100%;
     min-height: fit-content;
     overflow: hidden;
+    
     .first-page{
         display: flex;
         flex-direction: column;
@@ -15,7 +16,7 @@
             height: 100%;
             z-index: -1;
             object-fit: cover;
-      
+            background-color: rgb(48, 48, 48);
         }
         &-box{
             display: flex;
@@ -147,7 +148,7 @@
         &-bottom{
             display: flex;
             justify-content: space-between;
-        
+      
             width: 100%;
             height: 42%;
             margin-top: -3.5vw;
@@ -388,11 +389,11 @@
     position: fixed;
     height: 100vh;
     background: transparent;
- 
+   
 }
 
 footer{
     position: relative;
     z-index: 10;
-    background-color: #1b0f08e1;
-}
+   
+} 

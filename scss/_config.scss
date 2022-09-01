@@ -256,14 +256,14 @@ p{
   .title_font{
     font-family: $title_font_family;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 1.1vw;
     letter-spacing: 4px;
     color: $gold_color;
   }
 
   //-- 內文 --
   .p_font{
-    font-size: 15px;
+    font-size: 0.75vw;
     letter-spacing: 4px;
     line-height: 2;
   }
