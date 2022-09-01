@@ -3368,8 +3368,8 @@ body {
   flex-wrap: wrap;
 }
 .blogInner .forth-page-right {
+  flex: 1 1 40%;
   position: relative;
-  width: 34.2vw;
   height: 28.24vw;
 }
 .blogInner .forth-page-right-para {
@@ -3389,7 +3389,7 @@ body {
   margin-bottom: 2vw;
 }
 .blogInner .forth-page-left {
-  width: 41.8vw;
+  flex: 1 1 60%;
   height: 28.24vw;
 }
 .blogInner .forth-page-left img {
@@ -4416,7 +4416,7 @@ body {
 }
 .newsInner .forth-page-right {
   position: relative;
-  width: 34.2vw;
+  flex: 1 1 40%;
   height: 28.24vw;
 }
 .newsInner .forth-page-right-para {
@@ -4436,7 +4436,7 @@ body {
   margin-bottom: 2vw;
 }
 .newsInner .forth-page-left {
-  width: 41.8vw;
+  flex: 1 1 60%;
   height: 28.24vw;
 }
 .newsInner .forth-page-left img {
@@ -4738,11 +4738,11 @@ body {
   height: 100%;
   z-index: 15;
 }
-.contact .second-page-right form h3 {
-  font-size: 32px;
-  font-family: "Playfair Display", serif;
-  font-weight: 450;
-  letter-spacing: 0.2vw;
+.contact .second-page-right form p {
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 4px;
 }
 .contact .second-page-right form .form-box {
   display: flex;
@@ -4933,6 +4933,9 @@ body {
 }
 .about {
   width: 100%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   overflow: hidden;
 }
 .about .first-page {
@@ -4983,6 +4986,7 @@ body {
   margin: 0vw 6vw 3vw;
 }
 .about .first-page-title p {
+  pointer-events: none;
   line-height: 40px;
   letter-spacing: 0.2vw;
 }
@@ -5090,6 +5094,7 @@ body {
   left: -6vw;
 }
 .about .second-page-bottom-left h2 {
+  pointer-events: none;
   position: relative;
   margin-bottom: -1.5vw;
   margin-left: 7vw;
@@ -5143,6 +5148,9 @@ body {
   align-items: center;
   width: 100%;
   height: 50%;
+}
+.about .third-page-left-top h2 {
+  pointer-events: none;
 }
 .about .third-page-left-top svg {
   width: 95%;
@@ -5279,6 +5287,19 @@ body {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
+}
+
+.hover-light {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  background: transparent;
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(27, 15, 8, 0.8823529412);
 }
 
 * {

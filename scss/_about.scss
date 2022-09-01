@@ -1,5 +1,6 @@
 .about{
     width: 100%;
+    min-height: fit-content;
     overflow: hidden;
     .first-page{
         display: flex;
@@ -14,6 +15,7 @@
             height: 100%;
             z-index: -1;
             object-fit: cover;
+      
         }
         &-box{
             display: flex;
@@ -49,6 +51,7 @@
             margin: 0vw 6vw 3vw;
 
           p{
+            pointer-events:none;
             line-height: 40px;
             letter-spacing: 0.2vw;
           }
@@ -95,6 +98,7 @@
         }
     }
     .second-page{
+     
         width: 100vw;
         height: 50vw;
         padding: 5vw 8vw;
@@ -163,6 +167,7 @@
                   
                 }
                 h2{
+                    pointer-events:none;
                     position: relative;
                     margin-bottom: -1.5vw;
                     margin-left: 7vw;
@@ -222,7 +227,9 @@
                 align-items: center;
                 width: 100%;
                 height: 50%;
-              
+                h2{
+                    pointer-events:none;
+                }
                 svg{
                     width: 95%;
                     height: 95%;
@@ -374,4 +381,18 @@
         transform: rotate(56deg);
    
     }
+}
+
+.hover-light{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: transparent;
+ 
+}
+
+footer{
+    position: relative;
+    z-index: 10;
+    background-color: #1b0f08e1;
 }

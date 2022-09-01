@@ -10,12 +10,7 @@ function bannerGray(){
     })
 
 
-    gg.fromTo(".first-page img",{
-        filter:"brightness(1)",
-    },{
-        duration:0.8,
-        filter:"brightness(0.3)",
-    }).to(".about .first-page-title",{
+    gg.to(".about .first-page-title",{
         opacity:0,
         duration:0.8
      },"<").fromTo(".first-page-shadow",{
@@ -24,9 +19,12 @@ function bannerGray(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").to(".about",{
+    },"<").fromTo(".hover-light",{
+       
+    },{
         duration:0.8,
-        backgroundColor:"#170a05aa"
+        background:"radial-gradient(circle at var(--x) var(--y), transparent 3%, #1b0f08e1 5%",
+       
      },"<")
 }
 bannerGray()
@@ -337,21 +335,57 @@ function thirdPageAnimation(){
 }
 thirdPageAnimation()
 
+let g1 = document.querySelectorAll(".parallax");
+for(let i = 0 ; i < g1.length ; i++){
+    g1[i].addEventListener("mousemove",(e)=>{
 
-document.addEventListener("mousemove",(e)=>{
-
-    let g1 = document.querySelectorAll(".parallax");
-    let g2 = document.querySelectorAll(".g2");
- 
-    let mouseX = -(e.screenX - (e.screenX*2));
-    let mouseY = -(e.screenY - (e.screenY*2));
-    g1.forEach((item)=>{
-        item.currentTranslate.x = mouseX/20;
-     
-        console.log(item.currentTranslate.y)
-    })
-    
-    console.log(mouseX,mouseY,g1,g2)
    
-    
+
+        let g2 = document.querySelectorAll(".g2");
+     
+         let mouseX = -(e.screenX - (e.screenX*2));
+         let mouseY = -(e.screenY - (e.screenY*2));
+        // g1.forEach((item)=>{
+        //     item.currentTranslate.x = mouseX/20;
+         
+        //     console.log(item.currentTranslate.y)
+        // })
+        
+        // console.log(mouseX,mouseY,g1,g2)
+        let gg = gsap.timeline();
+        gg.to(g1[i],{
+            x:-(mouseX/12),
+        
+        })
+        
+    })
+    g1[i].addEventListener("mouseleave",()=>{
+
+   
+
+     
+     
+        // let mouseX = -(e.screenX - (e.screenX*2));
+        // let mouseY = -(e.screenY - (e.screenY*2));
+        // g1.forEach((item)=>{
+        //     item.currentTranslate.x = mouseX/20;
+         
+        //     console.log(item.currentTranslate.y)
+        // })
+        
+        // console.log(mouseX,mouseY,g1,g2)
+        let gg = gsap.timeline();
+        gg.to(g1[i],{
+            x:0,
+            duration:1.5
+        })
+        
+    })
+}
+
+let pointer = document.documentElement;        
+    pointer.addEventListener('mousemove', m => {
+    pointer.style.setProperty('--x', m.clientX + 'px');
+    pointer.style.setProperty('--y', m.clientY + 'px');
+  
 })

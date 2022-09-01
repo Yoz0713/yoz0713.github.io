@@ -171,11 +171,11 @@
         height: 100vh;
         padding: 0vw 12vw;
         flex-wrap: wrap;
-     
+   
         &-right{
-    
+            flex: 1 1 40%;
             position: relative;
-            width: 34.2vw;
+       
             height: 28.24vw;
             &-para{
                 display: flex;
@@ -195,7 +195,7 @@
             }
         }
         &-left{
-            width: 41.8vw;
+            flex: 1 1 60%;
             height: 28.24vw;
             
             img{

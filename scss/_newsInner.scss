@@ -177,7 +177,7 @@
         &-right{
     
             position: relative;
-            width: 34.2vw;
+            flex: 1 1 40%;
             height: 28.24vw;
             &-para{
                 display: flex;
@@ -197,7 +197,7 @@
             }
         }
         &-left{
-            width: 41.8vw;
+            flex: 1 1 60%;
             height: 28.24vw;
             
             img{
