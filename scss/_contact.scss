@@ -79,6 +79,9 @@
                     width: 100%;
                     
                     position: relative;
+                    > p{
+                        font-size: 18px;
+                    }
                     &-word{
                         width: 20%;
                         p{

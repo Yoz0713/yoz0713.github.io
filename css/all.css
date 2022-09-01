@@ -4767,6 +4767,9 @@ body {
   width: 100%;
   position: relative;
 }
+.contact .second-page-right form .form-box > p {
+  font-size: 18px;
+}
 .contact .second-page-right form .form-box-word {
   width: 20%;
 }
