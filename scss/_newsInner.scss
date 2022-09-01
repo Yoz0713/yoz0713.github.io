@@ -1,4 +1,7 @@
 .newsInner{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
     .first-page{
         display: flex;
         flex-direction: column;

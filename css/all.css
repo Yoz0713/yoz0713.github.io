@@ -3634,6 +3634,11 @@ body {
     transform: scale(0.7);
   }
 }
+.news {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
 .news .first-page {
   display: flex;
   flex-direction: column;
@@ -4228,6 +4233,11 @@ body {
   .news .third-page-box-bottom .readmore-box svg {
     transform: scale(0.7);
   }
+}
+.newsInner {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 .newsInner .first-page {
   display: flex;
