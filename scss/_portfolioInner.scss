@@ -1,5 +1,3 @@
-body { font-size: 100%; }
-
 .portfolioInner{
     width: 100%;
     .first-page{
@@ -14,7 +12,7 @@ body { font-size: 100%; }
             position: fixed;
             width: 100%;
             height: 100vh;
-            z-index: -1;
+            z-index: -2;
             
         }
         &-title{
@@ -76,7 +74,8 @@ body { font-size: 100%; }
                 margin-bottom: 0.7vw;
             
                 letter-spacing: 2px;
-                h3{
+                h3{ 
+      
                     margin-bottom: 0.7vw;
                     padding: 0 0 1vw;
                     border-bottom: 1px solid $gold_color_opacity;
@@ -156,7 +155,7 @@ body { font-size: 100%; }
                         }
                         &:hover::after{
                             clip-path: circle(150% at 0% 80%);
-                            background-color:$gold_color_opacity;
+                            background-color:#1d11038b;
                             z-index: -10;
                         }
                     }
@@ -197,11 +196,11 @@ body { font-size: 100%; }
                         }
                         &:hover{
                             color: #fff;
-                   
+                           
                         }
                         &:hover::after{
                             clip-path: circle(150% at 0% 80%);
-                            background-color:$gold_color_opacity;
+                            background-color:#1d11038b;
                             z-index: -10;
                         }
                     }
@@ -468,7 +467,7 @@ body { font-size: 100%; }
                         }
                         &:hover::after{
                             clip-path: circle(150% at 0% 80%);
-                            background-color:$gold_color_opacity;
+                            background-color:#1d11038b;
                         z-index: -10;
                         }
                     }
@@ -490,6 +489,13 @@ body { font-size: 100%; }
     }
 }
 
+.hover-light{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: transparent;
+   
+}
 @media all and (max-width:1440px){
     .portfolioInner{
         min-width: 100%;
@@ -505,7 +511,7 @@ body { font-size: 100%; }
                 position: fixed;
                 width: 100%;
                 height: 100vh;
-                z-index: -1;
+              
                 
             }
             &-title{
@@ -907,15 +913,7 @@ body { font-size: 100%; }
                                 top: 0;
                               
                             }
-                            &:hover{
-                                color: #fff;
-                       
-                            }
-                            &:hover::after{
-                                clip-path: circle(150% at 0% 80%);
-                                background-color:$gold_color_opacity;
-                            z-index: -10;
-                            }
+                        
                         }
                         
                         

@@ -10,7 +10,7 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-            z-index: -1;
+            z-index: -2;
         }
         &-title{
             display: flex;
@@ -333,7 +333,13 @@
     transform-origin: center;
     transform: rotate(45deg);
 }
+.hover-light{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: transparent;
 
+}
 
 @media all and (max-width:1440px){
     .portfolio{
@@ -348,7 +354,7 @@
                 position: fixed;
                 width: 100%;
                 height: 100vh;
-                z-index: -1;
+              
             }
             &-title{
                 display: flex;
@@ -389,7 +395,7 @@
                 display: flex;
                 margin: 0vw 0 5vw;
                 width: 100%;
-                height: 28vw;
+                height: 30vw;
                 transition: 0.65s;
                 
                 &:hover{
@@ -407,7 +413,7 @@
                     position: relative;
                     width: 70%;
            
-                    height: 28vw;
+                    height: 30vw;
                     .logo{
                         position: absolute;
                         top: 2vw;
@@ -535,7 +541,7 @@
                 display: flex;
                 margin:2vw 0 5vw;
                 width: 100%;
-                height: 28vw;
+                height: 30vw;
                 border-radius: 0px 0 0 40px;
                 transition: 0.65s;   
                 &:hover .second-page-bottom-left-box2{
@@ -548,12 +554,15 @@
                     box-shadow: 5px 5px 10px 3px #000;
                 }  
                 &-left{
+                    
                     position: relative;
                     width: 60vw;
            
-                    height: 28vw;
+                    height: 30vw;
                     border-radius: 40px 0 0 0;          
-                  
+                    a{
+                        z-index: 100;
+                    }
                     .logo{
                         position: absolute;
                         top: 2vw;

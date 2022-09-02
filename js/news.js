@@ -1,3 +1,9 @@
+let pointer = document.documentElement;        
+    pointer.addEventListener('mousemove', m => {
+    pointer.style.setProperty('--x', m.clientX + 'px');
+    pointer.style.setProperty('--y', m.clientY + 'px');
+  
+})
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -8,12 +14,7 @@ function bannerGray(){
     })
 
 
-    gg.fromTo(".first-page img",{
-        filter:"brightness(1)",
-    },{
-        duration:0.8,
-        filter:"brightness(0.3)",
-    }).to(".news .first-page-title",{
+    gg.to(".news .first-page-title",{
         opacity:0,
         duration:0.8
      },"<").fromTo(".first-page-shadow",{
@@ -22,32 +23,46 @@ function bannerGray(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").to(".news",{
+    },"<").fromTo(".hover-light",{
+       
+    },{
         duration:0.8,
-        backgroundColor:"#170a05aa"
+        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0950 0.01%, #1b0f08e1 30%",
+       
      },"<")
 }
 bannerGray()
 function bannerTitleIn(){
     let gg =gsap.timeline()
 
-    gg.fromTo(".first-page-title h2",{
+    gg.fromTo(".first-page-title .square1",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    }).fromTo(".first-page-title .square2",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    },"<+1").fromTo(".first-page-title h2",{
         opacity:0,
       
         y:30
     },{
-        delay:4,
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-title p",{
+    },"<+1.5").fromTo(".first-page-title p",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    })
+    },"<+0.5")
 }
 bannerTitleIn()
 

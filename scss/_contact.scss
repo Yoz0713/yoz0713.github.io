@@ -10,7 +10,7 @@
             position: fixed;
             width: 100%;
             height: 100vh;
-            z-index: -1;
+            z-index: -2;
         }
         &-title{
             display: flex;
@@ -140,14 +140,10 @@
                             top: 0;
                           
                         }
-                        &:hover{
-                            color: #fff;
-                   
-                        }
                         &:hover::after{
                             clip-path: circle(150% at 0% 80%);
-                            background-color:$gold_color_opacity;
-                        z-index: -10;
+                            background-color:#1d11038b;
+                        z-index: -1;
                         }
                     }
                     
@@ -260,15 +256,6 @@
                                 left: 0;
                                 top: 0;
                               
-                            }
-                            &:hover{
-                                color: #fff;
-                       
-                            }
-                            &:hover::after{
-                                clip-path: circle(150% at 0% 80%);
-                                background-color:$gold_color_opacity;
-                            z-index: -10;
                             }
                         }
                         

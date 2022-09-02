@@ -23,7 +23,7 @@ function bannerGray(){
        
     },{
         duration:0.8,
-        background:"radial-gradient(circle at var(--x) var(--y), transparent 0.01%, #1b0f086c 1%, #1b0f08e1 30%",
+        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0950 0.01%, #1b0f08e1 30%",
        
      },"<")
 }
@@ -31,23 +31,34 @@ bannerGray()
 function bannerTitleIn(){
     let gg =gsap.timeline()
 
-    gg.fromTo(".first-page-title h2",{
+    gg.fromTo(".first-page-title .square1",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    }).fromTo(".first-page-title .square2",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    },"<+1").fromTo(".first-page-title h2",{
         opacity:0,
       
         y:30
     },{
-        delay:4,
         opacity:1,
         duration:0.8,
         y:0
-    }).fromTo(".first-page-title p",{
+    },"<+1.5").fromTo(".first-page-title p",{
         opacity:0,
         y:30
     },{
         opacity:1,
         duration:0.8,
         y:0
-    })
+    },"<+0.5")
 }
 bannerTitleIn()
 
@@ -97,7 +108,7 @@ function bannerBoxIn(){
     },{
         repeat:-1,
         duration:10,
-        delay:3.5,
+        delay:2,
         transformOrigin:"50% 50%",
         rotate:"360deg",
         ease:"linear"
@@ -143,18 +154,24 @@ function secondPageAnimation(){
         opacity:1,
         duration:0.8
     },"<+0.5").fromTo(".second-page-bottom-left .square1",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
+        opacity:0,
+        filter:"blur(0)",
+        y:45
     },{
-        strokeDashoffset: 0,
-        duration:25,
+        opacity:1,
+        filter:"blur(1)",
+        duration:1,
+        y:0
     },"<").fromTo(".second-page-bottom-left .square2",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
+        opacity:0,
+        filter:"blur(0)",
+        y:-45
     },{
-        strokeDashoffset: 0,
-        duration:25,
-    },"<+1").fromTo(".second-page-bottom h2",{
+        opacity:1,
+        filter:"blur(1)",
+        duration:1,
+        y:0
+    },"<").fromTo(".second-page-bottom h2",{
         x:30,
         opacity:0
     },{
@@ -192,7 +209,7 @@ function secondPageAnimation(){
     },{
         repeat:-1,
         duration:10,
-        delay:3.5,
+    
         transformOrigin:"50% 50%",
         rotate:"360deg",
         ease:"linear"
@@ -208,18 +225,24 @@ function thirdPageAnimation(){
         }
     })
     gg.fromTo(".third-page-left .square1",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
+        opacity:0,
+        filter:"blur(0)",
+        y:45
     },{
-        strokeDashoffset: 0,
-        duration:25,
+        opacity:1,
+        filter:"blur(1)",
+        duration:1,
+        y:0
     },"<").fromTo(".third-page-left .square2",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
+        opacity:0,
+        filter:"blur(0)",
+        y:-45
     },{
-        strokeDashoffset: 0,
-        duration:25,
-    },"<+1").fromTo(".third-page-left h2",{
+        opacity:1,
+        filter:"blur(1)",
+        duration:1,
+        y:0
+    },"<").fromTo(".third-page-left h2",{
         y:30,
         opacity:0
     },{
@@ -245,7 +268,13 @@ function thirdPageAnimation(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:25,
+        duration:15,
+    },"<+0.5").fromTo(".third-page-right .split2",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:15,
     },"<+0.5").fromTo(".third-page-right-top-box",{
         y:30,
         opacity:0,
@@ -255,13 +284,13 @@ function thirdPageAnimation(){
         opacity:1,
         filter:"blur(0)",
         duration:0.8
-    },"<").fromTo(".third-page-right .split2",{
+    },"<").fromTo(".third-page-right .split3",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:25,
-    },"<0.2").fromTo(".third-page-right-center > :nth-child(2)",{
+        duration:15,
+    },"<+0.5").fromTo(".third-page-right-center > :nth-child(2)",{
         x:-30,
         opacity:0,
         filter:"blur(1)"
@@ -270,13 +299,13 @@ function thirdPageAnimation(){
         filter:"blur(0)",
         opacity:1,
         duration:0.8
-    },"<").fromTo(".third-page-right .split3",{
+    },"<").fromTo(".third-page-right .split4",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:25,
-    },"<0.2").fromTo(".third-page-right-bottom-box",{
+        duration:15,
+    },"<+0.5").fromTo(".third-page-right-bottom-box",{
         y:-30,
         opacity:0,
         filter:"blur(1)"
@@ -285,13 +314,13 @@ function thirdPageAnimation(){
         y:0,
         opacity:1,
         duration:0.8
-    },"<").fromTo(".third-page-right .split4",{
+    },"<").fromTo(".third-page-right .split5",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:25,
-    },"<0.2").fromTo(".third-page-right-center > :nth-child(1)",{
+        duration:15,
+    },"<+0.5").fromTo(".third-page-right-center > :nth-child(1)",{
         x:30,
         filter:"blur(1)",
         opacity:0
@@ -306,7 +335,7 @@ function thirdPageAnimation(){
     },{
         strokeDashoffset: 0,
         duration:8,
-    },"<+0.9")
+    },"<+0.5")
 
     // .fromTo(".third-page-right .outerLine",{
     //     opacity:0
@@ -327,7 +356,7 @@ function thirdPageAnimation(){
     },{
         repeat:-1,
         duration:10,
-        delay:2.5,
+
         transformOrigin:"50% 50%",
         rotate:"360deg",
         ease:"linear"
@@ -337,48 +366,43 @@ thirdPageAnimation()
 
 let g1 = document.querySelectorAll(".parallax");
 for(let i = 0 ; i < g1.length ; i++){
-    g1[i].addEventListener("mousemove",(e)=>{
+
+    g1[i].addEventListener("mouseenter",(e)=>{
 
    
 
-        let g2 = document.querySelectorAll(".g2");
-     
-         let mouseX = -(e.screenX - (e.screenX*2));
-         let mouseY = -(e.screenY - (e.screenY*2));
+   
+    
+         let mousex = e.clientX;
         // g1.forEach((item)=>{
         //     item.currentTranslate.x = mouseX/20;
          
-        //     console.log(item.currentTranslate.y)
+        //     console.log(item.currentTranslate.x)
         // })
         
-        // console.log(mouseX,mouseY,g1,g2)
-        let gg = gsap.timeline();
-        gg.to(g1[i],{
-            x:-(mouseX/25),
-        
-        })
+        // console.log(mouseX,mousex,g1,g2)
+        let gg3 = gsap.timeline();
+        console.log()
+        gg3.to(g1[i].children[0].children[0],{
+            x:-(mousex/40),
+            y:-(mousex/200)
+        }).to(g1[i].children[1].children[0],{
+            y:(mousex/200),
+            x:(mousex/40)
+        },"<+0.1")
         
     })
     g1[i].addEventListener("mouseleave",()=>{
 
    
-
-     
-     
-        // let mouseX = -(e.screenX - (e.screenX*2));
-        // let mouseY = -(e.screenY - (e.screenY*2));
-        // g1.forEach((item)=>{
-        //     item.currentTranslate.x = mouseX/20;
-         
-        //     console.log(item.currentTranslate.y)
-        // })
-        
-        // console.log(mouseX,mouseY,g1,g2)
-        let gg = gsap.timeline();
-        gg.to(g1[i],{
+        let gg3 = gsap.timeline();
+        gg3.to(g1[i].children[0].children[0],{
             x:0,
-            duration:1.5
-        })
+            y:0,
+        }).to(g1[i].children[1].children[0],{
+            y:0,
+            x:0,
+        },"<")
         
     })
 }

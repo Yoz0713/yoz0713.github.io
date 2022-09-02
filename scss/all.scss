@@ -14,8 +14,8 @@
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
- 
 }
+
 
 @keyframes drawSquare{
     0%{
@@ -75,11 +75,11 @@
     }
    
 }
-@keyframes text-clip {
-    from {
-      clip-path: circle(10%)
-    }
-    to {
-      clip-path: circle(100%)
-    }
+@keyframes lineGrow {
+   0%{
+    width:0
+   }
+   100%{
+    width: 11vw;
+   }
   }

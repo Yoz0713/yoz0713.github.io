@@ -12,7 +12,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             object-fit: cover;
         }
         &-box{
@@ -46,7 +46,7 @@
             position: relative;
             width: 30vw;
             z-index: 11;
-            margin: 0vw 6vw 3vw;
+            margin: 0vw 10vw 3vw;
 
           p{
             line-height: 40px;
@@ -55,16 +55,14 @@
           svg{
                
             position: absolute;
-            left: -80px;
-            top: -100px;
+            left: -120px;
+            top: -130px;
             .g1{
                 transform-box: fill-box;
                 transform-origin: center;
                 animation: rotate 10s linear 1.5s infinite;
                 .square1{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear forwards;
+                 
                     transform-box: fill-box;
                     transform-origin: center;
                     transform: rotate(43deg);
@@ -75,9 +73,7 @@
                 transform-origin: center;
                 animation: rotate 10s linear 1.5s infinite;
                 .square2{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear 2s forwards;
+                   
                     transform-box: fill-box;
                     transform-origin: center;
                     transform: rotate(56deg);
@@ -190,54 +186,62 @@
                 
                 .lineBox{
                     display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+                   
+                   
               
                     width: 100%;
                     height: 100%;
                   
                     > svg{
+                        position: absolute;
                         width: 100%;
                         height: 100%;
                     }
                 }
                 &-para{
                     display: flex;
-                    position: absolute;
+                    flex: 1 0 100%;
+                    margin-left: 10%;
                     flex-direction: column;
-                    margin-right: 22%;
+                    
                     align-items: center;
                     justify-content: center;
             
                     > svg{
                         position: relative;
-                        width: 250px;
-                        height: 50px;
+                        width: 100%;
+                        height: 10%;
                         margin-right: 8px;
                         margin-bottom: 1vw;
                     
                     }
                     > p{
-                        width:370px;
+                        width:23.7vw;
                   
                     }
-                
+                    a{
+                        margin-top: 5vw;
+                    }
                     .readmore{
                         cursor: pointer;
                         display: flex;
-                        width: fit-content;
-                        justify-content: flex-start;
+                        width: 23.7vw;
+                        justify-content: center;
                         z-index: 10;
-                        margin-top: 5vw;
-                        svg{
-                            margin: 0;
-                            overflow-x: hidden;
+                        
+                        &-box{
+                            display: flex;
+                            svg{
+                                margin: 0;
+                                overflow-x: hidden;
+                            }
+                            h3{
+                         
+                                line-height: 65px;
+                                margin-left: 0.8vw;
+                            }
                         }
-                        h3{
                      
-                            line-height: 65px;
-                            margin-left: 0.8vw;
-                        }
                         p{
                             line-height: 65px;
                             margin-right: 0.8vw;
@@ -256,7 +260,7 @@
         padding:3vw 14vw 0vw;
         &-box{
             display: flex;
-           
+          
             width: 100%;
             height: 22vw;
             padding: 4vw 0 4vw;
@@ -319,7 +323,13 @@
 
 
 }
-
+.hover-light{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: transparent;
+    z-index: -1;
+}
 
 @media all and (max-width:1440px){
     .blog{
@@ -328,57 +338,20 @@
                 position: relative;
                 width: 45vw;
                 z-index: 11;
-                margin: 0vw 6vw 3vw;
+                margin: 0vw 10vw 4vw;
     
               p{
-                line-height: 40px;
+                line-height: 2.8vw;
                 letter-spacing: 0.2vw;
               }
-              svg{
-                position: absolute;
-                .g1{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    animation: rotate 10s linear 1.5s infinite;
-                    .square1{
-                        stroke-dashoffset: 2000;
-                        stroke-dasharray: 2000;
-                        animation: drawSquare 8s linear forwards;
-                        transform-box: fill-box;
-                        transform-origin: center;
-                        transform: rotate(43deg);
-                        }
-                }
-                .g2{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    animation: rotate 10s linear 1.5s infinite;
-                    .square2{
-                        stroke-dashoffset: 2000;
-                        stroke-dasharray: 2000;
-                        animation: drawSquare 8s linear 2s forwards;
-                        transform-box: fill-box;
-                        transform-origin: center;
-                        transform: rotate(56deg);
-                        }
-                }
-       
+         
             }
-            }
-            &-shadow{
-                position: fixed;
-                width: 100%;
-                height: 20vw;
-                background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
-                bottom: 0;
-                left: 0;
-                z-index: 10;
-            }
+      
         }
         .second-page{
             width: 100%;
             height: 60vw;
-            padding:5vw 14vw;
+            padding:2vw 14vw;
             &-top{
                 display: flex;
                 align-items: center;
@@ -473,53 +446,43 @@
                             height: 100%;
                         }
                     }
+                    a{
+                        margin-top: 1vw;
+                    }
                     &-para{
-                        display: flex;
-                        flex-direction: column;
-                        margin-right: 8vw;
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 3vw;
-                        > svg{
-                            position: relative;
-                            width: 250px;
-                            height: 50px;
-                            margin-right: 8px;
-                            margin-bottom: 2vw;
-                            transform: scale(1);
-                        }
-                        > p{
-                            width:320px;
-                      
-                        }
-                        a{
-                            margin-top: 3vw;
+                        
+                        flex: 1 1 ;
+                        margin-left: 20%;
+                        svg{
+                            height: 14%;
                         }
                         .readmore{
-                            margin: 0;
-                            cursor: pointer;
-                            display: flex;
-                            width: fit-content;
-                            justify-content: flex-start;
-                            z-index: 10;
-                      
-                            svg{
-                                transform: scale(0.8);
-                                margin: 0;
-                                overflow-x: hidden;
-                            }
-                            h3{
-                         
-                                line-height: 75px;
-                                margin-left: 0.8vw;
-                            }
+                            margin-top: -2vw;
+                            position: relative;
+                            align-items: flex-end;
                             p{
-                                line-height: 75px;
-                                margin-right: 0.8vw;
+                                position: absolute;
+                                order: 3;
+                                right: 0;
+                                bottom: 0;
                             }
-                          
-                           
+                            &-box{
+                                flex: 1 1 30%;
+                                svg{
+                                
+                                    transform: scale(0.75);
+                              
+                               
+                                }
+                                h3{
+                                    text-align: end;
+                                    line-height: 77px;
+                                }
+                            }
+                         
                         }
+                
+                    
                     }
                   
                 }
@@ -557,7 +520,7 @@
                     .box{
                         display: flex;
                        width: 100%;
-                       height: 60%;
+                       height: 40%;
                        justify-content: flex-end;
                        align-items: flex-end;
                        .readmore{

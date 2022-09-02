@@ -14,7 +14,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             object-fit: cover;
             background-color: rgb(48, 48, 48);
         }
@@ -49,7 +49,7 @@
             position: relative;
             width: 30vw;
             z-index: 11;
-            margin: 0vw 6vw 3vw;
+            margin: 0vw 8vw 3.5vw;
 
           p{
             pointer-events:none;
@@ -59,31 +59,20 @@
           svg{
                
             position: absolute;
-            left: -80px;
-            top: -100px;
+            left: -120px;
+            top: -130px;
+           
+          
             .g1{
                 transform-box: fill-box;
                 transform-origin: center;
-
-                .square1{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear forwards;
-         
-          
-                    }
+                transition: 0.5s;
             }
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-     
-                .square2{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear 2s forwards;
-                
+                transition: 0.5s;
              
-                    }
             }
    
         }
@@ -254,6 +243,7 @@
             position: relative;
             width: 50%;
             height: 100%;
+           
             svg{
                 position: absolute;
                 width: 60%;
@@ -274,7 +264,7 @@
                     text-align: center;
                     margin-top: -8vw;
                     h2{
-                      
+                     
                         font-size: 2.7vw;
                     }
                     p{
@@ -389,7 +379,7 @@
     position: fixed;
     height: 100vh;
     background: transparent;
-   
+  
 }
 
 footer{
@@ -397,3 +387,314 @@ footer{
     z-index: 10;
    
 } 
+
+
+@media all and (max-width:1440px){
+
+    .about{
+        
+        .first-page{
+           
+        
+            &-box{
+              
+                &-2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                 
+                    background-color: $banner_bg_color;
+                    padding: 1vw;
+                  
+                    svg{
+                        transform: translateX(-6px);
+                        rect{
+                            transform-box: fill-box;
+                            transform-origin: center;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+            &-title{
+                position: relative;
+                width: 30vw;
+                z-index: 11;
+                margin: 0vw 10vw 4vw;
+    
+              p{
+                pointer-events:none;
+                line-height: 2.8vw;
+                letter-spacing: 0.2vw;
+              }
+            }
+        
+        }
+        .second-page{
+            height: 60vw;
+            margin-bottom: 15vw;
+            &-top{
+                width: 100%;
+                height: fit-content;
+                &-img{
+                    position: relative;
+                    width: 100%;
+                    height: 31.85vw;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                    .lineBox{
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 100%;
+                        height: 100%;
+                        svg{
+                            margin-left: 2vw;
+                            width: 100%;
+                            height:100%
+                        }
+                    }
+                   
+                    h3{
+                        text-align: end;
+                        position: absolute;
+                        right: 2vw;
+                        top: 6vw;
+                        color: #fff;
+                        font-family: "Noto Serif TC",serif;
+                        letter-spacing: .2vw;
+                        font-size: 1.76vw;
+                        font-weight: 400;
+                    }
+                }
+            }
+            &-bottom{
+                display: flex;
+                justify-content: space-between;
+          
+                width: 100%;
+                height: 42%;
+                margin-top: -3.5vw;
+                &-left{
+                    display: flex;
+                    align-items: center;
+                 
+                    position: relative;
+                    width: 40%;
+                    height: 100%;
+                    svg{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                  
+                        left: -6vw;
+                      
+                    }
+                    h2{
+                        pointer-events:none;
+                        position: relative;
+                        margin-bottom: -1.5vw;
+                        margin-left: 7vw;
+                       
+                    }
+                }
+                &-center{
+                    width:90%;
+                    height: 100%;
+                    padding: 3vw 0 3vw 5vw;
+                    & :nth-child(1){
+                        margin-bottom: 2vw;
+                    }
+                }
+                &-right{
+                    position: relative;
+                    width: 0%;
+                    height: 100%;
+                    &-box{
+                        position: absolute;
+                        right: -7vw;
+                        bottom: -12vw;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        img{
+                      
+                            width: 18vw;
+                            height: 16.5vw;
+                         }
+                         & :nth-child(2){
+                             
+                             width: 12vw;
+                             height: 11vw;
+                             right: -2vw;
+                             bottom: 0;
+                             position: absolute;
+                         }
+                    }
+                  
+                }
+            }
+        }
+        .third-page{
+            display: flex;
+            width: 100vw;
+            height: 60vw;
+            padding: 5vw 8vw 0;
+            margin-bottom: 10vw;
+            &-left{
+                width: 50%;
+                height: 100%;
+                &-top{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 50%;
+                    h2{
+                        pointer-events:none;
+                    }
+                    svg{
+                        width: 95%;
+                        height: 95%;
+                        position: absolute;
+                        top: 3.5%;
+                        left: 2.5%;
+                    }
+                }
+                &-bottom{
+                    display: flex;
+                    justify-content: center;
+                    padding: 2vw 0vw;
+                    width: 100%;
+                    height: 50%;
+                    & :nth-child(1){
+                        margin-bottom: 2.5vw;
+                    }
+                }
+            }
+            &-right{
+                position: relative;
+                width: 50%;
+                height: 100%;
+               
+                svg{
+                    position: absolute;
+                    width: 60%;
+                    height: 65%;
+                    left: 0.12vw;
+                    right: 0;
+                    top: 6%;
+              
+                    margin: 0 auto;
+                }
+                &-top{
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    justify-content: center;
+                    &-box{
+                        position: relative;
+                        text-align: center;
+                        margin-top: -8vw;
+                        h2{
+                         
+                            font-size: 2.7vw;
+                        }
+                        p{
+                            letter-spacing:3px;
+                            color: $gold_color;
+                            font-size: 0.8vw;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left:50%;
+                            top: 6.35vw;
+                            width: 1px;
+                            height: 2.4vw;
+                            background-color: $gold_color_opacity;
+                        }
+                    }
+                }
+                &-center{
+                    display: flex;
+                    width: 100%;
+                    height: 50%;
+                    padding: 0 3vw 0 2.5vw;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-box{
+                        width: 20%;
+                        text-align: center;
+                        position: relative;
+                        h2{
+                          
+                            font-size: 2.7vw;
+                        }
+                        p{
+                            
+                            letter-spacing:3px;
+                            color: $gold_color;
+                            font-size: 0.8vw;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left:0;
+                            bottom: -1vw;
+                            right: 0;
+                            margin: 0 auto;
+                            width: 2.4vw;
+                            height: 1px;
+                            background-color: $gold_color_opacity;
+                        }
+                    }
+                
+                }
+                &-bottom{
+                    display: flex;
+                    width: 100%;
+                    height: 37%;
+                    justify-content: center;
+                    align-items: flex-end;
+                    &-box{
+                        position: relative;
+                        text-align: center;
+                        margin-top: -8vw;
+                        margin-left: 0.1vw;
+                        h2{
+                            margin-left: 0.2vw;
+                            font-size: 2.7vw;
+                        }
+                        p{
+                            letter-spacing:3px;
+                            color: $gold_color;
+                            font-size: 0.8vw;
+                            margin-left: 0.2vw;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left:50%;
+                            top: -2.6vw;
+                            width: 1px;
+                            height: 2.4vw;
+                            background-color: $gold_color_opacity;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

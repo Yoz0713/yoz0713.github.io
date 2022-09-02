@@ -12,7 +12,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: -2;
             object-fit: cover;
         }
         &-box{
@@ -62,9 +62,7 @@
                 transform-origin: center;
                 animation: rotate 10s linear 1.5s infinite;
                 .square1{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear forwards;
+                  
                     transform-box: fill-box;
                     transform-origin: center;
                     transform: rotate(43deg);
@@ -75,9 +73,7 @@
                 transform-origin: center;
                 animation: rotate 10s linear 1.5s infinite;
                 .square2{
-                    stroke-dashoffset: 2000;
-                    stroke-dasharray: 2000;
-                    animation: drawSquare 8s linear 2s forwards;
+                   
                     transform-box: fill-box;
                     transform-origin: center;
                     transform: rotate(56deg);
@@ -227,23 +223,20 @@
                     content:"";
                     display: block;
                     width: 100%;
-                    height: calc(100% + 2.5px);
+                    height: calc(100% );
                     clip-path: circle(10% at 0% 80%);
                     background-color: transparent;
                     transition: 0.5s;
                     position: absolute;
                     left: 0;
-                    top: -1px;
+                    top: 0;
                 }
-                &:hover{
-                    color: #fff;
-           
-                }
+                
                 &:hover::after{
                   
                     clip-path: circle(150% at 0% 80%);
-                    background-color:$gold_color_opacity;
-                    z-index: 10;
+                    background-color:#1d11038b;
+                    z-index: -1;
                 }
             }
         }
@@ -372,15 +365,19 @@
     font-size: 15px;
     letter-spacing: 2px;
   }
+
+  .hover-light{
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background: transparent;
+  
+}
   @media all and (max-width:1440px){
     .blogInner{
         width: 100%;
         overflow-x: hidden;
-        .first-page{
-
-       
-         
-        }
+     
         .second-page{
             height: 60vw;
         

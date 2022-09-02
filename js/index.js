@@ -31,6 +31,8 @@ let swiper1 = new Swiper(".swiper1",{
    
 })
 
+
+
 function banner1In(){
     let gg = gsap.timeline();
 
@@ -63,7 +65,7 @@ next.onclick = function(){
 
 // second-page line-grow animation
 let li = document.querySelectorAll(".switchImg li");
-let switchImg = document.querySelectorAll(".home-second-page-bottom-left-img img")
+let switchImg = document.querySelectorAll(".home-second-page-bottom-left-img a")
 for(let i = 0 ; i <li.length ; i++){
     li[i].onclick = function(e){
         let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
@@ -81,19 +83,30 @@ for(let i = 0 ; i <li.length ; i++){
 // banner title in
 function bannerTitleIn(){
     let gg =gsap.timeline();
-    gg.fromTo(".home-first-page-title h1",{
+    gg.fromTo(".home-first-page-title .square1",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    }).fromTo(".home-first-page-title .square2",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: 0,
+        duration:12,
+    },"<+1").fromTo(".home-first-page-title h1",{
         opacity:0
     },{
         opacity:1,
         duration:1,
-        delay:4
-    }).fromTo(".home-first-page-title p",{
+    },"<+1.5").fromTo(".home-first-page-title p",{
         opacity:0
     },{
         opacity:1,
         duration:1,
       
-    })
+    },"<+0.5")
 }
 bannerTitleIn()
 
@@ -146,16 +159,23 @@ function seondPageRight(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:`.home-second-page-top`,
-            start:"top bottom"
+            start:"top center"
         }
     })
-    gg.fromTo(".home-second-page-bottom-right > svg polyline",{
+    gg.fromTo(".home-second-page-bottom-right svg polyline",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 500,
         duration:3,
-    }).fromTo(".home-second-page-bottom-right-para > h3",{
+    }).fromTo(".home-second-page-bottom-left-img",{
+
+        x:-100
+    },{
+        x:0,
+   
+        duration:2
+    },"<").fromTo(".home-second-page-bottom-right-para > h3",{
         opacity:0,
         y:30,
     },{
@@ -279,7 +299,7 @@ function thirdPageAnimation(){
         y:30,
         opacity:0
     },{
-        delay:1,
+        delay:0.6,
         duration:0.8,
         opacity:1,
         y:0
@@ -290,39 +310,39 @@ function thirdPageAnimation(){
         duration:0.8,
         opacity:1,
         y:0
-    },"<+0.3").fromTo(".home-third-page .li3",{
+    },"<+0.2").fromTo(".home-third-page .li3",{
         y:30,
         opacity:0
     },{
         duration:0.8,
         opacity:1,
         y:0
-    },"<+0.3").fromTo(".home-third-page .readmore",{
+    },"<+0.2").fromTo(".home-third-page .readmore",{
         opacity:0,
         y:30
     },{
         opacity:1,
         y:0,
         duration:0.8,
-    },"<+0.3").fromTo(".path1",{
+    },"<+0.2").fromTo(".path1",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 800,
-        duration:2,
-    },"<+0.3").fromTo(".path2",{
+        duration:1.5,
+    },"<").fromTo(".path2",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 800,
-        duration:2,
-    },"<+0.3").fromTo(".path3",{
+        duration:1.5,
+    },"<+0.1").fromTo(".path3",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 800,
-        duration:2,
-    },"<+0.3")
+        duration:1.5,
+    },"<+0.1")
 }
 thirdPageAnimation()
 

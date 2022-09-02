@@ -41,6 +41,14 @@ function bannerTitleIn(){
 }
 bannerTitleIn()
 
+let pointer = document.documentElement;        
+    pointer.addEventListener('mousemove', m => {
+    pointer.style.setProperty('--x', m.clientX + 'px');
+    pointer.style.setProperty('--y', m.clientY + 'px');
+  
+})
+
+
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -49,23 +57,18 @@ function bannerGray(){
             toggleActions:"play none none reverse"
         }
     })
-    gg.fromTo(".first-page img",{
-        filter:"brightness(1)",
-    },{
-        duration:0.8,
-        filter:"brightness(0.3)",
-    }).to(".portfolio .first-page-title p",{
-        opacity:0,
-        duration:0.01
-     },"<").fromTo(".first-page-shadow",{
+    gg.fromTo(".first-page-shadow",{
       
     },{
         duration:0.8,
         opacity:0,
         height:1
-    },"<").to(".portfolio",{
+    },"<").fromTo(".hover-light",{
+       
+    },{
         duration:0.8,
-        backgroundColor:"#170a05aa"
+        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0990 0.01%, #1b0f08e1 30%",
+       
      },"<")
 }
 bannerGray()
