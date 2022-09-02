@@ -626,7 +626,9 @@
                             cursor: pointer;
                             position: relative;
                             width: fit-content;
-                          
+                            p{
+                                font-size: 1.2vw;
+                            }
                             &::after{
                                 display: none;
                                 content: "";

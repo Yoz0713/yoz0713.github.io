@@ -166,14 +166,15 @@ function seondPageRight(){
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
-        strokeDashoffset: 500,
+        strokeDashoffset: 300,
         duration:3,
     }).fromTo(".home-second-page-bottom-left-img",{
 
-        x:-100
+        opacity:0,
+        filter:"blur(1)"
     },{
-        x:0,
-   
+        opacity:1,
+        filter:"blur(0)",
         duration:2
     },"<").fromTo(".home-second-page-bottom-right-para > h3",{
         opacity:0,
