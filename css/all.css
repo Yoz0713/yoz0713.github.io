@@ -4096,6 +4096,7 @@ footer span {
     align-items: flex-end;
   }
   .news .second-page-bottom-right-para .readmore p {
+    margin-right: 2.3vw;
     position: absolute;
     order: 3;
     right: 0;
