@@ -4758,7 +4758,7 @@ body {
 .contact .second-page-right form p {
   width: 100%;
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 4px;
 }
 .contact .second-page-right form .form-box {
@@ -4766,9 +4766,6 @@ body {
   justify-content: center;
   width: 100%;
   position: relative;
-}
-.contact .second-page-right form .form-box > p {
-  font-size: 18px;
 }
 .contact .second-page-right form .form-box-word {
   width: 20%;
