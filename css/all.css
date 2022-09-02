@@ -2832,7 +2832,7 @@ footer span {
   margin-bottom: 1vw;
 }
 .blog .second-page-bottom-right-para > p {
-  width: 23.7vw;
+  width: 19vw;
 }
 .blog .second-page-bottom-right-para a {
   margin-top: 5vw;
@@ -3062,6 +3062,7 @@ footer span {
     align-items: flex-end;
   }
   .blog .second-page-bottom-right-para .readmore p {
+    margin-right: 2.3vw;
     position: absolute;
     order: 3;
     right: 0;
@@ -3795,7 +3796,7 @@ footer span {
   margin-bottom: 1vw;
 }
 .news .second-page-bottom-right-para > p {
-  width: 23.7vw;
+  width: 19vw;
 }
 .news .second-page-bottom-right-para a {
   margin-top: 5vw;
@@ -4755,17 +4756,14 @@ footer span {
 .contact .second-page-right form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   height: 100%;
   z-index: 15;
 }
 .contact .second-page-right form p {
-  width: 100%;
-  color: #fff;
   font-size: 22px;
-  letter-spacing: 4px;
 }
 .contact .second-page-right form .form-box {
   display: flex;
@@ -4833,11 +4831,14 @@ footer span {
   left: 0;
   top: 0;
 }
+.contact .second-page-right form .form-box-inner:hover {
+  color: #fff;
+}
 .contact .second-page-right form .form-box-inner:hover::after {
   -webkit-clip-path: circle(150% at 0% 80%);
           clip-path: circle(150% at 0% 80%);
   background-color: rgba(29, 17, 3, 0.5450980392);
-  z-index: -1;
+  z-index: -10;
 }
 
 @media all and (max-width: 1440px) {
@@ -4863,11 +4864,14 @@ footer span {
   .contact .second-page-right form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     height: 100%;
     z-index: 15;
+  }
+  .contact .second-page-right form p {
+    font-size: 1.38vw;
   }
   .contact .second-page-right form h3 {
     font-size: 32px;
