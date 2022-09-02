@@ -37,7 +37,11 @@ let pointer = document.documentElement;
     pointer.style.setProperty('--y', m.clientY + 'px');
   
 })
-
+if(window.innerWidth < 1440){
+    let pointer = document.documentElement;        
+    pointer.style.setProperty('--x', 30 + 'px');
+    pointer.style.setProperty('--y', 100 + 'px');
+}
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -306,8 +310,3 @@ function seventhPageAnimation(){
 }
 seventhPageAnimation()
 
-if(window.innerWidth < 1440){
-    let pointer = document.documentElement;        
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');
-}

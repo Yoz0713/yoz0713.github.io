@@ -1431,9 +1431,7 @@ footer span {
   .portfolioInner .first-page-title img {
     position: relative;
     width: 9.5vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 7vw;
     z-index: 10;
   }
   .portfolioInner .first-page-title p {
@@ -2489,42 +2487,19 @@ footer span {
     height: 100%;
   }
   .home-second-page-bottom-right-para {
-    display: flex;
-    flex-direction: column;
-    margin-right: 3vw;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw 0 0;
+    margin-top: 2vw;
+    margin-right: 6.5vw;
   }
-  .home-second-page-bottom-right-para svg {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
+  .home-second-page-bottom-right-para h3 {
+    text-align: center;
   }
-  .home-second-page-bottom-right-para p {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+  .home-second-page-bottom-right-para a {
+    margin-top: 3vw;
+    margin-right: 7vw;
+    height: 30%;
   }
-  .home-second-page-bottom-right-para .readmore {
-    cursor: pointer;
-    display: flex;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    justify-content: flex-start;
-    margin-right: 100px;
-    margin-top: 0vw;
-    z-index: 10;
-  }
-  .home-second-page-bottom-right-para .readmore svg {
+  .home-second-page-bottom-right-para a .readmore {
     margin: 0;
-    overflow-x: hidden;
-  }
-  .home-second-page-bottom-right-para .readmore h3 {
-    line-height: 65px;
-    margin-left: 0.8vw;
   }
   .home-third-page {
     display: flex;
@@ -2979,6 +2954,7 @@ footer span {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .blog .second-page-top nav ul li .menu_font {
     position: relative;
