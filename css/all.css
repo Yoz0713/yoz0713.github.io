@@ -2995,16 +2995,18 @@ footer span {
     height: 90%;
     position: relative;
   }
-  .blog .second-page-bottom img {
+  .blog .second-page-bottom > a {
+    margin-top: 8vw;
+  }
+  .blog .second-page-bottom > a img {
     cursor: pointer;
     border-radius: 40px 0 40px 0;
-    width: 50%;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-top: 8vw;
     z-index: 10;
   }
   .blog .second-page-bottom-right {
@@ -3681,6 +3683,7 @@ footer span {
   padding: 1.3vw 0;
 }
 .news .second-page-top nav ul li {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4029,16 +4032,18 @@ footer span {
     height: 90%;
     position: relative;
   }
-  .news .second-page-bottom img {
+  .news .second-page-bottom > a {
+    margin-top: 8vw;
+  }
+  .news .second-page-bottom > a img {
     cursor: pointer;
     border-radius: 40px 0 40px 0;
-    width: 50%;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-top: 8vw;
     z-index: 10;
   }
   .news .second-page-bottom-right {
