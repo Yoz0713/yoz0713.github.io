@@ -151,7 +151,7 @@
                         img{
                           
                             margin: 1vw;
-                            transform: scale(0.4);
+                            transform: scale(0.25);
                             width:3%;
                             height: fit-content;
                         }
@@ -162,6 +162,7 @@
         &-bottom{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             width: 100%;
             height: 90%;
             position: relative;
@@ -180,11 +181,11 @@
             }
            
             &-right{
+                display: flex;
                 position: absolute;
                 width: 50vw;
                 height: 27vw;
                 left: 31.5%;
-                top: -2vw;
                 
                 .lineBox{
                     display: flex;
@@ -262,7 +263,7 @@
      
         width: 100vw;
         height: 100vh;
-        padding: 3vw 12vw;
+        padding: 3vw 11vw;
         &-box{
        
             display: flex;
@@ -306,7 +307,7 @@
              
                     width: 21.6vw;
                     letter-spacing: 0.2vw;
-                    font-size: 0.79vw;
+                   font-size: 0.79vw;
                 }
                 .readmore{
                     display: flex;
@@ -359,7 +360,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -2vw;
+                right: -2.6vw;
             }
             &:nth-child(2)::after{
                 content: "";
@@ -368,7 +369,7 @@
                 height: 100%;
                 background-color: $gold_color_opacity;
                 position: absolute;
-                right: -2vw;
+                right: -2.6vw;
             }
            
         }
@@ -486,7 +487,7 @@
                             img{
                               
                                 margin: 1vw;
-                                transform: scale(0.4);
+                                transform: scale(0.65);
                                 width:3%;
                                 height: fit-content;
                             }
@@ -497,11 +498,12 @@
             &-bottom{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 width: 100%;
                 height: 90%;
                 position: relative;
                 > a{
-                    margin-top: 8vw;
+                    margin-top: 0vw;
                     img{
                         cursor: pointer;
                         border-radius: 40px 0 40px 0;
@@ -515,8 +517,9 @@
                 
                 &-right{
                     position: absolute;
-                    margin-top: 8vw;
-                    
+                    margin-top: 0vw;
+                    height: 100%;
+                    align-items: center;
                     .lineBox{
                         display: flex;
                         justify-content: flex-end;
@@ -582,7 +585,7 @@
                 height: 100%;
     
                 &-bottom{
-    
+
                     height: 30%;
                     &-box{
                    
@@ -590,13 +593,16 @@
                 
                     }
                     > h3{
+                        font-size: 1.2vw;
                         text-align: center;
                     }
                   
                     svg{
                         margin: -0.5vw 0 1.5vw;
                     }
-          
+                    > p{
+                        font-size: 0.9vw;
+                    }
                     .readmore{
           
                         justify-content:center;
