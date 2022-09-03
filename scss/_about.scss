@@ -61,30 +61,9 @@
             position: absolute;
             left: -120px;
             top: -130px;
-            .g1{
-                 
-                   
-                
-                .square1{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(43deg);
-                    }
-            }
-            .g2{
-              
-             
-                .square2{   
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(56deg);
-                
-                  
-                    }
-            }
+           
           
-          
-          
+         
    
         }
         }
@@ -165,27 +144,7 @@
                     height: 100%;
               
                     left: -6vw;
-                    .g1{
-                 
-                   
-                
-                        .square1{
-                            transform-box: fill-box;
-                            transform-origin: center;
-                            transform: rotate(43deg);
-                            }
-                    }
-                    .g2{
-                      
-                     
-                        .square2{   
-                            transform-box: fill-box;
-                            transform-origin: center;
-                            transform: rotate(56deg);
-                        
-                          
-                            }
-                    }
+                  
                 }
                 h2{
                     pointer-events:none;
@@ -257,27 +216,6 @@
                     position: absolute;
                     top: 3.5%;
                     left: 2.5%;
-                    .g1{
-                 
-                   
-                
-                        .square1{
-                            transform-box: fill-box;
-                            transform-origin: center;
-                            transform: rotate(43deg);
-                            }
-                    }
-                    .g2{
-                      
-                     
-                        .square2{   
-                            transform-box: fill-box;
-                            transform-origin: center;
-                            transform: rotate(56deg);
-                        
-                          
-                            }
-                    }
                 }
             }
             &-bottom{
@@ -411,7 +349,19 @@
 
 
 
-    
+    .g1{
+                     
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: rotate(43deg);
+  
+    }
+    .g2{
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: rotate(56deg);
+   
+    }
 }
 
 .hover-light{
