@@ -61,24 +61,23 @@
             position: absolute;
             left: -120px;
             top: -130px;
-            .g1{
-                 
-                   
-                
+            .g1{   
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(43deg) ;
                 .square1{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(43deg);
+                  
+                    transform-origin:50% 50%;
                     }
             }
             .g2{
-              
-             
+                transform-box: fill-box;
+                transform-origin: center;
+                transform: rotate(56deg);
                 .square2{   
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(56deg);
-                
+                   
+                   
+                transform-origin: 50% 50%;
                   
                     }
             }
@@ -165,7 +164,26 @@
                     height: 100%;
               
                     left: -6vw;
-                  
+                    .g1{   
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(43deg) ;
+                        .square1{
+                          
+                            transform-origin:50% 50%;
+                            }
+                    }
+                    .g2{
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(56deg);
+                        .square2{   
+                           
+                           
+                        transform-origin: 50% 50%;
+                          
+                            }
+                    }
                 }
                 h2{
                     pointer-events:none;
@@ -237,6 +255,26 @@
                     position: absolute;
                     top: 3.5%;
                     left: 2.5%;
+                    .g1{   
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(43deg) ;
+                        .square1{
+                          
+                            transform-origin:50% 50%;
+                            }
+                    }
+                    .g2{
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(56deg);
+                        .square2{   
+                           
+                           
+                        transform-origin: 50% 50%;
+                          
+                            }
+                    }
                 }
             }
             &-bottom{

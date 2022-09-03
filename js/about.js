@@ -103,7 +103,7 @@ function bannerBoxIn(){
 
     let gg2 = gsap.timeline();
 
-    gg2.fromTo(".first-page .g1",{
+    gg2.fromTo(".first-page .square1",{
         
     },{
         repeat:-1,
@@ -112,7 +112,7 @@ function bannerBoxIn(){
         transformOrigin:"center",
         rotate:"360deg",
         ease:"linear"
-    }).fromTo(".first-page .g2",{
+    }).fromTo(".first-page .square2",{
         
     },{
         repeat:-1,
@@ -204,16 +204,24 @@ function secondPageAnimation(){
         }
     })
 
-    gg2.fromTo(".second-page .square",{
+    gg2.fromTo(".second-page .square1",{
         
     },{
         repeat:-1,
         duration:10,
-    
-        transformOrigin:"50% 50%",
+        delay:2,
+        transformOrigin:"center",
         rotate:"360deg",
         ease:"linear"
-    })
+    }).fromTo(".second-page .square2",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        transformOrigin:"center",
+        rotate:"360deg",
+        ease:"linear"
+    },"<")
 }
 secondPageAnimation()
 
@@ -268,14 +276,14 @@ function thirdPageAnimation(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:15,
+        duration:30,
     },"<+0.5").fromTo(".third-page-right .split2",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-top-box",{
+        duration:30,
+    },"<").fromTo(".third-page-right-top-box",{
         y:30,
         opacity:0,
         filter:"blur(1)"
@@ -289,8 +297,8 @@ function thirdPageAnimation(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-center > :nth-child(2)",{
+        duration:30,
+    },"<").fromTo(".third-page-right-center > :nth-child(2)",{
         x:-30,
         opacity:0,
         filter:"blur(1)"
@@ -304,8 +312,8 @@ function thirdPageAnimation(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-bottom-box",{
+        duration:30,
+    },"<").fromTo(".third-page-right-bottom-box",{
         y:-30,
         opacity:0,
         filter:"blur(1)"
@@ -319,8 +327,8 @@ function thirdPageAnimation(){
         strokeDasharray: 2000
     },{
         strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-center > :nth-child(1)",{
+        duration:30,
+    },"<+1").fromTo(".third-page-right-center > :nth-child(1)",{
         x:30,
         filter:"blur(1)",
         opacity:0
@@ -351,61 +359,69 @@ function thirdPageAnimation(){
         }
     })
 
-    gg2.fromTo(".third-page .square",{
+    gg2.fromTo(".third-page .square1",{
         
     },{
         repeat:-1,
         duration:10,
-
-        transformOrigin:"50% 50%",
+        delay:1,
+        transformOrigin:"center",
         rotate:"360deg",
         ease:"linear"
-    })
+    }).fromTo(".third-page .square2",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        transformOrigin:"center",
+        rotate:"360deg",
+        ease:"linear"
+    },"<")
 }
 thirdPageAnimation()
 
-let g1 = document.querySelectorAll(".parallax");
-for(let i = 0 ; i < g1.length ; i++){
+ let g1 = document.querySelectorAll(".parallax");
+ for(let i = 0 ; i < g1.length ; i++){
 
-    g1[i].addEventListener("mouseenter",(e)=>{
+     g1[i].addEventListener("mouseenter",(e)=>{
 
    
 
    
     
-         let mousex = e.clientX;
-        // g1.forEach((item)=>{
-        //     item.currentTranslate.x = mouseX/20;
+          let mousex = e.clientX;
+//         // g1.forEach((item)=>{
+//         //     item.currentTranslate.x = mouseX/20;
          
-        //     console.log(item.currentTranslate.x)
-        // })
+//         //     console.log(item.currentTranslate.x)
+//         // })
         
-        // console.log(mouseX,mousex,g1,g2)
-        let gg3 = gsap.timeline();
-        console.log()
-        gg3.to(g1[i].children[0].children[0],{
-            x:-(mousex/40),
-            y:-(mousex/200)
-        }).to(g1[i].children[1].children[0],{
-            y:(mousex/200),
-            x:(mousex/40)
-        },"<+0.1")
+//         // console.log(mouseX,mousex,g1,g2)
+         let gg3 = gsap.timeline();
+      
+         gg3.to(g1[i].children[0].children[0],{
+             x:-(mousex/40),
+             y:-(mousex/200)
+         }).to(g1[i].children[1].children[0],{
+             y:(mousex/200),
+             x:(mousex/40)
+         },"<+0.1")
         
     })
-    g1[i].addEventListener("mouseleave",()=>{
+     g1[i].addEventListener("mouseleave",()=>{
 
    
-        let gg3 = gsap.timeline();
-        gg3.to(g1[i].children[0].children[0],{
-            x:0,
-            y:0,
-        }).to(g1[i].children[1].children[0],{
-            y:0,
-            x:0,
-        },"<")
+         let gg3 = gsap.timeline();
+         gg3.to(g1[i].children[0].children[0],{
+             x:0,
+             y:0,
+         }).to(g1[i].children[1].children[0],{
+             y:0,
+             x:0,
+         },"<")
         
-    })
-}
+     })
+ }
 
 let pointer = document.documentElement;        
     pointer.addEventListener('mousemove', m => {
