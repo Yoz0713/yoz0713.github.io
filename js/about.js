@@ -380,48 +380,7 @@ function thirdPageAnimation(){
 }
 thirdPageAnimation()
 
- let g1 = document.querySelectorAll(".parallax");
- for(let i = 0 ; i < g1.length ; i++){
 
-     g1[i].addEventListener("mouseenter",(e)=>{
-
-   
-
-   
-    
-          let mousex = e.clientX;
-//         // g1.forEach((item)=>{
-//         //     item.currentTranslate.x = mouseX/20;
-         
-//         //     console.log(item.currentTranslate.x)
-//         // })
-        
-//         // console.log(mouseX,mousex,g1,g2)
-         let gg3 = gsap.timeline();
-      
-         gg3.to(g1[i].children[0].children[0],{
-             x:-(mousex/40),
-             y:-(mousex/200)
-         }).to(g1[i].children[1].children[0],{
-             y:(mousex/200),
-             x:(mousex/40)
-         },"<+0.1")
-        
-    })
-     g1[i].addEventListener("mouseleave",()=>{
-
-   
-         let gg3 = gsap.timeline();
-         gg3.to(g1[i].children[0].children[0],{
-             x:0,
-             y:0,
-         }).to(g1[i].children[1].children[0],{
-             y:0,
-             x:0,
-         },"<")
-        
-     })
- }
 
 let pointer = document.documentElement;        
     pointer.addEventListener('mousemove', m => {
@@ -433,4 +392,48 @@ if(window.innerWidth < 1440){
     let pointer = document.documentElement;        
     pointer.style.setProperty('--x', 30 + 'px');
     pointer.style.setProperty('--y', 100 + 'px');
+   
+}else{
+    let g1 = document.querySelectorAll(".parallax");
+    for(let i = 0 ; i < g1.length ; i++){
+   
+        g1[i].addEventListener("mouseenter",(e)=>{
+   
+      
+   
+      
+       
+             let mousex = e.clientX;
+   //         // g1.forEach((item)=>{
+   //         //     item.currentTranslate.x = mouseX/20;
+            
+   //         //     console.log(item.currentTranslate.x)
+   //         // })
+           
+   //         // console.log(mouseX,mousex,g1,g2)
+            let gg3 = gsap.timeline();
+         
+            gg3.to(g1[i].children[0].children[0],{
+                x:-(mousex/40),
+                y:-(mousex/200)
+            }).to(g1[i].children[1].children[0],{
+                y:(mousex/200),
+                x:(mousex/40)
+            },"<+0.1")
+           
+       })
+        g1[i].addEventListener("mouseleave",()=>{
+   
+      
+            let gg3 = gsap.timeline();
+            gg3.to(g1[i].children[0].children[0],{
+                x:0,
+                y:0,
+            }).to(g1[i].children[1].children[0],{
+                y:0,
+                x:0,
+            },"<")
+           
+        })
+    }
 }
