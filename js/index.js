@@ -107,6 +107,26 @@ function bannerTitleIn(){
         duration:1,
       
     },"<+0.5")
+    let gg2 = gsap.timeline();
+
+    gg2.fromTo(".home-first-page .square1",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        delay:2,
+        transformOrigin:"center",
+        rotate:"360deg",
+        ease:"linear"
+    }).fromTo(".home-first-page .square2",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        transformOrigin:"center",
+        rotate:"360deg",
+        ease:"linear"
+    },"<")
 }
 bannerTitleIn()
 

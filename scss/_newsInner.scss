@@ -61,24 +61,15 @@
             .g1{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 1.5s infinite;
-                .square1{
-                    
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(43deg);
-                    }
+               
+                transform: rotate(43deg);
+             
             }
             .g2{
                 transform-box: fill-box;
                 transform-origin: center;
-                animation: rotate 10s linear 1.5s infinite;
-                .square2{
-                    
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(56deg);
-                    }
+                transform: rotate(56deg);
+              
             }
    
         }

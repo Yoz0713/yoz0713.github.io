@@ -1869,21 +1869,9 @@ footer span {
 .home-first-page-title svg .g1 {
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.home-first-page-title svg .g1 .square1 {
-  transform-box: fill-box;
-  transform-origin: center;
   transform: rotate(43deg);
 }
 .home-first-page-title svg .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.home-first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -2658,21 +2646,9 @@ footer span {
 .blog .first-page-title svg .g1 {
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.blog .first-page-title svg .g1 .square1 {
-  transform-box: fill-box;
-  transform-origin: center;
   transform: rotate(43deg);
 }
 .blog .first-page-title svg .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.blog .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3187,21 +3163,9 @@ footer span {
 .blogInner .first-page-title svg .g1 {
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.blogInner .first-page-title svg .g1 .square1 {
-  transform-box: fill-box;
-  transform-origin: center;
   transform: rotate(43deg);
 }
 .blogInner .first-page-title svg .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.blogInner .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3619,7 +3583,7 @@ footer span {
   position: relative;
   width: 30vw;
   z-index: 11;
-  margin: 0vw 6vw 3vw;
+  margin: 0vw 8vw 3vw;
 }
 .news .first-page-title p {
   line-height: 40px;
@@ -3633,21 +3597,9 @@ footer span {
 .news .first-page-title svg .g1 {
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.news .first-page-title svg .g1 .square1 {
-  transform-box: fill-box;
-  transform-origin: center;
   transform: rotate(43deg);
 }
 .news .first-page-title svg .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.news .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3940,21 +3892,9 @@ footer span {
   .news .first-page-title svg .g1 {
     transform-box: fill-box;
     transform-origin: center;
-    -webkit-animation: rotate 10s linear 1.5s infinite;
-            animation: rotate 10s linear 1.5s infinite;
-  }
-  .news .first-page-title svg .g1 .square1 {
-    transform-box: fill-box;
-    transform-origin: center;
     transform: rotate(43deg);
   }
   .news .first-page-title svg .g2 {
-    transform-box: fill-box;
-    transform-origin: center;
-    -webkit-animation: rotate 10s linear 1.5s infinite;
-            animation: rotate 10s linear 1.5s infinite;
-  }
-  .news .first-page-title svg .g2 .square2 {
     transform-box: fill-box;
     transform-origin: center;
     transform: rotate(56deg);
@@ -4226,21 +4166,9 @@ footer span {
 .newsInner .first-page-title svg .g1 {
   transform-box: fill-box;
   transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.newsInner .first-page-title svg .g1 .square1 {
-  transform-box: fill-box;
-  transform-origin: center;
   transform: rotate(43deg);
 }
 .newsInner .first-page-title svg .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  -webkit-animation: rotate 10s linear 1.5s infinite;
-          animation: rotate 10s linear 1.5s infinite;
-}
-.newsInner .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
