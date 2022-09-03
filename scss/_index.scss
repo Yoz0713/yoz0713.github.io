@@ -56,17 +56,25 @@
                 left: -80px;
                 top: -100px;
                 .g1{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                   
-                    transform: rotate(43deg);
                  
+                   
+                
+                    .square1{
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(43deg);
+                        }
                 }
                 .g2{
-                    transform-box: fill-box;
-                    transform-origin: center;
-                    transform: rotate(56deg);
                   
+                 
+                    .square2{   
+                        transform-box: fill-box;
+                        transform-origin: center;
+                        transform: rotate(56deg);
+                    
+                      
+                        }
                 }
        
             }

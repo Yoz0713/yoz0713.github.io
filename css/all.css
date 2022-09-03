@@ -1866,12 +1866,12 @@ footer span {
   left: -80px;
   top: -100px;
 }
-.home-first-page-title svg .g1 {
+.home-first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.home-first-page-title svg .g2 {
+.home-first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -2643,12 +2643,12 @@ footer span {
   left: -120px;
   top: -130px;
 }
-.blog .first-page-title svg .g1 {
+.blog .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.blog .first-page-title svg .g2 {
+.blog .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3160,12 +3160,12 @@ footer span {
   left: -110px;
   top: -130px;
 }
-.blogInner .first-page-title svg .g1 {
+.blogInner .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.blogInner .first-page-title svg .g2 {
+.blogInner .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3594,12 +3594,12 @@ footer span {
   left: -120px;
   top: -130px;
 }
-.news .first-page-title svg .g1 {
+.news .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.news .first-page-title svg .g2 {
+.news .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -3889,12 +3889,12 @@ footer span {
     left: -120px;
     top: -130px;
   }
-  .news .first-page-title svg .g1 {
+  .news .first-page-title svg .g1 .square1 {
     transform-box: fill-box;
     transform-origin: center;
     transform: rotate(43deg);
   }
-  .news .first-page-title svg .g2 {
+  .news .first-page-title svg .g2 .square2 {
     transform-box: fill-box;
     transform-origin: center;
     transform: rotate(56deg);
@@ -4163,12 +4163,12 @@ footer span {
   left: -110px;
   top: -130px;
 }
-.newsInner .first-page-title svg .g1 {
+.newsInner .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.newsInner .first-page-title svg .g2 {
+.newsInner .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
@@ -4940,15 +4940,15 @@ footer span {
   left: -120px;
   top: -130px;
 }
-.about .first-page-title svg .g1 {
+.about .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
-  transition: 0.5s;
+  transform: rotate(43deg);
 }
-.about .first-page-title svg .g2 {
+.about .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
-  transition: 0.5s;
+  transform: rotate(56deg);
 }
 .about .first-page-shadow {
   position: fixed;
@@ -5212,16 +5212,6 @@ footer span {
   width: 1px;
   height: 2.4vw;
   background-color: rgba(220, 177, 120, 0.4705882353);
-}
-.about .g1 {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(43deg);
-}
-.about .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(56deg);
 }
 
 .hover-light {

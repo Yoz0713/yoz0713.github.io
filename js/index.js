@@ -109,7 +109,7 @@ function bannerTitleIn(){
     },"<+0.5")
     let gg2 = gsap.timeline();
 
-    gg2.fromTo(".home-first-page .square1",{
+    gg2.fromTo(".home-first-page .g1",{
         
     },{
         repeat:-1,
@@ -118,7 +118,7 @@ function bannerTitleIn(){
         transformOrigin:"center",
         rotate:"360deg",
         ease:"linear"
-    }).fromTo(".home-first-page .square2",{
+    }).fromTo(".home-first-page .g2",{
         
     },{
         repeat:-1,

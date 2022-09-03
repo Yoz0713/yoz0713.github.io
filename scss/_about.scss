@@ -61,19 +61,30 @@
             position: absolute;
             left: -120px;
             top: -130px;
-           
-          
             .g1{
-                transform-box: fill-box;
-                transform-origin: center;
-                transition: 0.5s;
+                 
+                   
+                
+                .square1{
+                    transform-box: fill-box;
+                    transform-origin: center;
+                    transform: rotate(43deg);
+                    }
             }
             .g2{
-                transform-box: fill-box;
-                transform-origin: center;
-                transition: 0.5s;
+              
              
+                .square2{   
+                    transform-box: fill-box;
+                    transform-origin: center;
+                    transform: rotate(56deg);
+                
+                  
+                    }
             }
+          
+          
+          
    
         }
         }
@@ -359,19 +370,7 @@
 
 
 
-    .g1{
-                     
-        transform-box: fill-box;
-        transform-origin: center;
-        transform: rotate(43deg);
-  
-    }
-    .g2{
-        transform-box: fill-box;
-        transform-origin: center;
-        transform: rotate(56deg);
-   
-    }
+    
 }
 
 .hover-light{

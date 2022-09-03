@@ -110,6 +110,26 @@ function bannerBoxIn(){
         duration:25,
     },"<+0.5")
     
+    let gg2 = gsap.timeline();
+
+    gg2.fromTo(".first-page .g1",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        delay:2,
+        transformOrigin:"50% 50%",
+        rotate:"360deg",
+        ease:"linear"
+    }).fromTo(".first-page .g2",{
+        
+    },{
+        repeat:-1,
+        duration:10,
+        transformOrigin:"50% 50%",
+        rotate:"360deg",
+        ease:"linear"
+    },"<")
 }
 bannerBoxIn()
 function secondPageAnimaiton(){
