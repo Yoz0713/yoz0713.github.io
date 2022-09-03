@@ -1,4 +1,5 @@
-
+window.onload = function(){
+    
 
 function bannerGray(){
     let gg = gsap.timeline({
@@ -384,7 +385,7 @@ for(let i = 0 ; i < g1.length ; i++){
     g1[i].addEventListener("mouseenter",(e)=>{
          let mousex = e.clientX;
         let gg3 = gsap.timeline();
-        console.log()
+
         gg3.to(g1[i].children[0].children[0],{
             x:-(mousex/40),
             y:-(mousex/200)
@@ -403,5 +404,6 @@ for(let i = 0 ; i < g1.length ; i++){
             x:0,
         },"<")  
     })
+}
 }
 }
