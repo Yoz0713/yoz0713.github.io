@@ -4940,21 +4940,15 @@ footer span {
   left: -120px;
   top: -130px;
 }
-.about .first-page-title svg .g1 {
+.about .first-page-title svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.about .first-page-title svg .g1 .square1 {
-  transform-origin: 50% 50%;
-}
-.about .first-page-title svg .g2 {
+.about .first-page-title svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
-}
-.about .first-page-title svg .g2 .square2 {
-  transform-origin: 50% 50%;
 }
 .about .first-page-shadow {
   position: fixed;
@@ -5034,21 +5028,15 @@ footer span {
   height: 100%;
   left: -6vw;
 }
-.about .second-page-bottom-left svg .g1 {
+.about .second-page-bottom-left svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.about .second-page-bottom-left svg .g1 .square1 {
-  transform-origin: 50% 50%;
-}
-.about .second-page-bottom-left svg .g2 {
+.about .second-page-bottom-left svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
-}
-.about .second-page-bottom-left svg .g2 .square2 {
-  transform-origin: 50% 50%;
 }
 .about .second-page-bottom-left h2 {
   pointer-events: none;
@@ -5116,21 +5104,15 @@ footer span {
   top: 3.5%;
   left: 2.5%;
 }
-.about .third-page-left-top svg .g1 {
+.about .third-page-left-top svg .g1 .square1 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(43deg);
 }
-.about .third-page-left-top svg .g1 .square1 {
-  transform-origin: 50% 50%;
-}
-.about .third-page-left-top svg .g2 {
+.about .third-page-left-top svg .g2 .square2 {
   transform-box: fill-box;
   transform-origin: center;
   transform: rotate(56deg);
-}
-.about .third-page-left-top svg .g2 .square2 {
-  transform-origin: 50% 50%;
 }
 .about .third-page-left-bottom {
   display: flex;
