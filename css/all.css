@@ -2572,7 +2572,7 @@ footer span {
     width: 11vw;
   }
   .home-second-page-bottom-left ul li:not(:last-child) {
-    margin-bottom: 0.5vw;
+    margin-bottom: 0vw;
   }
   .home-second-page-bottom-left ul .lineSwitch {
     position: relative;
@@ -2862,22 +2862,26 @@ footer span {
     transform: scale(0.8);
   }
   .home-first-page-icon {
-    width: 6vw;
+    width: 30vw;
     position: absolute;
-    right: 16vw;
+    right: 5vw;
     bottom: 6vw;
-    transform: scale(5);
+    transform: scale(1);
+  }
+  .home-first-page-icon a {
+    width: 5vw;
+    height: 5vw;
   }
   .home-first-page-icon a img {
     opacity: 0.8;
     cursor: pointer;
-    width: 1vw;
-    height: 1vw;
+    width: 100%;
+    height: 100%;
     position: relative;
     transition: 0.3s;
   }
   .home-first-page-icon a svg {
-    position: absolute;
+    display: none;
   }
   .home-first-page-icon a:hover {
     opacity: 1;
@@ -2943,10 +2947,10 @@ footer span {
     text-align: center;
   }
   .home-second-page-bottom-left ul li p {
-    font-size: 2.5vw;
+    font-size: 2.93vw;
   }
   .home-second-page-bottom-left ul li p span {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .home-second-page-bottom-left ul li::after {
     display: none;
@@ -3017,7 +3021,7 @@ footer span {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scale(1.1, 1.4);
+    transform: scale(1.1, 1.3);
   }
   .home-second-page-bottom-right-para {
     width: -webkit-fit-content;
@@ -3026,7 +3030,7 @@ footer span {
     position: absolute;
     left: 0;
     right: 0;
-    top: -5vw;
+    top: -2vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
