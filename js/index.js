@@ -268,7 +268,7 @@ function seondPageRight(){
     let gg3 = gsap.timeline({
         scrollTrigger:{
             trigger:`.home-second-page-top`,
-            start:"top bottom"
+            start:"top center"
         }
     })
 
@@ -312,66 +312,8 @@ function seondPageRight(){
 seondPageRight()
 
 // third-page
-function thirdPageAnimation(){
-    let gg = gsap.timeline({
-        scrollTrigger:{
-            trigger:".home-third-page",
-            start:"top center",
-          
-       
-        }
-    })
 
-    gg.fromTo(".home-third-page .li1",{
-        y:30,
-        opacity:0
-    },{
-        delay:0.6,
-        duration:0.8,
-        opacity:1,
-        y:0
-    }).fromTo(".home-third-page .li2",{
-        y:30,
-        opacity:0
-    },{
-        duration:0.8,
-        opacity:1,
-        y:0
-    },"<+0.2").fromTo(".home-third-page .li3",{
-        y:30,
-        opacity:0
-    },{
-        duration:0.8,
-        opacity:1,
-        y:0
-    },"<+0.2").fromTo(".home-third-page .readmore",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8,
-    },"<+0.2").fromTo(".path1",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 800,
-        duration:1.5,
-    },"<").fromTo(".path2",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 800,
-        duration:1.5,
-    },"<+0.1").fromTo(".path3",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 800,
-        duration:1.5,
-    },"<+0.1")
-}
-thirdPageAnimation()
+
 
 let readmore = document.querySelectorAll(".readmore");
 let arrow = document.querySelectorAll(".arrow");
@@ -414,42 +356,6 @@ for(let i = 0 ; i<readmore.length ; i++){
 
 
 
-  
-
-
-// if(window.innerWidth <= 1920 && window.innerWidth >= 1650){
-//     let widthGap = 1920 - innerWidth
-//     widthGap = widthGap/5
-//     let vbWidth = 1000 + widthGap
-//     let viewBox = document.querySelector(".lineBox")
-//     console.log(1)
-//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
- 
-// }else if(window.innerWidth < 1650 && window.innerWidth >= 1440){
-//     let widthGap = 1920 - innerWidth
-//     widthGap = widthGap/5
-//     let vbWidth = 1070 + widthGap
-//     let viewBox = document.querySelector(".lineBox")
-
-//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
- 
-// }else if(window.innerWidth < 1440 && window.innerWidth >= 1100){
-//     let widthGap = 1920 - innerWidth
-//     widthGap = widthGap/2
-//     let vbWidth = 1070 + widthGap
-//     let viewBox = document.querySelector(".lineBox")
-
-//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*6}`)
- 
-// }else if(window.innerWidth < 1100){
-//     let widthGap = 1920 - innerWidth
-//     widthGap = widthGap/1.5
-//     let vbWidth = 1070 + widthGap
-//     let viewBox = document.querySelector(".lineBox")
-
-//     viewBox.setAttribute("viewBox",`0 0 ${vbWidth} ${vbWidth/9*5.9}`)
- 
-// }
 
 let pointer = document.documentElement;        
     pointer.addEventListener('mousemove', m => {
@@ -460,11 +366,105 @@ let pointer = document.documentElement;
     
   
 })
+
+if(window.innerWidth >1440){
+    function thirdPageAnimation(){
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:".home-third-page",
+                start:"top center",
+              
+           
+            }
+        })
+    
+        gg.fromTo(".home-third-page .li1",{
+            y:30,
+            opacity:0
+        },{
+            delay:0.6,
+            duration:0.8,
+            opacity:1,
+            y:0
+        }).fromTo(".home-third-page .li2",{
+            y:30,
+            opacity:0
+        },{
+            duration:0.8,
+            opacity:1,
+            y:0
+        },"<+0.2").fromTo(".home-third-page .li3",{
+            y:30,
+            opacity:0
+        },{
+            duration:0.8,
+            opacity:1,
+            y:0
+        },"<+0.2").fromTo(".home-third-page .readmore",{
+            opacity:0,
+            y:30
+        },{
+            opacity:1,
+            y:0,
+            duration:0.8,
+        },"<+0.2").fromTo(".path1",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 800,
+            duration:1.5,
+        },"<").fromTo(".path2",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 800,
+            duration:1.5,
+        },"<+0.1").fromTo(".path3",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 800,
+            duration:1.5,
+        },"<+0.1")
+    }
+    thirdPageAnimation()
+}
+
 if(window.innerWidth < 1440){
     let pointer = document.documentElement;        
     pointer.style.setProperty('--x', 30 + 'px');
     pointer.style.setProperty('--y', 100 + 'px');
 }
-   
 
-   
+if(window.innerWidth <=920){
+    function thirdMobileAnimation(){
+        let li = document.querySelectorAll(".home-third-page-bottom li")
+        for(let i = 0 ; i<li.length ; i++){
+            let gg = gsap.timeline({
+                scrollTrigger:{
+                    trigger:`.li${i+1}`,
+                    start:"top 90%",
+                }
+            })
+            gg.fromTo(`.home-third-page .li${i+1}`,{
+                y:30,
+                opacity:0
+            },{
+                delay:0.6,
+                duration:0.8,
+                opacity:1,
+                y:0
+            }).fromTo(`.path${i+1}`,{
+                strokeDashoffset: 2000,
+                strokeDasharray: 2000
+            },{
+                strokeDashoffset: 800,
+                duration:1.5,
+            },"<+0.5")
+
+        }
+     
+    
+    }
+    thirdMobileAnimation()
+}

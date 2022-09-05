@@ -1,5 +1,5 @@
 @mixin tablet {
-  @media (max-width: 800px) {
+  @media (max-width: 920px) {
       @content;
   }
 }
@@ -78,7 +78,7 @@ p{
     width: 100%;
     padding: 2vw 5vw 0vw 5vw;
     justify-content: space-between;
-
+   
     z-index: 20;
    
     background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.805) 0%,rgba(0, 0, 0, 0.629) 5% ,transparent 100%);
@@ -308,7 +308,7 @@ footer{
   text-align: center;
   padding: 30px 0;
   background-color: $footer_color;
-  color: $gold_color;
+  color:#d3a8719e ;
 
   span{
     font-family: $content_font_family;
@@ -335,11 +335,16 @@ footer{
 
 @media all and (max-width:1440px){
   footer{
+    display: flex;
+    flex-direction: column;
     padding: 25px 0;
     span{
       letter-spacing: 2px;
       padding: 0 10px;
       font-size: 14px;
+    }
+    & :not(:last-child){
+      margin-bottom: 3px;
     }
   }
   .banner_box{
@@ -397,5 +402,156 @@ footer{
       letter-spacing: 5px;
     }
     
+  }
+
+  @media all and (max-width:920px){
+    footer{
+      padding: 25px 0;
+      span{
+        letter-spacing: 2px;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+    .banner_box{
+      .ch_title_font{
+        font-size: 5vw;
+        letter-spacing: 15px;
+      }
+    
+      .en_title_font{
+        font-weight: 500;
+        font-size: 1.5vw;
+        letter-spacing: 6px;
+      }
+    
+      .p_font{
+        font-size: 2.5vw;
+        letter-spacing: 3px;
+        line-height: 2.1;
+      }
+    }
+    .news_blog{
+  
+      //-- 小主標 --
+      .title_font{
+        font-weight: 500;
+        font-size: 3vw;
+        letter-spacing: 6px;
+      }
+    
+      //-- 內文 --
+      .p_font{
+        font-size: 2vw;
+        letter-spacing: 4px;
+        line-height: 2;
+      }
+    
+      //-- 小字 --
+      .small_p_font{
+        font-size: 10px;
+    
+      }
+    
+      //-- 列表選單字 --
+      .menu_font{
+        font-size: 15px;
+        letter-spacing: 4px;
+      
+        
+      }
+    
+      //-- 內容主標 --
+      .dt_title_font{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+      
+    }
+  }
+  @media all and (max-width:480px){
+    footer{
+      padding: 25px 0;
+      span{
+        letter-spacing: 2px;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+    .banner_box{
+      .ch_title_font{
+        font-size: 5vw;
+        letter-spacing: 15px;
+      }
+    
+      .en_title_font{
+        font-weight: 500;
+        font-size: 1.5vw;
+        letter-spacing: 6px;
+      }
+    
+      .p_font{
+        font-size: 2.5vw;
+        letter-spacing: 3px;
+        line-height: 2.1;
+      }
+    }
+    .news_blog{
+  
+      //-- 小主標 --
+      .title_font{
+        font-weight: 500;
+        font-size: 4vw;
+        letter-spacing: 6px;
+      }
+    
+      //-- 內文 --
+      .p_font{
+        font-size: 3vw;
+        letter-spacing: 4px;
+        line-height: 2;
+      }
+    
+      //-- 小字 --
+      .small_p_font{
+        font-size: 10px;
+    
+      }
+    
+      //-- 列表選單字 --
+      .menu_font{
+        font-size: 15px;
+        letter-spacing: 4px;
+      
+        
+      }
+    
+      //-- 內容主標 --
+      .dt_title_font{
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 5px;
+      }
+      
+    }
+
+    .title_top{
+      .en_txt{
+        font-family: $en_font_family;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        color: $gold_color;
+      }
+      .ch_txt{
+        font-family: $title_font_family;
+        font-weight: 500;
+        font-size: 17px;
+        letter-spacing: 8px;
+        color: $gold_color;
+      }
+    }
   }
 }
