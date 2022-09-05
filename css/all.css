@@ -332,7 +332,6 @@ footer span {
 }
 .portfolio .second-page-top:hover {
   background-color: #270F06;
-  box-shadow: 5px 5px 10px 3px #000;
 }
 .portfolio .second-page-top:hover .second-page-top-left-box2 {
   opacity: 1;
@@ -469,7 +468,6 @@ footer span {
 }
 .portfolio .second-page-bottom:hover {
   background-color: #270F06;
-  box-shadow: 5px 5px 10px 3px #000;
 }
 .portfolio .second-page-bottom-left {
   position: relative;
@@ -660,7 +658,6 @@ footer span {
   }
   .portfolio .second-page-top:hover {
     background-color: #270F06;
-    box-shadow: 5px 5px 10px 3px #000;
   }
   .portfolio .second-page-top:hover .second-page-top-left-box2 {
     opacity: 1;
@@ -801,7 +798,6 @@ footer span {
   }
   .portfolio .second-page-bottom:hover {
     background-color: #270F06;
-    box-shadow: 5px 5px 10px 3px #000;
   }
   .portfolio .second-page-bottom-left {
     position: relative;
@@ -982,16 +978,22 @@ footer span {
 .portfolioInner .second-page-left {
   height: 28vw;
   width: 68%;
+  overflow: hidden;
 }
 .portfolioInner .second-page-left-box {
   width: 100%;
   height: 100%;
+  transition: 0.8s;
 }
 .portfolioInner .second-page-left-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.8s;
+}
+.portfolioInner .second-page-left:hover .second-page-left-box {
+  transform: scale(1.1);
 }
 .portfolioInner .second-page-right {
   display: flex;
@@ -1205,12 +1207,17 @@ footer span {
 .portfolioInner .fifth-page-right-box .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .portfolioInner .fifth-page-right-box .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.8s;
+}
+.portfolioInner .fifth-page-right-box .swiper .swiper-wrapper .swiper-slide:hover img {
+  transform: scale(1.1);
 }
 .portfolioInner .sixth-page {
   display: flex;
@@ -1276,12 +1283,17 @@ footer span {
 .portfolioInner .sixth-page-left-box .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .portfolioInner .sixth-page-left-box .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.8s;
+}
+.portfolioInner .sixth-page-left-box .swiper .swiper-wrapper .swiper-slide:hover img {
+  transform: scale(1.1);
 }
 .portfolioInner .seventh-page {
   display: flex;
@@ -2102,6 +2114,7 @@ footer span {
   top: 3.5vw;
   height: 23vw;
   z-index: 10;
+  overflow: hidden;
 }
 .home-second-page-bottom-left-img a {
   transition: 1s;
@@ -2115,6 +2128,10 @@ footer span {
   top: 0;
   width: 100%;
   height: 100%;
+  transition: 0.8s;
+}
+.home-second-page-bottom-left-img:hover img {
+  transform: scale(1.1);
 }
 .home-second-page-bottom-right {
   width: 60%;
@@ -2220,6 +2237,7 @@ footer span {
 .home-third-page-bottom ul li .imgBox {
   width: 12vw;
   height: 6vw;
+  overflow: hidden;
 }
 .home-third-page-bottom ul li .imgBox img {
   border-radius: 10px 0 10px 0;
@@ -2227,6 +2245,10 @@ footer span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.8s;
+}
+.home-third-page-bottom ul li .imgBox img:hover {
+  transform: scale(1.1);
 }
 .home-third-page-bottom ul li .newsDate1 {
   width: 15vw;
@@ -2539,6 +2561,7 @@ footer span {
   .home-third-page-bottom ul li .imgBox {
     width: 12vw;
     height: 6vw;
+    overflow: hidden;
   }
   .home-third-page-bottom ul li .imgBox img {
     border-radius: 10px 0 10px 0;
@@ -2736,23 +2759,28 @@ footer span {
   height: 90%;
   position: relative;
 }
-.blog .second-page-bottom > a {
-  z-index: 10;
-  width: 50%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.blog .second-page-bottom > a img {
+.blog .second-page-bottom-left {
+  position: relative;
+  z-index: 15;
+  overflow: hidden;
   cursor: pointer;
   border-radius: 40px 0 40px 0;
-  width: 100%;
+}
+.blog .second-page-bottom-left .imgBox {
+  transition: 0.8s;
+}
+.blog .second-page-bottom-left .imgBox img {
+  width: 38vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -o-object-fit: contain;
      object-fit: contain;
   z-index: 10;
+  transition: 0.8s;
+}
+.blog .second-page-bottom-left:hover .imgBox {
+  transform: scale(1.1);
 }
 .blog .second-page-bottom-right {
   position: absolute;
@@ -2769,6 +2797,7 @@ footer span {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 .blog .second-page-bottom-right-para {
   display: flex;
@@ -2829,14 +2858,23 @@ footer span {
   margin-right: 5vw;
   width: 22vw;
   height: 13vw;
-}
-.blog .third-page-box-left img {
-  cursor: pointer;
+  overflow: hidden;
   border-radius: 40px 0 40px 0;
+}
+.blog .third-page-box-left .imgBox {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.blog .third-page-box-left .imgBox img {
+  cursor: pointer;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blog .third-page-box-left:hover .imgBox {
+  transform: scale(1.1);
 }
 .blog .third-page-box-right {
   width: 70%;
@@ -2972,19 +3010,28 @@ footer span {
     height: 90%;
     position: relative;
   }
-  .blog .second-page-bottom > a {
-    margin-top: 0vw;
-  }
-  .blog .second-page-bottom > a img {
+  .blog .second-page-bottom-left {
+    position: relative;
+    z-index: 15;
+    overflow: hidden;
     cursor: pointer;
     border-radius: 40px 0 40px 0;
-    width: 100%;
+  }
+  .blog .second-page-bottom-left .imgBox {
+    transition: 0.8s;
+  }
+  .blog .second-page-bottom-left .imgBox img {
+    width: 38vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     -o-object-fit: contain;
        object-fit: contain;
     z-index: 10;
+    transition: 0.8s;
+  }
+  .blog .second-page-bottom-left:hover .imgBox {
+    transform: scale(1.1);
   }
   .blog .second-page-bottom-right {
     display: flex;
@@ -3052,6 +3099,7 @@ footer span {
   }
   .blog .third-page-box-left {
     margin-right: 5vw;
+    overflow: hidden;
   }
   .blog .third-page-box-left img {
     cursor: pointer;
@@ -3060,6 +3108,7 @@ footer span {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    transition: 0.8s;
   }
   .blog .third-page-box-right {
     width: 70%;
@@ -3204,13 +3253,22 @@ footer span {
 .blogInner .second-page-img {
   width: 100%;
   height: 100%;
-}
-.blogInner .second-page-img img {
+  overflow: hidden;
   border-radius: 40px 0 40px 0;
+}
+.blogInner .second-page-img .imgBox {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.blogInner .second-page-img .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blogInner .second-page-img:hover .imgBox {
+  transform: scale(1.1);
 }
 .blogInner .third-page {
   display: flex;
@@ -3243,12 +3301,21 @@ footer span {
   width: 41.8vw;
   height: 38.24vw;
   padding: 5vw 0;
+  overflow: hidden;
 }
-.blogInner .third-page-right img {
+.blogInner .third-page-right .imgBox {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  transition: 0.8s;
+}
+.blogInner .third-page-right .imgBox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogInner .third-page-right:hover .imgBox {
+  transform: scale(1.1);
 }
 .blogInner .forth-page {
   display: flex;
@@ -3282,12 +3349,21 @@ footer span {
 .blogInner .forth-page-left {
   flex: 1 1 60%;
   height: 28.24vw;
+  overflow: hidden;
 }
-.blogInner .forth-page-left img {
+.blogInner .forth-page-left .imgBox {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  transition: 0.8s;
+}
+.blogInner .forth-page-left .imgBox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogInner .forth-page-left:hover .imgBox {
+  transform: scale(1.1);
 }
 .blogInner .forth-page-bottom {
   display: flex;
@@ -3350,13 +3426,22 @@ footer span {
   width: 100%;
   height: 13vw;
   margin-bottom: 4vw;
+  border-radius: 40px 0 40px 0;
+  overflow: hidden;
 }
-.blogInner .fifth-page-box-top img {
+.blogInner .fifth-page-box-top .imgBox {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.blogInner .fifth-page-box-top .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 40px 0 40px 0;
+}
+.blogInner .fifth-page-box-top:hover .imgBox {
+  transform: scale(1.1);
 }
 .blogInner .fifth-page-box-bottom {
   display: flex;
@@ -3688,23 +3773,36 @@ footer span {
   height: 90%;
   position: relative;
 }
-.news .second-page-bottom > a {
-  z-index: 10;
-  width: 50%;
+.news .second-page-bottom-left {
+  position: relative;
+  z-index: 15;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 40px 0 40px 0;
+}
+.news .second-page-bottom-left .imgBox {
+  transition: 0.8s;
+}
+.news .second-page-bottom-left .imgBox a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-.news .second-page-bottom > a img {
-  cursor: pointer;
-  border-radius: 40px 0 40px 0;
-  width: 100%;
+.news .second-page-bottom-left .imgBox img {
+  width: 38vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -o-object-fit: contain;
      object-fit: contain;
   z-index: 10;
+  transition: 0.8s;
+}
+.news .second-page-bottom-left:hover .imgBox {
+  transform: scale(1.1);
 }
 .news .second-page-bottom-right {
   display: flex;
@@ -3719,6 +3817,7 @@ footer span {
   height: 100%;
 }
 .news .second-page-bottom-right .lineBox > svg {
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -3785,13 +3884,22 @@ footer span {
   width: 100%;
   height: 13vw;
   margin-bottom: 4vw;
+  overflow: hidden;
+  border-radius: 40px 0 40px 0;
 }
-.news .third-page-box-top img {
+.news .third-page-box-top .imgBox {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.news .third-page-box-top .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 40px 0 40px 0;
+}
+.news .third-page-box-top:hover .imgBox {
+  transform: scale(1.1);
 }
 .news .third-page-box-bottom {
   display: flex;
@@ -4208,13 +4316,22 @@ footer span {
 .newsInner .second-page-img {
   width: 100%;
   height: 100%;
-}
-.newsInner .second-page-img img {
+  overflow: hidden;
   border-radius: 40px 0 40px 0;
+}
+.newsInner .second-page-img .imgBox {
+  transition: 0.8s;
+  width: 100%;
+  height: 100%;
+}
+.newsInner .second-page-img .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.newsInner .second-page-img:hover .imgBox {
+  transform: scale(1.1);
 }
 .newsInner .third-page {
   display: flex;
@@ -4247,12 +4364,21 @@ footer span {
   width: 41.8vw;
   height: 38.24vw;
   padding: 5vw 0;
+  overflow: hidden;
 }
-.newsInner .third-page-right img {
+.newsInner .third-page-right .imgBox {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  transition: 0.8s;
+}
+.newsInner .third-page-right .imgBox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsInner .third-page-right:hover .imgBox {
+  transform: scale(1.1);
 }
 .newsInner .forth-page {
   display: flex;
@@ -4286,12 +4412,21 @@ footer span {
 .newsInner .forth-page-left {
   flex: 1 1 60%;
   height: 28.24vw;
+  overflow: hidden;
 }
-.newsInner .forth-page-left img {
+.newsInner .forth-page-left .imgBox {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  transition: 0.8s;
+}
+.newsInner .forth-page-left .imgBox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.newsInner .forth-page-left:hover .imgBox {
+  transform: scale(1.1);
 }
 .newsInner .forth-page-bottom {
   display: flex;
@@ -4354,13 +4489,22 @@ footer span {
   width: 100%;
   height: 13vw;
   margin-bottom: 4vw;
+  overflow: hidden;
+  border-radius: 40px 0 40px 0;
 }
-.newsInner .fifth-page-box-top img {
+.newsInner .fifth-page-box-top .imgBox {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.newsInner .fifth-page-box-top .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 40px 0 40px 0;
+}
+.newsInner .fifth-page-box-top:hover .imgBox {
+  transform: scale(1.1);
 }
 .newsInner .fifth-page-box-bottom {
   display: flex;
@@ -4672,6 +4816,7 @@ footer span {
 .contact .second-page-left {
   width: 55%;
   height: 100%;
+  transform: scale(0.9);
 }
 .contact .second-page-left iframe {
   width: 100%;

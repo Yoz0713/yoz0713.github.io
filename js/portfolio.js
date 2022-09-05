@@ -43,8 +43,10 @@ bannerTitleIn()
 
 let pointer = document.documentElement;        
     pointer.addEventListener('mousemove', m => {
-    pointer.style.setProperty('--x', m.clientX + 'px');
-    pointer.style.setProperty('--y', m.clientY + 'px');
+        setTimeout(()=>{
+            pointer.style.setProperty('--x', m.clientX + 'px');
+            pointer.style.setProperty('--y', m.clientY + 'px');
+        },100)
   
 })
 if(window.innerWidth < 1440){

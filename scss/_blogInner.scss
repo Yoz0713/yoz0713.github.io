@@ -113,11 +113,23 @@
         &-img{
             width: 100%;
             height: 100%;
-            img{
-                border-radius: 40px 0 40px 0;
+            overflow: hidden;
+        
+            border-radius: 40px 0 40px 0;
+            .imgBox{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                transition: 0.8s;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+           
+            &:hover .imgBox{
+              transform: scale(1.1);
+           
             }
         }
     }
@@ -152,10 +164,21 @@
             width: 41.8vw;
             height: 38.24vw;
             padding:5vw 0;
-            img{
+            overflow: hidden;
+            .imgBox{
                 width: 100%;
                 height: 100%;
-                object-fit: contain
+                transition: 0.8s;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+           
+            &:hover .imgBox{
+              transform: scale(1.1);
+           
             }
         }
     }
@@ -192,11 +215,21 @@
         &-left{
             flex: 1 1 60%;
             height: 28.24vw;
-            
-            img{
+            overflow: hidden;
+            .imgBox{
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                transition: 0.8s;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+           
+            &:hover .imgBox{
+              transform: scale(1.1);
+           
             }
         }
         &-bottom{
@@ -259,11 +292,23 @@
                 width: 100%;
                 height: 13vw;
                 margin-bottom: 4vw;
-                img{
+                border-radius: 40px 0 40px 0;
+                overflow: hidden;
+                .imgBox{
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
-                    border-radius: 40px 0 40px 0;
+                    transition: 0.8s;
+                 
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                   
+                    }
+                }
+             
+                &:hover .imgBox{
+                    transform: scale(1.1);
                 }
             }
             &-bottom{

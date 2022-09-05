@@ -165,17 +165,29 @@
             width: 100%;
             height: 90%;
             position: relative;
-            > a{
-                z-index: 10;
-                width: 50%;
-                height: fit-content;
-                img{
-                    cursor: pointer;
-                    border-radius: 40px 0 40px 0;
-                    width: 100%;
-                    height: fit-content;
-                    object-fit: contain;
-                    z-index: 10;
+            &-left{
+                position: relative;
+                z-index: 15;
+                overflow: hidden;
+                cursor: pointer;
+                border-radius: 40px 0 40px 0;
+                .imgBox{
+               
+                    transition: 0.8s;
+                    a{
+                        width: fit-content;
+                        height: fit-content;
+                    }
+                    img{
+                        width: 38vw;
+                        height: fit-content;
+                        object-fit: contain;
+                        z-index: 10;
+                        transition: 0.8s;
+                    }
+                }
+                &:hover .imgBox{
+                    transform: scale(1.1);
                 }
             }
            
@@ -195,6 +207,7 @@
                     height: 100%;
                   
                     > svg{
+                        z-index: -1;
                         position: absolute;
                         width: 100%;
                         height: 100%;
@@ -275,11 +288,23 @@
                 width: 100%;
                 height: 13vw;
                 margin-bottom: 4vw;
-                img{
+                overflow: hidden;
+                border-radius: 40px 0 40px 0;
+                .imgBox{
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
-                    border-radius: 40px 0 40px 0;
+                    
+                    transition: 0.8s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                   
+                    }
+                }
+             
+                &:hover .imgBox{
+                    transform: scale(1.1);
                 }
             }
             &-bottom{

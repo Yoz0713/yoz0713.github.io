@@ -1,7 +1,9 @@
 let pointer = document.documentElement;        
     pointer.addEventListener('mousemove', m => {
-    pointer.style.setProperty('--x', m.clientX + 'px');
-    pointer.style.setProperty('--y', m.clientY + 'px');
+        setTimeout(()=>{
+            pointer.style.setProperty('--x', m.clientX + 'px');
+            pointer.style.setProperty('--y', m.clientY + 'px');
+        },100)
   
 })
 if(window.innerWidth < 1440){
@@ -167,61 +169,7 @@ function svgIn(){
         y:0,
         duration:0.8
     },"<+0.3")
-    let gg2 = gsap.timeline({
-        scrollTrigger:{
-            trigger:".fifth-page",
-            start:"top center",
-        }
-    })
-    gg2.fromTo(".fifth-page-box",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    }).fromTo(".fifth-page-box img",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<").fromTo(".fifth-page-box-bottom h3",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.3").fromTo(".fifth-page-box-bottom svg",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.5").fromTo(`.fifth-page-box-bottom svg line`,{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 1800,
-        duration:1.2,
-    },"<+0.5").fromTo(".fifth-page-box-bottom > p",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.3").fromTo(".fifth-page-box-bottom .readmore",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<")
+    
 }
 svgIn()
 
@@ -296,6 +244,35 @@ function forthPageAnimation (){
 }
 forthPageAnimation()
 
+function fifthPageAnimaiton(){
+    let fpb = document.querySelectorAll(".fifth-page-box")
+    for(let i = 0 ; i <fpb.length ; i++){
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".fifth-page",
+                start:"top center",
+            }
+        })
+        gg2.fromTo(`.fifth-page-box${i}`,{
+            opacity:0,
+            y:30,
+           
+        },{
+            delay:i/1.3,
+            opacity:1,
+            y:0,
+            duration:0.8
+        }).fromTo(`.fifth-page-box${i}-bottom svg line`,{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 1800,
+            duration:1.2,
+        },"<+0.2")
+    }
+    
+}
+fifthPageAnimaiton()
 
 let readmore = document.querySelectorAll(".a");
 let arrow = document.querySelectorAll(".arrow");

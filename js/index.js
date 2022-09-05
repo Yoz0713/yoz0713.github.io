@@ -188,7 +188,7 @@ function seondPageRight(){
     },{
         strokeDashoffset: 300,
         duration:3,
-    }).fromTo(".home-second-page-bottom-left-img",{
+    },"<").fromTo(".home-second-page-bottom-left-img",{
 
         opacity:0,
         filter:"blur(1)"
@@ -257,7 +257,13 @@ function seondPageRight(){
     },{
         filter:"brightness(0.3)",
         duration:0.8,
-    },"<")
+    },"<").fromTo(".hover-light",{
+       
+    },{
+        duration:0.8,
+        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0995 0.01%, #1b0f08e1 30%",
+       
+     },"<")
 
     let gg3 = gsap.timeline({
         scrollTrigger:{
@@ -445,7 +451,20 @@ for(let i = 0 ; i<readmore.length ; i++){
  
 // }
 
-
+let pointer = document.documentElement;        
+    pointer.addEventListener('mousemove', m => {
+        setTimeout(()=>{
+            pointer.style.setProperty('--x', m.clientX + 'px');
+            pointer.style.setProperty('--y', m.clientY + 'px');
+        },100)
+    
+  
+})
+if(window.innerWidth < 1440){
+    let pointer = document.documentElement;        
+    pointer.style.setProperty('--x', 30 + 'px');
+    pointer.style.setProperty('--y', 100 + 'px');
+}
    
 
    
