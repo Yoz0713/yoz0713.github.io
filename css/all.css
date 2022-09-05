@@ -2838,7 +2838,7 @@ footer span {
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 420px) {
   .home-first-page {
-    min-height: 130vw;
+    min-height: 90vw;
   }
   .home-first-page-title {
     position: absolute;
