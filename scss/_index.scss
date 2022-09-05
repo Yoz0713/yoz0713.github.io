@@ -1093,7 +1093,7 @@
                             width: 100%;
                             height: 100%;
                             padding:0;
-                            
+                           
                             ul{
                                 display: flex;
                                 width: 100%;
@@ -1101,6 +1101,7 @@
                                 justify-content: space-around;
                                 height: fit-content;
                                 width: fit-content;
+                                margin-bottom: 5vw;
                                 li{
                                     cursor: pointer;
                                     position: relative;
@@ -1188,13 +1189,14 @@
                                 position: relative;
                                 width: 100%;
                                 height: 46vw;
+                              
                                 > svg{
                                     left: -4.5vw;
                                     top: 0;
                                     position: absolute;
                                     width: 100%;
                                     height: 100%;
-                                    transform: scale(1.1,1.3);
+                                    transform: scale(1.1,1.1);
                                 }
                             }
                             &-para{
@@ -1213,9 +1215,10 @@
                                 p{
                                     width: fit-content;
                                 }
-                                h3{
-                          
-                                    text-align: start;
+                                > h3{
+                                    margin-top: 2vw;
+                                    margin-bottom: -3vw;
+                                 
                                 }
                               
                                 a{
