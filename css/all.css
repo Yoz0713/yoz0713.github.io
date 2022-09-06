@@ -217,7 +217,7 @@ footer span {
   font-size: 15px;
 }
 footer span a {
-  color: #dcb078;
+  color: rgba(211, 168, 113, 0.6196078431);
 }
 @media (max-width: 920px) {
   footer {
@@ -296,7 +296,7 @@ footer span a {
     font-size: 14px;
   }
   .banner_box .ch_title_font {
-    font-size: 5vw;
+    font-size: 6vw;
     letter-spacing: 15px;
   }
   .banner_box .en_title_font {
@@ -305,22 +305,22 @@ footer span a {
     letter-spacing: 6px;
   }
   .banner_box .p_font {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     letter-spacing: 3px;
     line-height: 2.1;
   }
   .news_blog .title_font {
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 6px;
   }
   .news_blog .p_font {
-    font-size: 2vw;
+    font-size: 3vw;
     letter-spacing: 4px;
     line-height: 2;
   }
   .news_blog .small_p_font {
-    font-size: 10px;
+    font-size: 13px;
   }
   .news_blog .menu_font {
     font-size: 15px;
@@ -330,6 +330,27 @@ footer span a {
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 5px;
+  }
+  .title_top .en_txt {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    color: #dcb078;
+  }
+  .title_top .ch_txt {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: 8px;
+    color: #dcb078;
+  }
+  .readmore_word {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
   }
 }
 @media all and (max-width: 1440px) and (max-width: 480px) {
@@ -351,7 +372,7 @@ footer span a {
     letter-spacing: 6px;
   }
   .banner_box .p_font {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     letter-spacing: 3px;
     line-height: 2.1;
   }
@@ -2415,11 +2436,13 @@ footer span a {
 
 @media all and (max-width: 1440px) {
   .home-first-page {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: 135vw;
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
+  .home-first-page {
+    height: 205vw;
+  }
   .home-first-page-title {
     position: absolute;
     left: 11vw;
@@ -2542,10 +2565,10 @@ footer span a {
     width: fit-content;
   }
   .home-second-page-bottom-left ul li p {
-    font-size: 2.5vw;
+    font-size: 2.8vw;
   }
   .home-second-page-bottom-left ul li p span {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .home-second-page-bottom-left ul li::after {
     display: none;
@@ -2566,7 +2589,7 @@ footer span a {
     transition: 1s;
     background-color: rgba(220, 177, 120, 0.4392156863);
     position: absolute;
-    left: 100%;
+    left: 50%;
     top: 32%;
   }
   .home-second-page-bottom-left ul li:hover::after {
@@ -2592,7 +2615,7 @@ footer span a {
     transform: rotate(45deg);
     background-color: #dcb078;
     position: absolute;
-    right: -5%;
+    right: 50%;
     top: 30%;
   }
   .home-second-page-bottom-left ul .lineSwitch::before {
@@ -2603,17 +2626,17 @@ footer span a {
     transition: 1s;
     background-color: #dcb078;
     position: absolute;
-    left: 100%;
+    left: 50%;
     top: 32%;
   }
   .home-second-page-bottom-left-img {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 65vw;
+    width: 70vw;
     top: 2vw;
     right: -2vw;
-    height: 45vw;
+    height: 50vw;
     z-index: 10;
   }
   .home-second-page-bottom-left-img img {
@@ -2656,7 +2679,7 @@ footer span a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 10vw;
+    top: 5vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -2756,7 +2779,7 @@ footer span a {
     position: absolute;
     width: 20vw;
     right: 1vw;
-    bottom: 16vw;
+    top: 39vw;
   }
   .home-third-page-bottom ul li .newsDate1 .newsDate2 {
     position: relative;
@@ -2822,22 +2845,16 @@ footer span a {
     margin-top: 2vw;
   }
   .home-third-page-bottom ul .li2 svg {
-    bottom: -8vw;
+    bottom: -7vw;
   }
   .home-third-page-bottom ul .li2 .para {
     margin-top: 2.5vw;
   }
-  .home-third-page-bottom ul .li2 .newsDate1 {
-    bottom: 21vw;
-  }
   .home-third-page-bottom ul .li3 .para {
     margin-top: 2.5vw;
   }
-  .home-third-page-bottom ul .li3 .newsDate1 {
-    bottom: 21vw;
-  }
   .home-third-page-bottom ul .li3 svg {
-    bottom: -8vw;
+    bottom: -2.5vw;
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 420px) {
@@ -4133,13 +4150,6 @@ footer span a {
   background-color: rgba(220, 177, 120, 0.4705882353);
   position: absolute;
   right: -2.6vw;
-}
-
-.readmore_word {
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 2px;
 }
 
 .hover-light {

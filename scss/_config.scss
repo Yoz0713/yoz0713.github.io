@@ -316,7 +316,7 @@ footer{
     padding: 0 10px;
     font-size: 15px;
     a{
-      color: $gold_color;
+      color: #d3a8719e;
     }
   }
 
@@ -418,7 +418,7 @@ footer{
     }
     .banner_box{
       .ch_title_font{
-        font-size: 5vw;
+        font-size: 6vw;
         letter-spacing: 15px;
       }
     
@@ -429,7 +429,7 @@ footer{
       }
     
       .p_font{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         letter-spacing: 3px;
         line-height: 2.1;
       }
@@ -439,20 +439,20 @@ footer{
       //-- 小主標 --
       .title_font{
         font-weight: 500;
-        font-size: 3vw;
+        font-size: 4vw;
         letter-spacing: 6px;
       }
     
       //-- 內文 --
       .p_font{
-        font-size: 2vw;
+        font-size: 3vw;
         letter-spacing: 4px;
         line-height: 2;
       }
     
       //-- 小字 --
       .small_p_font{
-        font-size: 10px;
+        font-size: 13px;
     
       }
     
@@ -471,6 +471,29 @@ footer{
         letter-spacing: 5px;
       }
       
+    }
+    .title_top{
+      .en_txt{
+        font-family: $en_font_family;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        color: $gold_color;
+      }
+      .ch_txt{
+        font-family: $title_font_family;
+        font-weight: 500;
+        font-size: 23px;
+        letter-spacing: 8px;
+        color: $gold_color;
+      }
+    }
+    .readmore_word{
+      font-family: $en_font_family;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 2px;
     }
   }
   @media all and (max-width:480px){
@@ -495,7 +518,7 @@ footer{
       }
     
       .p_font{
-        font-size: 2.5vw;
+        font-size:3.5vw;
         letter-spacing: 3px;
         line-height: 2.1;
       }
