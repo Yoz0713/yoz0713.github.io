@@ -319,37 +319,71 @@ let readmore = document.querySelectorAll(".readmore");
 let arrow = document.querySelectorAll(".arrow");
 let ggArrow ;
 let timer1;
-for(let i = 0 ; i<readmore.length ; i++){
-    readmore[i].addEventListener("mouseenter",()=>{
-
-        ggArrow = gsap.timeline();
-        timer1 = setInterval(()=>{
-            ggArrow.fromTo(arrow[i],{
-                x:0,
-                opacity:1
-            },{
-                x:30,
-                opacity:0,
-                duration:0.8,
-            
-            }).fromTo(arrow[i],{
-                x:-45,
-                opacity:0
-            },{
-                x:0,
-                opacity:1,
-                duration:0.8,
-                
-            })
-           
-        },100)
-    })
-    readmore[i].addEventListener("mouseleave",()=>{
-        clearInterval(timer1)
-        ggArrow.reverse(1);
-       
-      })
+if(window.innerWidth >1440){
+    for(let i = 0 ; i<readmore.length ; i++){
+        readmore[i].addEventListener("mouseenter",()=>{
     
+            ggArrow = gsap.timeline();
+            timer1 = setInterval(()=>{
+                ggArrow.fromTo(arrow[i],{
+                    x:0,
+                    opacity:1
+                },{
+                    x:30,
+                    opacity:0,
+                    duration:0.8,
+                
+                }).fromTo(arrow[i],{
+                    x:-45,
+                    opacity:0
+                },{
+                    x:0,
+                    opacity:1,
+                    duration:0.8,
+                    
+                })
+               
+            },100)
+        })
+        readmore[i].addEventListener("mouseleave",()=>{
+            clearInterval(timer1)
+            ggArrow.reverse(1);
+           
+          })
+        
+    }
+}else{
+    for(let i = 0 ; i<readmore.length ; i++){
+    
+            ggArrow = gsap.timeline();
+           
+                ggArrow.to(arrow[i],{
+                    keyframes:[
+                        {
+                            x:30,
+                            duartion:0.75,
+                            opacity:0
+                        },{
+                            x:-45,
+                            duartion:0.1,
+                            opacity:0
+                        },{
+                            x:0,
+                            duartion:0.75,
+                            opacity:1
+                        }
+                        ,{
+                            x:0,
+                            duartion:0.75,
+                            opacity:1
+                        }
+                    ],
+                    repeat:-1
+                    
+                })
+     
+        
+    }
 }
 
 

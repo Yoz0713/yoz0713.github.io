@@ -67,6 +67,7 @@
        
                 height: 28vw;
                 .logo{
+                    pointer-events: none;
                     position: absolute;
                     top: 2vw;
                     right:-4vw;
@@ -208,6 +209,7 @@
                 border-radius: 40px 0 0 0;          
               
                 .logo{
+                    pointer-events: none;
                     position: absolute;
                     top: 2vw;
                     right:-4vw;
@@ -690,6 +692,7 @@
     }
     @media all and (max-width:920px){
         .portfolio{
+            overflow: hidden;
             .first-page{
 
                 
@@ -812,7 +815,7 @@
                             color: $gold_color;
                         }
                         svg{
-                            transform: translateX(-4px);
+                            transform: translateX(-4px) ;
                           
                             rect{
                                 transform-box: fill-box;
@@ -953,7 +956,7 @@
                             color: $gold_color;
                         }
                         svg{
-                            transform: translateX(-4px);
+                            transform: translateX(-4px) ;
                           
                             rect{
                                 transform-box: fill-box;
@@ -1094,8 +1097,9 @@
                             color: $gold_color;
                         }
                         svg{
-                            transform: translateX(-4px);
-                          
+                         
+                            transform: translateX(-4px) ;
+                            
                             rect{
                                 transform-box: fill-box;
                                 transform-origin: center;
@@ -1123,6 +1127,7 @@
                             display: flex;
                             justify-content: flex-end;
                             cursor: pointer;
+                            margin-top: -5vw;
                             a{
                                 display: flex;
                                 margin-top: 0vw;
@@ -1220,6 +1225,7 @@
                             display: flex;
                             justify-content: flex-end;
                             cursor: pointer;
+                            margin-top: -5vw;
                             a{
                                 display: flex;
                                 margin-top: 0vw;
