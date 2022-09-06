@@ -441,7 +441,7 @@ if(window.innerWidth <=920){
             let gg = gsap.timeline({
                 scrollTrigger:{
                     trigger:`.li${i+1}`,
-                    start:"top 90%",
+                    start:"top 70%",
                 }
             })
             gg.fromTo(`.home-third-page .li${i+1}`,{
@@ -457,7 +457,7 @@ if(window.innerWidth <=920){
                 strokeDasharray: 2000
             },{
                 strokeDashoffset: 800,
-                duration:1.5,
+                duration:3.5,
             },"<+0.5")
 
         }

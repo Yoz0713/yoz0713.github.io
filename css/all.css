@@ -3008,7 +3008,7 @@ footer span {
     justify-content: flex-end;
     position: relative;
     width: 100%;
-    height: 46vw;
+    height: 45vw;
   }
   .home-second-page-bottom-right .lineBox > svg {
     left: -4.5vw;
@@ -3016,7 +3016,10 @@ footer span {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.5);
+  }
+  .home-second-page-bottom-right .lineBox > svg polyline {
+    transform: scaleY(0.8);
   }
   .home-second-page-bottom-right-para {
     width: -webkit-fit-content;
@@ -3025,7 +3028,7 @@ footer span {
     position: absolute;
     left: 0;
     right: 0;
-    top: -2vw;
+    top: -10vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
