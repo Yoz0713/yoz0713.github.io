@@ -5122,7 +5122,7 @@ footer span a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
