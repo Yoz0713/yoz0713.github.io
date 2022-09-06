@@ -135,8 +135,8 @@ function secondPageAnimation(){
         status = 250
         status2 = 280
     }else if(window.innerWidth < 480){
-        status = 220
-        status2 = 0
+        status = 330
+        status2 = 230
   
     }
     let gg = gsap.timeline({

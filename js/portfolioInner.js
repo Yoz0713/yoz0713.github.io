@@ -42,6 +42,18 @@ let pointer = document.documentElement;
   
 })
 
+// make first-page of mobile device 100vh without screen shaking 
+function safariHacks() {
+    let windowsVH = window.innerHeight / 100;
+    document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    window.addEventListener('resize', function() {
+        document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    });
+}
+
+safariHacks();
+// make first-page of mobile device 100vh without screen shaking
+
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{

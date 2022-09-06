@@ -1044,13 +1044,13 @@
                 padding: 10vw 8vw;
                 &-top{
                     margin: 0vw 0 15vw;
-                    height: 120vw;
+                    height: 130vw;
 
                     
                     &-left{
                         position: relative;
                         width: 100%;
-               
+                        margin-bottom: 5vw;
                         height: 45%;
                         .logo{
                             position: absolute;
@@ -1071,13 +1071,13 @@
                         justify-content:flex-start;
                         align-items:center;
                         width: 100%;
-                        height: 55%;
+                        height: calc(55% - 5vw);
                         & > :nth-child(1){
                             margin: 2vw 0 0;
                         }
                         & > :nth-child(2){
                             margin: 0 0 0.5vw;
-                            width:145%;
+                            width:155%;
                             height: auto;
                         }
                         & > :nth-child(3){
@@ -1140,14 +1140,14 @@
                     }
                 }
                 &-bottom{
-                    margin: 0vw 0 5vw;
-                    height: 120vw;
+                    margin: 0vw 0 15vw;
+                    height: 130vw;
 
                     
                     &-left{
                         position: relative;
                         width: 100%;
-               
+                        margin-bottom: 5vw;
                         height: 45%;
                         .logo{
                             position: absolute;
@@ -1168,13 +1168,13 @@
                         justify-content:flex-start;
                         align-items:center;
                         width: 100%;
-                        height: 55%;
+                        height: calc(55% - 5vw);
                         & > :nth-child(1){
                             margin: 2vw 0 0;
                         }
                         & > :nth-child(2){
                             margin: 0 0 0.5vw;
-                            width:145%;
+                            width:155%;
                             height: auto;
                         }
                         & > :nth-child(3){
