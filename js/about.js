@@ -129,6 +129,16 @@ bannerBoxIn()
 
 
 function secondPageAnimation(){
+    let status = 0;
+    let status2 = 0
+    if(window.innerWidth < 920 && window.innerWidth > 480){
+        status = 250
+        status2 = 280
+    }else if(window.innerWidth < 480){
+        status = 220
+        status2 = 0
+        console.log(123)
+    }
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page",
@@ -144,12 +154,19 @@ function secondPageAnimation(){
         opacity:1,
         duration:0.8,
         filter:"blur(0)"
-    }).fromTo(".second-page-top svg",{
-        opacity:0
+    }).fromTo(".second-page-top svg :nth-child(1)",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
     },{
-        opacity:1,
-        duration:0.8
-    },"<+0.5").fromTo(".second-page-top h3",{
+        strokeDashoffset: status,
+        duration:2.5,
+    },"<+0.5").fromTo(".second-page-top svg :nth-child(2)",{
+        strokeDashoffset: 2000,
+        strokeDasharray: 2000
+    },{
+        strokeDashoffset: status2,
+        duration:2.5,
+    },"<").fromTo(".second-page-top h3",{
         x:30,
         opacity:0
     },{
@@ -231,162 +248,321 @@ function secondPageAnimation(){
 }
 secondPageAnimation()
 
-function thirdPageAnimation(){
-    let gg = gsap.timeline({
-        scrollTrigger:{
-            trigger:".third-page",
-            start:"top center"
-        }
-    })
-    gg.fromTo(".third-page-left .square1",{
-        opacity:0,
-        filter:"blur(0)",
-        y:45
-    },{
-        opacity:1,
-        filter:"blur(1)",
-        duration:1,
-        y:0
-    },"<").fromTo(".third-page-left .square2",{
-        opacity:0,
-        filter:"blur(0)",
-        y:-45
-    },{
-        opacity:1,
-        filter:"blur(1)",
-        duration:1,
-        y:0
-    },"<").fromTo(".third-page-left h2",{
-        y:30,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<").fromTo(".third-page-left-bottom .banner_box :nth-child(1)",{
-        y:30,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.5").fromTo(".third-page-left-bottom .banner_box :nth-child(2)",{
-        y:30,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.5").fromTo(".third-page-right .split1",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right .split2",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-top-box",{
-        y:30,
-        opacity:0,
-        filter:"blur(1)"
-    },{
-        y:0,
-        opacity:1,
-        filter:"blur(0)",
-        duration:0.8
-    },"<").fromTo(".third-page-right .split3",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-center > :nth-child(2)",{
-        x:-30,
-        opacity:0,
-        filter:"blur(1)"
-    },{
-        x:0,
-        filter:"blur(0)",
-        opacity:1,
-        duration:0.8
-    },"<").fromTo(".third-page-right .split4",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-bottom-box",{
-        y:-30,
-        opacity:0,
-        filter:"blur(1)"
-    },{
-        filter:"blur(0)",
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<").fromTo(".third-page-right .split5",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:15,
-    },"<+0.5").fromTo(".third-page-right-center > :nth-child(1)",{
-        x:30,
-        filter:"blur(1)",
-        opacity:0
-    },{
-        x:0,
-        filter:"blur(0)",
-        opacity:1,
-        duration:0.8
-    },"<").fromTo(".third-page-right .outerLine",{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 0,
-        duration:8,
-    },"<+0.5")
-
-    // .fromTo(".third-page-right .outerLine",{
-    //     opacity:0
-    // },{
-    //     opacity:1,
-    //     duration:1
-    // },"<+0.8")
-
-    let gg2 = gsap.timeline({
-        scrollTrigger:{
-            trigger:".third-page",
-            start:"top center"
-        }
-    })
-
-    gg2.fromTo(".third-page .square1",{
-        transformOrigin:"50% 50%",
-        rotate:"43deg",
-    },{
-        repeat:-1,
-        duration:10,
-        
-        transformOrigin:"50% 50%",
-        rotate:"403deg",
-        ease:"linear"
-    }).fromTo(".third-page .square2",{
-        transformOrigin:"50% 50%",
-        rotate:"56deg",
-    },{
-        repeat:-1,
-        duration:10,
-        transformOrigin:"50% 50%",
-        rotate:"416deg",
-        ease:"linear"
-    },"<")
+if(window.innerWidth > 920){
+    function thirdPageAnimation(){
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:".third-page",
+                start:"top center"
+            }
+        })
+        gg.fromTo(".third-page-left .square1",{
+            opacity:0,
+            filter:"blur(0)",
+            y:45
+        },{
+            opacity:1,
+            filter:"blur(1)",
+            duration:1,
+            y:0
+        },"<").fromTo(".third-page-left .square2",{
+            opacity:0,
+            filter:"blur(0)",
+            y:-45
+        },{
+            opacity:1,
+            filter:"blur(1)",
+            duration:1,
+            y:0
+        },"<").fromTo(".third-page-left h2",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-left-bottom .banner_box :nth-child(1)",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.5").fromTo(".third-page-left-bottom .banner_box :nth-child(2)",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.5").fromTo(".third-page-right .split1",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right .split2",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-top-box",{
+            y:30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            y:0,
+            opacity:1,
+            filter:"blur(0)",
+            duration:0.8
+        },"<").fromTo(".third-page-right .split3",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-center > :nth-child(2)",{
+            x:-30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            x:0,
+            filter:"blur(0)",
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .split4",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-bottom-box",{
+            y:-30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            filter:"blur(0)",
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .split5",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-center > :nth-child(1)",{
+            x:30,
+            filter:"blur(1)",
+            opacity:0
+        },{
+            x:0,
+            filter:"blur(0)",
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .outerLine",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:8,
+        },"<+0.5")
+    
+        // .fromTo(".third-page-right .outerLine",{
+        //     opacity:0
+        // },{
+        //     opacity:1,
+        //     duration:1
+        // },"<+0.8")
+    
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".third-page",
+                start:"top center"
+            }
+        })
+    
+        gg2.fromTo(".third-page .square1",{
+            transformOrigin:"50% 50%",
+            rotate:"43deg",
+        },{
+            repeat:-1,
+            duration:10,
+            
+            transformOrigin:"50% 50%",
+            rotate:"403deg",
+            ease:"linear"
+        }).fromTo(".third-page .square2",{
+            transformOrigin:"50% 50%",
+            rotate:"56deg",
+        },{
+            repeat:-1,
+            duration:10,
+            transformOrigin:"50% 50%",
+            rotate:"416deg",
+            ease:"linear"
+        },"<")
+    }
+    thirdPageAnimation()
+}else{
+    function thirdMobileAnimation(){
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".third-page",
+                start:"top center"
+            }
+        })
+    
+        gg2.fromTo(".third-page .square1",{
+            transformOrigin:"50% 50%",
+            rotate:"43deg",
+        },{
+            repeat:-1,
+            duration:10,
+            
+            transformOrigin:"50% 50%",
+            rotate:"403deg",
+            ease:"linear"
+        }).fromTo(".third-page .square2",{
+            transformOrigin:"50% 50%",
+            rotate:"56deg",
+        },{
+            repeat:-1,
+            duration:10,
+            transformOrigin:"50% 50%",
+            rotate:"416deg",
+            ease:"linear"
+        },"<")
+        let gg1 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".third-page",
+                start:"top center"
+            }
+        })
+        gg1.fromTo(".third-page-left .square1",{
+            opacity:0,
+            filter:"blur(0)",
+            y:45
+        },{
+            opacity:1,
+            filter:"blur(1)",
+            duration:1,
+            y:0
+        },"<").fromTo(".third-page-left .square2",{
+            opacity:0,
+            filter:"blur(0)",
+            y:-45
+        },{
+            opacity:1,
+            filter:"blur(1)",
+            duration:1,
+            y:0
+        },"<").fromTo(".third-page-left h2",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-left-bottom .banner_box :nth-child(1)",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.5").fromTo(".third-page-left-bottom .banner_box :nth-child(2)",{
+            y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.5")
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:".third-page-right-bottom",
+                start:"top bottom"
+            }
+        })
+        gg.fromTo(".third-page-right .split1",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right .split2",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-top-box",{
+            y:30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            y:0,
+            opacity:1,
+            filter:"blur(0)",
+            duration:0.8
+        },"<").fromTo(".third-page-right .split3",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-center > :nth-child(2)",{
+            x:-30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            x:0,
+            filter:"blur(0)",
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .split4",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-bottom-box",{
+            y:-30,
+            opacity:0,
+            filter:"blur(1)"
+        },{
+            filter:"blur(0)",
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .split5",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:15,
+        },"<+0.5").fromTo(".third-page-right-center > :nth-child(1)",{
+            x:30,
+            filter:"blur(1)",
+            opacity:0
+        },{
+            x:0,
+            filter:"blur(0)",
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".third-page-right .outerLine",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:8,
+        },"<+0.5")
+    }
+    thirdMobileAnimation()
 }
-thirdPageAnimation()
+
 
 
 
@@ -401,6 +577,19 @@ let pointer = document.documentElement;
     
   
 })
+
+// make first-page of mobile device 100vh without screen shaking 
+function safariHacks() {
+    let windowsVH = window.innerHeight / 100;
+    document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    window.addEventListener('resize', function() {
+        document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    });
+}
+
+safariHacks();
+// make first-page of mobile device 100vh without screen shaking
+
 
  if(window.innerWidth > 1440){
       let g1 = document.querySelectorAll(".parallax");
