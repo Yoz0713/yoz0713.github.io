@@ -720,15 +720,7 @@
                         }
                     }
                 }
-                &-shadow{
-                    position: fixed;
-                    width: 100%;
-                    height: 20vw;
-                    background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
-                    bottom: 0;
-                    left: 0;
-                    z-index: 10;
-                }
+           
             }
             .second-page{
                 display: flex;
@@ -1021,228 +1013,229 @@
                 }
             }
         }
-    }
-    @media all and (max-width:480px){
-        .portfolio{
-            .first-page{
-                &-title{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-around;
-                    background-color: $banner_bg_color;
-                    color: $gold_color;
-                    padding: 3vw 0 0;
-                    width: 75vw;
+        @media all and (max-width:480px){
+            .portfolio{
+                .first-page{
+                    &-title{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        background-color: $banner_bg_color;
+                        color: $gold_color;
+                        padding: 3vw 0 0;
+                        width: 75vw;
+                     
+                    }
                  
                 }
-             
-            }
-            .second-page{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                width: 100%;
-                height: fit-content;
-                padding: 10vw 8vw;
-                &-top{
-                    margin: 0vw 0 15vw;
-                    height: 130vw;
-
-                    
-                    &-left{
-                        position: relative;
-                        width: 100%;
-                        margin-bottom: 5vw;
-                        height: 45%;
-                        .logo{
-                            position: absolute;
-                            top: 0vw;
-                            right:0vw;
-                        }
-                        &-box{
+                .second-page{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: fit-content;
+                    padding: 10vw 8vw;
+                    &-top{
+                        margin: 0vw 0 15vw;
+                        height: 130vw;
+    
+                        
+                        &-left{
+                            position: relative;
                             width: 100%;
-                          
-                        }
-                     
-                       
-                    }
-                    &-right{
-                     
-                        display: flex;
-                        flex-direction: column;
-                        justify-content:flex-start;
-                        align-items:center;
-                        width: 100%;
-                        height: calc(55% - 5vw);
-                        & > :nth-child(1){
-                            margin: 2vw 0 0;
-                        }
-                        & > :nth-child(2){
-                            margin: 0 0 0.5vw;
-                            width:155%;
-                            height: auto;
-                        }
-                        & > :nth-child(3){
-                            width: fit-content;
-                            margin: 0 0 2vw;
-                            br{
-                                display:none;
+                            margin-bottom: 5vw;
+                            height: 45%;
+                            .logo{
+                                position: absolute;
+                                top: 0vw;
+                                right:0vw;
                             }
-                        }
-                        & > :nth-child(4){
-                            margin: 0;
-                        }
-                        h3{
-                            color: $gold_color;
-                        }
-                        svg{
+                            &-box{
+                                width: 100%;
+                              
+                            }
                          
-                            transform: translateX(-4px) ;
-                            
-                            rect{
-                                transform-box: fill-box;
-                                transform-origin: center;
-                                transform: rotate(45deg);
-                            }
+                           
                         }
-                        .icon{
-                            &-box{
-                                width: 8vw;
-                                height: 8vw;
-                                padding: 1.2vw;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: contain;
-                                    cursor: pointer;
-                                    transition: 0.5s;
+                        &-right{
+                         
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:flex-start;
+                            align-items:center;
+                            width: 100%;
+                            height: calc(55% - 5vw);
+                            & > :nth-child(1){
+                                margin: 2vw 0 0;
+                            }
+                            & > :nth-child(2){
+                                margin: 0 0 0.5vw;
+                                width:155%;
+                                height: auto;
+                            }
+                            & > :nth-child(3){
+                                width: fit-content;
+                                margin: 0 0 2vw;
+                                br{
+                                    display:none;
                                 }
                             }
-                            
-                        }
-                        .readmore{
-                            width: 100%;
-                            height: 50px;
-                            display: flex;
-                            justify-content: flex-end;
-                            cursor: pointer;
-                            margin-top: -5vw;
-                            a{
-                                display: flex;
-                                margin-top: 0vw;
+                            & > :nth-child(4){
+                                margin: 0;
                             }
                             h3{
-                               
-                                line-height: 65px;
+                                color: $gold_color;
                             }
                             svg{
-                                transform: scale(1);
-                                margin-right: 2vw;
-                            }
-                     
-                        }
-                    }
-                }
-                &-bottom{
-                    margin: 0vw 0 15vw;
-                    height: 130vw;
-
-                    
-                    &-left{
-                        position: relative;
-                        width: 100%;
-                        margin-bottom: 5vw;
-                        height: 45%;
-                        .logo{
-                            position: absolute;
-                            top: 0vw;
-                            right:0vw;
-                        }
-                        &-box{
-                            width: 100%;
-                          
-                        }
-                     
-                       
-                    }
-                    &-right{
-                     
-                        display: flex;
-                        flex-direction: column;
-                        justify-content:flex-start;
-                        align-items:center;
-                        width: 100%;
-                        height: calc(55% - 5vw);
-                        & > :nth-child(1){
-                            margin: 2vw 0 0;
-                        }
-                        & > :nth-child(2){
-                            margin: 0 0 0.5vw;
-                            width:155%;
-                            height: auto;
-                        }
-                        & > :nth-child(3){
-                            width: fit-content;
-                            margin: 0 0 2vw;
-                            br{
-                                display:none;
-                            }
-                        }
-                        & > :nth-child(4){
-                            margin: 0;
-                        }
-                        h3{
-                            color: $gold_color;
-                        }
-                        svg{
-                            transform: translateX(-4px);
-                          
-                            rect{
-                                transform-box: fill-box;
-                                transform-origin: center;
-                                transform: rotate(45deg);
-                            }
-                        }
-                        .icon{
-                            &-box{
-                                width: 8vw;
-                                height: 8vw;
-                                padding: 1.2vw;
-                                img{
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: contain;
-                                    cursor: pointer;
-                                    transition: 0.5s;
+                             
+                                transform: translateX(-4px) ;
+                                
+                                rect{
+                                    transform-box: fill-box;
+                                    transform-origin: center;
+                                    transform: rotate(45deg);
                                 }
                             }
-                            
-                        }
-                        .readmore{
-                            width: 100%;
-                            height: 50px;
-                            display: flex;
-                            justify-content: flex-end;
-                            cursor: pointer;
-                            margin-top: -5vw;
-                            a{
+                            .icon{
+                                &-box{
+                                    width: 8vw;
+                                    height: 8vw;
+                                    padding: 1.2vw;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        cursor: pointer;
+                                        transition: 0.5s;
+                                    }
+                                }
+                                
+                            }
+                            .readmore{
+                                width: 100%;
+                                height: 50px;
                                 display: flex;
-                                margin-top: 0vw;
+                                justify-content: flex-end;
+                                cursor: pointer;
+                                margin-top: -5vw;
+                                a{
+                                    display: flex;
+                                    margin-top: 0vw;
+                                }
+                                h3{
+                                   
+                                    line-height: 65px;
+                                }
+                                svg{
+                                    transform: scale(1);
+                                    margin-right: 2vw;
+                                }
+                         
+                            }
+                        }
+                    }
+                    &-bottom{
+                        margin: 0vw 0 15vw;
+                        height: 130vw;
+    
+                        
+                        &-left{
+                            position: relative;
+                            width: 100%;
+                            margin-bottom: 5vw;
+                            height: 45%;
+                            .logo{
+                                position: absolute;
+                                top: 0vw;
+                                right:0vw;
+                            }
+                            &-box{
+                                width: 100%;
+                              
+                            }
+                         
+                           
+                        }
+                        &-right{
+                         
+                            display: flex;
+                            flex-direction: column;
+                            justify-content:flex-start;
+                            align-items:center;
+                            width: 100%;
+                            height: calc(55% - 5vw);
+                            & > :nth-child(1){
+                                margin: 2vw 0 0;
+                            }
+                            & > :nth-child(2){
+                                margin: 0 0 0.5vw;
+                                width:155%;
+                                height: auto;
+                            }
+                            & > :nth-child(3){
+                                width: fit-content;
+                                margin: 0 0 2vw;
+                                br{
+                                    display:none;
+                                }
+                            }
+                            & > :nth-child(4){
+                                margin: 0;
                             }
                             h3{
-                               
-                                line-height: 65px;
+                                color: $gold_color;
                             }
                             svg{
-                                transform: scale(1);
-                                margin-right: 2vw;
+                                transform: translateX(-4px);
+                              
+                                rect{
+                                    transform-box: fill-box;
+                                    transform-origin: center;
+                                    transform: rotate(45deg);
+                                }
                             }
-                     
+                            .icon{
+                                &-box{
+                                    width: 8vw;
+                                    height: 8vw;
+                                    padding: 1.2vw;
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        cursor: pointer;
+                                        transition: 0.5s;
+                                    }
+                                }
+                                
+                            }
+                            .readmore{
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                justify-content: flex-end;
+                                cursor: pointer;
+                                margin-top: -5vw;
+                                a{
+                                    display: flex;
+                                    margin-top: 0vw;
+                                }
+                                h3{
+                                   
+                                    line-height: 65px;
+                                }
+                                svg{
+                                    transform: scale(1);
+                                    margin-right: 2vw;
+                                }
+                         
+                            }
                         }
                     }
                 }
             }
         }
     }
+   
 }

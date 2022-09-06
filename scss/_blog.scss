@@ -48,10 +48,7 @@
             z-index: 11;
             margin: 0vw 8vw 3vw;
 
-          p{
-            line-height: 40px;
-            letter-spacing: 0.2vw;
-          }
+        
           svg{
                
             position: absolute;
@@ -123,7 +120,7 @@
                         align-items: center;
                         .menu_font{
                             position: relative;
-                            font-size: 16px;
+                         
                             letter-spacing: 4px;
                             color: $gold_color;
                             cursor: pointer;
@@ -370,16 +367,15 @@
 @media all and (max-width:1440px){
     .blog{
         .first-page{
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             &-title{
                 position: relative;
                 width: 45vw;
                 z-index: 11;
                 margin: 0vw 10vw 4vw;
     
-              p{
-                line-height: 2.8vw;
-                letter-spacing: 0.2vw;
-              }
+          
          
             }
       
@@ -417,7 +413,7 @@
                             width: 100%;
                             .menu_font{
                                 position: relative;
-                                font-size: 16px;
+                            
                                 letter-spacing: 4px;
                                 color: $gold_color;
                                 cursor: pointer;
@@ -618,5 +614,441 @@
     
     
     
+    }
+    @media all and (max-width:920px){
+        .blog{
+            .first-page{
+         
+                &-title{
+                    position: relative;
+                    width: 45vw;
+                    z-index: 11;
+                    margin: 0vw 15vw 8vw;
+        
+                
+                  svg{
+                    transform: scale(1.1);
+                    left: -95px;
+                    top: -130px;
+                  }
+                }
+          
+            }
+            .second-page{
+                width: 100%;
+                height: fit-content;
+                padding:2vw 8vw;
+                &-top{
+                    display: flex;
+                  
+                    align-items: center;
+                    width: 100%;
+                    height: 10%;
+                    margin: 3vw 0 6vw;
+                    nav{
+                        width: 100%;
+                     
+                        height: 100%;
+                        border-top: 1px solid $gold_color;
+                        border-bottom: 1px solid $gold_color;
+                        padding: 0.1vw 0;
+                        ul{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-top: 1px solid #dcb1785b;
+                            border-bottom: 1px solid #dcb1785b;
+                            width: 100%;
+                            height: 100%;
+                            padding: 1.3vw 0;
+                            li{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                .menu_font{
+                                    position: relative;
+                               
+                                    letter-spacing: 4px;
+                                    color: $gold_color;
+                                    cursor: pointer;
+                                    z-index: 10;
+                                    &::after{
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        width: 0;
+                                        height: 1px;
+                                        background-color: $gold_color;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                        bottom: 0;
+                                        transition: 0.5s;
+                                    }
+                                    &:hover::after{
+                                        width: 100%;
+                                    }
+                                  }
+                                img{
+                                  
+                                    margin: 1vw;
+                                    transform: scale(0.65);
+                                    width:3%;
+                                    height: fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-bottom{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    height:fit-content;
+                    position: relative;
+                    a{
+                        width: 100%;
+                        .second-page-bottom-left{
+                            position: relative;
+                            width: 100%;
+                            z-index: 15;
+                            .imgBox{
+                                width: 100%;
+                                transition: 0.8s;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                 
+                   
+                    &-right{
+                        display: flex;
+                        height:fit-content;
+                        align-items: center;
+                        position: relative;
+                        margin-top: 5vw;
+                        left: 0;
+
+                        width:100%;
+                        .lineBox{
+                            display: flex;
+                            justify-content: flex-end;
+                            position: relative;
+                            width:100%;
+                            height: 40vw;
+                            > svg{
+                                left: -3.3vw;
+                                top: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                transform: scaleX(1.25);
+                            }
+                        }
+                        a{
+                            margin-top: 1vw;
+                        }
+                        &-para{
+                            align-items: center;
+                            width: 100%;
+                            margin: 0;
+                            svg{
+                                height:20%;
+                            }
+                            > p{
+                                width: 80%;
+                            }
+                            > h3{
+                                width: 100%;
+                                text-align: center;
+                            }
+                            a{
+                                display: flex;
+                                width: 80%;
+                                justify-content: flex-end;
+                                .readmore{
+                                    margin: -2vw 0 0;
+                                    
+                                    position: relative;
+                                    align-items: flex-end;
+                                    p{
+                                        margin-right:0;
+                                        position: absolute;
+                                        order: 3;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                    &-box{
+                                        flex: 1 1 30%;
+                                        svg{
+                                        
+                                            transform: scale(0.75);
+                                      
+                                       
+                                        }
+                                        h3{
+                                            text-align: end;
+                                            line-height: 77px;
+                                          
+                                        }
+                                    }
+                                 
+                                }
+                            }
+                          
+                    
+                        
+                        }
+                      
+                    }
+                }
+            }
+            .third-page{
+                width: 100%;
+                height: fit-content;
+                padding:3vw 8vw 0vw;
+                &-box{
+                    display: flex;
+                    flex-direction: column;
+                    height: fit-content;
+              
+                    &-left{
+                        width: 100%;
+                        height: fit-content;
+                        margin-right: 5vw;
+                        overflow: hidden;
+                        img{
+                            cursor: pointer;
+                            border-radius: 40px 0 40px 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transition: 0.8s;
+                        }
+                    
+                    }
+                    &-right{
+                        margin-top: 3vw;
+                        height: fit-content;
+                        width: 100%;
+                        > h3{
+                            margin-bottom: 2vw;
+                            height:fit-content;
+                        }
+                        > p{
+                            height: fit-content;
+                        }
+                        .box{
+                            display: flex;
+                           width: 100%;
+                           height:fit-content;
+                           justify-content: flex-end;
+                           align-items: flex-end;
+                           padding: 0 0 2vw;
+                           .readmore{
+                            display: flex;
+                            width: fit-content;
+                            height: 3.5vw;
+                   
+                 
+                            p,h3{
+                                color: $gold_color;
+                                height: fit-content;
+                                line-height: 75px;
+                            }
+                            svg{
+                                height: fit-content;
+                                transform: scale(0.8);
+                                margin: 0 0.5vw ;
+                            }
+                           }
+                       
+                           
+                        }
+                    }
+              
+                   
+                }
+                & :nth-child(3){
+                    border: none;
+                }
+            }
+        
+        
+        
+        }
+        @media all and (max-width:480px){
+            .blog{
+                .first-page{
+                    &-box{
+                        &-2{
+                            padding: 3vw 0 0;
+                            width: 65vw;
+                            .text-decoration{
+                              
+                                display: flex;
+                                svg{
+                                    transform: translateX(-6px);
+                                    rect{
+                                        transform-box: fill-box;
+                                        transform-origin: center;
+                                        transform: rotate(45deg);
+                                    }
+                                }
+                            }
+                           
+                        }
+                    }
+                    &-title{
+                        position: relative;
+                        width: 60vw;
+                        z-index: 11;
+                        margin: 0vw 15vw 8vw;
+            
+                    
+                      svg{
+                        transform: scale(0.9);
+                        left: -100px;
+                        top: -150px;
+                      }
+                    }
+              
+                }
+                .second-page{
+         
+                
+                    &-bottom{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+                        height:fit-content;
+                        position: relative;
+                  
+                       
+                        &-right{
+                            display: flex;
+                            height:fit-content;
+                            align-items: center;
+                            position: relative;
+                            margin-top: 15vw;
+                            left: 0;
+    
+                            width:100%;
+                            .lineBox{
+                                display: flex;
+                                justify-content: flex-end;
+                                position: relative;
+                                width:100%;
+                                height: 75vw;
+                                > svg{
+                                    left: 36vw;
+                                    top: 30vw;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    transform: scale(1.85,2.7);
+                                    polyline{
+                                        transform: scale(0.5);
+                                    }
+                                }
+                            }
+                            a{
+                                margin-top: 1vw;
+                            }
+                            &-para{
+                                align-items: center;
+                                width: 100%;
+                                margin: 0;
+                                margin-bottom: 7vw;
+                                svg{
+                                    height:15%;
+                                }
+                                > p{
+                                    width: 80%;
+                                }
+                                > h3{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                a{
+                                    display: flex;
+                                    width: fit-content;
+                                    margin-left:18vw;
+                                    .readmore{
+                                        margin: -2vw 0 0;
+                                        width: fit-content;
+                                        position: relative;
+                                        align-items: flex-end;
+                                    }
+                                }
+                              
+                        
+                            
+                            }
+                          
+                        }
+                    }
+                }
+                .third-page{
+ 
+                    &-box{
+                        display: flex;
+                        flex-direction: column;
+                        height: fit-content;
+                        padding:0 0 10vw ;
+                        margin-bottom: 6vw;
+             
+                        &-right{
+                            margin-top: 3vw;
+                            height: fit-content;
+                            width: 100%;
+                      
+                            .box{
+                                display: flex;
+                               width: 100%;
+                               height:fit-content;
+                               justify-content:center;
+                               align-items: flex-end;
+                               padding: 0 0 2vw;
+                               .readmore{
+                                display: flex;
+                                width: fit-content;
+                                height: 3.5vw;
+                       
+                     
+                                p,h3{
+                                    color: $gold_color;
+                                    height: fit-content;
+                                    line-height: 75px;
+                                }
+                                svg{
+                                    height: fit-content;
+                                    transform: scale(0.8);
+                                    margin: 0 0.5vw ;
+                                }
+                               }
+                           
+                               
+                            }
+                        }
+                  
+                       
+                    }
+                    & :nth-child(3){
+                        border: none;
+                    }
+                }
+            
+            
+            
+            }
+        }
     }
 }
