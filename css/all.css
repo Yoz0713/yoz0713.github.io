@@ -4297,6 +4297,10 @@ footer span a {
     bottom: 6vw;
   }
 }
+.blog {
+  overflow: hidden;
+  width: 100%;
+}
 .blog .first-page {
   display: flex;
   flex-direction: column;
