@@ -31,7 +31,9 @@ function bannerTitleIn(){
     },"<+0.5")
 }
 
-let pointer = document.documentElement;        
+let pointer = document.documentElement;
+    pointer.style.setProperty('--x', 30 + 'px');
+    pointer.style.setProperty('--y', 100 + 'px');     
     pointer.addEventListener('mousemove', m => {
         setTimeout(()=>{
             pointer.style.setProperty('--x', m.clientX + 'px');
@@ -39,11 +41,7 @@ let pointer = document.documentElement;
         },100)
   
 })
-if(window.innerWidth < 1440){
-    let pointer = document.documentElement;        
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');
-}
+
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{

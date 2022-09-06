@@ -2410,12 +2410,6 @@ footer span {
   margin-left: 1vw;
 }
 
-.cube {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(45deg);
-}
-
 @media all and (max-width: 1440px) and (max-width: 920px) {
   .home-first-page {
     min-height: 130vw;
@@ -5959,16 +5953,6 @@ footer span {
   width: 1px;
   height: 2.4vw;
   background-color: rgba(220, 177, 120, 0.4705882353);
-}
-.about .g1 {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(43deg);
-}
-.about .g2 {
-  transform-box: fill-box;
-  transform-origin: center;
-  transform: rotate(56deg);
 }
 
 .hover-light {

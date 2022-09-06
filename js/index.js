@@ -357,7 +357,9 @@ for(let i = 0 ; i<readmore.length ; i++){
 
 
 
-let pointer = document.documentElement;        
+let pointer = document.documentElement;
+    pointer.style.setProperty('--x', 30 + 'px');
+    pointer.style.setProperty('--y', 100 + 'px');  
     pointer.addEventListener('mousemove', m => {
         setTimeout(()=>{
             pointer.style.setProperty('--x', m.clientX + 'px');
@@ -430,11 +432,7 @@ if(window.innerWidth >1440){
     thirdPageAnimation()
 }
 
-if(window.innerWidth < 1440){
-    let pointer = document.documentElement;        
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');
-}
+
 
 if(window.innerWidth <=920){
     function thirdMobileAnimation(){

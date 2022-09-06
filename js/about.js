@@ -105,21 +105,23 @@ function bannerBoxIn(){
     let gg2 = gsap.timeline();
 
     gg2.fromTo(".first-page .square1",{
-        
+        rotate:"43deg",
+        svgOrigin:"125 175",
     },{
         repeat:-1,
         duration:10,
         delay:2,
         svgOrigin:"125 175",
-        rotate:"360deg",
+        rotate:"403deg",
         ease:"linear"
     }).fromTo(".first-page .square2",{
-        
+        rotate:"56deg",
+        svgOrigin:"125 175",
     },{
         repeat:-1,
         duration:10,
         svgOrigin:"125 175",
-        rotate:"360deg",
+        rotate:"416deg",
         ease:"linear"
     },"<")
 }
@@ -205,16 +207,27 @@ function secondPageAnimation(){
         }
     })
 
-    gg2.fromTo(".second-page .square",{
-        
+    gg2.fromTo(".second-page .square1",{
+        transformOrigin:"50% 50%",
+        rotate:"43deg",
     },{
         repeat:-1,
         duration:10,
         
         transformOrigin:"50% 50%",
-        rotate:"360deg",
+        rotate:"403deg",
         ease:"linear"
-    })
+    }).fromTo(".second-page .square2",{
+        transformOrigin:"50% 50%",
+        rotate:"56deg",
+    },{
+        repeat:-1,
+        duration:10,
+        
+        transformOrigin:"50% 50%",
+        rotate:"416deg",
+        ease:"linear"
+    },"<")
 }
 secondPageAnimation()
 
@@ -352,22 +365,34 @@ function thirdPageAnimation(){
         }
     })
 
-    gg2.fromTo(".third-page .square",{
-        
+    gg2.fromTo(".third-page .square1",{
+        transformOrigin:"50% 50%",
+        rotate:"43deg",
     },{
         repeat:-1,
         duration:10,
-
+        
         transformOrigin:"50% 50%",
-        rotate:"360deg",
+        rotate:"403deg",
         ease:"linear"
-    })
+    }).fromTo(".third-page .square2",{
+        transformOrigin:"50% 50%",
+        rotate:"56deg",
+    },{
+        repeat:-1,
+        duration:10,
+        transformOrigin:"50% 50%",
+        rotate:"416deg",
+        ease:"linear"
+    },"<")
 }
 thirdPageAnimation()
 
 
 
-let pointer = document.documentElement;        
+let pointer = document.documentElement;       
+    pointer.style.setProperty('--x', 30 + 'px');
+    pointer.style.setProperty('--y', 100 + 'px'); 
     pointer.addEventListener('mousemove', m => {
         setTimeout(()=>{
             pointer.style.setProperty('--x', m.clientX + 'px');
@@ -376,11 +401,6 @@ let pointer = document.documentElement;
     
   
 })
-if(window.innerWidth < 1440){
-    let pointer = document.documentElement;        
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');
-}
 
  if(window.innerWidth > 1440){
       let g1 = document.querySelectorAll(".parallax");
