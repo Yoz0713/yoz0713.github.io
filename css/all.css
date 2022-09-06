@@ -2442,13 +2442,11 @@ footer span a {
 
 @media all and (max-width: 1440px) {
   .home-first-page {
-    height: 135vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .home-first-page {
-    height: 132vw;
-  }
   .home-first-page-title {
     position: absolute;
     left: 11vw;
@@ -2864,9 +2862,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 420px) {
-  .home-first-page {
-    height: 205vw;
-  }
   .home-first-page-title {
     position: absolute;
     left: 12vw;
@@ -5650,9 +5645,6 @@ footer span a {
 }
 .about {
   width: 100%;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
   overflow: hidden;
 }
 .about .first-page {

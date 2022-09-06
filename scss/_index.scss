@@ -532,7 +532,8 @@
 @media all and (max-width:1440px){
    .home{
         &-first-page{
-           height: 135vw;
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
         }
    }
 
@@ -540,7 +541,7 @@
         .home{
 
             &-first-page{
-                height: 132vw;
+         
                 &-title{
                     position: absolute;
                     left: 11vw;
@@ -999,7 +1000,7 @@
             .home{
     
                 &-first-page{
-                    height: 205vw;
+                 
                     &-title{
                         position: absolute;
                         left: 12vw;
