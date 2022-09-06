@@ -413,6 +413,12 @@ footer span a {
     letter-spacing: 8px;
     color: #dcb078;
   }
+  .readmore_word {
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 }
 .portfolio .first-page {
   display: flex;
@@ -2441,7 +2447,7 @@ footer span a {
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
   .home-first-page {
-    height: 205vw;
+    height: 132vw;
   }
   .home-first-page-title {
     position: absolute;
@@ -2859,7 +2865,7 @@ footer span a {
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 420px) {
   .home-first-page {
-    min-height: 90vw;
+    height: 205vw;
   }
   .home-first-page-title {
     position: absolute;
