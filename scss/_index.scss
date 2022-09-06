@@ -530,13 +530,18 @@
 
 
 @media all and (max-width:1440px){
-   
+   .home{
+        &-first-page{
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
+        }
+   }
 
     @media all and (max-width:920px){
         .home{
 
             &-first-page{
-                min-height: 130vw;
+       
                 &-title{
                     position: absolute;
                     left: 11vw;

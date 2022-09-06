@@ -2413,10 +2413,13 @@ footer span a {
   margin-left: 1vw;
 }
 
-@media all and (max-width: 1440px) and (max-width: 920px) {
+@media all and (max-width: 1440px) {
   .home-first-page {
-    min-height: 130vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
+}
+@media all and (max-width: 1440px) and (max-width: 920px) {
   .home-first-page-title {
     position: absolute;
     left: 11vw;
