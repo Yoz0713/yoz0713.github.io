@@ -137,7 +137,7 @@ function secondPageAnimation(){
     }else if(window.innerWidth < 480){
         status = 220
         status2 = 0
-        console.log(123)
+  
     }
     let gg = gsap.timeline({
         scrollTrigger:{

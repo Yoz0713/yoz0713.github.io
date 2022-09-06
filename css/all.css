@@ -6521,6 +6521,21 @@ footer {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 480px) {
+  .about .first-page-box-2 {
+    padding: 3vw 0 0;
+    width: 65vw;
+  }
+  .about .first-page-box-2 .text-decoration {
+    display: flex;
+  }
+  .about .first-page-box-2 .text-decoration svg {
+    transform: translateX(-6px);
+  }
+  .about .first-page-box-2 .text-decoration svg rect {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: rotate(45deg);
+  }
   .about .first-page-title {
     width: 70vw;
     margin: 0vw 15vw 8vw;
