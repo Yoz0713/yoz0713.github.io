@@ -315,6 +315,9 @@ footer{
     letter-spacing: 2px;
     padding: 0 10px;
     font-size: 15px;
+    a{
+      color: $gold_color;
+    }
   }
 
   @include tablet{
@@ -481,7 +484,7 @@ footer{
     }
     .banner_box{
       .ch_title_font{
-        font-size: 5vw;
+        font-size: 6vw;
         letter-spacing: 15px;
       }
     
@@ -502,13 +505,13 @@ footer{
       //-- 小主標 --
       .title_font{
         font-weight: 500;
-        font-size: 4vw;
+        font-size: 5vw;
         letter-spacing: 6px;
       }
     
       //-- 內文 --
       .p_font{
-        font-size: 3vw;
+        font-size: 3.85vw;
         letter-spacing: 4px;
         line-height: 2;
       }
