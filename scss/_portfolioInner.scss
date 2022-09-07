@@ -1061,6 +1061,9 @@
                             text-align: center;
                             margin-bottom: 2vw;
                         }
+                        p{
+                            text-align: justify;
+                        }
                     }
                 }
                 &-right{
@@ -1112,6 +1115,9 @@
                         margin:0;
                         h3{
                             text-align: center;
+                        }
+                        p{
+                            text-align: justify;
                         }
                     }
                     &::after{

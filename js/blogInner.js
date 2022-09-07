@@ -9,6 +9,9 @@ let pointer = document.documentElement;
   
 })
 
+
+
+
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -247,8 +250,8 @@ function fifthPageAnimaiton(){
     for(let i = 0 ; i <fpb.length ; i++){
         let gg2 = gsap.timeline({
             scrollTrigger:{
-                trigger:".fifth-page",
-                start:"top center",
+                trigger:`.fifth-page-box${i}`,
+                start:"top bottom",
             }
         })
         gg2.fromTo(`.fifth-page-box${i}`,{

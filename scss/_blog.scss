@@ -623,7 +623,7 @@
                     position: relative;
                     width: 45vw;
                     z-index: 11;
-                    margin: 0vw 15vw 8vw;
+                     margin: 0vw 15vw 8vw;
         
                 
                   svg{
@@ -757,10 +757,11 @@
                             align-items: center;
                             width: 100%;
                             margin: 0;
-                            svg{
+                            > svg{
                                 height:20%;
                             }
                             > p{
+                                text-align: justify;
                                 width: 80%;
                             }
                             > h3{
@@ -769,30 +770,38 @@
                             }
                             a{
                                 display: flex;
+                            
                                 width: 80%;
                                 justify-content: flex-end;
                                 .readmore{
-                                    margin: -2vw 0 0;
-                                    
+                                    margin: 0 0 0;
+                                    width: 100%;
                                     position: relative;
+                                    flex-direction: column;
                                     align-items: flex-end;
                                     p{
+                                        text-align: end;
+                                        width: 100%;
                                         margin-right:0;
-                                        position: absolute;
-                                        order: 3;
+                                        position:relative;
+                                        order: -1;
                                         right: 0;
                                         bottom: 0;
+                                       
                                     }
                                     &-box{
+                                        width: fit-content;
                                         flex: 1 1 30%;
+                                        order: 2;
+                                        margin-top: -3vw;
                                         svg{
-                                        
+                                            
                                             transform: scale(0.75);
-                                      
-                                       
+                                            height: 100%;
+                                            
                                         }
                                         h3{
-                                            text-align: end;
+                                            
                                             line-height: 77px;
                                           
                                         }
@@ -983,12 +992,18 @@
                                 a{
                                     display: flex;
                                     width: fit-content;
-                                    margin-left:18vw;
+                                    margin-left:25vw;
                                     .readmore{
                                         margin: -2vw 0 0;
                                         width: fit-content;
                                         position: relative;
                                         align-items: flex-end;
+                                        &-box{
+                                            margin-top: -8vw;
+                                            svg{
+                                                transform: scale(0.75);
+                                            }
+                                        }
                                     }
                                 }
                               
