@@ -5147,7 +5147,8 @@ footer span a {
   }
   .blog .second-page-bottom-right .lineBox {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: -webkit-fit-content;
@@ -5174,8 +5175,9 @@ footer span a {
     margin: 0;
     margin-bottom: 7vw;
   }
-  .blog .second-page-bottom-right-para svg {
-    height: 15%;
+  .blog .second-page-bottom-right-para > svg {
+    width: 70%;
+    height: 10%;
   }
   .blog .second-page-bottom-right-para > p {
     width: 80%;

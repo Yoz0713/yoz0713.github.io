@@ -943,7 +943,8 @@
                             width:100%;
                             .lineBox{
                                 display: flex;
-                                justify-content: flex-end;
+                                justify-content: flex-start;
+                                flex-direction: column;
                                 position: relative;
                                 width:100%;
                                 height: fit-content;
@@ -968,8 +969,9 @@
                                 width: 100%;
                                 margin: 0;
                                 margin-bottom: 7vw;
-                                svg{
-                                    height:15%;
+                                > svg{
+                                    width: 70%;
+                                    height:10%;
                                 }
                                 > p{
                                     width: 80%;
