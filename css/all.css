@@ -5132,6 +5132,7 @@ footer span a {
     height: -moz-fit-content;
     height: fit-content;
     position: relative;
+    margin-top: 10vw;
   }
   .blog .second-page-bottom-right {
     display: flex;
@@ -5140,7 +5141,7 @@ footer span a {
     height: fit-content;
     align-items: center;
     position: relative;
-    margin-top: 15vw;
+    margin-top: 10vw;
     left: 0;
     width: 100%;
   }
@@ -5149,7 +5150,9 @@ footer span a {
     justify-content: flex-end;
     position: relative;
     width: 100%;
-    height: 75vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .blog .second-page-bottom-right .lineBox > svg {
     left: 36vw;
