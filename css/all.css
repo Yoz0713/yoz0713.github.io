@@ -759,6 +759,7 @@ footer span a {
     position: fixed;
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .portfolio .first-page-title {
     display: flex;
@@ -2048,6 +2049,7 @@ footer span a {
     position: fixed;
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .portfolioInner .first-page-title {
     width: 45vw;
@@ -4652,6 +4654,9 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .blog .first-page > img {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .blog .first-page-title {
     position: relative;
     width: 45vw;
@@ -5688,6 +5693,9 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .blogInner .first-page > img {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .blogInner .second-page {
     height: 60vw;
   }
@@ -6569,6 +6577,9 @@ footer span a {
 @media all and (max-width: 1440px) {
   .news .first-page {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .news .first-page > img {
     height: calc(var(--vh, 1vh) * 100);
   }
   .news .first-page-title {
@@ -7768,6 +7779,9 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .newsInner .first-page > img {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .newsInner .second-page {
     height: 60vw;
   }
@@ -8472,6 +8486,9 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
+  .contact .first-page > img {
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .contact .second-page {
     display: flex;
     width: 100%;
@@ -9047,6 +9064,9 @@ footer {
 @media all and (max-width: 1440px) {
   .about .first-page {
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .about .first-page > img {
     height: calc(var(--vh, 1vh) * 100);
   }
   .about .first-page-box-2 {

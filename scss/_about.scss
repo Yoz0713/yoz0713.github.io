@@ -374,7 +374,9 @@ footer{
         .first-page{
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
-        
+            > img{
+                height: calc(var(--vh, 1vh) * 100);
+            }
             &-box{
               
                 &-2{
