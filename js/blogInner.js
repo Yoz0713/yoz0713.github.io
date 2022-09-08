@@ -266,7 +266,7 @@ function fifthPageAnimaiton(){
         })
         gg2.fromTo(`.fifth-page-box${i}`,{
             opacity:0,
-            y:20,
+            y:10
            
         },{
             delay:i/1.3,
@@ -278,7 +278,7 @@ function fifthPageAnimaiton(){
             strokeDasharray: 2000
         },{
             strokeDashoffset: 1800,
-            duration:1.2,
+            duration:1.5,
         },"<+0.2")
     }
     
