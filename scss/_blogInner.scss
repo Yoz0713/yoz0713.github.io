@@ -409,13 +409,16 @@
     position: fixed;
     height: 100vh;
     background: transparent;
-  
+    z-index: -1;
 }
-  @media all and (max-width:1440px){
+@media all and (max-width:1440px){
     .blogInner{
         width: 100%;
-        overflow-x: hidden;
-      
+   
+        .first-page{
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
+        }
         .second-page{
             height: 60vw;
         
@@ -478,10 +481,7 @@
                      
     
                         flex-wrap: wrap;
-                        &-box{
-                            transform: translate(0);
-                            margin-right: 1vw;
-                        }
+                       
                         h3,p{
                             line-height:4.15vw;
                      
@@ -522,7 +522,7 @@
     @media all and (max-width:920px){
         .blogInner{
             width: 100%;
-            overflow-x: hidden;
+           
           
             .first-page{
              

@@ -9,7 +9,17 @@ let pointer = document.documentElement;
   
 })
 
+// make first-page of mobile device 100vh without screen shaking 
+function safariHacks() {
+    let windowsVH = window.innerHeight / 100;
+    document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    window.addEventListener('resize', function() {
+        document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    });
+}
 
+safariHacks();
+// make first-page of mobile device 100vh without screen shaking
 
 
 function bannerGray(){
@@ -251,12 +261,12 @@ function fifthPageAnimaiton(){
         let gg2 = gsap.timeline({
             scrollTrigger:{
                 trigger:`.fifth-page-box${i}`,
-                start:"top bottom",
+                start:"top 90%",
             }
         })
         gg2.fromTo(`.fifth-page-box${i}`,{
             opacity:0,
-            y:30,
+            y:20,
            
         },{
             delay:i/1.3,

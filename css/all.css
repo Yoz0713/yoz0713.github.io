@@ -5653,12 +5653,16 @@ footer span a {
   position: fixed;
   height: 100vh;
   background: transparent;
+  z-index: -1;
 }
 
 @media all and (max-width: 1440px) {
   .blogInner {
     width: 100%;
-    overflow-x: hidden;
+  }
+  .blogInner .first-page {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .blogInner .second-page {
     height: 60vw;
@@ -5709,10 +5713,6 @@ footer span a {
     bottom: -12vw;
     flex-wrap: wrap;
   }
-  .blogInner .fifth-page-box-bottom .readmore-box {
-    transform: translate(0);
-    margin-right: 1vw;
-  }
   .blogInner .fifth-page-box-bottom .readmore h3, .blogInner .fifth-page-box-bottom .readmore p {
     line-height: 4.15vw;
   }
@@ -5739,7 +5739,6 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) {
   .blogInner {
     width: 100%;
-    overflow-x: hidden;
   }
   .blogInner .first-page-title {
     width: -webkit-fit-content;
