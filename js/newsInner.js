@@ -9,6 +9,18 @@ let pointer = document.documentElement;
   
 })
 
+// make first-page of mobile device 100vh without screen shaking 
+function safariHacks() {
+    let windowsVH = window.innerHeight / 100;
+    document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    window.addEventListener('resize', function() {
+        document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    });
+}
+
+safariHacks();
+// make first-page of mobile device 100vh without screen shaking
+
 function bannerGray(){
     let gg = gsap.timeline({
         scrollTrigger:{
@@ -167,63 +179,39 @@ function svgIn(){
         y:0,
         duration:0.8
     },"<+0.3")
-    let gg2 = gsap.timeline({
-        scrollTrigger:{
-            trigger:".fifth-page",
-            start:"top center",
-        }
-    })
-    gg2.fromTo(".fifth-page-box",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    }).fromTo(".fifth-page-box img",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<").fromTo(".fifth-page-box-bottom h3",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.3").fromTo(".fifth-page-box-bottom svg",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.5").fromTo(`.fifth-page-box-bottom svg line`,{
-        strokeDashoffset: 2000,
-        strokeDasharray: 2000
-    },{
-        strokeDashoffset: 1800,
-        duration:1.2,
-    },"<+0.5").fromTo(".fifth-page-box-bottom > p",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<+0.3").fromTo(".fifth-page-box-bottom .readmore",{
-        opacity:0,
-        y:30
-    },{
-        opacity:1,
-        y:0,
-        duration:0.8
-    },"<")
+    
 }
 svgIn()
+
+function fifthPageAnimaiton(){
+    let fpb = document.querySelectorAll(".fifth-page-box")
+    for(let i = 0 ; i <fpb.length ; i++){
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:`.fifth-page-box${i}`,
+                start:"top 90%",
+            }
+        })
+        gg2.fromTo(`.fifth-page-box${i}`,{
+            opacity:0,
+            y:10
+           
+        },{
+            delay:i/1.3,
+            opacity:1,
+            y:0,
+            duration:0.8
+        }).fromTo(`.fifth-page-box${i} svg line`,{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 1800,
+            duration:2,
+        },"<+0.2")
+    }
+    
+}
+fifthPageAnimaiton()
 
 function thirdPageAnimation (){
     let gg = gsap.timeline({

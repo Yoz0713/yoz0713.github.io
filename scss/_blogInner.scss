@@ -300,7 +300,7 @@
                 .imgBox{
                     width: 100%;
                     height: 100%;
-                    transition: 0.8s;
+                    transition: 0.5s;
                  
                     img{
                         width: 100%;
@@ -311,7 +311,7 @@
                 }
              
                 &:hover .imgBox{
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                 }
             }
             &-bottom{
@@ -414,7 +414,7 @@
 @media all and (max-width:1440px){
     .blogInner{
         width: 100%;
-   
+        
         .first-page{
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
@@ -622,7 +622,7 @@
                         height: fit-content;
                     
                         &-svg{
-                            margin: 2vw 0 5vw;
+                            margin: 0vw 0 2vw;
                             width: 100%;
                             svg{
                                 transform: scale(3);
@@ -709,6 +709,233 @@
                 & > :not(:last-child){
                     margin-right: 0;
                     margin-bottom: 5vw;
+                }
+            }
+        }
+        @media all and (max-width:480px){
+            .blogInner{
+                width: 100%;
+               
+              
+                .first-page{
+                    &-box{
+                        &-2{
+                            padding: 3vw 0 0;
+                            width: 65vw;
+                            .text-decoration{
+                              
+                                display: flex;
+                                svg{
+                                    transform: translateX(-6px);
+                                    rect{
+                                        transform-box: fill-box;
+                                        transform-origin: center;
+                                        transform: rotate(45deg);
+                                    }
+                                }
+                            }
+                           
+                        }
+                    }
+                    &-title{
+                        width: fit-content;
+                        margin: 0vw 15vw 8vw;
+                        svg{
+                            transform: scale(0.9);
+                        left: -100px;
+                        top: -150px;
+                          }
+                    }
+                }
+                .second-page{
+                    height:fit-content;
+                
+                    &-img{
+                  
+                        img{
+                            height: 120%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .third-page{
+                    flex-direction: column;
+                    height:fit-content;
+                    margin-bottom: 5vw;
+                    &-left{
+                        width: 100%;
+                        height: fit-content;
+                        padding: 0;
+                        &-para{
+                            position: relative;
+                            width: 100%;
+                            margin: 0;
+                            height: fit-content;
+                            h3{
+                                br{
+                                    display: none;
+                                    text-align: justify;
+                                }
+                            }
+                        }
+                    }
+                    &-right{
+                        width: 100%;
+                        order: -1;
+                        height: fit-content;
+                        
+                    }
+                }
+                .forth-page{
+                    flex-direction: column;
+                    height: fit-content;
+                    margin-bottom: 3vw;
+                    &-right{
+                        margin-bottom: 5vw;
+                        position: relative;
+                        width: 100%;
+                        height: fit-content;
+                        &-para{
+                            width: 100%;
+                            margin: 0;
+                            position: relative;
+                            h3{
+                                br{
+                                    display: none;
+                                    text-align: justify;
+                                }
+                            }
+                        }
+                    }
+        
+                    &-left{
+                        margin-bottom: 5vw;
+                        height: fit-content;
+                    }
+                    &-bottom{
+                        height: fit-content;
+                        button{
+                            width: 20vw;
+                            font-size: 2.5vw;
+                            padding: 2vw 0;
+                            margin: 5vw 0;
+                        }
+                    }
+                }
+                .fifth-page{
+                    
+                    height: fit-content;
+                    flex-direction: column;
+                    &-box{
+                        height: fit-content;
+                        margin: 0;
+                        width: 100%;
+                        > a{
+                            width: 100%;
+                            height: fit-content;
+                            .fifth-page-box-top{
+                                width: 100%;
+                                height:100%;
+                                img{
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                     
+                        &-bottom{
+                            width: 100%;
+                            height: fit-content;
+                        
+                            &-svg{
+                                margin: 2vw 0 5vw;
+                                width: 100%;
+                                svg{
+                                    transform: scale(3);
+                                    width: 100%;
+                                }
+                            }
+                            h3{
+                                width: 105%;
+                                font-size: 5vw;
+                                text-align: center;
+                            }
+                            p{
+                                font-size: 3.85vw;
+                                width: 100%;
+                            }
+                        
+                            .readmore{
+                                display: flex;
+                                flex-direction: row;
+                          
+                                justify-content: space-between;
+                                width: 100%;
+                                position:relative;
+                                flex-wrap: nowrap;
+                                z-index: 15;
+                                height: fit-content;
+                                margin-top: 0;
+                                bottom: 0;
+                                a{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    margin: 0;
+                                    padding: 0;
+                                    h3{
+                                        width: fit-content;
+                                        margin: 0;
+                                    }
+                                    p{
+                                        width: fit-content;
+                                        margin: 0;
+                                    }
+                                }
+                                &-box{
+                              
+                                    width:30%;
+                                    svg{
+                                        transform: scale(0.7);
+                                    }
+                                }
+                                h3,p{
+                                    line-height:70px;
+                                    color: $gold_color;
+                                    height: fit-content;
+                                }
+                                h3{
+                                    text-align: start;
+                                    font-size: 15px;
+                                   
+                                }
+                                > p{
+                                    order: -1;
+                                    text-align:start;
+                                    margin: 0;
+                                    font-size: 12px;
+                                }
+                               
+                      
+                             
+                            }
+                            
+                        }
+                        &:nth-child(1)::after{
+                            content: "";
+                            display: none;
+                        }
+                        &:nth-child(2)::after{
+                            content: "";
+                            display: none;
+                        }
+                       
+                    }
+                    & > :not(:last-child){
+                        margin-right: 0;
+                        margin-bottom: 5vw;
+                    }
                 }
             }
         }

@@ -286,7 +286,7 @@
             position: relative;
             &-top{
                 width: 100%;
-                height: 13vw;
+                height: fit-content;
                 margin-bottom: 4vw;
                 overflow: hidden;
                 border-radius: 40px 0 40px 0;
@@ -294,7 +294,7 @@
                     width: 100%;
                     height: 100%;
                     
-                    transition: 0.8s;
+                    transition: 0.4s;
                     img{
                         width: 100%;
                         height: 100%;
@@ -404,6 +404,8 @@
 @media all and (max-width:1440px){
     .news{
         .first-page{
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
             &-title{
                 position: relative;
                 width: 30vw;
@@ -676,5 +678,639 @@
     
     
     
+    }
+    @media all and (max-width:920px){
+        .news{
+            .first-page{
+                &-title{
+                    position: relative;
+                    width: fit-content;
+                    z-index: 11;
+                    margin: 0vw 15vw 8vw;
+        
+                  p{
+                 
+                    line-height: 40px;
+                    letter-spacing: 0.2vw;
+                  }
+                  svg{
+                       
+                    position: absolute;
+                    transform: scale(1.1);
+                    left: -95px;
+                    top: -130px;
+                    .g1{
+                     
+                       
+                    
+                        .square1{
+                            transform-box: fill-box;
+                            transform-origin: center;
+                            transform: rotate(43deg);
+                            }
+                    }
+                    .g2{
+                      
+                     
+                        .square2{   
+                            transform-box: fill-box;
+                            transform-origin: center;
+                            transform: rotate(56deg);
+                        
+                          
+                            }
+                    }
+           
+                }
+                }
+                &-shadow{
+                    position: fixed;
+                    width: 100%;
+                    height: 20vw;
+                    background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+                    bottom: 0;
+                    left: 0;
+                    z-index: 10;
+                }
+            }
+            .second-page{
+                width: 100%;
+                height: fit-content;
+                padding:2vw 8vw;
+                &-top{
+                    display: flex;
+                  
+                    align-items: center;
+                    width: 100%;
+                    height: 10%;
+                    margin: 3vw 0 6vw;
+                    nav{
+                        width: 100%;
+                     
+                        height: 100%;
+                        border-top: 1px solid $gold_color;
+                        border-bottom: 1px solid $gold_color;
+                        padding: 0.1vw 0;
+                        ul{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-top: 1px solid #dcb1785b;
+                            border-bottom: 1px solid #dcb1785b;
+                            width: 100%;
+                            height: 100%;
+                            padding: 1.3vw 0;
+                            li{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                .menu_font{
+                                    position: relative;
+                               
+                                    letter-spacing: 4px;
+                                    color: $gold_color;
+                                    cursor: pointer;
+                                    z-index: 10;
+                                    &::after{
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        width: 0;
+                                        height: 1px;
+                                        background-color: $gold_color;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                        bottom: 0;
+                                        transition: 0.5s;
+                                    }
+                                    &:hover::after{
+                                        width: 100%;
+                                    }
+                                  }
+                                img{
+                                  
+                                    margin: 1vw;
+                                    transform: scale(0.65);
+                                    width:3%;
+                                    height: fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-bottom{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    height:fit-content;
+                    position: relative;
+                    a{
+                        width: 100%;
+                        .second-page-bottom-left{
+                            position: relative;
+                            width: 100%;
+                            z-index: 15;
+                            .imgBox{
+                                width: 100%;
+                                transition: 0.8s;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                 
+                   
+                    &-right{
+                        display: flex;
+                        height:fit-content;
+                        align-items: center;
+                        position: relative;
+                        margin-top: 5vw;
+                        left: 0;
+
+                        width:100%;
+                        .lineBox{
+                            display: flex;
+                            justify-content: flex-end;
+                            position: relative;
+                            width:100%;
+                            height: 40vw;
+                            > svg{
+                                left: -3.3vw;
+                                top: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                transform: scaleX(1.25);
+                            }
+                        }
+                        a{
+                            margin-top: 1vw;
+                        }
+                        &-para{
+                            align-items: center;
+                            width: 100%;
+                            margin: 0;
+                            > svg{
+                                height:20%;
+                            }
+                            > p{
+                                text-align: justify;
+                                width: 80%;
+                            }
+                            > h3{
+                                width: 100%;
+                                text-align: center;
+                            }
+                            a{
+                                display: flex;
+                            
+                                width: 80%;
+                                justify-content: flex-end;
+                                .readmore{
+                                    margin: 0 0 0;
+                                    width: 100%;
+                                    position: relative;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    p{
+                                        text-align: end;
+                                        width: 100%;
+                                        margin-right:0;
+                                        position:relative;
+                                        order: -1;
+                                        right: 0;
+                                        bottom: 0;
+                                       
+                                    }
+                                    &-box{
+                                        width: fit-content;
+                                        flex: 1 1 30%;
+                                        order: 2;
+                                        margin-top: -3vw;
+                                        svg{
+                                            
+                                            transform: scale(0.75);
+                                            height: 100%;
+                                            
+                                        }
+                                        h3{
+                                            
+                                            line-height: 77px;
+                                          
+                                        }
+                                    }
+                                 
+                                }
+                            }
+                          
+                    
+                        
+                        }
+                      
+                    }
+                }
+            }
+            .third-page{
+                
+                height: fit-content;
+                flex-direction: column;
+                &-box{
+                    height: fit-content;
+                    margin: 0;
+                    width: 100%;
+                    > a{
+                        width: 100%;
+                        .fifth-page-box-top{
+                            width: 100%;
+                            height: fit-content;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                 
+                    &-bottom{
+                        width: 100%;
+                        height: fit-content;
+                    
+                        &-svg{
+                            margin: 2vw 0 5vw;
+                            width: 100%;
+                            svg{
+                                transform: scale(3);
+                                width: 100%;
+                            }
+                        }
+                        h3{
+                            width: 105%;
+                            font-size: 4vw;
+                            text-align: center;
+                        }
+                        p{
+                            font-size: 2.5vw;
+                            width: 100%;
+                        }
+                    
+                        .readmore{
+                            display: flex;
+                            flex-direction: row;
+                      
+                            justify-content: space-between;
+                            width: 100%;
+                            position:relative;
+                            flex-wrap: nowrap;
+                            z-index: 15;
+                            height: fit-content;
+                            margin-top: 0;
+                            bottom: 0;
+                            a{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-end;
+                                margin: 0;
+                                padding: 0;
+                                h3{
+                                    width: fit-content;
+                                    margin: 0;
+                                }
+                                p{
+                                    width: fit-content;
+                                    margin: 0;
+                                }
+                            }
+                            &-box{
+                          
+                                width:30%;
+                                svg{
+                                    transform: scale(0.7);
+                                }
+                            }
+                            h3,p{
+                                line-height:130px;
+                                color: $gold_color;
+                                height: fit-content;
+                            }
+                            h3{
+                                text-align: start;
+                                font-size: 20px;
+                               
+                            }
+                            > p{
+                                order: -1;
+                                text-align:start;
+                                margin: 0;
+                                font-size: 18px;
+                            }
+                           
+                  
+                         
+                        }
+                        
+                    }
+                    &:nth-child(1)::after{
+                        content: "";
+                        display: none;
+                    }
+                    &:nth-child(2)::after{
+                        content: "";
+                        display: none;
+                    }
+                   
+                }
+                & > :not(:last-child){
+                    margin-right: 0;
+                    margin-bottom: 5vw;
+                }
+            }
+        
+        
+        
+        }
+        @media all and (max-width:480px){
+            .news{
+                .first-page{
+                    &-box{
+                        &-2{
+                            padding: 3vw 0 0;
+                            width: 65vw;
+                            .text-decoration{
+                              
+                                display: flex;
+                                svg{
+                                    transform: translateX(-6px);
+                                    rect{
+                                        transform-box: fill-box;
+                                        transform-origin: center;
+                                        transform: rotate(45deg);
+                                    }
+                                }
+                            }
+                           
+                        }
+                    }
+                    &-title{
+                        position: relative;
+                        width: fit-content;
+                        z-index: 11;
+                        margin: 0vw 15vw 8vw;
+            
+                      p{
+                     
+                        line-height: 40px;
+                        letter-spacing: 0.2vw;
+                      }
+                      svg{
+                           
+                        position: absolute;
+                        transform: scale(0.9);
+                        left: -100px;
+                        top: -150px;
+                        .g1{
+                         
+                           
+                        
+                            .square1{
+                                transform-box: fill-box;
+                                transform-origin: center;
+                                transform: rotate(43deg);
+                                }
+                        }
+                        .g2{
+                          
+                         
+                            .square2{   
+                                transform-box: fill-box;
+                                transform-origin: center;
+                                transform: rotate(56deg);
+                            
+                              
+                                }
+                        }
+               
+                    }
+                    }
+                    &-shadow{
+                        position: fixed;
+                        width: 100%;
+                        height: 20vw;
+                        background-image: linear-gradient(180deg,transparent 0% ,rgba(0, 0, 0, 0.015) 3% , rgba(0, 0, 0, 0.055) 5%, rgba(0, 0, 0, 0.805) 100%);
+                        bottom: 0;
+                        left: 0;
+                        z-index: 10;
+                    }
+                }
+                .second-page{
+         
+                
+                    &-bottom{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        width: 100%;
+                        height:fit-content;
+                        position: relative;
+                        margin-top: 10vw;
+                       
+                        &-right{
+                            display: flex;
+                            height:fit-content;
+                            align-items: center;
+                            position: relative;
+                            margin-top: 10vw;
+                            left: 0;
+    
+                            width:100%;
+                            .lineBox{
+                                margin-top: 5vw;
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-direction: column;
+                                position: relative;
+                                width:100%;
+                                height: fit-content;
+                                > svg{
+
+                                    left: 36vw;
+                                    top: 30vw;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    transform: scale(1.85,3);
+                                    polyline{
+                                        transform: scale(0.5);
+                                    }
+                                }
+                            }
+                            a{
+                                margin-top: 1vw;
+                            }
+                            &-para{
+                                align-items: center;
+                                width: 100%;
+                                margin: 0;
+                                margin-bottom: 7vw;
+                                > svg{
+                                    width: 70%;
+                                    height:10%;
+                                }
+                                > p{
+                                    width: 80%;
+                                }
+                                > h3{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                                a{
+                                    display: flex;
+                                    width: fit-content;
+                                    margin-left:25vw;
+                                    .readmore{
+                                        margin: -2vw 0 0;
+                                        width: fit-content;
+                                        position: relative;
+                                        align-items: flex-end;
+                                        &-box{
+                                            margin-top: -8vw;
+                                            svg{
+                                                transform: scale(0.75);
+                                            }
+                                        }
+                                    }
+                                }
+                              
+                        
+                            
+                            }
+                          
+                        }
+                    }
+                }
+                .third-page{
+                    
+                    height: fit-content;
+                    flex-direction: column;
+                    &-box{
+                        height: fit-content;
+                        margin: 0;
+                        width: 100%;
+                        > a{
+                            width: 100%;
+                            height: fit-content;
+                            .third-page-box-top{
+                                width: 100%;
+                                height:fit-content;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                     
+                        &-bottom{
+                            width: 100%;
+                            height: fit-content;
+                        
+                            &-svg{
+                                margin: 2vw 0 5vw;
+                                width: 100%;
+                                svg{
+                                    transform: scale(3);
+                                    width: 100%;
+                                }
+                            }
+                            h3{
+                                width: 105%;
+                                font-size: 5vw;
+                                text-align: center;
+                            }
+                            p{
+                                font-size: 3.85vw;
+                                width: 100%;
+                            }
+                        
+                            .readmore{
+                                display: flex;
+                                flex-direction: row;
+                          
+                                justify-content: space-between;
+                                width: 100%;
+                                position:relative;
+                                flex-wrap: nowrap;
+                                z-index: 15;
+                                height: fit-content;
+                                margin-top: 0;
+                                bottom: 0;
+                                a{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    margin: 0;
+                                    padding: 0;
+                                    h3{
+                                        width: fit-content;
+                                        margin: 0;
+                                    }
+                                    p{
+                                        width: fit-content;
+                                        margin: 0;
+                                    }
+                                }
+                                &-box{
+                              
+                                    width:30%;
+                                    svg{
+                                        transform: scale(0.7);
+                                    }
+                                }
+                                h3,p{
+                                    line-height:70px;
+                                    color: $gold_color;
+                                    height: fit-content;
+                                }
+                                h3{
+                                    text-align: start;
+                                    font-size: 15px;
+                                   
+                                }
+                                > p{
+                                    order: -1;
+                                    text-align:start;
+                                    margin: 0;
+                                    font-size: 12px;
+                                }
+                               
+                      
+                             
+                            }
+                            
+                        }
+                        &:nth-child(1)::after{
+                            content: "";
+                            display: none;
+                        }
+                        &:nth-child(2)::after{
+                            content: "";
+                            display: none;
+                        }
+                       
+                    }
+                    & > :not(:last-child){
+                        margin-right: 0;
+                        margin-bottom: 5vw;
+                    }
+                }
+            
+            
+            
+            }
+        }
     }
 }

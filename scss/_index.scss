@@ -337,10 +337,10 @@
                         top: 0;
                         width: 100%;
                         height: 100%;
-                        transition: 0.8s;
+                        transition: 0.5s;
                     }
                     &:hover img{
-                        transform: scale(1.1);
+                        transform: scale(1.2);
                     }
                 }
             }
@@ -459,9 +459,9 @@
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            transition: 0.8s;
+                            transition: 0.5s;
                             &:hover{
-                                transform: scale(1.1); 
+                                transform: scale(1.2); 
                             }
                         }
                     }
