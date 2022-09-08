@@ -101,49 +101,49 @@ function secondPageAnimation(){
         }
     })
     gg.fromTo(".second-page iframe",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-right :nth-child(1)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:0.8
     },"<+0.6").fromTo(".second-page-right :nth-child(2)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:0.8
     },"<+0.2").fromTo(".second-page-right :nth-child(3)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:0.8
     },"<+0.2").fromTo(".second-page-right :nth-child(4)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:0.8
     },"<+0.2").fromTo(".second-page-right :nth-child(5)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
         opacity:1,
         duration:0.8
     },"<+0.2").fromTo(".second-page-right :nth-child(6)",{
-        y:30,
+        y:5,
         opacity:0
     },{
         y:0,
