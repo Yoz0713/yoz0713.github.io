@@ -2463,12 +2463,22 @@ footer span a {
     height: fit-content;
     width: 100%;
   }
+  .portfolioInner .second-page-right > :nth-child(1) p {
+    margin: 3vw 0;
+  }
   .portfolioInner .second-page-right > :nth-child(2) {
     width: 100%;
     margin-bottom: 2vw;
   }
   .portfolioInner .second-page-right > :nth-child(2) h3 {
     padding: 0 0 3vw;
+    margin-bottom: 3vw;
+  }
+  .portfolioInner .second-page-right > :nth-child(2):last-child {
+    margin-bottom: 3vw;
+  }
+  .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 {
+    margin-top: 3vw;
   }
   .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 .second-page-right-box-right {
     display: flex;
@@ -5178,7 +5188,6 @@ footer span a {
     height: fit-content;
     align-items: center;
     position: relative;
-    margin-top: 10vw;
     left: 0;
     width: 100%;
   }
@@ -5188,9 +5197,7 @@ footer span a {
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100vw;
   }
   .blog .second-page-bottom-right .lineBox > svg {
     left: 36vw;
@@ -6940,7 +6947,7 @@ footer span a {
     justify-content: flex-end;
     position: relative;
     width: 100%;
-    height: 40vw;
+    height: 42vw;
   }
   .news .second-page-bottom-right .lineBox > svg {
     left: -3.3vw;
@@ -6948,7 +6955,7 @@ footer span a {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scaleX(1.25);
+    transform: scaleX(1.18);
   }
   .news .second-page-bottom-right a {
     margin-top: 1vw;
@@ -6956,7 +6963,7 @@ footer span a {
   .news .second-page-bottom-right-para {
     align-items: center;
     width: 100%;
-    margin: 0;
+    margin: 2vw 0 0;
   }
   .news .second-page-bottom-right-para > svg {
     height: 20%;
@@ -7195,20 +7202,16 @@ footer span a {
     height: fit-content;
     align-items: center;
     position: relative;
-    margin-top: 10vw;
     left: 0;
     width: 100%;
   }
   .news .second-page-bottom-right .lineBox {
-    margin-top: 5vw;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100vw;
   }
   .news .second-page-bottom-right .lineBox > svg {
     left: 36vw;

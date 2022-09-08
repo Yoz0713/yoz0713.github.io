@@ -930,17 +930,27 @@
                 }
                 &-right{
            
-
+                    & > :nth-child(1){
+                        p{
+                            margin: 3vw 0;
+                        }
+                     
+                    }
                     & > :nth-child(2){
-                        
+                      
                         width: 100%;
                         h3{
                             padding: 0 0 3vw;
+                            margin-bottom: 3vw;
                         }
                         margin-bottom: 2vw;
+                        &:last-child{
+                            margin-bottom: 3vw;
+                        }
                     }
                     & :nth-child(3){
                         .second-page-right-box2{
+                            margin-top: 3vw;
                             .second-page-right-box-right{
                                 display: flex;
                                 padding: 0.2vw 0;
