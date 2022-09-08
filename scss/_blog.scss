@@ -370,7 +370,7 @@
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
             > img{
-                height: calc(var(--vh, 1vh) * 100);
+                height: 80vw;
             }
             &-title{
                 position: relative;
@@ -621,7 +621,10 @@
     @media all and (max-width:920px){
         .blog{
             .first-page{
-         
+                
+                > img{
+                    height: 150vw;
+                }
                 &-title{
                     position: relative;
                     width: 45vw;
@@ -897,6 +900,9 @@
         @media all and (max-width:480px){
             .blog{
                 .first-page{
+                    > img{
+                        height: 220vw;
+                    }
                     &-box{
                         &-2{
                             padding: 3vw 0 0;

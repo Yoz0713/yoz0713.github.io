@@ -357,8 +357,9 @@
             img{
                 position: fixed;
                 width: 100%;
-                height: 100vh;
-                height: calc(var(--vh, 1vh) * 100);
+                height: 80vw;
+                   
+             
                
             }
             &-title{
@@ -700,8 +701,10 @@
                 img{
                     position: fixed;
                     width: 100%;
-                    height: 100vh;
-                  
+                    height: 150vw;
+                       
+                 
+                   
                 }
                 &-title{
                     display: flex;
@@ -1019,6 +1022,12 @@
         @media all and (max-width:480px){
             .portfolio{
                 .first-page{
+
+                    img{
+                        position: fixed;
+                        width: 100%;
+                        height: 220vw;
+                    }
                     &-title{
                         display: flex;
                         flex-direction: column;

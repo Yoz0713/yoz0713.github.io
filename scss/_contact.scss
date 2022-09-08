@@ -163,7 +163,7 @@
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
             > img{
-                height: calc(var(--vh, 1vh) * 100);
+                height: 80vw;
             }
         }
         .second-page{
@@ -280,6 +280,11 @@
     }
     @media all and (max-width:920px){
         .contact{
+            .first-page{
+                > img{
+                    height: 150vw;
+                }
+            }
             .second-page{
                 height: fit-content;
                 flex-direction: column;
@@ -358,6 +363,9 @@
         @media all and (max-width:480px){
             .contact{
                 .first-page{
+                    > img{
+                        height: 220vw;
+                    }
                     &-title{
                         width: 65vw;
                     }

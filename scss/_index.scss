@@ -179,7 +179,7 @@
     &-bg{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height:100vh;
         top: 0;
         left: 0;
         z-index: -10;
@@ -536,11 +536,20 @@
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
         }
+        &-bg{
+            position: fixed;
+            width: 100%;
+            height: 80vw;
+            top: 0;
+            left: 0;
+            z-index: -10;
+          
+        }
    }
 
     @media all and (max-width:920px){
         .home{
-
+            overflow: hidden;
             &-first-page{
                 
                 &-title{
@@ -618,6 +627,15 @@
                         border-radius: 0;
                     }
                 }
+            }
+            &-bg{
+                position: fixed;
+                width: 100%;
+                height: 150vw;
+                top: 0;
+                left: 0;
+                z-index: -10;
+              
             }
             &-second-page{
    
@@ -1002,9 +1020,17 @@
     
         @media all and (max-width:480px){
             .home{
-    
+                &-bg{
+                    position: fixed;
+                    width: 100%;
+                    height: 220vw;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+                  
+                }
                 &-first-page{
-                 
+                   
                     &-title{
                         position: absolute;
                         left: 12vw;
