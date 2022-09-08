@@ -86,7 +86,7 @@
             position: absolute;
             right: 2vw;
             bottom: 2.5vw;
-            z-index: 11;
+            z-index: 200;
         
             a{
                 display: flex;
@@ -569,6 +569,7 @@
                     right: 3vw;
                     bottom: 4vw;
                     transform: scale(1);
+                 
                     a{ 
                         width: 3.5vw;
                         height: 3.5vw;

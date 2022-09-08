@@ -3119,7 +3119,7 @@ footer span a {
   position: absolute;
   right: 2vw;
   bottom: 2.5vw;
-  z-index: 11;
+  z-index: 200;
 }
 .home-first-page-icon a {
   display: flex;
