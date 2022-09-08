@@ -3482,9 +3482,9 @@ footer span a {
   width: 12vw;
   height: 6vw;
   overflow: hidden;
+  border-radius: 10px 0 10px 0;
 }
 .home-third-page-bottom ul li .imgBox img {
-  border-radius: 10px 0 10px 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
