@@ -411,9 +411,7 @@
     .first-page{
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
-        > img{
-            height: 80vw;
-         }
+       
     }
     .second-page{
         height: 60vw;
@@ -518,9 +516,6 @@
    @media all and (max-width:920px){
     .newsInner{
         .first-page{
-            > img{
-                height: 150vw;
-             }
             &-title{
                 width: fit-content;
                 margin: 0vw 15vw 8vw;
@@ -719,9 +714,6 @@
     @media all and (max-width:480px){
         .newsInner{
             .first-page{
-                > img{
-                    height: 220vw;
-                 }
                 &-box{
                     &-2{
                         padding: 3vw 0 0;

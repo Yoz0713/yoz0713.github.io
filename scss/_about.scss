@@ -374,9 +374,7 @@ footer{
         .first-page{
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
-            > img{
-                height: 80vw;
-            }
+         
             &-box{
               
                 &-2{
@@ -681,9 +679,7 @@ footer{
             
             .first-page{
         
-                > img{
-                    height: 150vw;
-                }
+                
            
                 &-title{
                     width: 70vw;
@@ -964,9 +960,7 @@ footer{
             .about{
                 
                 .first-page{
-                    > img{
-                        height: 220vw;
-                    }
+                  
                 
                     &-box{
                         

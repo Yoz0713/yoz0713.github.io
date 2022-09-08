@@ -755,11 +755,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .portfolio .first-page img {
-    position: fixed;
-    width: 100%;
-    height: 80vw;
-  }
   .portfolio .first-page-title {
     display: flex;
     flex-direction: column;
@@ -1077,7 +1072,7 @@ footer span a {
   .portfolio .first-page img {
     position: fixed;
     width: 100%;
-    height: 150vw;
+    height: 100vh;
   }
   .portfolio .first-page-title {
     display: flex;
@@ -1376,11 +1371,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .portfolio .first-page img {
-    position: fixed;
-    width: 100%;
-    height: 220vw;
-  }
   .portfolio .first-page-title {
     display: flex;
     flex-direction: column;
@@ -2049,11 +2039,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .portfolioInner .first-page > img {
-    position: fixed;
-    width: 100%;
-    height: 80vw;
-  }
   .portfolioInner .first-page-title {
     width: 45vw;
     z-index: 11;
@@ -2431,11 +2416,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .portfolioInner .first-page > img {
-    position: fixed;
-    width: 100%;
-    height: 150vw;
-  }
   .portfolioInner .first-page-title {
     width: 75vw;
     z-index: 11;
@@ -2832,11 +2812,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .portfolioInner .first-page > img {
-    position: fixed;
-    width: 100%;
-    height: 220vw;
-  }
   .portfolioInner .first-page-title {
     width: 85vw;
   }
@@ -3552,14 +3527,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .home-bg {
-    position: fixed;
-    width: 100%;
-    height: 80vw;
-    top: 0;
-    left: 0;
-    z-index: -10;
-  }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
   .home {
@@ -3629,14 +3596,6 @@ footer span a {
     height: 1vw;
     background-color: rgba(220, 177, 120, 0.4392156863);
     border-radius: 0;
-  }
-  .home-bg {
-    position: fixed;
-    width: 100%;
-    height: 150vw;
-    top: 0;
-    left: 0;
-    z-index: -10;
   }
   .home-second-page {
     width: 100%;
@@ -3990,14 +3949,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .home-bg {
-    position: fixed;
-    width: 100%;
-    height: 220vw;
-    top: 0;
-    left: 0;
-    z-index: -10;
-  }
   .home-first-page-title {
     position: absolute;
     left: 12vw;
@@ -4694,9 +4645,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .blog .first-page > img {
-    height: 80vw;
-  }
   .blog .first-page-title {
     position: relative;
     width: 45vw;
@@ -4917,9 +4865,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .blog .first-page > img {
-    height: 150vw;
-  }
   .blog .first-page-title {
     position: relative;
     width: 45vw;
@@ -5191,9 +5136,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .blog .first-page > img {
-    height: 220vw;
-  }
   .blog .first-page-box-2 {
     padding: 3vw 0 0;
     width: 65vw;
@@ -5739,9 +5681,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .blogInner .first-page > img {
-    height: 80vw;
-  }
   .blogInner .second-page {
     height: 60vw;
   }
@@ -5817,9 +5756,6 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) {
   .blogInner {
     width: 100%;
-  }
-  .blogInner .first-page > img {
-    height: 150vw;
   }
   .blogInner .first-page-title {
     width: -webkit-fit-content;
@@ -6026,9 +5962,6 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .blogInner {
     width: 100%;
-  }
-  .blogInner .first-page > img {
-    height: 220vw;
   }
   .blogInner .first-page-box-2 {
     padding: 3vw 0 0;
@@ -6631,9 +6564,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .news .first-page > img {
-    height: 80vw;
-  }
   .news .first-page-title {
     position: relative;
     width: 30vw;
@@ -6863,9 +6793,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .news .first-page > img {
-    height: 150vw;
-  }
   .news .first-page-title {
     position: relative;
     width: -webkit-fit-content;
@@ -7197,9 +7124,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .news .first-page > img {
-    height: 220vw;
-  }
   .news .first-page-box-2 {
     padding: 3vw 0 0;
     width: 65vw;
@@ -7837,9 +7761,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .newsInner .first-page > img {
-    height: 80vw;
-  }
   .newsInner .second-page {
     height: 60vw;
   }
@@ -7913,9 +7834,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .newsInner .first-page > img {
-    height: 150vw;
-  }
   .newsInner .first-page-title {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -8128,9 +8046,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .newsInner .first-page > img {
-    height: 220vw;
-  }
   .newsInner .first-page-box-2 {
     padding: 3vw 0 0;
     width: 65vw;
@@ -8550,9 +8465,6 @@ footer span a {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .contact .first-page > img {
-    height: 80vw;
-  }
   .contact .second-page {
     display: flex;
     width: 100%;
@@ -8658,9 +8570,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .contact .first-page > img {
-    height: 150vw;
-  }
   .contact .second-page {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -8727,9 +8636,6 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .contact .first-page > img {
-    height: 220vw;
-  }
   .contact .first-page-title {
     width: 65vw;
   }
@@ -9136,9 +9042,6 @@ footer {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
   }
-  .about .first-page > img {
-    height: 80vw;
-  }
   .about .first-page-box-2 {
     display: flex;
     flex-direction: column;
@@ -9416,9 +9319,6 @@ footer {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
-  .about .first-page > img {
-    height: 150vw;
-  }
   .about .first-page-title {
     width: 70vw;
     margin: 0vw 15vw 8vw;
@@ -9679,9 +9579,6 @@ footer {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
-  .about .first-page > img {
-    height: 220vw;
-  }
   .about .first-page-box-2 {
     padding: 3vw 0 0;
     width: 65vw;

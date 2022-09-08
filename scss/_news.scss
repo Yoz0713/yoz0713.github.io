@@ -406,9 +406,7 @@
         .first-page{
             height: 100vh;
             height: calc(var(--vh, 1vh) * 100);
-            > img{
-               height: 80vw;
-            }
+          
             &-title{
                 position: relative;
                 width: 30vw;
@@ -685,9 +683,6 @@
     @media all and (max-width:920px){
         .news{
             .first-page{
-                > img{
-                    height: 150vw;
-                 }
                 &-title{
                     position: relative;
                     width: fit-content;
@@ -1042,9 +1037,6 @@
         @media all and (max-width:480px){
             .news{
                 .first-page{
-                    > img{
-                        height: 220vw;
-                     }
                     &-box{
                         &-2{
                             padding: 3vw 0 0;
