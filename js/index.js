@@ -400,18 +400,7 @@ let pointer = document.documentElement;
             pointer.style.setProperty('--y', m.clientY + 'px');
         },100)
 })
-    pointer.addEventListener('touchstart', m => {
-        setTimeout(()=>{
-            pointer.style.setProperty('--x', m.clientX + 'px');
-            pointer.style.setProperty('--y', m.clientY + 'px');
-        },100)
-    })
-    pointer.addEventListener('touchmove', m => {
-        setTimeout(()=>{
-            pointer.style.setProperty('--x', m.clientX + 'px');
-            pointer.style.setProperty('--y', m.clientY + 'px');
-        },100)
-})
+   
 
 // make first-page of mobile device 100vh without screen shaking 
 function safariHacks() {
