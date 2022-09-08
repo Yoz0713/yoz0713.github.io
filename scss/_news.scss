@@ -104,7 +104,7 @@
     .second-page{
         width: 100%;
         height: 100vh;
-        padding:5vw 14vw;
+        padding:5vw 14vw 12vw;
         &-top{
             display: flex;
             align-items: center;
@@ -280,19 +280,23 @@
     }
     .third-page{
         display: flex;
+        align-items: center;
         justify-content: space-between;
-     
+    
         width: 100vw;
         height: 100vh;
-        padding: 3vw 11vw;
+        padding: 3vw 14vw;
         &-box{
        
             display: flex;
             flex-direction: column;
             align-items: center;
-            width:calc(68vw / 3);
+            width:calc(62vw / 3);
             height: 36vw;
             position: relative;
+            > a{
+                width: 100%;
+            }
             &-top{
                 width: 100%;
                 height: fit-content;
@@ -325,7 +329,7 @@
                 height: calc(100% - 17vw);
                 &-svg{
                     width: 29vw;
-                    height: 3.65vw;
+                    height: 3vw;
                 }
                 > h3{
                     font-size: 1.1vw;
@@ -347,10 +351,10 @@
                     justify-content: space-between;
                     width: 21.6vw;
                     position: absolute;
-                    bottom: -2vw;
+                    bottom: 2vw;
                     z-index: 15;
                
-                    margin-top: 5vw;
+                 
                     a{
                         display: flex;
                     }
@@ -390,7 +394,7 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 90%;
                 background-color: $gold_color_opacity;
                 position: absolute;
                 right: -2.6vw;
@@ -399,7 +403,7 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 90%;
                 background-color: $gold_color_opacity;
                 position: absolute;
                 right: -2.6vw;
@@ -468,7 +472,7 @@
         .second-page{
             width: 100%;
             height: 60vw;
-            padding:5vw 14vw;
+            padding:2vw 14vw;
             &-top{
                 display: flex;
                 align-items: center;
@@ -495,9 +499,10 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            width: 100%;
                             .menu_font{
                                 position: relative;
-                                font-size: 16px;
+                            
                                 letter-spacing: 4px;
                                 color: $gold_color;
                                 cursor: pointer;
@@ -532,29 +537,48 @@
             }
             &-bottom{
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                justify-content: space-between;
                 width: 100%;
                 height: 90%;
                 position: relative;
-                > a{
-                    margin-top: 0vw;
-                    img{
-                        cursor: pointer;
-                        border-radius: 40px 0 40px 0;
-                        width: 100%;
-                        height: fit-content;
-                        object-fit: contain;
+                    
+                &-left{
+                    position: relative;
+               
+                    z-index: 15;
+                    overflow: hidden;
+                    cursor: pointer;
+    
+                    border-radius: 40px 0 40px 0;
+                    .imgBox{
+                   
+                        transition: 0.8s;
+                        img{
                        
-                        z-index: 10;
+                    
+                            width: 38vw;
+                            height: fit-content;
+                            object-fit: contain;
+                            z-index: 10;
+                            transition: 0.8s;
+                        
+                        }
+                      
+                    }
+                    &:hover .imgBox{
+                            
+                        transform: scale(1.1);
                     }
                 }
-                
+               
                 &-right{
-                    position: absolute;
-                    margin-top: 0vw;
+                    display: flex;
                     height: 100%;
                     align-items: center;
+                    position: absolute;
+                    margin-top: 0vw;
+                    
                     .lineBox{
                         display: flex;
                         justify-content: flex-end;
@@ -576,22 +600,27 @@
                         
                         flex: 1 1 ;
                         margin-left: 20%;
+                        margin-top: 3vw;
                         svg{
                             height: 14%;
                         }
                         .readmore{
+                            flex-direction: column;
                             margin-top: -2vw;
                             position: relative;
                             align-items: flex-end;
+                            margin-right: 5vw;
                             p{
-                                margin-right: 2.8vw;
-                                position: absolute;
-                                order: 3;
+                                margin-right:0;
+                                position: relative;
+                                order: -1;
                                 right: 0;
                                 bottom: 0;
+                              
                             }
                             &-box{
-                                flex: 1 1 30%;
+                                margin-left: 0vw;
+                                margin-top: -3vw;
                                 svg{
                                 
                                     transform: scale(0.75);
@@ -601,6 +630,7 @@
                                 h3{
                                     text-align: end;
                                     line-height: 77px;
+                                  
                                 }
                             }
                          
@@ -639,41 +669,45 @@
                         font-size: 0.9vw;
                     }
                     .readmore{
-          
+                        
                         justify-content:center;
                         bottom: -9vw;
-                     
-    
-                        flex-wrap: wrap;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        flex-wrap: nowrap;
+                        > a{
+                            margin-top: -1vw;
+                        }
                         &-box{
+                            display: flex;
+                            
                             transform: translate(0);
                             margin-right: 1vw;
+                            cursor: pointer;
+                           
+                            svg{
+                                transform: scale(1);
+                            }
                         }
                         h3,p{
-                            line-height:4.15vw;
+                            line-height:45px;
                      
                         }
                         h3{
-                            font-size: 1vw;
-                            margin-right: 3vw;
+                            font-size: 15px;
+                      
+                           
                         }
                         p{
-                            order: 10;
-                            margin-top: -3vw;
+                            order: -1;
+                       
                             position: relative;
-                            text-align: center;
+                            text-align: end;
                             width: 100%;
                             font-size: 0.75vw;
                           
                         }
-                        &-box{
-                            cursor: pointer;
-                            display: flex;
-                            svg{
-                                transform: scale(0.7);
-                            }
-                        
-                        }
+                      
               
                      
                     }
@@ -879,39 +913,41 @@
                             }
                             a{
                                 display: flex;
-                            
+                                justify-content: space-between;
                                 width: 80%;
-                                justify-content: flex-end;
+                             
                                 .readmore{
                                     margin: 0 0 0;
                                     width: 100%;
                                     position: relative;
-                                    flex-direction: column;
-                                    align-items: flex-end;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                 
                                     p{
-                                        text-align: end;
-                                        width: 100%;
+                                        
+                                        width: fit-content;
                                         margin-right:0;
                                         position:relative;
                                         order: -1;
-                                        right: 0;
-                                        bottom: 0;
+                                        line-height:normal;
                                        
                                     }
                                     &-box{
                                         width: fit-content;
-                                        flex: 1 1 30%;
+                                        align-items: center;
                                         order: 2;
-                                        margin-top: -3vw;
+                                        margin-top: 0;
                                         svg{
                                             
-                                            transform: scale(0.75);
+                                            transform: scale(1);
                                             height: 100%;
-                                            
+                                            margin-right: 1vw;
+                                            margin-bottom:-3.5vw;
                                         }
                                         h3{
                                             
-                                            line-height: 77px;
+                                            line-height:normal;
                                           
                                         }
                                     }
@@ -970,20 +1006,21 @@
                         .readmore{
                             display: flex;
                             flex-direction: row;
-                      
-                            justify-content: space-between;
+                            
+                            justify-content:flex-start;
                             width: 100%;
                             position:relative;
-                            flex-wrap: nowrap;
+                            align-items: center;
                             z-index: 15;
                             height: fit-content;
-                            margin-top: 0;
+                            margin-top: -7vw;
                             bottom: 0;
                             a{
                                 width: 100%;
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: flex-end;
+                                align-items: center;
                                 margin: 0;
                                 padding: 0;
                                 h3{
@@ -996,14 +1033,15 @@
                                 }
                             }
                             &-box{
-                          
+                            
                                 width:30%;
                                 svg{
+                                    margin-top: 6vw;
                                     transform: scale(0.7);
                                 }
                             }
                             h3,p{
-                                line-height:130px;
+                                line-height:normal;
                                 color: $gold_color;
                                 height: fit-content;
                             }
@@ -1172,7 +1210,7 @@
                                     height:10%;
                                 }
                                 > p{
-                                    width: 80%;
+                                    width: 90%;
                                 }
                                 > h3{
                                     width: 100%;
@@ -1181,15 +1219,17 @@
                                 a{
                                     display: flex;
                                     width: fit-content;
-                                    margin-left:25vw;
+                                  
+                                    margin-left:0;
                                     .readmore{
-                                        margin: -2vw 0 0;
+                                        margin: 0vw 0 0;
                                         width: fit-content;
                                         position: relative;
-                                        align-items: flex-end;
+                                        align-items: center;
                                         &-box{
-                                            margin-top: -8vw;
+                                            margin-top: 0;
                                             svg{
+                                                margin-top: 2vw;
                                                 transform: scale(0.75);
                                             }
                                         }
@@ -1204,7 +1244,8 @@
                     }
                 }
                 .third-page{
-                    
+                    padding-left:8vw ;
+                    padding-right:8vw;
                     height: fit-content;
                     flex-direction: column;
                     &-box{
@@ -1252,7 +1293,7 @@
                                 justify-content: space-between;
                                 width: 100%;
                                 position:relative;
-                                flex-wrap: nowrap;
+                             
                                 z-index: 15;
                                 height: fit-content;
                                 margin-top: 0;

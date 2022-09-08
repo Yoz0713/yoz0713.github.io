@@ -86,7 +86,7 @@
             position: absolute;
             right: 2vw;
             bottom: 2.5vw;
-            z-index: 200;
+            z-index: 16;
         
             a{
                 display: flex;
@@ -337,10 +337,10 @@
                         top: 0;
                         width: 100%;
                         height: 100%;
-                        transition: 0.5s;
+                        transition: 0.4s;
                     }
                     &:hover img{
-                        transform: scale(1.2);
+                        transform: scale(1.03);
                     }
                 }
             }
@@ -460,9 +460,9 @@
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            transition: 0.5s;
+                            transition: 0.4s;
                             &:hover{
-                                transform: scale(1.2); 
+                                transform: scale(1.06); 
                             }
                         }
                     }

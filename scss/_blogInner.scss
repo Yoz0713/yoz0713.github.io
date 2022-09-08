@@ -293,30 +293,34 @@
     }
     .fifth-page{
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        
+    
         width: 100vw;
         height: 100vh;
-        padding: 3vw 11vw;
+        padding: 3vw 12vw;
         &-box{
        
             display: flex;
             flex-direction: column;
             align-items: center;
-            width:calc(68vw / 3);
+            width:calc(66vw / 3);
             height: 36vw;
             position: relative;
+            > a{
+                width: 100%;
+            }
             &-top{
                 width: 100%;
-                height: 13vw;
+                height: fit-content;
                 margin-bottom: 4vw;
-                border-radius: 40px 0 40px 0;
                 overflow: hidden;
+                border-radius: 40px 0 40px 0;
                 .imgBox{
                     width: 100%;
                     height: 100%;
-                    transition: 0.5s;
-                 
+                    
+                    transition: 0.4s;
                     img{
                         width: 100%;
                         height: 100%;
@@ -326,7 +330,7 @@
                 }
              
                 &:hover .imgBox{
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
             }
             &-bottom{
@@ -338,9 +342,12 @@
                 height: calc(100% - 17vw);
                 &-svg{
                     width: 29vw;
-                    height: 3.65vw;
+                    height: 3vw;
                 }
-          
+                > h3{
+                    font-size: 1.1vw;
+                    text-align: center;
+                }
               
                 svg{
               
@@ -349,17 +356,18 @@
                 > p{
              
                     width: 21.6vw;
-                
+                    letter-spacing: 0.2vw;
+                   font-size: 0.79vw;
                 }
                 .readmore{
                     display: flex;
                     justify-content: space-between;
                     width: 21.6vw;
                     position: absolute;
-                    bottom: -2vw;
+                    bottom: 2vw;
                     z-index: 15;
                
-                    margin-top: 5vw;
+                 
                     a{
                         display: flex;
                     }
@@ -399,7 +407,7 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 90%;
                 background-color: $gold_color_opacity;
                 position: absolute;
                 right: -2.6vw;
@@ -408,7 +416,7 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 90%;
                 background-color: $gold_color_opacity;
                 position: absolute;
                 right: -2.6vw;

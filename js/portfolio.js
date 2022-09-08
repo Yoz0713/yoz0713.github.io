@@ -98,11 +98,11 @@ function gcLogo (){
         }
     })
     gg.fromTo(".second-page-top .logo",{
-        y:-150,
-        opacity:0
+     
+   
     },{
-        opacity:1,
-        y:0,
+   
+      
         duration:1.5
     }).fromTo(".second-page-top-right",{
     y:100,
@@ -130,11 +130,11 @@ function gcLogo (){
         }
     })
     gg2.fromTo(".second-page-bottom .logo",{
-        y:-150,
-        opacity:0
+     
+    
     },{
-        opacity:1,
-        y:0,
+       
+   
         duration:1.5
     }).fromTo(".second-page-bottom-right",{
     y:100,

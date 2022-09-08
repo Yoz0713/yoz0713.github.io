@@ -61,17 +61,17 @@
             &-box{
                 width: 100%;
                height: 100%;
-                transition: 0.8s;
+                transition: 0.4s;
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    transition: 0.8s;
+                    transition: 0.4s;
                 }
                 
             }
             &:hover .second-page-left-box{
-                transform: scale(1.1);
+                transform: scale(1.02);
             }
         }
         &-right{
@@ -104,7 +104,9 @@
                     border-bottom: 1px solid $gold_color_opacity;
              
                 }
-            
+                & :nth-child(3){
+                    color: #fff;
+                }
                 margin-bottom: 0.7vw;
             }
             & > :nth-child(3){
@@ -277,10 +279,10 @@
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
-                                transition: 0.8s;
+                                transition: 0.4s;
                             }
                             &:hover img{
-                                transform: scale(1.1);
+                                transform: scale(1.03);
                             }
                         }
                     }
@@ -344,10 +346,10 @@
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
-                                transition: 0.8s;
+                                transition: 0.4s;
                             }
                             &:hover img{
-                                transform: scale(1.1);
+                                transform: scale(1.03);
                             }
                         }
                     }

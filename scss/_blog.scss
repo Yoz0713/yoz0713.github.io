@@ -521,22 +521,27 @@
                         
                         flex: 1 1 ;
                         margin-left: 20%;
+                        margin-top: 3vw;
                         svg{
                             height: 14%;
                         }
                         .readmore{
+                            flex-direction: column;
                             margin-top: -2vw;
                             position: relative;
                             align-items: flex-end;
+                            margin-right: 5vw;
                             p{
-                                margin-right: 2.8vw;
-                                position: absolute;
-                                order: 3;
+                                margin-right:0;
+                                position: relative;
+                                order: -1;
                                 right: 0;
                                 bottom: 0;
+                              
                             }
                             &-box{
-                                flex: 1 1 30%;
+                                margin-left: 0vw;
+                                margin-top: -3vw;
                                 svg{
                                 
                                     transform: scale(0.75);
