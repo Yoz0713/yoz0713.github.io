@@ -420,6 +420,20 @@ footer span a {
     letter-spacing: 2px;
   }
 }
+.portfolio-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.portfolio-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .portfolio .first-page {
   display: flex;
   justify-content: center;
@@ -427,12 +441,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.portfolio .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
 }
 .portfolio .first-page-title {
   display: flex;
@@ -1573,6 +1581,20 @@ footer span a {
 .portfolioInner {
   width: 100%;
 }
+.portfolioInner-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.portfolioInner-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .portfolioInner .first-page {
   display: flex;
   justify-content: flex-start;
@@ -1580,12 +1602,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.portfolioInner .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
 }
 .portfolioInner .first-page-title {
   width: 30vw;
@@ -4331,6 +4347,20 @@ footer span a {
   overflow: hidden;
   width: 100%;
 }
+.blog-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.blog-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .blog .first-page {
   display: flex;
   flex-direction: column;
@@ -4338,14 +4368,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.blog .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .blog .first-page-box {
   display: flex;
@@ -5299,6 +5321,20 @@ footer span a {
   width: 100%;
   overflow-x: hidden;
 }
+.blogInner-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.blogInner-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .blogInner .first-page {
   display: flex;
   flex-direction: column;
@@ -6199,6 +6235,20 @@ footer span a {
   min-height: 100%;
   overflow: hidden;
 }
+.news-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.news-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .news .first-page {
   display: flex;
   flex-direction: column;
@@ -6206,14 +6256,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.news .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .news .first-page-box {
   display: flex;
@@ -7385,6 +7427,20 @@ footer span a {
   min-height: 100%;
   overflow: hidden;
 }
+.newsInner-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.newsInner-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .newsInner .first-page {
   display: flex;
   flex-direction: column;
@@ -7392,14 +7448,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.newsInner .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .newsInner .first-page-box {
   display: flex;
@@ -8312,6 +8360,20 @@ footer span a {
 .contact {
   overflow-x: hidden;
 }
+.contact-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.contact-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .contact .first-page {
   display: flex;
   justify-content: center;
@@ -8319,12 +8381,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.contact .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
 }
 .contact .first-page-title {
   display: flex;
@@ -8705,6 +8761,20 @@ footer span a {
   width: 100%;
   overflow: hidden;
 }
+.about-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.about-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .about .first-page {
   display: flex;
   flex-direction: column;
@@ -8712,15 +8782,6 @@ footer span a {
   position: relative;
   width: 100%;
   height: 100vh;
-}
-.about .first-page img {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-color: rgb(48, 48, 48);
 }
 .about .first-page-box {
   display: flex;

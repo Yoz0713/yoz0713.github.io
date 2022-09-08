@@ -1,6 +1,21 @@
 .blog{
     overflow: hidden;
     width: 100%;
+    &-bg{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+     
+            
+        }
+    }
     .first-page{
         display: flex;
         flex-direction: column;
@@ -8,13 +23,7 @@
         position: relative;
         width: 100%;
         height: 100vh;
-        img{
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            object-fit: cover;
-        }
+      
         &-box{
             display: flex;
             position: absolute;
