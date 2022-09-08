@@ -6180,7 +6180,7 @@ footer span a {
     order: -1;
     text-align: start;
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
   .blogInner .fifth-page-box:nth-child(1)::after {
     content: "";
