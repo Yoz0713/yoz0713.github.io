@@ -2925,7 +2925,6 @@ footer span a {
     height: fit-content;
   }
   .portfolioInner .fifth-page-left-box h3 {
-    text-align: center;
     margin-bottom: 5vw;
   }
   .portfolioInner .fifth-page-right {
@@ -7349,10 +7348,11 @@ footer span a {
     margin: 0;
   }
   .news .third-page-box-bottom .readmore-box {
+    margin: 0;
     width: 30%;
   }
   .news .third-page-box-bottom .readmore-box svg {
-    transform: scale(0.7);
+    transform: scale(0.69);
   }
   .news .third-page-box-bottom .readmore h3, .news .third-page-box-bottom .readmore p {
     line-height: 70px;
@@ -8313,6 +8313,9 @@ footer span a {
     margin-bottom: 5vw;
   }
 }
+.contact {
+  overflow-x: hidden;
+}
 .contact .first-page {
   display: flex;
   justify-content: center;
@@ -8598,7 +8601,6 @@ footer span a {
   .contact .second-page-right form > p {
     font-size: 24px;
     font-family: "Playfair Display", serif;
-    font-weight: 450;
     letter-spacing: 0.2vw;
   }
   .contact .second-page-right form .form-box {
@@ -8638,6 +8640,9 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
+  .contact .first-page-title {
+    width: 65vw;
+  }
   .contact .second-page {
     padding: 5vw 5vw;
   }
@@ -8653,9 +8658,8 @@ footer span a {
     padding-left: 0vw;
   }
   .contact .second-page-right form p {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-family: "Playfair Display", serif;
-    font-weight: 450;
     letter-spacing: 0.2vw;
   }
   .contact .second-page-right form .form-box {
