@@ -103,6 +103,7 @@
         padding:5vw 14vw;
         &-top{
             display: flex;
+ 
             align-items: center;
             width: 100%;
             height: 10%;
@@ -947,7 +948,9 @@
                 }
                 .second-page{
          
-                
+                    &-top{
+                        margin: 5vw 0;
+                    }
                     &-bottom{
                         display: flex;
                         align-items: center;
@@ -956,11 +959,11 @@
                         width: 100%;
                         height:fit-content;
                         position: relative;
-                        margin-top: 10vw;
+                
                        
                         &-right{
                             display: flex;
-                      
+                            
                             height:fit-content;
                             align-items: center;
                             position: relative;
@@ -973,18 +976,18 @@
                                 display: flex;
                               
                                 justify-content: flex-start;
-                            
+                                margin-top: 5vw;
                                 position: relative;
                                 width:100%;
-                                height: 100vw;
+                                height: fit-content;
                                 > svg{
-
+                                 
                                     left: 36vw;
-                                    top: 30vw;
+                                    top: 32vw;
                                     position: absolute;
                                     width: 100%;
                                     height: 100%;
-                                    transform: scale(1.85,3);
+                                    transform: scale(1.85,2.6);
                                     polyline{
                                         transform: scale(0.5);
                                     }
@@ -997,7 +1000,7 @@
                                 align-items: center;
                                 width: 100%;
                                 margin: 0;
-                                margin-bottom: 7vw;
+                                
                                 > svg{
                                     width: 70%;
                                     height:10%;
@@ -1050,20 +1053,22 @@
                         flex-direction: column;
                         height: fit-content;
                         padding:0 0 10vw ;
-                        margin-bottom: 6vw;
+                        margin-bottom: 10vw;
              
                         &-right{
-                            margin-top: 3vw;
+                            margin-top: 5vw;
                             height: fit-content;
                             width: 100%;
-                      
+                            > h3{
+                                margin-bottom: 5vw;
+                            }
                             .box{
                                 display: flex;
                                width: 100%;
                                height:fit-content;
                                justify-content:center;
                                align-items: flex-end;
-                               padding: 0 0 2vw;
+                               padding: 0 0 5vw;
                                > a{
                                 width: 100%;
                                }

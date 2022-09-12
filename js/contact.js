@@ -1,13 +1,15 @@
 let pointer = document.documentElement;     
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');   
-    pointer.addEventListener('mousemove', m => {
-        setTimeout(()=>{
-            pointer.style.setProperty('--x', m.clientX + 'px');
-            pointer.style.setProperty('--y', m.clientY + 'px');
-        },100)
-  
-})
+    pointer.style.setProperty('--x', -1000 + 'px');
+    pointer.style.setProperty('--y', -1000 + 'px');   
+    if(window.innerWidth > 1440){
+        pointer.addEventListener('mousemove', m => {
+            setTimeout(()=>{
+                pointer.style.setProperty('--x', m.clientX + 'px');
+                pointer.style.setProperty('--y', m.clientY + 'px');
+            },100)
+    })
+       
+    }
 
 // make first-page of mobile device 100vh without screen shaking 
 function safariHacks() {

@@ -392,15 +392,18 @@ if(window.innerWidth >1440){
 
 
 let pointer = document.documentElement;
-    pointer.style.setProperty('--x', 30 + 'px');
-    pointer.style.setProperty('--y', 100 + 'px');  
-    pointer.addEventListener('mousemove', m => {
-        setTimeout(()=>{
-            pointer.style.setProperty('--x', m.clientX + 'px');
-            pointer.style.setProperty('--y', m.clientY + 'px');
-        },100)
-})
-   
+    pointer.style.setProperty('--x', -1000 + 'px');
+    pointer.style.setProperty('--y', -1000 + 'px');  
+    if(window.innerWidth > 1440){
+        pointer.addEventListener('mousemove', m => {
+            setTimeout(()=>{
+                pointer.style.setProperty('--x', m.clientX + 'px');
+                pointer.style.setProperty('--y', m.clientY + 'px');
+            },100)
+    })
+       
+    }
+
 
 // make first-page of mobile device 100vh without screen shaking 
 function safariHacks() {
@@ -502,6 +505,14 @@ if(window.innerWidth <=920){
             },{
                 strokeDashoffset: 800,
                 duration:3.5,
+            },"<+0.5").fromTo(`.home-third-page .readmore`,{
+                y:30,
+                opacity:0
+            },{
+                delay:0.6,
+                duration:0.8,
+                opacity:1,
+                y:0
             },"<+0.5")
 
         }
