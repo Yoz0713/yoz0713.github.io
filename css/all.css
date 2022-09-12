@@ -4099,7 +4099,7 @@ footer span a {
     flex-direction: row;
     position: absolute;
     left: 0;
-    bottom: 2vw;
+    bottom: 1.5vw;
     z-index: 20;
     justify-content: center;
     height: -webkit-fit-content;
@@ -4195,7 +4195,7 @@ footer span a {
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
-    padding: 0 3vw 10vw;
+    padding: 5vw 3vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -4208,26 +4208,6 @@ footer span a {
   .home-second-page-bottom-right-para p {
     position: relative;
     width: 100%;
-  }
-  .home-second-page-bottom-right-para p:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: rgba(220, 177, 120, 0.4705882353);
-    position: absolute;
-    bottom: -25vw;
-    left: 0;
-  }
-  .home-second-page-bottom-right-para p:before {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: rgba(220, 177, 120, 0.4705882353);
-    position: absolute;
-    bottom: calc(-25vw - 5px);
-    left: 0;
   }
   .home-second-page-bottom-right-para > h3 {
     margin-top: 2vw;
@@ -4399,7 +4379,7 @@ footer span a {
     margin-top: 10.5vw;
   }
   .home-third-page-bottom ul .li3 svg {
-    bottom: 3.5vw;
+    bottom: -1.5vw;
   }
 }
 .blog {

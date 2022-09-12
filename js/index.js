@@ -188,13 +188,13 @@ function seondPageRight(){
     },{
         strokeDashoffset: 300,
         duration:3,
-    },"<").fromTo(".home-second-page-bottom-left-img",{
+    },"<").fromTo(".home-second-page-bottom-left",{
 
         opacity:0,
-        filter:"blur(1)"
+        y:30
     },{
         opacity:1,
-        filter:"blur(0)",
+        y:0,
         duration:2
     },"<").fromTo(".home-second-page-bottom-right-para > h3",{
         opacity:0,
@@ -278,7 +278,7 @@ function seondPageRight(){
     },{
         y:0,
         opacity:1,
-        duration:0.8
+        duration:0.1
     }).fromTo(".switchImg :nth-child(2)",{
         y:30,
         opacity:0
