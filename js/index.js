@@ -5,9 +5,9 @@ let swiper1 = new Swiper(".swiper1",{
     speed:2000,
     loop:true,
     autoplay:{
-        delay:6000
+        delay:3500
     },
-    autoplayDisableOnInteraction: false,
+ 
     effect : 'fade',
     fadeEffect: {
       crossFade: true,
