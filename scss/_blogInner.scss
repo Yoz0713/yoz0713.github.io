@@ -460,6 +460,11 @@
                 height: 100%;
             }
             &-right{
+                .imgBox{
+                    img{
+                        object-fit: cover;
+                    }
+                }
                 height: 100%;
             }
         }
@@ -500,9 +505,9 @@
                     
                     .readmore{
           
-                        justify-content:center;
-                        bottom: -12vw;
-                     
+                        justify-content:flex-end;
+                        bottom: -6vw;
+                        
     
                         flex-wrap: wrap;
                        
@@ -512,18 +517,20 @@
                         }
                         h3{
                             font-size: 1vw;
-                            margin-right: 3vw;
+                            margin-right: 0vw;
+                         
                         }
                         p{
                             order: 10;
-                            margin-top: -3vw;
+                            margin-top: -4vw;
                             position: relative;
-                            text-align: center;
+                            text-align: end;
                             width: 100%;
                             font-size: 0.75vw;
                           
                         }
                         &-box{
+                         
                             cursor: pointer;
                             display: flex;
                             svg{
@@ -744,6 +751,7 @@
                 .first-page{
                   
                     &-box{
+                        margin-bottom: 10vw;
                         &-2{
                             padding: 3vw 0 0;
                             width: 80vw;
