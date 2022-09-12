@@ -369,7 +369,7 @@ footer span a {
   .banner_box .en_title_font {
     font-weight: 500;
     font-size: 10vw;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
   }
   .banner_box .p_font {
     font-size: 3.5vw;
@@ -3401,6 +3401,7 @@ footer span a {
   width: 60%;
   height: 100%;
   padding: 1.5vw 0 0;
+  z-index: -1;
 }
 .home-second-page-bottom-right .lineBox {
   display: flex;
