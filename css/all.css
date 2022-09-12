@@ -2059,7 +2059,7 @@ footer span a {
     height: calc(var(--vh, 1vh) * 100);
   }
   .portfolioInner .first-page-title {
-    width: 45vw;
+    width: 60vw;
     z-index: 11;
     padding: 0vw 4vw 5vw;
   }
@@ -3968,6 +3968,28 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
+  .home-first-page-bottomNavigation {
+    margin-bottom: 4vw;
+  }
+  .home-first-page-bottomNavigation button {
+    cursor: pointer;
+    width: 6vw;
+    background-color: rgba(126, 126, 126, 0.389);
+    transition: 0.5s;
+    height: 1.7vw;
+    margin-bottom: 2vw;
+    border: none;
+    z-index: 100;
+  }
+  .home-first-page-bottomNavigation button:nth-child(1) {
+    margin-right: 1.5vw;
+  }
+  .home-first-page-bottomNavigation .navigate {
+    width: 10vw;
+    height: 1.7vw;
+    background-color: rgba(220, 177, 120, 0.4392156863);
+    border-radius: 0;
+  }
   .home-first-page-title {
     position: absolute;
     left: 12vw;
@@ -5192,7 +5214,7 @@ footer span a {
     top: -150px;
   }
   .blog .second-page-top {
-    margin: 5vw 0;
+    margin: 0vw 0 10vw;
   }
   .blog .second-page-bottom {
     display: flex;
@@ -5213,6 +5235,7 @@ footer span a {
     align-items: center;
     position: relative;
     left: 0;
+    margin-top: 15vw;
     width: 100%;
   }
   .blog .second-page-bottom-right .lineBox {
@@ -5221,17 +5244,14 @@ footer span a {
     margin-top: 5vw;
     position: relative;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
   .blog .second-page-bottom-right .lineBox > svg {
     left: 36vw;
-    top: 32vw;
+    top: 20vw;
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scale(1.85, 2.6);
+    transform: scale(2.5, 2.7);
   }
   .blog .second-page-bottom-right .lineBox > svg polyline {
     transform: scale(0.5);
@@ -5243,16 +5263,20 @@ footer span a {
     align-items: center;
     width: 100%;
     margin: 0;
+    margin-top: -15vw;
   }
   .blog .second-page-bottom-right-para > svg {
+    position: absolute;
     width: 70%;
-    height: 10%;
+    height: 20%;
+    top: 12%;
   }
   .blog .second-page-bottom-right-para > p {
     width: 90%;
   }
   .blog .second-page-bottom-right-para > h3 {
     width: 100%;
+    margin-bottom: 10vw;
     text-align: center;
   }
   .blog .second-page-bottom-right-para a {
@@ -5260,6 +5284,7 @@ footer span a {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    height: 45px;
     margin-left: 0;
   }
   .blog .second-page-bottom-right-para a .readmore {
@@ -5284,6 +5309,9 @@ footer span a {
   .blog .second-page-bottom-right-para a .readmore-box svg {
     margin-top: 6vw;
     transform: scale(0.75);
+  }
+  .blog .third-page {
+    margin-top: 5vw;
   }
   .blog .third-page-box {
     display: flex;
@@ -7275,11 +7303,8 @@ footer span a {
     left: 0;
     z-index: 10;
   }
-  .news .second-page {
-    margin-bottom: 5vw;
-  }
   .news .second-page-top {
-    margin: 5vw 0;
+    margin: 0vw 0 10vw;
   }
   .news .second-page-bottom {
     display: flex;
@@ -7300,25 +7325,23 @@ footer span a {
     align-items: center;
     position: relative;
     left: 0;
+    margin-top: 15vw;
     width: 100%;
   }
   .news .second-page-bottom-right .lineBox {
     display: flex;
     justify-content: flex-start;
-    margin-top: 5vw;
+    margin-top: 10vw;
     position: relative;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
   .news .second-page-bottom-right .lineBox > svg {
     left: 36vw;
-    top: 35vw;
+    top: 26.5vw;
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: scale(1.85, 2.6);
+    transform: scale(2.4, 3.2);
   }
   .news .second-page-bottom-right .lineBox > svg polyline {
     transform: scale(0.5);
@@ -7330,16 +7353,20 @@ footer span a {
     align-items: center;
     width: 100%;
     margin: 0;
+    margin-top: -15vw;
   }
   .news .second-page-bottom-right-para > svg {
+    position: absolute;
     width: 70%;
-    height: 10%;
+    height: 20%;
+    top: 8%;
   }
   .news .second-page-bottom-right-para > p {
     width: 90%;
   }
   .news .second-page-bottom-right-para > h3 {
     width: 100%;
+    margin-bottom: 10vw;
     text-align: center;
   }
   .news .second-page-bottom-right-para a {
@@ -7347,9 +7374,8 @@ footer span a {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0;
-    margin-left: 0;
     height: 45px;
+    margin-left: 0;
   }
   .news .second-page-bottom-right-para a .readmore {
     margin: 0vw 0 0;
@@ -7371,7 +7397,7 @@ footer span a {
     align-items: center;
   }
   .news .second-page-bottom-right-para a .readmore-box svg {
-    margin-top: 2.5vw;
+    margin-top: 3vw;
     transform: scale(0.75);
   }
   .news .third-page {
@@ -7381,6 +7407,7 @@ footer span a {
     height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
+    margin-top: 10vw;
   }
   .news .third-page-box {
     height: -webkit-fit-content;

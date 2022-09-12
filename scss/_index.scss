@@ -1006,7 +1006,30 @@
             .home{
               
                 &-first-page{
-                   
+                    &-bottomNavigation{
+                        margin-bottom: 4vw;
+                        button{
+                            cursor: pointer;
+                            width: 6vw;
+                            background-color: rgba(126, 126, 126, 0.389);
+                            transition: 0.5s;
+                            height: 1.7vw;
+                 
+                            margin-bottom: 2vw;
+                            border: none;
+                            z-index: 100;
+                            &:nth-child(1){
+                                margin-right: 1.5vw;
+                            }
+                        }
+                        .navigate{
+                            width: 10vw;
+                            height: 1.7vw;
+                            background-color: #dcb17870;
+                           
+                            border-radius: 0;
+                        }
+                    }
                     &-title{
                         position: absolute;
                         left: 12vw;
