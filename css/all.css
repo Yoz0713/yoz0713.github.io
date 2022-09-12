@@ -1387,7 +1387,7 @@ footer span a {
     background-color: rgba(39, 28, 27, 0.8784313725);
     color: #dcb078;
     padding: 3vw 0 0;
-    width: 75vw;
+    width: 80vw;
   }
   .portfolio .second-page {
     display: flex;
@@ -2862,7 +2862,7 @@ footer span a {
     width: 100%;
   }
   .portfolioInner .second-page-right {
-    padding: 3vw 5vw 0;
+    padding: 3vw 0;
   }
   .portfolioInner .second-page-right > :nth-child(2) {
     width: 100%;
@@ -2870,6 +2870,9 @@ footer span a {
   }
   .portfolioInner .second-page-right > :nth-child(2) h3 {
     padding: 0 0 3vw;
+  }
+  .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 {
+    justify-content: space-between;
   }
   .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 .second-page-right-box-right img {
     width: 4.5vw;
@@ -2936,7 +2939,7 @@ footer span a {
     padding: 5vw 5vw;
   }
   .portfolioInner .fifth-page-left {
-    padding: 0 5vw;
+    padding: 0;
     width: 100%;
     position: relative;
     height: -webkit-fit-content;
@@ -2970,7 +2973,7 @@ footer span a {
     padding: 5vw 5vw;
   }
   .portfolioInner .sixth-page-right {
-    padding: 0 5vw;
+    padding: 0;
     width: 100%;
     position: relative;
     height: -webkit-fit-content;
@@ -3887,8 +3890,8 @@ footer span a {
     background-color: rgba(23, 22, 22, 0.69);
     position: absolute;
     width: 20vw;
-    right: 1vw;
-    top: 39vw;
+    left: 0;
+    top: 48vw;
   }
   .home-third-page-bottom ul li .newsDate1 .newsDate2 {
     position: relative;
@@ -3949,22 +3952,22 @@ footer span a {
     margin-left: 1vw;
   }
   .home-third-page-bottom ul .li1 svg {
-    bottom: -9.5vw;
+    bottom: -12.5vw;
   }
   .home-third-page-bottom ul .li1 .para {
-    margin-top: 2vw;
+    margin-top: 10vw;
   }
   .home-third-page-bottom ul .li2 svg {
-    bottom: -7vw;
+    bottom: -10vw;
   }
   .home-third-page-bottom ul .li2 .para {
-    margin-top: 2.5vw;
+    margin-top: 10.5vw;
   }
   .home-third-page-bottom ul .li3 .para {
-    margin-top: 2.5vw;
+    margin-top: 10.5vw;
   }
   .home-third-page-bottom ul .li3 svg {
-    bottom: -2.5vw;
+    bottom: -6vw;
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
@@ -4286,8 +4289,8 @@ footer span a {
     background-color: rgba(23, 22, 22, 0.69);
     position: absolute;
     width: 25vw;
-    right: 1vw;
-    top: 38vw;
+    left: 0;
+    top: 48vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -4350,22 +4353,22 @@ footer span a {
     margin-left: 1vw;
   }
   .home-third-page-bottom ul .li1 svg {
-    bottom: -8.5vw;
+    bottom: -10.5vw;
   }
   .home-third-page-bottom ul .li1 .para {
-    margin-top: 2vw;
+    margin-top: 10vw;
   }
   .home-third-page-bottom ul .li2 svg {
-    bottom: 0vw;
+    bottom: -2vw;
   }
   .home-third-page-bottom ul .li2 .para {
-    margin-top: 2.5vw;
+    margin-top: 10.5vw;
   }
   .home-third-page-bottom ul .li3 .para {
-    margin-top: 2.5vw;
+    margin-top: 10.5vw;
   }
   .home-third-page-bottom ul .li3 svg {
-    bottom: 6vw;
+    bottom: 3.5vw;
   }
 }
 .blog {
@@ -5189,7 +5192,7 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .blog .first-page-box-2 {
     padding: 3vw 0 0;
-    width: 65vw;
+    width: 80vw;
   }
   .blog .first-page-box-2 .text-decoration {
     display: flex;
@@ -6063,7 +6066,7 @@ footer span a {
   }
   .blogInner .first-page-box-2 {
     padding: 3vw 0 0;
-    width: 65vw;
+    width: 80vw;
   }
   .blogInner .first-page-box-2 .text-decoration {
     display: flex;
@@ -7253,7 +7256,7 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .news .first-page-box-2 {
     padding: 3vw 0 0;
-    width: 65vw;
+    width: 80vw;
   }
   .news .first-page-box-2 .text-decoration {
     display: flex;
@@ -8198,7 +8201,7 @@ footer span a {
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .newsInner .first-page-box-2 {
     padding: 3vw 0 0;
-    width: 65vw;
+    width: 80vw;
   }
   .newsInner .first-page-box-2 .text-decoration {
     display: flex;
@@ -8252,6 +8255,8 @@ footer span a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .newsInner .second-page-img img {
     height: 120%;
@@ -8264,6 +8269,8 @@ footer span a {
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .newsInner .third-page-left {
     width: 100%;
@@ -8300,6 +8307,8 @@ footer span a {
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .newsInner .forth-page-right {
     margin-bottom: 5vw;
@@ -8339,6 +8348,8 @@ footer span a {
     margin: 5vw 0;
   }
   .newsInner .fifth-page {
+    padding-left: 5vw;
+    padding-right: 5vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -8373,7 +8384,7 @@ footer span a {
     height: fit-content;
   }
   .newsInner .fifth-page-box-bottom-svg {
-    margin: 2vw 0 5vw;
+    margin: 2vw 0 2vw;
     width: 100%;
   }
   .newsInner .fifth-page-box-bottom-svg svg {
@@ -8795,7 +8806,8 @@ footer span a {
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .contact .first-page-title {
-    width: 65vw;
+    width: 80vw;
+    padding: 3vw 0 0;
   }
   .contact .second-page {
     padding: 5vw 5vw;
@@ -9198,6 +9210,10 @@ footer span a {
 footer {
   position: relative;
   z-index: 10;
+}
+
+.phone {
+  display: none;
 }
 
 @media all and (max-width: 1440px) {
@@ -9742,9 +9758,12 @@ footer {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
+  .phone {
+    display: block;
+  }
   .about .first-page-box-2 {
     padding: 3vw 0 0;
-    width: 65vw;
+    width: 80vw;
   }
   .about .first-page-box-2 .text-decoration {
     display: flex;
@@ -9772,15 +9791,19 @@ footer {
   .about .second-page-top-img {
     position: relative;
     width: 100%;
-    height: 40vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .about .second-page-top-img img {
+    display: none;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .about .second-page-top-img .lineBox {
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -9794,10 +9817,14 @@ footer {
     transform: scaleX(0.55);
   }
   .about .second-page-top-img h3 {
+    display: none;
     position: absolute;
     right: 2vw;
     top: 1.5vw;
     font-size: 5vw;
+  }
+  .about .second-page-top-img .phone {
+    display: block;
   }
   .about .second-page-bottom {
     flex-wrap: wrap;

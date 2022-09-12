@@ -373,7 +373,9 @@ footer{
    
 } 
 
-
+.phone{
+    display: none;
+}
 @media all and (max-width:1440px){
 
     .about{
@@ -963,7 +965,9 @@ footer{
             }
         }
         @media all and (max-width:480px){
-
+        .phone{
+            display: block;
+        }
             .about{
                 
                 .first-page{
@@ -973,7 +977,7 @@ footer{
                         
                         &-2{
                             padding: 3vw 0 0;
-                            width: 65vw;
+                            width: 80vw;
                             .text-decoration{
                               
                                 display: flex;
@@ -1006,13 +1010,15 @@ footer{
                         &-img{
                             position: relative;
                             width: 100%;
-                            height: 40vw;
+                            height:fit-content;
                             img{
+                                display: none;
                                 width: 100%;
                                 height: 100%;
-                                object-fit: cover;
+                                object-fit: contain;
                             }
                             .lineBox{
+                                display: none;
                                 position: absolute;
                                 left:0;
                                 top:0;
@@ -1027,11 +1033,15 @@ footer{
                             }
                            
                             h3{
+                                display: none;
                                 position: absolute;
                                 right: 2vw;
                                 top: 1.5vw;
                                 font-size: 5vw;
                               
+                            }
+                            .phone{
+                                display: block;
                             }
                         }
                     }

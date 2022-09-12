@@ -1324,7 +1324,7 @@
                        
                     }
                     &-right{
-                        padding: 3vw 5vw 0;
+                        padding: 3vw 0;
     
                         & > :nth-child(2){
                             
@@ -1336,6 +1336,7 @@
                         }
                         & :nth-child(3){
                             .second-page-right-box2{
+                                justify-content: space-between;
                                 .second-page-right-box-right{
                                     img{
                                         width:4.5vw;
@@ -1412,7 +1413,7 @@
                     height: fit-content;
                     padding: 5vw 5vw;
                     &-left{
-                        padding: 0 5vw;
+                        padding: 0;
                         width: 100%;
                         position: relative;
                         height: fit-content;
@@ -1452,7 +1453,7 @@
                     height: fit-content;
                     padding: 5vw 5vw;
                     &-right{
-                        padding: 0 5vw;
+                        padding: 0;
                         width: 100%;
                         position: relative;
                         height: fit-content;

@@ -416,7 +416,7 @@ function safariHacks() {
 
 safariHacks();
 // make first-page of mobile device 100vh without screen shaking
-if(window.innerWidth >1440){
+if(window.innerWidth > 1440){
     function thirdPageAnimation(){
         let gg = gsap.timeline({
             scrollTrigger:{
@@ -481,7 +481,7 @@ if(window.innerWidth >1440){
 
 
 
-if(window.innerWidth <=920){
+if(window.innerWidth <= 920){
     function thirdMobileAnimation(){
         let li = document.querySelectorAll(".home-third-page-bottom li")
         for(let i = 0 ; i<li.length ; i++){
@@ -505,15 +505,19 @@ if(window.innerWidth <=920){
             },{
                 strokeDashoffset: 800,
                 duration:3.5,
-            },"<+0.5").fromTo(`.home-third-page .readmore`,{
-                y:30,
-                opacity:0
-            },{
-                delay:0.6,
-                duration:0.8,
-                opacity:1,
-                y:0
             },"<+0.5")
+            if(i == 2){
+                gg.fromTo(`.home-third-page ul .readmore`,{
+                    y:30,
+                    opacity:0
+                },{
+                
+                    duration:0.8,
+                    opacity:1,
+                    y:0
+                },"<+0.5")
+            }
+            
 
         }
      
