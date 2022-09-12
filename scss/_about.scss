@@ -976,8 +976,13 @@ footer{
                     &-box{
                         margin-bottom: 10vw;
                         &-2{
-                            padding: 3vw 0 0;
+                            display: flex;
+                            padding-top: 3.5vw;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
                             width: 80vw;
+                            height: 35vw;
                             .text-decoration{
                               
                                 display: flex;

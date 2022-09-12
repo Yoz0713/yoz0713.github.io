@@ -726,8 +726,13 @@
                 &-box{
                     margin-bottom: 10vw;
                     &-2{
-                        padding: 3vw 0 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 3.5vw 0 0;
                         width: 80vw;
+                        height: 35vw;
                         .text-decoration{
                           
                             display: flex;
