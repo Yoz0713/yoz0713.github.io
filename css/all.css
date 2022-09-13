@@ -5431,7 +5431,6 @@ footer span a {
     transform: scale(0.7) translateX(3vw);
   }
   .blog .third-page-box-right .box .readmore h3, .blog .third-page-box-right .box .readmore p {
-    line-height: 65px;
     color: #dcb078;
     height: -webkit-fit-content;
     height: -moz-fit-content;
