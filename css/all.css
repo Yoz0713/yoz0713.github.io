@@ -5437,7 +5437,7 @@ footer span a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    line-height: 80px;
+    line-height: normal;
   }
   .blog .third-page-box-right .box .readmore h3 {
     text-align: start;
