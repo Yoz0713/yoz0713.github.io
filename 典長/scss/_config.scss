@@ -1,8 +1,8 @@
 
-$gray_color: #6D696A;
-
-
-
+$gray_color: #787878;
+$black_color:#0E121D;
+$para_word_family:'Microsoft JhengHei';
+$title_word_family:'Noto Serif TC', serif;
 
 
 .readmore{
@@ -11,34 +11,45 @@ $gray_color: #6D696A;
         font-size: 1.2vw;
         letter-spacing: 0.2vw;
         line-height: 2.8vw;
+        color: $gray_color;
     }
 
 }
 .word_level{
- 
+    
     .ch_text_xl{
-        font-size: 2.6vw;
+        font-size: 2.4vw;
         line-height:3.5vw;
-        letter-spacing:0.4vw;
+        color: $black_color;
+        font-family: $title_word_family;
     }
     .ch_text_l{
         font-size: 1.9vw;
         letter-spacing:0.25vw;
+        font-weight:600;
+        font-family: $title_word_family;
+        color: $black_color;
     }
     .ch_text_m{
         font-size: 1.6vw;
         letter-spacing:0.2vw;
+        font-family: $title_word_family;
+        color: $black_color;
     }
     .ch_text_s{
         font-size: 1.2vw;
         letter-spacing: 0.2vw;
         line-height: 2.8vw;
+        font-family: $para_word_family;
+        color:$gray_color ;
     }
     .ch_text_xs{
         font-size: 1.1vw;
         letter-spacing:0.15vw;
-        line-height: 1.3vw;
+        line-height: 1.5vw;
         color: #1b2026;
+        font-family: $para_word_family;
+        color: $black_color;
     }
    
     .en_text_xl{
@@ -48,10 +59,14 @@ $gray_color: #6D696A;
         font-size: 1.8vw;
         font-weight: 450;
         letter-spacing: 0.2vw;
+        font-family: $title_word_family;
+        color: $black_color;
     }
     .en_text_s{
         font-size: 1.3vw;
         letter-spacing: 0.1vw;
+        font-family: $title_word_family;
+        color: $black_color;
     }
 }
 
@@ -81,12 +96,14 @@ $gray_color: #6D696A;
                     font-size: 1.5vw;
                     letter-spacing: 0.3vw;
                     color: #383735;
+                    font-family: $title_word_family;
                 }
                 .en_text{
                     text-align: center;
                     font-size: 1.3vw;
                     color:$gray_color;
                     letter-spacing: 0.2vw;
+                    font-family: $title_word_family;
                 }
             }
            

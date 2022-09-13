@@ -26,9 +26,20 @@ let swiper1 = new Swiper(".swiper1",{
             }
            
      
-        },
+        }, touchMove: function(){
+            if(this.realIndex == 0){
+                next.classList.remove("navigate")
+                banner1In()
+                prev.classList.add("navigate")
+                
+            }else if(this.realIndex == 1){
+                prev.classList.remove("navigate")
+                banner2In()
+                next.classList.add("navigate")
+            }
       },
-   
+    
+    }
 })
 
 
@@ -65,9 +76,12 @@ next.onclick = function(){
 
 // second-page line-grow animation
 let li = document.querySelectorAll(".switchImg li");
+let p = document.querySelectorAll(".switchImg .phone");
 let switchImg = document.querySelectorAll(".home-second-page-bottom-left-img a")
+let x = 0
 for(let i = 0 ; i <li.length ; i++){
     li[i].onclick = function(e){
+        x=i
         let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
         lineSwitch.classList.remove("lineSwitch")
         this.classList.add("lineSwitch")
@@ -76,9 +90,41 @@ for(let i = 0 ; i <li.length ; i++){
         })
         switchImg[i].style.opacity="1"
     }
-   
 }
 
+p[0].onclick = function(e){
+    let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
+    x--
+    switchImg.forEach((i)=>{
+        i.style.opacity="0"
+    })
+    if(lineSwitch.previousElementSibling == p[0]){
+        x = switchImg.length-1
+        switchImg[switchImg.length-1].style.opacity="1";
+        li[li.length-1].classList.add("lineSwitch")
+    }else{
+        switchImg[x].style.opacity="1";
+        lineSwitch.previousElementSibling.classList.add("lineSwitch")
+    }
+    lineSwitch.classList.remove("lineSwitch")    
+}
+p[1].onclick = function(e){
+    let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
+    x++
+    switchImg.forEach((i)=>{
+        i.style.opacity="0"
+    })
+    if(lineSwitch.nextElementSibling == p[1]){
+        x = 0
+        switchImg[0].style.opacity="1";
+        li[0].classList.add("lineSwitch")
+    }else{
+        switchImg[x].style.opacity="1";
+        lineSwitch.nextElementSibling.classList.add("lineSwitch")
+    }
+    lineSwitch.classList.remove("lineSwitch")
+  
+}
 // second-page line-grow animation
 // banner title in
 function bannerTitleIn(){
@@ -267,27 +313,32 @@ function seondPageRight(){
 
     let gg3 = gsap.timeline({
         scrollTrigger:{
-            trigger:`.home-second-page-top`,
-            start:"top center"
+            trigger:`.switchImg`,
+            start:"top bottom"
         }
     })
 
     gg3.fromTo(".switchImg :nth-child(1)",{
         y:30,
-        opacity:0
+        opacity:0,
+   
     },{
         y:0,
+    
         opacity:1,
         duration:0.1
     }).fromTo(".switchImg :nth-child(2)",{
         y:30,
-        opacity:0
+        opacity:0,
+        rotate:45,
     },{
         y:0,
+      
         opacity:1,
-        duration:0.8
+        duration:0.1
     },"<+0.3").fromTo(".switchImg :nth-child(3)",{
         y:30,
+        rotate:45,
         opacity:0
     },{
         y:0,
@@ -295,6 +346,7 @@ function seondPageRight(){
         duration:0.8
     },"<+0.3").fromTo(".switchImg :nth-child(4)",{
         y:30,
+        rotate:45,
         opacity:0
     },{
         y:0,
@@ -302,6 +354,23 @@ function seondPageRight(){
         duration:0.8
     },"<+0.3").fromTo(".switchImg :nth-child(5)",{
         y:30,
+        rotate:45,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3").fromTo(".switchImg :nth-child(6)",{
+        y:30,
+        rotate:45,
+        opacity:0
+    },{
+        y:0,
+        opacity:1,
+        duration:0.8
+    },"<+0.3").fromTo(".switchImg :nth-child(7)",{
+        y:30,
+
         opacity:0
     },{
         y:0,

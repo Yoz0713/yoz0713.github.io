@@ -102,7 +102,7 @@ function secondPageAnimation(){
             
         }
     })
-    gg.fromTo(".second-page iframe",{
+    gg.fromTo(".second-page img",{
         y:5,
         opacity:0
     },{

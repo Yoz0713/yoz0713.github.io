@@ -3215,7 +3215,6 @@ footer span a {
   position: absolute;
   width: 100%;
   height: 20vw;
-  pointer-events: none;
   bottom: 0;
   z-index: 15;
 }
@@ -3992,6 +3991,7 @@ footer span a {
 }
 @media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) {
   .home-first-page-bottomNavigation {
+    pointer-events: none;
     margin-bottom: 4vw;
   }
   .home-first-page-bottomNavigation button {
@@ -4066,6 +4066,7 @@ footer span a {
     height: -moz-fit-content;
     height: fit-content;
     margin-top: 18vw;
+    margin-bottom: 40vw;
   }
   .home-second-page-top {
     display: flex;
@@ -4092,7 +4093,6 @@ footer span a {
   }
   .home-second-page-bottom-left {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
@@ -4105,18 +4105,27 @@ footer span a {
     flex-direction: row;
     position: absolute;
     left: 0;
-    bottom: 1.5vw;
+    bottom: -85vw;
     z-index: 20;
     justify-content: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    align-items: center;
     padding: 7vw 0 0;
   }
+  .home-second-page-bottom-left ul > h3 {
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+  }
+  .home-second-page-bottom-left ul :nth-child(1) {
+    margin-right: 5vw;
+  }
   .home-second-page-bottom-left ul li {
-    width: 30px;
+    width: 10px;
     height: 10px;
-    background-color: rgba(57, 56, 55, 0.874);
+    border: 1px solid rgba(220, 177, 120, 0.4705882353);
   }
   .home-second-page-bottom-left ul li p {
     display: none;
@@ -4131,7 +4140,7 @@ footer span a {
     display: none;
   }
   .home-second-page-bottom-left ul li:not(:last-child) {
-    margin-right: 2vw;
+    margin-right: 5vw;
   }
   .home-second-page-bottom-left ul .lineSwitch {
     position: relative;
@@ -4201,7 +4210,7 @@ footer span a {
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
-    padding: 5vw 3vw;
+    padding: 0vw 3vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -4227,6 +4236,9 @@ footer span a {
     margin-right: 0vw;
     width: 100%;
     height: 45px;
+  }
+  .home-second-page-bottom-right-para a .readmore {
+    margin-top: -3vw;
   }
   .home-second-page-bottom-right-para a .readmore svg {
     transform: scale(0.7);
@@ -8600,11 +8612,13 @@ footer span a {
 .contact .second-page-left {
   width: 55%;
   height: 100%;
-  transform: scale(0.9);
+  transform: scale(1);
 }
-.contact .second-page-left iframe {
+.contact .second-page-left img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contact .second-page-right {
   width: 45%;
@@ -8714,10 +8728,6 @@ footer span a {
     width: 55%;
     height: 100%;
   }
-  .contact .second-page-left iframe {
-    width: 100%;
-    height: 100%;
-  }
   .contact .second-page-right {
     width: 45%;
     height: 100%;
@@ -8820,10 +8830,6 @@ footer span a {
     width: 100%;
     height: 55vw;
     transform: scale(1);
-  }
-  .contact .second-page-left iframe {
-    width: 100%;
-    height: 100%;
   }
   .contact .second-page-right {
     margin-top: 5vw;
