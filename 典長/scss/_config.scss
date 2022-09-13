@@ -3,39 +3,59 @@ $gray_color: #6D696A;
 
 
 
-.para{
-    p{
 
+
+.readmore{
+    
+    p{
+        font-size: 1.2vw;
+        letter-spacing: 0.2vw;
+        line-height: 2.8vw;
     }
+
 }
-.title{
-    width: fit-content;
-    position: absolute;
-    bottom: 8vw;
-    right: 11vw;
+.word_level{
+ 
     .ch_text_xl{
-        font-size: 43px;
-        line-height:70px;
+        font-size: 2.6vw;
+        line-height:3.5vw;
+        letter-spacing:0.4vw;
+    }
+    .ch_text_l{
+        font-size: 1.9vw;
+        letter-spacing:0.25vw;
     }
     .ch_text_m{
-
+        font-size: 1.6vw;
+        letter-spacing:0.2vw;
     }
     .ch_text_s{
-
+        font-size: 1.2vw;
+        letter-spacing: 0.2vw;
+        line-height: 2.8vw;
     }
     .ch_text_xs{
-
+        font-size: 1.1vw;
+        letter-spacing:0.15vw;
+        line-height: 1.3vw;
+        color: #1b2026;
     }
+   
     .en_text_xl{
 
     }
     .en_text_m{
-
+        font-size: 1.8vw;
+        font-weight: 450;
+        letter-spacing: 0.2vw;
     }
     .en_text_s{
-
+        font-size: 1.3vw;
+        letter-spacing: 0.1vw;
     }
 }
+
+
 .menu{
     left: 0;
     top: 0;
@@ -46,32 +66,37 @@ $gray_color: #6D696A;
     background-color: #fff;
     ul{
         display: flex;
-        justify-content: space-around;
-        padding: 0 4% 0 3%;
+        justify-content: space-between;
+        
         li{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             flex-direction: column;
             width: 15%;
             padding: 1.6vw 0 0;
-            .ch_text{
-                font-size: 28px;
-                letter-spacing: 6px;
-                color: #383735;
+            .menu-box{
+                .ch_text{
+                    text-align: center;
+                    font-size: 1.5vw;
+                    letter-spacing: 0.3vw;
+                    color: #383735;
+                }
+                .en_text{
+                    text-align: center;
+                    font-size: 1.3vw;
+                    color:$gray_color;
+                    letter-spacing: 0.2vw;
+                }
             }
-            .en_text{
-                font-size: 24px;
-                color:$gray_color ;
-                letter-spacing: 2px;
-            }
+           
         }
         .menu-logo{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 5vw;
-            width: 16%;
+            margin-right: 1vw;
+            width: 17%;
             padding: 0;
             img{
                 width: 100%;
@@ -80,6 +105,17 @@ $gray_color: #6D696A;
     }
   
 }
-.footer{
-    
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#D0D0D0 ;
+    height: 8vh;
+    p{
+        text-align: center;
+        font-size: 1vw;
+        letter-spacing: 0.12vw;
+        color:#3f3d3e;
+    }
 }
