@@ -1102,7 +1102,7 @@
                                .readmore{
                                 display: flex;
                                 flex-direction: row;
-                          
+                                align-items: center;
                                 justify-content: space-between;
                                 width: 100%;
                                 position:relative;
@@ -1131,7 +1131,7 @@
                                    
                                     width:15%;
                                     svg{
-                                        
+                                        margin-top: 6.5vw;
                                         transform: scale(0.7) translateX(3vw);
                                     }
                                 }
@@ -1139,7 +1139,7 @@
                                  
                                     color: $gold_color;
                                     height: fit-content;
-                                    line-height: 78px;
+                                    line-height:normal;
                                 }
                                 h3{
                                     text-align: start;

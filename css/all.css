@@ -5393,6 +5393,7 @@ footer span a {
   .blog .third-page-box-right .box .readmore {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     position: relative;
@@ -5428,6 +5429,7 @@ footer span a {
     width: 15%;
   }
   .blog .third-page-box-right .box .readmore-box svg {
+    margin-top: 6.5vw;
     transform: scale(0.7) translateX(3vw);
   }
   .blog .third-page-box-right .box .readmore h3, .blog .third-page-box-right .box .readmore p {
@@ -5435,7 +5437,7 @@ footer span a {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    line-height: 78px;
+    line-height: normal;
   }
   .blog .third-page-box-right .box .readmore h3 {
     text-align: start;
