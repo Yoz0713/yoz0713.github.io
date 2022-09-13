@@ -130,7 +130,7 @@
     .third-page{
         height: 50vw;
         position: relative;
-        margin: 0 auto 5vw;
+        margin: 0 auto 0;
         width: 85%;
         &-top{
             display: flex;
@@ -208,7 +208,7 @@
         }
         &-bg{
             left: 0;
-            bottom: -10vw;
+            bottom: 0vw;
             position: absolute;
             width: 37%;
             img{
@@ -512,12 +512,12 @@
                         }
                     }
                     .para1{
-                        margin-bottom: 1.5vw;
+                        margin-bottom: 1vw;
                     }
                     .para2{
                         width: 90%;
                         text-align: justify;
-                        margin-bottom: 5vw;
+                        margin-bottom: 1.8vw;
                     }
                     .readmore{
                         display: flex;
