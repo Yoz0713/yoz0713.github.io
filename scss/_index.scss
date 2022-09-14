@@ -238,8 +238,9 @@
                     flex-direction: column;
                     justify-content: space-around;
                     height: 25vw;
-                  
+                    
                     li{
+                        transform: rotate(0);
                         cursor: pointer;
                         position: relative;
                         width: fit-content;
@@ -351,7 +352,7 @@
                 width: 60%;
                 height: 100%;
                 padding: 1.5vw 0 0;
-                z-index: -1;
+              
                 .lineBox{
                     display: flex;
                     justify-content: flex-end;
@@ -381,27 +382,30 @@
                     p{
                         width: fit-content;
                     }
-                    .readmore{
-                        cursor: pointer;
-                        display: flex;
-                        width: fit-content;
-                        justify-content: flex-start;
-                        margin-right: 100px;
-                        margin-top: 4vw;
-                        z-index: 10;
-                        svg{
-                            margin: 0;
-                            overflow-x: hidden;
+          
+                        .readmore{
+                            cursor: pointer;
+                            display: flex;
+                            width: fit-content;
+                            justify-content: flex-start;
+                            margin-right: 100px;
+                            margin-top: 4vw;
+                         
+                            svg{
+                                margin: 0;
+                               
+                            }
+                            h3{
+                         
+                                line-height: 65px;
+                                margin-left: 0.8vw;
+                            }
+                 
+                          
+                           
                         }
-                        h3{
-                     
-                            line-height: 65px;
-                            margin-left: 0.8vw;
-                        }
-             
-                      
-                       
-                    }
+                   
+                    
                 }
             }
         }
@@ -1156,7 +1160,7 @@
                                     width: 10px;
                                     height: 10px;
                                     border: 1px solid $gold_color_opacity;
-                                    
+                                    transform: rotate(45deg);
                                     p{
                                         display: none;
                                      

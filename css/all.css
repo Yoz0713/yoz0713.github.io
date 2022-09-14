@@ -3298,6 +3298,7 @@ footer span a {
   height: 25vw;
 }
 .home-second-page-bottom-left ul li {
+  transform: rotate(0);
   cursor: pointer;
   position: relative;
   width: -webkit-fit-content;
@@ -3405,7 +3406,6 @@ footer span a {
   width: 60%;
   height: 100%;
   padding: 1.5vw 0 0;
-  z-index: -1;
 }
 .home-second-page-bottom-right .lineBox {
   display: flex;
@@ -3449,11 +3449,9 @@ footer span a {
   justify-content: flex-start;
   margin-right: 100px;
   margin-top: 4vw;
-  z-index: 10;
 }
 .home-second-page-bottom-right-para .readmore svg {
   margin: 0;
-  overflow-x: hidden;
 }
 .home-second-page-bottom-right-para .readmore h3 {
   line-height: 65px;
@@ -4126,6 +4124,7 @@ footer span a {
     width: 10px;
     height: 10px;
     border: 1px solid rgba(220, 177, 120, 0.4705882353);
+    transform: rotate(45deg);
   }
   .home-second-page-bottom-left ul li p {
     display: none;

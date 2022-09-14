@@ -310,73 +310,75 @@ function seondPageRight(){
         background:"radial-gradient(circle at var(--x) var(--y),#1b0f0995 0.01%, #1b0f08e1 30%",
        
      },"<")
-
-    let gg3 = gsap.timeline({
-        scrollTrigger:{
-            trigger:`.switchImg`,
-            start:"top bottom"
-        }
-    })
-
-    gg3.fromTo(".switchImg :nth-child(1)",{
-        y:30,
-        opacity:0,
-   
-    },{
-        y:0,
+  
+        let gg4 = gsap.timeline({
+            scrollTrigger:{
+                trigger:`.switchImg`,
+                start:"top bottom"
+            }
+        })
     
-        opacity:1,
-        duration:0.1
-    }).fromTo(".switchImg :nth-child(2)",{
-        y:30,
-        opacity:0,
-        rotate:45,
-    },{
-        y:0,
+        gg4.fromTo(".switchImg :nth-child(1)",{
+            y:30,
+            opacity:0,
+       
+        },{
+            y:0,
+        
+            opacity:1,
+            duration:0.1
+        }).fromTo(".switchImg :nth-child(2)",{
+            y:30,
+            opacity:0,
+    
+        },{
+            y:0,
+          
+            opacity:1,
+            duration:0.1
+        },"<+0.3").fromTo(".switchImg :nth-child(3)",{
+            y:30,
+     
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.3").fromTo(".switchImg :nth-child(4)",{
+            y:30,
       
-        opacity:1,
-        duration:0.1
-    },"<+0.3").fromTo(".switchImg :nth-child(3)",{
-        y:30,
-        rotate:45,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.3").fromTo(".switchImg :nth-child(4)",{
-        y:30,
-        rotate:45,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.3").fromTo(".switchImg :nth-child(5)",{
-        y:30,
-        rotate:45,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.3").fromTo(".switchImg :nth-child(6)",{
-        y:30,
-        rotate:45,
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.3").fromTo(".switchImg :nth-child(7)",{
-        y:30,
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.3").fromTo(".switchImg :nth-child(5)",{
+            y:30,
+       
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.3").fromTo(".switchImg :nth-child(6)",{
+            y:30,
 
-        opacity:0
-    },{
-        y:0,
-        opacity:1,
-        duration:0.8
-    },"<+0.3")
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.3").fromTo(".switchImg :nth-child(7)",{
+            y:30,
+    
+            opacity:0
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<+0.3")
+
+    
 }
 seondPageRight()
 
