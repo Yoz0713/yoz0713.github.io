@@ -1,0 +1,144 @@
+.news{
+    width: 100%;
+    .first-page{
+        width: 100%;
+        height:100vh;
+        position: relative;
+        background: url(../img/news/news_banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        &-title{
+            width: fit-content;
+            position: absolute;
+            bottom: 8vw;
+            right: 8vw;
+            h2{
+                color: #fff;
+                font-weight: 450;
+              
+            }
+            .imgBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -14vw;
+                right: 4vw;
+                width: 55%;
+                height: fit-content;
+                img{
+                    top: 0;
+                    width: 100%;
+                }
+                .para{
+                    position: absolute;
+              
+                    h2,h4{
+                        color: #fff;
+                        line-height: 2.8vw;
+                        text-align: center;
+                    }
+                    h4{
+                        letter-spacing: 0.25vw;
+                        font-weight: normal;
+                
+                    }
+                }
+             
+                
+            }
+        }
+        
+    }
+    .second-page{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        height: fit-content;
+       
+        &-bottom{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding-top:15vw;
+            margin-bottom: 5vw;
+            ul{
+                width: 100%;
+                column-count: 3;
+                column-gap: 2vw;
+              
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 4vw;
+                    break-inside: avoid-column;
+                    .imgBox{
+                        position: relative;
+                        width: 100%;
+                        height: 27vw;
+                        z-index: 1;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &::after{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            top: 12px;
+                            left:-15px;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border: 1px solid #9F9F9F;
+                        }
+                    }
+                    h3{
+                        margin:0 0 2vw;
+                    }
+                    .news-date{
+                        margin: 1.5vw 0 0;
+                    }
+                    > p{
+                       
+                        width: 70%;
+                    }
+                    .readmore{
+                        display: flex;
+                        margin-top: 2.5vw;
+                        p{
+                            width: 10vw;
+                            border-bottom: 1px solid #9F9F9F;
+                        }
+                        img{
+                            width: 10%;
+                            border-bottom: 1px solid #9F9F9F;
+                        }
+                    }
+                }
+                .imgShort{
+                
+                    .imgBox{
+                        position: relative;
+                        width: 100%;
+                        height: 16vw;
+                        z-index: 1;
+                    
+                    }
+                  
+                }
+            }
+        }
+      
+       
+    }
+   
+   
+
+}

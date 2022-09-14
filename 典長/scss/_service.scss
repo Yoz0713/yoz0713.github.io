@@ -1,0 +1,135 @@
+.service{
+    .first-page{
+        width: 100%;
+        height:100vh;
+        position: relative;
+        background: url(../img/service/service_banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        &-title{
+            width: fit-content;
+            position: absolute;
+            bottom: 5vw;
+            right: 8vw;
+            h2{
+                color: #fff;
+                font-weight: 450;
+              
+            }
+            .imgBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -13vw;
+                right: 4vw;
+                width: 12vw;
+                height: fit-content;
+                img{
+                    top: 0;
+                    width: 100%;
+                }
+                .para{
+                    position: absolute;
+              
+                    h2,h4{
+                        color: #fff;
+                        line-height: 2.5vw;
+                        text-align: center;
+                    }
+                    h4{
+                        letter-spacing: 0.25vw;
+                        font-weight: normal;
+                        margin-bottom: 0.6vw;
+                    }
+                }
+             
+                
+            }
+        }
+        
+    }
+    .second-page{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width:85%;
+        margin: 0 auto;
+        height: 65vw;
+      
+        &-left{
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex: 0 0 20%;
+            height: 100%;
+            padding-top:5.2vw;
+            .imgBox{
+                position:absolute;
+                height: 55vw;
+                width: 200%;
+                left: -7.5vw;
+                bottom: 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+           
+            }
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+           
+            flex: 0 0 65%;
+            height: 100%;
+            padding-top:5.2vw;
+            &-box{
+                display: flex;
+                
+                padding-top: 4.7vw;
+                width: 100%;
+                flex-wrap:wrap;
+                
+                .box1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex: 0 0 23%;
+                    border: 1px solid $gray_color;
+                    padding-bottom: 1vw;
+                    margin-right: 2.6%;
+                    margin-bottom: 1.5vw;
+                    img{
+                        width: 20%;
+                        margin: 1vw 0 1vw;
+                       
+                    }
+                    h2{
+                        text-align: center;
+                        font-size: 1.5vw;
+                        letter-spacing: 0.3vw;
+                        color: #383735;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                & :nth-child(4n){
+                    margin-right: 0;
+                }
+            }
+        }
+        &-bg{
+            position: absolute;
+            right: -13%;
+            bottom: -2%;
+            width: 17%;
+            z-index: 1;
+            transform: scale(1.3,1.1);
+        }
+    }
+}
