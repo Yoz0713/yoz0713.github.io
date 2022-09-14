@@ -5425,11 +5425,11 @@ footer span a {
     color: #dcb078;
   }
   .blog .third-page-box-right .readmore h3 {
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
   .blog .third-page-box-right .readmore p {
-    margin-top: 2.5vw;
-    font-size: 2vw;
+    margin-top: 1.6vw;
+    font-size: 3.5vw;
   }
   .blog .third-page-box-right .readmore-box {
     width: 4vw;
@@ -5439,8 +5439,8 @@ footer span a {
   }
   .blog .third-page-box-right .readmore-box svg {
     position: absolute;
-    transform: scale(2.5);
-    bottom: -3.5vw;
+    transform: scale(2.8);
+    bottom: -3.3vw;
     left: -4vw;
   }
   .blog .third-page :nth-child(3) {
