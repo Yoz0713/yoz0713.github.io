@@ -924,20 +924,28 @@ footer p {
   transform: scaleY(0.3) translate(4vw, -45.2vw);
 }
 .about .forth-page-left-box .line .left-bottom {
-  width: 22.2%;
-  transform: translate(-6.1vw, -17.2vw);
+  width: 22.5%;
+  position: absolute;
+  left: -5.65vw;
+  top: -11vw;
 }
 .about .forth-page-left-box .line .right-bottom {
-  width: 22.75%;
-  transform: translate(-0.1vw, -17.1vw);
+  width: 22.51%;
+  position: absolute;
+  right: 15.6vw;
+  top: -11vw;
 }
 .about .forth-page-left-box .line .path-left {
   width: 25%;
-  transform: translate(-22.5vw, -1.8vw);
+  position: absolute;
+  left: -26.3%;
+  bottom: 2vw;
 }
 .about .forth-page-left-box .line .path-right {
-  width: 25%;
-  transform: translate(-12.5vw, -1.8vw);
+  width: 25.5%;
+  position: absolute;
+  left: 31.5%;
+  bottom: 1.97vw;
 }
 .about .forth-page-right {
   display: flex;
