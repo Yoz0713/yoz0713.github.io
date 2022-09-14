@@ -7,6 +7,7 @@
 @mixin mobile {
   @media (max-width: 500px) {
       @content;
+      color: rgb(8, 8, 8);
   }
 }
 
@@ -113,10 +114,12 @@ p{
         font-size: 18px;
         letter-spacing: 0.3vw;
         text-decoration: none;
-        padding: 0 0.9vw;
+        padding: 0 0.3vw 0 0.9vw;
         font-family: $title_font_family;
         font-weight: 300;
-  
+        transition:0.5s;
+        
+        position: relative;
        .en_text{
         font-family: monospace;
         color: $white_color;
@@ -125,36 +128,58 @@ p{
         letter-spacing: 0.1vw;
         font-weight: 200;
         display: block;
+        transition: 0.5s;
        }
+       
+        &:hover{
+          transform: translateY(15px);
+          
+        }
+    
      }
+    
     }
-   
+    
    @include tablet{
     align-items: center;
-
+      
      .hamburger{
        display: inline-block;
        z-index: 110;
      }
+    
      .list_box{
       position: fixed;
+      flex-direction: column;
       width: 100%;
       height: 100%;
       justify-content: center;
       align-items: center;
       top: 0;
       left: 100%;
+     
       background-color: #271c1be0;
       backdrop-filter: blur(15px);
       z-index: 100;
       //transition: all 1s;
-
+      & :not(:last-child){
+        margin-bottom: 10vw;
+      }
 
        a.ch_text{
+        writing-mode: horizontal-tb;
         font-size: 22px;
         letter-spacing: .5vw;
-        padding: 0 3vw;
+        padding: 0;
+        padding-bottom: 2vw;
+        .en_text{
+          writing-mode: horizontal-tb;
+         }
+         &::after{
+          display: none;
+         }
        }
+       
      }
    }
 
@@ -303,7 +328,10 @@ p{
   letter-spacing: 2px;
 }
 
-
+.tablet{
+    display: none;
+    
+}
 footer{
   text-align: center;
   padding: 30px 0;
@@ -337,6 +365,7 @@ footer{
 }
 
 @media all and (max-width:1440px){
+ 
   footer{
     display: flex;
     flex-direction: column;
@@ -408,6 +437,39 @@ footer{
   }
 
   @media all and (max-width:920px){
+    .tablet{
+      display:flex;
+      justify-content: space-around;
+      z-index: 16;
+      width: 35vw;
+      position: absolute;
+      right: 3vw;
+      bottom: 0vw;
+      transform: scale(1);
+    a{ 
+        width: 3.5vw;
+        height: 3.5vw;
+        img{
+      
+            opacity: 0.8;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: 0.3s;
+          
+        }
+        svg{
+           display: none;
+        }   
+        &:hover{
+            opacity: 1;
+            transform: scale(1.3);
+        } 
+    }
+    
+
+    }
     footer{
       padding: 25px 0;
       span{
@@ -497,6 +559,19 @@ footer{
     }
   }
   @media all and (max-width:480px){
+    .tablet{
+ 
+      width: 45vw;
+
+ 
+    a{ 
+        width: 4.5vw;
+        height: 4.5vw;
+    
+    }
+    
+
+    }
     footer{
       padding: 25px 0;
       span{

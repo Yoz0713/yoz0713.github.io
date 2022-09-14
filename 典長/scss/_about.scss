@@ -187,8 +187,9 @@
             height: 100%;
             margin: 0 auto;
             &-box{
-               
+                
                 width: fit-content;
+            
                 img{
                 
                     width: 80%;
@@ -236,12 +237,36 @@
                     }
                   
                 }
-              
                 
-                .straight{
-                       width: 0.3%;
-                       transform: scaleY(0.6);
-                    }
+                .line{
+                    position: absolute;
+                   
+                    .straight{
+                        width: 0.3%;
+                        transform: scaleY(0.3) translate(4.3vw,-3.5vw);
+                     }
+                     .straight2{
+                        width: 0.3%;
+                        transform: scaleY(0.3) translate(4vw,-45.2vw);
+                     }
+                     .left-bottom{
+                        width: 22.2%;
+                        transform:translate(-6.1vw,-17.2vw);
+                     }
+                     .right-bottom{
+                        width: 22.75%;
+                        transform:translate(-0.1vw,-17.1vw);
+                     }
+                     .path-left{
+                        width: 25%;
+                        transform:translate(-22.5vw,-1.8vw);
+                     }
+                     .path-right{
+                        width: 25%;
+                        transform:translate(-12.5vw,-1.8vw);
+                     }
+                }
+            
      
             }
            
@@ -275,6 +300,15 @@
         height: 55vw;
         margin: 0 auto;
         position: relative;
+        &-top{
+            width: 100%;
+            .imgBox{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
         &-bottom{
             display: flex;
             flex-direction: column;
@@ -293,11 +327,10 @@
         }
         &-bg{
             position: absolute;
-            right: -11%;
+            right: -8.9%;
             bottom: 0;
-            img{
-                width: 90%;
-            }
+            width:18%;
+          
         }
     }
 }

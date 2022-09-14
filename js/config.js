@@ -1,0 +1,112 @@
+
+    function markMenu(){
+        let li = document.querySelectorAll(".list_box > a")
+        let li2 = document.querySelectorAll(".list_box .en_text")
+        let arr = ["/index.html","/about.html","/portfolio.html","/portfolioInner.html","/blog.html","/blogInner.html","/news.html","/news.htmlInner","/contact.html"]
+        console.log(location.pathname)
+        if(window.innerWidth > 920){
+            switch(location.pathname){
+                case arr[0]:
+                    li.forEach(()=>{
+                        i.style.color="#fff"
+                    })
+                    li2.forEach(()=>{
+                        i.style.color="#fff"
+                    })
+                break;
+                case arr[1]:
+                li[0].style.borderRight="1px solid #fff";
+                li[0].style.pointerEvents = "none"
+            
+                break;
+                case arr[2]:
+                li[1].style.borderRight="1px solid #fff";
+                li[1].style.pointerEvents = "none"
+                
+                break;
+                case arr[3]:
+                li[1].style.borderRight="1px solid #fff";
+                li[1].style.pointerEvents = "none"
+                
+                break;
+                case arr[4]:
+                li[2].style.borderRight="1px solid #fff";
+                li[2].style.pointerEvents = "none"
+               
+                break;
+                case arr[5]:
+                li[2].style.borderRight="1px solid #fff";
+                li[2].style.pointerEvents = "none"
+               
+                break;
+                case arr[6]:
+                li[3].style.borderRight="1px solid #fff";
+                li[3].style.pointerEvents = "none"
+               
+                break;
+                case arr[7]:
+                li[3].style.borderRight="1px solid #fff";
+                li[3].style.pointerEvents = "none"
+               
+                break;
+                case arr[8]:
+                li[4].style.borderRight="1px solid #fff";
+                li[4].style.pointerEvents = "none"
+                
+                break;
+            }
+        }else{
+            switch(location.pathname){
+                case arr[0]:
+                    li.forEach(()=>{
+                        i.style.color="#fff"
+                    })
+                    li2.forEach(()=>{
+                        i.style.color="#fff"
+                    })
+                break;
+                case arr[1]:
+                li[0].style.borderLeft="1px solid #fff";
+                li[0].style.pointerEvents = "none"
+            
+                break;
+                case arr[2]:
+                li[1].style.borderLeft="1px solid #fff";
+                li[1].style.pointerEvents = "none"
+                
+                break;
+                case arr[3]:
+                li[1].style.borderLeft="1px solid #fff";
+                li[1].style.pointerEvents = "none"
+                
+                break;
+                case arr[4]:
+                li[2].style.borderLeft="1px solid #fff";
+                li[2].style.pointerEvents = "none"
+               
+                break;
+                case arr[5]:
+                li[2].style.borderLeft="1px solid #fff";
+                li[2].style.pointerEvents = "none"
+               
+                break;
+                case arr[6]:
+                li[3].style.borderLeft="1px solid #fff";
+                li[3].style.pointerEvents = "none"
+               
+                break;
+                case arr[7]:
+                li[3].style.borderLeft="1px solid #fff";
+                li[3].style.pointerEvents = "none"
+               
+                break;
+                case arr[8]:
+                li[4].style.borderLeft="1px solid #fff";
+                li[4].style.pointerEvents = "none"
+                
+                break;
+            }
+        }
+      
+    }
+    markMenu()

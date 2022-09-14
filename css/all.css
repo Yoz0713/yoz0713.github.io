@@ -56,9 +56,11 @@ p {
   font-size: 18px;
   letter-spacing: 0.3vw;
   text-decoration: none;
-  padding: 0 0.9vw;
+  padding: 0 0.3vw 0 0.9vw;
   font-family: "Noto Serif TC", serif;
   font-weight: 300;
+  transition: 0.5s;
+  position: relative;
 }
 .menu_box .list_box a.ch_text .en_text {
   font-family: monospace;
@@ -69,6 +71,10 @@ p {
   letter-spacing: 0.1vw;
   font-weight: 200;
   display: block;
+  transition: 0.5s;
+}
+.menu_box .list_box a.ch_text:hover {
+  transform: translateY(15px);
 }
 @media (max-width: 920px) {
   .menu_box {
@@ -80,6 +86,7 @@ p {
   }
   .menu_box .list_box {
     position: fixed;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -91,10 +98,23 @@ p {
             backdrop-filter: blur(15px);
     z-index: 100;
   }
+  .menu_box .list_box :not(:last-child) {
+    margin-bottom: 10vw;
+  }
   .menu_box .list_box a.ch_text {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
     font-size: 22px;
     letter-spacing: 0.5vw;
-    padding: 0 3vw;
+    padding: 0;
+    padding-bottom: 2vw;
+  }
+  .menu_box .list_box a.ch_text .en_text {
+    -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+  }
+  .menu_box .list_box a.ch_text::after {
+    display: none;
   }
 }
 .menu_box .logo_box img {
@@ -103,6 +123,7 @@ p {
 @media (max-width: 500px) {
   .menu_box {
     padding: 4vw 5vw 0vw 5vw;
+    color: rgb(8, 8, 8);
   }
   .menu_box .list_box a.ch_text {
     font-size: 16px;
@@ -204,6 +225,10 @@ p {
   letter-spacing: 2px;
 }
 
+.tablet {
+  display: none;
+}
+
 footer {
   text-align: center;
   padding: 30px 0;
@@ -230,6 +255,9 @@ footer span a {
   }
 }
 @media (max-width: 500px) {
+  footer {
+    color: rgb(8, 8, 8);
+  }
   footer span {
     font-size: 3vw;
   }
@@ -287,6 +315,35 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 920px) {
+  .tablet {
+    display: flex;
+    justify-content: space-around;
+    z-index: 16;
+    width: 35vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 0vw;
+    transform: scale(1);
+  }
+  .tablet a {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  .tablet a img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.3s;
+  }
+  .tablet a svg {
+    display: none;
+  }
+  .tablet a:hover {
+    opacity: 1;
+    transform: scale(1.3);
+  }
   footer {
     padding: 25px 0;
   }
@@ -354,6 +411,13 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 480px) {
+  .tablet {
+    width: 45vw;
+  }
+  .tablet a {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
   footer {
     padding: 25px 0;
   }
@@ -3290,6 +3354,7 @@ footer span a {
   width: 40%;
   height: 100%;
   padding: 2vw 2vw 2vw;
+  z-index: 20;
 }
 .home-second-page-bottom-left ul {
   display: flex;
@@ -3592,6 +3657,7 @@ footer span a {
     transform: scale(1.3);
   }
   .home-first-page-icon {
+    display: none;
     width: 35vw;
     position: absolute;
     right: 3vw;
