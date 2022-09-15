@@ -261,17 +261,18 @@
                         
                         &-box{
                             display: flex;
+                            
                             svg{
                                 margin: 0;
                                 overflow-x: hidden;
                             }
-                            h3{
-                         
-                                line-height: 65px;
-                                margin-left: 0.8vw;
-                            }
+                            
                         }
-                     
+                        h3{
+                         
+                            line-height: 65px;
+                            margin-left: 0.8vw;
+                        }
                         p{
                             line-height: 65px;
                             margin-right: 0.8vw;

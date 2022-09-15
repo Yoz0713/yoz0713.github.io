@@ -14,7 +14,12 @@
             h2{
                 color: #fff;
                 font-weight: 450;
-              
+             
+            }
+            .ch_text_xl{
+                & :nth-child(13){
+                    display: none;
+                }
             }
             .imgBox{
                 display: flex;

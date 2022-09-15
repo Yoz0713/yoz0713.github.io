@@ -141,6 +141,14 @@ footer p {
   color: #3f3d3e;
 }
 
+.blind {
+  display: inline-block;
+  overflow: hidden;
+}
+.blind span {
+  display: inline-block;
+}
+
 .index {
   width: 100%;
 }
@@ -163,9 +171,6 @@ footer p {
 .index .first-page-title h2 {
   color: #fff;
   font-weight: 450;
-}
-.index .first-page-title h2 span {
-  display: inline;
 }
 .index .first-page-title img {
   position: absolute;
@@ -298,6 +303,9 @@ footer p {
   width: 50%;
   height: 1px;
   background-color: #7d7d7d;
+}
+.index .third-page-top p {
+  text-align: center;
 }
 .index .third-page-bottom {
   display: flex;
@@ -1647,6 +1655,9 @@ footer p {
 .service .first-page-title h2 {
   color: #fff;
   font-weight: 450;
+}
+.service .first-page-title .ch_text_xl :nth-child(13) {
+  display: none;
 }
 .service .first-page-title .imgBox {
   display: flex;

@@ -385,6 +385,14 @@ footer span a {
     opacity: 1;
     transform: scale(1.3);
   }
+  .list_box .logo {
+    width: 35%;
+    position: absolute;
+    margin: auto 0 0 0;
+    height: 60%;
+    left: 29vw;
+    z-index: -1;
+  }
   footer {
     padding: 25px 0;
   }
@@ -4264,6 +4272,9 @@ footer span a {
     padding: 7vw 0 0;
   }
   .home-second-page-bottom-left ul > h3 {
+    height: 10vw;
+    width: 10vw;
+    line-height: 10.5vw;
     font-weight: 300;
     font-family: "Playfair Display", serif;
     letter-spacing: 2px;
@@ -4279,7 +4290,7 @@ footer span a {
     background-color: #dcb078;
     position: absolute;
     left: 0;
-    bottom: 2.6vw;
+    bottom: 5.7vw;
     transform: rotate(-25deg);
   }
   .home-second-page-bottom-left ul .h3-2 {
@@ -4298,7 +4309,7 @@ footer span a {
     background-color: #dcb078;
     position: absolute;
     left: 3.8vw;
-    bottom: 2.5vw;
+    bottom: 5.7vw;
     transform: rotate(25deg);
   }
   .home-second-page-bottom-left ul :nth-child(1) {
@@ -4820,7 +4831,7 @@ footer span a {
   margin: 0;
   overflow-x: hidden;
 }
-.blog .second-page-bottom-right-para .readmore-box h3 {
+.blog .second-page-bottom-right-para .readmore h3 {
   line-height: 65px;
   margin-left: 0.8vw;
 }
@@ -6552,10 +6563,14 @@ footer span a {
     margin: 0;
   }
   .blogInner .fifth-page-box-bottom .readmore-box {
+    flex: 0 0 10%;
     width: 30%;
   }
   .blogInner .fifth-page-box-bottom .readmore-box svg {
-    transform: scale(0.7);
+    position: absolute;
+    left: 6.5vw;
+    bottom: -4.4vw;
+    transform: scale(1);
   }
   .blogInner .fifth-page-box-bottom .readmore h3, .blogInner .fifth-page-box-bottom .readmore p {
     line-height: 70px;
@@ -6572,6 +6587,7 @@ footer span a {
     order: -1;
     text-align: start;
     margin: 0;
+    flex: 0 0 55%;
     font-size: 10px;
   }
   .blogInner .fifth-page-box:nth-child(1)::after {
@@ -7703,15 +7719,22 @@ footer span a {
     width: fit-content;
     text-align: start;
     font-size: 12px;
+    flex: 0 0 55%;
   }
   .news .second-page-bottom-right-para a .readmore-box {
+    flex: 0 0 45%;
     margin-top: 0;
     justify-content: flex-end;
+    position: relative;
     align-items: center;
   }
   .news .second-page-bottom-right-para a .readmore-box svg {
-    margin-top: 2.7vw;
-    transform: scale(0.68) translateX(3.3vw);
+    height: 20vw;
+    position: absolute;
+    flex: 0 0 10%;
+    transform: scale(0.8);
+    left: -2vw;
+    top: -6.5vw;
   }
   .news .third-page {
     padding-left: 8vw;
@@ -7807,11 +7830,15 @@ footer span a {
   }
   .news .third-page-box-bottom .readmore-box {
     margin: 0;
-    width: 30%;
+    flex: 0 0 10%;
+    height: 8vw;
+    position: relative;
   }
   .news .third-page-box-bottom .readmore-box svg {
-    margin-top: 7vw;
-    transform: scale(0.78);
+    position: absolute;
+    left: -5vw;
+    top: -3vw;
+    transform: scale(2.8);
   }
   .news .third-page-box-bottom .readmore h3, .news .third-page-box-bottom .readmore p {
     line-height: 70px;
@@ -7829,6 +7856,7 @@ footer span a {
     text-align: start;
     margin: 0;
     font-size: 12px;
+    flex: 0 0 55%;
   }
   .news .third-page-box:nth-child(1)::after {
     content: "";
@@ -8765,7 +8793,7 @@ footer span a {
     transform: scale(0.7);
   }
   .newsInner .fifth-page-box-bottom .readmore h3, .newsInner .fifth-page-box-bottom .readmore p {
-    line-height: 65px;
+    line-height: 75px;
     color: #dcb078;
     height: -webkit-fit-content;
     height: -moz-fit-content;

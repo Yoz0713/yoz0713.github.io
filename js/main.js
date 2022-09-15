@@ -8,16 +8,13 @@ $(document).ready(function () {
 
        if($(this).hasClass('is-active')){
         $(this).removeClass('is-active');
-        tl.to($('.menu_box .list_box'), 1, {left: '100%'});
+        tl.to($('.menu_box .list_box'), 0.5, {left: '100%'});
        }
        else{
         $(this).addClass('is-active');
 
-        tl.to($('.menu_box .list_box'), 1, {left: 0});
-        $.each($('.menu_box .list_box a.ch_text'), function (index, valueOfElement) { 
-            let delay_num= index==0 ? 0.3:0.1;
-            tl.from($(this), 0.8, {y:20, opacity:0}, `<${delay_num}`);
-        });
+        tl.to($('.menu_box .list_box'), 0.5, {left: 0});
+        
        }
     });
     //-- MENU 動態 END --

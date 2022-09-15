@@ -114,19 +114,18 @@
     function loadingPageAnimation(){
         let gg =gsap.timeline();
         gg.fromTo(".loading .square1",{
-            strokeDashoffset: 2000,
-            strokeDasharray: 2000
+            opacity:0
         },{
-            strokeDashoffset: 0,
-            duration:7,
+            opacity:1,
+            duration:2
+          
         }).fromTo(".loading .square2",{
-        
-            strokeDashoffset: 2000,
-            strokeDasharray: 2000
+            opacity:0
         },{
-            strokeDashoffset: 0,
-            duration:7,
-        },"<+0.8").fromTo(".loading .imgBox",{
+            opacity:1,
+            duration:2
+          
+        },"<").fromTo(".loading .imgBox",{
         
             opacity:0
         },{
@@ -139,7 +138,7 @@
             transformOrigin:"50% 50%",
             rotation:35,
         },{
-            delay:1,
+           
             rotation:100,
 
             duration:2.5,

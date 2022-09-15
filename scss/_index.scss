@@ -1152,6 +1152,9 @@
                                 
                                 padding: 7vw 0 0;
                                 > h3{
+                                    height: 10vw;
+                                    width: 10vw;
+                                    line-height: 10.5vw;
                                     font-weight: 300;
                                     font-family: 'Playfair Display', serif;
                                     letter-spacing: 2px;
@@ -1166,12 +1169,13 @@
                                         background-color: $gold_color;
                                         position: absolute;
                                         left: 0;
-                                        bottom:2.6vw;
+                                        bottom:5.7vw;
                                        
                                         transform: rotate(-25deg);
                                     }
                                 }
                                 .h3-2{
+                                    
                                     font-weight: 300;
                                     font-family: 'Playfair Display', serif;
                                     letter-spacing: 2px;
@@ -1186,7 +1190,7 @@
                                         background-color: $gold_color;
                                         position: absolute;
                                         left: 3.8vw;
-                                        bottom:2.5vw;
+                                        bottom:5.7vw;
                                         transform: rotate(25deg);
                                         
                                     }

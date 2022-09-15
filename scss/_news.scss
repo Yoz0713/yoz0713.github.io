@@ -1262,14 +1262,21 @@
                                             width: fit-content;
                                             text-align: start;
                                             font-size: 12px;
+                                            flex: 0 0 55%;
                                         }
                                         &-box{
+                                            flex: 0 0 45%;
                                             margin-top: 0;
                                             justify-content: flex-end;
+                                            position: relative;
                                             align-items: center;
                                             svg{
-                                                margin-top: 2.7vw;
-                                                transform: scale(0.68) translateX(3.3vw);
+                                                height: 20vw;
+                                                position: absolute;
+                                                flex: 0 0 10%;
+                                                transform: scale(0.8);
+                                                left: -2vw;
+                                                top: -6.5vw;
                                             }
                                         }
                                     }
@@ -1362,10 +1369,14 @@
                                 }
                                 &-box{
                                     margin: 0;
-                                    width:30%;
+                                    flex: 0 0 10%;
+                                    height: 8vw;
+                                    position: relative;
                                     svg{
-                                        margin-top: 7vw;
-                                        transform: scale(0.78);
+                                       position: absolute;
+                                       left: -5vw;
+                                       top: -3vw;
+                                        transform: scale(2.8);
                                     }
                                 }
                                 h3,p{
@@ -1383,6 +1394,7 @@
                                     text-align:start;
                                     margin: 0;
                                     font-size: 12px;
+                                    flex: 0 0 55%;
                                 }
                                
                       

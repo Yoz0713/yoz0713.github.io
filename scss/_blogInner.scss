@@ -932,10 +932,13 @@
                                     }
                                 }
                                 &-box{
-                              
+                                    flex: 0 0 10%;
                                     width:30%;
                                     svg{
-                                        transform: scale(0.7);
+                                        position: absolute;
+                                        left: 6.5vw;
+                                        bottom: -4.4vw;
+                                        transform: scale(1);
                                     }
                                 }
                                 h3,p{
@@ -952,6 +955,7 @@
                                     order: -1;
                                     text-align:start;
                                     margin: 0;
+                                    flex: 0 0 55%;
                                     font-size: 10px;
                                 }
                                
