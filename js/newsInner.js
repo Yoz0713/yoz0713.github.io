@@ -48,8 +48,8 @@ function bannerGray(){
        
      },"<")
 }
-
 bannerGray()
+
 function bannerTitleIn(){
     let gg =gsap.timeline()
 
@@ -82,7 +82,11 @@ function bannerTitleIn(){
         y:0
     },"<+0.5")
 }
-bannerTitleIn()
+setTimeout(()=>{
+    bannerBoxIn()
+    bannerTitleIn()
+},2600)
+
 
 function bannerBoxIn(){
     let gg =gsap.timeline()
@@ -144,7 +148,7 @@ function bannerBoxIn(){
         ease:"linear"
     },"<")
 }
-bannerBoxIn()
+
 
 function svgIn(){
     let gg = gsap.timeline({

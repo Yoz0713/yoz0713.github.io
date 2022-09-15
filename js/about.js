@@ -1,4 +1,4 @@
-window.onload = function(){
+
     
 
 function bannerGray(){
@@ -29,6 +29,7 @@ function bannerGray(){
      },"<")
 }
 bannerGray()
+
 function bannerTitleIn(){
     let gg =gsap.timeline()
 
@@ -61,7 +62,7 @@ function bannerTitleIn(){
         y:0
     },"<+0.5")
 }
-bannerTitleIn()
+
 
 function bannerBoxIn(){
     let gg =gsap.timeline()
@@ -125,7 +126,10 @@ function bannerBoxIn(){
         ease:"linear"
     },"<")
 }
-bannerBoxIn()
+setTimeout(()=>{
+    bannerBoxIn()
+    bannerTitleIn()
+},2600)
 
 
 function secondPageAnimation(){
@@ -615,4 +619,3 @@ safariHacks();
 
 
  }
-}

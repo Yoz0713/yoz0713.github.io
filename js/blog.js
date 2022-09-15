@@ -87,7 +87,10 @@ function bannerTitleIn(){
         y:0
     },"<+0.5")
 }
-bannerTitleIn()
+setTimeout(()=>{
+    bannerTitleIn()
+    bannerBoxIn()
+},2600)
 
 function bannerBoxIn(){
     let gg =gsap.timeline()
@@ -148,7 +151,7 @@ function bannerBoxIn(){
         ease:"linear"
     },"<")
 }
-bannerBoxIn()
+
 
 function secondPageAnimaiton(){
     let gg = gsap.timeline({

@@ -39,7 +39,9 @@ function bannerTitleIn(){
     },"<+0.5")
     
 }
-bannerTitleIn()
+setTimeout(()=>{
+    bannerTitleIn()
+},2600)
 
 let pointer = document.documentElement;   
     pointer.style.setProperty('--x', -1000 + 'px');

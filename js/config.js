@@ -7,10 +7,10 @@
         if(window.innerWidth > 920){
             switch(location.pathname){
                 case arr[0]:
-                    li.forEach(()=>{
+                    li.forEach((i)=>{
                         i.style.color="#fff"
                     })
-                    li2.forEach(()=>{
+                    li2.forEach((i)=>{
                         i.style.color="#fff"
                     })
                 break;
@@ -58,10 +58,10 @@
         }else{
             switch(location.pathname){
                 case arr[0]:
-                    li.forEach(()=>{
+                    li.forEach((i)=>{
                         i.style.color="#fff"
                     })
-                    li2.forEach(()=>{
+                    li2.forEach((i)=>{
                         i.style.color="#fff"
                     })
                 break;
@@ -110,3 +110,60 @@
       
     }
     markMenu()
+
+    function loadingPageAnimation(){
+        let gg =gsap.timeline();
+        gg.fromTo(".loading .square1",{
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:7,
+        }).fromTo(".loading .square2",{
+        
+            strokeDashoffset: 2000,
+            strokeDasharray: 2000
+        },{
+            strokeDashoffset: 0,
+            duration:7,
+        },"<+1").fromTo(".loading .imgBox",{
+        
+            opacity:0
+        },{
+            opacity:1,
+            duration:7
+        },"<+0.5")
+
+        let gg2 = gsap.timeline();
+        gg2.fromTo(".loading .square1",{
+            transformOrigin:"50% 50%",
+            rotation:35,
+        },{
+            delay:2.2,
+            rotation:100,
+
+            duration:2.5,
+        }).fromTo(".loading .square2",{
+            transformOrigin:"50% 50%",
+            rotation:55,
+        },{
+
+            rotation:120,
+
+            duration:2.5,
+        },"<")
+    }
+    loadingPageAnimation()
+
+  
+     document.body.onload = function(){
+         setTimeout(()=>{
+             let gg = gsap.timeline();
+             gg.to(".loading",{
+                 opacity:0,
+                 duration:1,
+                 pointerEvents:"none"
+             })
+         },2500)
+         console.log(213)
+     }

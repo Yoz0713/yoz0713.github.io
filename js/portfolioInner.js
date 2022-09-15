@@ -82,7 +82,9 @@ function bannerGray(){
      },"<")
 }
 bannerGray()
-bannerTitleIn()
+setTimeout(()=>{
+    bannerTitleIn()
+},2600)
 
 
 function secondPageAnimation(){

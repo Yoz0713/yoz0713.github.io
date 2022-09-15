@@ -1,3 +1,4 @@
+
 // banner 輪播及進場動畫
 let prev = document.getElementsByClassName("prev")[0];
 let next = document.getElementsByClassName("next")[0]
@@ -174,7 +175,10 @@ function bannerTitleIn(){
         ease:"linear"
     },"<")
 }
-bannerTitleIn()
+setTimeout(()=>{
+    bannerTitleIn()
+},2600)
+
 
 // banner title in
 
