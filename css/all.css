@@ -233,7 +233,7 @@ footer {
   text-align: center;
   padding: 30px 0;
   background-color: #270F06;
-  color: rgba(211, 168, 113, 0.6196078431);
+  color: rgba(143, 115, 78, 0.9764705882);
 }
 footer span {
   font-family: "Microsoft JhengHei";
@@ -503,10 +503,10 @@ footer span a {
   }
   footer {
     padding: 25px 0;
+    color: rgba(143, 115, 78, 0.7450980392);
   }
   footer span {
     letter-spacing: 2px;
-    color: rgba(211, 168, 113, 0.6196078431);
     padding: 0 10px;
     font-size: 14px;
   }

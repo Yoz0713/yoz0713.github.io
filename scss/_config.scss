@@ -336,7 +336,7 @@ footer{
   text-align: center;
   padding: 30px 0;
   background-color: $footer_color;
-  color:#d3a8719e ;
+  color: #8f734ef9;
 
   span{
     font-family: $content_font_family;
@@ -660,9 +660,10 @@ footer{
     }
     footer{
       padding: 25px 0;
+      color: #8f734ebe;
       span{
         letter-spacing: 2px;
-        color: rgba(211,168,113,.6196078431);
+       
         padding: 0 10px;
         font-size: 14px;
       }
