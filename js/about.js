@@ -126,10 +126,7 @@ function bannerBoxIn(){
         ease:"linear"
     },"<")
 }
-setTimeout(()=>{
-    bannerBoxIn()
-    bannerTitleIn()
-},2600)
+
 
 
 function secondPageAnimation(){

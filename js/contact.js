@@ -63,9 +63,7 @@ function bannerTitleIn(){
     },"<+0.5")
     
 }
-setTimeout(()=>{
-    bannerTitleIn()
-},2600)
+
 
 
 function bannerGray(){

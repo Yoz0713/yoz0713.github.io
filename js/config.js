@@ -165,5 +165,9 @@
                  pointerEvents:"none"
              })
          },2500)
-         console.log(213)
+         
+        setTimeout(()=>{
+            bannerTitleIn()
+            bannerBoxIn()
+        },2600)
      }

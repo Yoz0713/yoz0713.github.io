@@ -145,10 +145,7 @@ function bannerBoxIn(){
         ease:"linear"
     },"<")
 }
-setTimeout(()=>{
-    bannerTitleIn()
-    bannerBoxIn()
-},2600)
+
 
 function secondPageAnimaiton(){
     let gg = gsap.timeline({

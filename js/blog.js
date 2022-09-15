@@ -87,10 +87,7 @@ function bannerTitleIn(){
         y:0
     },"<+0.5")
 }
-setTimeout(()=>{
-    bannerTitleIn()
-    bannerBoxIn()
-},2600)
+
 
 function bannerBoxIn(){
     let gg =gsap.timeline()

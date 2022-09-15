@@ -175,9 +175,15 @@ function bannerTitleIn(){
         ease:"linear"
     },"<")
 }
-setTimeout(()=>{
-    bannerTitleIn()
-},2600)
+const loading = document.querySelector(".loading")
+
+ 
+ 
+    setTimeout(()=>{
+        bannerTitleIn()
+    },2600)
+
+
 
 
 // banner title in

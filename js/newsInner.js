@@ -82,10 +82,7 @@ function bannerTitleIn(){
         y:0
     },"<+0.5")
 }
-setTimeout(()=>{
-    bannerBoxIn()
-    bannerTitleIn()
-},2600)
+
 
 
 function bannerBoxIn(){
