@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         tl.to($('.menu_box .list_box'), 1, {left: 0});
         $.each($('.menu_box .list_box a.ch_text'), function (index, valueOfElement) { 
-            let delay_num= index==0 ? 0.6:0.2;
+            let delay_num= index==0 ? 0.3:0.1;
             tl.from($(this), 0.8, {y:20, opacity:0}, `<${delay_num}`);
         });
        }
