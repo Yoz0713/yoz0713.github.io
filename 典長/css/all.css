@@ -900,7 +900,7 @@ footer p {
 }
 .about .forth-page-left-box :nth-child(4) {
   top: 20vw;
-  right: 9vw;
+  right: 9.12vw;
 }
 .about .forth-page-left-box :nth-child(4) img {
   width: 50%;
@@ -924,16 +924,16 @@ footer p {
   transform: scaleY(0.3) translate(4vw, -45.2vw);
 }
 .about .forth-page-left-box .line .left-bottom {
-  width: 22.5%;
+  width: 22%;
   position: absolute;
-  left: -5.65vw;
-  top: -11vw;
+  left: -5.3vw;
+  top: -10.8vw;
 }
 .about .forth-page-left-box .line .right-bottom {
-  width: 22.51%;
+  width: 22%;
   position: absolute;
-  right: 15.6vw;
-  top: -11vw;
+  right: 15.8vw;
+  top: -10.8vw;
 }
 .about .forth-page-left-box .line .path-left {
   width: 25%;
