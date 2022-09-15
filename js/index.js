@@ -175,13 +175,10 @@ function bannerTitleIn(){
         ease:"linear"
     },"<")
 }
-const loading = document.querySelector(".loading")
+
 
  
  
-    setTimeout(()=>{
-        bannerTitleIn()
-    },2600)
 
 
 

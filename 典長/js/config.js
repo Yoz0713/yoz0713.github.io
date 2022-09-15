@@ -33,15 +33,14 @@ bannerTitle.childNodes.forEach((item,i)=>{
             textShadow:" 0px 0px 40px whitesmoke",
             transform:
             "translate3d(15rem,-8rem,0) scale(1.5)",
-     
-        
+            skewX:"70deg",
+            rotation:40,
              textShadow: "0 0 20px whitesmoke",
              opacity: 0,
         },{
             duration:1,
-            rotation:40,
-       
-            skewX:"70deg",
+            skewX:0,
+            rotation:0,
             textShadow:"0 0 0 transparent",
             opacity:1,
             delay:i/10
@@ -52,13 +51,14 @@ bannerTitle.childNodes.forEach((item,i)=>{
             transform:
             "translate3d(18rem,-8rem,0) scale(2)",
              textShadow: "0 0 20px whitesmoke",
-             skewX:0,
-             rotation:0,
+             rotation:-40,
+             skewX:"-70deg",
+         
              opacity: 0,
         },{
             duration:1,
-            skewX:"-70deg",
-            rotation:-40,
+            skewX:0,
+            rotation:0,
             textShadow:"0 0 0 transparent",
             opacity:1,
             delay:i/10

@@ -164,6 +164,9 @@ footer p {
   color: #fff;
   font-weight: 450;
 }
+.index .first-page-title h2 span {
+  display: inline;
+}
 .index .first-page-title img {
   position: absolute;
   width: 18%;
