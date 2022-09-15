@@ -263,6 +263,10 @@ footer span a {
   }
 }
 
+.phone {
+  display: none;
+}
+
 @media all and (max-width: 1440px) {
   footer {
     display: flex;
@@ -411,6 +415,12 @@ footer span a {
   }
 }
 @media all and (max-width: 1440px) and (max-width: 480px) {
+  .phone {
+    display: block;
+  }
+  .computer {
+    display: none;
+  }
   .tablet {
     width: 45vw;
   }
@@ -423,6 +433,7 @@ footer span a {
   }
   footer span {
     letter-spacing: 2px;
+    color: rgba(211, 168, 113, 0.6196078431);
     padding: 0 10px;
     font-size: 14px;
   }
@@ -545,7 +556,7 @@ footer span a {
   transition: 0.65s;
 }
 .portfolio .second-page-top:hover {
-  background-color: #270F06;
+  background-color: rgba(39, 15, 6, 0.4941176471);
 }
 .portfolio .second-page-top:hover .second-page-top-left-box2 {
   opacity: 1;
@@ -682,7 +693,7 @@ footer span a {
   background-size: 105% 105%;
 }
 .portfolio .second-page-bottom:hover {
-  background-color: #270F06;
+  background-color: rgba(39, 15, 6, 0.4941176471);
 }
 .portfolio .second-page-bottom-left {
   position: relative;
@@ -1473,6 +1484,9 @@ footer span a {
     margin: 0vw 0 15vw;
     height: 130vw;
   }
+  .portfolio .second-page-top:hover {
+    background-color: transparent;
+  }
   .portfolio .second-page-top-left {
     position: relative;
     width: 100%;
@@ -1565,6 +1579,9 @@ footer span a {
   .portfolio .second-page-bottom {
     margin: 0vw 0 15vw;
     height: 130vw;
+  }
+  .portfolio .second-page-bottom:hover {
+    background-color: transparent;
   }
   .portfolio .second-page-bottom-left {
     position: relative;
@@ -4125,6 +4142,7 @@ footer span a {
     transform: scale(1.3);
   }
   .home-second-page {
+    position: relative;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -4139,6 +4157,7 @@ footer span a {
     text-align: center;
     width: 100%;
     height: 35%;
+    position: relative;
   }
   .home-second-page-top .text-decoration {
     width: 100%;
@@ -4157,11 +4176,13 @@ footer span a {
   }
   .home-second-page-bottom-left {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
     height: 100%;
     padding: 0;
+    z-index: 0;
   }
   .home-second-page-bottom-left ul {
     display: flex;
@@ -4170,7 +4191,6 @@ footer span a {
     position: absolute;
     left: 0;
     bottom: -85vw;
-    z-index: 20;
     justify-content: center;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -4182,6 +4202,39 @@ footer span a {
     font-weight: 300;
     font-family: "Playfair Display", serif;
     letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: -0.4vw;
+    position: relative;
+  }
+  .home-second-page-bottom-left ul > h3::after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #dcb078;
+    position: absolute;
+    left: 0;
+    bottom: 2.6vw;
+    transform: rotate(-25deg);
+  }
+  .home-second-page-bottom-left ul .h3-2 {
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+    position: relative;
+    letter-spacing: -0.4vw;
+  }
+  .home-second-page-bottom-left ul .h3-2::after {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #dcb078;
+    position: absolute;
+    left: 3.8vw;
+    bottom: 2.5vw;
+    transform: rotate(25deg);
   }
   .home-second-page-bottom-left ul :nth-child(1) {
     margin-right: 5vw;
@@ -4401,13 +4454,18 @@ footer span a {
   }
   .home-third-page-bottom ul li .newsDate1 .newsDate2:after {
     position: absolute;
-    right: -20%;
-    top: 60%;
-    content: "";
+    right: -30%;
+    top: 0%;
+    content: "/";
     display: block;
-    width: 0.7vw;
-    height: 0.5px;
-    background-color: #dcb078;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 12px;
+    background-color: transparent;
   }
   .home-third-page-bottom ul li .newsDate1 .span {
     text-align: center;
@@ -4547,6 +4605,8 @@ footer span a {
   z-index: 10;
 }
 .blog .second-page {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   padding: 5vw 14vw;
@@ -4556,7 +4616,7 @@ footer span a {
   align-items: center;
   width: 100%;
   height: 10%;
-  margin: 3vw 0 6vw;
+  margin: 18vw 0 0;
 }
 .blog .second-page-top nav {
   width: 100%;
@@ -4618,6 +4678,7 @@ footer span a {
   width: 100%;
   height: 90%;
   position: relative;
+  order: -1;
 }
 .blog .second-page-bottom-left {
   position: relative;
@@ -5341,7 +5402,7 @@ footer span a {
     top: -150px;
   }
   .blog .second-page-top {
-    margin: 0vw 0 10vw;
+    margin: 5vw 0 0;
   }
   .blog .second-page-bottom {
     display: block;
@@ -5399,7 +5460,6 @@ footer span a {
     width: 100%;
     margin: 0;
     margin-top: 5vw;
-    border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
     padding: 0 0 6vw;
   }
   .blog .second-page-bottom-right-para > svg {
@@ -5426,23 +5486,37 @@ footer span a {
     width: 100%;
     margin: 0vw 0 0;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
     align-items: center;
   }
   .blog .second-page-bottom-right-para a .readmore p {
+    font-size: 12px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     text-align: start;
+    flex: 0 0 50%;
+  }
+  .blog .second-page-bottom-right-para a .readmore h3 {
+    order: 3;
   }
   .blog .second-page-bottom-right-para a .readmore-box {
+    position: relative;
     margin-top: 0;
-    justify-content: flex-end;
+    order: 1;
+    flex: 0 0 10%;
+    width: 4vw;
+    height: 6vw;
+    justify-content: flex-start;
     align-items: center;
   }
   .blog .second-page-bottom-right-para a .readmore-box svg {
-    margin-top: 6vw;
-    transform: scale(0.75);
+    left: -18%;
+    top: -5.2vw;
+    position: absolute;
+    transform: scale(0.68);
+    height: 250%;
   }
   .blog .third-page {
     margin-top: 5vw;
@@ -5490,11 +5564,11 @@ footer span a {
     color: #dcb078;
   }
   .blog .third-page-box-right .readmore h3 {
-    font-size: 3.5vw;
+    font-size: 15px;
   }
   .blog .third-page-box-right .readmore p {
     margin-top: 1.6vw;
-    font-size: 3.5vw;
+    font-size: 12px;
   }
   .blog .third-page-box-right .readmore-box {
     width: 4vw;
@@ -5505,7 +5579,7 @@ footer span a {
   .blog .third-page-box-right .readmore-box svg {
     position: absolute;
     transform: scale(2.8);
-    bottom: -3.3vw;
+    bottom: -3.4vw;
     left: -4vw;
   }
   .blog .third-page :nth-child(3) {
@@ -6535,6 +6609,8 @@ footer span a {
   z-index: 10;
 }
 .news .second-page {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   padding: 5vw 14vw 12vw;
@@ -6544,7 +6620,7 @@ footer span a {
   align-items: center;
   width: 100%;
   height: 10%;
-  margin: 3vw 0 6vw;
+  margin: 18vw 0 0;
 }
 .news .second-page-top nav {
   width: 100%;
@@ -6607,6 +6683,7 @@ footer span a {
   align-items: center;
   width: 100%;
   height: 90%;
+  order: -1;
   position: relative;
 }
 .news .second-page-bottom-left {
@@ -7526,7 +7603,6 @@ footer span a {
     width: 100%;
     margin: 0;
     margin-top: 5vw;
-    border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
     padding: 0 0 6vw;
   }
   .news .second-page-bottom-right-para > svg {
@@ -7561,6 +7637,7 @@ footer span a {
     width: -moz-fit-content;
     width: fit-content;
     text-align: start;
+    font-size: 12px;
   }
   .news .second-page-bottom-right-para a .readmore-box {
     margin-top: 0;
@@ -7568,8 +7645,8 @@ footer span a {
     align-items: center;
   }
   .news .second-page-bottom-right-para a .readmore-box svg {
-    margin-top: 3vw;
-    transform: scale(0.75);
+    margin-top: 2.7vw;
+    transform: scale(0.68) translateX(3.3vw);
   }
   .news .third-page {
     padding-left: 8vw;
@@ -7668,7 +7745,8 @@ footer span a {
     width: 30%;
   }
   .news .third-page-box-bottom .readmore-box svg {
-    transform: scale(0.69);
+    margin-top: 7vw;
+    transform: scale(0.78);
   }
   .news .third-page-box-bottom .readmore h3, .news .third-page-box-bottom .readmore p {
     line-height: 70px;
@@ -7685,7 +7763,7 @@ footer span a {
     order: -1;
     text-align: start;
     margin: 0;
-    font-size: 10px;
+    font-size: 12px;
   }
   .news .third-page-box:nth-child(1)::after {
     content: "";

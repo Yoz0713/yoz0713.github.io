@@ -61,7 +61,7 @@
             height: 28vw;
             transition: 0.65s;
             &:hover{
-                background-color: $footer_color;
+                background-color: #270f067e;
                 
             
             }
@@ -207,7 +207,7 @@
                 background-size: 105% 105%;
             }
             &:hover{
-                background-color: $footer_color;
+                background-color: #270f067e;
                 
            
             }  
@@ -1051,7 +1051,9 @@
                     &-top{
                         margin: 0vw 0 15vw;
                         height: 130vw;
-    
+                        &:hover{
+                            background-color: transparent;
+                        }
                         
                         &-left{
                             position: relative;
@@ -1152,7 +1154,9 @@
                     &-bottom{
                         margin: 0vw 0 15vw;
                         height: 130vw;
-    
+                        &:hover{
+                            background-color: transparent;
+                        }
                         
                         &-left{
                             position: relative;

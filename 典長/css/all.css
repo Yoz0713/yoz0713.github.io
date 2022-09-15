@@ -1,5 +1,5 @@
 .readmore p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   letter-spacing: 0.2vw;
   line-height: 2.8vw;
   color: #7d7d7d;
@@ -14,7 +14,7 @@
   color: #363a45;
 }
 .word_level .ch_text_xl {
-  font-size: 2.4vw;
+  font-size: 2.3vw;
   line-height: 4vw;
   letter-spacing: 0.35vw;
   color: #0E121D;
@@ -45,7 +45,7 @@
   letter-spacing: 0.15vw;
   line-height: 1.5vw;
   color: #1b2026;
-  font-family: "Microsoft JhengHei";
+  font-family: "Noto Serif TC", serif;
   color: #0E121D;
 }
 .word_level .en_text_xl {
@@ -63,7 +63,7 @@
   color: #0E121D;
 }
 .word_level .en_text_s {
-  font-size: 1.3vw;
+  font-size: 1vw;
   letter-spacing: 0.1vw;
   font-family: "Noto Serif TC", serif;
   color: #363a45;
@@ -100,14 +100,14 @@
 }
 .menu ul li .menu-box .ch_text {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   letter-spacing: 0.3vw;
   color: #383735;
   font-family: "Noto Serif TC", serif;
 }
 .menu ul li .menu-box .en_text {
   text-align: center;
-  font-size: 1.3vw;
+  font-size: 1vw;
   color: #7d7d7d;
   letter-spacing: 0.2vw;
   font-family: "Noto Serif TC", serif;

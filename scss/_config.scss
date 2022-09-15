@@ -363,6 +363,9 @@ footer{
     }
   }
 }
+.phone{
+  display: none;
+}
 
 @media all and (max-width:1440px){
  
@@ -559,6 +562,12 @@ footer{
     }
   }
   @media all and (max-width:480px){
+    .phone{
+      display: block;
+    }
+    .computer{
+      display: none;
+    }
     .tablet{
  
       width: 45vw;
@@ -576,6 +585,7 @@ footer{
       padding: 25px 0;
       span{
         letter-spacing: 2px;
+        color: rgba(211,168,113,.6196078431);
         padding: 0 10px;
         font-size: 14px;
       }

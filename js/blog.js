@@ -158,21 +158,7 @@ function secondPageAnimaiton(){
       
         }
     })
-    gg.fromTo(".second-page-top nav",{
-        opacity:0,
-        height:0
-    },{
-        height:"100%",
-        opacity:1,
-        duration:1.5
-    }).fromTo(".second-page-top nav ul",{
-        opacity:0,
-      
-    },{
-       
-        opacity:1,
-        duration:0.8
-    },"<0.5").fromTo(".lineBox polyline",{
+    gg.fromTo(".lineBox polyline",{
         strokeDashoffset: 2000,
         strokeDasharray: 2000
     },{
@@ -193,6 +179,28 @@ function secondPageAnimaiton(){
         opacity:1,
         duration:0.8
     },"<+1")
+    let gg3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:`.second-page-top nav`,
+            start:"top 60%",
+        }
+    })
+    gg3.fromTo(".second-page-top nav",{
+        opacity:0,
+        height:0
+    },{
+        height:"100%",
+        opacity:1,
+        duration:1.5
+    }).fromTo(".second-page-top nav ul",{
+        opacity:0,
+      
+    },{
+       
+        opacity:1,
+        duration:0.8
+    },"<0.5")
+    
 }
 secondPageAnimaiton()
 
