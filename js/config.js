@@ -126,7 +126,7 @@
         },{
             strokeDashoffset: 0,
             duration:7,
-        },"<+1").fromTo(".loading .imgBox",{
+        },"<+0.8").fromTo(".loading .imgBox",{
         
             opacity:0
         },{
@@ -139,7 +139,7 @@
             transformOrigin:"50% 50%",
             rotation:35,
         },{
-            delay:2.2,
+            delay:1,
             rotation:100,
 
             duration:2.5,
