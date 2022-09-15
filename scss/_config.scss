@@ -510,6 +510,10 @@ footer{
     
 
     }
+    .list_box{
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
+    }
     .list_box .logo{
       width: 35%;
       position: absolute;
