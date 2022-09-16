@@ -1032,17 +1032,20 @@ footer span a {
   }
   .portfolio .second-page-top-right > :nth-child(2) {
     margin: 0 0 0.5vw;
-    width: 145%;
+    width: 160%;
     height: auto;
   }
   .portfolio .second-page-top-right > :nth-child(3) {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 0 2vw;
+    width: 100%;
+    margin: 0 0 2vw 3vw;
   }
   .portfolio .second-page-top-right > :nth-child(4) {
     margin: 0;
+    margin-left: 3vw;
+  }
+  .portfolio .second-page-top-right > :nth-child(5) {
+    margin: 0;
+    margin-left: 3vw;
   }
   .portfolio .second-page-top-right h3 {
     color: #dcb078;
@@ -1057,7 +1060,7 @@ footer span a {
   }
   .portfolio .second-page-top-right .icon {
     display: flex;
-    width: 230px;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1089,7 +1092,7 @@ footer span a {
     margin-right: 1vw;
   }
   .portfolio .second-page-top-right .readmore {
-    width: 250px;
+    width: 100%;
     height: 50px;
     display: flex;
     cursor: pointer;
@@ -1172,17 +1175,20 @@ footer span a {
   }
   .portfolio .second-page-bottom-right > :nth-child(2) {
     margin: 0 0 0.5vw;
-    width: 145%;
+    width: 160%;
     height: auto;
   }
   .portfolio .second-page-bottom-right > :nth-child(3) {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 0 2vw;
+    width: 100%;
+    margin: 0 0 2vw 3vw;
   }
   .portfolio .second-page-bottom-right > :nth-child(4) {
     margin: 0;
+    margin-left: 3vw;
+  }
+  .portfolio .second-page-bottom-right > :nth-child(5) {
+    margin: 0;
+    margin-left: 3vw;
   }
   .portfolio .second-page-bottom-right h3 {
     color: #dcb078;
@@ -1197,7 +1203,7 @@ footer span a {
   }
   .portfolio .second-page-bottom-right .icon {
     display: flex;
-    width: 230px;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1229,7 +1235,7 @@ footer span a {
     margin-right: 1vw;
   }
   .portfolio .second-page-bottom-right .readmore {
-    width: 250px;
+    width: 100%;
     height: 50px;
     display: flex;
     cursor: pointer;

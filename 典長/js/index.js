@@ -51,8 +51,8 @@ function secondPageAnimation(){
         opacity:1,
         duration:1.5
     })
-    splitTextAnimation(".second-page-right-para-para2 h2",1.2)
-    splitTextAnimation(".second-page-right-para-para3 h3",15)
+    splitTextAnimation(".second-page-right-para-para2 h2",1.1)
+    splitTextAnimation(".second-page-right-para-para3 h3",1.2)
     
 }
 
