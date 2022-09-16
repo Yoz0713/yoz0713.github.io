@@ -15,13 +15,13 @@
 }
 .word_level .ch_text_xl {
   font-size: 2.3vw;
-  line-height: 4vw;
+  line-height: 3vw;
   letter-spacing: 0.35vw;
   color: #0E121D;
   font-family: "Noto Serif TC", serif;
 }
 .word_level .ch_text_l {
-  font-size: 1.9vw;
+  font-size: 1.8vw;
   letter-spacing: 0.25vw;
   font-weight: 500;
   font-family: "Noto Serif TC", serif;
@@ -165,7 +165,7 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  bottom: 5vw;
+  bottom: 7vw;
   right: 8vw;
 }
 .index .first-page-title h2 {
@@ -704,7 +704,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .about .first-page-title h2 {
   color: #fff;
@@ -732,13 +732,12 @@ footer p {
 }
 .about .first-page-title .imgBox .para h2, .about .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .about .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 1vw;
 }
 .about .second-page {
   display: flex;
@@ -1034,7 +1033,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .blog .first-page-title h2 {
   color: #fff;
@@ -1059,16 +1058,16 @@ footer p {
 }
 .blog .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .blog .first-page-title .imgBox .para h2, .blog .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .blog .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 1vw;
 }
 .blog .second-page {
   display: flex;
@@ -1170,7 +1169,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .contact .first-page-title h2 {
   color: #fff;
@@ -1195,16 +1194,16 @@ footer p {
 }
 .contact .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .contact .first-page-title .imgBox .para h2, .contact .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .contact .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 1vw;
 }
 .contact .second-page {
   display: flex;
@@ -1293,7 +1292,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 8vw;
-  right: 8vw;
+  right: 7vw;
 }
 .news .first-page-title h2 {
   color: #fff;
@@ -1306,7 +1305,7 @@ footer p {
   align-items: center;
   position: absolute;
   top: -14vw;
-  right: 4vw;
+  right: 1.5vw;
   width: 55%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1318,10 +1317,11 @@ footer p {
 }
 .news .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .news .first-page-title .imgBox .para h2, .news .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .news .first-page-title .imgBox .para h4 {
@@ -1428,7 +1428,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .portfolio .first-page-title h2 {
   color: #fff;
@@ -1453,16 +1453,16 @@ footer p {
 }
 .portfolio .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .portfolio .first-page-title .imgBox .para h2, .portfolio .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .portfolio .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 1vw;
 }
 .portfolio .second-page {
   display: flex;
@@ -1650,7 +1650,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .service .first-page-title h2 {
   color: #fff;
@@ -1678,16 +1678,16 @@ footer p {
 }
 .service .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .service .first-page-title .imgBox .para h2, .service .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.5vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .service .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 0.6vw;
 }
 .service .second-page {
   display: flex;
@@ -2146,7 +2146,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 5vw;
-  right: 8vw;
+  right: 5vw;
 }
 .blogInner .first-page-title h2 {
   color: #fff;
@@ -2171,16 +2171,16 @@ footer p {
 }
 .blogInner .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .blogInner .first-page-title .imgBox .para h2, .blogInner .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .blogInner .first-page-title .imgBox .para h4 {
   letter-spacing: 0.25vw;
   font-weight: normal;
-  margin-bottom: 1vw;
 }
 .blogInner .second-page {
   position: relative;
@@ -2264,7 +2264,7 @@ footer p {
   width: fit-content;
   position: absolute;
   bottom: 8vw;
-  right: 8vw;
+  right: 7vw;
 }
 .newsInner .first-page-title h2 {
   color: #fff;
@@ -2277,7 +2277,7 @@ footer p {
   align-items: center;
   position: absolute;
   top: -14vw;
-  right: 4vw;
+  right: 1.5vw;
   width: 55%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -2289,10 +2289,11 @@ footer p {
 }
 .newsInner .first-page-title .imgBox .para {
   position: absolute;
+  top: 1.5vw;
 }
 .newsInner .first-page-title .imgBox .para h2, .newsInner .first-page-title .imgBox .para h4 {
   color: #fff;
-  line-height: 2.8vw;
+  line-height: 2.4vw;
   text-align: center;
 }
 .newsInner .first-page-title .imgBox .para h4 {
