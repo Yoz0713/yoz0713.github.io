@@ -4,16 +4,20 @@ function splitTextAnimation(wrap,delay){
     let str=`${text}`;
     let arr = str.split("")
     let arrElement = arr.map((item)=>{
-        if(item == "，" || item == "。"){
-            item =`<span class="blind"><span>${item}</span></span><br>`
+        if(item == "<"){
+            
+            item =`<br>`
             return item
+        }else if(item == "b" || item == "r" || item == ">" ){
+            item = null
+          
         }else{
             item = `<span class="blind"><span>${item}</span></span>`
             return item
         }
        
     })
-    delay = delay
+    
     let strElement = arrElement.join("")
     wrap.innerHTML = strElement;
     wrap.childNodes.forEach((item,i)=>{
@@ -51,10 +55,10 @@ function secondPageAnimation(){
         opacity:1,
         duration:1.5
     })
-    splitTextAnimation(".second-page-right-para-para1 p",1)
+    splitTextAnimation(".second-page-right-para-para1 p",0.5)
     splitTextAnimation(".second-page-right-para-para1 .ch_text_m",1)
     splitTextAnimation(".second-page-right-para-para2 h2",1.5)
-
+    splitTextAnimation(".second-page-right-para-para2 p",1.7)
     splitTextAnimation(".second-page-right-para-para3 h3",2)
     
 }
