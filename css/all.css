@@ -2332,7 +2332,7 @@ footer span a {
   .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 {
     display: flex;
     margin: 1vw 0 0;
-    justify-content: center;
+    justify-content: space-between;
   }
   .portfolioInner .second-page-right :nth-child(3) .second-page-right-box2 .second-page-right-box-right {
     display: flex;

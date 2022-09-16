@@ -1,6 +1,7 @@
-function splitTextAnimation(wrap,delay){
+function splitTextAnimation(wrap,delay,speed,direct){
     wrap = document.querySelector(`${wrap}`);
     text = wrap.innerHTML
+    wrap.innerHTML = null
     let str=`${text}`;
     let arr = str.split("")
     let arrElement = arr.map((item)=>{
@@ -15,7 +16,7 @@ function splitTextAnimation(wrap,delay){
             item = `<span class="blind"><span>${item}</span></span>`
             return item
         }
-       
+     
     })
     
     let strElement = arrElement.join("")
@@ -25,14 +26,16 @@ function splitTextAnimation(wrap,delay){
             scrollTrigger:{
                 trigger:".second-page-right",
                 start:"top center",
+               
             }
         });
-        gg2.set(item.childNodes,{delay:delay})
+        
             gg2.fromTo(item.childNodes,{
                 y:50
             },{
-                delay:i/10,
                 y:0,
+                delay:i/speed,
+                opacity:1,
                 duration:1.5
             })
      
@@ -55,12 +58,26 @@ function secondPageAnimation(){
         opacity:1,
         duration:1.5
     })
-    splitTextAnimation(".second-page-right-para-para1 p",0.5)
-    splitTextAnimation(".second-page-right-para-para1 .ch_text_m",1)
-    splitTextAnimation(".second-page-right-para-para2 h2",1.5)
-    splitTextAnimation(".second-page-right-para-para2 p",1.7)
-    splitTextAnimation(".second-page-right-para-para3 h3",2)
-    
+   
+    splitTextAnimation(".second-page-right-para-para1 p",0.7,15)
+    splitTextAnimation(".second-page-right-para-para1 .ch_text_m",1,15)
+    splitTextAnimation(".second-page-right-para-para2 h2",1,15)
+    splitTextAnimation(".second-page-right-para-para2 p",1,15)
+    splitTextAnimation(".second-page-right-para-para3 h3",1,15)
+    splitTextAnimation(".second-page-right-para-para3 p",1,40)
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".second-page-right",
+            start:"top center",
+        }
+    });
+    gg.fromTo(".second-page-right .readmore",{
+        opacity:0,
+    },{
+        opacity:1,
+        delay:1,
+        duration:1.5
+    })
 }
 
 secondPageAnimation()
