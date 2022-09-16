@@ -3781,6 +3781,7 @@ footer span a {
     font-size: 0.8vw;
     letter-spacing: 4px;
     font-family: "Noto Serif TC", serif;
+    white-space: nowrap;
     color: rgba(220, 177, 120, 0.4705882353);
   }
   .home-second-page-bottom-left ul li p span {
@@ -7459,7 +7460,7 @@ footer span a {
     position: relative;
     align-items: flex-start;
     height: 7vw;
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
   .news .second-page-bottom-right-para .readmore p {
     margin-right: 0;
@@ -7528,7 +7529,7 @@ footer span a {
     flex: 0 0 55%;
     right: 0;
     bottom: 0;
-    line-height: 55px;
+    line-height: 65px;
     font-size: 1vw;
   }
   .news .third-page-box-bottom .readmore-box {
@@ -7544,7 +7545,7 @@ footer span a {
     transform: scale(0.75);
   }
   .news .third-page-box-bottom .readmore h3 {
-    line-height: 55px;
+    line-height: 65px;
   }
   .news .third-page-box:not(:last-child)::after {
     display: none;
