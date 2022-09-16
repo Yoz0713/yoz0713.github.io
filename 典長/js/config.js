@@ -3,6 +3,7 @@ function bannerTitleIn(){
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
     const pathname = location.pathname
     let a = /(\/[a-z]{0,20}.html)$/.exec(pathname)
+    console.log(a[0])
     switch (pathname){
         case  a[0]:{
             str = `優雅是一種態度，從一而終的追求至美，永恆在時代中綻放。`
@@ -41,7 +42,7 @@ function bannerTitleIn(){
             break;
         }
     }
-    
+    console.log(str)
     let arr = str.split("")
     
     let arrElement = arr.map((item)=>{
