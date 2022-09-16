@@ -130,7 +130,7 @@
             opacity:0
         },{
             opacity:1,
-            duration:7
+            duration:4
         },"<+0.5")
 
         let gg2 = gsap.timeline();

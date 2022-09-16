@@ -4271,47 +4271,6 @@ footer span a {
     align-items: center;
     padding: 7vw 0 0;
   }
-  .home-second-page-bottom-left ul > h3 {
-    height: 10vw;
-    width: 10vw;
-    line-height: 10.5vw;
-    font-weight: 300;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px;
-    font-size: 10px;
-    letter-spacing: -0.4vw;
-    position: relative;
-  }
-  .home-second-page-bottom-left ul > h3::after {
-    display: block;
-    content: "";
-    width: 50%;
-    height: 1px;
-    background-color: #dcb078;
-    position: absolute;
-    left: 0;
-    bottom: 5.7vw;
-    transform: rotate(-25deg);
-  }
-  .home-second-page-bottom-left ul .h3-2 {
-    font-weight: 300;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px;
-    font-size: 10px;
-    position: relative;
-    letter-spacing: -0.4vw;
-  }
-  .home-second-page-bottom-left ul .h3-2::after {
-    display: block;
-    content: "";
-    width: 50%;
-    height: 1px;
-    background-color: #dcb078;
-    position: absolute;
-    left: 3.2vw;
-    bottom: 5.8vw;
-    transform: rotate(25deg);
-  }
   .home-second-page-bottom-left ul :nth-child(1) {
     margin-right: 5vw;
   }
@@ -4347,6 +4306,17 @@ footer span a {
   .home-second-page-bottom-left ul .lineSwitch::before {
     display: none;
     content: "";
+  }
+  .home-second-page-bottom-left ul > .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vw;
+    width: 20vw;
+  }
+  .home-second-page-bottom-left ul > .imgBox img {
+    width: 55%;
+    margin-left: 5vw;
   }
   .home-second-page-bottom-left-img {
     display: flex;
@@ -7733,8 +7703,8 @@ footer span a {
     position: absolute;
     flex: 0 0 10%;
     transform: scale(0.8);
-    left: -2vw;
-    top: -6.5vw;
+    left: -1.8vw;
+    top: -6vw;
   }
   .news .third-page {
     padding-left: 8vw;
@@ -7869,6 +7839,23 @@ footer span a {
   .news .third-page > :not(:last-child) {
     margin-right: 0;
     margin-bottom: 5vw;
+  }
+}
+@media all and (max-width: 1440px) and (max-width: 920px) and (max-width: 480px) and (max-width: 392px) {
+  .news .second-page-bottom-right-para a .readmore-box {
+    flex: 0 0 45%;
+    margin-top: 0;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+  }
+  .news .second-page-bottom-right-para a .readmore-box svg {
+    height: 20vw;
+    position: absolute;
+    flex: 0 0 10%;
+    transform: scale(0.8);
+    left: -3.5vw !important;
+    top: -6.5vw;
   }
 }
 .newsInner {

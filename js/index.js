@@ -109,8 +109,10 @@ p[0].onclick = function(e){
     }
     lineSwitch.classList.remove("lineSwitch")    
 }
+
 p[1].onclick = function(e){
     let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
+ 
     x++
     switchImg.forEach((i)=>{
         i.style.opacity="0"

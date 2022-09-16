@@ -1151,50 +1151,8 @@
                                 align-items: center;
                                 
                                 padding: 7vw 0 0;
-                                > h3{
-                                    height: 10vw;
-                                    width: 10vw;
-                                    line-height: 10.5vw;
-                                    font-weight: 300;
-                                    font-family: 'Playfair Display', serif;
-                                    letter-spacing: 2px;
-                                    font-size: 10px;
-                                    letter-spacing: -0.4vw;
-                                    position: relative;
-                                    &::after{
-                                        display: block;
-                                        content: "";
-                                        width: 50%;
-                                        height: 1px;
-                                        background-color: $gold_color;
-                                        position: absolute;
-                                        left: 0;
-                                        bottom:5.7vw;
-                                       
-                                        transform: rotate(-25deg);
-                                    }
-                                }
-                                .h3-2{
-                                    
-                                    font-weight: 300;
-                                    font-family: 'Playfair Display', serif;
-                                    letter-spacing: 2px;
-                                    font-size: 10px;
-                                    position: relative;
-                                    letter-spacing: -0.4vw;
-                                    &::after{
-                                        display: block;
-                                        content: "";
-                                        width: 50%;
-                                        height: 1px;
-                                        background-color: $gold_color;
-                                        position: absolute;
-                                        left: 3.2vw;
-                                        bottom:5.8vw;
-                                        transform: rotate(25deg);
-                                        
-                                    }
-                                }
+                             
+                             
                                 & :nth-child(1){
                                     margin-right: 5vw;
                                 }
@@ -1240,6 +1198,19 @@
                                         content: "";
                                     
                                     }
+                                }
+                                > .imgBox{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 15vw;
+                                    width: 20vw;
+                                 
+                                    img{
+                                        width: 55%;
+                                        margin-left: 5vw;
+                                    }
+                                  
                                 }
                             }
                             &-img{

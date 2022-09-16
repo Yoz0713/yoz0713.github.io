@@ -1275,8 +1275,8 @@
                                                 position: absolute;
                                                 flex: 0 0 10%;
                                                 transform: scale(0.8);
-                                                left: -2vw;
-                                                top: -6.5vw;
+                                                left: -1.8vw;
+                                                top: -6vw;
                                             }
                                         }
                                     }
@@ -1421,6 +1421,48 @@
             
             
             }
+            @media all and (max-width:392px){
+                .news{
+                    .second-page{ 
+                        &-bottom{
+                            &-right{
+                                &-para{
+                              
+                                    a{
+                                        
+                                        .readmore{
+                                           
+                                            &-box{
+                                                flex: 0 0 45%;
+                                                margin-top: 0;
+                                                justify-content: flex-end;
+                                                position: relative;
+                                                align-items: center;
+                                                svg{
+                                                    height: 20vw;
+                                                    position: absolute;
+                                                    flex: 0 0 10%;
+                                                    transform: scale(0.8);
+                                                    left: -3.5vw!important;
+                                                    top: -6.5vw;
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                  
+                            
+                                
+                                }
+                            }
+                             
+                              
+                            }
+                        }
+                }
+               
+             }
         }
+     
     }
 }

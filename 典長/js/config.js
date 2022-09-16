@@ -1,9 +1,11 @@
 function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
-    console.log("abc" == /c/)
-    switch (location.pathname){
-        case "/index.html":{
+    const pathname = location.pathname
+    let a = pathname.match(/^\/\W(.html)$/)
+    console.log(a)
+    switch (pathname){
+        case  "/about.html":{
             str = `優雅是一種態度，從一而終的追求至美，永恆在時代中綻放。`
             break
         }
