@@ -189,7 +189,12 @@ function thirdPageAnimation(){
     },{
         opacity:1,
         duration:1.5
-    })
+    }).fromTo(".third-page-top",{
+        opacity:0,
+    },{
+        opacity:1,
+        duration:0.5
+    },"<+0.1")
 
     let gg2 = gsap.timeline({
         scrollTrigger:{
@@ -246,8 +251,80 @@ function forthPageAnimation(){
     },{
         opacity:1,
         duration:1.5
+    }).fromTo(".forth-page-bg",{
+        opacity:0,
+        x:30
+    },{
+        x:0,
+        opacity:1,
+        delay:2,
+        duration:1.5
     })
     splitTextAnimation(".forth-page-right-para h2 ",0.5,7,".forth-page")
     splitTextAnimationFlip(".forth-page-right-para p ",1,30,".forth-page")
 }
 forthPageAnimation()
+
+function fifthPageAnimation(){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".fifth-page",
+            start:"top center",
+        }
+    })
+
+    gg.fromTo(".fifth-page-right ",{
+        opacity:0,
+        x:30
+    },{
+        x:0,
+        opacity:1,
+        duration:1.5
+    }).fromTo(".fifth-page-left-top-left .imgBox",{
+        opacity:0,
+        x:-30
+    },{
+        x:0,
+        opacity:1,
+        duration:1.5
+    },"<+0.5").fromTo(".fifth-page-left-bottom-right .imgBox",{
+        opacity:0,
+        x:-30
+    },{
+        x:0,
+        opacity:1,
+        duration:1.5
+    },"<+0.5").fromTo(".fifth-page .readmore",{
+        opacity:0,
+        x:-30
+    },{
+        x:0,
+        opacity:1,
+        duration:1.5
+    },"<+2")
+    splitTextAnimation(".fifth-page-left-top-right-para .para1 h3",0.5,7,".fifth-page-left-top-right-para")
+    splitTextAnimationFlip(".fifth-page-left-top-right-para .para2 p",1,30,".fifth-page-left-top-right-para")
+    splitTextAnimation(".fifth-page-left-bottom-left-para .para1 h3",0.5,7,".fifth-page")
+    splitTextAnimationFlip(".fifth-page-left-bottom-left-para .para2 p",1,30,".fifth-page")
+
+}
+fifthPageAnimation()
+
+function sixthPageAnimation(){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".sixth-page",
+            start:"top center",
+        }
+    })
+    gg.fromTo(".sixth-page-bg-title",{
+        opacity:0,
+        x:-30
+    },{
+        x:0,
+        opacity:1,
+        duration:1.5
+    })
+    splitTextAnimation(".sixth-page-bg-title p span ",1,7,".sixth-page")
+}
+sixthPageAnimation()

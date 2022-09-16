@@ -30,3 +30,32 @@ html,body{
 p,h1,h2,h3,h4,h5,h6,span{
     text-align: justify;
 }
+
+@keyframes arrow{
+    0%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    10%{
+        transform: scaleX(0.3)
+    }
+    30%{
+        transform: scaleX(1)translate(15px);
+
+    }
+    50%{
+        transform: translate(40px);
+        opacity: 0;
+    }
+    51%{
+        transform: translate(-40px);
+    }
+    80%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

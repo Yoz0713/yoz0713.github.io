@@ -5,15 +5,27 @@ $para_word_family:'Microsoft JhengHei';
 $title_word_family:'Noto Serif TC', serif;
 $ch_text_xs_color:#363a45;
 $blue_color:#224177;
-.readmore{
-    
-    p{
-        font-size: 1vw;
-        letter-spacing: 0.2vw;
-        line-height: 2.8vw;
-        color: $gray_color;
+a{
+    width: 12vw;
+    .readmore{
+        width:12vw;
+        p{
+            font-size: 1vw;
+            letter-spacing: 0.2vw;
+            line-height: 2.8vw;
+            color: $gray_color;
+        }
+        &:hover img{
+            animation: arrow 2s linear forwards infinite;
+        }
+        border-bottom: 1px solid #9F9F9F;
     }
-
+}
+button{
+    cursor: pointer;
+    &:hover img{
+        animation: arrow 2s linear forwards infinite;
+    }
 }
 .word_level{
     .date{
