@@ -1,5 +1,6 @@
-function splitText(wrap,text){
+function splitTextAnimation(wrap,delay){
     wrap = document.querySelector(`${wrap}`);
+    text = wrap.innerHTML
     let str=`${text}`;
     let arr = str.split("")
     let arrElement = arr.map((item)=>{
@@ -12,13 +13,30 @@ function splitText(wrap,text){
         }
        
     })
+    delay = delay
     let strElement = arrElement.join("")
     wrap.innerHTML = strElement;
-    return wrap
+    wrap.childNodes.forEach((item,i)=>{
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".second-page-right",
+                start:"top center",
+            }
+        });
+        gg2.set(item.childNodes,{delay:delay})
+            gg2.fromTo(item.childNodes,{
+                y:50
+            },{
+                delay:i/10,
+                y:0,
+                duration:1.5
+            })
+     
+        
+    })
+   
 }
 
-splitText(".second-page-right-para-para2 h2","典長成美")
-splitText(".second-page-right-para-para3 h3","收藏一家人的幸福時光")
 function secondPageAnimation(){
     
     let gg = gsap.timeline({
@@ -33,31 +51,9 @@ function secondPageAnimation(){
         opacity:1,
         duration:1.5
     })
-    let gg2 = gsap.timeline({
-        scrollTrigger:{
-            trigger:".second-page-right",
-            start:"top center",
-        }
-    });
-    gg2.fromTo(`.second-page-right-para-para2 h2 :nth-child(${i})`,{
-        opacity:0,
-    },{
-        delay:1,
-        opacity:1,
-        duration:1.5
-    })
-    // .fromTo(".second-page-right-para-para3 h3",{
-    //     opacity:0,
-    // },{
-    //     opacity:1,
-    //     duration:1.5
-    // },"<+0.2").fromTo(".second-page-right-para-para2 p",{
-    //     opacity:0,
-    // },{
-
-    //     opacity:1,
-    //     duration:1.5
-    // },"<+0.5")
+    splitTextAnimation(".second-page-right-para-para2 h2",1.2)
+    splitTextAnimation(".second-page-right-para-para3 h3",15)
+    
 }
 
 secondPageAnimation()
