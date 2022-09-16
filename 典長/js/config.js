@@ -2,42 +2,41 @@ function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
     const pathname = location.pathname
-    let a = pathname.match(/^\/\W(.html)$/)
-    console.log(a)
+    let a = /(\/[a-z]{0,20}.html)$/.exec(pathname)
     switch (pathname){
-        case  "/about.html":{
+        case  a[0]:{
             str = `優雅是一種態度，從一而終的追求至美，永恆在時代中綻放。`
             break
         }
-        case "/about.html":{
+        case a[0]:{
             str = `為城市種下美的種子，為你築起一輩子的好宅。`
             break
         }
-        case "/blog.html":{
+        case a[0]:{
             str=`一起敞遊 時代趨勢，分享建築、心靈與生活的美好。`
             break;
         }
-        case "/blogInner.html":{
+        case a[0]:{
             str=`一起敞遊 時代趨勢，分享建築、心靈與生活的美好。`
             break;
         }
-        case "/contact.html":{
+        case a[0]:{
             str=`為城市種下美的種子，為你築起一輩子的好宅。`
             break;
         }
-        case "/news.html":{
+        case a[0]:{
             str=`分享是一種喜悅。`
             break;
         }
-        case "/newsInner.html":{
+        case a[0]:{
             str=`分享是一種喜悅。`
             break;
         }
-        case "/portfolio.html":{
+        case a[0]:{
             str=`為城市種下美的種子，為你築起一輩子的好宅。`
             break;
         }
-        case "/service.html":{
+        case a[0]:{
             str=`愛您懂我們的你，為您，我們持續更好!`
             break;
         }
