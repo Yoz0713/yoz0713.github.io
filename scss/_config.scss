@@ -406,7 +406,33 @@ footer{
 }
 
 @media all and (max-width:1440px){
- 
+  .loading{
+    &-svg{
+       
+        width: 45vw;
+        height: 45vw;
+        svg{
+            margin-left: 13.5vw;
+            margin-top:11vw;
+            width: 100%;
+            height: 100%;
+           
+        }
+        .imgBox{
+          position: absolute;
+          height: fit-content;
+          width: 8%;
+          left: 45%;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          img{
+              width: 100%;
+          }
+      }
+    }
+   
+  }
   footer{
     display: flex;
     flex-direction: column;

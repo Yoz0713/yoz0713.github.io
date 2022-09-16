@@ -26,7 +26,7 @@
                 break;
                 case arr[3]:
                 li[1].style.borderRight="1px solid #fff";
-                li[1].style.pointerEvents = "none"
+                
                 
                 break;
                 case arr[4]:
@@ -36,7 +36,7 @@
                 break;
                 case arr[5]:
                 li[2].style.borderRight="1px solid #fff";
-                li[2].style.pointerEvents = "none"
+               
                
                 break;
                 case arr[6]:
@@ -46,7 +46,7 @@
                 break;
                 case arr[7]:
                 li[3].style.borderRight="1px solid #fff";
-                li[3].style.pointerEvents = "none"
+              
                
                 break;
                 case arr[8]:
@@ -77,7 +77,7 @@
                 break;
                 case arr[3]:
                 li[1].style.borderLeft="1px solid #fff";
-                li[1].style.pointerEvents = "none"
+                
                 
                 break;
                 case arr[4]:
@@ -87,7 +87,7 @@
                 break;
                 case arr[5]:
                 li[2].style.borderLeft="1px solid #fff";
-                li[2].style.pointerEvents = "none"
+                
                
                 break;
                 case arr[6]:
@@ -97,7 +97,7 @@
                 break;
                 case arr[7]:
                 li[3].style.borderLeft="1px solid #fff";
-                li[3].style.pointerEvents = "none"
+              
                
                 break;
                 case arr[8]:

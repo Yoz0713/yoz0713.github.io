@@ -1,3 +1,21 @@
+function splitText(wrap,text){
+    let str=`${text}`;
+    let arr = str.split("")
+    let arrElement = arr.map((item)=>{
+        if(item == "，" || item == "。"){
+            item =`<span class="blind"><span>${item}</span></span><br>`
+            return item
+        }else{
+            item = `<span class="blind"><span>${item}</span></span>`
+            return item
+        }
+       
+    })
+    let strElement = arrElement.join("")
+    wrap.innerHTML = strElement;
+}
+
+
 function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
@@ -55,7 +73,7 @@ function bannerTitleIn(){
        
     })
     let strElement = arrElement.join("")
-    let num;
+   
     bannerTitle.innerHTML = strElement
     bannerTitle.childNodes.forEach((item,i)=>{
        
