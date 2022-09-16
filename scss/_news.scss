@@ -618,9 +618,10 @@
                             p{
                                 margin-right:0;
                                 position: relative;
-                                flex: 0 0 50%;
+                                flex: 0 0 55%;
                                 right: 0;
                                 bottom: 0;
+                                font-size: 1.2vw;
                                 line-height: 75px;
                             }
                             &-box{
@@ -636,7 +637,7 @@
                                
                                 }
                                 h3{
-                                
+                                    font-size: 1.2vw;
                                     line-height: 75px;
                                     white-space: nowrap;
                                 }
@@ -691,8 +692,8 @@
                              flex: 0 0 55%;
                              right: 0;
                              bottom: 0;
-                             line-height: 65px;
-                             font-size: 1vw;
+                             line-height: 5.2vw;
+                             font-size: 1.2vw;
                        
                          }
                          &-box{
@@ -711,7 +712,8 @@
                           
                          }
                          h3{
-                            line-height: 65px;
+                            line-height: 5.2vw;
+                            font-size: 1.2vw;
                          }
                      }
                 }
