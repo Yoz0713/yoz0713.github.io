@@ -163,10 +163,10 @@
                  duration:1,
                  pointerEvents:"none"
              })
-         },2500)
+         },2100)
          
         setTimeout(()=>{
             bannerTitleIn()
             bannerBoxIn()
-        },2600)
+        },2200)
      }

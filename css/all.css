@@ -277,12 +277,12 @@ footer span a {
   background-color: #1b0f08;
 }
 .loading-svg {
-  width: 50vw;
-  height: 50vw;
+  width: 30vw;
+  height: 30vw;
 }
 .loading-svg svg {
-  margin-left: 15vw;
-  margin-top: 12.5vw;
+  margin-left: 8.5vw;
+  margin-top: 7.5vw;
   width: 100%;
   height: 100%;
 }
@@ -291,8 +291,8 @@ footer span a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 10%;
-  left: 44%;
+  width: 5%;
+  left: 46.2%;
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -478,15 +478,15 @@ footer span a {
     height: 120vw;
   }
   .loading-svg svg {
-    margin-left: 27vw;
-    margin-top: 14vw;
-    width: 130%;
-    height: 130%;
+    margin-left: 29.5vw;
+    margin-top: 18.5vw;
+    width: 115%;
+    height: 115%;
   }
   .loading .imgBox {
     position: absolute;
-    width: 25%;
-    left: 37%;
+    width: 21%;
+    left: 39%;
   }
   .phone {
     display: block;
@@ -722,11 +722,11 @@ footer span a {
   transition: 0.5s;
 }
 .portfolio .second-page-top-right .icon-box:hover {
-  transform: scale(1.3);
+  transform: scale(1.15);
   border: transparent;
 }
 .portfolio .second-page-top-right .icon-box:hover img {
-  transform: translateY(-8px);
+  transform: translateY(-3px);
 }
 .portfolio .second-page-top-right .icon-box img {
   width: 100%;
@@ -857,11 +857,11 @@ footer span a {
   transition: 0.5s;
 }
 .portfolio .second-page-bottom-right .icon-box:hover {
-  transform: scale(1.3);
+  transform: scale(1.15);
   border: transparent;
 }
 .portfolio .second-page-bottom-right .icon-box:hover img {
-  transform: translateY(-8px);
+  transform: translateY(-3px);
 }
 .portfolio .second-page-bottom-right .icon-box img {
   width: 100%;
