@@ -139,17 +139,17 @@
             rotation:35,
         },{
            
-            rotation:100,
+            rotation:395,
 
-            duration:2.5,
+            duration:20,
         }).fromTo(".loading .square2",{
             transformOrigin:"50% 50%",
             rotation:55,
         },{
 
-            rotation:120,
-
-            duration:2.5,
+            rotation:415,
+            repeat:-1,
+            duration:20,
         },"<")
     }
     loadingPageAnimation()
