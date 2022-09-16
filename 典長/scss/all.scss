@@ -15,9 +15,13 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
+  
 }
+span{
+    will-change:top;
 
+    -webkit-font-smoothing: antialiased;
+}
 html,body{
     width: 100%;
     overflow-x: hidden;

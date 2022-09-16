@@ -1,4 +1,4 @@
-function splitTextAnimation(wrap,delay,speed,direct){
+function splitTextAnimation(wrap,delay,speed,trigger){
     wrap = document.querySelector(`${wrap}`);
     text = wrap.innerHTML
     wrap.innerHTML = null
@@ -22,62 +22,232 @@ function splitTextAnimation(wrap,delay,speed,direct){
     let strElement = arrElement.join("")
     wrap.innerHTML = strElement;
     wrap.childNodes.forEach((item,i)=>{
-        let gg2 = gsap.timeline({
+        let gg = gsap.timeline({
             scrollTrigger:{
-                trigger:".second-page-right",
+                trigger:`${trigger}`,
                 start:"top center",
-               
-            }
+                
+            },
+      
         });
-        
-            gg2.fromTo(item.childNodes,{
-                y:50
+      
+            gg.fromTo(item.childNodes,{
+            
+                opacity:0,
+                
             },{
-                y:0,
-                delay:i/speed,
+                opacity:0,
+                
+                duration:delay,
+             
+            }).fromTo(item.childNodes,{
+                y:50,
+                opacity:0,
+             
+            },{
                 opacity:1,
-                duration:1.5
+                
+                duration:0.6,
+                y:0,
+                delay:i/speed
             })
      
         
     })
    
 }
-
+function splitTextAnimationFlip(wrap,delay,speed,trigger){
+    wrap = document.querySelector(`${wrap}`);
+    text = wrap.innerHTML
+    wrap.innerHTML = null
+    let str=`${text}`;
+    let arr = str.split("")
+    let arrElement = arr.map((item)=>{
+        if(item == "<"){
+            
+            item =`<br>`
+            return item
+        }else if(item == "b" || item == "r" || item == ">" ){
+            item = null
+          
+        }else{
+            item = `<span class="blind"><span>${item}</span></span>`
+            return item
+        }
+     
+    })
+    
+    let strElement = arrElement.join("")
+    wrap.innerHTML = strElement;
+    wrap.childNodes.forEach((item,i)=>{
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:`${trigger}`,
+                start:"top center",
+                
+            },
+      
+        });
+      
+            gg.fromTo(item.childNodes,{
+            
+                opacity:0,
+                
+            },{
+                opacity:0,
+                
+                duration:delay,
+             
+            }).fromTo(item.childNodes,{
+                transform:"rotateY(120deg)",
+                opacity:0
+            },{
+                opacity:1,
+                duration:0.6,
+                transform:"rotateY(0deg)",
+                delay:i/speed
+            })
+     
+        
+    })
+   
+}
 function secondPageAnimation(){
     
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-left",
             start:"top center",
-        }
+        },
+        
     });
     gg.fromTo(".second-page-left",{
         opacity:0,
     },{
         opacity:1,
         duration:1.5
-    })
+    }).fromTo(".second-page-right-para-para1",{
+        opacity:0,
+        x:15
+    },{
+        x:0,
+        opacity:1,
+ 
+        duration:1.5
+    },"<+0.5").fromTo(".second-page-right-para-para2",{
+        opacity:0,
+        x:15
+    },{
+        x:0,
+        opacity:1,
+ 
+        duration:1.5
+    },"<")
+    let trigger = ".second-page-right";
    
-    splitTextAnimation(".second-page-right-para-para1 p",0.7,15)
-    splitTextAnimation(".second-page-right-para-para1 .ch_text_m",1,15)
-    splitTextAnimation(".second-page-right-para-para2 h2",1,15)
-    splitTextAnimation(".second-page-right-para-para2 p",1,15)
-    splitTextAnimation(".second-page-right-para-para3 h3",1,15)
-    splitTextAnimation(".second-page-right-para-para3 p",1,40)
+
+    splitTextAnimation(".second-page-right-para-para3 h3",1.4,7,trigger)
+    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,30,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
             start:"top center",
         }
     });
-    gg.fromTo(".second-page-right .readmore",{
+    gg2.fromTo(".second-page-right .readmore",{
         opacity:0,
+        x:15
     },{
+        x:0,
         opacity:1,
-        delay:1,
+        delay:3,
         duration:1.5
-    })
+    }).fromTo(".second-page-bg",{
+        opacity:0,
+        x:15
+    },{
+        x:0,
+        opacity:1,
+ 
+        duration:1.5
+    },"<")
 }
 
 secondPageAnimation()
+
+
+function thirdPageAnimation(){
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".third-page",
+            start:"top center",
+        }
+    })
+
+    gg.fromTo(".third-page-bottom-right",{
+        opacity:0,
+    },{
+        opacity:1,
+        duration:1.5
+    })
+
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".third-page-bottom-left",
+            start:"top center",
+        }
+    });
+    gg2.fromTo(".third-page-bottom-left .readmore",{
+        opacity:0,
+        x:-15
+    },{
+        x:0,
+        opacity:1,
+        delay:3,
+        duration:1.5
+    })
+    let gg3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".third-page-bg",
+            start:"top center",
+        }
+    })
+    gg3.fromTo(".third-page-bg",{
+        opacity:0,
+        x:-15
+    },{
+        x:0,
+        opacity:1,
+ 
+        duration:1.5
+    })
+    splitTextAnimationFlip(".third-page-top-title p",0,15,".third-page-top")
+    splitTextAnimationFlip(".third-page-top-title h3",0,15,".third-page-top")
+    let trigger = ".third-page-bottom-left"
+    let delay = 0.5
+    splitTextAnimation(".third-page-bottom-left-para-para1 h3",delay,8,trigger)
+    splitTextAnimationFlip(".third-page-bottom-left-para-para2 p",delay+0.2,30,trigger)
+    splitTextAnimationFlip(".third-page-bottom-left-para-para3 p",delay+0.4,30,trigger)
+
+}
+thirdPageAnimation()
+
+function forthPageAnimation(){
+
+    let gg = gsap.timeline({
+        scrollTrigger:{
+            trigger:".forth-page",
+            start:"top center",
+        }
+    })
+
+    gg.fromTo(".forth-page-left",{
+        opacity:0,
+    },{
+        opacity:1,
+        duration:1.5
+    })
+    splitTextAnimation(".forth-page-right-para h2 ",0.5,7,".forth-page")
+    splitTextAnimationFlip(".forth-page-right-para p ",1,30,".forth-page")
+}
+forthPageAnimation()

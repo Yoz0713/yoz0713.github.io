@@ -71,6 +71,7 @@ function bannerTitleIn(){
             return item
         }
        
+        
     })
     let strElement = arrElement.join("")
    
