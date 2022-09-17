@@ -146,8 +146,8 @@ function secondPageAnimation(){
     let trigger = ".second-page-right";
    
 
-    splitTextAnimation(".second-page-right-para-para3 h3",1.4,7,trigger)
-    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,30,trigger)
+    splitTextAnimation(".second-page-right-para-para3 h3",1.4,40,trigger)
+    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,50,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
@@ -162,7 +162,7 @@ function secondPageAnimation(){
         opacity:1,
         delay:3,
         duration:1.5
-    }).fromTo(".second-page-bg",{
+    }).fromTo(".second-page-bg img",{
         opacity:0,
         x:15
     },{
@@ -208,7 +208,7 @@ function thirdPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:3,
+        delay:2,
         duration:1.5
     })
     let gg3 = gsap.timeline({
@@ -231,8 +231,8 @@ function thirdPageAnimation(){
     let trigger = ".third-page-bottom-left"
     let delay = 0.5
     splitTextAnimation(".third-page-bottom-left-para-para1 h3",delay,50,trigger)
-    splitTextAnimationFlip(".third-page-bottom-left-para-para2 p",delay+0.2,30,trigger)
-    splitTextAnimationFlip(".third-page-bottom-left-para-para3 p",delay+0.4,30,trigger)
+    splitTextAnimationFlip(".third-page-bottom-left-para-para2 p",delay+0.2,50,trigger)
+    splitTextAnimationFlip(".third-page-bottom-left-para-para3 p",delay+0.4,50,trigger)
 
 }
 thirdPageAnimation()
@@ -257,11 +257,11 @@ function forthPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:2,
+        delay:1,
         duration:1.5
     })
     splitTextAnimation(".forth-page-right-para h2 ",0.5,40,".forth-page")
-    splitTextAnimationFlip(".forth-page-right-para p ",1,30,".forth-page")
+    splitTextAnimationFlip(".forth-page-right-para p ",1,50,".forth-page")
 }
 forthPageAnimation()
 
@@ -301,11 +301,11 @@ function fifthPageAnimation(){
         x:0,
         opacity:1,
         duration:1.5
-    },"<+2")
+    },"<+1")
     splitTextAnimation(".fifth-page-left-top-right-para .para1 h3",0.5,40,".fifth-page-left-top-right-para")
-    splitTextAnimationFlip(".fifth-page-left-top-right-para .para2 p",1,30,".fifth-page-left-top-right-para")
+    splitTextAnimationFlip(".fifth-page-left-top-right-para .para2 p",1,50,".fifth-page-left-top-right-para")
     splitTextAnimation(".fifth-page-left-bottom-left-para .para1 h3",0.5,40,".fifth-page")
-    splitTextAnimationFlip(".fifth-page-left-bottom-left-para .para2 p",1,30,".fifth-page")
+    splitTextAnimationFlip(".fifth-page-left-bottom-left-para .para2 p",1,50,".fifth-page")
 
 }
 fifthPageAnimation()
@@ -319,14 +319,21 @@ function sixthPageAnimation(){
         }
     })
    
-    gg.fromTo(".sixth-page-bg-title",{
+    gg.fromTo(".sixth-page-top-title",{
+        opacity:0,
+       
+    },{
+     
+        opacity:1,
+        duration:1
+    }).fromTo(".sixth-page-bg-title",{
         opacity:0,
         x:-30
     },{
         x:0,
         opacity:1,
         duration:1.5
-    }).fromTo(".sixth-page-bottom :nth-child(1)",{
+    },"<").fromTo(".sixth-page-bottom :nth-child(1)",{
         opacity:0,
         y:30
     },{
@@ -354,9 +361,11 @@ function sixthPageAnimation(){
         y:0,
         opacity:1,
         duration:1.5
-    },"<+2.5")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(1) .para2 p",2,30,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(2) .para2 p",2.5,30,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(3) .para2 p",3,30,".sixth-page")
+    },"<+2")
+    splitTextAnimationFlip(".sixth-page-top-title p",0,50,".sixth-page")
+    splitTextAnimationFlip(".sixth-page-top-title h3",0,50,".sixth-page")
+    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(1) .para2 p",2,50,".sixth-page")
+    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(2) .para2 p",2.5,50,".sixth-page")
+    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(3) .para2 p",3,50,".sixth-page")
 }
 sixthPageAnimation()
