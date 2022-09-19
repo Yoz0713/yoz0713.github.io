@@ -167,7 +167,7 @@ function bannerTitleIn(){
    
     },{
         x:0,
-        delay:1.5,
+        delay:3,
         rotation:0,
         opacity:1,
         duration:1.5

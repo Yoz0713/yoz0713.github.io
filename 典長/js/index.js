@@ -56,7 +56,7 @@ function splitTextAnimation(wrap,delay,speed,trigger){
     })
    
 }
-function splitTextAnimationFlip(wrap,delay,speed,trigger){
+function splitTextAnimationOpacity(wrap,delay,speed,trigger){
     wrap = document.querySelector(`${wrap}`);
     text = wrap.innerHTML
     wrap.innerHTML = null
@@ -104,9 +104,9 @@ function splitTextAnimationFlip(wrap,delay,speed,trigger){
             },{
                
                 opacity:1,
-                duration:3,
+                duration:1.5,
           
-                delay:i/speed
+                delay:i/speed/1.3
             })
      
         
@@ -152,7 +152,7 @@ function secondPageAnimation(){
    
 
     splitTextAnimation(".second-page-right-para-para3 h3",1.4,40,trigger)
-    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,40,trigger)
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",1.6,40,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
@@ -165,7 +165,7 @@ function secondPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:3.5,
+        delay:3,
         duration:1.5
     }).fromTo(".second-page-bg img",{
         opacity:0,
@@ -215,7 +215,7 @@ function thirdPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:2.5,
+        delay:2,
         duration:1.5
     })
     let gg3 = gsap.timeline({
@@ -233,13 +233,13 @@ function thirdPageAnimation(){
  
         duration:1.5
     })
-    splitTextAnimationFlip(".third-page-top-title p",0,10,".third-page-top")
-    splitTextAnimationFlip(".third-page-top-title h3",0,15,".third-page-top")
+    splitTextAnimationOpacity(".third-page-top-title p",0,10,".third-page-top")
+    splitTextAnimationOpacity(".third-page-top-title h3",0,15,".third-page-top")
     let trigger = ".third-page-bottom-left"
     let delay = 0.5
     splitTextAnimation(".third-page-bottom-left-para-para1 h3",delay,50,trigger)
-    splitTextAnimationFlip(".third-page-bottom-left-para-para2 p",delay+0.2,50,trigger)
-    splitTextAnimationFlip(".third-page-bottom-left-para-para3 p",delay+0.4,50,trigger)
+    splitTextAnimationOpacity(".third-page-bottom-left-para-para2 p",delay+0.2,50,trigger)
+    splitTextAnimationOpacity(".third-page-bottom-left-para-para3 p",delay+0.4,50,trigger)
 
 }
 thirdPageAnimation()
@@ -268,7 +268,7 @@ function forthPageAnimation(){
         duration:1.5
     })
     splitTextAnimation(".forth-page-right-para h2 ",0.5,40,".forth-page")
-    splitTextAnimationFlip(".forth-page-right-para p ",1,50,".forth-page")
+    splitTextAnimationOpacity(".forth-page-right-para p ",1,50,".forth-page")
 }
 forthPageAnimation()
 
@@ -310,9 +310,9 @@ function fifthPageAnimation(){
         duration:1.5
     },"<+1")
     splitTextAnimation(".fifth-page-left-top-right-para .para1 h3",0.5,40,".fifth-page-left-top-right-para")
-    splitTextAnimationFlip(".fifth-page-left-top-right-para .para2 p",1,50,".fifth-page-left-top-right-para")
+    splitTextAnimationOpacity(".fifth-page-left-top-right-para .para2 p",1,50,".fifth-page-left-top-right-para")
     splitTextAnimation(".fifth-page-left-bottom-left-para .para1 h3",0.5,40,".fifth-page")
-    splitTextAnimationFlip(".fifth-page-left-bottom-left-para .para2 p",1,50,".fifth-page")
+    splitTextAnimationOpacity(".fifth-page-left-bottom-left-para .para2 p",1,50,".fifth-page")
 
 }
 fifthPageAnimation()
@@ -368,11 +368,11 @@ function sixthPageAnimation(){
         y:0,
         opacity:1,
         duration:1.5
-    },"<+2.5")
-    splitTextAnimationFlip(".sixth-page-top-title p",0,50,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-top-title h3",0,50,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(1) .para2 p",2,50,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(2) .para2 p",2.5,50,".sixth-page")
-    splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(3) .para2 p",3,50,".sixth-page")
+    },"<+1.5")
+    splitTextAnimationOpacity(".sixth-page-top-title p",0,50,".sixth-page")
+    splitTextAnimationOpacity(".sixth-page-top-title h3",0,50,".sixth-page")
+    splitTextAnimationOpacity(".sixth-page-bottom ul :nth-child(1) .para2 p",2,50,".sixth-page")
+    splitTextAnimationOpacity(".sixth-page-bottom ul :nth-child(2) .para2 p",2.5,50,".sixth-page")
+    splitTextAnimationOpacity(".sixth-page-bottom ul :nth-child(3) .para2 p",3,50,".sixth-page")
 }
 sixthPageAnimation()
