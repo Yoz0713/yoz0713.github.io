@@ -147,12 +147,12 @@ function bannerTitleIn(){
         
     
             titleAnimation.fromTo(item.childNodes,{
-                transform:"rotateY(120deg)",
+          
                 opacity:0
             },{
                 opacity:1,
-                duration:0.6,
-                transform:"rotateY(0deg)",
+                duration:2,
+             
                 delay:i/10
             })
     

@@ -99,12 +99,13 @@ function splitTextAnimationFlip(wrap,delay,speed,trigger){
                 duration:delay,
              
             }).fromTo(item.childNodes,{
-                transform:"rotateY(120deg)",
+             
                 opacity:0
             },{
+               
                 opacity:1,
-                duration:0.6,
-                transform:"rotateY(0deg)",
+                duration:3,
+          
                 delay:i/speed
             })
      
@@ -151,7 +152,7 @@ function secondPageAnimation(){
    
 
     splitTextAnimation(".second-page-right-para-para3 h3",1.4,40,trigger)
-    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,50,trigger)
+    splitTextAnimationFlip(".second-page-right-para-para3 p",1.6,40,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
@@ -164,13 +165,13 @@ function secondPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:3,
+        delay:3.5,
         duration:1.5
     }).fromTo(".second-page-bg img",{
         opacity:0,
-        x:15
+       
     },{
-        x:0,
+     
         opacity:1,
  
         duration:1.5
@@ -214,7 +215,7 @@ function thirdPageAnimation(){
     },{
         x:0,
         opacity:1,
-        delay:2,
+        delay:2.5,
         duration:1.5
     })
     let gg3 = gsap.timeline({
@@ -225,14 +226,14 @@ function thirdPageAnimation(){
     })
     gg3.fromTo(".third-page-bg",{
         opacity:0,
-        x:-15
+     
     },{
-        x:0,
+       
         opacity:1,
  
         duration:1.5
     })
-    splitTextAnimationFlip(".third-page-top-title p",0,15,".third-page-top")
+    splitTextAnimationFlip(".third-page-top-title p",0,10,".third-page-top")
     splitTextAnimationFlip(".third-page-top-title h3",0,15,".third-page-top")
     let trigger = ".third-page-bottom-left"
     let delay = 0.5
@@ -259,9 +260,9 @@ function forthPageAnimation(){
         duration:1.5
     }).fromTo(".forth-page-bg",{
         opacity:0,
-        x:30
+     
     },{
-        x:0,
+     
         opacity:1,
         delay:1,
         duration:1.5
@@ -334,9 +335,9 @@ function sixthPageAnimation(){
         duration:1
     }).fromTo(".sixth-page-bg-title",{
         opacity:0,
-        x:-30
+    
     },{
-        x:0,
+   
         opacity:1,
         duration:1.5
     },"<").fromTo(".sixth-page-bottom :nth-child(1)",{
@@ -367,7 +368,7 @@ function sixthPageAnimation(){
         y:0,
         opacity:1,
         duration:1.5
-    },"<+2")
+    },"<+2.5")
     splitTextAnimationFlip(".sixth-page-top-title p",0,50,".sixth-page")
     splitTextAnimationFlip(".sixth-page-top-title h3",0,50,".sixth-page")
     splitTextAnimationFlip(".sixth-page-bottom ul :nth-child(1) .para2 p",2,50,".sixth-page")
