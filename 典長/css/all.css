@@ -117,6 +117,9 @@ button:hover img {
   width: 15%;
   padding: 1.6vw 0 0;
 }
+.menu ul li .menu-box {
+  position: relative;
+}
 .menu ul li .menu-box .ch_text {
   text-align: center;
   font-size: 1.2vw;
@@ -131,16 +134,53 @@ button:hover img {
   letter-spacing: 0.2vw;
   font-family: "Noto Serif TC", serif;
 }
+.menu ul li .menu-box:after {
+  content: "";
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-image: url(../img/SVG/tree.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -2vw;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.menu ul li .menu-box:hover::after {
+  opacity: 1;
+  -webkit-animation: updown 2s linear forwards infinite;
+          animation: updown 2s linear forwards infinite;
+}
+.menu ul li .menu-portfolio::after {
+  right: -1vw;
+}
 .menu ul .menu-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin-right: 1vw;
+  overflow: hidden;
   width: 17%;
   padding: 0;
+  position: relative;
 }
 .menu ul .menu-logo img {
   width: 100%;
+  margin-bottom: 0.5vw;
+}
+.menu ul .menu-logo .star {
+  -webkit-animation: shine 1.5s linear forwards infinite;
+          animation: shine 1.5s linear forwards infinite;
+  margin: 0;
+  position: absolute;
+  width: 0.6vw;
+  left: 33%;
+  top: 0.7vw;
+}
+.menu ul .menu-logo:hover .star {
+  filter: brightness(1.4);
+  -webkit-animation: flowstar 2.5s linear forwards infinite;
+          animation: flowstar 2.5s linear forwards infinite;
 }
 
 footer {
@@ -2616,5 +2656,59 @@ p, h1, h2, h3, h4, h5, h6, span {
   }
   100% {
     transform: translate(50%, -50%);
+  }
+}
+@-webkit-keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes flowstar {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(140px, 40px);
+    opacity: 0;
+  }
+  51% {
+    transform: translate(-140px, -40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes flowstar {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(140px, 40px);
+    opacity: 0;
+  }
+  51% {
+    transform: translate(-140px, -40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

@@ -74,6 +74,25 @@ function menuAnimation(){
             y:0,
             opacity:1,
             duration:0.8
+        }).fromTo(".menu-logo",{
+            opacity:0,
+            y:30
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        },"<").fromTo(".menu-logo .star",{
+            opacity:0,
+            y:-20,
+            x:-70,
+            rotation:0
+        },{
+            y:0,
+            x:0,
+            rotation:180,
+            opacity:1,
+            duration:1,
+           
         })
         li.forEach((item)=>{
             

@@ -138,7 +138,10 @@ button{
             flex-direction: column;
             width: 15%;
             padding: 1.6vw 0 0;
+            
             .menu-box{
+            
+                position: relative;
                 .ch_text{
                     text-align: center;
                     font-size: 1.2vw;
@@ -153,18 +156,53 @@ button{
                     letter-spacing: 0.2vw;
                     font-family: $title_word_family;
                 }
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 1.5vw;
+                    height: 1.5vw;
+                    background-image: url(../img/SVG/tree.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: -2vw;
+                    top: 0;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    animation: updown 2s linear forwards infinite;
+                }
+
             }
-           
+            .menu-portfolio::after{
+                right: -1vw;
+            }
         }
         .menu-logo{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 1vw;
+            justify-content: flex-end;
+            align-items:center;
+            overflow: hidden;
             width: 17%;
             padding: 0;
+            position: relative;
             img{
                 width: 100%;
+                margin-bottom: 0.5vw;
+            }
+            .star{
+                animation: shine 1.5s linear forwards infinite;
+                margin: 0;
+                position: absolute;
+                width: 0.6vw;
+                left: 33%;
+                top: 0.7vw;
+            }
+
+            &:hover .star{
+               filter: brightness(1.4);
+                animation: flowstar 2.5s linear forwards infinite;
             }
         }
     }
