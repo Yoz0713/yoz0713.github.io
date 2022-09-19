@@ -714,6 +714,7 @@ footer p {
   pointer-events: none;
 }
 .index .fifth-page-right .bg-title {
+  pointer-events: none;
   padding-left: 1vw;
   left: 7%;
   top: 7%;

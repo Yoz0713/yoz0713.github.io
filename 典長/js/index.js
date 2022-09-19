@@ -123,7 +123,11 @@ function secondPageAnimation(){
     });
     gg.fromTo(".second-page-left",{
         opacity:0,
+   
+        y:30
     },{
+   
+        y:0,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-right-para-para1",{
@@ -186,7 +190,9 @@ function thirdPageAnimation(){
 
     gg.fromTo(".third-page-bottom-right",{
         opacity:0,
+        y:30
     },{
+        y:0,
         opacity:1,
         duration:1.5
     }).fromTo(".third-page-top",{

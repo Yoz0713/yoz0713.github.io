@@ -200,10 +200,10 @@ let gg = gsap.timeline({
                 }
             })
             gg2.fromTo(".hover-light",{
-               
+                background:`radial-gradient(circle at ${mousex}px ${mousey}px,#1b0f0995 0.01%, #1b0f08e1 30%`
             },{
           
-                duration:0.8,
+                duration:0.001,
                 background:`radial-gradient(circle at ${mousex}px ${mousey}px,#1b0f0995 0.01%, #1b0f08e1 30%`,
                
              },"<")

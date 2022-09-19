@@ -946,7 +946,7 @@ footer span a {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background: transparent;
+  background: radial-gradient(circle at 0px 0px, rgba(27, 15, 9, 0.5843137255) 99%, rgba(27, 15, 8, 0.8823529412) 100%);
 }
 
 @media all and (max-width: 1440px) {
@@ -5269,7 +5269,7 @@ footer span a {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background: transparent;
+  background-color: rgba(27, 15, 9, 0.5843137255);
   z-index: -1;
 }
 
@@ -6408,7 +6408,7 @@ footer span a {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background: transparent;
+  background: rgba(27, 15, 9, 0.5843137255);
   z-index: -1;
 }
 
@@ -10092,7 +10092,7 @@ footer span a {
   width: 100%;
   position: fixed;
   height: 100vh;
-  background: transparent;
+  background: rgba(27, 15, 9, 0.5843137255);
 }
 
 footer {

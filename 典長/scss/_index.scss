@@ -578,7 +578,7 @@
                 }       
             }
             .bg-title{
-       
+                pointer-events: none;
                 padding-left: 1vw;
                 left: 7%;
                 top: 7%;
@@ -588,6 +588,7 @@
                 h3{
                     font-weight: 450;
                     color: #FFF;
+             
                 }
                 p{
                     color: #FFF;

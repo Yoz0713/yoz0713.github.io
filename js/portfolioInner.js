@@ -66,15 +66,8 @@ function bannerGray(){
         opacity:1
       },{
           opacity:0,
-          duration:0.001
-      },"<").fromTo(".hover-light",{
-               
-    },{
-  
-        duration:0.8,
-        background:`radial-gradient(circle at 0px 0px,#1b0f0995 0.01%, #1b0f08e1 30%`,
-       
-     },"<")
+          duration:0.8
+      },"<")
 }
 bannerGray()
 
