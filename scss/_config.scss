@@ -101,7 +101,7 @@ p{
 
     .logo_box{
       img{
-        width: 165px;
+        width: 7.85vw;
       }
     }
 
@@ -111,7 +111,7 @@ p{
       a.ch_text{
         color: $white_color;
         writing-mode: tb;
-        font-size: 18px;
+        font-size: 0.95vw;
         letter-spacing: 0.3vw;
         text-decoration: none;
         padding: 0 0.3vw 0 0.9vw;
@@ -124,7 +124,7 @@ p{
         font-family: monospace;
         color: $white_color;
         writing-mode: tb;
-        font-size: 12px;
+        font-size: 0.6vw;
         letter-spacing: 0.1vw;
         font-weight: 200;
         display: block;
@@ -186,7 +186,8 @@ p{
 
    .logo_box{
       img{
-        width: 150px;
+        width: 8.5vw;
+   
       }
     }
 
@@ -201,11 +202,7 @@ p{
        }
      }
 
-     .logo_box{
-      img{
-        width: 110px;
-      }
-     }
+     
 
      .hamburger{
        padding: 5px;
@@ -406,6 +403,27 @@ footer{
 }
 
 @media all and (max-width:1440px){
+  .menu_box{
+    .logo_box{
+      img{
+        width: 12vw;
+   
+      }
+    }
+    .list_box{
+      a.ch_text{
+        font-size:1.2vw;
+        
+        position: relative;
+       .en_text{
+        font-size: 0.9vw;
+       }
+   
+     }
+    
+    }
+  }
+  
   .loading{
     &-svg{
        
@@ -635,6 +653,14 @@ footer{
     }
   }
   @media all and (max-width:480px){
+    .menu_box{
+      .logo_box{
+        img{
+          width: 110px;
+     
+        }
+      }
+    }
     .loading{
       display: flex;
       justify-content: center;

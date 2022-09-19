@@ -42,14 +42,21 @@
             height: 100%;
             padding-top:5.2vw;
             .imgBox{
-                position: relative;
+          
                 height: 75%;
                 width: 100%;
                 z-index: 2;
+                transition: 0.5s;
+                position: relative;
+                
                 img{
+            
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: 0.5s;
+                    z-index: -1;
+                   
                 }
                 &::after{
                     display: block;
@@ -61,6 +68,32 @@
                     height: 100%;
                     z-index: -1;
                     border: 1px solid #9F9F9F;
+                    transition: 0.5s;
+                    
+                }
+                &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                  
+                }
+                &:hover{
+                    overflow: hidden;
+                }
+              
+                &:hover::before{
+                    width: 300%;
+                    height: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                
+                    background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                    bottom:-150% ;
+                    left: -150%;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
                 }
             }
         }
@@ -209,6 +242,30 @@
                         z-index: -1;
                         border: 1px solid #9F9F9F;
                     }
+                    &::before{
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                      
+                    }
+                    &:hover{
+                        overflow: hidden;
+                    }
+                  
+                    &:hover::before{
+                        width: 300%;
+                        height: 300%;
+                        animation: glowingImage 2s linear forwards infinite;
+                    
+                        background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                        bottom:-150% ;
+                        left: -150%;
+                        z-index: 10;
+                        background-repeat: no-repeat;
+                        pointer-events: none;
+                    }
                 }
             }
            
@@ -252,6 +309,30 @@
                     height: 100%;
                     z-index: -1;
                     border: 1px solid #9F9F9F;
+                }
+                &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                  
+                }
+                &:hover{
+                    overflow: hidden;
+                }
+              
+                &:hover::before{
+                    width: 300%;
+                    height: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                
+                    background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                    bottom:-150% ;
+                    left: -150%;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
                 }
             }
         }
@@ -317,6 +398,30 @@
                             height: 100%;
                             z-index: -1;
                             border: 1px solid #9F9F9F;
+                        }
+                        &::before{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                          
+                        }
+                        &:hover{
+                            overflow: hidden;
+                        }
+                      
+                        &:hover::before{
+                            width: 300%;
+                            height: 300%;
+                            animation: glowingImage 2s linear forwards infinite;
+                        
+                            background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                            bottom:-150% ;
+                            left: -150%;
+                            z-index: 10;
+                            background-repeat: no-repeat;
+                            pointer-events: none;
                         }
                     }
                 }
@@ -408,6 +513,30 @@
                             z-index: -1;
                             border: 1px solid #9F9F9F;
                         }
+                        &::before{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                          
+                        }
+                        &:hover{
+                            overflow: hidden;
+                        }
+                      
+                        &:hover::before{
+                            width: 300%;
+                            height: 300%;
+                            animation: glowingImage 2s linear forwards infinite;
+                        
+                            background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                            bottom:-150% ;
+                            left: -150%;
+                            z-index: 10;
+                            background-repeat: no-repeat;
+                            pointer-events: none;
+                        }
                     }
                 }
               
@@ -416,14 +545,37 @@
         &-right{
             flex: 0 0 35%;
             position: relative;
+            overflow: hidden;
             .imgBox{
                 width: 100%;
                 height: 100%;
                 z-index: 2;
+              
                 img{
                     width: 100%;
                     height: 100%;
-                }              
+                }       
+                &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                
+                }
+             
+              
+                &:hover::before{
+                    width: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                    height: 150%;
+                    background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                    left: -200%;
+                    bottom: -40%;
+                 
+                    background-repeat: no-repeat;
+                    pointer-events: none;
+                }       
             }
             .bg-title{
        
@@ -521,6 +673,31 @@
                             z-index: -1;
                             border: 1px solid #9F9F9F;
                         }
+                        &::before{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                          
+                        }
+                        &:hover{
+                            overflow: hidden;
+                        }
+                      
+                        &:hover::before{
+                            width: 300%;
+                            height: 300%;
+                            animation: glowingImage 2s linear forwards infinite;
+                        
+                            background: linear-gradient(45deg ,transparent 50%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.300) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 54%);
+                            bottom:-150% ;
+                            left: -150%;
+                            z-index: 10;
+                            background-repeat: no-repeat;
+                            pointer-events: none;
+                        }   
+                        
                     }
                     .para1{
                         margin-bottom: 1vw;

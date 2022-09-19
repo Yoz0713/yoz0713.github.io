@@ -312,13 +312,7 @@ function seondPageRight(){
     },{
         filter:"brightness(0.3)",
         duration:0.8,
-    },"<").fromTo(".hover-light",{
-       
-    },{
-        duration:0.8,
-        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0995 0.01%, #1b0f08e1 30%",
-       
-     },"<")
+    },"<")
   
         let gg4 = gsap.timeline({
             scrollTrigger:{
@@ -471,18 +465,9 @@ if(window.innerWidth >1440){
 
 
 
-let pointer = document.documentElement;
-    pointer.style.setProperty('--x', -1000 + 'px');
-    pointer.style.setProperty('--y', -1000 + 'px');  
-    if(window.innerWidth > 1440){
-        pointer.addEventListener('mousemove', m => {
-            setTimeout(()=>{
-                pointer.style.setProperty('--x', m.clientX + 'px');
-                pointer.style.setProperty('--y', m.clientY + 'px');
-            },100)
-    })
+
        
-    }
+  
 
 
 // make first-page of mobile device 100vh without screen shaking 

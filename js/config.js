@@ -170,3 +170,43 @@
             bannerBoxIn()
         },2200)
      }
+
+let pointer = document.documentElement;
+ 
+var mousex;
+var mousey;
+let gg = gsap.timeline({
+    scrollTrigger:{
+        trigger:".first-page",
+        start:"top top",
+        toggleActions:"play none none reverse",
+      
+    }
+})
+
+ pointer.addEventListener('mousemove', m => {
+
+        mousex = m.clientX
+        mousey = m.clientY
+        setTimeout(()=>{
+         
+            console.log(mousex,mousey)
+            let gg2 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".second-page",
+                    start:"top bottom",
+                    toggleActions:"play none none reverse",
+               
+                }
+            })
+            gg2.fromTo(".hover-light",{
+               
+            },{
+          
+                duration:0.8,
+                background:`radial-gradient(circle at ${mousex}px ${mousey}px,#1b0f0995 0.01%, #1b0f08e1 30%`,
+               
+             },"<")
+        },5)
+           
+    })

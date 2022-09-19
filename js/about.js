@@ -6,7 +6,7 @@ function bannerGray(){
         scrollTrigger:{
             trigger:".second-page",
             start:"top bottom",
-            toggleActions:"play none none reverse"
+            toggleActions:"play none none reverse",
         }
     })
 
@@ -20,11 +20,17 @@ function bannerGray(){
         duration:0.8,
         opacity:0,
         height:0
-    },"<").fromTo(".hover-light",{
-       
+    },"<").fromTo(".first-page-bg",{
+      opacity:1
     },{
+        opacity:0,
+        duration:0.001
+    },"<").fromTo(".hover-light",{
+               
+    },{
+  
         duration:0.8,
-        background:"radial-gradient(circle at var(--x) var(--y),#1b0f0950 0.01%, #1b0f08e1 30%",
+        background:`radial-gradient(circle at 0px 0px,#1b0f0995 0.01%, #1b0f08e1 30%`,
        
      },"<")
 }
@@ -567,18 +573,9 @@ if(window.innerWidth > 920){
 
 
 
-let pointer = document.documentElement;       
-    pointer.style.setProperty('--x', -1000 + 'px');
-    pointer.style.setProperty('--y', -1000 + 'px'); 
-    if(window.innerWidth > 1440){
-        pointer.addEventListener('mousemove', m => {
-            setTimeout(()=>{
-                pointer.style.setProperty('--x', m.clientX + 'px');
-                pointer.style.setProperty('--y', m.clientY + 'px');
-            },100)
-    })
+
        
-    }
+ 
 
 // make first-page of mobile device 100vh without screen shaking 
 function safariHacks() {

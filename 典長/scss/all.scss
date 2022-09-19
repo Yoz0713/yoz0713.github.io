@@ -59,3 +59,20 @@ p,h1,h2,h3,h4,h5,h6,span{
         transform: translate(0);
     }
 }
+
+
+@keyframes glowingImage {
+    0%{ 
+   
+        z-index: 10;
+
+    }
+    60%{
+        transform: translate(50%,-50%);
+    }
+    100%{
+        transform: translate(50%,-50%);
+    }
+    
+    
+}

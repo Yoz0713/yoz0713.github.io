@@ -214,16 +214,19 @@ footer p {
   padding-top: 5.2vw;
 }
 .index .second-page-left .imgBox {
-  position: relative;
   height: 75%;
   width: 100%;
   z-index: 2;
+  transition: 0.5s;
+  position: relative;
 }
 .index .second-page-left .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.5s;
+  z-index: -1;
 }
 .index .second-page-left .imgBox::after {
   display: block;
@@ -235,6 +238,29 @@ footer p {
   height: 100%;
   z-index: -1;
   border: 1px solid #9F9F9F;
+  transition: 0.5s;
+}
+.index .second-page-left .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .second-page-left .imgBox:hover {
+  overflow: hidden;
+}
+.index .second-page-left .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .index .second-page-right {
   display: flex;
@@ -376,6 +402,28 @@ footer p {
   z-index: -1;
   border: 1px solid #9F9F9F;
 }
+.index .third-page-bottom-right .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .third-page-bottom-right .imgBox:hover {
+  overflow: hidden;
+}
+.index .third-page-bottom-right .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 .index .third-page-bg {
   left: 0;
   bottom: 0vw;
@@ -416,6 +464,28 @@ footer p {
   height: 100%;
   z-index: -1;
   border: 1px solid #9F9F9F;
+}
+.index .forth-page-left .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .forth-page-left .imgBox:hover {
+  overflow: hidden;
+}
+.index .forth-page-left .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .index .forth-page-right {
   display: flex;
@@ -482,6 +552,28 @@ footer p {
   height: 100%;
   z-index: -1;
   border: 1px solid #9F9F9F;
+}
+.index .fifth-page-left-top-left .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .fifth-page-left-top-left .imgBox:hover {
+  overflow: hidden;
+}
+.index .fifth-page-left-top-left .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .index .fifth-page-left-top-right {
   flex: 0 0 40%;
@@ -567,9 +659,32 @@ footer p {
   z-index: -1;
   border: 1px solid #9F9F9F;
 }
+.index .fifth-page-left-bottom-right .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .fifth-page-left-bottom-right .imgBox:hover {
+  overflow: hidden;
+}
+.index .fifth-page-left-bottom-right .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 .index .fifth-page-right {
   flex: 0 0 35%;
   position: relative;
+  overflow: hidden;
 }
 .index .fifth-page-right .imgBox {
   width: 100%;
@@ -579,6 +694,24 @@ footer p {
 .index .fifth-page-right .imgBox img {
   width: 100%;
   height: 100%;
+}
+.index .fifth-page-right .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .fifth-page-right .imgBox:hover::before {
+  width: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  height: 150%;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  left: -200%;
+  bottom: -40%;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .index .fifth-page-right .bg-title {
   padding-left: 1vw;
@@ -677,6 +810,28 @@ footer p {
   height: 100%;
   z-index: -1;
   border: 1px solid #9F9F9F;
+}
+.index .sixth-page-bottom ul li .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.index .sixth-page-bottom ul li .imgBox:hover {
+  overflow: hidden;
+}
+.index .sixth-page-bottom ul li .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.3) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 54%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .index .sixth-page-bottom ul li .para1 {
   margin-bottom: 1vw;
@@ -2442,5 +2597,27 @@ p, h1, h2, h3, h4, h5, h6, span {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+@-webkit-keyframes glowingImage {
+  0% {
+    z-index: 10;
+  }
+  60% {
+    transform: translate(50%, -50%);
+  }
+  100% {
+    transform: translate(50%, -50%);
+  }
+}
+@keyframes glowingImage {
+  0% {
+    z-index: 10;
+  }
+  60% {
+    transform: translate(50%, -50%);
+  }
+  100% {
+    transform: translate(50%, -50%);
   }
 }

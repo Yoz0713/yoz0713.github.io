@@ -1,21 +1,86 @@
-function splitText(wrap,text){
+function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
+    if(typeof wrap == String){
+        wrap = document.querySelector(`${wrap}`);
+    }
+    console.log(wrap.innerHTML)
+    text = wrap.innerHTML
+    wrap.innerHTML = null
     let str=`${text}`;
     let arr = str.split("")
     let arrElement = arr.map((item)=>{
-        if(item == "，" || item == "。"){
-            item =`<span class="blind"><span>${item}</span></span><br>`
+        if(item == "<"){
+            
+            item =`<br>`
             return item
+        }else if(item == "b" || item == "r" || item == ">" ){
+            item = null
+          
         }else{
             item = `<span class="blind"><span>${item}</span></span>`
             return item
         }
-       
+     
     })
+    
     let strElement = arrElement.join("")
     wrap.innerHTML = strElement;
+    wrap.childNodes.forEach((item,i)=>{
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:`${trigger}`,
+                start:"top center",
+                
+            },
+      
+        });
+      
+            gg.fromTo(item.childNodes,{
+            
+                opacity:0,
+                
+            },{
+                opacity:0,
+                
+                duration:delay,
+             
+            }).fromTo(item.childNodes,{
+                x:-50,
+                opacity:0
+            },{
+                opacity:1,
+                x:0,
+                duration:0.6,
+        
+                delay:i/speed
+            })
+     
+        
+    })
+   
 }
 
-
+function menuAnimation(){
+        let li = document.querySelectorAll(".menu .menu-box a")
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                trigger:".menu",
+                start:"top center"
+            }
+        })
+        gg.fromTo(".menu-box h3",{
+            opacity:0,
+            y:30
+        },{
+            y:0,
+            opacity:1,
+            duration:0.8
+        })
+        li.forEach((item)=>{
+            
+            splitTextAnimationLeftIn(item.lastElementChild,0.5,25,".menu")
+        })
+}
+menuAnimation()
 function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
