@@ -2682,10 +2682,10 @@ p, h1, h2, h3, h4, h5, h6, span {
 }
 @-webkit-keyframes flowstar {
   0% {
-    transform: translate(0);
+    transform: translate(0) rotate(0);
   }
   50% {
-    transform: translate(140px, 40px);
+    transform: translate(140px, 40px) rotate(180deg);
     opacity: 0;
   }
   51% {
@@ -2693,15 +2693,15 @@ p, h1, h2, h3, h4, h5, h6, span {
   }
   100% {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(360deg);
   }
 }
 @keyframes flowstar {
   0% {
-    transform: translate(0);
+    transform: translate(0) rotate(0);
   }
   50% {
-    transform: translate(140px, 40px);
+    transform: translate(140px, 40px) rotate(180deg);
     opacity: 0;
   }
   51% {
@@ -2709,6 +2709,6 @@ p, h1, h2, h3, h4, h5, h6, span {
   }
   100% {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translate(0, 0) rotate(360deg);
   }
 }
