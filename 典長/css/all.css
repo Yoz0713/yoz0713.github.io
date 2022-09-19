@@ -246,6 +246,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .second-page-left .imgBox:hover {
   overflow: hidden;
@@ -408,6 +409,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .third-page-bottom-right .imgBox:hover {
   overflow: hidden;
@@ -471,6 +473,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .forth-page-left .imgBox:hover {
   overflow: hidden;
@@ -559,6 +562,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .fifth-page-left-top-left .imgBox:hover {
   overflow: hidden;
@@ -665,6 +669,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .fifth-page-left-bottom-right .imgBox:hover {
   overflow: hidden;
@@ -701,6 +706,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .fifth-page-right .imgBox:hover::before {
   width: 300%;
@@ -736,17 +742,6 @@ footer p {
   top: 1.8vw;
   right: 0;
   position: absolute;
-}
-.index .fifth-page-right .bg-title::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 35%;
-  left: -0.05vw;
-  bottom: 0vw;
-  z-index: 2;
-  background-color: aqua;
 }
 .index .sixth-page {
   position: relative;
@@ -818,6 +813,7 @@ footer p {
   position: absolute;
   width: 100%;
   height: 100%;
+  mix-blend-mode: overlay;
 }
 .index .sixth-page-bottom ul li .imgBox:hover {
   overflow: hidden;

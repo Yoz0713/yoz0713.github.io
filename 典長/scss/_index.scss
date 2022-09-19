@@ -77,7 +77,7 @@
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                  
+                    mix-blend-mode: overlay;
                 }
                 &:hover{
                     overflow: hidden;
@@ -248,7 +248,7 @@
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                      
+                        mix-blend-mode: overlay;
                     }
                     &:hover{
                         overflow: hidden;
@@ -316,7 +316,7 @@
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                  
+                    mix-blend-mode: overlay;
                 }
                 &:hover{
                     overflow: hidden;
@@ -405,7 +405,7 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                          
+                            mix-blend-mode: overlay;
                         }
                         &:hover{
                             overflow: hidden;
@@ -519,7 +519,7 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                          
+                            mix-blend-mode: overlay;
                         }
                         &:hover{
                             overflow: hidden;
@@ -561,7 +561,7 @@
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                
+                    mix-blend-mode: overlay;
                 }
              
               
@@ -599,17 +599,7 @@
                     right: 0;
                     position: absolute;
                 }
-                &::after{
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    width: 1px;
-                    height:35%;
-                    left: -0.05vw;
-                    bottom: 0vw;
-                    z-index: 2;
-                    background-color: aqua;
-                }
+             
             }
         }
     }
@@ -680,7 +670,7 @@
                             position: absolute;
                             width: 100%;
                             height: 100%;
-                          
+                            mix-blend-mode: overlay;
                         }
                         &:hover{
                             overflow: hidden;
