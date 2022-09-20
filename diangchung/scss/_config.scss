@@ -286,10 +286,7 @@ button{
 
 
 @media all and (max-width:920px){
-    .first-page{
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
-    }
+  
     .word_level{
         .date{
             font-size:1vw;

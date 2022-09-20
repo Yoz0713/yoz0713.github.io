@@ -249,10 +249,6 @@ button:hover img {
 }
 
 @media all and (max-width: 920px) {
-  .first-page {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-  }
   .word_level .date {
     font-size: 1vw;
     letter-spacing: 0.1vw;
@@ -910,7 +906,13 @@ button:hover img {
   width: 15%;
 }
 
-@media all and (max-width: 920px) {
+@media all and (max-width: 1440px) {
+  .index .first-page {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+@media all and (max-width: 1440px) and (max-width: 920px) {
   .index .first-page {
     width: 100%;
     position: relative;
