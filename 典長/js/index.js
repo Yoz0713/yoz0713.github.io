@@ -25,7 +25,7 @@ function splitTextAnimation(wrap,delay,speed,trigger){
         let gg = gsap.timeline({
             scrollTrigger:{
                 trigger:`${trigger}`,
-                start:"top center",
+                start:"top bottom",
                 
             },
       
@@ -83,7 +83,7 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
         let gg = gsap.timeline({
             scrollTrigger:{
                 trigger:`${trigger}`,
-                start:"top center",
+                start:"top bottom",
                 
             },
       
@@ -118,7 +118,7 @@ function secondPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-left",
-            start:"top center",
+            start:"top bottom",
         },
         
     });
@@ -156,7 +156,7 @@ function secondPageAnimation(){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
-            start:"top center",
+            start:"top bottom",
         }
     });
     gg2.fromTo(".second-page-right .readmore",{
@@ -185,7 +185,7 @@ function thirdPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page",
-            start:"top center",
+            start:"top bottom",
         }
     })
 
@@ -206,7 +206,7 @@ function thirdPageAnimation(){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page-bottom-left",
-            start:"top center",
+            start:"top bottom",
         }
     });
     gg2.fromTo(".third-page-bottom-left .readmore",{
@@ -221,7 +221,7 @@ function thirdPageAnimation(){
     let gg3 = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page-bg",
-            start:"top center",
+            start:"top bottom",
         }
     })
     gg3.fromTo(".third-page-bg",{
@@ -249,7 +249,7 @@ function forthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".forth-page",
-            start:"top center",
+            start:"top bottom",
         }
     })
 
@@ -276,7 +276,7 @@ function fifthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".fifth-page",
-            start:"top center",
+            start:"top bottom",
         }
     })
 
@@ -322,7 +322,7 @@ function sixthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".sixth-page",
-            start:"top center",
+            start:"top bottom",
         }
     })
    

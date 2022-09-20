@@ -28,7 +28,7 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
         let gg = gsap.timeline({
             scrollTrigger:{
                 trigger:`${trigger}`,
-                start:"top center",
+                start:"top bottom",
                 
             },
       
@@ -64,7 +64,7 @@ function menuAnimation(){
         let gg = gsap.timeline({
             scrollTrigger:{
                 trigger:".menu",
-                start:"top center"
+                start:"top bottom"
             }
         })
         gg.fromTo(".menu-box h3",{
@@ -186,7 +186,7 @@ function bannerTitleIn(){
    
     },{
         x:0,
-        delay:3,
+        delay:2,
         rotation:0,
         opacity:1,
         duration:1.5

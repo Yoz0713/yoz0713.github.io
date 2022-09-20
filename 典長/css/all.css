@@ -978,6 +978,29 @@ footer p {
   z-index: -1;
   border: 1px solid #9F9F9F;
 }
+.about .second-page-left .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+.about .second-page-left .imgBox:hover {
+  overflow: hidden;
+}
+.about .second-page-left .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.28) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 58%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 .about .second-page-right {
   display: flex;
   flex-direction: column;
@@ -1036,6 +1059,29 @@ footer p {
   height: 100%;
   z-index: -1;
   border: 1px solid #9F9F9F;
+}
+.about .third-page-right .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+.about .third-page-right .imgBox:hover {
+  overflow: hidden;
+}
+.about .third-page-right .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.28) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 58%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .about .third-page-left {
   display: flex;
@@ -1128,17 +1174,17 @@ footer p {
 }
 .about .forth-page-left-box .line .straight {
   width: 0.3%;
-  transform: scaleY(0.3) translate(4.3vw, -3.5vw);
+  transform: scaleY(0.3) translate(4.3vw, -3vw);
 }
 .about .forth-page-left-box .line .straight2 {
   width: 0.3%;
-  transform: scaleY(0.3) translate(4vw, -45.2vw);
+  transform: scaleY(0.3) translate(4vw, -44.8vw);
 }
 .about .forth-page-left-box .line .left-bottom {
   width: 22%;
   position: absolute;
-  left: -5.3vw;
-  top: -10.8vw;
+  left: -5.2vw;
+  top: -10.5vw;
 }
 .about .forth-page-left-box .line .right-bottom {
   width: 22%;
@@ -1194,6 +1240,29 @@ footer p {
 }
 .about .fifth-page-top .imgBox img {
   width: 100%;
+}
+.about .fifth-page-top .imgBox::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+.about .fifth-page-top .imgBox:hover {
+  overflow: hidden;
+}
+.about .fifth-page-top .imgBox:hover::before {
+  width: 300%;
+  height: 300%;
+  -webkit-animation: glowingImage 2s linear forwards infinite;
+          animation: glowingImage 2s linear forwards infinite;
+  background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.25) 51.5%, rgba(255, 255, 255, 0.28) 52%, rgba(255, 255, 255, 0.25) 52.5%, transparent 58%);
+  bottom: -150%;
+  left: -150%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 .about .fifth-page-bottom {
   display: flex;

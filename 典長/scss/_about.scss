@@ -85,6 +85,30 @@
                     z-index: -1;
                     border: 1px solid #9F9F9F;
                 }
+                 &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    mix-blend-mode: overlay;
+                }
+                &:hover{
+                    overflow: hidden;
+                }
+              
+                &:hover::before{
+                    width: 300%;
+                    height: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                
+                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
+                    bottom:-150% ;
+                    left: -150%;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
+                }
             }
         }
         &-right{
@@ -143,6 +167,30 @@
                     height: 100%;
                     z-index: -1;
                     border: 1px solid #9F9F9F;
+                }
+                &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    mix-blend-mode: overlay;
+                }
+                &:hover{
+                    overflow: hidden;
+                }
+              
+                &:hover::before{
+                    width: 300%;
+                    height: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                
+                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
+                    bottom:-150% ;
+                    left: -150%;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
                 }
             }
         }
@@ -244,17 +292,17 @@
                    
                     .straight{
                         width: 0.3%;
-                        transform: scaleY(0.3) translate(4.3vw,-3.5vw);
+                        transform: scaleY(0.3) translate(4.3vw,-3vw);
                      }
                      .straight2{
                         width: 0.3%;
-                        transform: scaleY(0.3) translate(4vw,-45.2vw);
+                        transform: scaleY(0.3) translate(4vw,-44.8vw);
                      }
                      .left-bottom{
                         width: 22%;
                         position: absolute;
-                        left: -5.3vw;
-                        top: -10.8vw;
+                        left: -5.2vw;
+                        top: -10.5vw;
                      }
                      .right-bottom{
                         width: 22%;
@@ -315,6 +363,30 @@
                 width: 100%;
                 img{
                     width: 100%;
+                }
+                &::before{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    mix-blend-mode: overlay;
+                }
+                &:hover{
+                    overflow: hidden;
+                }
+              
+                &:hover::before{
+                    width: 300%;
+                    height: 300%;
+                    animation: glowingImage 2s linear forwards infinite;
+                
+                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
+                    bottom:-150% ;
+                    left: -150%;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    pointer-events: none;
                 }
             }
         }
