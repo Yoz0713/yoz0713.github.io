@@ -13,7 +13,7 @@ function secondPageAnimation(){
         x:-50
     },{
         x:0,
-        delay:1.5,
+        delay:1.2,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-bg",{

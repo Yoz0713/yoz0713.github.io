@@ -3,7 +3,7 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
         wrap = document.querySelector(`${wrap}`);
     }
  
-    text = wrap.innerHTML
+    let text = wrap.innerHTML
     wrap.innerHTML = null
     let str=`${text}`;
     let arr = str.split("")
@@ -99,7 +99,7 @@ function menuAnimation(){
             splitTextAnimationLeftIn(item.lastElementChild,0.5,25,".menu")
         })
 }
-menuAnimation()
+
 function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
@@ -199,13 +199,14 @@ function bannerTitleIn(){
         duration:1.5
     },"<+0.7")
 }
-bannerTitleIn()
 
-function bannerRoundAnimation(){
- 
+
+function gsapStopWarning(){
+    gsap.config({ nullTargetWarn: false });
 }
-bannerRoundAnimation()
-
+gsapStopWarning()
+bannerTitleIn()
+menuAnimation()
 // function coverBlueAnimation(){
 //     let coverBlue = document.querySelectorAll(".cover-blue")
 //     coverBlue.forEach((item)=>{

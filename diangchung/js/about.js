@@ -12,7 +12,10 @@
          }else if(item == "b" || item == "r" || item == ">" ){
              item = null
           
-         }else{
+         }else if(item == "&nbsp;"){
+            item = " "
+         
+        }else{
              item = `<span class="blind"><span>${item}</span></span>`
              return item
          }
@@ -127,14 +130,14 @@ function secondPageAnimation(){
         y:50
     },{
         y:0,
-        delay:1.5,
+        delay:1.2,
         opacity:1,
         duration:1.5,
 
     })
-    splitTextAnimation(".second-page-right-para-para1 h3",2,40,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para2 p",2.2,50,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",2.4,50,".second-page-right-para-para1")
+    splitTextAnimation(".second-page-right-para-para1 h3",1.6,40,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para2 p",1.8,50,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",2,50,".second-page-right-para-para1")
 }
 secondPageAnimation()
 function thirdPageAnimation(){

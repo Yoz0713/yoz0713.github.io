@@ -132,7 +132,7 @@ function secondPageAnimation(){
    
         y:50
     },{
-        delay:1.5,
+        delay:1.2,
         y:0,
         opacity:1,
         duration:1.5

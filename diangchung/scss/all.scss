@@ -109,9 +109,26 @@ p,h1,h2,h3,h4,h5,h6,span{
 @keyframes bannerIn{
     0%{
         background-size: 100% 100%;
-        
+        filter: brightness(0.3);
+    }
+    35%{
+        filter: brightness(1);
     }
     100%{
         background-size: 109% 109%;
+    
+    }
+}
+@keyframes indexBannerIn{
+    0%{
+        transform: scale(1);
+        filter: brightness(0.3);
+    }
+    35%{
+        filter: brightness(1);
+    }
+    100%{
+       
+        transform: scale(1.09);
     }
 }
