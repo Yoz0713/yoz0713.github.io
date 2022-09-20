@@ -105,3 +105,13 @@ p,h1,h2,h3,h4,h5,h6,span{
         transform: translate(0,0) rotate(360deg);
     }
 }
+
+@keyframes bannerIn{
+    0%{
+        background-size: 100% 100%;
+        
+    }
+    100%{
+        background-size: 109% 109%;
+    }
+}

@@ -97,6 +97,14 @@
                 p{
                     font-size: 22px;
                 }
+                > p{
+                    &::after{
+                        display: block;
+                        content: "(*)必填";
+                        font-size: 16px;
+                        color:$gold_color;
+                    }
+                }
                 .form-box{
                     display: flex;
                     justify-content: center;
@@ -104,15 +112,16 @@
                     
                     position: relative;
                     &-word{
-                        width: 20%;
+                        width: 22%;
                         p{
                             color: $gold_color;
                             font-size: 20px;
                             font-family: $title_font_family;
+                        
                         }
                     }
                     input{
-                        width: 80%;
+                        width: 78%;
                         background-color: transparent;
                         border: none;
                         border-bottom: 1px solid $gold_color_opacity;
@@ -123,8 +132,18 @@
                             outline: none;
                         }
                     }
+                    .time{
+                        position: absolute;
+                        width: fit-content;
+                        right: 0;
+                        bottom: -2.5vw;
+                        p{
+                            font-size: 16px;
+                            color: $gold_color_opacity;
+                        }
+                    }
                     textarea{
-                        width: 80%;
+                        width: 78%;
                         background-color: transparent;
                         border: none;
                         border-bottom: 1px solid $gold_color_opacity;

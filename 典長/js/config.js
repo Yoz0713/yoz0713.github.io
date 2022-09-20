@@ -2,7 +2,7 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
     if(typeof wrap == String){
         wrap = document.querySelector(`${wrap}`);
     }
-    console.log(wrap.innerHTML)
+ 
     text = wrap.innerHTML
     wrap.innerHTML = null
     let str=`${text}`;

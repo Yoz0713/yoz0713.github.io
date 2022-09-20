@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -9427,6 +9428,12 @@ footer span a {
 .contact .second-page-right form p {
   font-size: 22px;
 }
+.contact .second-page-right form > p::after {
+  display: block;
+  content: "(*)必填";
+  font-size: 16px;
+  color: #dcb078;
+}
 .contact .second-page-right form .form-box {
   display: flex;
   justify-content: center;
@@ -9434,7 +9441,7 @@ footer span a {
   position: relative;
 }
 .contact .second-page-right form .form-box-word {
-  width: 20%;
+  width: 22%;
 }
 .contact .second-page-right form .form-box-word p {
   color: #dcb078;
@@ -9442,7 +9449,7 @@ footer span a {
   font-family: "Noto Serif TC", serif;
 }
 .contact .second-page-right form .form-box input {
-  width: 80%;
+  width: 78%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
@@ -9453,8 +9460,20 @@ footer span a {
 .contact .second-page-right form .form-box input:focus {
   outline: none;
 }
+.contact .second-page-right form .form-box .time {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: 0;
+  bottom: -2.5vw;
+}
+.contact .second-page-right form .form-box .time p {
+  font-size: 16px;
+  color: rgba(220, 177, 120, 0.4705882353);
+}
 .contact .second-page-right form .form-box textarea {
-  width: 80%;
+  width: 78%;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);

@@ -25,7 +25,7 @@
          let gg = gsap.timeline({
              scrollTrigger:{
                  trigger:`${trigger}`,
-                 start:"top bottom",
+                 start:"top 80%",
                 
              },
       
@@ -83,7 +83,7 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
         let gg = gsap.timeline({
             scrollTrigger:{
                 trigger:`${trigger}`,
-                start:"top bottom",
+                start:"top 80%",
                 
             },
       
@@ -119,33 +119,34 @@ function secondPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
     gg.fromTo(".second-page-left",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
+        delay:1.5,
         opacity:1,
         duration:1.5,
 
     })
-    splitTextAnimation(".second-page-right-para-para1 h3",0.5,40,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para2 p",0.7,50,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",0.9,50,".second-page-right-para-para1")
+    splitTextAnimation(".second-page-right-para-para1 h3",2,40,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para2 p",2.2,50,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",2.4,50,".second-page-right-para-para1")
 }
 secondPageAnimation()
 function thirdPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
     gg.fromTo(".third-page-right",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
         opacity:1,
@@ -157,7 +158,7 @@ function thirdPageAnimation(){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page-bg",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
 
@@ -177,12 +178,12 @@ function forthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".forth-page-right",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
     gg.fromTo(".forth-page-right ul > :nth-child(1)",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
         opacity:1,
@@ -190,7 +191,7 @@ function forthPageAnimation(){
 
     }).fromTo(".forth-page-right ul > :nth-child(2)",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
         opacity:1,
@@ -198,7 +199,7 @@ function forthPageAnimation(){
 
     },"<+0.5").fromTo(".forth-page-right ul > :nth-child(3)",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
         opacity:1,
@@ -208,7 +209,7 @@ function forthPageAnimation(){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".forth-page-left",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
     gg2.fromTo(".forth-page-left-box h3",{
@@ -295,12 +296,12 @@ function fifthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
             trigger:".fifth-page-top",
-            start:"top bottom"
+            start:"top 80%"
         }
     })
     gg.fromTo(".fifth-page-top .imgBox",{
         opacity:0,
-        y:30
+        y:50
     },{
         y:0,
         opacity:1,

@@ -7,6 +7,8 @@
         background: url(../img/index/banner.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        background-position-x: 60%;
+        background-position-y: 50%;
         &-title{
             width:fit-content;
             position: absolute;
@@ -58,6 +60,7 @@
                     z-index: -1;
                    
                 }
+                
                 &::after{
                     display: block;
                     content: "";
@@ -71,30 +74,7 @@
                     transition: 0.5s;
                     
                 }
-                &::before{
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    mix-blend-mode: overlay;
-                }
-                &:hover{
-                    overflow: hidden;
-                }
               
-                &:hover::before{
-                    width: 300%;
-                    height: 300%;
-                    animation: glowingImage 2s linear forwards infinite;
-                
-                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                    bottom:-150% ;
-                    left: -150%;
-                    z-index: 10;
-                    background-repeat: no-repeat;
-                    pointer-events: none;
-                }
             }
         }
         &-right{
@@ -159,7 +139,7 @@
             right: -13%;
             bottom: -15%;
             width: 20%;
-        
+          
         }
     }
     .third-page{
@@ -242,30 +222,7 @@
                         z-index: -1;
                         border: 1px solid #9F9F9F;
                     }
-                    &::before{
-                        display: block;
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        mix-blend-mode: overlay;
-                    }
-                    &:hover{
-                        overflow: hidden;
-                    }
-                  
-                    &:hover::before{
-                        width: 300%;
-                        height: 300%;
-                        animation: glowingImage 2s linear forwards infinite;
-                    
-                        background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                        bottom:-150% ;
-                        left: -150%;
-                        z-index: 10;
-                        background-repeat: no-repeat;
-                        pointer-events: none;
-                    }
+                
                 }
             }
            
@@ -310,30 +267,7 @@
                     z-index: -1;
                     border: 1px solid #9F9F9F;
                 }
-                &::before{
-                    display: block;
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    mix-blend-mode: overlay;
-                }
-                &:hover{
-                    overflow: hidden;
-                }
-              
-                &:hover::before{
-                    width: 300%;
-                    height: 300%;
-                    animation: glowingImage 2s linear forwards infinite;
-                
-                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                    bottom:-150% ;
-                    left: -150%;
-                    z-index: 10;
-                    background-repeat: no-repeat;
-                    pointer-events: none;
-                }
+          
             }
         }
         &-right{
@@ -399,30 +333,7 @@
                             z-index: -1;
                             border: 1px solid #9F9F9F;
                         }
-                        &::before{
-                            display: block;
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            mix-blend-mode: overlay;
-                        }
-                        &:hover{
-                            overflow: hidden;
-                        }
                       
-                        &:hover::before{
-                            width: 300%;
-                            height: 300%;
-                            animation: glowingImage 2s linear forwards infinite;
-                        
-                            background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                            bottom:-150% ;
-                            left: -150%;
-                            z-index: 10;
-                            background-repeat: no-repeat;
-                            pointer-events: none;
-                        }
                     }
                 }
                 &-right{
@@ -513,30 +424,7 @@
                             z-index: -1;
                             border: 1px solid #9F9F9F;
                         }
-                        &::before{
-                            display: block;
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            mix-blend-mode: overlay;
-                        }
-                        &:hover{
-                            overflow: hidden;
-                        }
-                      
-                        &:hover::before{
-                            width: 300%;
-                            height: 300%;
-                            animation: glowingImage 2s linear forwards infinite;
-                        
-                            background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                            bottom:-150% ;
-                            left: -150%;
-                            z-index: 10;
-                            background-repeat: no-repeat;
-                            pointer-events: none;
-                        }
+                     
                     }
                 }
               
@@ -569,7 +457,7 @@
                     width: 300%;
                     animation: glowingImage 2s linear forwards infinite;
                     height: 150%;
-                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
+                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.110) 51.5%, rgba(255, 255, 255, 0.110) 52%,rgba(255, 255, 255, 0.110) 52.5%, transparent 58%);
                     left: -200%;
                     bottom: -40%;
                  
@@ -664,30 +552,7 @@
                             z-index: -1;
                             border: 1px solid #9F9F9F;
                         }
-                        &::before{
-                            display: block;
-                            content: "";
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            mix-blend-mode: overlay;
-                        }
-                        &:hover{
-                            overflow: hidden;
-                        }
-                      
-                        &:hover::before{
-                            width: 300%;
-                            height: 300%;
-                            animation: glowingImage 2s linear forwards infinite;
-                        
-                            background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.250) 51.5%, rgba(255, 255, 255, 0.280) 52%,rgba(255, 255, 255, 0.250) 52.5%, transparent 58%);
-                            bottom:-150% ;
-                            left: -150%;
-                            z-index: 10;
-                            background-repeat: no-repeat;
-                            pointer-events: none;
-                        }   
+                   
                         
                     }
                     .para1{
