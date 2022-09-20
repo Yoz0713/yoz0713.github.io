@@ -131,19 +131,8 @@ let swiper1 = new Swiper(".swiper",{
     },
     mousewheel:false,
     on: {
-        slideChangeTransitionStart: function(){
-            if(this.realIndex == 0){
-               prev.classList.add("current")
-               next.classList.remove("current")
-               indexBanner1In()
-            }else if(this.realIndex == 1){
-                prev.classList.remove("current")
-                next.classList.add("current")
-                indexBanner2In()
-            }
-           
-     
-        }, touchMove: function(){
+        
+        slideChange: function(){
             if(this.realIndex == 0){
                 prev.classList.add("current")
                 next.classList.remove("current")
