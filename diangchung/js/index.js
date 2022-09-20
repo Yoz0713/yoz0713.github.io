@@ -113,9 +113,77 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
     })
    
 }
+let banner1 = document.querySelector(".banner1")
+let banner2 = document.querySelector(".banner2")
+let prev = document.querySelector(".prev")
+let next = document.querySelector(".next")
+let swiper1 = new Swiper(".swiper",{
+    speed:2000,
+    loop:true,
+    autoplay:{
+        delay:5000
+    },
+ 
+    effect : 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+    on: {
+        slideChangeTransitionStart: function(){
+            if(this.realIndex == 0){
+               prev.classList.add("current")
+               next.classList.remove("current")
+               indexBanner1In()
+            }else if(this.realIndex == 1){
+                prev.classList.remove("current")
+                next.classList.add("current")
+                indexBanner2In()
+            }
+           
+     
+        }, touchMove: function(){
+            if(this.realIndex == 0){
+             
+                
+            }else if(this.realIndex == 1){
+              
+            }
+      },
+    
+    }
+})
+prev.onclick = function(){
+    swiper1.slidePrev()
+}
+next.onclick = function(){
+    swiper1.slideNext()
+}
+function indexBanner1In(){
+    let gg = gsap.timeline()
 
+    gg.fromTo(".banner1",{
+        transform:"scale(1)",
+        filter:"brightness(0.5)"
+    },{
+        transform:"scale(1.09)",
+        duration:7,
+        filter:"brightness(1)"
+        
+    })
+}
+function indexBanner2In(){
+    let gg2 = gsap.timeline()
 
-
+    gg2.fromTo(".banner2",{
+        transform:"scale(1)",
+        filter:"brightness(0.3)"
+    },{
+        transform:"scale(1.09)",
+        duration:7,
+        filter:"brightness(1)"
+        
+    })
+}
 
 
 function secondPageAnimation(){

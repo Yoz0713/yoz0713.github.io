@@ -4,11 +4,7 @@
         width: 100%;
         height:100vh;
         position: relative;
-        background: url(../img/index/banner.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position-x: 60%;
-        background-position-y: 50%;
+        background-color: #000;
         .swiper{
             width: 100%;
             height: 100%;
@@ -25,11 +21,44 @@
                 }
             }
         }
+        .navigate{
+            display: flex;
+            width: 4.5vw;
+            height:5vw;
+            z-index: 10;
+            justify-content:space-between;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            .prev{
+                width: 2vw;
+                height: 0.4vw;
+      
+                filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
+                background-color: #353738;
+                border: none;
+            }
+            .next{
+                width: 2vw;
+                height: 0.4vw;
+                filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
+                background-color: #353738;
+            
+                border: none;
+            }
+            .current{
+                background-color: rgba(177, 202, 236, 0.692);
+                filter: drop-shadow(0 0 5px rgba(156, 188, 234, 0.692));
+            }
+        }
         &-title{
             width:fit-content;
             position: absolute;
             bottom: 7vw;
             right: 8vw;
+            z-index: 10;
             h2{
                 color: #fff;
                 font-weight: 450;

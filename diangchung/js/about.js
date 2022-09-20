@@ -12,10 +12,7 @@
          }else if(item == "b" || item == "r" || item == ">" ){
              item = null
           
-         }else if(item == "&nbsp;"){
-            item = " "
-         
-        }else{
+         }else{
              item = `<span class="blind"><span>${item}</span></span>`
              return item
          }
