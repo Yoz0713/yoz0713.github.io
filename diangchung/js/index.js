@@ -113,6 +113,7 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
     })
    
 }
+
 let banner1 = document.querySelector(".banner1")
 let banner2 = document.querySelector(".banner2")
 let prev = document.querySelector(".prev")
@@ -128,6 +129,7 @@ let swiper1 = new Swiper(".swiper",{
     fadeEffect: {
       crossFade: true,
     },
+    mousewheel:false,
     on: {
         slideChangeTransitionStart: function(){
             if(this.realIndex == 0){
@@ -143,21 +145,30 @@ let swiper1 = new Swiper(".swiper",{
      
         }, touchMove: function(){
             if(this.realIndex == 0){
-             
-                
-            }else if(this.realIndex == 1){
-              
-            }
+                prev.classList.add("current")
+                next.classList.remove("current")
+                indexBanner1In()
+             }else if(this.realIndex == 1){
+                 prev.classList.remove("current")
+                 next.classList.add("current")
+                 indexBanner2In()
+             }
       },
     
     }
 })
-prev.onclick = function(){
+if(window.innerWidth > 920){
+    let swiper = document.querySelector(".swiper")
+    swiper.classList.add("swiper-no-swiping")
+}
+prev.addEventListener("click",()=>{
     swiper1.slidePrev()
-}
-next.onclick = function(){
+})
+next.addEventListener("click",()=>{
     swiper1.slideNext()
-}
+})
+
+
 function indexBanner1In(){
     let gg = gsap.timeline()
 

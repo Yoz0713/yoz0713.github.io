@@ -283,3 +283,85 @@ button{
         animation: arrow 2s linear forwards infinite;
     }
 }
+
+
+@media all and (max-width:920px){
+    .first-page{
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+    .word_level{
+        .date{
+            font-size:1vw;
+            letter-spacing: 0.1vw;
+            line-height: 2.4vw;
+            font-weight: 600;
+            font-family: $para_word_family;
+            color:$ch_text_xs_color;
+        }
+        .ch_text_xl{
+            font-size: 5vw;
+            line-height:7vw;
+            letter-spacing: 0.6vw;
+            color: $black_color;
+            font-family: $title_word_family;
+        }
+        .ch_text_l{
+            font-size: 1.8vw;
+            letter-spacing:0.25vw;
+            font-weight:500;
+            font-family: $title_word_family;
+            color: $black_color;
+        }
+        .ch_text_m{
+            font-size: 1.6vw;
+            letter-spacing:0.25vw;
+            font-family: $title_word_family;
+            color: $black_color;
+        }
+        .ch_text_s{
+            font-size: 1.2vw;
+            letter-spacing: 0.2vw;
+            line-height: 2vw;
+            font-family: $para_word_family;
+            color:$gray_color ;
+        }
+        
+       
+        .ch_text_xs{
+            font-size: 1.1vw;
+            letter-spacing:0.15vw;
+            line-height: 1.5vw;
+            color: #1b2026;
+            font-family: $title_word_family;
+            color: $black_color;
+        }
+       
+        .en_text_xl{
+            font-size: 2.4vw;
+            font-weight: 600;
+            letter-spacing: 0.2vw;
+            font-family: $title_word_family;
+            color: $black_color;
+        }
+        .en_text_m{
+            font-size: 1.8vw;
+            font-weight: 450;
+            letter-spacing: 0.2vw;
+            font-family: $title_word_family;
+            color: $black_color;
+        }
+        .en_text_s{
+            font-size: 1vw;
+            letter-spacing: 0.1vw;
+            font-family: $title_word_family;
+            color: $ch_text_xs_color;
+        }
+        .en_text_xs{
+            font-size: 0.95vw;
+            letter-spacing: 0.5vw;
+            font-family: $title_word_family;
+            color: $ch_text_xs_color;
+        }
+    }
+}

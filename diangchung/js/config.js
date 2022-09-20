@@ -200,6 +200,14 @@ function bannerTitleIn(){
     },"<+0.7")
 }
 
+function safariHacks() {
+    let windowsVH = window.innerHeight / 100;
+    document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    window.addEventListener('resize', function() {
+        document.querySelector('.first-page').style.setProperty('--vh', windowsVH + 'px');
+    });
+}
+
 
 function gsapStopWarning(){
     gsap.config({ nullTargetWarn: false });
@@ -207,6 +215,7 @@ function gsapStopWarning(){
 gsapStopWarning()
 bannerTitleIn()
 menuAnimation()
+safariHacks();
 // function coverBlueAnimation(){
 //     let coverBlue = document.querySelectorAll(".cover-blue")
 //     coverBlue.forEach((item)=>{
