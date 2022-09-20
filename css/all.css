@@ -9739,7 +9739,7 @@ footer span a {
     font-size: 16px;
   }
   .contact .second-page-right form .form-box-word {
-    width: 25%;
+    width: 32%;
   }
   .contact .second-page-right form .form-box-word p {
     color: #dcb078;
@@ -9747,11 +9747,11 @@ footer span a {
     font-family: "Noto Serif TC", serif;
   }
   .contact .second-page-right form .form-box input {
-    width: 70%;
+    width: 68%;
     margin-bottom: 5vw;
   }
   .contact .second-page-right form .form-box textarea {
-    width: 70%;
+    width: 68%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(220, 177, 120, 0.4705882353);
