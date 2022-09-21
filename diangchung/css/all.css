@@ -572,6 +572,21 @@ button:hover img {
     -webkit-animation: arrow 2s linear forwards infinite;
             animation: arrow 2s linear forwards infinite;
   }
+  .menu ul .menu-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 30%;
+    padding: 0;
+    position: absolute;
+    height: 15vw;
+    left: 5vw;
+    bottom: 25vw;
+  }
+  .is-active {
+    left: 0;
+  }
 }
 .index {
   width: 100%;
