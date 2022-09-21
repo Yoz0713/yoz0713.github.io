@@ -575,6 +575,7 @@ button:hover img {
 }
 .index {
   width: 100%;
+  overflow: hidden;
 }
 .index .first-page {
   width: 100%;
@@ -1694,10 +1695,11 @@ button:hover img {
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) and (max-width: 480px) {
   .index .first-page {
+    overflow: hidden;
     width: 100%;
     position: relative;
     background-color: #000;
-    height: 226vw;
+    height: 200vw;
   }
   .index .first-page-title {
     width: -webkit-fit-content;
@@ -1716,7 +1718,7 @@ button:hover img {
     position: absolute;
     width: 18%;
     right: 0;
-    bottom: 20vw;
+    bottom: 28vw;
   }
   .index .second-page {
     margin-bottom: 20vw;
@@ -2049,6 +2051,7 @@ button:hover img {
 }
 .about {
   max-width: 100%;
+  overflow: hidden;
 }
 .about .first-page {
   width: 100%;
@@ -2770,6 +2773,7 @@ button:hover img {
   }
 }
 .blog {
+  overflow: hidden;
   width: 100%;
 }
 .blog .first-page {
@@ -3069,6 +3073,7 @@ button:hover img {
 }
 .contact {
   width: 100%;
+  overflow: hidden;
 }
 .contact .first-page {
   width: 100%;
@@ -3383,6 +3388,7 @@ button:hover img {
   }
 }
 .news {
+  overflow: hidden;
   width: 100%;
 }
 .news .first-page {
@@ -3682,6 +3688,7 @@ button:hover img {
 }
 .portfolio {
   width: 100%;
+  overflow: hidden;
 }
 .portfolio .first-page {
   width: 100%;
@@ -4175,6 +4182,9 @@ button:hover img {
     font-weight: normal;
   }
 }
+.service {
+  overflow: hidden;
+}
 .service .first-page {
   width: 100%;
   height: 100vh;
@@ -4541,6 +4551,7 @@ button:hover img {
 }
 .portfolioInner {
   width: 100%;
+  overflow: hidden;
 }
 .portfolioInner .first-page {
   width: 100%;
@@ -5285,6 +5296,7 @@ button:hover img {
 }
 .blogInner {
   width: 100%;
+  overflow: hidden;
 }
 .blogInner .first-page {
   width: 100%;
@@ -5518,6 +5530,7 @@ button:hover img {
 }
 .newsInner {
   width: 100%;
+  overflow: hidden;
 }
 .newsInner .first-page {
   width: 100%;
@@ -5780,12 +5793,8 @@ span {
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
+  max-height: 100%;
   background: url(../img/bg.jpg);
-}
-
-body {
-  position: relative;
 }
 
 p, h1, h2, h3, h4, h5, h6, span {
