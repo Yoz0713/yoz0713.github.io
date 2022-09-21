@@ -122,12 +122,13 @@ function secondPageAnimation(){
         },
         
     });
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-top-top-title",{
         opacity:0,
         y:50
     },{
         y:0,
-        delay:1.2,
+        delay:delay,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-top-top-icon > :nth-child(1)",{

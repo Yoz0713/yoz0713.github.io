@@ -149,7 +149,193 @@
         }
         }
     }
-    @media all and (max-width:920px){
+    @media all and (max-width:1024px){
+        .contact{
+            .first-page{
+                width: 100%;
+                height:80vw;
+                position: relative;
        
+         
+                &-title{
+                    width: fit-content;
+                    position: absolute;
+                    bottom: 10vw;
+                    right: 2.5vw;
+                    h2{
+                        color: #fff;
+                        font-weight: 450;
+                     
+                    }
+                
+                    .imgBox{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -28vw;
+                        right: 4vw;
+                        width: 25vw;
+                        height: fit-content;
+                        img{
+                            top: 0;
+                            width: 100%;
+                        }
+                        .para{
+                            position: absolute;
+                            top: 3vw;
+                            h2,h4{
+                                color: #fff;
+                                line-height: 5vw;
+                                text-align: center;
+                            }
+                            h4{
+                                letter-spacing: 0.4vw;
+                                font-weight: normal;
+                              
+                            }
+                        }
+                     
+                        
+                    }
+                }
+                
+            }
+            .second-page{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 85%;
+                margin: 0 auto 10vw;
+                height:fit-content;
+                &-left{
+                    width: 100%;
+                    padding-top: 10vw;
+                    
+                    iframe{
+                        width: 100%;
+                        height: 55vw;
+                    }
+                }
+                &-right{
+                    padding-top: 9vw;
+                    width: 100%;
+                    height:fit-content;
+                    
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin: 0 auto;
+                        height: 100%;
+                        .second-page-right-titel{
+                            width: 100%;
+                            margin: 0 0 5vw;
+                        }
+                        .form-box{
+                            display: flex;
+                           
+                            width: 100%;
+                            justify-content: space-between;
+                            margin-bottom: 5vw;
+                            p{
+                                flex: 0 0 20%;
+                          
+                            }
+                            input{
+                                flex: 0 0 80%;
+                                border: none;
+                                border-bottom: 1px solid $gray_color;
+                                outline: none;
+                                padding: 1vw 1vw;
+                                font-size: 4.5vw;
+                                color: $gray_color;
+                              
+                            }
+                            textarea{
+                                flex: 0 0 80%;
+                                padding: 1vw 1vw;
+                                font-size: 4.5vw;
+                                color: $gray_color;
+                                margin-bottom: 5vw;
+                                border: none;
+                                   border-bottom: 1px solid $gray_color;
+                                   outline: none;
+                            }
+                            
+                        }
+                        > input{
+                            margin-top: 4vw;
+                            font-size: 2.7vw;
+                            color: $gray_color;
+                            background-color: transparent;
+                            padding: 1vw 6vw;
+                            margin: 0;
+                            border: 1px solid $gray_color;
+                        }
+                    }
+                }
+               
+            }
+        }
+        @media all and (max-width:920px){
+            .contact{
+                .first-page{
+                    width: 100%;
+                    height:150vw;
+                    position: relative;
+           
+             
+                    &-title{
+                        width: fit-content;
+                        position: absolute;
+                        bottom: 20vw;
+                        right: 2.5vw;
+                        h2{
+                            color: #fff;
+                            font-weight: 450;
+                         
+                        }
+                    
+                        .imgBox{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -28vw;
+                            right: 4vw;
+                            width: 25vw;
+                            height: fit-content;
+                            img{
+                                top: 0;
+                                width: 100%;
+                            }
+                            .para{
+                                position: absolute;
+                                top: 3vw;
+                                h2,h4{
+                                    color: #fff;
+                                    line-height: 5vw;
+                                    text-align: center;
+                                }
+                                h4{
+                                    letter-spacing: 0.4vw;
+                                    font-weight: normal;
+                                  
+                                }
+                            }
+                         
+                            
+                        }
+                    }
+                    
+                }
+              
+            }
+        }
     }
 }

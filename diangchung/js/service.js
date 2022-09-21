@@ -8,12 +8,13 @@ function secondPageAnimation(){
         },
         
     });
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-left",{
         opacity:0,
         x:-50
     },{
         x:0,
-        delay:1.2,
+        delay:delay,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-bg",{
@@ -29,7 +30,7 @@ function secondPageAnimation(){
     box.forEach((item,i)=>{
         let gg2 = gsap.timeline({
             scrollTrigger:{
-                trigger:".second-page",
+                trigger:".second-page-right",
                 start:"top 80%",
             },
             
@@ -40,7 +41,7 @@ function secondPageAnimation(){
             x:-50
         },{
             x:0,
-            delay:i/8+2,
+            delay:i/8+delay,
             opacity:1,
             duration:1.5
         })

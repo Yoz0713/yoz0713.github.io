@@ -70,6 +70,13 @@
                 padding-bottom: 1vw;
                 border-bottom: 1px solid $gray_color;
                 margin-bottom: 3vw;
+                h3{
+               
+                        br{
+                            display: none;
+                        }
+                  
+                }
             }
             &-img{
                 width: 100%;
@@ -83,6 +90,7 @@
             &-para{
                 width: 100%;
                 margin: 6vw 0;
+           
             }
             &-icon{
                 display: flex;
@@ -128,7 +136,7 @@
     .newsInner{
         .first-page{
           height: 75vw;
-      
+         
         &-title{
             width:fit-content;
             position: absolute;
@@ -145,7 +153,140 @@
         }
         }
     }
-    @media all and (max-width:920px){
-       
+    @media all and (max-width:1024px){
+        .newsInner{
+            .first-page{
+              height: 85vw;
+             
+            &-title{
+                width:fit-content;
+                position: absolute;
+                bottom: 10vw;
+                right: 2.5vw;
+                z-index: 10;
+                h2{
+                    color: #fff;
+                    font-weight: 450;
+                   
+                   
+                }
+                .imgBox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -28vw;
+                    right: 4vw;
+                    width: 25vw;
+                    height: fit-content;
+                    img{
+                        top: 0;
+                        width: 100%;
+                    }
+                    .para{
+                        position: absolute;
+                        top: 3vw;
+                        h2,h4{
+                            color: #fff;
+                            line-height: 5vw;
+                            text-align: center;
+                        }
+                        h4{
+                            letter-spacing: 0.4vw;
+                            font-weight: normal;
+                          
+                        }
+                    }
+                 
+                    
+                }
+            }
+            }
+            .second-page{
+            
+                &-bottom{
+                 
+                    &-title{
+                        display: block;
+                        .date{
+                            width: fit-content;
+                            margin: 0 auto 5vw;
+                        }
+                        h3{
+                            br{
+                                display: block;
+                            }
+                        }
+                        margin-bottom: 5vw;
+                    }
+             
+                    &-para{
+                        width: 100%;
+                        margin: 6vw 0;
+                        p{
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                    &-icon{
+                    
+                        p{
+                            margin-right: 2.5vw;
+                        }
+                        > img{
+                            width: 4%;
+                            margin-right: 2.5vw;
+                        }
+                        .fb{
+                            width:calc(3.45% * 2 / 3);
+                        }
+                        a{
+                          flex: 0 0 25%;
+                        }
+                        button{
+                            display: flex;
+                            background-color: transparent;
+                            justify-content: center;
+                            align-items: center;
+                            width:100%;
+                            padding: 1vw 0.8vw;
+                            border: 1px solid $gray_color;
+                          img{
+                            width: 20%;
+                          }
+                        }
+                    }
+                }
+             
+              
+               
+            }
+           
+        }
+        @media all and (max-width:920px){
+            .newsInner{
+                .first-page{
+                  height: 150vw;
+                 
+                &-title{
+                    width:fit-content;
+                    position: absolute;
+                    bottom: 20vw;
+          
+                    z-index: 10;
+                    h2{
+                        color: #fff;
+                        font-weight: 450;
+                       
+                       
+                    }
+                
+                }
+                
+                }
+            }
+        }
     }
 }

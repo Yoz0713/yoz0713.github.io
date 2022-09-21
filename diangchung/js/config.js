@@ -219,6 +219,7 @@ function gsapStopWarning(){
 // hamburger
 
 let burger = document.querySelector(".hamburger")
+let burgerSpan = document.querySelector(".hamburger span")
 let menuMobile = document.querySelector(".menu")
 let menuMobileUl = document.querySelector(".menu ul")
 function bugerActive(){
@@ -226,11 +227,12 @@ function bugerActive(){
     menuMobile.classList.toggle("is-active2")
 
 }
-burger.addEventListener("click",()=>{
+burgerSpan.addEventListener("click",()=>{
     bugerActive()
 })
 // hamburger
+menuAnimation()
 gsapStopWarning()
 bannerTitleIn()
-menuAnimation()
+
 safariHacks();

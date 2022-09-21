@@ -33,19 +33,19 @@ function splitTextAnimation(wrap,delay,speed,trigger){
       
             gg.fromTo(item.childNodes,{
             
-                opacity:0,
+                autoAlpha:0,
                 
             },{
-                opacity:0,
+                autoAlpha:0,
                 
                 duration:delay,
              
             }).fromTo(item.childNodes,{
                 y:50,
-                opacity:0,
+                autoAlpha:0,
              
             },{
-                opacity:1,
+                autoAlpha:1,
                 
                 duration:0.6,
                 y:0,
@@ -91,19 +91,19 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
       
             gg.fromTo(item.childNodes,{
             
-                opacity:0,
+                autoAlpha:0,
                 
             },{
-                opacity:0,
+                autoAlpha:0,
                 
                 duration:delay,
              
             }).fromTo(item.childNodes,{
              
-                opacity:0
+                autoAlpha:0
             },{
                
-                opacity:1,
+                autoAlpha:1,
                 duration:1.5,
           
                 delay:i/speed/1.3
@@ -196,36 +196,36 @@ function secondPageAnimation(){
         
     });
     gg.fromTo(".second-page-left",{
-        opacity:0,
+        autoAlpha:0,
    
         y:50
     },{
         delay:1.2,
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     }).fromTo(".second-page-right-para-para1",{
-        opacity:0,
+        autoAlpha:0,
         x:15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
  
         duration:1.5
     },"<+0.5").fromTo(".second-page-right-para-para2",{
-        opacity:0,
+        autoAlpha:0,
         x:15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
  
         duration:1.5
     },"<")
-    let trigger = ".second-page-right";
+    let trigger = ".second-page";
    
 
-    splitTextAnimation(".second-page-right-para-para3 h3",2.9,40,trigger)
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",3.1,40,trigger)
+    splitTextAnimation(".second-page-right-para-para3 h3",2.4,40,trigger)
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",2.6,40,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
@@ -233,20 +233,17 @@ function secondPageAnimation(){
         }
     });
     gg2.fromTo(".second-page-right .readmore",{
-        opacity:0,
+        autoAlpha:0,
         x:15
     },{
         x:0,
-        opacity:1,
-        delay:4.5,
+        autoAlpha:1,
+        delay:3,
         duration:1.5
     }).fromTo(".second-page-bg img",{
-        opacity:0,
-       
+        autoAlpha:0,
     },{
-     
-        opacity:1,
- 
+        autoAlpha:1,
         duration:1.5
     },"<")
 }
@@ -263,16 +260,16 @@ function thirdPageAnimation(){
     })
 
     gg.fromTo(".third-page-top",{
-        opacity:0,
+        autoAlpha:0,
     },{
-        opacity:1,
+        autoAlpha:1,
         duration:0.5
     }).fromTo(".third-page-bottom-right",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.5")
 
@@ -283,11 +280,11 @@ function thirdPageAnimation(){
         }
     });
     gg2.fromTo(".third-page-bottom-left .readmore",{
-        opacity:0,
+        autoAlpha:0,
         x:-15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
         delay:2,
         duration:1.5
     })
@@ -298,11 +295,11 @@ function thirdPageAnimation(){
         }
     })
     gg3.fromTo(".third-page-bg",{
-        opacity:0,
+        autoAlpha:0,
      
     },{
        
-        opacity:1,
+        autoAlpha:1,
  
         duration:1.5
     })
@@ -327,18 +324,18 @@ function forthPageAnimation(){
     })
 
     gg.fromTo(".forth-page-left",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     }).fromTo(".forth-page-bg",{
-        opacity:0,
+        autoAlpha:0,
      
     },{
      
-        opacity:1,
+        autoAlpha:1,
         delay:1,
         duration:1.5
     })
@@ -356,32 +353,32 @@ function fifthPageAnimation(){
     })
 
     gg.fromTo(".fifth-page-right ",{
-        opacity:0,
+        autoAlpha:0,
         x:30
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     }).fromTo(".fifth-page-left-top-left .imgBox",{
-        opacity:0,
-        x:-30
+        autoAlpha:0,
+        x:-15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.5").fromTo(".fifth-page-left-bottom-right .imgBox",{
-        opacity:0,
-        x:-30
+        autoAlpha:0,
+        x:-15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.5").fromTo(".fifth-page .readmore",{
-        opacity:0,
-        x:-30
+        autoAlpha:0,
+        x:-15
     },{
         x:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+1")
     splitTextAnimation(".fifth-page-left-top-right-para .para1 h3",0.5,40,".fifth-page-left-top-right-para")
@@ -402,46 +399,46 @@ function sixthPageAnimation(){
     })
    
     gg.fromTo(".sixth-page-top-title",{
-        opacity:0,
+        autoAlpha:0,
        
     },{
      
-        opacity:1,
+        autoAlpha:1,
         duration:1
     }).fromTo(".sixth-page-bg-title",{
-        opacity:0,
+        autoAlpha:0,
     
     },{
    
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<").fromTo(".sixth-page-bottom :nth-child(1)",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.3").fromTo(".sixth-page-bottom :nth-child(2)",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.6").fromTo(".sixth-page-bottom :nth-child(3)",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.6").fromTo(".sixth-page-bottom a",{
-        opacity:0,
+        autoAlpha:0,
         y:50
     },{
         y:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+1.5")
     splitTextAnimationOpacity(".sixth-page-top-title p",0,50,".sixth-page")

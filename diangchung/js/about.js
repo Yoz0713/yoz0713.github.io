@@ -122,19 +122,20 @@ function secondPageAnimation(){
             start:"top 80%"
         }
     })
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-left",{
         opacity:0,
         y:50
     },{
         y:0,
-        delay:1.2,
+        delay:delay,
         opacity:1,
         duration:1.5,
 
     })
-    splitTextAnimation(".second-page-right-para-para1 h3",1.4,40,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para2 p",1.6,50,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",1.8,50,".second-page-right-para-para1")
+    splitTextAnimation(".second-page-right-para-para1 h3",delay+0.4,40,".second-page")
+    splitTextAnimationOpacity(".second-page-right-para-para2 p",delay+0.6,50,".second-page")
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",delay+0.8,50,".second-page")
 }
 secondPageAnimation()
 function thirdPageAnimation(){
@@ -214,8 +215,7 @@ function forthPageAnimation(){
     })
     gg2.fromTo(".forth-page-left-box h3",{
         opacity:0,
-        x:8,
-        y:-10
+       
     },{
         delay:0.5,
         opacity:1,

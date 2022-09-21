@@ -140,3 +140,247 @@
         }
     }
 }
+@media all and (max-width:1380px){
+    .service{
+        .first-page{
+          height: 75vw;
+          &-title{
+            width: fit-content;
+            position: absolute;
+            bottom: 10vw;
+            right: 2.5vw;
+            h2{
+                color: #fff;
+                font-weight: 450;
+             
+            }
+            .ch_text_xl{
+                & :nth-child(13){
+                    display: none;
+                }
+            }
+            .imgBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -13vw;
+                right: 4vw;
+                width: 12vw;
+                height: fit-content;
+                img{
+                    top: 0;
+                    width: 100%;
+                }
+                .para{
+                    position: absolute;
+                    top: 1.5vw;
+                    h2,h4{
+                        color: #fff;
+                        line-height: 2.4vw;
+                        text-align: center;
+                    }
+                    h4{
+                        letter-spacing: 0.25vw;
+                        font-weight: normal;
+          
+                    }
+                }
+             
+                
+            }
+        }
+        }
+    }
+ 
+    @media all and (max-width:1024px){
+        .service{
+            .first-page{
+                width: 100%;
+                height:80vw;
+                position: relative;
+       
+         
+                &-title{
+                    width: fit-content;
+                    position: absolute;
+                    bottom: 14vw;
+                    right: 2.5vw;
+                    h2{
+                        color: #fff;
+                        font-weight: 450;
+                     
+                    }
+                
+                    .imgBox{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -28vw;
+                        right: 4vw;
+                        width: 25vw;
+                        height: fit-content;
+                        img{
+                            top: 0;
+                            width: 100%;
+                        }
+                        .para{
+                            position: absolute;
+                            top: 3vw;
+                            h2,h4{
+                                color: #fff;
+                                line-height: 5vw;
+                                text-align: center;
+                            }
+                            h4{
+                                letter-spacing: 0.4vw;
+                                font-weight: normal;
+                              
+                            }
+                        }
+                     
+                        
+                    }
+                }
+                
+            }
+            .second-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                width:85%;
+                margin: 0 auto 15vw;
+                height: fit-content;
+              
+                &-left{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex: 0 0 100%;
+                    height: fit-content;
+                    padding-top:5.2vw;
+                    .imgBox{
+                        position:relative;
+                        height: fit-content;
+                        width: 100%;
+                        left:0;
+                        bottom: 0;
+                    }
+                }
+                &-right{
+                    display: flex;
+                    flex-direction: column;
+                   
+             
+                    height:fit-content;
+                    padding-top:5.2vw;
+                    &-box{
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 4.7vw;
+                        width: 100%;
+                        flex-wrap:wrap;
+                        
+                        .box1{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex: 0 0 49%;
+                            border: 1px solid $gray_color;
+                            padding:1.5vw 0 3vw;
+                            margin-right: 0;
+                            margin-bottom: 1.5vw;
+                            img{
+                                width: 18%;
+                                margin: 1vw 0 1vw;
+                               flex: 0 0 30%;
+                            }
+                            h2{
+                                text-align: center;
+                                font-size: 3.5vw;
+                                letter-spacing: 0.3vw;
+                                margin-bottom: 2vw;
+                                color: #383735;
+                            }
+                            p{
+                                text-align: center;
+                            }
+                        }
+                        & :nth-child(4n){
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &-bg{
+                    position: absolute;
+                    right: -13%;
+                    bottom: -18vw;
+                    width: 17%;
+                    z-index: 1;
+                    transform: scale(1.3,1.1);
+                }
+            }
+        }
+        @media all and (max-width:920px){
+            .service{
+                .first-page{
+                    width: 100%;
+                    height:155vw;
+                    position: relative;
+           
+             
+                    &-title{
+                        width: fit-content;
+                        position: absolute;
+                        bottom: 25vw;
+                        right: 2.5vw;
+                        h2{
+                            color: #fff;
+                            font-weight: 450;
+                         
+                        }
+                    
+                        .imgBox{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -28vw;
+                            right: 4vw;
+                            width: 25vw;
+                            height: fit-content;
+                            img{
+                                top: 0;
+                                width: 100%;
+                            }
+                            .para{
+                                position: absolute;
+                                top: 3vw;
+                                h2,h4{
+                                    color: #fff;
+                                    line-height: 5vw;
+                                    text-align: center;
+                                }
+                                h4{
+                                    letter-spacing: 0.4vw;
+                                    font-weight: normal;
+                                  
+                                }
+                            }
+                         
+                            
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

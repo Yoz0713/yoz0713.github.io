@@ -148,7 +148,7 @@
     .news{
         .first-page{
           height: 75vw;
-      
+        
         &-title{
             width:fit-content;
             position: absolute;
@@ -165,7 +165,162 @@
         }
         }
     }
-    @media all and (max-width:920px){
+    @media all and (max-width:1024px){
+        .news{
+            .first-page{
+              height: 80vw;
+            
+            &-title{
+                width:fit-content;
+                position: absolute;
+                bottom: 10vw;
+                
+                z-index: 10;
+                h2{
+                    color: #fff;
+                    font-weight: 450;
+                   
+                   
+                }
+                .imgBox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: -28vw;
+                    right: 4vw;
+                    width: 25vw;
+                    height: fit-content;
+                    img{
+                        top: 0;
+                        width: 100%;
+                    }
+                    .para{
+                        position: absolute;
+                        top: 3vw;
+                        h2,h4{
+                            color: #fff;
+                            line-height: 5vw;
+                            text-align: center;
+                        }
+                        h4{
+                            letter-spacing: 0.4vw;
+                            font-weight: normal;
+                          
+                        }
+                    }
+                 
+                    
+                }
+            }
+            }
+            .second-page{
+                display: flex;
        
+                width: 85%;
+                margin: 0 auto 10vw;
+                height: fit-content;
+               
+                &-bottom{
+                    display: flex;
+             
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    padding-top:15vw;
+                    margin-bottom: 5vw;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            margin-bottom: 10vw;
+                            break-inside: avoid-column;
+                            .imgBox{
+                                position: relative;
+                                width: 100%;
+                                height:fit-content;
+                                z-index: 1;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                &::after{
+                                    display: block;
+                                    content: "";
+                                    position: absolute;
+                                    top: 12px;
+                                    left:-15px;
+                                    width: 100%;
+                                    height: 100%;
+                                    z-index: -1;
+                                    border: 1px solid #9F9F9F;
+                                }
+                            }
+                            h3{
+                                margin:0 0 2vw;
+                            }
+                            .news-date{
+                                margin: 5vw 0 1vw;
+                            }
+                            > p{
+                                width: 70%;
+                            }
+                            .readmore{
+                                display: flex;
+                                margin-top: 5vw;
+                                p{
+                                    width: fit-content;
+                                  
+                                }
+                                img{
+                                    width: 20%;
+                                   
+                                }
+                            }
+                        }
+                        .imgShort{
+                        
+                            .imgBox{
+                                position: relative;
+                                width: 100%;
+                                height: fit-content;
+                                z-index: 1;
+                            
+                            }
+                          
+                        }
+                    }
+                }
+              
+               
+            }
+        }
+        @media all and (max-width:920px){
+            .news{
+                .first-page{
+                  height: 150vw;
+                
+                &-title{
+                    width:fit-content;
+                    position: absolute;
+                   
+                    bottom: 20vw;
+                    z-index: 10;
+                    h2{
+                        color: #fff;
+                        font-weight: 450;
+                       
+                       
+                    }
+                   
+                }
+                }
+            }
+        }
     }
 }

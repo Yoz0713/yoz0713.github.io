@@ -518,6 +518,7 @@
                 position: absolute;
                 width:fit-content;
                 border-left: 1px solid #fff;
+                z-index: 15;
                 h3{
                     font-weight: 450;
                     color: #FFF;
@@ -791,7 +792,7 @@
                                 margin-bottom: 3vw;
                             }
                             p{
-                                width:60vw;
+                                width:100%;
                             }
                         }
                         .readmore{
@@ -811,7 +812,7 @@
                 &-bg{
                     position: absolute;
                     right: -13%;
-                    bottom: -5%;
+                    bottom: -18%;
                     width: 25%;
                   
                 }
@@ -907,19 +908,23 @@
                     align-items: flex-start;
                     justify-content: center;
                     flex: 0 0 40%;
+                    width: 100%;
                     &-para{
                   
-                        width:85%;
+                        width:100%;
                         h2{
                             margin-bottom: 1.5vw;
                         }
                         p{
                             text-align: justify;
-                            width: 88%;
+                            width: 100%;
                         }
                     }
                 }
-             
+                &-bg{
+                    width: 30%;
+                    bottom: -15vw;
+                }
             }
             .fifth-page{
                 display: flex;
@@ -1181,6 +1186,416 @@
                         }
                     }
                     
+                }
+            }
+            @media all and (max-width:480px){
+                .index{
+                    .first-page{
+                        width: 100%;
+                        position: relative;
+                        background-color: #000;
+                        height: 226vw;
+                     
+                        &-title{
+                            width:fit-content;
+                            position: absolute;
+                            bottom: 18vw;
+                            right: 2.5vw;
+                            z-index: 10;
+                            h2{
+                                color: #fff;
+                                font-weight: 450;
+                               
+                               
+                            }
+                            img{
+                                position: absolute;
+                                width: 18%;
+                                right: 0;
+                                bottom: 20vw;
+                            }
+                        }
+                        
+                    }
+                    .second-page{
+                        margin-bottom: 20vw;
+                        &-left{
+                        
+                            height: fit-content;
+                            .imgBox{
+                                &:after{
+                                    left: -10px;
+                                    top: 5px;
+                                }
+                            }
+                         
+                        }
+                        &-right{
+                        
+                            &-para{
+                                display: flex;
+                                flex-direction: row;
+                                height: fit-content;
+                                padding-top: 1.5vw;
+                                justify-content: flex-start;
+                                align-items: center;
+                                width: 100%;
+                                flex-wrap: wrap;
+                                &-para1{
+                                    flex: 0 0 30%;
+                                    
+                                    height: fit-content;
+                                    padding-left:1vw;
+                                    
+                                    border-left: 1px solid rgb(46, 46, 46);
+                                    .ch_text_m{
+                                        font-weight:600;
+                                        margin-top: 0.3vw;
+                                    }
+                                }
+                                &-para2{
+                                    display: flex;
+                                    flex: 0 0 70%;
+                                    height: fit-content;
+                                    align-items:flex-start;
+                                    order: -1;
+                                    h2{
+                                        font-weight: 600;
+                                        margin-right: 1.5vw;
+                                        color: #0E121D;
+                                    }
+                                    p{
+                                        font-weight: 600;
+                                        margin-top: 0.6vw;
+                                        line-height: 4.5vw;
+                                    }
+                                }
+                                &-para3{
+                                    margin: 5vw 0 ;
+                                    flex: 0 0 100%;
+                                    h3{
+                                        margin-bottom: 3vw;
+                                    }
+                                    p{
+                                        width:100%;
+                                    }
+                                }
+                                .readmore{
+                                    display: flex;
+                                    
+                                    p{
+                                        width: fit-content;
+                                      
+                                    }
+                                    img{
+                                        width: 20%;
+                                       
+                                    }
+                                }
+                            }
+                        }
+                        &-bg{
+                            position: absolute;
+                            right: -13%;
+                            bottom: -25%;
+                            width: 35%;
+                          
+                        }
+                    }
+                    .third-page{
+                   
+                     
+                        &-bottom{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        
+                            width: 100%;
+                            &-left{
+                                display: flex;
+                                flex-direction: column;
+                                
+                                align-items: flex-start;
+                                width: 100%;
+                           
+                                &-para{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    width: fit-content;
+                                    height: 100%;
+                                    padding-top: 1.5vw;
+                                    .readmore{
+                                        display: flex;
+                                        p{
+                                            width: fit-content;
+                                          
+                                        }
+                                        img{
+                                            width: 20%;
+                                           
+                                        }
+                                     
+                                    }
+                                    &-para2{
+                                        margin-top: 3vw;
+                                    }
+                                    &-para3{
+                                        margin: 3vw 0 5vw;
+                                        p{
+                                            br{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-right{
+                                width: 100%;
+                                order: -1;
+                                margin-bottom: 3vw;
+                                .imgBox{
+                                    &:after{
+                                        right: -10px;
+                                        top: 5px;
+                                    }
+                                }
+                            }
+                           
+                        }
+                        &-bg{
+                            left:55%;
+                            bottom: -10vw;
+                            position: absolute;
+                            width: 50%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .forth-page{
+                      
+                        &-left{
+                       
+                            .imgBox{
+                                &:after{
+                                    left: -10px;
+                                    top: 5px;
+                                }
+                            }
+                        }
+                        
+                     
+                    }
+                    .fifth-page{
+                   
+                        &-left{
+                            margin-bottom: 5vw;
+                            &-top{
+                        
+                                &-left{
+                                    flex: 0 0 100%;
+                                    margin-bottom: 5vw;
+                                    .imgBox{
+                                        &:after{
+                                            left: -10px;
+                                            top: 5px;
+                                        }
+                                    }
+                                }
+                          
+                            }
+                            &-bottom{
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                height:fit-content;
+                                margin-bottom: 5vw;
+                      
+                                &-right{
+                                    order: -1;
+                                    flex: 0 0 100%;
+                                    margin-bottom: 5vw;
+                                    .imgBox{
+                                        &:after{
+                                           right: -10px;
+                                            top: 5px;
+                                        }
+                                    }
+                                    &-left{
+                                        flex: 0 0 100%;
+                                        &-para{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            padding-top: 1vw;
+                                            width: 100%;
+                                            margin: 0;
+                                      
+                                            .readmore{
+                                                display: flex;
+                                                margin-top: 4.4vw;
+                                                p{
+                                                    width: fit-content;
+                                                  
+                                                }
+                                                img{
+                                                    width: 20%;
+                                                   
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                        &-right{
+                     
+                            flex: 0 0 100%;
+                            position: relative;
+                            overflow:visible;
+                            .imgBox{
+                                width: 100%;
+                                height: 100%;
+                                z-index: 2;
+                              
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }       
+                                &::before{
+                                    display: block;
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    mix-blend-mode: overlay;
+                                }
+                             
+                              
+                                &:hover::before{
+                                    width: 300%;
+                                    animation: glowingImage 2s linear forwards infinite;
+                                    height: 150%;
+                                    background: linear-gradient(45deg ,transparent 45%,rgba(255, 255, 255, 0.110) 51.5%, rgba(255, 255, 255, 0.110) 52%,rgba(255, 255, 255, 0.110) 52.5%, transparent 58%);
+                                    left: -200%;
+                                    bottom: -40%;
+                                 
+                                    background-repeat: no-repeat;
+                                    pointer-events: none;
+                                }       
+                            }
+                            .bg-title{
+                                pointer-events: none;
+                                padding-left: 1vw;
+                                left: 7%;
+                                top: 7%;
+                                position: absolute;
+                                width:fit-content;
+                                border-left: 1px solid #fff;
+                                h3{
+                                    font-weight: 450;
+                                    color: #FFF;
+                             
+                                }
+                                p{
+                                    color: #FFF;
+                                }
+                                img{
+                                    width: 20%;
+                                    top: 1.8vw;
+                                    right: 0;
+                                    position: absolute;
+                                }
+                             
+                            }
+                        }
+                    }
+                    .sixth-page{
+                   
+                
+                        &-bg-title{
+                            position: absolute;
+                            left: 0%;
+                            top: 17vw;
+                            font-weight: 600;
+                            color: #1D140D;
+                        }
+                        &-top{
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            margin-bottom: 25vw;
+                            h3{
+                                position: relative;
+                                text-align: center;
+                                &::after{
+                                    display: block;
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -1.2vw;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 50%;
+                                    height: 1px;
+                                    background-color: $gray_color;
+                                }
+                            }
+                        }
+                        &-bottom{
+                 
+                            width: 100%;
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+                             
+                                li{
+                                    width: 100%;
+                                    .news-date{
+                                        margin: 3vw 0;
+                                    }
+                                    .imgBox{
+                                        position: relative;
+                                        width: 100%;
+                                        margin-bottom: 5vw;
+                                        z-index: 2;
+                                  
+                                            &:after{
+                                                left: -10px;
+                                                top: 5px;
+                                            }
+                                  
+                                   
+                                        
+                                    }
+                                    .para1{
+                                        margin-bottom: 2.5vw;
+                                    }
+                                    .para2{
+                                        width: 100%;
+                                        text-align: justify;
+                                        margin-bottom: 5vw;
+                                    }
+                                    .readmore{
+                                        display: flex;
+                                        
+                                        p{
+                                            width: fit-content;
+                                          
+                                        }
+                                        img{
+                                            width: 20%;
+                                           
+                                        }
+                                    }
+                                }
+                                & > :not(:last-child){
+                                    margin-bottom: 12vw;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

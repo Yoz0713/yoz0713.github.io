@@ -201,6 +201,9 @@ footer{
         font-size: 1vw;
         letter-spacing: 0.12vw;
         color:#3f3d3e;
+        br{
+            display: none;
+        }
     }
 }
 
@@ -288,20 +291,15 @@ button{
     position: fixed;
     width: 100vw;
     left: 0;
-    right: 0;
+   
     z-index: 200;
     .hamburger-box{
         position: absolute;
         right: 5vw;
         top: 3vw;
         .hamburger-inner{
-            background-color: #fff;
-            &::after{
-                background-color: #fff;
-            }
-            &::before{
-                background-color: #fff;
-            }
+           
+           
         }
     }
 }
@@ -310,7 +308,7 @@ button{
    
     .word_level{
         .date{
-            font-size:2vw;
+            font-size:2.4vw;
             letter-spacing: 0.2vw;
             line-height: 4vw;
             font-weight: 600;
@@ -339,7 +337,7 @@ button{
         }
         .ch_text_s{
             font-size: 2.7vw;
-            letter-spacing: 0.4vw;
+            letter-spacing: 0.8vw;
             line-height: 4vw;
             font-family: $para_word_family;
             color:$gray_color ;
@@ -347,7 +345,7 @@ button{
         
        
         .ch_text_xs{
-            font-size: 2vw;
+            font-size: 2.3vw;
             letter-spacing:0.15vw;
             line-height: 1.5vw;
             color: #1b2026;
@@ -356,7 +354,7 @@ button{
         }
        
         .en_text_xl{
-            font-size: 2.4vw;
+            font-size:4.5vw;
             font-weight: 600;
             letter-spacing: 0.2vw;
             font-family: $title_word_family;
@@ -376,8 +374,8 @@ button{
             color: $ch_text_xs_color;
         }
         .en_text_xs{
-            font-size: 0.95vw;
-            letter-spacing: 0.5vw;
+            font-size: 2vw;
+            letter-spacing: 0.4vw;
             font-family: $title_word_family;
             color: $ch_text_xs_color;
         }
@@ -398,6 +396,9 @@ button{
         letter-spacing: 0.2vw;
         color:#3f3d3e;
         line-height: 4vw;
+        br{
+            display: block;
+        }
     }
     }
     a{
@@ -428,7 +429,7 @@ button{
     .menu{
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         left: 100%;
         top: 0;
 
@@ -446,7 +447,7 @@ button{
             justify-content: space-between;
             width: 80%;
             height: 80%;
-            margin-top: 15vw;
+            
          
             li{
                 display: flex;
@@ -462,14 +463,14 @@ button{
                     position: relative;
                     .ch_text{
                         text-align: center;
-                        font-size: 4vw;
+                        font-size: 3.5vw;
                         letter-spacing: 0.8vw;
                         color: #f6f3ef;
                         font-family: $title_word_family;
                     }
                     .en_text{
                         text-align: center;
-                        font-size:3vw;
+                        font-size:2.5vw;
                         color:$gray_color;
                         letter-spacing: 0.5vw;
                         font-family: $title_word_family;
@@ -544,5 +545,104 @@ button{
     .is-active2{
         
        left: 0;
+ 
     }
+    @media all and (max-width:480px){
+        .word_level{
+            .date{
+                font-size:2.4vw;
+                letter-spacing: 0.2vw;
+                line-height: 4vw;
+                font-weight: 600;
+                font-family: $para_word_family;
+                color:$ch_text_xs_color;
+            }
+            .ch_text_xl{
+                font-size: 6.5vw;
+                line-height:10vw;
+                letter-spacing: 0.6vw;
+                color: $black_color;
+                font-family: $title_word_family;
+            }
+            .ch_text_l{
+                font-size: 5.2vw;
+                letter-spacing:0.8vw;
+                font-weight:500;
+                font-family: $title_word_family;
+                color: $black_color;
+            }
+            .ch_text_m{
+                font-size: 4.5vw;
+                letter-spacing:0.8vw;
+                font-family: $title_word_family;
+                color: $black_color;
+            }
+            .ch_text_s{
+                font-size: 3.5vw;
+                letter-spacing: 0.8vw;
+                line-height: 5vw;
+                font-family: $para_word_family;
+                color:$gray_color ;
+            }
+            
+           
+            .ch_text_xs{
+                font-size: 2.8vw;
+                letter-spacing:0.3vw;
+                line-height: 1.5vw;
+                color: #1b2026;
+                font-family: $title_word_family;
+                color: $black_color;
+            }
+           
+            .en_text_xl{
+                font-size:4.5vw;
+                font-weight: 600;
+                letter-spacing: 0.2vw;
+                font-family: $title_word_family;
+                color: $black_color;
+            }
+            .en_text_m{
+                font-size: 4.81vw;
+                font-weight: 450;
+                letter-spacing: 0.3vw;
+                font-family: $title_word_family;
+                color: $black_color;
+            }
+            .en_text_s{
+                font-size: 3.5vw;
+                letter-spacing: 0.3vw;
+                font-family: $title_word_family;
+                color: $ch_text_xs_color;
+            }
+            .en_text_xs{
+                font-size: 2vw;
+                letter-spacing: 0.4vw;
+                font-family: $title_word_family;
+                color: $ch_text_xs_color;
+            }
+        }
+        a{
+     
+            .readmore{
+                justify-content: space-between;
+                width:30vw;
+                padding-bottom: 2vw;
+                p{
+                    font-size: 3.25vw;
+                    flex: 0 0 80%;
+                    letter-spacing: 0.4vw;
+                    line-height: 2.8vw;
+                    color: $gray_color;
+                
+                }
+              
+                &:hover img{
+                    animation: arrow 2s linear forwards infinite;
+                }
+                border-bottom: 1px solid #9F9F9F;
+            }
+        }
+    }
+    
 }

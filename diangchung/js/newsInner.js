@@ -63,12 +63,13 @@ function secondPageAnimation(){
         },
         
     });
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-bottom-title",{
         opacity:0,
         y:50
     },{
         y:0,
-        delay:1.2,
+        delay:delay,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-bottom .imgBox1",{
@@ -99,7 +100,7 @@ function secondPageAnimation(){
     let gg3 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-bottom-icon",
-            start:"top 80%",
+            start:"top bottom",
         },
         
     });
@@ -139,8 +140,8 @@ function secondPageAnimation(){
         opacity:1,
         duration:1.5
     },"<+0.1")
-    splitTextAnimationOpacity(".second-page-bottom-title p",2,50,".second-page-bottom")
-    splitTextAnimationOpacity(".second-page-bottom-title h3",2,50,".second-page-bottom")
+    splitTextAnimationOpacity(".second-page-bottom-title p",delay+0.8,50,".second-page-bottom")
+    splitTextAnimationOpacity(".second-page-bottom-title h3",delay+0.8,50,".second-page-bottom")
     splitTextAnimationOpacity(".second-page-bottom .para1 p",0,50,".second-page-bottom .para1")
     splitTextAnimationOpacity(".second-page-bottom .para2 p",0,50,".second-page-bottom .para2")
 }

@@ -121,12 +121,13 @@ function secondPageAnimation(){
         },
         
     });
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-left",{
         opacity:0,
         y:50
     },{
         y:0,
-        delay:1.2,
+        delay:delay,
         opacity:1,
         duration:1.5
     }).fromTo(".second-page-right-para-para1",{
@@ -134,7 +135,7 @@ function secondPageAnimation(){
     },{
         opacity:1,
         duration:1.5
-    },"<+1").fromTo(".second-page-right .readmore",{
+    },"<+0.3").fromTo(".second-page-right .readmore",{
         opacity:0,
    
         x:-15
@@ -143,10 +144,10 @@ function secondPageAnimation(){
         x:0,
         opacity:1,
         duration:1.5
-    },"<+1.2")
+    },"<+1.7")
 
-    splitTextAnimation(".second-page-right-para-para2 h3",2.5,40,".second-page-right")
-    splitTextAnimationOpacity(".second-page-right-para-para2 p",2.8,50,".second-page-right")
+    splitTextAnimation(".second-page-right-para-para2 h3",1.5,40,".second-page")
+    splitTextAnimationOpacity(".second-page-right-para-para2 p",1.7,50,".second-page")
 }
 secondPageAnimation()
 
