@@ -656,7 +656,7 @@ button{
                 position: absolute;
                 height: 15vw;
                 left: 5vw;
-                bottom:25vw;
+                bottom:20vw;
                
               
                 }
@@ -665,6 +665,21 @@ button{
         }
         .is-active{
             left: 0;
+        }
+        .hamburger{
+            
+            .hamburger-box{
+               
+                position: absolute;
+                right: 3vw;
+                top: 0vw;
+                width: 15vw;
+                height: 15vw;
+                .hamburger-inner{
+                    margin-left: 5vw;
+                    margin-bottom: 5vw;
+                }
+            }
         }
     }
     

@@ -163,11 +163,11 @@ function indexBanner1In(){
 
     gg.fromTo(".banner1",{
         transform:"scale(1)",
-        filter:"brightness(0.5)"
+      
     },{
         transform:"scale(1.09)",
         duration:7,
-        filter:"brightness(1)"
+      
         
     })
 }
@@ -195,12 +195,13 @@ function secondPageAnimation(){
         },
         
     });
+    let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-left",{
         autoAlpha:0,
    
         y:50
     },{
-        delay:1.2,
+        delay:delay,
         y:0,
         autoAlpha:1,
         duration:1.5
@@ -224,8 +225,8 @@ function secondPageAnimation(){
     let trigger = ".second-page";
    
 
-    splitTextAnimation(".second-page-right-para-para3 h3",2.4,40,trigger)
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",2.6,40,trigger)
+    splitTextAnimation(".second-page-right-para-para3 h3",delay+1.2,40,trigger)
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",delay+1.4,40,trigger)
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".second-page-right",
