@@ -104,7 +104,10 @@ function bannerTitleIn(){
     let str;
     const bannerTitle = document.querySelector(".first-page .ch_text_xl")
     const pathname = location.pathname
-    let a = /(\/[a-z]{0,20}.html)$/.exec(pathname)
+   
+    let a = /(\/[a-zA-Z]{0,25}.html)$/.exec(pathname)
+
+  
     switch (a[0]){
         case  "/index.html":{
             str = `優雅是一種態度，從一而終的追求至美，永恆在時代中綻放。`
@@ -212,59 +215,22 @@ function safariHacks() {
 function gsapStopWarning(){
     gsap.config({ nullTargetWarn: false });
 }
+
+// hamburger
+
+let burger = document.querySelector(".hamburger")
+let menuMobile = document.querySelector(".menu")
+let menuMobileUl = document.querySelector(".menu ul")
+function bugerActive(){
+    burger.classList.toggle("is-active")
+    menuMobile.classList.toggle("is-active2")
+
+}
+burger.addEventListener("click",()=>{
+    bugerActive()
+})
+// hamburger
 gsapStopWarning()
 bannerTitleIn()
 menuAnimation()
 safariHacks();
-// function coverBlueAnimation(){
-//     let coverBlue = document.querySelectorAll(".cover-blue")
-//     coverBlue.forEach((item)=>{
-//         let gg = gsap.timeline({
-//             scrollTrigger:{
-//                 trigger:item,
-//                 start:"top bottom",
-                
-//             },
-      
-//         })
-//         gg.fromTo(item,{
-//            height:"100%"
-//         },{
-//             height:"0",
-//             delay:0.8,
-//             duration:1,
-        
-//         }).fromTo(item,{
-            
-//          },{
-//             opacity:0,
-//             duration:0.001
-//          },)
-//     })
-   
-// }
-// coverBlueAnimation()
-// function coverBlueAnimation2(){
-//     let coverBlue = document.querySelectorAll(".cover-blue2")
-//     coverBlue.forEach((item)=>{
-//         let gg = gsap.timeline({
-//             scrollTrigger:{
-//                 trigger:item,
-//                 start:"top bottom",
-                
-//             },
-      
-//         })
-//         gg.fromTo(item,{
-//            height:"100%",
-//            opacity:1
-//         },{
-//             height:"0",
-//             delay:2.5,
-//             duration:1,
-        
-//         })
-//     })
-   
-// }
-// coverBlueAnimation2()

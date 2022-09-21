@@ -143,3 +143,28 @@
        
 
 }
+@media all and (max-width:1380px){
+    .blog{
+        .first-page{
+          height: 75vw;
+        
+        &-title{
+            width:fit-content;
+            position: absolute;
+            bottom: 8.5vw;
+  
+            z-index: 10;
+            h2{
+                color: #fff;
+                font-weight: 450;
+               
+               
+            }
+           
+        }
+        }
+    }
+    @media all and (max-width:920px){
+       
+    }
+}

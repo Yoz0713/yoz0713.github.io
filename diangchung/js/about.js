@@ -132,9 +132,9 @@ function secondPageAnimation(){
         duration:1.5,
 
     })
-    splitTextAnimation(".second-page-right-para-para1 h3",1.6,40,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para2 p",1.8,50,".second-page-right-para-para1")
-    splitTextAnimationOpacity(".second-page-right-para-para3 p",2,50,".second-page-right-para-para1")
+    splitTextAnimation(".second-page-right-para-para1 h3",1.4,40,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para2 p",1.6,50,".second-page-right-para-para1")
+    splitTextAnimationOpacity(".second-page-right-para-para3 p",1.8,50,".second-page-right-para-para1")
 }
 secondPageAnimation()
 function thirdPageAnimation(){

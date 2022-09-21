@@ -283,15 +283,36 @@ button{
         animation: arrow 2s linear forwards infinite;
     }
 }
+.hamburger{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    .hamburger-box{
+        position: absolute;
+        right: 5vw;
+        top: 3vw;
+        .hamburger-inner{
+            background-color: #fff;
+            &::after{
+                background-color: #fff;
+            }
+            &::before{
+                background-color: #fff;
+            }
+        }
+    }
+}
 
-
-@media all and (max-width:920px){
-  
+@media all and (max-width:1024px){
+   
     .word_level{
         .date{
-            font-size:1vw;
-            letter-spacing: 0.1vw;
-            line-height: 2.4vw;
+            font-size:2vw;
+            letter-spacing: 0.2vw;
+            line-height: 4vw;
             font-weight: 600;
             font-family: $para_word_family;
             color:$ch_text_xs_color;
@@ -304,29 +325,29 @@ button{
             font-family: $title_word_family;
         }
         .ch_text_l{
-            font-size: 1.8vw;
+            font-size: 4vw;
             letter-spacing:0.25vw;
             font-weight:500;
             font-family: $title_word_family;
             color: $black_color;
         }
         .ch_text_m{
-            font-size: 1.6vw;
-            letter-spacing:0.25vw;
+            font-size: 3.5vw;
+            letter-spacing:0.4vw;
             font-family: $title_word_family;
             color: $black_color;
         }
         .ch_text_s{
-            font-size: 1.2vw;
-            letter-spacing: 0.2vw;
-            line-height: 2vw;
+            font-size: 2.7vw;
+            letter-spacing: 0.4vw;
+            line-height: 4vw;
             font-family: $para_word_family;
             color:$gray_color ;
         }
         
        
         .ch_text_xs{
-            font-size: 1.1vw;
+            font-size: 2vw;
             letter-spacing:0.15vw;
             line-height: 1.5vw;
             color: #1b2026;
@@ -342,15 +363,15 @@ button{
             color: $black_color;
         }
         .en_text_m{
-            font-size: 1.8vw;
+            font-size: 3.7vw;
             font-weight: 450;
-            letter-spacing: 0.2vw;
+            letter-spacing: 0.3vw;
             font-family: $title_word_family;
             color: $black_color;
         }
         .en_text_s{
-            font-size: 1vw;
-            letter-spacing: 0.1vw;
+            font-size: 2.5vw;
+            letter-spacing: 0.2vw;
             font-family: $title_word_family;
             color: $ch_text_xs_color;
         }
@@ -360,5 +381,168 @@ button{
             font-family: $title_word_family;
             color: $ch_text_xs_color;
         }
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#D0D0D0 ;
+    height: 8vh;
+    position: relative;
+    z-index: 15;
+    p{
+        text-align: center;
+        font-size: 2.3vw;
+        width: 60vw;
+        letter-spacing: 0.2vw;
+        color:#3f3d3e;
+        line-height: 4vw;
+    }
+    }
+    a{
+     
+        .readmore{
+            justify-content: space-between;
+            width:20vw;
+            padding-bottom: 2vw;
+            p{
+                font-size: 2.5vw;
+                flex: 0 0 80%;
+                letter-spacing: 0.2vw;
+                line-height: 2.8vw;
+                color: $gray_color;
+            
+            }
+          
+            &:hover img{
+                animation: arrow 2s linear forwards infinite;
+            }
+            border-bottom: 1px solid #9F9F9F;
+        }
+    }
+    .hamburger{
+        display: block;
+        z-index: 201;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        left: 100%;
+        top: 0;
+
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #08101dfb;
+        transition: 1s;
+        z-index: 200;
+    
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 80%;
+            margin-top: 15vw;
+         
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                padding: 1.6vw 0 0;
+                
+                .menu-box{
+                
+                    position: relative;
+                    .ch_text{
+                        text-align: center;
+                        font-size: 4vw;
+                        letter-spacing: 0.8vw;
+                        color: #f6f3ef;
+                        font-family: $title_word_family;
+                    }
+                    .en_text{
+                        text-align: center;
+                        font-size:3vw;
+                        color:$gray_color;
+                        letter-spacing: 0.5vw;
+                        font-family: $title_word_family;
+                    }
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 6vw;
+                        height: 6vw;
+                        background-image: url(../img/SVG/tree.svg);
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        right: -8vw;
+                        top: 0;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                    &:hover::after{
+                        opacity: 1;
+                        animation: updown 2s linear forwards infinite;
+                    }
+
+    
+                }
+                .menu-portfolio::after{
+                    right: -1vw;
+                }
+            }
+            .menu-logo{
+                display: flex;
+          
+                justify-content: flex-end;
+                align-items:flex-end;
+                overflow: hidden;
+                width: 30%;
+                padding: 0;
+                position: absolute;
+                height: 15vw;
+                left: 5vw;
+                bottom:5vw;
+                a{
+                    display: flex;
+          
+                    justify-content: flex-end;
+                    align-items:flex-end;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        margin-bottom: 0.5vw;
+                        filter: brightness(1.6);
+                    }
+                    .star{
+                        animation: shining 2s linear forwards infinite;
+                        margin: 0;
+                        position: absolute;
+                        width: 2vw;
+                        left: 30%;
+                        top: 4vw;
+                    }
+        
+                    &:hover .star{
+                       filter: brightness(1.4);
+                        animation: flowstar 2.5s linear forwards infinite;
+                    }
+                }
+              
+            }
+        }
+      
+    }
+    .is-active2{
+        
+       left: 0;
     }
 }
