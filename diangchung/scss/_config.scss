@@ -358,7 +358,7 @@ button{
         justify-content: center;
         align-items: center;
         position: absolute;
-        background-color: #000;
+        background-color:#224177 ;
         border-radius: 50%;
         width: 10vw;
         height: 10vw;
@@ -616,10 +616,7 @@ button{
                     overflow: hidden;
                     width: 30%;
                     padding: 0;
-                    position: absolute;
-                    height: 15vw;
-                    left: 5vw;
-                    bottom:5vw;
+                    margin-bottom: 6.5vw;
                     a{
                         display: flex;
               
@@ -630,7 +627,7 @@ button{
                         img{
                             width: 100%;
                             margin-bottom: 0.5vw;
-                            filter: brightness(1.6);
+                            filter: brightness(6);
                         }
                         .star{
                             animation: shining 2s linear forwards infinite;
@@ -638,7 +635,7 @@ button{
                             position: absolute;
                             width: 2vw;
                             left: 30%;
-                            top: 4vw;
+                            top: 6vw;
                         }
             
                         &:hover .star{
@@ -776,21 +773,23 @@ button{
                 }
                 .menu{
                     ul{
-                       
+                        height: 70%;
+                        margin-bottom: 20vw;
                         .menu-logo{
                         display: flex;
-                  
+                        
                         justify-content: flex-end;
                         align-items:flex-end;
                         overflow: hidden;
-                        width: 30%;
+                        width: 35%;
                         padding: 0;
-                        position: absolute;
-                        height: 15vw;
-                        left: 5vw;
-                        bottom:20vw;
-                       
-                      
+                        margin-bottom: 12vw;
+                            a{
+                                .star{
+                                    top: 12vw;
+                                }
+                            }
+                           
                         }
                     }
               
@@ -825,15 +824,15 @@ button{
                     }
                     .loading{
                         svg{
-                            transform: rotate(-90deg) scale(0.9);
+                            transform: rotate(-90deg) scale(1.2);
                         }
                         .imgBox{
                         
-                            width: 26vw;
-                            height: 26vw;
+                            width: 35vw;
+                            height: 35vw;
                        
                             img{
-                                width: 22vw;
+                                width: 30vw;
                                 filter: brightness(10);
                                 margin-bottom: 1.5vw;
                       

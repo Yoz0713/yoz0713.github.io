@@ -95,8 +95,8 @@
       width: 25px;
       height: 3px;
      
-      background: linear-gradient(45deg,rgb(92, 145, 224) 0% , rgb(1, 45, 99) 70%);
-      
+      background-color: #fff;
+      box-shadow: 0 0 0px 1.5px rgba(0, 0, 0, 0.423);
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
