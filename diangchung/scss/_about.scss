@@ -773,6 +773,296 @@
                     
                 }
             }
+            @media all and (max-width:480px){
+                .about{
+                    .first-page{
+                        width: 100%;
+                        height:190vw;
+               
+                        &-title{
+                            width: fit-content;
+                            position: absolute;
+                            bottom: 18vw;
+                            right: 2.5vw;
+                            h2{
+                                color: #fff;
+                                font-weight: 450;
+                              
+                            }
+                            .imgBox{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: -40vw;
+                                right: 4vw;
+                                width: 35vw;
+                                height: fit-content;
+                                img{
+                                    top: 0;
+                                    width: 100%;
+                                }
+                                .para{
+                                    position: absolute;
+                              
+                                    h2,h4{
+                                        color: #fff;
+                                        line-height: 7vw;
+                                        text-align: center;
+                                    }
+                                    h4{
+                                        letter-spacing: 0.4vw;
+                                        font-weight: normal;
+                                      
+                                    }
+                                }
+                             
+                                
+                            }
+                        }
+                        
+                    }
+                    .second-page{
+                 
+                        &-left{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            height: fit-content;
+                            padding-top:5.2vw;
+                            .imgBox{
+                                position: relative;
+                                height:100;
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                                &:after{
+                                    right: -10px;
+                                    top:5px
+                                }
+                              
+                            }
+                        }
+                    }
+                   
+                    .third-page{
+                  
+                        &-right{
+                            display: flex;
+                            order: -1;
+                            align-items: center;
+                            flex: 0 0 100%;
+                            .imgBox{
+                                &:after{
+                                    right: -10px;
+                                    top:5px
+                                }
+                            }
+                        }
+                     
+                        &-bg{
+                            position: absolute;
+                            width: 65%;
+                            left: -9%;
+                            bottom: -15vw;
+                        }
+                    }
+                    .forth-page{
+                        display: flex;
+                        flex-direction: column;
+                        width: 85%;
+                        height: fit-content;
+                        margin:0 auto 10vw; 
+                        justify-content: space-between;
+                        align-items: center;
+                        &-left{
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            flex: 0 0 100%;
+                            height: fit-content;
+                            margin: 20vw auto 35vw;
+                            &-box{
+                                width: fit-content;
+                                h3{
+                                    font-size: 4vw;
+                                    letter-spacing:0.25vw;
+                                    font-weight:500;
+                                    font-family: $title_word_family;
+                                    color: $black_color;
+                                }
+                                img{
+                                
+                                    width: 100%;
+                               
+                           
+                                }
+                                .box{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 50%;
+                                    width: 14vw;
+                                    height: 14vw;
+                                    border: 1px solid $blue_color;
+                                    position: absolute;
+                                }
+                             
+                                & :nth-child(2){
+                                    top: -28vw;
+                                    left: 7%;
+                                    img{
+                                        width: 55%;
+                                    }
+                                }
+                                & :nth-child(3){
+                                   
+                                    top: -4.3vw;
+                                    left: 150%;
+                                    img{
+                                        width: 50%;
+                                    }
+                                }
+                                & :nth-child(4){
+                                    top: -4vw;
+                                    right:25vw;
+                                    img{
+                                        width: 50%;
+                                    }
+                                  
+                                }
+                                & :nth-child(5){
+                                    top: 20vw;
+                                    left: 1.6vw;
+                                    img{
+                                        width: 40%;
+                                    }
+                                  
+                                }
+                                
+                                .line{
+                                    position: absolute;
+                                   
+                                    .straight{
+                                        width: 1.2%;
+                                        transform: scaleY(0.3) translate(8.3vw,-11.5vw);
+                                     }
+                                     .straight2{
+                                        width: 1.2%;
+                                        transform: scaleY(0.3) translate(7.7vw,-98vw);
+                                     }
+                                     .left-bottom{
+                                        width: 88%;
+                                        position: absolute;
+                                        left: -11.4vw;
+                                        top: -21.5vw;
+                                     }
+                                     .right-bottom{
+                                        width: 90.5%;
+                                        position: absolute;
+                                        right: -11.4vw;
+                                        top: -21.8vw;
+                                     }
+                                     .path-left{
+                                        width: 85%;
+                                        position: absolute;
+                                        left: -14.5vw;
+                                        top: 6vw;
+                                     }
+                                     .path-right{
+                                        width: 87%;
+                                        position: absolute;
+                                        left: 18vw;
+                                        bottom: 6.7vw;
+                                     }
+                                }
+                            
+                     
+                            }
+                           
+                        }
+                        &-right{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex: 0 0 40%;
+                            height: fit-content;
+                            ul{
+                                width: 100%;
+                                margin: 0 auto;
+                                li{
+                               
+                                    .para1{
+                                        display: flex;
+                                        margin-bottom: 3vw;
+                                        img{
+                                            width: 7%;
+                                            margin-right: 1.5vw;
+                                        }
+                                    }
+                                    .para2{
+                                        p{
+                                            letter-spacing: 0.8vw;
+                                            line-height: 7vw;
+                                        }
+                                    }
+                                
+                                }
+                                & > :not(:last-child){
+                                    margin-bottom: 5vw;
+                                }
+                            }
+                        }
+                    }
+                    .fifth-page{
+                        width: 85%;
+                        height: fit-content;
+                        margin: 0 auto 15vw;
+                        position: relative;
+                        &-top{
+                            width: 100%;
+                            .imgBox{
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                }
+                               
+                            }
+                        }
+                        &-bottom{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            width: 100%;
+                            &-para{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                width: 100%;
+                                h2{
+                                    margin: 3vw 0;
+                                }
+                                p{
+                                    line-height: 5.5vw;
+                                }
+                            }
+                            
+                        }
+                        &-bg{
+                            position: absolute;
+                            right: -8.9%;
+                            bottom: -20vw;
+                            width:18%;
+                          
+                        }
+                    }
+                }
+            }
         }
     }
 }

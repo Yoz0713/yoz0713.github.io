@@ -397,7 +397,7 @@ button{
     p{
         text-align: center;
         font-size: 2.3vw;
-        width: 60vw;
+        width: 100%;
         letter-spacing: 0.2vw;
         color:#3f3d3e;
         line-height: 4vw;
@@ -686,6 +686,16 @@ button{
                 }
             }
         }
+        footer{
+         
+            p{
+     
+                letter-spacing: 0.4vw;
+                color:#3f3d3e;
+                line-height: 5vw;
+             
+            }
+            }
     }
     
 }

@@ -348,26 +348,34 @@ forthPageAnimation()
 function fifthPageAnimation(){
     let gg = gsap.timeline({
         scrollTrigger:{
-            trigger:".fifth-page",
+            trigger:".fifth-page-right",
             start:"top 80%",
         }
     })
-
-    gg.fromTo(".fifth-page-right ",{
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".fifth-page-left",
+            start:"top 80%",
+        }
+    })
+    gg.fromTo(".fifth-page-right",{
         autoAlpha:0,
         x:30
     },{
         x:0,
         autoAlpha:1,
         duration:1.5
-    }).fromTo(".fifth-page-left-top-left .imgBox",{
+    })
+    
+    gg2.fromTo(".fifth-page-left-top-left .imgBox",{
         autoAlpha:0,
         x:-15
     },{
+        delay:0.5,
         x:0,
         autoAlpha:1,
         duration:1.5
-    },"<+0.5").fromTo(".fifth-page-left-bottom-right .imgBox",{
+    }).fromTo(".fifth-page-left-bottom-right .imgBox",{
         autoAlpha:0,
         x:-15
     },{

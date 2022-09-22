@@ -340,6 +340,108 @@
                 }
               
             }
+            @media all and (max-width:480px){
+                .contact{
+                    .first-page{
+                        width: 100%;
+                        height:190vw;
+                        position: relative;
+               
+                 
+                        &-title{
+                            width: fit-content;
+                            position: absolute;
+                            bottom: 18vw;
+                            right: 2.5vw;
+                          
+                            .imgBox{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: -40vw;
+                                right: 4vw;
+                                width: 35vw;
+                                height: fit-content;
+                                img{
+                                    top: 0;
+                                    width: 100%;
+                                }
+                                .para{
+                                    top: 5vw;
+                                    position: absolute;
+                              
+                                    h2,h4{
+                                        color: #fff;
+                                        line-height: 7vw;
+                                        text-align: center;
+                                    }
+                                    h4{
+                                        letter-spacing: 0.4vw;
+                                        font-weight: normal;
+                                      
+                                    }
+                                }
+                             
+                                
+                            }
+                        }
+                        
+                    }
+                    .second-page{
+                     
+                        &-right{
+
+                            form{
+                           
+                                .form-box{
+                                    display: flex;
+                                   
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    margin-bottom: 5vw;
+                                    p{
+                                        flex: 0 0 25%;
+                                  
+                                    }
+                                    input{
+                                        flex: 0 0 75%;
+                                        border: none;
+                                        border-bottom: 1px solid $gray_color;
+                                        outline: none;
+                                        padding: 1vw 1vw;
+                                        font-size: 4.5vw;
+                                        color: $gray_color;
+                                      
+                                    }
+                                    textarea{
+                                        flex: 0 0 75%;
+                                        padding: 1vw 1vw;
+                                        font-size: 4.5vw;
+                                        color: $gray_color;
+                                        margin-bottom: 5vw;
+                                        border: none;
+                                           border-bottom: 1px solid $gray_color;
+                                           outline: none;
+                                    }
+                                    
+                                }
+                                > input{
+                                    margin-top: 4vw;
+                                    font-size: 2.7vw;
+                                    color: $gray_color;
+                                    background-color: transparent;
+                                    padding: 1vw 6vw;
+                                    margin: 0;
+                                    border: 1px solid $gray_color;
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+            }
         }
     }
 }

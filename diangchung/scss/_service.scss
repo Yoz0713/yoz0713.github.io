@@ -385,6 +385,68 @@
                     
                 }
             }
+            @media all and (max-width:480px){
+                .service{
+                    .first-page{
+                        width: 100%;
+                        height:190vw;
+                        position: relative;
+               
+                 
+                        &-title{
+                            width: fit-content;
+                            position: absolute;
+                            bottom: 18vw;
+                            right: 2.5vw;
+                          
+                            .imgBox{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: -40vw;
+                                right: 4vw;
+                                width: 35vw;
+                                height: fit-content;
+                                img{
+                                    top: 0;
+                                    width: 100%;
+                                }
+                                .para{
+                                    top: 5vw;
+                                    position: absolute;
+                              
+                                    h2,h4{
+                                        color: #fff;
+                                        line-height: 7vw;
+                                        text-align: center;
+                                    }
+                                    h4{
+                                        letter-spacing: 0.4vw;
+                                        font-weight: normal;
+                                      
+                                    }
+                                }
+                             
+                                
+                            }
+                        }
+                        
+                    }
+                    .second-page{
+                       
+                        &-bg{
+                            position: absolute;
+                            right: -13%;
+                            bottom: -29vw;
+                            width: 25%;
+                            z-index: 1;
+                            transform: scale(1.3,1.1);
+                        }
+                    }
+                }
+            }
         }
     }
 }

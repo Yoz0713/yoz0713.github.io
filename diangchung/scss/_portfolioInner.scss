@@ -422,9 +422,13 @@
                             h2{
                                 margin-bottom: 1.5vw;
                             }
+                            p{
+                                line-height: 4.5vw;
+                                letter-spacing: 0.1vw;
+                            }
                         }
                         &-icon{
-                    
+                            
                             p{
                                 margin-right: 2.5vw;
                             }
@@ -776,6 +780,259 @@
                     
                 }
           
+            }
+            @media all and (max-width:480px){
+                .portfolioInner{
+                    width: 100%;
+                    .first-page{
+                        width: 100%;
+                        height:190vw;
+                        position: relative;
+                      
+                        
+                    }
+                    .second-page{
+               
+                        position: relative;
+                        width: 85%;
+                        margin: 0 auto 15vw;
+                        height: fit-content;
+                        
+                        &-top{
+                         
+                            width: 100%;
+                            margin-bottom: 12vw;
+                            padding-top:12vw;
+                            &-top{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 5vw;
+                                &-title{
+                                    flex: 0 0 50%;
+                                    h2{
+                                        margin-bottom: 1.5vw;
+                                    }
+                                    p{
+                                        line-height: 4.5vw;
+                                        letter-spacing: 0.4vw;
+                                    }
+                                }
+                                &-icon{
+                                    flex: 0 0 50%;
+                                    flex-wrap: wrap;
+                                    margin-top: 4vw;
+                                    p{
+                                        margin-right: 2.5vw;
+                                    }
+                                    > img{
+                                        width: 10%;
+                                        margin-right: 2.5vw;
+                                    }
+                                    .fb{
+                                        width:calc(3.45% /3 * 5);
+                                    }
+                                    a{
+                                        margin-top: 3vw;
+                                      flex: 0 0 58%;
+                                    }
+                                    button{
+                                        display: flex;
+                                        flex: 0 0 100%;
+                                        background-color: transparent;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width:100%;
+                                        padding: 1vw 0.8vw;
+                                        border: 1px solid $gray_color;
+                                      img{
+                                        width: 20%;
+                                      }
+                                    }
+                                }
+                            }
+                            &-bottom{
+                     
+                                ul{
+                              
+                                    li{
+                                        flex: 0 0 100%;
+                                     
+                                        p{
+                                            width: 100%;
+                                            border-bottom: 1px solid $gray_color;
+                                            padding:3vw 0;
+                                            color: $ch_text_xs_color;
+                                        }
+                                    
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        &-bottom{
+                
+                            &-para{
+                      
+                                h2{
+                                    
+                                    margin-bottom: 5vw;
+                                }
+                                p{
+                            
+                                }
+                            }
+                        }
+                       
+                    }
+                    .third-page{
+                   
+                        
+                        &-top{
+                         
+                           &-left{
+                                flex: 0 0 48%;
+                                .imgBox{
+                                    position: relative;
+                                    width: 100%;
+                                    z-index: 2;
+                                    img{
+                                        width: 100%;
+                                    }
+                                    &::after{
+                                        top: 0.8px;
+                                        left:-5px;
+                                    }
+                                }
+                            } 
+                            &-right{
+                                .imgBox{
+                                    position: relative;
+                                    width: 100%;
+                                    z-index: 2;
+                                    img{
+                                        width: 100%;
+                                    }
+                                    &::after{
+                                        top: 0.8px;
+                                        left:-5px;
+                                    }
+                                }
+                                flex: 0 0 48%;
+                            }
+                        }
+                       
+                    
+                    }
+                  
+                    .fifth-page{
+                    
+                     
+                        &-left{
+                            display: flex;
+                            align-items: center;
+                            flex: 0 0 100%;
+                            margin-bottom: 5vw;
+                            .imgBox{
+                                &:after{
+                                    left: -10px;
+                                    top: 5px;
+                                }
+                            }
+                        }
+                   
+                        
+                    }
+                    .sixth-page{
+                        &-bottom{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 100%;
+                          
+                            &-right{
+                                order: -1;
+                                width: 100%;
+                                margin-bottom: 5vw;
+                                .imgBox{
+                                    &:after{
+                                        right: -10px;
+                                        top: 5px;
+                                    }
+                                }
+                            }
+                           
+                        }
+                        &-bg{
+                            left: 0;
+                            bottom: 0vw;
+                            position: absolute;
+                            width: 37%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .seventh-page{
+              
+                     
+                        &-right{
+              
+                            form{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 100%;
+                                margin: 0 auto;
+                                height: fit-content;
+                                .form-box{
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+                                    margin-top: 5vw;
+                                    margin-bottom: 5vw;
+                                    p{
+                                        flex: 0 0 25%;
+                                        span{
+                                            margin-left: 8.4vw;
+                                        }
+                                    }
+                                    input{
+                                        flex: 0 0 75%;
+                                        border: none;
+                                        border-bottom: 1px solid $gray_color;
+                                        outline: none;
+                                        padding: 1vw 1vw;
+                                        font-size: 4.5vw;
+                                        color: $gray_color;
+                                      
+                                    }
+                                    textarea{
+                                        flex: 0 0 75%;
+                                        padding: 1vw 1vw;
+                                        font-size: 4.5vw;
+                                        color: $gray_color;
+                                        margin-bottom: 5vw;
+                                        border: none;
+                                           border-bottom: 1px solid $gray_color;
+                                           outline: none;
+                                    }
+                                    
+                                }
+                                > input{
+                                    margin-top: 4vw;
+                                    font-size: 2.7vw;
+                                    color: $gray_color;
+                                    background-color: transparent;
+                                    padding: 1vw 6vw;
+                                    margin: 0;
+                                    border: 1px solid $gray_color;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -269,6 +269,99 @@
                 
                 }
             }
+            @media all and (max-width:480px){
+                .blogInner{
+                    .first-page{
+                      height: 190vw;
+                     
+                      &-title{
+                        width: fit-content;
+                        position: absolute;
+                        bottom: 18vw;
+                        right: 0vw;
+                      
+                        .imgBox{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -40vw;
+                            right: 4vw;
+                            width: 35vw;
+                            height: fit-content;
+                            img{
+                                top: 0;
+                                width: 100%;
+                            }
+                            .para{
+                                top: 5vw;
+                                position: absolute;
+                          
+                                h2,h4{
+                                    color: #fff;
+                                    line-height: 7vw;
+                                    text-align: center;
+                                }
+                                h4{
+                                    letter-spacing: 0.4vw;
+                                    font-weight: normal;
+                                  
+                                }
+                            }
+                         
+                            
+                        }
+                    }
+                    
+                    }
+                    .second-page{
+                        &-top{
+                          
+                        }
+                        &-bottom{
+                         
+                            &-title{
+                                h3{
+                                    text-align: center;
+                                }
+                            }
+                            &-icon{
+                            
+                                p{
+                                    margin-right: 2.5vw;
+                                }
+                                > img{
+                                    width: 5%;
+                                    margin-right: 2.5vw;
+                                }
+                                .fb{
+                                    width:calc(3.45% * 5 / 6);
+                                }
+                                a{
+                                  flex: 0 0 33%;
+                                }
+                                button{
+                                    display: flex;
+                                    background-color: transparent;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width:100%;
+                                    padding: 1vw 0.8vw;
+                                    border: 1px solid $gray_color;
+                                  img{
+                                    width: 20%;
+                                  }
+                                }
+                            }
+                        }
+                     
+                      
+                       
+                    }
+                   
+                }
+            }
         }
     }
 }
