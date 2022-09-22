@@ -331,17 +331,19 @@
                       &-title{
                         width: fit-content;
                         position: absolute;
-                        bottom: 18vw;
+                        bottom: 20vw;
                         right: 0vw;
-                      
+                        > h2{
+                            writing-mode: vertical-lr;
+                        }
                         .imgBox{
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
                             position: absolute;
-                            top: -40vw;
-                            right: 4vw;
+                            top: 65vw;
+                            right: 60vw;
                             width: 35vw;
                             height: fit-content;
                             img{

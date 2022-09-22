@@ -215,6 +215,115 @@ function safariHacks() {
 function gsapStopWarning(){
     gsap.config({ nullTargetWarn: false });
 }
+function markMenu(){
+    let a = document.querySelectorAll(".menu-box a")
+    let arr = ["/index.html","/about.html","/portfolio.html","/portfolioInner.html","/service.html","/blog.html","/blogInner.html","/news.html","/newsInner.html","/contact.html"]
+    let path = /(\/[a-zA-Z]{0,25}.html)$/.exec(location.pathname)
+   
+    if(window.innerWidth > 920){
+        switch(path[0]){
+            case arr[0]:
+                a.forEach((i)=>{
+                    i.classList.remove("a")
+                
+                })
+              
+            break;
+            case arr[1]:
+            a[0].classList.add("a");
+            a[0].parentElement.style.pointerEvents = "none"
+          
+            break;
+            case arr[2]:
+            a[1].classList.add("a");
+            a[1].parentElement.style.pointerEvents = "none"
+            break;
+            case arr[3]:
+            a[1].classList.add("a");
+            a[1].parentElement.style.pointerEvents = "none"
+            
+            break;
+            case arr[4]:
+            a[2].classList.add("a");
+            a[2].parentElement.style.pointerEvents = "none"
+            break;
+            case arr[5]:
+            a[3].classList.add("a");
+            a[3].parentElement.style.pointerEvents = "none"
+           
+            break;
+            case arr[6]:
+            a[3].classList.add("a");
+            a[3].parentElement.style.pointerEvents = "none"
+            break;
+            case arr[7]:
+            a[4].classList.add("a");
+            a[4].parentElement.style.pointerEvents = "none"
+           
+            break;
+            case arr[8]:
+            a[4].classList.add("a");
+            a[4].parentElement.style.pointerEvents = "none"
+            break;
+            case arr[9]:
+            a[5].classList.add("a");
+            a[5].parentElement.style.pointerEvents = "none"
+            break;
+         
+        }
+    }else{
+        switch(path[0]){
+            case arr[0]:
+                a.forEach((i)=>{
+                    i.classList.remove("a")
+                })
+              
+            break;
+            case arr[1]:
+            a[0].classList.add("a");
+     
+        
+            break;
+            case arr[2]:
+            a[1].classList.add("a");
+            
+            break;
+            case arr[3]:
+            a[1].classList.add("a");
+            
+            
+            break;
+            case arr[4]:
+            a[2].classList.add("a");
+           
+            break;
+            case arr[5]:
+            a[3].classList.add("a");
+           
+           
+            break;
+            case arr[6]:
+            a[3].classList.add("a");
+           
+            break;
+            case arr[7]:
+            a[4].classList.add("a");
+          
+           
+            break;
+            case arr[8]:
+            a[4].classList.add("a");
+            
+            break;
+            case arr[9]:
+            a[5].classList.add("a");
+            
+            break;
+         
+        }
+    }
+  
+}
 
 // hamburger
 
@@ -231,6 +340,7 @@ burgerSpan.addEventListener("click",()=>{
     bugerActive()
 })
 // hamburger
+markMenu()
 menuAnimation()
 gsapStopWarning()
 bannerTitleIn()
