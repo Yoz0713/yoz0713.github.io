@@ -689,7 +689,7 @@ button:hover img {
     margin-bottom: 12vw;
   }
   .menu ul .menu-logo a .star {
-    top: 12vw;
+    top: 8vw;
   }
   .is-active {
     left: 0;
@@ -1900,17 +1900,12 @@ button:hover img {
     width: 100%;
     flex-wrap: wrap;
   }
-  .index .second-page-right-para-para1 {
-    flex: 0 0 30%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding-left: 1vw;
-    border-left: 1px solid rgb(46, 46, 46);
-  }
   .index .second-page-right-para-para1 .ch_text_m {
     font-weight: 600;
     margin-top: 0.3vw;
+  }
+  .index .second-page-right-para-para1 .en_text_s {
+    line-height: 7.5vw;
   }
   .index .second-page-right-para-para2 {
     display: flex;
@@ -1919,7 +1914,6 @@ button:hover img {
     height: -moz-fit-content;
     height: fit-content;
     align-items: flex-start;
-    order: -1;
   }
   .index .second-page-right-para-para2 h2 {
     font-weight: 600;
