@@ -321,7 +321,7 @@ button:hover img {
 }
 .loading .imgBox img {
   width: 9vw;
-  filter: brightness(10);
+  filter: brightness(20);
   margin-bottom: 1.5vw;
 }
 
