@@ -32,7 +32,9 @@ html,body{
 p,h1,h2,h3,h4,h5,h6,span{
     text-align: justify;
 }
-
+img{
+    will-change: transform;
+}
 @keyframes arrow{
     0%{
         transform: scaleX(1);
