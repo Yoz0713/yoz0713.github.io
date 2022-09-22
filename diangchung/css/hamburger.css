@@ -65,17 +65,17 @@
         transform: translate3d(0, -10px, 0) rotate(-45deg);
         transition-delay: 0.22s;
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        background-color: #fff; }
+        background: linear-gradient(45deg,rgb(245, 247, 250) 0% , rgb(241, 245, 250) 100%) }
         .hamburger--collapse.is-active .hamburger-inner::after {
           top: 0;
           opacity: 0;
           transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; 
-          background-color: #fff;}
+          background: linear-gradient(45deg,rgb(245, 247, 250) 0% , rgb(241, 245, 250) 100%)}
         .hamburger--collapse.is-active .hamburger-inner::before {
           top: 0;
           transform: rotate(-90deg);
           transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); 
-          background-color: #fff;}
+          background: linear-gradient(45deg,rgb(245, 247, 250) 0% , rgb(241, 245, 250) 100%)}
       
       /*
          * Collapse Reverse
@@ -94,7 +94,8 @@
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 25px;
       height: 3px;
-      background-color: rgb(1, 22, 52);
+     
+      background: linear-gradient(45deg,rgb(92, 145, 224) 0% , rgb(1, 45, 99) 70%);
       
       border-radius: 4px;
       position: absolute;
