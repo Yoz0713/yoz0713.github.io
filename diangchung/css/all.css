@@ -184,10 +184,12 @@ footer p br {
   display: inline-block;
 }
 
-.first-page {
+.first-page-bg {
+  overflow: hidden;
+}
+.first-page-bg img {
   -webkit-animation: bannerIn 10s linear forwards;
           animation: bannerIn 10s linear forwards;
-  overflow: hidden;
 }
 
 .imgBox {
@@ -2083,11 +2085,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/about/about_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.about .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.about .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .about .first-page-title {
   width: -webkit-fit-content;
@@ -2806,11 +2811,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/blog/blog_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.blog .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.blog .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .blog .first-page-title {
   width: -webkit-fit-content;
@@ -3105,11 +3113,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/contact/contact_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.contact .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.contact .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .contact .first-page-title {
   width: -webkit-fit-content;
@@ -3421,11 +3432,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/news/news_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.news .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.news .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .news .first-page-title {
   width: -webkit-fit-content;
@@ -3720,11 +3734,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/project/project_banner_01.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.portfolio .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.portfolio .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .portfolio .first-page-title {
   width: -webkit-fit-content;
@@ -4215,11 +4232,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/service/service_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.service .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.service .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .service .first-page-title {
   width: -webkit-fit-content;
@@ -4583,11 +4603,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/project/project_banner_02.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.portfolioInner .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.portfolioInner .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .portfolioInner .second-page {
   position: relative;
@@ -5328,11 +5351,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/blog/blog_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.blogInner .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.blogInner .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .blogInner .first-page-title {
   width: -webkit-fit-content;
@@ -5562,11 +5588,14 @@ button:hover img {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url(../img/news/news_banner.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 60%;
-  background-position-y: 50%;
+}
+.newsInner .first-page-bg {
+  width: 100%;
+  height: 100%;
+}
+.newsInner .first-page-bg img {
+  width: 100%;
+  height: 100%;
 }
 .newsInner .first-page-title {
   width: -webkit-fit-content;
@@ -5982,26 +6011,26 @@ p, h1, h2, h3, h4, h5, h6, span {
 }
 @-webkit-keyframes bannerIn {
   0% {
-    background-size: 100% 100%;
+    transform: scale(1);
     filter: brightness(0.3);
   }
   35% {
     filter: brightness(1);
   }
   100% {
-    background-size: 109% 109%;
+    transform: scale(1.09);
   }
 }
 @keyframes bannerIn {
   0% {
-    background-size: 100% 100%;
+    transform: scale(1);
     filter: brightness(0.3);
   }
   35% {
     filter: brightness(1);
   }
   100% {
-    background-size: 109% 109%;
+    transform: scale(1.09);
   }
 }
 @-webkit-keyframes indexBannerIn {
