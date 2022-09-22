@@ -1244,6 +1244,7 @@ button:hover img {
   top: -2.4vw;
   font-weight: 600;
   color: #1D140D;
+  width: 100%;
 }
 .index .sixth-page-top {
   display: flex;
