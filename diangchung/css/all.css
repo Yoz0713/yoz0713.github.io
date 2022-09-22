@@ -317,6 +317,7 @@ button:hover img {
   right: 0;
   left: 0;
   margin: auto;
+  opacity: 0;
 }
 .loading .imgBox img {
   width: 9vw;
