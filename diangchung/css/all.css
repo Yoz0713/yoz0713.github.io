@@ -1778,6 +1778,7 @@ button:hover img {
     position: absolute;
     left: 0%;
     top: 13vw;
+    width: 100%;
     font-weight: 600;
     color: #1D140D;
   }
@@ -5620,19 +5621,20 @@ button:hover img {
   width: -moz-fit-content;
   width: fit-content;
   justify-content: flex-end;
+  width: 50%;
 }
 .portfolioInner .second-page-top-top-icon p {
   margin-right: 1.5vw;
 }
 .portfolioInner .second-page-top-top-icon > img {
-  width: 2%;
+  width: 3.5%;
   margin-right: 1.5vw;
 }
 .portfolioInner .second-page-top-top-icon .fb {
-  width: 1.15%;
+  width: 1.725%;
 }
 .portfolioInner .second-page-top-top-icon a {
-  width: 17%;
+  width: 25%;
 }
 .portfolioInner .second-page-top-top-icon button {
   display: flex;
@@ -5640,7 +5642,7 @@ button:hover img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0.1vw 0.8vw;
+  padding: 0.2vw 0.8vw;
   border: 1px solid #7d7d7d;
 }
 .portfolioInner .second-page-top-top-icon button img {
@@ -6606,6 +6608,9 @@ button:hover img {
   border-bottom: 1px solid #7d7d7d;
   margin-bottom: 3vw;
 }
+.blogInner .second-page-bottom-title h3 br {
+  display: none;
+}
 .blogInner .second-page-bottom-img {
   width: 100%;
 }
@@ -6811,6 +6816,9 @@ button:hover img {
   }
   .blogInner .second-page-bottom-title h3 {
     text-align: center;
+  }
+  .blogInner .second-page-bottom-title h3 br {
+    display: block;
   }
   .blogInner .second-page-bottom-icon p {
     margin-right: 2.5vw;

@@ -40,18 +40,19 @@
                     align-items: center;
                     width: fit-content;
                     justify-content: flex-end;
+                    width: 50%;
                     p{
                         margin-right: 1.5vw;
                     }
                     > img{
-                        width: 2%;
+                        width: 3.5%;
                         margin-right: 1.5vw;
                     }
                     .fb{
-                        width:1.15%;
+                        width:calc(1.15% * 1.5);
                     }
                     a{
-                        width:17%;
+                        width:25%;
                     }
                     button{
                         display: flex;
@@ -59,7 +60,7 @@
                         justify-content: center;
                         align-items: center;
                         width:100%;
-                        padding: 0.1vw 0.8vw;
+                        padding: 0.2vw 0.8vw;
                         border: 1px solid $gray_color;
                       img{
                         width: 20%;
