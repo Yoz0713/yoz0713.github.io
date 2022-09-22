@@ -587,7 +587,7 @@ button:hover img {
     color: #363a45;
   }
   .word_level .en_text_xs {
-    font-size: 2vw;
+    font-size: 3.3vw;
     letter-spacing: 0.4vw;
     font-family: "Noto Serif TC", serif;
     color: #363a45;
@@ -3426,6 +3426,7 @@ button:hover img {
   .blog .first-page-title > h2 {
     -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
   }
   .blog .first-page-title .imgBox {
     display: flex;
@@ -6679,6 +6680,7 @@ button:hover img {
   .blogInner .first-page-title > h2 {
     -ms-writing-mode: tb-lr;
         writing-mode: vertical-lr;
+    -webkit-writing-mode: vertical-lr;
   }
   .blogInner .first-page-title .imgBox {
     display: flex;
@@ -6707,7 +6709,7 @@ button:hover img {
     text-align: center;
   }
   .blogInner .first-page-title .imgBox .para h4 {
-    letter-spacing: 0.4vw;
+    letter-spacing: 0.6vw;
     font-weight: normal;
   }
   .blogInner .second-page-bottom-title h3 {
