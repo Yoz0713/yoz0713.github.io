@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&family=Noto+Serif+TC:wght@300;400;500;600&display=swap&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css">
-   
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
@@ -19,6 +19,27 @@
     
 </head>
 <body>
+    <div class="loading">
+        <svg viewBox="0 0 300 300">
+            <circle
+              r="50"
+              cx="150"
+              cy="150"
+              fill="transparent"
+              stroke="#000"
+              stroke-width="3"
+              stroke-dasharray='20 2000'
+           
+            />
+            <linearGradient id="linearGradient">
+                <stop offset="0%" stop-color="#3c67e3cf"/>
+                <stop offset="100%" stop-color="#4e00c2cf"/>
+              </linearGradient>
+          </svg>
+          <div class="imgBox">
+                <img src="./img/SVG/logo.svg" >
+          </div>
+    </div>
     <button class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -36,10 +57,12 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="./img/index/banner.webp" class="banner1">
+                    <img src="./img/index/banner.webp" class="banner1 computer">
+                    <img src="./img/ph-banner/index_ph.webp" class="banner1 phone">
                   </div>
                   <div class="swiper-slide">
-                    <img src="./img/index/banner_02.webp" class="banner2">
+                    <img src="./img/index/banner_02.webp" class="banner2 computer">
+                    <img src="./img/ph-banner/index02_ph.webp" class="banner2 phone">
                   </div>
                   
                 </div>
@@ -375,7 +398,7 @@
         <p>Copyright&ensp;©&ensp;2022典長建設有限公司版權所有&ensp; <br>地址:台中市西區公館路166號&ensp; TEL:&ensp; 04-2371-7079</p>
     </footer>
 
-
+    <script src="./js/particles.js"></script>
     <script src="./js/config.js"></script>
     <script src="./js/index.js"></script>
 </body>

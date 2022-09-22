@@ -36,18 +36,18 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
       
             gg.fromTo(item.childNodes,{
             
-                opacity:0,
+                autoAlpha:0,
                 
             },{
-                opacity:0,
+                autoAlpha:0,
                 
                 duration:delay,
              
             }).fromTo(item.childNodes,{
                 x:-50,
-                opacity:0
+                autoAlpha:0
             },{
-                opacity:1,
+                autoAlpha:1,
                 x:0,
                 duration:0.6,
         
@@ -68,21 +68,21 @@ function menuAnimation(){
             }
         })
         gg.fromTo(".menu-box h3",{
-            opacity:0,
+            autoAlpha:0,
             y:30
         },{
             y:0,
-            opacity:1,
+            autoAlpha:1,
             duration:0.8
         }).fromTo(".menu-logo",{
-            opacity:0,
+            autoAlpha:0,
             y:30
         },{
             y:0,
-            opacity:1,
+            autoAlpha:1,
             duration:0.8
         },"<").fromTo(".menu-logo .star",{
-            opacity:0,
+            autoAlpha:0,
             y:-20,
             x:-70,
             rotation:0
@@ -90,7 +90,7 @@ function menuAnimation(){
             y:0,
             x:0,
             rotation:180,
-            opacity:1,
+            autoAlpha:1,
             duration:1,
            
         })
@@ -170,9 +170,9 @@ function bannerTitleIn(){
     
             titleAnimation.fromTo(item.childNodes,{
           
-                opacity:0
+                autoAlpha:0
             },{
-                opacity:1,
+                autoAlpha:1,
                 duration:2,
              
                 delay:i/10
@@ -184,21 +184,21 @@ function bannerTitleIn(){
   
     let gg = gsap.timeline()
     gg.fromTo(".first-page-title .imgBox",{
-        opacity:0,
+        autoAlpha:0,
         x:-30,
    
     },{
         x:0,
         delay:2,
         rotation:0,
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     }).fromTo(".first-page-title .imgBox .para",{
-        opacity:0,
+        autoAlpha:0,
      
     },{
       
-        opacity:1,
+        autoAlpha:1,
         duration:1.5
     },"<+0.7")
 }
@@ -339,10 +339,54 @@ function bugerActive(){
 burgerSpan.addEventListener("click",()=>{
     bugerActive()
 })
+
 // hamburger
+
+function loadingPageAnimation(){
+    let gg =gsap.timeline();
+    gg.fromTo(".loading svg circle",{
+        strokeDasharray:'20 2000'
+    },{
+        strokeDasharray:'320 2000',
+        duration:5
+      
+    },"<").fromTo(".loading .imgBox",{
+        autoAlpha:0
+    },{
+        autoAlpha:1,
+        duration:3
+      
+    },"<+0.5").fromTo(".loading img",{
+      
+        y:150
+    },{
+        y:0,
+       
+        duration:1
+      
+    },"<+0.8")
+}
+loadingPageAnimation()
+
+
+
 markMenu()
 menuAnimation()
 gsapStopWarning()
-bannerTitleIn()
-
 safariHacks();
+
+
+ document.body.onload = function(){
+     setTimeout(()=>{
+         let gg = gsap.timeline();
+         gg.to(".loading",{
+             autoAlpha:0,
+             duration:1,
+             pointerEvents:"none"
+         })
+     },2100)
+    
+    setTimeout(()=>{
+        bannerTitleIn()
+    },2200)
+ }

@@ -14,6 +14,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <div class="loading">
+        <svg viewBox="0 0 300 300">
+            <circle
+              r="50"
+              cx="150"
+              cy="150"
+              fill="transparent"
+              stroke="#000"
+              stroke-width="3"
+              stroke-dasharray='20 2000'
+           
+            />
+            <linearGradient id="linearGradient">
+                <stop offset="0%" stop-color="#3c67e3cf"/>
+                <stop offset="100%" stop-color="#4e00c2cf"/>
+              </linearGradient>
+          </svg>
+          <div class="imgBox">
+                <img src="./img/SVG/logo.svg" >
+          </div>
+    </div>
     <button class="hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -22,7 +43,8 @@
     <div class="portfolioInner">
         <div class="first-page">
             <div class="first-page-bg">
-                <img src="./img/project/project_banner_02.webp">
+                <img src="./img/project/project_banner_02.webp" class="computer">
+                <img src="./img/ph-banner/portfolio02_ph.webp" class="phone">
             </div>
         </div>
         <div class="second-page">
