@@ -7338,6 +7338,55 @@ button:hover img {
     width: 20%;
   }
 }
+body #magicMouseCursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #2b446f;
+  border-radius: 50%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transition: transform 0.07s, width 0.3s, height 0.3s;
+  pointer-events: none;
+}
+body #magicMouseCursor.cursor-square {
+  border-radius: 0;
+}
+body #magicPointer {
+  height: 5px;
+  width: 5px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(43, 68, 111, 0.5137254902);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
+}
+body #magicPointer.is-hover {
+  background: red;
+}
+body #magicPointer.pointer-blur {
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 15px -5px rgb(255, 255, 255);
+}
+body #magicPointer.pointer-overlay {
+  height: 50px;
+  width: 50px;
+  mix-blend-mode: difference;
+  box-shadow: 0px 0px 15px -5px rgb(255, 255, 255);
+}
+body .magic-hover {
+  transition: all 0.2s;
+}
+body .magic-hover:hover {
+  cursor: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7354,6 +7403,11 @@ html, body {
   width: 100%;
   max-height: 100%;
   background: url(../img/bg.jpg);
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
 }
 
 p, h1, h2, h3, h4, h5, h6, span {
