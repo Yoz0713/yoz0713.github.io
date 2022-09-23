@@ -930,15 +930,37 @@ button{
                         justify-content: flex-end;
                         align-items:flex-end;
                         overflow: hidden;
-                        width: 35%;
+                        width: 40%;
                         padding: 0;
                         margin-bottom: 9vw;
                             a{
                                 .star{
-                                    top: 8vw;
+                                    top: 5vw;
                                 }
                             }
                            
+                        }
+                        .menu-box{
+                            a{
+                                .ch_text{
+                                    text-align: center;
+                                    font-size: 4vw;
+                                    letter-spacing: 0.8vw;
+                                    color: #f6f3ef;
+                                    font-family: $title_word_family;
+                                }
+                                .en_text{
+                                    text-align: center;
+                                    font-size:3.5vw;
+                                    color:$gray_color;
+                                    letter-spacing: 0.5vw;
+                                    font-family: $title_word_family;
+                                }
+                            }
+                         
+                          
+        
+            
                         }
                     }
               
