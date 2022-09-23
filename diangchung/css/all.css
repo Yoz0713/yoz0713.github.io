@@ -7343,7 +7343,7 @@ html, body {
   cursor: none;
 }
 
-a {
+a, button {
   cursor: none;
 }
 
