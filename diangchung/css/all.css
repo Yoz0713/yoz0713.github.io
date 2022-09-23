@@ -346,6 +346,9 @@ button:hover img {
   }
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) {
+  .computer {
+    display: none;
+  }
   .word_level .date {
     font-size: 2.4vw;
     letter-spacing: 0.2vw;
@@ -505,14 +508,151 @@ button:hover img {
   }
   .menu ul li .menu-box .ch_text {
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     letter-spacing: 0.8vw;
     color: #f6f3ef;
     font-family: "Noto Serif TC", serif;
   }
   .menu ul li .menu-box .en_text {
     text-align: center;
+    font-size: 2vw;
+    color: #7d7d7d;
+    letter-spacing: 0.5vw;
+    font-family: "Noto Serif TC", serif;
+  }
+  .menu ul li .menu-box:after {
+    content: "";
+    display: block;
+    width: 6vw;
+    height: 6vw;
+    background-image: url(../img/SVG/tree.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -8vw;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .menu ul li .menu-box:hover::after {
+    opacity: 1;
+    -webkit-animation: updown 2s linear forwards infinite;
+            animation: updown 2s linear forwards infinite;
+  }
+  .menu ul li .menu-portfolio::after {
+    right: -1vw;
+  }
+  .menu ul .menu-logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 30%;
+    padding: 0;
+    margin-bottom: 0vw;
+  }
+  .menu ul .menu-logo a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+  .menu ul .menu-logo a img {
+    width: 100%;
+    margin-bottom: 0.5vw;
+    filter: brightness(6);
+  }
+  .menu ul .menu-logo a .star {
+    -webkit-animation: shining 2s linear forwards infinite;
+            animation: shining 2s linear forwards infinite;
+    margin: 0;
+    position: absolute;
+    width: 1vw;
+    left: 30%;
+    top: 0vw;
+  }
+  .menu ul .menu-logo a:hover .star {
+    filter: brightness(1.4);
+    -webkit-animation: flowstar 2.5s linear forwards infinite;
+            animation: flowstar 2.5s linear forwards infinite;
+  }
+  .is-active2 {
+    left: 0;
+  }
+}
+@media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) {
+  .phone {
+    display: block;
+  }
+  .loading .imgBox {
+    width: 18vw;
+    height: 18vw;
+  }
+  .loading .imgBox img {
+    width: 10vw;
+    filter: brightness(10);
+  }
+  .loading .imgBox .star {
+    width: 1.8vw;
+    top: 2vw;
+    right: 4.5vw;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 100%;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 16, 29, 0.9843137255);
+    transition: 1s;
+    z-index: 200;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+  }
+  .menu ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1.6vw 0 0;
+  }
+  .menu ul li .menu-box {
+    position: relative;
+  }
+  .menu ul li .menu-box .a:after {
+    content: "";
+    display: block;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(../img/index/SVG/leaf.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -9vw;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .menu ul li .menu-box .ch_text {
+    text-align: center;
     font-size: 2.5vw;
+    letter-spacing: 0.8vw;
+    color: #f6f3ef;
+    font-family: "Noto Serif TC", serif;
+  }
+  .menu ul li .menu-box .en_text {
+    text-align: center;
+    font-size: 2vw;
     color: #7d7d7d;
     letter-spacing: 0.5vw;
     font-family: "Noto Serif TC", serif;
@@ -564,9 +704,9 @@ button:hover img {
             animation: shining 2s linear forwards infinite;
     margin: 0;
     position: absolute;
-    width: 2vw;
+    width: 1.8vw;
     left: 30%;
-    top: 6vw;
+    top: 5vw;
   }
   .menu ul .menu-logo a:hover .star {
     filter: brightness(1.4);
@@ -575,27 +715,6 @@ button:hover img {
   }
   .is-active2 {
     left: 0;
-  }
-}
-@media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) {
-  .computer {
-    display: none;
-  }
-  .phone {
-    display: block;
-  }
-  .loading .imgBox {
-    width: 18vw;
-    height: 18vw;
-  }
-  .loading .imgBox img {
-    width: 10vw;
-    filter: brightness(10);
-  }
-  .loading .imgBox .star {
-    width: 1.8vw;
-    top: 2vw;
-    right: 4.5vw;
   }
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) and (max-width: 480px) {
@@ -1400,7 +1519,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 7vw;
+    bottom: 15vw;
     right: 2.5vw;
     z-index: 10;
   }
@@ -1880,7 +1999,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 18vw;
+    bottom: 28vw;
     right: 2.5vw;
     z-index: 10;
   }
@@ -2616,7 +2735,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 14vw;
+    bottom: 15vw;
     right: 2.5vw;
   }
   .about .first-page-title h2 {
@@ -2934,7 +3053,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 18vw;
+    bottom: 28vw;
     right: 2.5vw;
   }
   .about .first-page-title h2 {
@@ -3403,7 +3522,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 8.5vw;
+    bottom: 15vw;
     z-index: 10;
   }
   .blog .first-page-title h2 {
@@ -3531,7 +3650,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 8.5vw;
+    bottom: 28vw;
     z-index: 10;
   }
   .blog .first-page-title h2 {
@@ -3816,7 +3935,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 10vw;
+    bottom: 15vw;
     right: 2.5vw;
   }
   .contact .first-page-title h2 {
@@ -3940,7 +4059,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 20vw;
+    bottom: 28vw;
     right: 2.5vw;
   }
   .contact .first-page-title h2 {
@@ -4226,7 +4345,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 10vw;
+    bottom: 15vw;
     z-index: 10;
   }
   .news .first-page-title h2 {
@@ -4354,7 +4473,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 20vw;
+    bottom: 28vw;
     z-index: 10;
   }
   .news .first-page-title h2 {
@@ -4737,7 +4856,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 14vw;
+    bottom: 15vw;
     right: 2.5vw;
   }
   .portfolio .first-page-title h2 {
@@ -4940,7 +5059,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 21vw;
+    bottom: 28vw;
     right: 2.5vw;
   }
   .portfolio .first-page-title h2 {
@@ -5383,7 +5502,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 14vw;
+    bottom: 15vw;
     right: 2.5vw;
   }
   .service .first-page-title h2 {
@@ -5515,7 +5634,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 25vw;
+    bottom: 28vw;
     right: 2.5vw;
   }
   .service .first-page-title h2 {
@@ -6714,7 +6833,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 20vw;
+    bottom: 15vw;
     right: 2.5vw;
     z-index: 10;
   }
@@ -6794,6 +6913,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
+    bottom: 28vw;
     z-index: 10;
   }
   .blogInner .first-page-title h2 {
@@ -7031,7 +7151,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 10vw;
+    bottom: 15vw;
     right: 2.5vw;
     z-index: 10;
   }
@@ -7124,7 +7244,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 20vw;
+    bottom: 28vw;
     z-index: 10;
   }
   .newsInner .first-page-title h2 {
