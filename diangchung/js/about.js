@@ -159,18 +159,18 @@ function thirdPageAnimation(){
     let gg2 = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page-bg",
-            start:"top 80%"
+            start:"top bottom",
+            scrub:2,
+          
         }
-    })
-
-    gg2.fromTo(".third-page-bg",{
-        opacity:0,
-
+    });
+    gg2.fromTo(".third-page-bg img",{
+       x:"8vw",
+       autoAlpha:0, 
     },{
- 
-        opacity:1,
-        duration:1.5,
-
+        autoAlpha:1, 
+       x:0
+        
     })
 }
 thirdPageAnimation()
@@ -310,6 +310,20 @@ function fifthPageAnimation(){
     })
     splitTextAnimation(".fifth-page-bottom h2",0.5,40,".fifth-page-bottom")
     splitTextAnimationOpacity(".fifth-page-bottom p",0.7,50,".fifth-page-bottom")
-
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".fifth-page-bg",
+            start:"top bottom",
+            scrub:2,
+          
+        }
+    });
+    gg2.fromTo(".fifth-page-bg img",{
+       y:"-6vw",
+       autoAlpha:0, 
+    },{
+       y:0,
+       autoAlpha:1, 
+    })
 }
 fifthPageAnimation()

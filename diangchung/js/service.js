@@ -17,14 +17,22 @@ function secondPageAnimation(){
         delay:delay,
         opacity:1,
         duration:1.5
-    }).fromTo(".second-page-bg",{
-        opacity:0,
-        x:50
+    })
+
+    let gg2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".second-page-bg",
+            start:"top bottom",
+            scrub:2,
+          
+        }
+    });
+    gg2.fromTo(".second-page-bg img",{
+       y:"-8vw",
+       
     },{
-        x:0,
-        delay:0.8,
-        opacity:1,
-        duration:1.5
+       y:0
+        
     })
 
     box.forEach((item,i)=>{

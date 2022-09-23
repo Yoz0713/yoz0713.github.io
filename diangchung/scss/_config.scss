@@ -249,13 +249,11 @@ footer{
 // for banner title animation
 
 .first-page{
-    &-bg{
-        
-        overflow: hidden;
-        img{
-            animation: bannerIn 10s linear forwards;
+   &-title{
+        .imgBox{
+            opacity: 0;
         }
-    }
+   }
  
     
 }
@@ -346,12 +344,13 @@ button{
     width: 100%;
     height: 100%;
     z-index: 20000;
+   
     background: url(../img/bg.jpg);
     svg{
         width: 100%;
         height: 100%;
         background-color: transparent;
-        transform: rotate(-90deg) scale(0.7);
+        transform: rotate(-90deg) scale(0.6);
     }
     .imgBox{
         display: flex;
@@ -360,8 +359,8 @@ button{
         position: absolute;
         background-color:#224177 ;
         border-radius: 50%;
-        width: 10vw;
-        height: 10vw;
+        width: 9vw;
+        height: 9vw;
         overflow: hidden;
         top: 0;
         bottom: 0;
@@ -370,9 +369,15 @@ button{
         margin: auto;
         opacity: 0;
         img{
-            width: 9vw;
+            width: 4vw;
             filter: brightness(20);
-            margin-bottom: 1.5vw;
+            margin-bottom: 0vw;
+        }
+        .star{
+            right: 2.5vw;
+            position: absolute;
+            top: 1.3vw;
+            width: 0.8vw;
         }
     }
 }
@@ -384,14 +389,16 @@ button{
  
         .imgBox{
         
-            width: 14vw;
-            height: 14vw;
+            width: 12.5vw;
+            height: 12.5vw;
        
             img{
-                width: 11vw;
+                width: 7.5vw;
                 filter: brightness(10);
-                margin-bottom: 1.5vw;
-      
+            }
+            .star{
+                top: 2vw;
+                right: 3.5vw;
             }
         }
     }
@@ -662,17 +669,19 @@ button{
             display: block;
           }
           .loading{
- 
             .imgBox{
-            
-                width: 20vw;
-                height: 20vw;
+        
+                width: 18vw;
+                height: 18vw;
            
                 img{
-                    width: 17vw;
+                    width:10vw;
                     filter: brightness(10);
-                    margin-bottom: 1.5vw;
-          
+                }
+                .star{
+                    width: 1.8vw;
+                    top: 2vw;
+                    right: 4.5vw;
                 }
             }
         }
@@ -825,18 +834,22 @@ button{
                     }
                     .loading{
                         svg{
-                            transform: rotate(-90deg) scale(1.2);
+                            transform: rotate(-90deg) scale(0.95);
                         }
                         .imgBox{
                         
-                            width: 35vw;
-                            height: 35vw;
+                            width: 28vw;
+                            height: 28vw;
                        
                             img{
-                                width: 30vw;
+                                width: 15vw;
                                 filter: brightness(10);
                                 margin-bottom: 1.5vw;
                       
+                            }
+                            .star{
+                                top: 4vw;
+                                right: 7vw;
                             }
                         }
                     }

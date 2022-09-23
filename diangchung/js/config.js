@@ -183,7 +183,13 @@ function bannerTitleIn(){
     })
   
     let gg = gsap.timeline()
-    gg.fromTo(".first-page-title .imgBox",{
+    gg.fromTo(".first-page",{
+      
+  
+    },{
+       
+        duration:1.5
+    }).fromTo(".first-page-title .imgBox",{
         autoAlpha:0,
         x:-30,
    
@@ -351,20 +357,23 @@ function loadingPageAnimation(){
         duration:5
       
     },"<").fromTo(".loading .imgBox",{
-        autoAlpha:0
+        autoAlpha:0,
+    
     },{
         autoAlpha:1,
         duration:3
       
-    },"<+0.5").fromTo(".loading img",{
-      
-        y:150
-    },{
-        y:0,
+    },"<+0.5").fromTo(".loading .star",{
+        rotation:0
        
-        duration:1
+    },{
+        rotation:1800,
+        repeat:-1,
+        duration:23,
+  
       
-    },"<+0.8")
+    },"<")
+    
 }
 loadingPageAnimation()
 
@@ -376,17 +385,45 @@ gsapStopWarning()
 safariHacks();
 
 
- document.body.onload = function(){
-     setTimeout(()=>{
-         let gg = gsap.timeline();
-         gg.to(".loading",{
-             autoAlpha:0,
-             duration:1,
-             pointerEvents:"none"
-         })
-     },2100)
+
+  document.body.onload = function(){
+
+      setTimeout(()=>{
+      
+          let gg = gsap.timeline();
+          gg.fromTo(".loading .imgBox",{
+            autoAlpha:1,
+        
+        },{
+ 
+            autoAlpha:0,
+            duration:1.5
+        }).fromTo(".loading svg",{
+            autoAlpha:1,
+      
+        },{
+            autoAlpha:0,
+            duration:1.5
+        },"<").fromTo(".loading .imgBox",{
+            y:0
+        
+        },{
+            y:"-200vw",
+            
+            duration:0.0001
+        }).fromTo(".loading",{
+            autoAlpha:1,
+            pointerEvents:"none"
+        },{
+            
+            autoAlpha:0,
+            duration:4.5
+        })
+      },1900)
+      
     
-    setTimeout(()=>{
-        bannerTitleIn()
-    },2200)
- }
+     setTimeout(()=>{
+   
+         bannerTitleIn()
+     },4000)
+  }

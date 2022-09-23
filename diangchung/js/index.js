@@ -114,6 +114,7 @@ function splitTextAnimationOpacity(wrap,delay,speed,trigger){
    
 }
 
+
 let banner1 = document.querySelector(".banner1")
 let banner2 = document.querySelector(".banner2")
 let prev = document.querySelector(".prev")
@@ -146,6 +147,7 @@ let swiper1 = new Swiper(".swiper",{
     
     }
 })
+
 if(window.innerWidth > 920){
     let swiper = document.querySelector(".swiper")
     swiper.classList.add("swiper-no-swiping")
@@ -207,17 +209,17 @@ function secondPageAnimation(){
         duration:1.5
     }).fromTo(".second-page-right-para-para1",{
         autoAlpha:0,
-        x:15
+       
     },{
-        x:0,
+        
         autoAlpha:1,
  
         duration:1.5
     },"<+0.5").fromTo(".second-page-right-para-para2",{
         autoAlpha:0,
-        x:15
+       
     },{
-        x:0,
+      
         autoAlpha:1,
  
         duration:1.5
@@ -235,18 +237,30 @@ function secondPageAnimation(){
     });
     gg2.fromTo(".second-page-right .readmore",{
         autoAlpha:0,
-        x:15
+     
     },{
-        x:0,
+       
         autoAlpha:1,
         delay:3,
         duration:1.5
-    }).fromTo(".second-page-bg img",{
-        autoAlpha:0,
+    })
+    let gg3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".second-page-bg",
+            start:"top bottom",
+            scrub:2,
+          
+        }
+    });
+    gg3.fromTo(".second-page-bg img",{
+       y:"-20vw",
+       opacity:0
+       
     },{
-        autoAlpha:1,
-        duration:1.5
-    },"<")
+        opacity:1,
+       y:0
+        
+    })
 }
 
 secondPageAnimation()
@@ -292,17 +306,17 @@ function thirdPageAnimation(){
     let gg3 = gsap.timeline({
         scrollTrigger:{
             trigger:".third-page-bg",
-            start:"top 80%",
+            start:"top bottom",
+            scrub:2,
+          
         }
-    })
-    gg3.fromTo(".third-page-bg",{
-        autoAlpha:0,
-     
+    });
+    gg3.fromTo(".third-page-bg img",{
+       x:"15vw",
+       autoAlpha:0, 
     },{
-       
-        autoAlpha:1,
- 
-        duration:1.5
+       x:0,
+       autoAlpha:1, 
     })
     splitTextAnimationOpacity(".third-page-top-title p",0,10,".third-page-top")
     splitTextAnimationOpacity(".third-page-top-title h3",0,15,".third-page-top")
@@ -325,20 +339,27 @@ function forthPageAnimation(){
     })
 
     gg.fromTo(".forth-page-left",{
-        autoAlpha:0,
-        y:50
+        autoAlpha:0, 
+       y:50
     },{
         y:0,
         autoAlpha:1,
         duration:1.5
-    }).fromTo(".forth-page-bg",{
-        autoAlpha:0,
-     
+    }) 
+    let gg3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".forth-page-bg",
+            start:"top bottom",
+            scrub:2,
+          
+        }
+    });
+    gg3.fromTo(".forth-page-bg img",{
+       x:"-15vw",
+       autoAlpha:0, 
     },{
-     
-        autoAlpha:1,
-        delay:1,
-        duration:1.5
+       x:0,
+       autoAlpha:1,
     })
     splitTextAnimation(".forth-page-right-para h2 ",0.5,40,".forth-page")
     splitTextAnimationOpacity(".forth-page-right-para p ",1,50,".forth-page")
