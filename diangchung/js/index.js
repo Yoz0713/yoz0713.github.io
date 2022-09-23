@@ -119,6 +119,8 @@ let banner1 = document.querySelector(".banner1")
 let banner2 = document.querySelector(".banner2")
 let prev = document.querySelector(".prev")
 let next = document.querySelector(".next")
+
+
 let swiper1 = new Swiper(".swiper",{
     speed:2000,
     loop:true,
@@ -133,7 +135,7 @@ let swiper1 = new Swiper(".swiper",{
     mousewheel:false,
     on: {
         
-        slideChange: function(){
+        slideChangeTransitionStart: function(){
             if(this.realIndex == 0){
                 prev.classList.add("current")
                 next.classList.remove("current")
@@ -165,12 +167,12 @@ function indexBanner1In(){
 
     gg.fromTo(".banner1",{
         transform:"scale(1)",
-      
+        filter:"brightness(0.3)"
     },{
         transform:"scale(1.09)",
         duration:7,
       
-        
+        filter:"brightness(1)"
     })
 }
 function indexBanner2In(){
@@ -199,13 +201,13 @@ function secondPageAnimation(){
     });
     let delay = window.innerWidth > 1440 ? 1.2 : 0
     gg.fromTo(".second-page-left",{
+       
         autoAlpha:0,
-   
         y:50
-    },{
-        delay:delay,
-        y:0,
+    },{ 
         autoAlpha:1,
+        delay:delay,
+        y:0,    
         duration:1.5
     }).fromTo(".second-page-right-para-para1",{
         autoAlpha:0,
@@ -388,7 +390,7 @@ function fifthPageAnimation(){
         duration:1.5
     })
     
-    gg2.fromTo(".fifth-page-left-top-left .imgBox",{
+    gg2.fromTo(".fifth-page-left-top-left",{
         autoAlpha:0,
         x:-15
     },{
@@ -396,7 +398,7 @@ function fifthPageAnimation(){
         x:0,
         autoAlpha:1,
         duration:1.5
-    }).fromTo(".fifth-page-left-bottom-right .imgBox",{
+    }).fromTo(".fifth-page-left-bottom-right",{
         autoAlpha:0,
         x:-15
     },{
@@ -478,3 +480,5 @@ function sixthPageAnimation(){
     splitTextAnimationOpacity(".sixth-page-bottom ul :nth-child(3) .para2 p",3,50,".sixth-page")
 }
 sixthPageAnimation()
+
+

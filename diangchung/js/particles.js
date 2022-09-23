@@ -20,3 +20,5 @@ var container = document.getElementById("container"),	w = window.innerWidth , h 
  };
 
 function R(min,max) {return min+Math.random()*(max-min)}
+
+

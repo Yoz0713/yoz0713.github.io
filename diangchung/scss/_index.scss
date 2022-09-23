@@ -88,12 +88,14 @@
         width: 85%;
         margin: 0 auto;
         height: 50vw;
+    
         &-left{
             display: flex;
             align-items: center;
             width: 60%;
             height: 100%;
             padding-top:5.2vw;
+      
             .imgBox{
           
                 height: 75%;
@@ -650,10 +652,20 @@
     height: 100vh;
     z-index: 0;
   }
-  .svg{
-    position: absolute;
-    z-index: -100;
+  .canvas-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    .canvas{
+   
+        width: 100%;
+        height: 100%;
+   
+      }
   }
+ 
 @media all and (max-width:1380px){
     .index{
         .first-page{
@@ -698,7 +710,7 @@
                 width: 100%;
                 position: relative;
                 background-color: #000;
-                height: 135vw;
+                height: 78vw;
              
                 &-title{
                     width:fit-content;
@@ -1300,8 +1312,8 @@
                                     }
                                     p{
                                         font-weight: 600;
-                                        margin-top: 0.6vw;
-                                        line-height: 4.5vw;
+                                        margin-top: 1.7vw;
+                                        line-height: 3.5vw;
                                     }
                                 }
                                 &-para3{
