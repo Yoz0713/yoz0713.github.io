@@ -167,12 +167,12 @@ function indexBanner1In(){
 
     gg.fromTo(".banner1",{
         transform:"scale(1)",
-        filter:"brightness(0.3)"
+        
     },{
         transform:"scale(1.09)",
         duration:7,
       
-        filter:"brightness(1)"
+ 
     })
 }
 function indexBanner2In(){
@@ -180,11 +180,11 @@ function indexBanner2In(){
 
     gg2.fromTo(".banner2",{
         transform:"scale(1)",
-        filter:"brightness(0.3)"
+    
     },{
         transform:"scale(1.09)",
         duration:7,
-        filter:"brightness(1)"
+       
         
     })
 }
