@@ -383,6 +383,9 @@ button:hover img {
   .computer {
     display: none;
   }
+  .phone {
+    display: block;
+  }
   .word_level .date {
     font-size: 2.4vw;
     letter-spacing: 0.2vw;
@@ -615,9 +618,6 @@ button:hover img {
   }
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) {
-  .phone {
-    display: block;
-  }
   .loading .imgBox {
     width: 18vw;
     height: 18vw;
@@ -933,7 +933,7 @@ button:hover img {
 }
 .index .first-page .navigate {
   display: flex;
-  width: 4.5vw;
+  width: 5.5vw;
   height: 5vw;
   z-index: 10;
   justify-content: space-between;
@@ -944,18 +944,22 @@ button:hover img {
   bottom: 0;
 }
 .index .first-page .navigate .prev {
-  width: 2vw;
-  height: 0.4vw;
+  width: 2.5vw;
+  height: 1.3vw;
+  background-clip: padding-box;
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
   background-color: #353738;
-  border: none;
+  border: 10px solid transparent;
+  border-right: none;
 }
 .index .first-page .navigate .next {
-  width: 2vw;
-  height: 0.4vw;
+  width: 2.5vw;
+  height: 1.3vw;
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
+  background-clip: padding-box;
   background-color: #353738;
-  border: none;
+  border: 10px solid transparent;
+  border-left: none;
 }
 .index .first-page .navigate .current {
   background-color: rgba(177, 202, 236, 0.692);
@@ -2017,7 +2021,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 42vw;
     right: 2.5vw;
     z-index: 10;
   }
@@ -3079,7 +3083,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     right: 2.5vw;
   }
   .about .first-page-title h2 {
@@ -3641,7 +3645,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     z-index: 10;
   }
   .blog .first-page-title h2 {
@@ -4050,7 +4054,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     right: 2.5vw;
   }
   .contact .first-page-title h2 {
@@ -4464,7 +4468,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     z-index: 10;
   }
   .news .first-page-title h2 {
@@ -5050,7 +5054,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     right: 2.5vw;
   }
   .portfolio .first-page-title h2 {
@@ -5625,7 +5629,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     right: 2.5vw;
   }
   .service .first-page-title h2 {
@@ -6904,7 +6908,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     z-index: 10;
   }
   .blogInner .first-page-title h2 {
@@ -7235,7 +7239,7 @@ button:hover img {
     width: -moz-fit-content;
     width: fit-content;
     position: absolute;
-    bottom: 28vw;
+    bottom: 35vw;
     z-index: 10;
   }
   .newsInner .first-page-title h2 {
@@ -7315,6 +7319,48 @@ button:hover img {
     width: 20%;
   }
 }
+body #magicMouseCursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #2b446f;
+  border-radius: 50%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transition: transform 0.07s, width 0.3s, height 0.3s;
+  pointer-events: none;
+}
+body #magicMouseCursor.cursor-square {
+  border-radius: 0;
+}
+body #magicPointer {
+  height: 5px;
+  width: 5px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s;
+}
+body #magicPointer.is-hover {
+  background: red;
+}
+body #magicPointer.pointer-blur {
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 15px -5px rgb(255, 255, 255);
+}
+body .magic-hover {
+  transition: all 0.2s;
+}
+body .magic-hover:hover {
+  cursor: none;
+}
+
 * {
   padding: 0;
   margin: 0;

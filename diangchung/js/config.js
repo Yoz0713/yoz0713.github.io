@@ -44,12 +44,15 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
                 duration:delay,
              
             }).fromTo(item.childNodes,{
-                transform:"skew(-60deg)",
+      
+                transform:"scale(0)",
                 autoAlpha:0
             },{
+                
+                transform:"scale(1)",
                 autoAlpha:1,
-                transform:"skew(0)",
-                duration:1.5,
+      
+                duration:1,
         
                 delay:i/speed
             })
@@ -96,7 +99,7 @@ function menuAnimation(){
         })
         li.forEach((item)=>{
             
-            splitTextAnimationLeftIn(item.lastElementChild,0.5,25,".menu")
+            splitTextAnimationLeftIn(item.lastElementChild,0.5,7,".menu")
         })
 }
 
@@ -417,7 +420,7 @@ safariHacks();
             y:0
         
         },{
-            y:"-200vw",
+            y:"-2000vw",
             
             duration:0.0001
         }).fromTo(".loading",{

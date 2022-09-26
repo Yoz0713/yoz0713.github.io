@@ -29,7 +29,7 @@
         }
         .navigate{
             display: flex;
-            width: 4.5vw;
+            width: 5.5vw;
             height:5vw;
             z-index: 10;
             justify-content:space-between;
@@ -39,20 +39,25 @@
             transform: translateX(-50%);
             bottom: 0;
             .prev{
-                width: 2vw;
-                height: 0.4vw;
-      
+                width: 2.5vw;
+                height: 1.3vw;
+                background-clip: padding-box;
+                
                 filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
                 background-color: #353738;
-                border: none;
+                border: 10px solid transparent;
+                border-right: none;
             }
             .next{
-                width: 2vw;
-                height: 0.4vw;
+                width: 2.5vw;
+                height: 1.3vw;
+      
                 filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
+                background-clip: padding-box;
                 background-color: #353738;
             
-                border: none;
+                border: 10px solid transparent;
+                border-left: none;
             }
             .current{
                 background-color: rgba(177, 202, 236, 0.692);
@@ -1186,7 +1191,7 @@
                     &-title{
                         width:fit-content;
                         position: absolute;
-                        bottom: 28vw;
+                        bottom: 42vw;
                         right: 2.5vw;
                         z-index: 10;
                         h2{

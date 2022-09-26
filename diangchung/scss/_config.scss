@@ -441,6 +441,9 @@ button{
         .computer{
             display: none;
           }
+          .phone{
+            display: block;
+          }
         .word_level{
             .date{
                 font-size:2.4vw;
@@ -701,9 +704,7 @@ button{
         }
         @media all and (max-width:920px){
      
-          .phone{
-            display: block;
-          }
+         
           .loading{
             .imgBox{
         
