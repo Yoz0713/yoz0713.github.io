@@ -314,10 +314,10 @@ function thirdPageAnimation(){
         }
     });
     gg3.fromTo(".third-page-bg img",{
-       x:"15vw",
+       y:"15vw",
        autoAlpha:0, 
     },{
-       x:0,
+       y:0,
        autoAlpha:1, 
     })
     splitTextAnimationOpacity(".third-page-top-title p",0,10,".third-page-top")
@@ -357,10 +357,10 @@ function forthPageAnimation(){
         }
     });
     gg3.fromTo(".forth-page-bg img",{
-       x:"-15vw",
+       y:"15vw",
        autoAlpha:0, 
     },{
-       x:0,
+       y:0,
        autoAlpha:1,
     })
     splitTextAnimation(".forth-page-right-para h2 ",0.5,40,".forth-page")
@@ -394,7 +394,7 @@ function fifthPageAnimation(){
         autoAlpha:0,
         x:-15
     },{
-        delay:0.5,
+    
         x:0,
         autoAlpha:1,
         duration:1.5
@@ -412,7 +412,7 @@ function fifthPageAnimation(){
         x:0,
         autoAlpha:1,
         duration:1.5
-    },"<+1")
+    })
     splitTextAnimation(".fifth-page-left-top-right-para .para1 h3",0.5,40,".fifth-page-left-top-right-para")
     splitTextAnimationOpacity(".fifth-page-left-top-right-para .para2 p",1,50,".fifth-page-left-top-right-para")
     splitTextAnimation(".fifth-page-left-bottom-left-para .para1 h3",0.5,40,".fifth-page")

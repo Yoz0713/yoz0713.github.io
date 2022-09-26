@@ -8,7 +8,7 @@
   
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./style/all.min.css">
-    <link rel="stylesheet" href="./css/magic-mouse.css" />
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&family=Noto+Serif+TC:wght@300;400;500;600&display=swap&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
@@ -153,7 +153,7 @@
                 </ul>
             </div>
             <div class="second-page-left">
-                <div class="imgBox ">
+                <div class="imgBox magic-hover magic-hover__square">
                     <img src="./img/index/project.webp">
                     <div class="cover-glowing">
                         
@@ -413,5 +413,17 @@
     <script src="./js/particles.js"></script>
     <script src="./js/config.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        
+            options = {
+
+            "hoverEffect": "pointer-overlay",
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 30,
+            "outerHeight": 30
+    }; 
+    magicMouse(options);
+    </script>
 </body>
 </html>

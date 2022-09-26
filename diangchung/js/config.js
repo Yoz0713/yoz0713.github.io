@@ -44,12 +44,12 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
                 duration:delay,
              
             }).fromTo(item.childNodes,{
-                x:-50,
+                transform:"skew(-60deg)",
                 autoAlpha:0
             },{
                 autoAlpha:1,
-                x:0,
-                duration:0.6,
+                transform:"skew(0)",
+                duration:1.5,
         
                 delay:i/speed
             })
@@ -330,6 +330,14 @@ function markMenu(){
     }
   
 }
+function addMouseHover(){
+    let imgBox = document.querySelectorAll(".imgBox")
+    imgBox.forEach((item)=>{
+        item.classList.add("magic-hover")
+        item.classList.add("magic-hover__square")
+
+    })
+}
 
 // hamburger
 
@@ -381,6 +389,7 @@ loadingPageAnimation()
 
 markMenu()
 menuAnimation()
+addMouseHover()
 gsapStopWarning()
 safariHacks();
 

@@ -165,11 +165,11 @@ function thirdPageAnimation(){
         }
     });
     gg2.fromTo(".third-page-bg img",{
-       x:"8vw",
+       y:"8vw",
        autoAlpha:0, 
     },{
         autoAlpha:1, 
-       x:0
+       y:0
         
     })
 }

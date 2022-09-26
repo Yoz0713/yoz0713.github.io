@@ -260,39 +260,44 @@
                 }
                 
                 .line{
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
                     position: absolute;
                    
                     .straight{
                         width: 0.3%;
-                        transform: scaleY(0.3) translate(4.3vw,-3vw);
+                        
+                        transform: scale(0.5,0.25) translate(50.8vw,81vw);
                      }
                      .straight2{
                         width: 0.3%;
-                        transform: scaleY(0.3) translate(4vw,-44.8vw);
+                        transform: scale(0.5,0.25) translate(50vw,37.2vw);
                      }
                      .left-bottom{
-                        width: 22%;
+                        width: 12.98%;
                         position: absolute;
-                        left: -5.2vw;
-                        top: -10.5vw;
+                        left: 16.4vw;
+                        top:16.2vw;
                      }
                      .right-bottom{
-                        width: 22%;
+                        width: 12.8%;
                         position: absolute;
-                        right: 15.8vw;
-                        top: -10.8vw;
+                        left: 27.8vw;
+                        top:16vw;
                      }
                      .path-left{
-                        width: 25%;
+                        width: 12.8%;
                         position: absolute;
-                        left: -26.3%;
-                        bottom: 2vw;
+                        left: 14vw;
+                        top:29vw;
                      }
                      .path-right{
-                        width: 25.5%;
+                        width: 13%;
                         position: absolute;
-                        left: 31.5%;
-                        bottom: 1.97vw;
+                        left: 30.6vw;
+                        top:29vw;
                      }
                 }
             
@@ -609,39 +614,44 @@
                         }
                         
                         .line{
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
                             position: absolute;
                            
                             .straight{
-                                width: 1.2%;
-                                transform: scaleY(0.3) translate(8.3vw,-11.5vw);
+                                width: 0.7%;
+                                transform: scale(1,0.6) translate(8.5vw,-29vw);
+                             
                              }
                              .straight2{
-                                width: 1.2%;
-                                transform: scaleY(0.3) translate(7.7vw,-98vw);
+                                width: 0.6%;
+                                transform: scale(1,0.8) translate(7.5vw,7.2vw);
                              }
                              .left-bottom{
-                                width: 88%;
+                                width: 90%;
                                 position: absolute;
-                                left: -11.4vw;
-                                top: -21.5vw;
+                                left: -10.3vw;
+                                top:-15vw;
                              }
                              .right-bottom{
-                                width: 90.5%;
+                                width: 91%;
                                 position: absolute;
-                                right: -11.4vw;
-                                top: -21.8vw;
+                                left: 12vw;
+                                top:-15.1vw;
                              }
                              .path-left{
-                                width: 85%;
+                                width: 80%;
                                 position: absolute;
-                                left: -15vw;
-                                top: 6.3vw;
+                                left: -13.5vw;
+                                top:11vw;
                              }
                              .path-right{
-                                width: 87%;
+                                width: 80%;
                                 position: absolute;
-                                left: 18vw;
-                                bottom: 6.7vw;
+                                left: 17.5vw;
+                                top:11.5vw;
                              }
                         }
                     
@@ -946,42 +956,7 @@
                                   
                                 }
                                 
-                                .line{
-                                    position: absolute;
-                                   
-                                    .straight{
-                                        width: 1.2%;
-                                        transform: scaleY(0.3) translate(8.3vw,-11.5vw);
-                                     }
-                                     .straight2{
-                                        width: 1.2%;
-                                        transform: scaleY(0.3) translate(7vw,-98vw);
-                                     }
-                                     .left-bottom{
-                                        width: 93%;
-                                        position: absolute;
-                                        left: -11.5vw;
-                                        top: -21.5vw;
-                                     }
-                                     .right-bottom{
-                                        width: 90.5%;
-                                        position: absolute;
-                                        right: -11.4vw;
-                                        top: -21.8vw;
-                                     }
-                                     .path-left{
-                                        width: 85%;
-                                        position: absolute;
-                                        left: -16vw;
-                                        top: 6.8vw;
-                                     }
-                                     .path-right{
-                                        width: 87%;
-                                        position: absolute;
-                                        left: 18vw;
-                                        bottom: 6.7vw;
-                                     }
-                                }
+                          
                             
                      
                             }
