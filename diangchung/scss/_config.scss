@@ -350,17 +350,17 @@ button{
         width: 100%;
         height: 100%;
         background-color: transparent;
-        transform: rotate(-90deg) scale(0.4);
+        transform: rotate(-90deg) scale(0.3);
     }
     .imgBox{
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        background-color:#224177 ;
+        
         border-radius: 50%;
-        width: 6vw;
-        height: 6vw;
+        width: 5vw;
+        height: 5vw;
         overflow: hidden;
         top: 0;
         bottom: 0;
@@ -369,15 +369,15 @@ button{
         margin: auto;
         opacity: 0;
         img{
-            width: 2.6vw;
-            filter: brightness(20);
+            width: 2vw;
+    
             margin-bottom: 0vw;
         }
         .star{
             right: 1.5vw;
             position: absolute;
             top: 1vw;
-            width: 0.6vw;
+            width: 0.4vw;
         }
     }
 }
@@ -426,12 +426,13 @@ button{
             height: 8vw;
        
             img{
-                width: 4vw;
-                filter: brightness(10);
+                width: 3vw;
+       
             }
             .star{
-                top: 1.5vw;
-                right: 2vw;
+                top: 1.8vw;
+                right: 2.5vw;
+                width: 0.7vw;
             }
         }
     }
@@ -704,19 +705,22 @@ button{
      
          
           .loading{
+            svg{
+                transform: scale(0.4);
+            }
             .imgBox{
         
                 width: 11.5vw;
                 height: 11.5vw;
            
                 img{
-                    width:6vw;
-                    filter: brightness(10);
+                    width:5vw;
+                  
                 }
                 .star{
-                    width: 1.2vw;
-                    top: 1.8vw;
-                    right: 3vw;
+                    width: 1vw;
+                    top: 2.2vw;
+                    right: 3.2vw;
                 }
             }
         }
@@ -1028,7 +1032,7 @@ button{
                     }
                     .loading{
                         svg{
-                            transform: rotate(-90deg) scale(0.6);
+                            transform: rotate(-90deg) scale(0.65);
                         }
                         .imgBox{
                         
@@ -1036,15 +1040,15 @@ button{
                             height: 18vw;
                        
                             img{
-                                width: 8vw;
-                                filter: brightness(10);
+                                width: 9vw;
+                    
                                 margin-bottom: 1.5vw;
                       
                             }
                             .star{
-                                width: 1.5vw;
-                                top: 3vw;
-                                right: 4.8vw;
+                                width: 2vw;
+                                top: 2vw;
+                                right: 4.5vw;
                             }
                         }
                     }
