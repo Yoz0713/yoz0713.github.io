@@ -617,7 +617,7 @@ button:hover img {
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) {
   .loading svg {
-    transform: scale(0.4);
+    transform: rotate(-90deg) scale(0.4);
   }
   .loading .imgBox {
     width: 11.5vw;
