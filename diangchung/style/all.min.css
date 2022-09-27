@@ -296,7 +296,7 @@ button:hover img {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  transform: rotate(-90deg) scale(0.6);
+  transform: rotate(-90deg) scale(0.4);
 }
 .loading .imgBox {
   display: flex;
@@ -305,8 +305,8 @@ button:hover img {
   position: absolute;
   background-color: #224177;
   border-radius: 50%;
-  width: 9vw;
-  height: 9vw;
+  width: 6vw;
+  height: 6vw;
   overflow: hidden;
   top: 0;
   bottom: 0;
@@ -316,15 +316,15 @@ button:hover img {
   opacity: 0;
 }
 .loading .imgBox img {
-  width: 4vw;
+  width: 2.6vw;
   filter: brightness(20);
   margin-bottom: 0vw;
 }
 .loading .imgBox .star {
-  right: 2.5vw;
+  right: 1.5vw;
   position: absolute;
-  top: 1.3vw;
-  width: 0.8vw;
+  top: 1vw;
+  width: 0.6vw;
 }
 
 .phone {
@@ -361,22 +361,22 @@ button:hover img {
   height: 100%;
 }
 
-.imgBox:hover #magicMouseCursor {
-  border: 1px solid transparent;
+.cursor-overlay {
+  border: none !important;
 }
 
 @media all and (max-width: 1380px) {
   .loading .imgBox {
-    width: 12.5vw;
-    height: 12.5vw;
+    width: 8vw;
+    height: 8vw;
   }
   .loading .imgBox img {
-    width: 7.5vw;
+    width: 4vw;
     filter: brightness(10);
   }
   .loading .imgBox .star {
-    top: 2vw;
-    right: 3.5vw;
+    top: 1.5vw;
+    right: 2vw;
   }
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) {
@@ -619,17 +619,17 @@ button:hover img {
 }
 @media all and (max-width: 1380px) and (max-width: 1024px) and (max-width: 920px) {
   .loading .imgBox {
-    width: 18vw;
-    height: 18vw;
+    width: 11.5vw;
+    height: 11.5vw;
   }
   .loading .imgBox img {
-    width: 10vw;
+    width: 6vw;
     filter: brightness(10);
   }
   .loading .imgBox .star {
-    width: 1.8vw;
-    top: 2vw;
-    right: 4.5vw;
+    width: 1.2vw;
+    top: 1.8vw;
+    right: 3vw;
   }
   .menu {
     display: flex;
@@ -888,20 +888,21 @@ button:hover img {
     line-height: 5vw;
   }
   .loading svg {
-    transform: rotate(-90deg) scale(0.95);
+    transform: rotate(-90deg) scale(0.6);
   }
   .loading .imgBox {
-    width: 28vw;
-    height: 28vw;
+    width: 18vw;
+    height: 18vw;
   }
   .loading .imgBox img {
-    width: 15vw;
+    width: 8vw;
     filter: brightness(10);
     margin-bottom: 1.5vw;
   }
   .loading .imgBox .star {
-    top: 4vw;
-    right: 7vw;
+    width: 1.5vw;
+    top: 3vw;
+    right: 4.8vw;
   }
 }
 .index {
@@ -945,20 +946,20 @@ button:hover img {
 }
 .index .first-page .navigate .prev {
   width: 2.5vw;
-  height: 1.3vw;
+  height: 1.7vw;
   background-clip: padding-box;
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
   background-color: #353738;
-  border: 10px solid transparent;
+  border: 0.7vw solid transparent;
   border-right: none;
 }
 .index .first-page .navigate .next {
   width: 2.5vw;
-  height: 1.3vw;
+  height: 1.7vw;
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
   background-clip: padding-box;
   background-color: #353738;
-  border: 10px solid transparent;
+  border: 0.7vw solid transparent;
   border-left: none;
 }
 .index .first-page .navigate .current {

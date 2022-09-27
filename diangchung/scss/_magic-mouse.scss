@@ -10,7 +10,7 @@ body {
     top: 0;
     transition: transform 0.07s, width 0.3s, height 0.3s;
     pointer-events: none;
-
+  
     &.cursor-square {
       border-radius: 0;
       

@@ -40,23 +40,23 @@
             bottom: 0;
             .prev{
                 width: 2.5vw;
-                height: 1.3vw;
+                height: 1.7vw;
                 background-clip: padding-box;
                 
                 filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
                 background-color: #353738;
-                border: 10px solid transparent;
+                border: 0.7vw solid transparent;
                 border-right: none;
             }
             .next{
                 width: 2.5vw;
-                height: 1.3vw;
+                height: 1.7vw;
       
                 filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
                 background-clip: padding-box;
                 background-color: #353738;
             
-                border: 10px solid transparent;
+                border: 0.7vw solid transparent;
                 border-left: none;
             }
             .current{
