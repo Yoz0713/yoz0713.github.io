@@ -44,15 +44,13 @@ function splitTextAnimationLeftIn(wrap,delay,speed,trigger){
                 duration:delay,
              
             }).fromTo(item.childNodes,{
-      
-                transform:"scale(0)",
-                autoAlpha:0
+
             },{
-                
-                transform:"scale(1)",
+           
                 autoAlpha:1,
+           
       
-                duration:1,
+                duration:1.5,
         
                 delay:i/speed
             })
@@ -99,7 +97,7 @@ function menuAnimation(){
         })
         li.forEach((item)=>{
             
-            splitTextAnimationLeftIn(item.lastElementChild,0.5,7,".menu")
+            splitTextAnimationLeftIn(item.lastElementChild,0.5,8,".menu")
         })
 }
 
