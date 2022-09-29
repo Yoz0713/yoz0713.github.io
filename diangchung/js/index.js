@@ -123,71 +123,50 @@ let next = document.querySelector(".next")
 
 let swiper1 = new Swiper(".swiper",{
     speed:2000,
-    loop:true,
+
     autoplay:{
         delay:5000
     },
- 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+      },
     effect : 'fade',
     fadeEffect: {
       crossFade: true,
     },
     mousewheel:false,
     on: {
-        
         slideChangeTransitionStart: function(){
-            if(this.realIndex == 0){
-                prev.classList.add("current")
-                next.classList.remove("current")
-                indexBanner1In()
-             }else if(this.realIndex == 1){
-                 prev.classList.remove("current")
-                 next.classList.add("current")
-                 indexBanner2In()
-             }
-      },
-    
+           indexBannerIn(".banner")
+        },
+        touchMove:function(){
+            indexBannerIn(".banner")
+        }
     }
 })
 
 if(window.innerWidth > 920){
     let swiper = document.querySelector(".swiper")
+
+  
     swiper.classList.add("swiper-no-swiping")
 }
-prev.addEventListener("click",()=>{
-    swiper1.slidePrev()
-})
-next.addEventListener("click",()=>{
-    swiper1.slideNext()
-})
 
 
-function indexBanner1In(){
+
+function indexBannerIn(i){
     let gg = gsap.timeline()
 
-    gg.fromTo(".banner1",{
+    gg.fromTo(`.swiper-slide-active ${i}`,{
         transform:"scale(1)",
         
     },{
         transform:"scale(1.09)",
         duration:7,
-      
- 
     })
 }
-function indexBanner2In(){
-    let gg2 = gsap.timeline()
 
-    gg2.fromTo(".banner2",{
-        transform:"scale(1)",
-    
-    },{
-        transform:"scale(1.09)",
-        duration:7,
-       
-        
-    })
-}
 
 
 function secondPageAnimation(){

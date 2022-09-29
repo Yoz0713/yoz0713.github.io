@@ -11,6 +11,8 @@
     
         background-color: #000;
         .swiper{
+      
+          
             width: 100%;
             height: 100%;
             .swiper-wrapper{
@@ -26,44 +28,25 @@
                     }
                 }
             }
-        }
-        .navigate{
-            display: flex;
-            width: 5.5vw;
-            height:5vw;
-            z-index: 10;
-            justify-content:space-between;
-            align-items: center;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            .prev{
-                width: 2.5vw;
-                height: 1.7vw;
-                background-clip: padding-box;
-                
-                filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
-                background-color: #353738;
-                border: 0.7vw solid transparent;
-                border-right: none;
-            }
-            .next{
-                width: 2.5vw;
-                height: 1.7vw;
-      
-                filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
-                background-clip: padding-box;
-                background-color: #353738;
-            
-                border: 0.7vw solid transparent;
-                border-left: none;
-            }
-            .current{
-                background-color: rgba(177, 202, 236, 0.692);
-                filter: drop-shadow(0 0 5px rgba(156, 188, 234, 0.692));
+            &-pagination{
+                margin-bottom: 1vw;
+                &-bullet{
+                    width: 1.5vw;
+                    height: 0.5vw;
+                    background-clip: padding-box;
+                    border-radius: 0;
+                    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.245));
+                    background-color: #171718;
+               
+                    
+                }
+                &-bullet-active{
+                    background-color: rgba(177, 202, 236, 0.692);
+                    filter: drop-shadow(0 0 5px rgba(156, 188, 234, 0.692));
+                }
             }
         }
+    
         &-title{
             width:fit-content;
             position: absolute;
@@ -687,7 +670,12 @@
                 position: relative;
                 background-color: #000;
                 height: 78vw;
-             
+                .swiper{
+                    &-pagination{
+                        display: none;
+                  
+                    }
+                }
                 &-title{
                     width:fit-content;
                     position: absolute;
