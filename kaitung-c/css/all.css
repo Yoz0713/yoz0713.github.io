@@ -3244,7 +3244,6 @@ footer .share_box a:nth-last-of-type(4) img {
             clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
   .index3 .search_car {
-    padding: 5vw 7vw;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -3270,7 +3269,7 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 100%;
   }
   .index3 .search_car .search_box .sel_div {
-    padding: 1.8vw 3vw;
+    padding: 1.5vw 3vw;
     width: 100%;
     flex-direction: column;
   }
@@ -3703,7 +3702,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index6 .contact_us .form_box p {
     margin: 0;
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: #fff;
     letter-spacing: 0.1vw;
     margin-bottom: 10vw;
@@ -3719,7 +3718,7 @@ footer .share_box a:nth-last-of-type(4) img {
     border: 1px solid rgba(255, 255, 255, 0.562);
     margin-bottom: 5vw;
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 3.5vw;
     letter-spacing: 1px;
     padding: 1.5vw 1vw;
     outline: none;
