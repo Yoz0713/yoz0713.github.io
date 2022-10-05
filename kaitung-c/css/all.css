@@ -2235,7 +2235,9 @@ footer .share_box a:nth-last-of-type(4) img {
        -moz-appearance: none;
             appearance: none;
     min-width: 20vw;
+    background-color: #fff;
     padding: 5px 10px;
+    color: #000;
   }
   .index3 .search_car .search_box .sel_div .sel_box select option {
     font-size: 3.5vw;
@@ -3266,7 +3268,7 @@ footer .share_box a:nth-last-of-type(4) img {
     border-radius: 0;
     box-shadow: none;
     overflow: visible;
-    margin: 10vw 0 10vw;
+    margin: 10vw 0 13.5vw;
     width: 100%;
   }
   .index3 .search_car .search_box .sel_div {

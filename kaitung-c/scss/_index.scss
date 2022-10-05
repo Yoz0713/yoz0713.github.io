@@ -1894,9 +1894,9 @@
                             outline: none;
                             appearance: none;
                             min-width: 20vw;
-    
+                            background-color: #fff;
                             padding: 5px 10px;
-    
+                            color: #000;
                             option{
                                 font-size: 3.5vw;
                             }
@@ -3109,7 +3109,7 @@
                 border-radius:0;
                 box-shadow:none;
                 overflow:visible;
-                margin: 10vw 0 10vw;
+                margin: 10vw 0 13.5vw;
                 width: 100%;
                 .sel_div{
                     padding: 1.5vw 3vw;
