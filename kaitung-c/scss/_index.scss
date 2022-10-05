@@ -2866,7 +2866,7 @@
         .hotcar{
             position: relative;
             background-color: #EEF5FA;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     
             .txt_box{
                 justify-content: space-between;
@@ -2877,8 +2877,8 @@
     
                 .btn_box{
                     a{
-                        $svg_top:32%;
-                        $svg_left:34%;
+                        $svg_top:30%;
+                        $svg_left:38%;
                         $svg_width:20%;
                         position: relative;
                         display: inline-flex;
@@ -2896,7 +2896,7 @@
                         .svg_ic{
                             display: inline-block;
                             position: relative;
-                            width: 4vw;
+                            width: 7vw;
                             
                             .arrow{
                                 transition: all 0.5s;
@@ -2999,10 +2999,12 @@
                 column-count:2;
                 column-gap:$gap;
                 column-width: 48vw;
+             
                 .item{
                     position: relative;
-                    margin-bottom:3vw;
+                    margin-bottom:0vw;
                     overflow: hidden;
+                    
                     a{
                         display: block;
                         // pointer-events:none;
@@ -3031,7 +3033,7 @@
                             color: #fff;
                             margin: 0;
                             margin-bottom: .4vw;
-                            font-size: 1.4vw;
+                            font-size: 3.5vw;
                             font-weight: 800;
                             letter-spacing: 0.1vw;
                         }
@@ -3039,7 +3041,7 @@
                             color: #fff;
                             margin: 0;
                             margin-bottom: 1vw;
-                            font-size: 0.9vw;
+                            font-size: 3vw;
                             letter-spacing: 0.1vw;
                             span{
                                 border-right: 1px solid #fff;
@@ -3059,6 +3061,12 @@
                         }
                     }
                 }
+                & > :nth-child(odd){
+                    margin-bottom: 3vw;
+                }
+                & > :nth-child(even){
+                    -webkit-column-break-after: always;
+                }
                 & > :nth-child(5){
                     display: none;
                 }
@@ -3077,7 +3085,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 55%;
+                width:100%;
                 height: 100%;
                 background-color: #0080be;
                 clip-path: polygon(0 0, 100% 100%, 0 100%);
