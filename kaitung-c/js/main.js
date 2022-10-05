@@ -3,17 +3,17 @@ $(document).ready(function () {
     let loading_tl=gsap.timeline({delay:0.4});
         loading_tl.to('.loading_div .logo_div img', 0.5, {y: 0});
 
-    setTimeout(() => {
-        $('.loading_div').addClass('close');
+    // setTimeout(() => {
+    //     $('.loading_div').addClass('close');
 
-        //-- top LOGO 動態 --
-        let top_tl = gsap.timeline({delay:0.5});
-        top_tl.from('.top_logo_div .img_box img', 1, {y:100});
-        $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
-            top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
-        });
+    //     //-- top LOGO 動態 --
+    //     let top_tl = gsap.timeline({delay:0.5});
+    //     top_tl.from('.top_logo_div .img_box img', 1, {y:100});
+    //     $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
+    //         top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
+    //     });
 
-    }, 2000);
+    // }, 2000);
 
 
 

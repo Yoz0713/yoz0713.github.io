@@ -187,11 +187,13 @@ footer{
      img{ transform: translateY(100%);}
    }
    .spinner_div{
+        width: 50vw;
       overflow: hidden;
       img{
-        width: 35%;
-        transform: translateX(500px) skewX(50deg);
-        animation: car_move 2.5s ease-in-out 0.5s infinite normal;
+        margin-top: 2vw;
+        width: 25vw;
+        transform: translateX(300%) ;
+       animation: car_move 2.5s ease-in-out 0.5s infinite normal;
       }
    }
 }
@@ -637,16 +639,16 @@ footer{
 
 @keyframes car_move {
     0%{
-        transform: translateX(500px) skewX(80deg);
+        transform: translateX(350%) skewX(80deg);
     }
     30%{
-        transform: translateX(100px) skewX(0deg);
+        transform: translateX(30%) skewX(0deg);
     }
     70%{
-        transform: translateX(120px) skewX(0deg);
+        transform: translateX(90%) skewX(0deg);
     }
     100%{
-        transform: translateX(-500px) skewX(-80deg);
+        transform: translateX(-250%) skewX(-80deg);
     }
 }
 .phone{
