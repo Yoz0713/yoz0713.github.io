@@ -1,14 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    background-color: #E8E7EB;
-    
-}
 
+body{
+    background-color: #E8EAEC;
+}
 .stock1{
     position: relative;
     height: fit-content;
@@ -107,7 +100,7 @@ body{
      
             .banner{
                 width: 95%;
-           
+                height: 63vw;
             }
 
             .svg1{
@@ -153,90 +146,14 @@ body{
  
 
 
-    @include tablet{
-         .swiper{
-
-            height: 135vw;
-
-            .swiper-slide{
-
-                .txt_box{
-                    clip-path:none;
-                    padding: 23vw 10vw;
-                    width: 100%;
-                    box-sizing: border-box;
-
-                    .line{
-                        display: none;
-                    }
-                    .bg{
-                        display: none;
-                    }
-                    .txt{
-                        h1{
-                            font-size: 9vw;
-                        }
-                        p{
-                            display: none;
-                        }
-                    }
-
-                    .s_logo {
-                        img{
-                            margin-right: 2vw;
-                        }
-                    }
-                }
-
-                .img_box {
-                    left: 0vw;
-
-                    //-- 動態前置 --
-                    transform: translateX(0vw);
-    
-                    .banner{
-                        width: 100%;
-                    }
-
-                    .svg1,
-                    .svg2{
-                        display: none;
-                    }
-
-                    &::before{
-                        height: 70%;
-                        background: linear-gradient(to bottom, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
-                    }
-                }
-            }
-
-            .swiper-pagination{
-                top: auto;
-                bottom: 7vw;
-                width: 85vw;
-
-                span{
-                    width: 4vw;
-                    height: 4.5vw;
-                    margin: 0.7vw;
-                    font-size: 2.2vw;
-
-                    &.swiper-pagination-bullet-active{
-                        width: 4vw;
-                        height: 5.5vw;
-                        font-size: 2.2vw;
-                    }
-                }
-            }
-         }
-    }
+   
     
 }
 .stock2{
     width: 80%;
     height: fit-content;
     margin:0 auto;
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
     border-bottom: 1px solid #000;
     margin-bottom: 5vw;
     &-top{
@@ -252,20 +169,58 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                transition:all 0.5s;
                 cursor: pointer;
                 img{
                     flex: 0 0 70%;
                     width: 4vw;
-               
+                    pointer-events: none;
+                    transition: all 0.3s;
+                    opacity: 0.4;
                 }
                 p{
+                    pointer-events: none;
                     flex: 0 0 30%;
                     color: rgb(107, 183, 221);
                 }
                 &:hover p{
                     color: #0080C5;
                 }
+                &::after{
+                    content: "";
+                    display: block;
+                    opacity: 0;
+                    position: absolute;
+                    left:50%;
+                    transform: translateX(-50%);
+                    transition: all 0.5s;
+                    bottom: -1.5vw;
+                    border: 0.3vw solid ;
+                    border-color:#0080C5 transparent transparent transparent;
+                }
              
+            }
+            .active{
+                p{
+                    color:#0080C5;
+                }
+                position: relative;
+                img{
+                    opacity: 1;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    opacity: 1;
+                    position: absolute;
+                    left:50%;
+                    transform: translateX(-50%);
+                    
+                    bottom: -1.5vw;
+                    border: 0.3vw solid ;
+                    border-color:#0080C5 transparent transparent transparent;
+                }
+               
             }
           
         }
@@ -282,11 +237,40 @@ body{
                 height:2vw;
                 color: #0080C5;
                 font-weight: 800;
-                
+                transition: all 0.3s;
                 cursor: pointer;
                 &:hover{
                     background-color: #0080C5;
                     color: #fff;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    opacity: 0;
+                    position: absolute;
+                    left:50%;
+                    transform: translateX(-50%);
+                    transition: 0.5s;
+                    bottom: -1.5vw;
+                    border: 0.3vw solid ;
+                    border-color:#0080C5 transparent transparent transparent;
+                }
+            }
+            .active{
+                background-color: #0080C5;
+                color: #fff;
+                position: relative;
+                &::after{
+                    content: "";
+                    display: block;
+                    opacity: 1;
+                    position: absolute;
+                    left:50%;
+                    transform: translateX(-50%);
+                    
+                    bottom: -1.5vw;
+                    border: 0.3vw solid ;
+                    border-color:#0080C5 transparent transparent transparent;
                 }
             }
         }
@@ -344,9 +328,85 @@ body{
             flex: 0 0 32%;
         }
     }
+    &-pagination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        margin: 3vw auto 0;
+        height: 1.8vw;
+        position: relative;
+            &-current{
+                margin-right: 10vw;
+                color: #18567B;
+                position: relative;
+                margin-left: 1.5vw;
+                &::after{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 8vw;
+                    height: 0.5px;
+                    background-color: #18577ba2;
+                    left: 1.8vw;
+                    top: 50%;
+                    transform: translateY(-50%);
+                   
+                }
+            }
+            &-total{
+                color: #18567B;
+                margin-right: 1.5vw;
+            }
+            span{
+                font-size: 1.2vw;
+            }
+     
+            .next{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 10;
+                    width: 1.8vw;
+                    height: 100%;
+                    cursor: pointer;
+                    align-items: flex-end;
+                    margin-bottom: 0.2vw;
+                    img{
+                        transform: rotateY(180deg);
+                        width: 0.7vw;
+                        position: absolute;
+                        
+                    }
+                    &:hover img{
+                        filter: brightness(30);
+                    }
+                }
+            .prev{
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    align-items: flex-end;
+                    z-index: 10;
+                    width: 1.8vw;
+                    margin-bottom: 0.2vw;
+                    height: 100%;
+                    cursor: pointer;
+                    img{
+                        transform: rotateY(0deg);
+                        width: 0.7vw;
+                        position: absolute;
+                        
+                    }
+                    &:hover img{
+                        filter: brightness(30);
+                    }
+                }
+       
+    }
 }
 .stock3{
-    background-color: #E8EAEC;
+
     width: 80%;
     margin: 0 auto;
 

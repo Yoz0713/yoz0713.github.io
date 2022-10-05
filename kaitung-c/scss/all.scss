@@ -2,5 +2,62 @@
 @import '_index.scss';
 @import '_stock.scss';
 @import '_news.scss';
+@import '_newsInner.scss';
+@import '_stockInner.scss';
+@import '_purchase.scss';
+@import '_rent.scss';
+@import '_contact.scss';
+@import '_about.scss';
+@import 'buyIt';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+a{
+    text-decoration: none;
 
+}
+body{
+    background-color: #E8E7EB;
+    
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0px);
 
+    }
+    25%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes playbutton{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(0.8);
+    }
+    45%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(0.8);
+    }
+    95%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

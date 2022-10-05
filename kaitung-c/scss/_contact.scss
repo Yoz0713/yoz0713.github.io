@@ -1,0 +1,217 @@
+body{
+    background-color: #fff !important;
+}
+.contact1{
+    display: flex;
+    width: 100%;
+    height: 55vw;
+    position: relative;
+   
+    .top_logo_div{
+        justify-content: flex-start;
+        width: 90%;
+        margin-top: 5vw;
+        .img_box{
+            margin-left: 5vw;
+            img{
+                width: 14vw;
+                
+            }
+        }
+    }
+    &-bg{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
+    }
+    &-left{
+        display: flex;
+        color: #fff;
+        align-items: center;
+        flex: 0 0 40%;
+        &-para{
+            height: 18vw;
+            margin-left: 5vw;
+            h1{
+
+            }
+            > p{
+                margin: 1vw 0 15vw;
+                font-weight: 300;
+            }
+            .booking{
+                display: flex;
+                font-weight: 300;
+                &-left{
+                    position: relative;
+                    margin-right: 1.5vw;
+                 
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 65%;
+                        background-color: #fff;
+                        position: absolute;
+                        right: -0.75vw;
+                        top: 0.5vw;
+                    }
+                }
+                &-right{
+
+                }
+            }
+        }
+    }
+    &-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 60%;
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 70%;
+            margin-bottom: 2vw;
+            input{
+                outline: none;
+                padding: 0.5vw 0;
+                border: none;
+                border-bottom: 1px solid #0080c4;
+                width: 100%;
+            }
+            .form-box{
+                flex:0 0 47%;
+                margin-bottom: 1.5vw;
+                p{
+                    font-weight: 600;
+                    color:#0080c4 ;
+                    span{
+                        color: #9d272d;
+                    }
+                }
+                input{
+                    color:#0080c4 ;
+                    font-size: 1vw;
+                }
+            }
+            .submit-box{
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                position: relative;
+                input{
+                    position: relative;
+                    background-color: #0080c4;
+                    color: #fff;
+                    font-size: 0.7vw;
+                    width: fit-content;
+                    padding: 0.4vw 2.5vw;
+                    border-radius: 40px;
+                    cursor: pointer;
+                    letter-spacing: 0.2vw;
+                }
+                &:after{
+                    display: block;
+                    content:"";
+                    width: 0.7vw;
+                    height: 0.7vw;
+                    background: url(../img/contact/SVG/arrow.svg);
+                    position: absolute;
+                    background-repeat: no-repeat;
+                    top: 0.65vw;
+            
+                    right: 1.6vw;
+                }
+            }
+            .message{
+                flex: 0 0 100%;
+            }
+          
+        }
+    }
+}
+.footerTop{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vw 0 4vw;
+    color: #fff;
+    border-bottom: 1px solid #0083cc;
+    margin-bottom: 4vw;
+    &-left{
+        flex: 0 0 55%;
+      
+        display: flex;
+        & > :not(:last-child){
+            margin-right: 1vw;
+        }
+        .box{
+            width: 10vw;
+            a{
+                color: #fff;
+            }
+            ul{
+            
+                position: relative;
+           
+                li{
+                    margin-bottom: 1vw;
+                  
+                }
+                .box-title{
+                    position: absolute;
+                    top: -3.5vw;
+                }
+            }
+    
+        }
+        .everyCar{
+            width: 15vw;
+            ul{
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                li{
+                    flex: 0 0 45%;
+                }
+                .box-title{
+                    position: absolute;
+                    top: -2.5vw;
+                }
+            }
+    
+           
+        }
+    }
+    &-right{
+        flex: 0 0 45%;
+        margin-top: -3.5vw;
+        img{
+            width: 100%;
+        }
+    }
+}
+.contact{
+    footer{
+        position: relative;
+        background: url(../img/2x/engine.png);
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 20vw;
+            background: linear-gradient(180deg, transparent 50% , rgba(0, 0, 0, 0.305) 60% , rgba(0, 0, 0, 0.604) , rgba(0, 0, 0, 0.71));
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            bottom: 0;
+            left: 0;
+          
+        }
+    }
+}

@@ -155,6 +155,7 @@ $(document).ready(function () {
     $.each($('footer .share_box a'), function (index, valueOfElement) { 
         footer_tl.from($(this), 1.5, {y:'100%'}, '<0.1');
     });
+  
 });
 
 // $(window).on('load', function () {

@@ -63,10 +63,10 @@ footer{
     padding: 3vw 6vw;
     background-image: url(../img/1x/footer_bg-100.jpg);
     background-size: cover;
-
+ 
     .logo_item{
         flex: 1 1 50%;
-
+        z-index: 2;
         .logo_box{
             flex: 1 0 30%;
             overflow: hidden;
@@ -96,9 +96,10 @@ footer{
         align-items: center;
         justify-content: flex-end;
         overflow: hidden;
-
+        z-index: 2;
         a{
             padding: 0.5vw 1vw;
+     
             img{
                 height: 1.1vw;
                 width: auto;
@@ -295,7 +296,7 @@ footer{
         flex-direction: column;
         align-items: flex-start !important;
         // padding: 5vw;
-
+      
         &::before{
             
             
@@ -341,7 +342,7 @@ footer{
                     padding: 1vw 4vw;
                     padding-left: 0;
                     display: inline-block;
-                    
+                  
                     img{
                         height: 1.1vw;
                         width: auto;
@@ -409,14 +410,14 @@ footer{
 
 .word_level{
     .date{
-        font-size:1vw;
+        font-size:0.7vw;
         letter-spacing: 0.1vw;
    
         font-weight: 600;
 
     }
     .ch_text_xl{
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: 700;
         letter-spacing: 0.2vw;
        
@@ -449,7 +450,7 @@ footer{
     }
    
     .en_text_xl{
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-weight: 700;
         letter-spacing: 0.2vw;
        font-family: $en_family;
@@ -500,7 +501,7 @@ footer{
         align-items: center;
         justify-content: center;
         overflow: hidden;
-
+   
         &.fixed_share_box{
             position: fixed;
             flex-direction: column;
@@ -514,6 +515,7 @@ footer{
 
         a{
             padding: 0.5vw 0.4vw;
+          
             img{
                 height: 1.1vw;
                 width: auto;
@@ -539,6 +541,7 @@ footer{
             &:nth-last-of-type(4){
                 img{
                     height: 1.4vw;
+                    margin-right: 0.2vw;
                 }
             }
         }
@@ -572,5 +575,241 @@ footer{
     }
     100%{
         transform: translateX(-500px) skewX(-80deg);
+    }
+}
+.phone{
+    display:none;
+}
+
+@media all and (max-width:850px){
+   
+    .phone{
+        display: block;
+    }
+    .computer{
+        display: none;
+    }
+    .menu{
+        z-index: 21;
+       &::before{
+        width: 165%;
+        left: -20%;
+       }
+    }
+    .word_level{
+        .date{
+            font-size:0.7vw;
+            letter-spacing: 0.1vw;
+       
+            font-weight: 600;
+    
+        }
+        .ch_text_xl{
+            font-size: 7vw;
+            font-weight: 700;
+            letter-spacing: 0.2vw;
+           
+        }
+        .ch_text_l{
+            font-size: 5vw;
+            letter-spacing:0.15vw;
+            font-weight:700;
+           
+        }
+        .ch_text_m{
+            font-size: 3.5vw;
+            
+           
+        }
+        .ch_text_s{
+            font-size: 2.5vw;
+          
+       
+       
+        }
+        
+       
+        .ch_text_xs{
+            font-size: 2vw;
+            letter-spacing:0.1vw;
+       
+           
+           
+        }
+       
+        .en_text_xl{
+            font-size: 7vw;
+            font-weight: 700;
+            letter-spacing: 0.2vw;
+           font-family: $en_family;
+        }
+        .en_text_l{
+            font-size: 2vw;
+            font-weight:700;
+            font-family: $en_family;
+        }
+        .en_text_m{
+            font-size: 1.4vw;
+            font-family: $en_family;
+        }
+        .en_text_s{
+            font-size: 1vw;
+            letter-spacing: 0.1vw;
+            font-family: $en_family;
+        }
+        .en_text_xs{
+            font-size: 0.95vw;
+            letter-spacing: 0.5vw;
+            font-family: $en_family;
+        }
+    }
+    footer{
+        padding: 6vw 12vw;
+        background-image: url(../img/1x/footer_bg-100.jpg);
+        background-size: cover;
+        .flex-box{
+            flex-direction: column;
+            .logo_item{
+                
+                z-index: 2;
+                margin-bottom: 6vw;
+                .logo_box{
+                    width: 36vw;
+                    overflow: hidden;
+                    margin-bottom: 6vw;
+                }
+        
+                .item_box{
+                   align-items: flex-start;
+                    margin-left:0;
+                    overflow: hidden;
+                    a{
+                        color: #fff;
+                        width: fit-content;
+                        padding:  1vw;
+                        font-size: 2.5vw;
+                        letter-spacing: 0.4vw;
+                        font-weight: 100;
+                        text-decoration: none;
+                    }
+                    & :not(:last-child){
+                        margin-bottom: 3vw;  
+                    }
+                }
+        
+            }
+        
+            .share_box{
+               
+                position: relative;
+        
+                display: flex;
+               
+                justify-content: flex-start;
+            
+                a{
+                    padding: 0.5vw 1vw;
+             
+                    img{
+                        height: 5vw;
+                        width: auto;
+                        margin-right: 3vw;
+                    }
+        
+                    //-- yt --
+                    &:nth-last-of-type(1){
+                        img{
+                            height: 3vw;
+                        }
+                    }
+                    &:nth-last-of-type(2){
+                        img{
+                            height: 3.3vw;
+                        }
+                    }
+                    &:nth-last-of-type(3){
+                        img{
+                            height: 3.3vw;
+                        }
+                    }
+                    //-- fb --
+                    &:nth-last-of-type(4){
+                        img{
+                            height: 3.4vw;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+    @media all and (max-width:500px){
+        .word_level{
+            .date{
+                font-size:0.7vw;
+                letter-spacing: 0.1vw;
+           
+                font-weight: 600;
+        
+            }
+            .ch_text_xl{
+                font-size: 7vw;
+                font-weight: 700;
+                letter-spacing: 0.2vw;
+               
+            }
+            .ch_text_l{
+                font-size: 7vw;
+                letter-spacing:0.15vw;
+                font-weight:700;
+               
+            }
+            .ch_text_m{
+                font-size: 3.5vw;
+                
+               
+            }
+            .ch_text_s{
+                font-size: 2.5vw;
+              
+           
+           
+            }
+            
+           
+            .ch_text_xs{
+                font-size: 2vw;
+                letter-spacing:0.1vw;
+           
+               
+               
+            }
+           
+            .en_text_xl{
+                font-size: 7vw;
+                font-weight: 700;
+                letter-spacing: 0.2vw;
+               font-family: $en_family;
+            }
+            .en_text_l{
+                font-size: 7vw;
+                font-weight:700;
+                font-family: $en_family;
+            }
+            .en_text_m{
+                font-size: 1.4vw;
+                font-family: $en_family;
+            }
+            .en_text_s{
+                font-size: 1vw;
+                letter-spacing: 0.1vw;
+                font-family: $en_family;
+            }
+            .en_text_xs{
+                font-size: 0.95vw;
+                letter-spacing: 0.5vw;
+                font-family: $en_family;
+            }
+        }
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.85 51.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0080c3;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #0080c3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .85px;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g>
+      <polyline class="cls-2" points="38.93 11.37 47.43 11.37 47.43 11.39 47.43 2.89"/>
+      <polyline class="cls-2" points="12.92 40.48 4.42 40.48 4.42 40.46 4.42 48.96"/>
+      <g>
+        <path class="cls-2" d="M47.43,11.37l-3.48-3.48C39.34,3.28,32.97,.43,25.92,.43,11.84,.43,.42,11.84,.42,25.93"/>
+        <path class="cls-2" d="M4.42,40.48l3.48,3.48c4.61,4.61,10.99,7.47,18.03,7.47,14.08,0,25.5-11.42,25.5-25.5"/>
+        <path class="cls-1" d="M25.57,17.73l1.66,6.37c.1,.37,.44,.64,.82,.64h4.75l-6.52,9.39-1.66-6.37c-.1-.37-.44-.64-.82-.64h-4.75l6.52-9.39m.36-2l-8.5,12.24h6.38l2.12,8.16,8.5-12.24h-6.38l-2.12-8.16h0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -34,13 +34,13 @@
               </button>
         </div>
         <div class="list_box flex-box">
-            <a href="#"><span class="s_txt_box">關於我們</span><span class="a_line"></span></a>
+            <a href="./about.html"><span class="s_txt_box">關於我們</span><span class="a_line"></span></a>
             <a href="./stock.html"><span class="s_txt_box">現有車款</span><span class="a_line"></span></a>
-            <a href="#"><span class="s_txt_box">代購專區</span><span class="a_line"></span></a>
-            <a href="#"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
+            <a href="purchase.html"><span class="s_txt_box">代購專區</span><span class="a_line"></span></a>
+            <a href="rent.html"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
             <a href="./news.html"><span class="s_txt_box">新聞資訊</span><span class="a_line"></span></a>
-            <a href="#"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
-            <a href="#"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
+            <a href="contact.html"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
+            <a href="./contact.html"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
             <div class="ph share_box">
                 <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
                 <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="LINE"></a>
@@ -248,6 +248,17 @@
             </div>
      
         </div>
+        <div class="stock2-pagination">
+            <div class="prev">
+                <img src="./img/stock/SVG/arrow-l.svg">
+            </div>
+            <span class="rent2-pagination-current">1</span>
+            <span class="rent2-pagination-total">2</span>
+            <div class="next">
+                <img src="./img/stock/SVG/arrow-l.svg">
+            </div>
+       
+        </div>
     </section>
     <section class="stock3">
         <div class="search_car flex-box">
@@ -290,7 +301,10 @@
                 <p class="ch_text_s">鎧騰車業為您嚴格把關，每輛車都擁有第三方認證、里程保證、保固服務，放心挑選專屬於您的好車。</p>
             </div>
             <div class="stock4-top-lookAll">
-                <button>查看全部品牌</button>
+                <a href="./stockInner.html">
+                    <button>查看全部品牌</button>
+                </a>
+                
             </div>
         </div>
         <div class="stock4-bottom">
@@ -392,8 +406,9 @@
 
     <script>
         $(document).ready(function () {
+            let slide = 7
            let swiper = new Swiper('.swiper', {
-            slidesPerView :7,
+            slidesPerView :slide,
        
             pagination: {
             el: '.swiper-pagination',
@@ -401,17 +416,29 @@
             },  
             })
 
-            $(".swiper .swiper-pagination").empty().append(`<span class="swiper-pagination-current">1</span><span class="swiper-pagination-total">8</span>`)
+            $(".swiper .swiper-pagination").empty().append(`<span class="swiper-pagination-current">1</span><span class="swiper-pagination-total">${swiper.slides.length-slide+1}</span>`)
             console.log($(".swiper .swiper-pagination").html())
 
-            let prev = document.querySelector(".prev")
-            let next = document.querySelector(".next")
+            let prev = document.querySelector(".navigate .prev")
+            let next = document.querySelector(".navigate .next")
             prev.addEventListener("click",function(){
                 swiper.slidePrev()
             })
             next.addEventListener("click",function(){
                 swiper.slideNext()
             })
+            // filter
+            $(".stock2-top-switchCar").click((e)=>{
+                $(".stock2-top-switchCar .box").removeClass("active")
+                console.log(e.target)
+               e.target.classList.add("active")
+            })
+            $(".stock2-top-filter").click((e)=>{
+                $(".stock2-top-filter button").removeClass("active")
+                console.log(e.target)
+               e.target.classList.add("active")
+            })
+            //filter
         });
 
     </script>
