@@ -1817,8 +1817,8 @@
                         }
                     }
                 }
-                & > :nth-child(3){
-                    -webkit-column-break-before:always;
+                & > :nth-child(even){
+                    -webkit-column-break-after: always;
                 }
             }
     
@@ -3084,9 +3084,7 @@
                 & > :nth-child(odd){
                     margin-bottom: 3vw;
                 }
-                & > :nth-child(even){
-                    -webkit-column-break-after: always;
-                }
+              
                 & > :nth-child(1){
                    a{
                     width: 48vw;

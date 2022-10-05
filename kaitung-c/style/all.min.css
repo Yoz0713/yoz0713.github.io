@@ -2362,8 +2362,8 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 30px;
     transform: rotate(180deg);
   }
-  .index3 .hotcar .car_list > :nth-child(3) {
-    -webkit-column-break-before: always;
+  .index3 .hotcar .car_list > :nth-child(even) {
+    -webkit-column-break-after: always;
   }
   .index3 .hotcar .bg_square {
     position: absolute;
@@ -3450,9 +3450,6 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index3 .hotcar .car_list > :nth-child(odd) {
     margin-bottom: 3vw;
-  }
-  .index3 .hotcar .car_list > :nth-child(even) {
-    -webkit-column-break-after: always;
   }
   .index3 .hotcar .car_list > :nth-child(1) a {
     width: 48vw;
