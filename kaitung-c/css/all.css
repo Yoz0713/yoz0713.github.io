@@ -2395,6 +2395,7 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .search_car .search_box .btn_box a {
     display: flex;
     padding: 2.5vw 0vw 2.5vw 5vw;
+    align-items: center;
     color: #fff;
     font-size: 3.7vw;
     text-decoration: none;
@@ -2402,15 +2403,9 @@ footer .share_box a:nth-last-of-type(4) img {
     letter-spacing: 0.5vw;
   }
   .index3 .search_car .search_box .btn_box a img {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     width: 5.5vw;
     margin-left: 1vw;
-  }
-  .index3 .search_car .search_box .btn_box a :nth-child(2) {
-    position: absolute;
-    width: 1vw;
-    right: 2.3vw;
-    top: 4.6vw;
   }
 }
 @media all and (max-width: 850px) {

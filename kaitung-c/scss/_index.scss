@@ -1935,23 +1935,19 @@
                     a{
                         display: flex;
                         padding: 2.5vw 0vw 2.5vw 5vw;
+                        align-items: center;
                         color: #fff;
                         font-size: 3.7vw;
                         text-decoration: none;
                         font-weight: 700;
                         letter-spacing: 0.5vw;
                         img{
-                            transform: rotate(180deg);
+                            transform: rotate(0deg);
                             width: 5.5vw;
                             margin-left: 1vw;
                            
                         }
-                        & :nth-child(2){
-                            position: absolute;
-                            width: 1vw;
-                            right: 2.3vw;
-                            top: 4.6vw;
-                        }
+                     
                     }
                 }
                 
