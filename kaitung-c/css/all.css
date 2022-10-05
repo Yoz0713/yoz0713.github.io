@@ -1249,15 +1249,15 @@ footer .share_box a:nth-last-of-type(4) img {
   padding: 0 10px;
 }
 .index3 .search_car .search_box .sel_div .sel_box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-weight: 700;
   font-size: 1.4vw;
   line-height: 1;
   font-family: "Noto Sans TC", sans-serif;
   border: none;
   outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   min-width: 20vw;
   padding: 5px 10px;
 }
@@ -3005,7 +3005,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index1 .swiper .swiper-pagination {
     top: auto;
-    bottom: 25vw;
+    bottom: 45vw;
     width: 85vw;
   }
   .index1 .swiper .swiper-pagination span {
@@ -3250,6 +3250,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index3 .search_car .txt_box h2 {
     letter-spacing: 0;
+    font-size: 6.5vw;
   }
   .index3 .search_car .txt_box h4 {
     color: #0080C5;
@@ -3275,21 +3276,21 @@ footer .share_box a:nth-last-of-type(4) img {
     padding: 7vw 8vw;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
     border-radius: 100px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   }
   .index3 .search_car .search_box .sel_div .sel_box p {
     margin: 0;
     color: #aeaeae;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     font-weight: 400;
     letter-spacing: 0.15vw;
     padding: 0 10px;
   }
   .index3 .search_car .search_box .sel_div .sel_box select {
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     line-height: 1;
     font-family: "Noto Sans TC", sans-serif;
     border: none;
@@ -3301,12 +3302,12 @@ footer .share_box a:nth-last-of-type(4) img {
     padding: 5px 10px;
   }
   .index3 .search_car .search_box .sel_div .sel_box select option {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
   .index3 .search_car .search_box .sel_div .sel_box .svg_arrow {
     position: absolute;
     right: 10vw;
-    top: 11.2vw;
+    top: 13.5vw;
     filter: brightness(0.85);
     height: -webkit-fit-content;
     height: -moz-fit-content;
