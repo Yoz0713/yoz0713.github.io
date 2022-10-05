@@ -261,7 +261,7 @@ footer{
 
     .hamburger{
         outline: none;
-        
+   
         .hamburger-box{
             width: 2.1vw;
             height: 1.2vw;
@@ -665,8 +665,9 @@ footer{
     }
     .menu{
         z-index: 21;
+        width: 15%!important;
        &::before{
-        width: 165%;
+        width: 100%;
         left: -20%;
        }
     }

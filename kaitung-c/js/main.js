@@ -43,6 +43,11 @@ $(document).ready(function () {
 
 
     //-- menu --
+    if(window.innerWidth <= 850){
+        $('.btn_box .hamburger').removeClass("is-active")
+        $('.menu .list_box').css('transform', 'translateX(-40px)')
+        $('.menu .list_box').css('opacity', '0')
+    }
     $('.btn_box .hamburger').click(function (e) { 
 
         var tl = gsap.timeline();

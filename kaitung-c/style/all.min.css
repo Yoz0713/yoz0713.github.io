@@ -546,9 +546,10 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .menu {
     z-index: 21;
+    width: 15% !important;
   }
   .menu::before {
-    width: 165%;
+    width: 100%;
     left: -20%;
   }
   .word_level .date {
@@ -2278,6 +2279,9 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .hotcar .car_list .item .car_txt .adv_icon {
     width: 30px;
     transform: rotate(180deg);
+  }
+  .index3 .hotcar .car_list > :nth-child(3) {
+    -webkit-column-break-before: always;
   }
   .index3 .hotcar .bg_square {
     position: absolute;
