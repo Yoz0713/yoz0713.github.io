@@ -405,7 +405,79 @@ footer{
             left: -0.3vw;
         }
     }
-    
+    @include mobile{
+        .list_box{
+            flex-direction: column;
+            position: absolute;
+            top: 0%;
+            background-color: #0080c5;
+            padding: 5vw ;
+            padding-top: 12vw;
+            width: 40vw;
+
+            a{
+                font-size: 4vw;
+                padding: 3.5vw 3vw;
+                padding-left: 0;
+                span{
+                    font-weight: 100;
+                }
+            }
+
+            .share_box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                margin-top: 7vw;
+
+                &.fixed_share_box{
+                    position: fixed;
+                    flex-direction: column;
+                    top: 1vw;
+                    right: 1vw;
+
+                    a{
+                        filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
+                    }
+                }
+
+                a{
+                    padding: 1vw 2vw;
+                    padding-left: 0;
+                    display: inline-block;
+                  
+                    img{
+                        height: 1.1vw;
+                        width: auto;
+                    }
+
+                    //-- yt --
+                    &:nth-last-of-type(1){
+                        img{
+                            height: 4vw;
+                        }
+                    }
+                    &:nth-last-of-type(2){
+                        img{
+                            height: 4.3vw;
+                        }
+                    }
+                    &:nth-last-of-type(3){
+                        img{
+                            height: 4.3vw;
+                        }
+                    }
+                    //-- fb --
+                    &:nth-last-of-type(4){
+                        img{
+                            height: 4.4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .word_level{
@@ -810,6 +882,86 @@ footer{
                 letter-spacing: 0.5vw;
                 font-family: $en_family;
             }
+        }
+        footer{
+            padding: 6vw 12vw;
+            background-image: url(../img/1x/footer_bg-100.jpg);
+            background-size: cover;
+            .flex-box{
+                flex-direction: column;
+                .logo_item{
+                    
+                    z-index: 2;
+                    margin-bottom: 6vw;
+                    .logo_box{
+                        width: 45vw;
+                        overflow: hidden;
+                        margin-bottom: 6vw;
+                    }
+            
+                    .item_box{
+                       align-items: flex-start;
+                        margin-left:0;
+                        overflow: hidden;
+                        a{
+                            color: #fff;
+                            width: fit-content;
+                            padding:  1vw;
+                            font-size: 3.5vw;
+                            letter-spacing: 0.4vw;
+                            font-weight: 100;
+                            text-decoration: none;
+                        }
+                        & :not(:last-child){
+                            margin-bottom: 3vw;  
+                        }
+                    }
+            
+                }
+            
+                .share_box{
+                   
+                    position: relative;
+            
+                    display: flex;
+                   
+                    justify-content: flex-start;
+                
+                    a{
+                        padding: 0.5vw 1vw;
+                 
+                        img{
+                            height: 5vw;
+                            width: auto;
+                            margin-right: 3vw;
+                        }
+            
+                        //-- yt --
+                        &:nth-last-of-type(1){
+                            img{
+                                height: 3.5vw;
+                            }
+                        }
+                        &:nth-last-of-type(2){
+                            img{
+                                height: 3.8vw;
+                            }
+                        }
+                        &:nth-last-of-type(3){
+                            img{
+                                height: 3.8vw;
+                            }
+                        }
+                        //-- fb --
+                        &:nth-last-of-type(4){
+                            img{
+                                height: 3.9vw;
+                            }
+                        }
+                    }
+                }
+            }
+          
         }
     }
 }

@@ -326,6 +326,62 @@ footer .share_box a:nth-last-of-type(4) img {
     left: -0.3vw;
   }
 }
+@media (max-width: 500px) {
+  .menu .list_box {
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    background-color: #0080c5;
+    padding: 5vw;
+    padding-top: 12vw;
+    width: 40vw;
+  }
+  .menu .list_box a {
+    font-size: 4vw;
+    padding: 3.5vw 3vw;
+    padding-left: 0;
+  }
+  .menu .list_box a span {
+    font-weight: 100;
+  }
+  .menu .list_box .share_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 7vw;
+  }
+  .menu .list_box .share_box.fixed_share_box {
+    position: fixed;
+    flex-direction: column;
+    top: 1vw;
+    right: 1vw;
+  }
+  .menu .list_box .share_box.fixed_share_box a {
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
+  }
+  .menu .list_box .share_box a {
+    padding: 1vw 2vw;
+    padding-left: 0;
+    display: inline-block;
+  }
+  .menu .list_box .share_box a img {
+    height: 1.1vw;
+    width: auto;
+  }
+  .menu .list_box .share_box a:nth-last-of-type(1) img {
+    height: 4vw;
+  }
+  .menu .list_box .share_box a:nth-last-of-type(2) img {
+    height: 4.3vw;
+  }
+  .menu .list_box .share_box a:nth-last-of-type(3) img {
+    height: 4.3vw;
+  }
+  .menu .list_box .share_box a:nth-last-of-type(4) img {
+    height: 4.4vw;
+  }
+}
 
 .word_level .date {
   font-size: 0.7vw;
@@ -655,6 +711,67 @@ footer .share_box a:nth-last-of-type(4) img {
     font-size: 0.95vw;
     letter-spacing: 0.5vw;
     font-family: "Gill_Sans_Heavy", sans-serif;
+  }
+  footer {
+    padding: 6vw 12vw;
+    background-image: url(../img/1x/footer_bg-100.jpg);
+    background-size: cover;
+  }
+  footer .flex-box {
+    flex-direction: column;
+  }
+  footer .flex-box .logo_item {
+    z-index: 2;
+    margin-bottom: 6vw;
+  }
+  footer .flex-box .logo_item .logo_box {
+    width: 45vw;
+    overflow: hidden;
+    margin-bottom: 6vw;
+  }
+  footer .flex-box .logo_item .item_box {
+    align-items: flex-start;
+    margin-left: 0;
+    overflow: hidden;
+  }
+  footer .flex-box .logo_item .item_box a {
+    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1vw;
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  footer .flex-box .logo_item .item_box :not(:last-child) {
+    margin-bottom: 3vw;
+  }
+  footer .flex-box .share_box {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .flex-box .share_box a {
+    padding: 0.5vw 1vw;
+  }
+  footer .flex-box .share_box a img {
+    height: 5vw;
+    width: auto;
+    margin-right: 3vw;
+  }
+  footer .flex-box .share_box a:nth-last-of-type(1) img {
+    height: 3.5vw;
+  }
+  footer .flex-box .share_box a:nth-last-of-type(2) img {
+    height: 3.8vw;
+  }
+  footer .flex-box .share_box a:nth-last-of-type(3) img {
+    height: 3.8vw;
+  }
+  footer .flex-box .share_box a:nth-last-of-type(4) img {
+    height: 3.9vw;
   }
 }
 .index1 {
@@ -3177,6 +3294,12 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-bottom: 0vw;
     overflow: hidden;
   }
+  .index3 .hotcar .car_list .item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
   .index3 .hotcar .car_list .item a {
     display: block;
   }
@@ -3231,6 +3354,22 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .hotcar .car_list > :nth-child(even) {
     -webkit-column-break-after: always;
   }
+  .index3 .hotcar .car_list > :nth-child(1) a {
+    width: 48vw;
+    height: 63vw;
+  }
+  .index3 .hotcar .car_list > :nth-child(2) a {
+    width: 48vw;
+    height: 53vw;
+  }
+  .index3 .hotcar .car_list > :nth-child(3) a {
+    width: 48vw;
+    height: 40vw;
+  }
+  .index3 .hotcar .car_list > :nth-child(4) a {
+    width: 48vw;
+    height: 76vw;
+  }
   .index3 .hotcar .car_list > :nth-child(5) {
     display: none;
   }
@@ -3254,6 +3393,7 @@ footer .share_box a:nth-last-of-type(4) img {
             clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
   .index3 .search_car {
+    margin-top: 10vw;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -3542,8 +3682,8 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-right: 2.5vw;
   }
   .index4 .advantage .swiper .swiper-pagination-bullet {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 2vw;
+    height: 2vw;
     background-color: #0080be;
     opacity: 1;
   }

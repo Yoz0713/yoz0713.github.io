@@ -3004,7 +3004,11 @@
                     position: relative;
                     margin-bottom:0vw;
                     overflow: hidden;
-                    
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
                     a{
                         display: block;
                         // pointer-events:none;
@@ -3067,6 +3071,34 @@
                 & > :nth-child(even){
                     -webkit-column-break-after: always;
                 }
+                & > :nth-child(1){
+                   a{
+                    width: 48vw;
+                    height: 63vw;
+                 
+                   }
+                }
+                & > :nth-child(2){
+                    a{
+                        width: 48vw;
+                        height: 53vw;
+                     
+                       }
+                }
+                & > :nth-child(3){
+                    a{
+                        width: 48vw;
+                        height:40vw;
+                     
+                       }
+                }
+                & > :nth-child(4){
+                    a{
+                        width: 48vw;
+                        height:76vw;
+                     
+                       }
+                }
                 & > :nth-child(5){
                     display: none;
                 }
@@ -3093,7 +3125,7 @@
         }
     
         .search_car{
-            
+            margin-top: 10vw;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
@@ -3413,8 +3445,8 @@
                         margin-right: 2.5vw;
                     }
                     &-bullet{
-                        width: 1.5vw;
-                        height: 1.5vw;
+                        width: 2vw;
+                        height: 2vw;
                         background-color: #0080be;
                         opacity: 1;
                     }
