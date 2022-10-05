@@ -3040,20 +3040,18 @@ footer .share_box a:nth-last-of-type(4) img {
   .index2 .swiper .swiper-horizontal > .swiper-pagination-bullets,
 .index2 .swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
 .index2 .swiper .swiper-pagination-custom, .index2 .swiper .swiper-pagination-fraction {
-    width: 8%;
+    width: 12%;
     height: 5%;
     left: 0;
     right: 0;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: row;
   }
   .index2 .swiper .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .index2 .swiper .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     display: block;
-    margin: 0.5vw 0;
   }
   .index2 .swiper .swiper-slide {
     width: 100%;
@@ -3328,7 +3326,7 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .search_car .search_box .btn_box {
     background-color: #0080be;
     position: absolute;
-    right: 0;
+    right: -4.9vw;
     bottom: 0;
     width: 24vw;
     height: 14vw;
@@ -3381,7 +3379,7 @@ footer .share_box a:nth-last-of-type(4) img {
     color: #fff;
     margin: 0;
     width: 100%;
-    font-size: 2vw;
+    font-size: 3vw;
     letter-spacing: 0.1vw;
     line-height: 1.6;
     font-weight: 100;

@@ -2829,26 +2829,27 @@
                 outline: none;
                 background-color: $blue_color;
                 transition: all 0.5s;
+         
             }
     
             .swiper-horizontal>.swiper-pagination-bullets, 
             .swiper-pagination-bullets.swiper-pagination-horizontal, 
             .swiper-pagination-custom, .swiper-pagination-fraction{
-                width: 8%;
+                width:12%;
                 height: 5%;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                justify-content:space-between;
+                
                 flex-direction: row;
             }
     
             .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
             .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
                 display: block;
-                margin: 0.5vw 0;
+               
             }
             .swiper-slide{
                 width: 100%;
@@ -3174,7 +3175,7 @@
                 .btn_box {
                     background-color: #0080be;
                     position: absolute;
-                    right: 0;
+                    right: -4.9vw;
                     bottom: 0;
                     width: 24vw;
                     height: 14vw;
@@ -3231,7 +3232,7 @@
                     color: #fff;
                     margin: 0;
                     width: 100%;
-                    font-size: 2vw;
+                    font-size: 3.0vw;
                     letter-spacing: 0.1vw;
                     line-height: 1.6;
                     font-weight: 100;
