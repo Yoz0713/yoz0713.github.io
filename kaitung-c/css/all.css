@@ -2170,14 +2170,19 @@ footer .share_box a:nth-last-of-type(4) img {
             clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
   .index3 .search_car {
-    padding: 5vw 7vw;
+    padding: 0;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    width: 90%;
+    margin: 0 auto;
   }
   .index3 .search_car .txt_box {
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .index3 .search_car .txt_box h2 {
     letter-spacing: 0;
