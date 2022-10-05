@@ -2379,16 +2379,16 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .search_car .search_box .btn_box {
     background-color: #0080be;
     position: absolute;
-    right: 0;
+    right: -5vw;
     bottom: 0;
-    width: 24vw;
-    height: 14vw;
+    width: 30vw;
+    height: 15vw;
     -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   }
   .index3 .search_car .search_box .btn_box a {
     display: flex;
-    padding: 2.5vw 0vw 2.5vw 4vw;
+    padding: 2.5vw 0vw 2.5vw 5vw;
     color: #fff;
     font-size: 3.7vw;
     text-decoration: none;
@@ -2396,15 +2396,15 @@ footer .share_box a:nth-last-of-type(4) img {
     letter-spacing: 0.5vw;
   }
   .index3 .search_car .search_box .btn_box a img {
-    transform: rotate(90deg);
-    width: 5vw;
+    transform: rotate(180deg);
+    width: 5.5vw;
     margin-left: 1vw;
   }
   .index3 .search_car .search_box .btn_box a :nth-child(2) {
     position: absolute;
     width: 1vw;
-    right: 2vw;
-    top: 4.2vw;
+    right: 2.3vw;
+    top: 4.6vw;
   }
 }
 @media all and (max-width: 850px) {
@@ -2537,7 +2537,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index4 .advantage .swiper {
     position: relative;
-    padding: 0vw 0 8vw;
+    padding: 0vw 0 16vw;
   }
   .index4 .advantage .swiper .swiper-wrapper {
     position: relative;
@@ -2571,6 +2571,22 @@ footer .share_box a:nth-last-of-type(4) img {
     color: #fff;
     opacity: 0.3;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  .index4 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para {
+    position: absolute;
+    left: 0;
+    bottom: -8.5vw;
+    height: 5vw;
+  }
+  .index4 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para p {
+    display: flex;
+    align-items: center;
+    line-height: 5vw;
+    color: #fff;
+  }
+  .index4 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para p span {
+    display: inline-block;
+    margin-left: 1vw;
   }
   .index4 .advantage .swiper .swiper-pagination {
     display: flex;
@@ -3477,16 +3493,13 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .search_car .search_box .btn_box {
     background-color: #0080be;
     position: absolute;
-    right: -5vw;
+    width: 35vw;
     bottom: 0;
-    width: 24vw;
-    height: 14vw;
     -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
   }
   .index3 .search_car .search_box .btn_box a {
     display: flex;
-    padding: 2.5vw 0vw 2.5vw 4vw;
     color: #fff;
     font-size: 3.7vw;
     text-decoration: none;
@@ -3494,15 +3507,15 @@ footer .share_box a:nth-last-of-type(4) img {
     letter-spacing: 0.5vw;
   }
   .index3 .search_car .search_box .btn_box a img {
-    transform: rotate(90deg);
-    width: 5vw;
+    width: 5.5vw;
     margin-left: 1vw;
+    margin-top: 0.25vw;
   }
   .index3 .search_car .search_box .btn_box a :nth-child(2) {
     position: absolute;
     width: 1vw;
-    right: 2vw;
-    top: 4.2vw;
+    right: 2.2vw;
+    top: 4.3vw;
   }
 }
 @media all and (max-width: 850px) and (max-width: 500px) {
@@ -3637,7 +3650,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   .index4 .advantage .swiper {
     position: relative;
-    padding: 0vw 0 8vw;
+    padding: 0vw 0 16vw;
   }
   .index4 .advantage .swiper .swiper-wrapper {
     position: relative;

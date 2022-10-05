@@ -481,36 +481,54 @@
                          <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv1-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page">
                         <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv2-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page">
                          <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv3-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page">
                          <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv4-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page">
                          <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv5-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="page">
                          <p>0<span></span></p>
                     </div>
                     <img src="./img/1x/adv3-100.jpg">
+                    <div class="slide-para word_level">
+                        <p class="ch_text_m">獨家電車 | <span class="ch_text_s">全台唯一獨家引進純電車款</span></p>
+                    </div>
                 </div>
               
             </div>
@@ -710,7 +728,9 @@
 
             //-- 優勢滑鼠互動 --
             $('.adv_item a').mouseenter(function () { 
+               
                 let DOM=$(this).parent().find('.adv_txt');
+                console.log(DOM)
                 let tl = gsap.timeline();
                 tl.to(DOM, 0.5, {opacity: 1})
                   .fromTo(DOM.find('h2'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1')
