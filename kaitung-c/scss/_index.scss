@@ -2991,13 +2991,13 @@
     
             .car_list{
     
-                $gap:15px;
+                $gap:4vw;
     
                 position: relative;
                 z-index: 1;
                 column-count:2;
                 column-gap:$gap;
-                
+                column-width: 48vw;
                 .item{
                     position: relative;
                     margin-bottom:3vw;

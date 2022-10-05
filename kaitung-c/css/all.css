@@ -3164,8 +3164,10 @@ footer .share_box a:nth-last-of-type(4) img {
     z-index: 1;
     -moz-column-count: 2;
          column-count: 2;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
+    -moz-column-width: 48vw;
+         column-width: 48vw;
   }
   .index3 .hotcar .car_list .item {
     position: relative;
