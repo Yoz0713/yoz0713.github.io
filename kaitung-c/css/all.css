@@ -2365,6 +2365,9 @@ footer .share_box a:nth-last-of-type(4) img {
   .index3 .hotcar .car_list > :nth-child(even) {
     -webkit-column-break-after: always;
   }
+  .index3 .hotcar .car_list > :nth-child(odd) {
+    -webkit-column-break-before: always;
+  }
   .index3 .hotcar .bg_square {
     position: absolute;
     top: 0;

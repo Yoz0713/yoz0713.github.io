@@ -1820,6 +1820,9 @@
                 & > :nth-child(even){
                     -webkit-column-break-after: always;
                 }
+                & > :nth-child(odd){
+                    -webkit-column-break-before: always;
+                }
             }
     
             .bg_square{
