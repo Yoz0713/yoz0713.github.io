@@ -1234,6 +1234,12 @@
                     }
     
     
+    
+                    .txt{
+                        position: relative;
+                        z-index: 10;
+                        padding: 0;
+                        
                     .s_logo{
                         display: flex;
                         justify-content: space-between;
@@ -1250,11 +1256,6 @@
                           margin: 0;
                         }
                     }
-    
-                    .txt{
-                        position: relative;
-                        z-index: 10;
-                        padding: 0;
                         h1{
                             color: #fff;
                             font-size: 4vw;

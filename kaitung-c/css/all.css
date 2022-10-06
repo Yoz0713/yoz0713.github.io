@@ -1905,7 +1905,12 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: translateX(-100px) rotate(15deg);
     transition: all 1.5s;
   }
-  .index1 .swiper .swiper-slide .txt_box .s_logo {
+  .index1 .swiper .swiper-slide .txt_box .txt {
+    position: relative;
+    z-index: 10;
+    padding: 0;
+  }
+  .index1 .swiper .swiper-slide .txt_box .txt .s_logo {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -1916,13 +1921,8 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: translateX(100px);
     transition: all 1.5s;
   }
-  .index1 .swiper .swiper-slide .txt_box .s_logo img {
+  .index1 .swiper .swiper-slide .txt_box .txt .s_logo img {
     margin: 0;
-  }
-  .index1 .swiper .swiper-slide .txt_box .txt {
-    position: relative;
-    z-index: 10;
-    padding: 0;
   }
   .index1 .swiper .swiper-slide .txt_box .txt h1 {
     color: #fff;
