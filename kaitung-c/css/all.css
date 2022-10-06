@@ -5394,7 +5394,7 @@ body {
     background: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
   .stock2 {
-    width: 80%;
+    width: 85%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
