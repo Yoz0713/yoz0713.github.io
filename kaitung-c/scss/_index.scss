@@ -8,13 +8,14 @@
         .swiper-pagination{
             position: absolute;
             left: 7vw;
-            top: 33vw;
-            bottom: auto;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
             width: 13vw;
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
-
+            height: fit-content;
             span{
               
                 display: inline-flex;
@@ -64,8 +65,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                padding-top: 14vw;
-                padding-left: 8vw;
+              
                 width: 100%;
                 clip-path: polygon(0 0, 0 67vw, 42.5vw 67vw, 53vw 18vw, 56vw 18vw, 60vw 0, 0 0);
                 z-index: 15;
@@ -107,11 +107,15 @@
                 .txt{
                     position: relative;
                     z-index: 10;
+                    padding-top: 13vw;
+                    padding-left: 8vw;
+                    width: fit-content;
+                    height: 64.5vw;
                     h1{
                         color: #fff;
                         font-size: 4vw;
                         font-weight: 700;         
-                        line-height: 1.2;
+                        line-height: 1.2em;
 
                         .en_txt{
                             font-weight: 800;
@@ -125,13 +129,18 @@
                     }
                     p{
                         color: #CFCFCF;
-                        margin: 0;
+                        position: absolute;
+                        left: 19vw;
+                        top: 0;
+                        bottom: 0;
+                        height: fit-content;
                         margin-left: 12vw;
-                        width: 17vw;
+                        margin: auto 0;
+                        width: 20vw;
                         font-size: 0.9vw;
                         font-weight: 100;
                         line-height: 2;
-                        letter-spacing: 1px;
+                        letter-spacing: 0.1vw;
 
                         //-- 動態前置 --
                         opacity: 0;
@@ -159,6 +168,8 @@
                     }
                     img{
                         width: 115%;
+                        height: 59.5vw;
+                        object-fit: cover;
                     }
                 }
             }
@@ -174,7 +185,7 @@
                 transition: all 1s;
                 
                 .banner{
-                    width: 115%;
+                    width: 111%;
                 }
 
                 .svg1{
@@ -1192,6 +1203,8 @@
                     }
                 }
                 .txt_box{
+                    display: flex;
+                    justify-content: center;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -1222,22 +1235,26 @@
     
     
                     .s_logo{
+                        display: flex;
+                        justify-content: space-between;
                         position: relative;
                         z-index: 10;
-    
+                        width: 100%;
+                        margin-bottom: 2vw;
                         //-- 動態前置 --
                         opacity: 0;
                         transform: translateX(100px);
                         transition: all 1.5s;
     
                         img{
-                            margin-right: 1vw;
+                          margin: 0;
                         }
                     }
     
                     .txt{
                         position: relative;
                         z-index: 10;
+                        padding: 0;
                         h1{
                             color: #fff;
                             font-size: 4vw;
@@ -1255,7 +1272,12 @@
                             transition: all 1.5s;
                         }
                         p{
+                            position: relative;
                             color: #CFCFCF;
+                            left: none;
+                            top: none;
+                            bottom: none;
+                            right: none;
                             margin: 0;
                             margin-left: 12vw;
                             width: 17vw;
