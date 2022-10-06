@@ -5322,6 +5322,7 @@ body {
   .stock1-banner .txt_box .txt :nth-child(1) {
     margin-bottom: 0.8vw;
     font-size: 7vw;
+    filter: drop-shadow(1px 1px 0px rgba(0, 26, 112, 0.5));
   }
   .stock1-banner .txt_box .txt :nth-child(2) {
     color: rgb(255, 255, 255);
