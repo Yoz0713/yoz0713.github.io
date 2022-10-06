@@ -5554,6 +5554,7 @@ body {
   }
   .stock2-bottom .box-suggest-inform > h2 {
     color: #fff;
+    flex: 0 0 60%;
   }
   .stock2-bottom .box-suggest-inform .price {
     display: flex;
