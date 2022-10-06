@@ -4313,6 +4313,7 @@ body {
 }
 .stock2-bottom .box-suggest-inform > h2 {
   color: #fff;
+  line-height: 1;
 }
 .stock2-bottom .box-suggest-inform .price {
   display: flex;
@@ -4321,12 +4322,11 @@ body {
 }
 .stock2-bottom .box-suggest-inform .price img {
   height: 1.4vw;
-  margin-top: 0.2vw;
 }
 .stock2-bottom .box-suggest-inform .price h2 {
-  margin-top: -0.2vw;
   color: #00FFFF;
   margin-right: 0.2vw;
+  line-height: 1;
 }
 .stock2-bottom .box {
   flex: 0 0 32%;
@@ -4932,18 +4932,16 @@ body {
     display: flex;
     flex: 0 1 50%;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
   }
   .stock2-bottom .box-suggest-inform .price img {
     height: 4vw;
     margin: 0;
-    margin-top: -3.5vw;
   }
   .stock2-bottom .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 1vw;
-    margin-top: -4vw;
   }
   .stock2-bottom .box {
     flex: 0 0 100%;
@@ -5555,24 +5553,22 @@ body {
   }
   .stock2-bottom .box-suggest-inform > h2 {
     color: #fff;
-    flex: 0 0 60%;
+    flex: 1 1 60%;
+    line-height: 1.2;
   }
   .stock2-bottom .box-suggest-inform .price {
     display: flex;
-    flex: 0 1 50%;
+    flex: 1 1 40%;
     justify-content: flex-end;
-    align-items: center;
   }
   .stock2-bottom .box-suggest-inform .price img {
     height: 5.5vw;
     margin: 0;
-    margin-top: -5.5vw;
   }
   .stock2-bottom .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 2vw;
-    margin-top: -6.5vw;
   }
   .stock2-bottom .box {
     flex: 0 0 100%;
