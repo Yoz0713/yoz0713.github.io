@@ -140,7 +140,7 @@ footer{
     display: none !important;
 
     @include tablet{
-        display: block !important;
+        display: flex !important;
     }
 }
 
@@ -325,7 +325,7 @@ footer{
             .share_box{
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content:space-between;
                 overflow: hidden;
                 margin-top: 7vw;
 
@@ -341,13 +341,14 @@ footer{
                 }
 
                 a{
-                    padding: 1vw 4vw;
+                    padding: 0;
                     padding-left: 0;
                     display: inline-block;
-                  
+                    flex: 0 0 25%;
                     img{
                         height: 1.1vw;
                         width: auto;
+                        
                     }
 
                     //-- yt --
@@ -370,9 +371,11 @@ footer{
                     &:nth-last-of-type(4){
                         img{
                             height: 3.4vw;
+                            width: 4vw;
                         }
                     }
                 }
+             
             }
         }
 
