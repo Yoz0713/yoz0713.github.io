@@ -47,6 +47,7 @@ $(document).ready(function () {
         $('.btn_box .hamburger').removeClass("is-active")
         $('.menu .list_box').css('transform', 'translateX(-40px)')
         $('.menu .list_box').css('opacity', '0')
+        $('.menu .list_box').css('pointer-events', 'none')
     }
     $('.btn_box .hamburger').click(function (e) { 
 
@@ -83,6 +84,7 @@ $(document).ready(function () {
 
             let menu_obj;
             //-- 電腦 --
+            $('.menu .list_box').css('pointer-events', 'all')
             if($(window).width()>768){
                 menu_obj={
                    'width': '83%',

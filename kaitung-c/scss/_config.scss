@@ -232,6 +232,7 @@ footer{
 
     .list_box {
         z-index: 10;
+       
         a{
             text-decoration: none;
             color: #fff;
@@ -724,7 +725,7 @@ footer{
     
         }
         .ch_text_xl{
-            font-size: 7vw;
+            font-size: 6.5vw;
             font-weight: 700;
             letter-spacing: 0.2vw;
            
@@ -741,7 +742,7 @@ footer{
            
         }
         .ch_text_s{
-            font-size: 2.5vw;
+            font-size: 3vw;
           
        
        
@@ -749,7 +750,7 @@ footer{
         
        
         .ch_text_xs{
-            font-size: 2vw;
+            font-size:2.5vw;
             letter-spacing:0.1vw;
        
            
@@ -757,18 +758,18 @@ footer{
         }
        
         .en_text_xl{
-            font-size: 7vw;
+            font-size:6.5vw;
             font-weight: 700;
             letter-spacing: 0.2vw;
            font-family: $en_family;
         }
         .en_text_l{
-            font-size: 2vw;
+            font-size: 5vw;
             font-weight:700;
             font-family: $en_family;
         }
         .en_text_m{
-            font-size: 1.4vw;
+            font-size: 3.5vw;
             font-family: $en_family;
         }
         .en_text_s{
@@ -890,24 +891,24 @@ footer{
         
             }
             .ch_text_xl{
-                font-size: 7vw;
+                font-size: 10vw;
                 font-weight: 700;
                 letter-spacing: 0.2vw;
                
             }
             .ch_text_l{
-                font-size: 7vw;
+                font-size: 6.5vw;
                 letter-spacing:0.15vw;
                 font-weight:700;
                
             }
             .ch_text_m{
-                font-size: 3.5vw;
+                font-size: 5vw;
                 
                
             }
             .ch_text_s{
-                font-size: 2.5vw;
+                font-size: 3.6vw;
               
            
            
@@ -915,7 +916,7 @@ footer{
             
            
             .ch_text_xs{
-                font-size: 2vw;
+                font-size: 3.2vw;
                 letter-spacing:0.1vw;
            
                
@@ -923,27 +924,27 @@ footer{
             }
            
             .en_text_xl{
-                font-size: 7vw;
+                font-size: 10vw;
                 font-weight: 700;
                 letter-spacing: 0.2vw;
                font-family: $en_family;
             }
             .en_text_l{
-                font-size: 7vw;
+                font-size: 6.5vw;
                 font-weight:700;
                 font-family: $en_family;
             }
             .en_text_m{
-                font-size: 1.4vw;
+                font-size: 5vw;
                 font-family: $en_family;
             }
             .en_text_s{
-                font-size: 1vw;
+                font-size: 3.6vw;
                 letter-spacing: 0.1vw;
                 font-family: $en_family;
             }
             .en_text_xs{
-                font-size: 0.95vw;
+                font-size: 3.2vw;
                 letter-spacing: 0.5vw;
                 font-family: $en_family;
             }

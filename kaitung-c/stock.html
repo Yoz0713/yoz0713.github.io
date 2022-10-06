@@ -85,7 +85,7 @@
               <img class="svg2" src="img/SVG/banner_svg2.svg" alt="">
 
               <picture>
-                  <source srcset="img/1x/banner_ph1-100.jpg" media="(max-width: 768px)">
+                
                   <img class="w-100 banner" src="img/stock/1x/1x/stock-banner2.png" alt="" />
               </picture>
             </div>
@@ -94,27 +94,31 @@
         </section>
     <section class="stock2">
         <div class="stock2-top">
-            <div class="stock2-top-switchCar word_level">
-                <div class="box">
-                    <img src="./img/stock/SVG/car-normal.svg">
-                    <p class="ch_text_xs">四門/轎跑</p>
+            <div class="swiper stock2-top-switchCar word_level">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <img src="./img/stock/SVG/car-normal.svg">
+                        <p class="ch_text_xs">四門/轎跑</p>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./img/stock/SVG/car-five-door.svg">
+                        <p class="ch_text_xs">掀背/轎旅</p>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./img/stock/SVG/car-van.svg">
+                        <p class="ch_text_xs">商旅</p>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./img/stock/SVG/car-long.svg">
+                        <p class="ch_text_xs">越野/休旅/跑旅</p>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="/img/stock/SVG/car-sport.svg">
+                        <p class="ch_text_xs">其他</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="./img/stock/SVG/car-five-door.svg">
-                    <p class="ch_text_xs">掀背/轎旅</p>
-                </div>
-                <div class="box">
-                    <img src="./img/stock/SVG/car-van.svg">
-                    <p class="ch_text_xs">商旅</p>
-                </div>
-                <div class="box">
-                    <img src="./img/stock/SVG/car-long.svg">
-                    <p class="ch_text_xs">越野/休旅/跑旅</p>
-                </div>
-                <div class="box">
-                    <img src="/img/stock/SVG/car-sport.svg">
-                    <p class="ch_text_xs">其他</p>
-                </div>
+                <div class="swiper-scrollbar"></div>
+                <img src="./img/stock/SVG/arrow-r.svg" class="phone">
             </div>
             <div class="stock2-top-filter word_level">
                 <button class="ch_text_s">車齡</button>
@@ -252,8 +256,8 @@
             <div class="prev">
                 <img src="./img/stock/SVG/arrow-l.svg">
             </div>
-            <span class="rent2-pagination-current">1</span>
-            <span class="rent2-pagination-total">2</span>
+            <span class="stock2-pagination-current">1</span>
+            <span class="stock2-pagination-total">2</span>
             <div class="next">
                 <img src="./img/stock/SVG/arrow-l.svg">
             </div>
@@ -261,11 +265,12 @@
         </div>
     </section>
     <section class="stock3">
-        <div class="search_car flex-box">
+        <div class="search_car flex-box word_level">
             <div class="txt_box">
-              <h4>找車輛</h4>
-              <img class="svg1" src="img/SVG/search_car_txt.svg" alt="">
-              <img class="svg2" src="img/SVG/search_icon.svg" alt="">
+              <h4 class="ch_text_m">找車輛</h4>
+              <h2 class="en_text_l phone">Find the Car You Want</h2>
+              <img class="svg1 computer" src="img/SVG/search_car_txt.svg" alt="">
+              <img class="svg2 computer" src="img/SVG/search_icon.svg" alt="">
             </div>
             <div class="search_box flex-box">
                <div class="sel_div flex-box">
@@ -273,23 +278,36 @@
                       <p>里程</p>
                       <select name="mileage" id="mileage">
                           <option value="0">一萬公里以下</option>
-                          <option value="1">一萬公里 ~ 五萬公里</option>
-                          <option value="2">五萬公里 ~ 十五萬公里</option>
+                          <option value="1">三萬公里以下</option>
+                          <option value="2">三萬 ~ 五萬公里</option>
+                          <option value="3">五萬 ~ 八萬公里</option>
+                          <option value="4">八萬 ~ 十萬公里</option>
+                          <option value="5">十萬公里以上</option>
                       </select>
                       <i class="svg_arrow"><img src="img/SVG/more_l.svg" alt=""></i>
                    </div>
                    <div class="sel_box">
-                      <p>車種</p>
+                      <p >車種</p>
                       <select name="car_type" id="car_type">
-                          <option value="0">掀背車</option>
-                          <option value="1">電動車</option>
-                          <option value="2">轎車</option>
+                          <option value="0">轎車</option>
+                          <option value="1">斜背車</option>
+                          <option value="2">掀背車</option>
+                          <option value="3">旅行車</option>
+                          <option value="4">休旅車</option>
+                          <option value="5">貨卡車</option>
+                          <option value="6">跑車</option>
+                          <option value="7">敞篷車</option>
+                          <option value="8">箱型車</option>
+                          <option value="9">貨車</option>
                       </select>
                       <i class="svg_arrow"><img src="img/SVG/more_l.svg" alt=""></i>
                    </div>
                </div>
                <div class="btn_box flex-box i-center j-center">
-                  <a href="javascript:;">搜尋</a>
+                  <a href="javascript:;">
+                      搜尋
+                      <img src="./img/SVG//arrow-right.svg" class="phone">
+                  </a>
                </div>
             </div>
           </div>
@@ -406,18 +424,30 @@
 
     <script>
         $(document).ready(function () {
-            let slide = 7
-           let swiper = new Swiper('.swiper', {
+            let slide;
+            let slide2;
+            if(window.innerWidth > 850  ){
+                slide = 7
+                slide2 = 5
+            }else if(window.innerWidth > 500 && window.innerWidth <= 850){
+                slide= 5
+                slide2 = 4
+            }else{
+                slide = 3
+                slide2 = 4
+            }
+          
+           let swiper = new Swiper('.stock4 .swiper', {
             slidesPerView :slide,
        
             pagination: {
-            el: '.swiper-pagination',
+            el: '.stock4 .swiper-pagination',
             type: 'fraction',
             },  
             })
 
             $(".swiper .swiper-pagination").empty().append(`<span class="swiper-pagination-current">1</span><span class="swiper-pagination-total">${swiper.slides.length-slide+1}</span>`)
-            console.log($(".swiper .swiper-pagination").html())
+        
 
             let prev = document.querySelector(".navigate .prev")
             let next = document.querySelector(".navigate .next")
@@ -427,10 +457,24 @@
             next.addEventListener("click",function(){
                 swiper.slideNext()
             })
+
+            let swiper2 = new Swiper('.stock2-top .swiper', {
+            slidesPerView :slide2,
+            spaceBetween : window.innerWidth > 800 ? 0 : "10%",
+            scrollbar: {
+                el: '.stock2 .swiper-scrollbar',
+                draggable: true,
+            },
+           
+            })
+            $(".stock2 .swiper > img").click(()=>{
+                swiper2.slideNext()
+            })
             // filter
-            $(".stock2-top-switchCar").click((e)=>{
-                $(".stock2-top-switchCar .box").removeClass("active")
+            $(".stock2-top-switchCar .box").click((e)=>{
+                $(".stock2-top-switchCar .swiper-slide").removeClass("active")
                 console.log(e.target)
+               
                e.target.classList.add("active")
             })
             $(".stock2-top-filter").click((e)=>{
