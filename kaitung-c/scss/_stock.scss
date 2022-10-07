@@ -162,14 +162,24 @@ body{
        
         &-switchCar{
             margin: 0;
-            width: 33vw;
+            width:50vw;
             padding-bottom:3vw;
             .swiper-wrapper{
                 width: 100%;
                 height: 100%;
         
             }
-            
+            .swiper-scrollbar{
+                height: 1.5px;
+                background-color: #0080c56b;
+                bottom: 4vw;
+                width: 60%;
+                opacity: 0.5;
+                .swiper-scrollbar-drag{
+                    background-color: #0080c5;
+                
+                }
+           }
             .box{
                 display: flex;
                 flex-direction: column;

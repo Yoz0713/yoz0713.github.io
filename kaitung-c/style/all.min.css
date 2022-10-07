@@ -4169,12 +4169,22 @@ body {
 }
 .stock2-top-switchCar {
   margin: 0;
-  width: 33vw;
+  width: 50vw;
   padding-bottom: 3vw;
 }
 .stock2-top-switchCar .swiper-wrapper {
   width: 100%;
   height: 100%;
+}
+.stock2-top-switchCar .swiper-scrollbar {
+  height: 1.5px;
+  background-color: rgba(0, 128, 197, 0.4196078431);
+  bottom: 4vw;
+  width: 60%;
+  opacity: 0.5;
+}
+.stock2-top-switchCar .swiper-scrollbar .swiper-scrollbar-drag {
+  background-color: #0080c5;
 }
 .stock2-top-switchCar .box {
   display: flex;
