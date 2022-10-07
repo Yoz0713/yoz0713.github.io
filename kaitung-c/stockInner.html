@@ -64,7 +64,7 @@
               <a href="#" target="_blank"><img src="img/SVG/yt_icon.svg" alt="Youtube"></a>
             </div>
         </div>
-        <div class="swiper swiper1 swiper-no-swiping">
+        <div class="swiper swiper1 ">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./img/stockInner/1x/swiper1.png">
@@ -108,7 +108,7 @@
                       
                         <div class="para">
                             <p class="ch_text_xs">急速</p>
-                            <h4 class="ch_text_l">150km/h</h4>
+                            <h4 class="ch_text_l">150<span class="ch_text_m">km/h</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -118,7 +118,7 @@
                     
                         <div class="para">
                             <p class="ch_text_xs">等效馬力</p>
-                            <h4 class="ch_text_l">134hp</h4>
+                            <h4 class="ch_text_l">134<span class="ch_text_m">hp</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -128,7 +128,7 @@
                  
                         <div class="para">
                             <p class="ch_text_xs">電池容量</p>
-                            <h4 class="ch_text_l">35.8kWh</h4>
+                            <h4 class="ch_text_l">35.8<span class="ch_text_m">kwh</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -138,7 +138,7 @@
                       
                         <div class="para">
                             <p class="ch_text_xs">續航里程</p>
-                            <h4 class="ch_text_l">300km</h4>
+                            <h4 class="ch_text_l">300<span class="ch_text_m">km</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -148,7 +148,7 @@
                        
                         <div class="para">
                             <p class="ch_text_xs">80%充滿</p>
-                            <h4 class="ch_text_l">36分鐘</h4>
+                            <h4 class="ch_text_l">36<span class="ch_text_m">分鐘</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -158,7 +158,7 @@
                       
                         <div class="para">
                             <p class="ch_text_xs">乘坐人數</p>
-                            <h4 class="ch_text_l">5人</h4>
+                            <h4 class="ch_text_l">5<span class="ch_text_m">人</span></h4>
                         </div>
                     </div>
                     <div class="box">
@@ -168,7 +168,7 @@
                     
                         <div class="para">
                             <p class="ch_text_xs">車門數</p>
-                            <h4 class="ch_text_l">4門</h4>
+                            <h4 class="ch_text_l">4<span class="ch_text_m">門</span></h4>
                         </div>
                     </div>
                 </div>
@@ -196,18 +196,21 @@
      </section> 
       <section class="stockInner4">
             <div class="stockInner4-imgBox">
-                <img src="./img/stockInner/1x/car9.png">
+                <img src="./img/stockInner/2x/forth-page-1.png" class="phone">
+                <img src="./img/stockInner/1x/car9.png" class="computer">
             </div>
             <div class="stockInner4-imgBox">
-                <img src="./img/stockInner/1x/car10.png">
+                <img src="./img/stockInner/2x/forth-page-2.png">
+                <img src="./img/stockInner/2x/forth-page-3.png">
             </div>
             <div class="stockInner4-imgBox">
-                <img src="./img/stockInner/1x/car11.png">
+                <img src="./img/stockInner/2x/forth-page-5.png">
+                <img src="./img/stockInner/2x/forth-page-4.png">
             </div>
       </section>
       <section class="stockInner5">
         <div class="stockInner5-title word_level">
-            <h2 class="ch_text_xl">這台不是您要的?試試其它選項吧</h2>
+            <h2 class="ch_text_l">這台不是您要的?試試其它選項吧</h2>
          
         </div>
         <div class="swiper swiper2">
@@ -395,7 +398,7 @@
                 speed: 1000,
                 effect: 'fade',
                 autoplay: {
-                    delay: 5000,
+                    delay: 4000,
                 },
                 
                 // 如果需要分页器
@@ -405,12 +408,12 @@
              
                 },
             });  
-            let slide =3
+            let slide = window.innerWidth > 850 ? 3:1;
             var mySwiper2 = new Swiper ('.swiper2', {
             
                 speed: 1000,
-                slidesPerView : slide,
-       
+                slidesPerView :slide,
+                spaceBetween:10,
                 
                 // 如果需要分页器
                  pagination: {

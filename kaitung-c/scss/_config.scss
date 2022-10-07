@@ -225,8 +225,10 @@ footer{
 
     .btn_box{
         z-index: 30;
+     
         button{
             padding: 3vw;
+            
         }
     }
 
@@ -262,7 +264,7 @@ footer{
 
     .hamburger{
         outline: none;
-   
+    
         .hamburger-box{
             width: 2.1vw;
             height: 1.2vw;
@@ -312,7 +314,7 @@ footer{
             background-color: #0080c5;
             padding: 5vw ;
             padding-top: 12vw;
-            width: 40vw;
+            width: 50vw;
 
             a{
                 font-size: 3vw;
@@ -415,14 +417,15 @@ footer{
         .list_box{
             flex-direction: column;
             position: absolute;
+            justify-content: space-around;
             top: 0%;
             background-color: #0080c5;
             padding: 5vw ;
-            padding-top: 12vw;
-            width: 40vw;
-
+            padding-top: 20vw;
+            width: 70vw;
+            height: 180vw;
             a{
-                font-size: 4vw;
+                font-size: 4.5vw;
                 padding: 3.5vw 3vw;
                 padding-left: 0;
                 span{
