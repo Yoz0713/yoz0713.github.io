@@ -186,7 +186,7 @@ footer .share_box a:nth-last-of-type(4) img {
   overflow: hidden;
 }
 .menu .btn_box {
-  z-index: 10;
+  z-index: 30;
 }
 .menu .btn_box button {
   padding: 3vw;
