@@ -71,6 +71,7 @@
         &-top{
             display: flex;
             flex-direction: column;
+      
             position: relative;
             background-color: #fff;
             width: 70%;
@@ -84,12 +85,13 @@
             &-inform{
                 display: flex;
                 margin-bottom: 1vw;
+                justify-content: center;
                 flex-wrap: wrap;
                 padding: 0 2vw;
                 .box{
                     display: flex;
                     justify-content: center;
-                    flex: 0 0 50%;
+                    flex: 0 0 40%;
                     margin-bottom: 3vw;
                     .imgBox{
                         display: flex;
@@ -809,6 +811,9 @@
                     }
                     &-title{
                         margin: 10vw auto; 
+                        .en_text_l{
+                            font-size: 5.5vw;
+                        }
                     }
                     &-inform{
                         display: flex;

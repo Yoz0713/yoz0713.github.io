@@ -6982,13 +6982,14 @@ body {
 .stockInner2-left-top-inform {
   display: flex;
   margin-bottom: 1vw;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 2vw;
 }
 .stockInner2-left-top-inform .box {
   display: flex;
   justify-content: center;
-  flex: 0 0 50%;
+  flex: 0 0 40%;
   margin-bottom: 3vw;
 }
 .stockInner2-left-top-inform .box .imgBox {
@@ -7663,6 +7664,9 @@ body {
   }
   .stockInner2-left-top-title {
     margin: 10vw auto;
+  }
+  .stockInner2-left-top-title .en_text_l {
+    font-size: 5.5vw;
   }
   .stockInner2-left-top-inform {
     display: flex;
