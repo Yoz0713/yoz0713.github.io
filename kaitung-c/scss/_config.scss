@@ -302,10 +302,7 @@ footer{
         align-items: flex-start !important;
         // padding: 5vw;
       
-        &::before{
-            
-            
-        }
+        
 
         .list_box{
             flex-direction: column;
@@ -383,10 +380,10 @@ footer{
         }
 
         .btn_box {
-
+           
             z-index: 15;
             button{
-                padding: 4vw 5vw;
+                padding: 5vw 7vw 5vw 4.5vw;
                 // padding-top: 0;
                 // padding-left: 0;
             }
@@ -397,10 +394,11 @@ footer{
             .hamburger-box{
                 width: 3.1vw;
                 height: 4vw;
+            
             }
 
             .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-                width: 2.8vw;
+                width: 3.5vw;
             }
         }
 
@@ -414,6 +412,35 @@ footer{
         }
     }
     @include mobile{
+        .btn_box {
+           
+            z-index: 15;
+            button{
+                padding: 5vw 9vw 5vw 4vw;
+                // padding-top: 0;
+                // padding-left: 0;
+            }
+        }
+        .hamburger{
+
+            .hamburger-box{
+                width: 3.1vw;
+                height: 4vw;
+            
+            }
+
+            .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+                width: 4.5vw;
+            }
+        }
+        .hamburger-inner:before{
+            top: -1.5vw;
+            left: 0.3vw;
+        }
+        .hamburger-inner:after{
+            bottom: -1.5vw;
+            left: -0.3vw;
+        }
         .list_box{
             flex-direction: column;
             position: absolute;
@@ -1045,5 +1072,6 @@ footer{
             }
           
         }
+      
     }
 }
