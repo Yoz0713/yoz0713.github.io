@@ -1176,7 +1176,7 @@
 
 @media all and (max-width:850px){
     .index1{
-  
+        
         .swiper{
        
         
@@ -2520,6 +2520,31 @@
                     .txt{
                         position: relative;
                         z-index: 10;
+                        padding: 0;
+                        margin-top: 20vw;
+                        height: fit-content;
+                    .s_logo{
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        z-index: 10;
+                        width: 100%;
+                        margin-bottom: 2vw;
+                        //-- 動態前置 --
+                        opacity: 0;
+                        transform: translateX(100px);
+                        transition: all 1.5s;
+    
+                        img{
+                          margin: 0;
+                          margin-right:3vw;
+                          width: 50vw;
+                        }
+                        & :nth-child(2){
+                            width: 15vw;
+                            height: auto;
+                        }
+                    }
                         h1{
                             color: #fff;
                             font-size: 4vw;
@@ -2537,7 +2562,12 @@
                             transition: all 1.5s;
                         }
                         p{
+                            position: relative;
                             color: #CFCFCF;
+                            left: none;
+                            top: none;
+                            bottom: none;
+                            right: none;
                             margin: 0;
                             margin-left: 12vw;
                             width: 17vw;

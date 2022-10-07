@@ -633,7 +633,20 @@ footer{
         margin-top: 4vw;
 
         .img_box img{
-            width: 25vw;
+            width: 30vw;
+            margin-right: 4vw;
+        }
+
+        .share_box{
+            display: none;
+        }
+    }
+    @include mobile{
+        justify-content: flex-end;
+        margin-top: 4vw;
+
+        .img_box img{
+            width: 40vw;
             margin-right: 4vw;
         }
 

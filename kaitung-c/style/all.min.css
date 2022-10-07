@@ -500,7 +500,20 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-top: 4vw;
   }
   .top_logo_div .img_box img {
-    width: 25vw;
+    width: 30vw;
+    margin-right: 4vw;
+  }
+  .top_logo_div .share_box {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .top_logo_div {
+    justify-content: flex-end;
+    margin-top: 4vw;
+  }
+  .top_logo_div .img_box img {
+    width: 40vw;
     margin-right: 4vw;
   }
   .top_logo_div .share_box {
@@ -3009,6 +3022,31 @@ footer .share_box a:nth-last-of-type(4) img {
   .index1 .swiper .swiper-slide .txt_box .txt {
     position: relative;
     z-index: 10;
+    padding: 0;
+    margin-top: 20vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .index1 .swiper .swiper-slide .txt_box .txt .s_logo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 2vw;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1.5s;
+  }
+  .index1 .swiper .swiper-slide .txt_box .txt .s_logo img {
+    margin: 0;
+    margin-right: 3vw;
+    width: 50vw;
+  }
+  .index1 .swiper .swiper-slide .txt_box .txt .s_logo :nth-child(2) {
+    width: 15vw;
+    height: auto;
   }
   .index1 .swiper .swiper-slide .txt_box .txt h1 {
     color: #fff;
@@ -3024,7 +3062,12 @@ footer .share_box a:nth-last-of-type(4) img {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .index1 .swiper .swiper-slide .txt_box .txt p {
+    position: relative;
     color: #CFCFCF;
+    left: none;
+    top: none;
+    bottom: none;
+    right: none;
     margin: 0;
     margin-left: 12vw;
     width: 17vw;
@@ -12917,6 +12960,7 @@ body {
   }
   .contact1 .top_logo_div .img_box img {
     width: 30vw;
+    margin: 0;
   }
   .contact1-bg {
     display: none;
