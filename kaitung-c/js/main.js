@@ -5,7 +5,10 @@ $(document).ready(function () {
 
      setTimeout(() => {
          $('.loading_div').addClass('close');
-
+        setTimeout(()=>{
+            $('.loading_div').css("display","none")
+        },2500)
+    
          //-- top LOGO 動態 --
          let top_tl = gsap.timeline({delay:0.5});
          top_tl.from('.top_logo_div .img_box img', 1, {y:100});
