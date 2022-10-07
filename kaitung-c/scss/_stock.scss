@@ -195,6 +195,7 @@ body{
                     pointer-events: none;
                     transition: all 0.3s;
                     opacity: 0.4;
+                    height: 100%;
                 }
                 p{
                     pointer-events: none;
@@ -599,6 +600,7 @@ body{
 
                 color: #fff;
                 bottom: 0;
+                font-size: 0;
                 .swiper-pagination-current{
                     margin-right: 10vw;
                     position: relative;

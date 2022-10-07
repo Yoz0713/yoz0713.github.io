@@ -438,8 +438,18 @@
             }
           
            let swiper = new Swiper('.stock4 .swiper', {
-            slidesPerView :slide,
-       
+            slidesPerView :3,
+            breakpoints: { 
+                500: {  //当屏幕宽度大于等于320
+                    slidesPerView: 5,
+               
+                },
+                850: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 7,
+               
+                },
+                
+            },
             pagination: {
             el: '.stock4 .swiper-pagination',
             type: 'fraction',
