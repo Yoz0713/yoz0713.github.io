@@ -4169,7 +4169,7 @@ body {
 }
 .stock2-top-switchCar {
   margin: 0;
-  width: 50vw;
+  width: 36vw;
   padding-bottom: 3vw;
 }
 .stock2-top-switchCar .swiper-wrapper {
@@ -4204,6 +4204,7 @@ body {
 }
 .stock2-top-switchCar .box p {
   pointer-events: none;
+  white-space: nowrap;
   color: rgb(107, 183, 221);
 }
 .stock2-top-switchCar .box:hover p {

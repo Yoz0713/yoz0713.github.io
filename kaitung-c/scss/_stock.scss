@@ -162,7 +162,7 @@ body{
        
         &-switchCar{
             margin: 0;
-            width:50vw;
+            width:36vw;
             padding-bottom:3vw;
             .swiper-wrapper{
                 width: 100%;
@@ -198,7 +198,7 @@ body{
                 }
                 p{
                     pointer-events: none;
-               
+                    white-space: nowrap;
                     color: rgb(107, 183, 221);
                 }
                 &:hover p{
