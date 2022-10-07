@@ -459,13 +459,23 @@
             })
 
             let swiper2 = new Swiper('.stock2-top .swiper', {
-            slidesPerView :slide2,
-            spaceBetween : window.innerWidth > 800 ? 0 : "10%",
+            slidesPerView :4,
+            spaceBetween : "10%",
             scrollbar: {
                 el: '.stock2 .swiper-scrollbar',
                 draggable: true,
             },
-           
+            breakpoints: { 
+                500: {  //当屏幕宽度大于等于320
+                    slidesPerView: 4,
+                    spaceBetween: 0
+                },
+                850: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 5,
+                    spaceBetween: 0
+                },
+                
+            }
             })
             $(".stock2 .swiper > img").click(()=>{
                 swiper2.slideNext()
