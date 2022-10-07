@@ -412,9 +412,16 @@
             var mySwiper2 = new Swiper ('.swiper2', {
             
                 speed: 1000,
-                slidesPerView :slide,
+                slidesPerView :1,
                 spaceBetween:10,
+                breakpoints: { 
+              
+                850: {  
+                    slidesPerView: 3,
+               
+                },
                 
+            },
                 // 如果需要分页器
                  pagination: {
                 el: '.swiper-pagination',

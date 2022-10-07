@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-body{
-    background-color: #E8E7EB;
 
-}
 
 .news1{
     display: flex;
@@ -48,7 +39,7 @@ body{
             }
             p{
                 text-align: justify;
-                line-height: 1.5vw;
+                line-height: 1.8;
                 letter-spacing: 0.1vw;
                 margin-bottom: 2vw;
             }
@@ -142,13 +133,15 @@ body{
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         margin-bottom:2vw;
         &-left{
             flex: 0 0 40%;
             ul{
                 display: flex;
                 width: 100%;
-                justify-content: space-between;
+                justify-content: flex-start;
+                flex-wrap: wrap;
                 li{
                     cursor: pointer;
                     color: rgb(107, 183, 221);
@@ -169,6 +162,9 @@ body{
                         background-color: #0080C5;
                         transition: all 0.5s;
                     }
+                }
+                & > :not(:last-child){
+                    margin-right: 1.5vw;
                 }
                 .active{
                     color: #0080C5;
@@ -215,7 +211,8 @@ body{
                     display: block;
                     transition: all 0.5s;
                     position: absolute;
-                    left:2vw;
+                    left: 50%;
+                    transform: translateX(-50%);
                     opacity: 0;
                     bottom: -1.5vw;
                     border: 0.3vw solid ;
@@ -231,7 +228,8 @@ body{
                     display: block;
                     opacity: 1;
                     position: absolute;
-                    left:2vw;
+                    left: 50%;
+                    transform: translateX(-50%);
                     
                     bottom: -1.5vw;
                     border: 0.3vw solid ;
@@ -241,12 +239,15 @@ body{
             }
             .box2{
                 display: flex;
+  
                 .imgBox{
+                    display: flex;
+            
                     cursor: pointer;
                     position: relative;
                     img{
                         width: 2vw;
-                        
+                        margin: 0 auto;
                         pointer-events: none;
                     }
                     & :nth-child(2){
@@ -259,7 +260,7 @@ body{
                         display: block;
                         transition: all 0.5s;
                         position: absolute;
-                        left:0.75vw;
+                        left: 0.72vw;
                         opacity: 0;
                         bottom: -1.4vw;
                         border: 0.3vw solid ;
@@ -276,7 +277,7 @@ body{
                         display: block;
                         opacity: 1;
                         position: absolute;
-                        left:0.75vw;
+                        left: 0.72vw;
                         
                         bottom: -1.4vw;
                         border: 0.3vw solid ;
@@ -301,7 +302,8 @@ body{
             position: relative;
             img{
                 display: block;
-                height:26vw;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
             &::after{
@@ -325,8 +327,7 @@ body{
             .imgBox{
                 flex: 0 0 50%;
                 img{
-                    width: 100%;
-                    height: 100%;
+        
                  
                 }
                 &:after{
@@ -591,7 +592,7 @@ body{
               
                 img{
                     width: 100%;
-                    height: 100%;
+       
                  
                 }
                 &:after{
@@ -823,3 +824,659 @@ body{
     }
 }
 
+@media all and (max-width:850px){
+    .news1{
+        display: flex;
+        position: relative;
+        height: fit-content;
+        margin-bottom: 10vw;
+        overflow: hidden;
+        height: 175vw;
+        .top_logo_div{
+       
+            justify-content: flex-end;
+            .img_box{
+                margin-left: 5vw;
+                img{
+                    width:30vw;
+                }
+            }
+        }
+        &-left{
+            flex: 0 0 100%;
+            height: 100%;
+            position: relative;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .txt_box{
+                width: 90%;
+                position: absolute;
+                left: 5vw;
+                bottom:45vw;
+                color: #fff;
+                h2{
+                    margin-bottom: 2vw;
+                    letter-spacing: 0.1vw;
+                    text-align: justify;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 1.8;
+                    letter-spacing: 0.1vw;
+                    margin-bottom: 2vw;
+                }
+                .more{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    cursor: pointer;
+                    img{
+                        width: 20vw;
+                        transition: 0.5s;
+                    }
+                    &:hover img{
+             
+                        filter: invert(20);
+                    }
+                }
+            }
+        }
+        &-right{
+            display: none;
+            flex-direction: column;
+            flex: 0 0 45%;
+            height: 100%;
+            &-top{
+                width: 100%;
+                position: relative;
+                height: 45%;
+                video{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .play-button{
+                    position: absolute;
+                    width: 8vw;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    right: 0;
+                    margin: auto;
+                    cursor: pointer;
+                    animation: playbutton 5s linear infinite;
+                   
+                    &:hover{
+                        filter: invert(10);
+                    }
+                }
+            }
+            &-bottom{
+                width: 100%;
+                position: relative;
+                height: 55%;
+                img{
+    
+                    width: 100%;
+                    height: 100%;
+                }
+                .txt_box{
+                    width: 80%;
+                    position: absolute;
+                    left: 5vw;
+                    bottom:4.5vw;
+                    color: #fff;
+                    h2{
+                        margin-bottom: 2vw;
+                        letter-spacing: 0.1vw;
+                    }
+                    p{
+                        text-align: justify;
+                        line-height: 1.5vw;
+                        letter-spacing: 0.1vw;
+                        margin-bottom: 2vw;
+                    }
+                    .more{
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                        img{
+                            width: 6.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news2{
+        width: 85%;
+        margin: 0 auto 5vw;
+        &-top{
+            display: flex;
+            width:100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom:5vw;
+            &-left{
+                flex: 0 0 100%;
+                ul{
+                    display: flex;
+                    width: 100%;
+                
+                    li{
+                        cursor: pointer;
+                        color: rgb(107, 183, 221);
+                        font-weight: 600;
+                        position: relative;
+                        &:hover{
+                           color: #0080C5;
+                          
+                        }
+                        &::after{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            bottom: -0.6vw;
+                            left: 0;
+                            height: 0.2vw;
+                            width: 0;
+                            background-color: #0080C5;
+                            transition: all 0.5s;
+                        }
+                    }
+                    .active{
+                        color: #0080C5;
+                        position: relative;
+                        &::after{
+                            display: block;
+                            content: "";
+                            position: absolute;
+                            bottom: -0.6vw;
+                            left: 0;
+                            height: 0.2vw;
+                            width: 100%;
+                            background-color: #0080C5;
+    
+                        }
+                    }
+                }
+            }
+            &-right{
+                display: flex;
+                flex: 0 0 100%;
+                margin-top: 4vw;
+                justify-content: flex-start;
+                align-items: center;
+                .box1{
+                    margin-right: 3vw;
+                   button{
+                    position: relative;
+                    margin-right:1vw;
+                    width: fit-content;
+                  
+                    height:fit-content;
+                  
+                    padding: 0.5vw 2vw;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #0080C5;
+                        color: #fff;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        transition: all 0.5s;
+                        position: absolute;
+                     
+                        opacity: 0;
+                        bottom: 0vw;
+                        border: 1vw solid ;
+                        border-color:#0080C5 transparent transparent transparent;
+                    }
+                   }
+                   .active{
+                    background-color: #0080C5;
+                    color: #fff;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        display: block;
+                        opacity: 1;
+                        position: absolute;
+                     
+                        
+                        bottom: -3.5vw;
+                        border: 1vw solid ;
+                        border-color:#0080C5 transparent transparent transparent;
+                    }
+                   }
+                }
+                .box2{
+                    display: flex;
+                    .imgBox{
+                        cursor: pointer;
+                        position: relative;
+                        img{
+                            width: 5.5vw;
+                            
+                            pointer-events: none;
+                        }
+                        & :nth-child(2){
+                            position: absolute;
+                            top: 0;
+                            display: none;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            transition: all 0.5s;
+                            position: absolute;
+                            left: 1.73vw;
+                            opacity: 0;
+                            bottom: 0vw;
+                            border: 1vw solid ;
+                            border-color:#0080C5 transparent transparent transparent;
+                        }
+                    }
+                    .active{
+                        position: relative;
+                        & :nth-child(2){
+                            display: block;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            opacity: 1;
+                            position: absolute;
+                            left: 1.73vw;
+                            
+                            bottom: -3.5vw;
+                            border:1vw solid ;
+                            border-color:#0080C5 transparent transparent transparent;
+                        }
+                    }
+                    & :nth-child(1){
+                        margin-right: 1.5vw;
+                    }
+                }
+            }
+        }
+        &-bottom{
+            display: block;
+
+            width: 100%;
+            .imgBox{
+                background-color: #fff;
+                flex: 1 1 50%;
+                position: relative;
+                img{
+                    display: block;
+                    height:60vw;
+                    object-fit: cover;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+    
+                    position: absolute;
+               
+                    
+                  
+                    border: 1vw solid ;
+                    border-top: 1.1vw solid;
+                    border-color:#fff transparent transparent transparent;
+                    transform: rotate(180deg);
+                }
+            }
+          
+            .card-ph{
+                flex-direction: column;
+                margin-bottom: 5vw;
+                grid-column:none;
+                grid-row: none;
+                & > :nth-child(2){
+                    padding: 5vw;
+                }
+                .imgBox{
+                    order: -10;
+                    img{
+                        object-fit: cover;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                }
+                .card-para{
+                 
+                    p{
+                        line-height: 1.8;
+                    }
+                }
+                
+            }
+        }
+        &-button{
+            display: flex;
+            justify-content: center;
+            
+            width: 100%;
+            margin-top: 5vw;
+    
+                button{
+                    position: relative;
+                  
+            
+                    background-color: transparent;
+                    border: 1px solid #0080C5;
+                    border-radius: 25px;
+                    padding: 0.8vw 4vw;
+                    color: #0080C5;
+                  
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #0080C5;
+                        color: #fff;
+                    }
+                  
+                   }
+          
+        }
+    }
+    @media all and (max-width:500px){
+        .news1{
+        
+            height: 220vw;
+            .top_logo_div{
+           
+                justify-content: flex-end;
+                .img_box{
+                    margin-left: 5vw;
+                    img{
+                        width:40vw;
+                    }
+                }
+            }
+            &-left{
+                flex: 0 0 100%;
+                height: 100%;
+                position: relative;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+                .txt_box{
+                    width: 90%;
+                    position: absolute;
+                    left: 5vw;
+                    bottom:60vw;
+                    color: #fff;
+                    h2{
+                        margin-bottom: 2vw;
+                        letter-spacing: 0.1vw;
+                        text-align: justify;
+                    }
+                    p{
+                        text-align: justify;
+                        line-height: 1.8;
+                        letter-spacing: 0.1vw;
+                        margin-bottom: 2vw;
+                    }
+                    .more{
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                        cursor: pointer;
+                        img{
+                            width: 30vw;
+                            transition: 0.5s;
+                        }
+                        &:hover img{
+                 
+                            filter: invert(20);
+                        }
+                    }
+                }
+            }
+          
+        }
+        .news2{
+            width: 85%;
+            margin: 0 auto 5vw;
+            &-top{
+                display: flex;
+                width:100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom:5vw;
+                &-left{
+                    flex: 0 0 100%;
+                    ul{
+                        display: flex;
+                        width: 100%;
+                 
+                        
+                        li{
+                            cursor: pointer;
+                            color: rgb(107, 183, 221);
+                            font-weight: 600;
+                            position: relative;
+                            &:hover{
+                               color: #0080C5;
+                              
+                            }
+                            &::after{
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                bottom: -0.6vw;
+                                left: 0;
+                                height: 0.2vw;
+                                width: 0;
+                                background-color: #0080C5;
+                                transition: all 0.5s;
+                            }
+                        }
+                        .active{
+                            color: #0080C5;
+                            position: relative;
+                            &::after{
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                bottom: -0.6vw;
+                                left: 0;
+                                height: 0.2vw;
+                                width: 100%;
+                                background-color: #0080C5;
+        
+                            }
+                        }
+                    }
+                }
+                &-right{
+                    display: flex;
+                    flex: 0 0 100%;
+                    margin-top: 4vw;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .box1{
+                        margin-right: 3vw;
+                       button{
+                        position: relative;
+                        margin-right:1vw;
+                        width: fit-content;
+                      
+                        height:fit-content;
+                      
+                        padding: 0.5vw 2vw;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #0080C5;
+                            color: #fff;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            transition: all 0.5s;
+                            position: absolute;
+                         
+                            opacity: 0;
+                            bottom: 0vw;
+                            border: 1vw solid ;
+                            border-color:#0080C5 transparent transparent transparent;
+                        }
+                       }
+                       .active{
+                        background-color: #0080C5;
+                        color: #fff;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            display: block;
+                            opacity: 1;
+                            position: absolute;
+                         
+                            
+                            bottom: -3.5vw;
+                            border: 1vw solid ;
+                            border-color:#0080C5 transparent transparent transparent;
+                        }
+                       }
+                    }
+                    .box2{
+                        display: flex;
+                        .imgBox{
+                            cursor: pointer;
+                            position: relative;
+                            img{
+                                width: 5.5vw;
+                                
+                                pointer-events: none;
+                            }
+                            & :nth-child(2){
+                                position: absolute;
+                                top: 0;
+                                display: none;
+                            }
+                            &::after{
+                                content: "";
+                                display: block;
+                                transition: all 0.5s;
+                                position: absolute;
+                                left: 1.73vw;
+                                opacity: 0;
+                                bottom: 0vw;
+                                border: 1vw solid ;
+                                border-color:#0080C5 transparent transparent transparent;
+                            }
+                        }
+                        .active{
+                            position: relative;
+                            & :nth-child(2){
+                                display: block;
+                            }
+                            &::after{
+                                content: "";
+                                display: block;
+                                opacity: 1;
+                                position: absolute;
+                                left: 1.73vw;
+                                
+                                bottom: -3.5vw;
+                                border:1vw solid ;
+                                border-color:#0080C5 transparent transparent transparent;
+                            }
+                        }
+                        & :nth-child(1){
+                            margin-right: 1.5vw;
+                        }
+                    }
+                }
+            }
+            &-bottom{
+                display: block;
+    
+                width: 100%;
+                .imgBox{
+                    background-color: #fff;
+                    flex: 1 1 50%;
+                    position: relative;
+                    img{
+                        display: block;
+                        height:60vw;
+                        object-fit: cover;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+        
+                        position: absolute;
+                   
+                        
+                      
+                        border: 1vw solid ;
+                        border-top: 1.1vw solid;
+                        border-color:#fff transparent transparent transparent;
+                        transform: rotate(180deg);
+                    }
+                }
+              
+                .card-ph{
+                    flex-direction: column;
+                    margin-bottom: 5vw;
+                    grid-column:none;
+                    grid-row: none;
+                    & > :nth-child(2){
+                        padding: 5vw;
+                    }
+                    .imgBox{
+                        order: -10;
+                        img{
+                            object-fit: cover;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    .card-para{
+                     
+                        p{
+                            line-height: 1.8;
+                        }
+                    }
+                    
+                }
+            }
+            &-button{
+                display: flex;
+                justify-content: center;
+                
+                width: 100%;
+                margin-top: 5vw;
+        
+                    button{
+                        position: relative;
+                      
+                
+                        background-color: transparent;
+                        border: 1px solid #0080C5;
+                        border-radius: 25px;
+                        padding: 0.8vw 4vw;
+                        color: #0080C5;
+                      
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #0080C5;
+                            color: #fff;
+                        }
+                      
+                       }
+              
+            }
+        } 
+    }
+}

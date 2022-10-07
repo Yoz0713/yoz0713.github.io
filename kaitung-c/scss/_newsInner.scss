@@ -1,13 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    background-color: #E8E7EB;
-    
-}
 
 .newsInner1{
     position: relative;
@@ -58,7 +48,7 @@ body{
             
                 h1{
                     color: #fff;
-                    font-size: 3.5vw;
+                
                     letter-spacing:0.15vw;
                     font-weight:500;
                 }
@@ -292,5 +282,637 @@ body{
             }
         }
      
+    }
+}
+
+@media all and (max-width:850px){
+    .newsInner1{
+        position: relative;
+        height: fit-content;
+        margin-bottom: 10vw;
+      
+        height: 150vw;
+      
+        .top_logo_div{
+            justify-content: flex-end;
+            margin-top: 10vw;
+            .img_box{
+                margin: 0;
+                margin-right:2vw;
+                img{
+                    width: 30vw;
+                  
+                }
+            }
+        }
+        &-banner{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .txt_box{
+                display: block;
+                position:relative;
+                top: 0;
+                left: 0;
+                padding: 0;
+                width: 100%;
+                clip-path:none;
+                z-index: 15;
+                height: 0;
+                flex: 0 0 0%;
+    
+                .line{
+                    position: absolute;
+                    left: 90vw;
+                    top: -5vw;
+                    width: 1.5px;
+                    height: 50vw;
+                    background-color: rgb(0 128 197 / 50%);
+                    z-index: 11;
+                    transform: rotate(-25deg);
+               
+                }
+    
+    
+           
+    
+                .txt{
+                    display: block;
+                    overflow:visible;
+                    position: absolute;
+                    left: 10vw;
+                    bottom: -70vw;
+                    z-index: 10;
+                    width: 80%;
+                    filter: drop-shadow(1px 1px 0px  #000);
+                    & :nth-child(1){
+                        margin-bottom: 0.8vw;
+                        font-size: 4.5vw;
+                    }
+                    & :nth-child(2){
+                        color: rgb(255, 255, 255);
+                        opacity: 0.8;
+                        margin: 2vw 0 5vw;
+                        letter-spacing:0.15vw;
+                        font-weight:700;
+                        line-height: 1.2em;
+                        font-size: 9vw;
+                    
+                    }
+                    
+                  
+                }
+    
+                .bg{
+                    display: none;
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height: 100%;
+                    //animation: bg_mv 30s ease 0s infinite normal;
+    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background:none;
+                        background-size: 100% 100%;
+                    
+                        background-repeat: no-repeat;
+                        z-index: 1;
+                    }
+                    img{
+                        width: 115%;
+                        height: 100%;
+                    }
+                }
+            }
+    
+            .img_box{
+                position: relative;
+                left:0vw;
+                z-index: 1;
+                overflow: hidden;
+                clip-path:none;
+                flex: 0 0 100%;
+                .banner{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    object-fit: cover;
+                }
+    
+                .svg1{
+                    display: none;
+                    position: absolute;
+                    left: 18.1vw;
+                    width: 6.5vw;
+    
+              
+                }
+    
+                .svg2{
+                    display: none;
+                    position: absolute;
+                    width: 20vw;
+                    top: 18vw;
+                    left: -1.5vw;
+    
+                    //-- 動態前置 --
+               
+                }
+    
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 40%;
+                   
+                    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 10%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom,  rgba(0,0,0,1) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                }
+            }
+    
+    
+        }
+    
+    
+    
+          
+            
+      
+     
+    
+    
+       
+        
+    }
+    .newsInner2{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        position: relative;
+        margin: 0 auto 10vw;
+        &-left{
+            flex: 0 0 11%;
+            margin-bottom: 3vw;
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width:fit-content;
+ 
+                    img{
+                        width: auto;
+                        height: 3.5vw;
+                  
+                    }
+                    p{
+                        color:#0080c4 ;
+                        margin-bottom: 0vw;
+                    }
+                }
+                
+                & > :nth-child(2){
+                    p{
+                        color:#ed378a ;
+                    }
+                }
+                & > :not(:last-child){
+                    width: fit-content;
+                    margin-right: 3.5vw;
+                }
+                & > :nth-child(3){
+                    width: fit-content;
+                    margin-bottom:0;
+                    margin-right:5.5vw;
+                    margin-left: 0.8vw;
+              
+                 
+                }
+                & > :nth-child(4){
+                    width: fit-content;
+                   
+              
+                 
+                }
+               
+            }
+        }
+        &-right{
+            flex: 0 0 80%;
+            & :nth-child(1){
+                margin-bottom: 2vw;
+            }
+            
+            p{
+                line-height: 1.8em;
+            }
+        }
+        &-bg{
+            position: absolute;
+            right: -12.5vw;
+            top: -6vw;
+            img{
+                width: 11vw;
+            
+            }
+        }
+    }
+    .newsInner3{
+        display: flex;
+        margin-bottom: 5vw;
+        &-left{
+            position: relative;
+            flex: 0 0 100%;
+            img{
+                position: relative;
+                width: 100%;
+                clip-path: polygon(0 0, 0 100%, 44% 100%,44% 83%,100% 83%, 100% 0); 
+                z-index: 2;
+            }
+            &-description{
+                position: absolute;
+                right: -0vw;
+                bottom: 0.5vw;
+                background-color: #fff;
+                width: 55vw;
+                height: 10vw;
+                padding:0;
+                padding: 1vw 0 0 7vw;
+                p{
+                 
+                    color:#808080 ;
+                    letter-spacing: 0.15vw;
+                }
+                & :nth-child(1){
+                    margin-bottom: 0.3vw;
+                }
+            }
+        }
+        
+    }
+    .newsInner4{
+        width: 75%;
+        margin: 0 auto 18vw;
+        position: relative;
+        & :nth-child(1){
+            margin-bottom: 0.3vw;
+        }
+        > p{
+            line-height:1.8em;
+        }
+        &-bg{
+      
+            position: absolute;
+            left: -17vw;
+            bottom: -18vw;
+            width: 25vw;
+            height: 15vw;
+           
+            background-color: #0080c4;
+            clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); 
+            &-box{
+                display: flex;
+                width: fit-content;
+                position: absolute;
+                left: 30%;
+                
+                top: 3.5vw;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 4vw;
+                    cursor: pointer;
+                }
+                p{
+                    color: #fff;
+                    font-size:2vw;
+                    font-weight: 400;
+                 
+                }
+            }
+         
+        }
+    } 
+    @media all and (max-width:500px){
+        .newsInner1{
+            position: relative;
+            height: fit-content;
+            margin-bottom: 10vw;
+          
+            height: 220vw;
+          
+            .top_logo_div{
+                justify-content: flex-end;
+                margin-top: 10vw;
+                .img_box{
+                    margin: 0;
+                    margin-right:2vw;
+                    img{
+                        width: 40vw;
+                      
+                    }
+                }
+            }
+            &-banner{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                .txt_box{
+                    display: block;
+                    position:relative;
+                    top: 0;
+                    left: 0;
+                    padding: 0;
+                    width: 100%;
+                    clip-path:none;
+                    z-index: 15;
+                    height: 0;
+                    flex: 0 0 0%;
+        
+                    .line{
+                        position: absolute;
+                        left: 90vw;
+                        top: -5vw;
+                        width: 1.5px;
+                        height: 50vw;
+                        background-color: rgb(0 128 197 / 50%);
+                        z-index: 11;
+                        transform: rotate(-25deg);
+                   
+                    }
+        
+        
+               
+        
+                    .txt{
+                        display: block;
+                        overflow:visible;
+                        position: absolute;
+                        left: 5vw;
+                        bottom: -100vw;
+                        z-index: 10;
+                        width: 95%;
+                        filter: drop-shadow(1px 1px 0px  #000);
+                        & :nth-child(1){
+                            margin-bottom: 0.8vw;
+                            font-size: 4.5vw;
+                        }
+                        & :nth-child(2){
+                            color: rgb(255, 255, 255);
+                            opacity: 0.8;
+                            margin: 2vw 0 5vw;
+                            letter-spacing:0.15vw;
+                            font-weight:700;
+                            line-height: 1.2em;
+                            font-size: 9vw;
+                        
+                        }
+                        
+                      
+                    }
+        
+                    .bg{
+                        display: none;
+                        position:absolute;
+                        top: 0;
+                        left: 0;
+                        width:100%;
+                        height: 100%;
+                        //animation: bg_mv 30s ease 0s infinite normal;
+        
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background:none;
+                            background-size: 100% 100%;
+                        
+                            background-repeat: no-repeat;
+                            z-index: 1;
+                        }
+                        img{
+                            width: 115%;
+                            height: 100%;
+                        }
+                    }
+                }
+        
+                .img_box{
+                    position: relative;
+                    left:0vw;
+                    z-index: 1;
+                    overflow: hidden;
+                    clip-path:none;
+                    flex: 0 0 100%;
+                    .banner{
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        object-fit: cover;
+                    }
+        
+                    .svg1{
+                        display: none;
+                        position: absolute;
+                        left: 18.1vw;
+                        width: 6.5vw;
+        
+                  
+                    }
+        
+                    .svg2{
+                        display: none;
+                        position: absolute;
+                        width: 20vw;
+                        top: 18vw;
+                        left: -1.5vw;
+        
+                        //-- 動態前置 --
+                   
+                    }
+        
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 40%;
+                       
+                        background: -moz-linear-gradient(top,  rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 10%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  rgba(0,0,0,1) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    }
+                }
+        
+        
+            }
+        
+        
+        
+              
+                
+          
+         
+        
+        
+           
+            
+        }
+        .newsInner2{
+          
+            &-left{
+        
+                ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        width:fit-content;
+     
+                        img{
+                            width: auto;
+                            height: 3.5vw;
+                      
+                        }
+                        p{
+                            color:#0080c4 ;
+                            margin-bottom: 0vw;
+                        }
+                    }
+                    
+                    & > :nth-child(2){
+                        p{
+                            color:#ed378a ;
+                        }
+                    }
+                    & > :not(:last-child){
+                        width: fit-content;
+                        margin-right: 3.5vw;
+                    }
+                    & > :nth-child(3){
+                        width: fit-content;
+                        margin-bottom:0;
+                        margin-right:6vw;
+                        margin-left: 0.8vw;
+                  
+                     
+                    }
+                    & > :nth-child(4){
+                        width: fit-content;
+                       
+                  
+                     
+                    }
+                   
+                }
+            }
+           
+            &-bg{
+                position: absolute;
+                right: -12.5vw;
+                top: -6vw;
+                img{
+                    width: 8vw;
+                
+                }
+            }
+        }
+        .newsInner3{
+            display: flex;
+            margin-bottom: 5vw;
+            &-left{
+                position: relative;
+                flex: 0 0 100%;
+                img{
+                    position: relative;
+                    width: 100%;
+                    clip-path: polygon(0 0, 0 100%, 37% 100%,37% 83%,100% 83%, 100% 0); 
+                    z-index: 2;
+                }
+                &-description{
+                    position: absolute;
+                    right: -0vw;
+                    bottom: 1.5vw;
+                    background-color: #fff;
+                    width: 62vw;
+                    height: 10vw;
+                    padding: 0;
+                    padding-left: 3vw;
+              
+                    p{
+                     
+                        color:#808080 ;
+                        letter-spacing: 0.15vw;
+                    }
+                    & :nth-child(1){
+                        margin-bottom: 0.3vw;
+                    }
+                }
+            }
+            
+        }
+        .newsInner4{
+            width: 75%;
+            margin: 0 auto 30vw;
+            position: relative;
+            & :nth-child(1){
+                margin-bottom: 0.3vw;
+            }
+            > p{
+                line-height:1.8em;
+            }
+            &-bg{
+          
+                position: absolute;
+                left: -17vw;
+                bottom: -30vw;
+                width: 40vw;
+                height: 25vw;
+               
+                background-color: #0080c4;
+                clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); 
+                &-box{
+                    display: flex;
+                    width: fit-content;
+                    position: absolute;
+                    left: 25%;
+                    
+                    top:6vw;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 6vw;
+                        cursor: pointer;
+                    }
+                    p{
+                        color: #fff;
+                        font-size:3.5vw;
+                        font-weight: 400;
+                     
+                    }
+                }
+             
+            }
+        } 
     }
 }

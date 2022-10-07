@@ -77,10 +77,12 @@
             margin-bottom: 2vw;
             input{
                 outline: none;
+                margin-top: 0.5vw;
                 padding: 0.5vw 0;
                 border: none;
                 border-bottom: 1px solid #0080c4;
                 width: 100%;
+                background-color: transparent;
             }
             .form-box{
                 flex:0 0 47%;
@@ -108,7 +110,8 @@
                     color: #fff;
                     font-size: 0.7vw;
                     width: fit-content;
-                    padding: 0.4vw 2.5vw;
+                    padding: 0.4vw 2.2vw;
+                    padding-right: 2.8vw;
                     border-radius: 40px;
                     cursor: pointer;
                     letter-spacing: 0.2vw;
@@ -121,9 +124,9 @@
                     background: url(../img/contact/SVG/arrow.svg);
                     position: absolute;
                     background-repeat: no-repeat;
-                    top: 0.65vw;
+                    top: 1.15vw;
             
-                    right: 1.6vw;
+                    right: 1.8vw;
                 }
             }
             .message{
@@ -210,6 +213,458 @@
             bottom: 0;
             left: 0;
           
+        }
+    }
+}
+@media all and (max-width:850px){
+    .contact1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 175vw;
+        position: relative;
+       
+        .top_logo_div{
+            justify-content: flex-end;
+            width: 90%;
+            margin-top: 5vw;
+            .img_box{
+                margin-left: 5vw;
+                img{
+                    width: 30vw;
+                    
+                }
+            }
+        }
+        &-bg{
+            display: none;
+          
+        }
+        &-left{
+            display: flex;
+            color: #fff;
+            align-items: center;
+            width: 100%;
+            flex: 0 0 40%;
+            background-color: #011935;
+            &-para{
+                height: 18vw;
+                margin-left: 5vw;
+                margin-bottom: 10vw;
+                > p{
+                    margin: 1vw 0 10vw;
+                    font-weight: 300;
+                }
+                .booking{
+                    display: flex;
+                    font-weight: 300;
+                    &-left{
+                        position: relative;
+                        margin-right: 1.5vw;
+                     
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 80%;
+                            background-color: #fff;
+                            position: absolute;
+                            right: -1vw;
+                            top: 0.5vw;
+                        }
+                    }
+                    &-right{
+    
+                    }
+                }
+            }
+        }
+        &-right{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 10vw;
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 70%;
+                margin-bottom: 2vw;
+                input{
+                    margin-top: 1vw;
+                    outline: none;
+                    padding: 0.5vw 0;
+                    border: none;
+                    border-bottom: 1px solid #0080c4;
+                    width: 100%;
+                    margin-bottom: 4vw;
+                
+                }
+                .form-box{
+                    flex:0 0 100%;
+                    margin-bottom: 1.5vw;
+                    p{
+                        font-weight: 600;
+                        color:#0080c4 ;
+                        span{
+                            color: #9d272d;
+                        }
+                    }
+                    input{
+                        color:#0080c4 ;
+                        font-size: 3vw;
+                    }
+                }
+                .submit-box{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    position: relative;
+                    input{
+                        position: relative;
+                        background-color: #0080c4;
+                        color: #fff;
+                        font-size: 2.5vw;
+                        width: fit-content;
+                        padding: 1vw 6vw;
+                        padding-right: 8vw;
+                        border-radius: 40px;
+                        cursor: pointer;
+                        letter-spacing: 0.2vw;
+                    }
+                    &:after{
+                        display: block;
+                        content:"";
+                        width: 2.3vw;
+                        height: 2.3vw;
+                        background: url(../img/contact/SVG/arrow.svg);
+                        position: absolute;
+                        background-repeat: no-repeat;
+                        top: 3vw;
+                
+                        right: 29.3vw;
+                    }
+                }
+                .message{
+                    flex: 0 0 100%;
+                }
+              
+            }
+        }
+    }
+    .footerTop{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10vw 0 4vw;
+        color: #fff;
+        border-bottom: 1px solid #0083cc;
+        margin-bottom: 4vw;
+        &-left{
+            flex: 1 1 50%;
+            width: 100%;
+          
+            display: flex;
+            justify-content: space-between;
+            & > :not(:last-child){
+              margin: 0;
+            }
+            .box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width:25%;
+                a{
+                    color: #fff;
+                
+                }
+                ul{
+                
+                    position: relative;
+               
+                    li{
+                        margin-bottom: 1vw;
+                      
+                    }
+                    .box-title{
+                        position:absolute;
+                        top: -7vw;
+                        white-space: nowrap;
+                    }
+                }
+        
+            }
+            .everyCar{
+                width: 25%;
+                ul{
+                    display: flex;
+                    position: relative;
+                    flex-wrap: wrap;
+                    li{
+                        flex: 1 1 50%;
+                    }
+                    .box-title{
+                        position: absolute;
+                        top: -7vw;
+                    }
+                }
+        
+               
+            }
+        }
+        &-right{
+        
+            margin-top: 5vw;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .contact{
+        footer{
+            position: relative;
+            background: url(../img/2x/engine.png);
+            padding: 6vw 5vw;
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 20vw;
+                background: linear-gradient(180deg, transparent 50% , rgba(0, 0, 0, 0.305) 60% , rgba(0, 0, 0, 0.604) , rgba(0, 0, 0, 0.71));
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                bottom: 0;
+                left: 0;
+              
+            }
+        }
+    }
+    @media all and (max-width:500px){
+        .contact1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 220vw;
+            position: relative;
+           
+            .top_logo_div{
+                justify-content: flex-end;
+                width: 90%;
+                margin-top: 5vw;
+                .img_box{
+                    margin-left: 5vw;
+                    img{
+                        width: 40vw;
+                        
+                    }
+                }
+            }
+            &-bg{
+                display: none;
+              
+            }
+            &-left{
+                display: flex;
+                color: #fff;
+                align-items: center;
+                width: 100%;
+                flex: 0 0 40%;
+                background-color: #011935;
+                &-para{
+                    height: 18vw;
+                    margin-left: 5vw;
+                    margin-bottom: 10vw;
+                    > p{
+                        margin: 1vw 0 10vw;
+                        font-weight: 300;
+                    }
+                    .booking{
+                        display: flex;
+                        font-weight: 300;
+                        &-left{
+                            position: relative;
+                            margin-right: 1.5vw;
+                         
+                            &:after{
+                                content: "";
+                                display: block;
+                                width: 1px;
+                                height: 60%;
+                                background-color: #fff;
+                                position: absolute;
+                                right: -1.05vw;
+                                top: 1.9vw;
+                            }
+                        }
+                        &-right{
+        
+                        }
+                    }
+                }
+            }
+            &-right{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 10vw;
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin-bottom: 2vw;
+                    input{
+                        margin-top: 1vw;
+                        outline: none;
+                        padding: 0.5vw 0;
+                        border: none;
+                        border-bottom: 1px solid #0080c4;
+                        width: 100%;
+                        margin-bottom: 7vw;
+                    
+                    }
+                    .form-box{
+                        flex:0 0 100%;
+                        margin-bottom: 1.5vw;
+                        p{
+                            font-weight: 600;
+                            color:#0080c4 ;
+                            span{
+                                color: #9d272d;
+                            }
+                        }
+                        input{
+                            color:#0080c4 ;
+                            font-size: 3vw;
+                        }
+                    }
+                    .submit-box{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        position: relative;
+                        input{
+                            position: relative;
+                            background-color: #0080c4;
+                            color: #fff;
+                            font-size: 2.5vw;
+                            width: fit-content;
+                            padding: 1.6vw 8vw;
+                            padding-right: 10vw;
+                            border-radius: 40px;
+                            cursor: pointer;
+                            letter-spacing: 0.2vw;
+                        }
+                        &:after{
+                            display: block;
+                            content:"";
+                            width: 2.3vw;
+                            height: 2.3vw;
+                            background: url(../img/contact/SVG/arrow.svg);
+                            position: absolute;
+                            background-repeat: no-repeat;
+                            top: 3.7vw;
+                    
+                            right: 29.3vw;
+                        }
+                    }
+                    .message{
+                        flex: 0 0 100%;
+                    }
+                  
+                }
+            }
+        }
+        .footerTop{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10vw 0 4vw;
+            color: #fff;
+            border-bottom: 1px solid #0083cc;
+            margin-bottom: 4vw;
+            &-left{
+                flex: 1 1 50%;
+                width: 100%;
+              
+                display: flex;
+                justify-content: space-between;
+                & > :not(:last-child){
+                  margin: 0;
+                }
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width:25%;
+                    a{
+                        color: #fff;
+                    
+                    }
+                    ul{
+                    
+                        position: relative;
+                   
+                        li{
+                            margin-bottom: 1vw;
+                          
+                        }
+                        .box-title{
+                            position:absolute;
+                            top: -7vw;
+                            white-space: nowrap;
+                        }
+                    }
+            
+                }
+                .everyCar{
+                    width: 25%;
+                    ul{
+                        display: flex;
+                        position: relative;
+                        flex-wrap: wrap;
+                        li{
+                            flex: 1 1 50%;
+                        }
+                        .box-title{
+                            position: absolute;
+                            top: -7vw;
+                        }
+                    }
+            
+                   
+                }
+            }
+            &-right{
+            
+                margin-top: 5vw;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .contact{
+            footer{
+                position: relative;
+                background: url(../img/2x/engine.png);
+                padding: 6vw 5vw;
+                &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 20vw;
+                    background: linear-gradient(180deg, transparent 50% , rgba(0, 0, 0, 0.305) 60% , rgba(0, 0, 0, 0.604) , rgba(0, 0, 0, 0.71));
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    bottom: 0;
+                    left: 0;
+                  
+                }
+            }
         }
     }
 }
