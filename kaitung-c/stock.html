@@ -138,6 +138,7 @@
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest">
                 <img src="./img/stock/SVG/suggest.svg" class="suggest">
@@ -150,6 +151,7 @@
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car3.png">
@@ -161,6 +163,7 @@
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car4.png">
@@ -172,6 +175,7 @@
                         <img src="./img/stock/SVG/oil.svg">
                     </div>
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car5.png">
@@ -182,7 +186,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/car-oil.svg">
                     </div>
+              
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car6.png">
@@ -193,7 +199,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/oil.svg">
                     </div>
+                   
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car7.png">
@@ -204,7 +212,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
+                  
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car8.png">
@@ -215,7 +225,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
+                  
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car9.png">
@@ -226,7 +238,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
+                  
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car10.png">
@@ -237,7 +251,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/oil.svg">
                     </div>
+                    
                 </div>
+                <div class="box-bg"></div>
             </div>
             <div class="box-suggest box">
                 <img src="./img/stock/1x/1x/car11.png">
@@ -248,7 +264,9 @@
                         <h2 class="ch_text_m">183.8萬</h2>
                         <img src="./img/stock/SVG/car-oil.svg">
                     </div>
+                   
                 </div>
+                <div class="box-bg"></div>
             </div>
      
         </div>
@@ -503,6 +521,230 @@
                e.target.classList.add("active")
             })
             //filter
+            function firstPageAnimation(){
+                let gg = gsap.timeline()
+                gg.fromTo(".stock1-banner .banner",{
+                    x:"-15vw",
+                },{
+                    delay:2,
+                    x:0,
+                    duration:3.5
+                },"<+0.5").fromTo(".stock1-banner .img_box .svg2",{
+                    x:"-10vw",
+                    zIndex:20,
+                },{
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .img_box .svg1",{
+                    x:"-10vw",
+                    zIndex:20,
+                },{
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .txt_box .txt :nth-child(1)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .txt_box .txt :nth-child(2)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .line",{
+                    height:0,
+                    opacity:0
+                },{
+                    height:"100%",
+                    opacity:1,
+          
+                    duration:2
+                },"<+0.5")
+            }
+            function firstPageAnimation_ph(){
+                let gg = gsap.timeline()
+                gg.fromTo(".stock1-banner .txt_box .txt :nth-child(1)",{
+                    x:"5vw",
+                    opacity:0
+               
+                },{
+                    delay:2.8,
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .txt_box .txt :nth-child(2)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".stock1-banner .line",{
+                    height:0,
+                    opacity:0
+                },{
+                    height:"100%",
+                    opacity:1,
+          
+                    duration:2
+                },"<+0.5")
+            }
+            if(window.innerWidth > 850){
+                firstPageAnimation()
+            }else{
+                firstPageAnimation_ph()
+            }
+            
+            function secondPageAnimation(){
+                let gg =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stock2-top",
+                        start:"top bottom",
+                 
+                    },
+                    
+                })
+              
+                    gg.fromTo(".stock2-top .swiper-slide",{
+                        y:30,
+                        ease:"none",
+                    },{
+                 
+                        y:0,
+                        duration:0.8,
+                        stagger: 0.3,
+                    }).fromTo(".stock2-top button",{
+                        y:30,
+                     
+                    },{
+                        y:0,
+                        duration:0.8,
+                        stagger: 0.2,
+                    },"<").fromTo(".stock2-top .phone",{
+                        y:30,
+                       
+                    },{
+                 
+                        y:0,
+                        duration:0.8,
+                        stagger: 0.3,
+                    },"<+0.5").fromTo(".stock2-top .swiper-scrollbar",{
+                        y:30,
+                       opacity:0
+                    },{
+                        opacity:1,
+                        y:0,
+                        duration:0.8,
+                        stagger: 0.3,
+                    },"<+0.8")
+            
+                  
+                  
+                
+            }
+            secondPageAnimation()
+            function cardAnimation(){
+                $(".box-suggest").each((i,item)=>{
+                    let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:item,
+                        start:"top 80%"
+                    }
+                })
+       
+                    gg.fromTo(item,{
+                        y:30,
+                        opacity:0
+                    },{
+                        opacity:1,
+                        y:0,
+                        duration:0.8
+                    }).fromTo(item.lastElementChild,{
+                
+                    
+                    },{
+                        opacity:0.6,
+                        y:-860,
+                        duration:2
+                    },"<+0.5")
+                })
+                
+            }
+            cardAnimation()
+            function paginationAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stock2-pagination",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(".stock2-pagination",{
+                        y:30,
+                        opacity:0
+                    },{
+                        opacity:1,
+                        y:0,
+                        duration:1
+                    })
+            }
+            paginationAnimation()
+            function searchAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".search_car",
+                        start:"top 80%",
+                        end:"+=300"
+                    }
+                })
+                gg.fromTo(".search_car .txt_box",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1
+                })
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".search_car",
+                        start:"top 80%",
+                        end:"+=300"
+                    }
+                })
+                gg2.fromTo(".search_car .search_box .sel_div",{
+                    y:50,
+                 
+                  
+                },{
+              
+                    y:0,
+                    duration:0.8
+                })
+                let gg3 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".search_car .search_box .btn_box a",
+                        start:"top 80%",
+                        end:"+=300"
+                      
+                    }
+                })
+                gg3.fromTo(".search_car .search_box .btn_box a",{
+                    y:50,
+                 
+                  
+                },{
+              
+                    y:0,
+                    duration:0.8
+                })
+
+
+            }
+            searchAnimation()
         });
 
     </script>

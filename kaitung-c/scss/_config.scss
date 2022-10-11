@@ -83,6 +83,9 @@ footer{
                 letter-spacing: 0.1vw;
                 font-weight: 100;
                 text-decoration: none;
+                span{
+                    display: inline-block;
+                }
             }
         }
 
@@ -259,7 +262,7 @@ footer{
                     height: 2px;
                     background-color: #fff;
                     margin-top: 0.5vw;
-                    transition: 0.3s;
+                    transition: 0.7s;
                 }
                 
             }

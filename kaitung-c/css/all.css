@@ -65,6 +65,9 @@ footer .logo_item .item_box a {
   font-weight: 100;
   text-decoration: none;
 }
+footer .logo_item .item_box a span {
+  display: inline-block;
+}
 footer .share_box {
   flex: 1 1 50%;
   position: relative;
@@ -220,7 +223,7 @@ footer .share_box a:nth-last-of-type(4) img {
   height: 2px;
   background-color: #fff;
   margin-top: 0.5vw;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 .menu .list_box a .a_line {
   position: absolute;
@@ -4269,7 +4272,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: color 0.5s, opacity 0.5s, bottom 0.5s;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -4277,7 +4280,7 @@ body {
 .stock2-top-switchCar .box img {
   width: 4vw;
   pointer-events: none;
-  transition: all 0.3s;
+  transition: 0.3s;
   opacity: 0.4;
   height: 100%;
 }
@@ -4296,8 +4299,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.5s;
-  bottom: -1.5vw;
+  transition: 0.5s;
+  bottom: 0vw;
   border: 0vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -4338,7 +4341,7 @@ body {
   height: 2vw;
   color: #0080C5;
   font-weight: 800;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
 }
 .stock2-top-filter button:hover {
@@ -4352,8 +4355,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: 0.5s;
-  bottom: -1.5vw;
+  transition: opacity 0.5s, bottom 0.5s;
+  bottom: 0vw;
   border: 0vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -4383,16 +4386,24 @@ body {
   flex-direction: column;
   position: relative;
   flex: 0 0 49%;
+  overflow: hidden;
   margin-bottom: 1.5vw;
 }
 .stock2-bottom .box-suggest > img {
   width: 100%;
+}
+.stock2-bottom .box-suggest > :nth-child(2) {
+  transition: 0.5s;
+}
+.stock2-bottom .box-suggest > :nth-child(2):hover {
+  transform: scale(1.1);
 }
 .stock2-bottom .box-suggest .suggest {
   position: absolute;
   width: 10vw;
   top: -0.4vw;
   left: 1vw;
+  z-index: 20;
 }
 .stock2-bottom .box-suggest-inform {
   display: flex;
@@ -4400,6 +4411,7 @@ body {
   width: 100%;
   padding: 1.5vw;
   background-color: #0080C5;
+  z-index: 20;
 }
 .stock2-bottom .box-suggest-inform > h2 {
   color: #fff;
@@ -4420,6 +4432,29 @@ body {
 }
 .stock2-bottom .box {
   flex: 0 0 32%;
+  overflow: hidden;
+}
+.stock2-bottom .box-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0080be;
+  pointer-events: none;
+  z-index: 21;
+}
+.stock2-bottom .box > :nth-child(1) {
+  transition: 0.5s;
+}
+.stock2-bottom .box > :nth-child(1):hover {
+  transform: scale(1.1);
+}
+.stock2-bottom .box > :nth-child(2) {
+  transition: 0.5s;
+}
+.stock2-bottom .box > :nth-child(2):hover {
+  transform: none;
 }
 .stock2-pagination {
   display: flex;
@@ -4723,7 +4758,7 @@ body {
   }
   .stock1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
+    margin-top: 4vw;
   }
   .stock1 .top_logo_div .img_box {
     margin: 0;
@@ -4883,14 +4918,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .stock2-top-switchCar .box img {
     width: 9vw;
     height: 5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .stock2-top-switchCar .box p {
@@ -4908,7 +4941,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
     bottom: -1.5vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
@@ -5363,7 +5395,6 @@ body {
   }
   .stock1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
   }
   .stock1 .top_logo_div .img_box {
     margin: 0;
@@ -5512,13 +5543,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .stock2-top-switchCar .box img {
     width: 13.5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .stock2-top-switchCar .box p {
@@ -5536,7 +5565,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
     bottom: -1.5vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
@@ -6718,6 +6746,7 @@ body {
     height: 175vw;
   }
   .news1 .top_logo_div {
+    margin-top: 4vw;
     justify-content: flex-end;
   }
   .news1 .top_logo_div .img_box {
@@ -7576,7 +7605,7 @@ body {
   }
   .newsInner1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
+    margin-top: 4vw;
   }
   .newsInner1 .top_logo_div .img_box {
     margin: 0;
@@ -7854,7 +7883,6 @@ body {
   }
   .newsInner1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
   }
   .newsInner1 .top_logo_div .img_box {
     margin: 0;
@@ -8457,6 +8485,7 @@ body {
   }
   .stockInner1 .top_logo_div {
     justify-content: flex-end;
+    margin-top: 4vw;
   }
   .stockInner1 .top_logo_div .img_box {
     margin-left: 5vw;
@@ -9648,7 +9677,7 @@ body {
   }
   .purchase1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
+    margin-top: 4vw;
   }
   .purchase1 .top_logo_div .img_box {
     margin: 0;
@@ -10286,7 +10315,6 @@ body {
   }
   .purchase1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
   }
   .purchase1 .top_logo_div .img_box {
     margin: 0;
@@ -11513,7 +11541,7 @@ body {
   }
   .rent1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
+    margin-top: 4vw;
   }
   .rent1 .top_logo_div .img_box {
     margin: 0;
@@ -12153,7 +12181,6 @@ body {
   }
   .rent1 .top_logo_div {
     justify-content: flex-end;
-    margin-top: 10vw;
   }
   .rent1 .top_logo_div .img_box {
     margin: 0;
@@ -12985,11 +13012,11 @@ body {
   }
   .contact1 .top_logo_div {
     justify-content: flex-end;
-    width: 90%;
-    margin-top: 5vw;
+    width: 100%;
+    margin-top: 4vw;
   }
   .contact1 .top_logo_div .img_box {
-    margin-left: 5vw;
+    margin-right: 4vw;
   }
   .contact1 .top_logo_div .img_box img {
     width: 30vw;
@@ -13199,7 +13226,6 @@ body {
   }
   .contact1 .top_logo_div {
     justify-content: flex-end;
-    width: 90%;
     margin-top: 5vw;
   }
   .contact1 .top_logo_div .img_box {
@@ -13418,7 +13444,7 @@ body {
 .about1-left {
   flex: 0 0 90%;
   position: relative;
-  filter: brightness(0.3);
+  filter: brightness(0.5);
   transition: all 0.5s;
 }
 .about1-left-para {
@@ -13449,6 +13475,7 @@ body {
   opacity: 0;
   transition: all 0.5s;
   cursor: pointer;
+  pointer-events: none;
   -webkit-animation: updown 3.5s linear forwards infinite;
           animation: updown 3.5s linear forwards infinite;
 }
@@ -13496,7 +13523,7 @@ body {
   height: 60.4vw;
   right: 0;
   transition: all 0.5s;
-  filter: brightness(0.3);
+  pointer-events: none;
 }
 .about1-right-imgBox {
   width: 100%;
@@ -13504,6 +13531,12 @@ body {
           clip-path: polygon(100% 0, 100% 100%, 0 100%, 16.5% 32.4%, 21% 32.3%, 29% 0);
   position: absolute;
   right: 0;
+  filter: brightness(0.5);
+  transition: all 0.5s;
+  pointer-events: auto;
+}
+.about1-right-imgBox:hover {
+  filter: brightness(1);
 }
 .about1-right-imgBox img {
   display: block;
@@ -13527,7 +13560,7 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 19vw;
+  right: 15vw;
   align-items: center;
   top: 24vw;
   height: -webkit-fit-content;
@@ -13536,6 +13569,7 @@ body {
 }
 .about1-right-para img {
   width: 20vw;
+  filter: brightness(0.5);
   margin-bottom: 3vw;
 }
 .about1-right-para :nth-child(2) {
@@ -13560,6 +13594,7 @@ body {
   top: 19.6vw;
   width: 15vw;
   left: 0vw;
+  pointer-events: none;
 }
 .about1-right :nth-child(4) {
   top: 0.2vw;
@@ -13568,9 +13603,6 @@ body {
 }
 .about1-right:hover .start {
   opacity: 1;
-}
-.about1-right:hover {
-  filter: brightness(1);
 }
 
 @media all and (max-width: 850px) {
@@ -13594,7 +13626,7 @@ body {
     width: 100%;
     flex: 0 0 50%;
     position: relative;
-    filter: brightness(0.3);
+    filter: brightness(0.5);
     transition: all 0.5s;
   }
   .about1-left-para {
@@ -13657,7 +13689,7 @@ body {
     flex: 0 0 50%;
     right: 0;
     transition: all 0.5s;
-    filter: brightness(0.3);
+    filter: brightness(0.5);
   }
   .about1-right-imgBox {
     width: 100%;

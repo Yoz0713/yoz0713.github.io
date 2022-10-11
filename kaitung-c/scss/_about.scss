@@ -16,7 +16,7 @@
     &-left{
         flex: 0 0 90%;
         position: relative;
-        filter: brightness(0.3);
+        filter: brightness(0.5);
         transition: all 0.5s;
         &-para{
             display: flex;
@@ -41,6 +41,7 @@
                 opacity: 0;
                 transition: all 0.5s;
                 cursor: pointer;
+                pointer-events: none;
                 animation: updown 3.5s linear forwards infinite;
                 &:hover{
                     animation: none;
@@ -88,13 +89,19 @@
         height: 60.4vw;
         right: 0;
         transition: all 0.5s;
-        filter: brightness(0.3);
+        pointer-events: none;
   
         &-imgBox{
             width: 100%;
             clip-path: polygon(100% 0, 100% 100%, 0 100%, 16.5% 32.4% ,21% 32.3% ,29% 0);
             position: absolute;
             right: 0;
+            filter: brightness(0.5);
+            transition: all 0.5s;
+            pointer-events: auto;
+            &:hover{
+                filter: brightness(1);
+            }
             img{
                 display: block;
                 width: 100%;
@@ -120,13 +127,14 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            right: 19vw;
+            right: 15vw;
             align-items: center;
             top: 24vw;
             height: fit-content;
       
             img{
                 width: 20vw;
+                filter: brightness(0.5);
                 margin-bottom: 3vw;
             }
             & :nth-child(2){
@@ -136,6 +144,7 @@
                 border-radius: 50%;
                 padding: 0.7vw;
                 opacity: 0;
+              
                 transition: all 0.5s;
                 cursor: pointer;
                 animation: updown 3.5s linear forwards infinite;
@@ -150,6 +159,7 @@
             top: 19.6vw;
             width:15vw;
             left:0vw;
+            pointer-events: none;
         }
         & :nth-child(4){
             top: 0.2vw;
@@ -159,9 +169,7 @@
         &:hover .start{
             opacity: 1;
         }
-        &:hover{
-            filter: brightness(1);
-        }
+   
     }
 }
 
@@ -186,7 +194,7 @@
             width: 100%;
             flex: 0 0 50%;
             position: relative;
-            filter: brightness(0.3);
+            filter: brightness(0.5);
             transition: all 0.5s;
             &-para{
                 display: flex;
@@ -243,7 +251,7 @@
             flex: 0 0 50%;
             right: 0;
             transition: all 0.5s;
-            filter: brightness(0.3);
+            filter: brightness(0.5);
       
             &-imgBox{
                 width: 100%;

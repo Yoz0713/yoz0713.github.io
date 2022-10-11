@@ -125,7 +125,7 @@ $(document).ready(function () {
 
     $('.menu .list_box a').mouseenter(function () { 
         var tl_mu = gsap.timeline();
-        tl_mu.addLabel("start");
+      
         $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
             tl_mu.to($(this), 0.4, {y:-20}, '<0.03');
         });
@@ -135,11 +135,7 @@ $(document).ready(function () {
         });
         // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
     });
-    $('.menu .list_box a').mouseleave(function () { 
-        var tl_mu = gsap.timeline();
-        tl_mu.addLabel("start");
-        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '0%'}, 'start');
-    });
+   
 
     
 
@@ -165,7 +161,39 @@ $(document).ready(function () {
     $.each($('footer .share_box a'), function (index, valueOfElement) { 
         footer_tl.from($(this), 1.5, {y:'100%'}, '<0.1');
     });
+    $.each($('footer .item_box a'), function (index, valueOfElement) { 
+        let _this=$(this);
+        let txt=$(this).html();
+        let txt_arr= txt.split(''); 
+        $(this).html('');
+        $.each(txt_arr, function (index, valueOfElement) { 
+          _this.append(`<span class="footer_txt">${this}</span>`);
+        });
+     });
+    $('footer a').mouseenter(function (e) { 
+       
+        if(e.target == this){
+            let a = this.childNodes
+            a.forEach((item,i) => {
+                let gg =gsap.timeline()
+                gg.to(item,{
+                    y:-20,
+                    duration:0.4,
+                    delay:i/15,
+                    opacity:0
+                }).to(item,{
+                    y:20,
+                    duration:0
+                }).to(item,{
+                    y:0,
+                    opacity:1,
+                    duration:0.4
+                })
+            });
+        }
   
+        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
+    });
 });
 
 // $(window).on('load', function () {

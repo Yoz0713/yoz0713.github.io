@@ -59,20 +59,24 @@
               <a href="#" target="_blank"><img src="img/SVG/yt_icon.svg" alt="Youtube"></a>
             </div>
         </div>
-        <div class="about1-left">
-            <div class="about1-left-imgBox">
-                <img src="./img/about/2x/banner-left.png">
-              
-            </div>
-            <a href="./buyIt.html">
-                <div class="about1-left-para word_level">
-                    <img src="./img/about/SVG/left-para-logo.svg">
-                    <button class="ch_text_xs">百億國際行銷有限公司</button> 
+        <a href="./buyIt.html">
+            <div class="about1-left">
+                <div class="about1-left-imgBox">
+                    <img src="./img/about/2x/banner-left.png">
+                  
                 </div>
-            </a>
-       
-        </div>
-        <div class="about1-right">
+                <a href="./buyIt.html">
+                    <div class="about1-left-para word_level">
+                        <img src="./img/about/SVG/left-para-logo.svg">
+                        <button class="ch_text_xs">百億國際行銷有限公司</button> 
+                    </div>
+                </a>
+           
+            </div>
+        </a>
+      
+        <a href="./index.html">
+            <div class="about1-right">
           
                 <div class="about1-right-imgBox">
                     <img src="./img/about/2x/banner-right.png">
@@ -92,6 +96,8 @@
        
        
         </div>
+        </a>
+      
         </section>
 
       
@@ -130,7 +136,49 @@
 
     <script>
         $(document).ready(function () {
-         
+            
+            $(".about1-right-imgBox").mouseenter(()=>{
+                $(".about1-right-para img").css("filter","brightness(1)")
+            })
+            $(".about1-right-imgBox").mouseleave(()=>{
+                $(".about1-right-para img").css("filter","brightness(0.3)")
+            })
+
+            //firstPageAnimation
+                function firstPageAnimation(){
+                    let gg = gsap.timeline()
+                    gg.fromTo(".about1-left-imgBox",{
+                        transform:"scale(1.1)"
+                    },{
+                        transform:"scale(1)",
+                        duration:2,
+                        delay:2.5,
+                    }).fromTo(".about1-right-imgBox img",{
+                       transform:"scale(1.1)"
+                    },{
+                        transform:"scale(1)",
+                        duration:2,
+                        ease:"none"
+                    },"<").fromTo(".about1-left-para",{
+                        y:"1vw",
+                        autoAlpha:0
+                    },{
+                        autoAlpha:1,
+                        y:0,
+                        duration:1.5,
+                    
+                    },"<+1").fromTo(".about1-right-para",{
+                        y:"1vw",
+                        autoAlpha:0
+                    },{
+                        autoAlpha:1,
+                        y:0,
+                        duration:1.5,
+                    
+                    },"<")
+                }
+                firstPageAnimation()
+            //firstPageAnimation
         });
 
     </script>
