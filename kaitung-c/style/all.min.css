@@ -13765,13 +13765,28 @@ body {
   transform: skewX(-15deg);
   overflow: hidden;
 }
+.buyIt .menu .list_box {
+  background-color: #33203f;
+}
+.buyIt .menu .list_box > :first-child {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 1.5vw;
+}
+.buyIt .menu .list_box > :first-child img {
+  width: 7vw;
+  margin-bottom: 0.5vw;
+}
 .buyIt footer {
   background-image: url(../img/buyIt/2x/footer-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  height: 20vw;
+  height: 33vw;
   position: relative;
+  margin-top: -10vw;
+  padding-top: 8vw;
 }
 .buyIt footer .logo_item {
   display: flex;
@@ -13822,16 +13837,16 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 0.6vw;
+  font-size: 0.7vw;
   letter-spacing: 0.07vw;
   color: #fff;
-  margin-top: 3.5vw;
+  margin-top: 8vw;
 }
 .buyIt footer .footer-para p {
   font-family: "Noto Serif TC", serif;
 }
 .buyIt footer .footer-para img {
-  width: 3vw;
+  width: 4vw;
   margin-bottom: 4vw;
 }
 .buyIt footer .footer-para :nth-child(3) {
@@ -14149,6 +14164,19 @@ body {
     background-color: #33203f;
     transform: skewX(-15deg);
     overflow: hidden;
+  }
+  .buyIt .menu .list_box {
+    background-color: #33203f;
+  }
+  .buyIt .menu .list_box > :first-child {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5vw;
+  }
+  .buyIt .menu .list_box > :first-child img {
+    width: 25vw;
+    margin-bottom: 0.5vw;
   }
   .buyIt footer {
     background-image: url(../img/buyIt/2x/footer-bg.png);
@@ -14532,6 +14560,19 @@ body {
     background-color: #33203f;
     transform: skewX(-15deg);
     overflow: hidden;
+  }
+  .buyIt .menu .list_box {
+    background-color: #33203f;
+  }
+  .buyIt .menu .list_box > :first-child {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5vw;
+  }
+  .buyIt .menu .list_box > :first-child img {
+    width: 35vw;
+    margin-bottom: 0.5vw;
   }
   .buyIt footer {
     background-image: url(../img/buyIt/2x/footer-bg.png);

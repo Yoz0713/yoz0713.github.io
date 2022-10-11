@@ -12,15 +12,29 @@
             transform: skewX(-15deg);
             overflow: hidden;
         }
+       .list_box{
+        background-color:#33203f ;
+        & > :first-child{
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin-right: 1.5vw;
+            img{
+                width: 7vw;
+                margin-bottom: 0.5vw;
+            }
+        }
+       }
     }
     footer{
         background-image: url(../img/buyIt/2x/footer-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center top;
-        height: 20vw;
+        height: 33vw;
         position: relative;
-        
+        margin-top: -10vw;
+        padding-top: 8vw;
     .logo_item{
         display: flex;
         align-items: center;
@@ -71,15 +85,15 @@
         top: 0;
         margin: auto;
         width: fit-content;
-        font-size: 0.6vw;
+        font-size: 0.7vw;
         letter-spacing: 0.07vw;
         color: #fff;
-        margin-top: 3.5vw;
+        margin-top: 8vw;
         p{
             font-family: 'Noto Serif TC', serif;
         }
         img{
-            width: 3vw;
+            width: 4vw;
             margin-bottom: 4vw;
         }
         & :nth-child(3){
@@ -423,6 +437,19 @@
                 transform: skewX(-15deg);
                 overflow: hidden;
             }
+            .list_box{
+                background-color:#33203f ;
+                & > :first-child{
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1.5vw;
+                    img{
+                        width: 25vw;
+                        margin-bottom: 0.5vw;
+                    }
+                }
+               }
         }
         footer{
             background-image: url(../img/buyIt/2x/footer-bg.png);
@@ -851,6 +878,19 @@
                     transform: skewX(-15deg);
                     overflow: hidden;
                 }
+                .list_box{
+                    background-color:#33203f ;
+                    & > :first-child{
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 1.5vw;
+                        img{
+                            width: 35vw;
+                            margin-bottom: 0.5vw;
+                        }
+                    }
+                   }
             }
             footer{
                 background-image: url(../img/buyIt/2x/footer-bg.png);
