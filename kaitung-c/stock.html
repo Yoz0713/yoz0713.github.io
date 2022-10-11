@@ -633,11 +633,11 @@
                         duration:0.8,
                         stagger: 0.3,
                     },"<+0.5").fromTo(".stock2-top .swiper-scrollbar",{
-                        y:30,
+                        x:-30,
                        opacity:0
                     },{
                         opacity:1,
-                        y:0,
+                        x:0,
                         duration:0.8,
                         stagger: 0.3,
                     },"<+0.8")
@@ -652,7 +652,7 @@
                     let gg = gsap.timeline({
                     scrollTrigger:{
                         trigger:item,
-                        start:"top 80%"
+                        start:`top 80%`
                     }
                 })
        
@@ -662,15 +662,15 @@
                     },{
                         opacity:1,
                         y:0,
-                        duration:0.8
+                        duration:0.6
                     }).fromTo(item.lastElementChild,{
                 
                     
                     },{
                         opacity:0.6,
-                        y:-860,
-                        duration:2
-                    },"<+0.5")
+                        y:"-100%",
+                        duration:1
+                    },"<+0.2")
                 })
                 
             }
@@ -727,7 +727,7 @@
                 let gg3 = gsap.timeline({
                     scrollTrigger:{
                         trigger:".search_car .search_box .btn_box a",
-                        start:"top 80%",
+                        start:"top bottom",
                         end:"+=300"
                       
                     }
@@ -745,6 +745,71 @@
 
             }
             searchAnimation()
+            function stock4Animation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stock4-top-title",
+                        start:"top 80%",
+                     
+                    }
+                })
+                gg.fromTo(".stock4-top-title h1",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                }).fromTo(".stock4-top-title p",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                },"<+0.5").fromTo(".stock4-top-lookAll",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                },"<+0.5")
+
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stock4 .swiper",
+                        start:"top 80%",
+                     
+                    }
+                })
+                gg2.fromTo(".stock4 .swiper .swiper-slide",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+                    stagger:0.3
+                }).fromTo(".stock4 .swiper .navigate",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+0.5").fromTo(".stock4 .swiper .swiper-pagination",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+                    stagger:0.3
+                },"<")
+            }
+            stock4Animation()
         });
 
     </script>

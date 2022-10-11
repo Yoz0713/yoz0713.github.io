@@ -632,7 +632,7 @@ body{
             }
             .swiper-pagination{
                 width: 100%;
-
+                pointer-events: none;
                 color: #fff;
                 bottom: 0;
                 font-size: 0;
@@ -680,7 +680,7 @@ body{
                         transform: rotateY(180deg);
                         width: 0.7vw;
                         position: absolute;
-                        
+                        pointer-events: none;
                     }
                     &:hover img{
                         filter: brightness(30);
@@ -695,7 +695,7 @@ body{
                     width: 2vw;
                     img{
                         width: 0.7vw;
-                        
+                    
                     }
                     &:hover img{
                         filter: brightness(30);
