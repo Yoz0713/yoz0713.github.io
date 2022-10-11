@@ -133,12 +133,12 @@ $(document).ready(function () {
             let display_num=index==0 ? '<0.2':'<0.03';
             tl_mu.fromTo($(this), 0.4, {y:20},{y:0}, display_num);
         });
-        tl_mu.to($(this).find('.a_line'), 0.3, {width: '12%'}, 'start');
+        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
     });
     $('.menu .list_box a').mouseleave(function () { 
         var tl_mu = gsap.timeline();
         tl_mu.addLabel("start");
-        tl_mu.to($(this).find('.a_line'), 0.3, {width: '0%'}, 'start');
+        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '0%'}, 'start');
     });
 
     

@@ -204,11 +204,23 @@ footer .share_box a:nth-last-of-type(4) img {
   white-space: nowrap;
   position: relative;
 }
+.menu .list_box a:hover .s_txt_box::after {
+  width: 100%;
+}
 .menu .list_box a span {
   display: inline-block;
 }
 .menu .list_box a .s_txt_box {
   overflow: hidden;
+}
+.menu .list_box a .s_txt_box::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 0.5vw;
+  transition: 0.3s;
 }
 .menu .list_box a .a_line {
   position: absolute;
