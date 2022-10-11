@@ -74,7 +74,7 @@
                     打造深入品牌、與眾不同的建築作品。</p>
                 <p class="ch_text_m">遵循政府政策與法規，從行銷前端創新思考，<br>
                     緊抓時機與趨勢脈絡，「速度銷售」創進建築佳績，<br>
-                「誠信股實」延續品牌與顧客的好感度。</p>
+                「誠信殷實」延續品牌與顧客的好感度。</p>
             </div>
         </div>
       
@@ -90,24 +90,36 @@
             <h3 class="ch_text_l hot">熱銷個案</h3>
         </div>
         <div class="buyIt2-bg">
-            <img src="./img/buyIt/2x/second-page.png">
+            <img src="./img/buyIt/2x/second-page.png" class="computer">
+            <img src="./img/buyIt/2x/second-page-ph.png" class="phone">
         </div>
-        <div class="buyIt2-para-left word_level">
-            <p class="ch_text_s">2018</p>
-            <p class="ch_text_m s-title">台中沙鹿 | 寶宇麗悅</p>
-            <p class="ch_text_m s-para">台中市沙鹿區東安街<br>
-                40-51坪</p>
-        </div>
-        <div class="buyIt2-para-right word_level">
-            <p class="ch_text_s">2018</p>
-            <p class="ch_text_m s-title">台中沙鹿 | 寶宇麗悅</p>
-            <p class="ch_text_m s-para">台中市沙鹿區東安街<br>
-                40-51坪</p>
+     
+        <div class="buyIt2-bg2">
+            <img src="./img/buyIt/SVG/half-round-ph.svg" class="phone">
         </div>
     </div>
      <div class="buyIt3">
-        <img src="./img/buyIt/2x/third-page-left.png">
-        <img src="./img/buyIt/2x/third-page-right.png">
+       
+      
+        <div class="imgBox">
+            <img src="./img/buyIt/2x/third-page-left.png">
+            <div class="buyIt3-para-left word_level">
+                <p class="ch_text_s">2018</p>
+                <p class="ch_text_m s-title">台中沙鹿 | 寶宇麗悅</p>
+                <p class="ch_text_m s-para">台中市沙鹿區東安街<br>
+                    40-51坪</p>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="./img/buyIt/2x/third-page-right.png">
+            <div class="buyIt3-para-right word_level">
+                <p class="ch_text_s">2018</p>
+                <p class="ch_text_m s-title">台中沙鹿 | 寶宇麗悅</p>
+                <p class="ch_text_m s-para">台中市沙鹿區東安街<br>
+                    40-51坪</p>
+            </div>
+        </div>
+   
      </div> 
       <div class="buyIt4">
         <div class="swiper">
@@ -223,10 +235,22 @@
               </div>
               
               <div class="share_box">
-                <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
-                <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="FB"></a>
-                <a href="#" target="_blank"><img src="img/SVG/ig_icon.svg" alt="FB"></a>
-                <a href="#" target="_blank"><img src="img/SVG/yt_icon.svg" alt="FB"></a>
+                <a href="#" target="_blank">
+                    <img src="img/SVG/fb_icon.svg" alt="FB" class="computer">
+                    <img src="./img/buyIt/SVG/fb-ph.svg" alt="FB" class="phone">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/SVG/line_icon.svg" alt="line" class="computer">
+                    <img src="./img/buyIt/SVG/line-ph.svg" alt="FB" class="phone">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/SVG/ig_icon.svg" alt="ig" class="computer">
+                    <img src="./img/buyIt/SVG/ig-ph.svg" alt="FB" class="phone">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/SVG/yt_icon.svg" alt="yt" class="computer">
+                    <img src="./img/buyIt/SVG/yt-ph.svg" alt="FB" class="phone">
+                </a>
               </div>
             </div>
             <div class="footer-para word_level">
@@ -253,14 +277,24 @@
             var mySwiper = new Swiper ('.swiper', {
                 loop:true,
                 speed: 1000,
-                slidesPerView :4,
+                slidesPerView :1.5,
                 watchSlidesVisibility: true,
-                spaceBetween : "2%",
+              
+                spaceBetween : "5%",
                 centeredSlides: true,
                 scrollbar: {
                 el: '.swiper-scrollbar',
                 draggable: true,
+             
                 },
+                breakpoints: { 
+                
+                850: {  //当屏幕宽度大于等于850
+                    slidesPerView: 4,
+                    spaceBetween: "2%"
+                },
+                
+            }
             });  
          
         });

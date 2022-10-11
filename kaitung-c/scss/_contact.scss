@@ -366,24 +366,28 @@
             width: 100%;
           
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            & > :not(:last-child){
-              margin: 0;
-            }
+          
             .box{
                 display: flex;
-                flex-direction: column;
+                flex-direction:row;
+                flex-wrap: wrap;
                 align-items: center;
-                width:25%;
+                width:100%;
+          
                 a{
                     color: #fff;
                 
                 }
                 ul{
-                
+                    display: flex;
                     position: relative;
-               
+                    flex-wrap: wrap;
                     li{
+                        display: flex;
+                        margin-right: 3vw;
+                     
                         margin-bottom: 1vw;
                       
                     }
@@ -396,15 +400,17 @@
         
             }
             .everyCar{
-                width: 25%;
+                width: 100%;
+                margin-right: 0;
                 ul{
                     display: flex;
                     position: relative;
                     flex-wrap: wrap;
-                    li{
-                        flex: 1 1 50%;
-                    }
+                   li{
+                    flex: 0 0 15%;
+                   }
                     .box-title{
+                    
                         position: absolute;
                         top: -7vw;
                     }
@@ -412,6 +418,9 @@
         
                
             }
+            & > :not(:last-child){
+                margin-bottom: 15vw;
+              }
         }
         &-right{
         
@@ -591,24 +600,29 @@
                 width: 100%;
               
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                & > :not(:last-child){
-                  margin: 0;
-                }
+              
                 .box{
                     display: flex;
-                    flex-direction: column;
+                    flex-direction:row;
+                    flex-wrap: wrap;
                     align-items: center;
-                    width:25%;
+                    width:100%;
+              
                     a{
                         color: #fff;
                     
                     }
                     ul{
-                    
+                        display: flex;
                         position: relative;
-                   
+        
                         li{
+                            display: flex;
+                  
+                            margin-right: 4vw;
+                         
                             margin-bottom: 1vw;
                           
                         }
@@ -621,15 +635,17 @@
             
                 }
                 .everyCar{
-                    width: 25%;
+                    width: 100%;
+                    margin-right: 0;
                     ul{
                         display: flex;
                         position: relative;
                         flex-wrap: wrap;
-                        li{
-                            flex: 1 1 50%;
-                        }
+                       li{
+                        flex: 0 0 15%;
+                       }
                         .box-title{
+                        
                             position: absolute;
                             top: -7vw;
                         }
@@ -637,6 +653,9 @@
             
                    
                 }
+                & > :not(:last-child){
+                    margin-bottom: 15vw;
+                  }
             }
             &-right{
             

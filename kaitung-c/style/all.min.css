@@ -156,7 +156,7 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .loading_div .spinner_div img {
   margin-top: 1vw;
-  width: 7vw;
+  width: 5vw;
   transform: translateX(750%);
   -webkit-animation: car_move 2.5s ease-in-out 0.5s infinite normal;
           animation: car_move 2.5s ease-in-out 0.5s infinite normal;
@@ -544,13 +544,13 @@ footer .share_box a:nth-last-of-type(4) img {
 
 @-webkit-keyframes car_move {
   0% {
-    transform: translateX(750%) skewX(80deg);
+    transform: translateX(1200%) skewX(80deg);
   }
   30% {
-    transform: translateX(280%) skewX(0deg);
+    transform: translateX(400%) skewX(0deg);
   }
   70% {
-    transform: translateX(330%) skewX(0deg);
+    transform: translateX(450%) skewX(0deg);
   }
   100% {
     transform: translateX(-200%) skewX(-80deg);
@@ -559,13 +559,13 @@ footer .share_box a:nth-last-of-type(4) img {
 
 @keyframes car_move {
   0% {
-    transform: translateX(750%) skewX(80deg);
+    transform: translateX(1200%) skewX(80deg);
   }
   30% {
-    transform: translateX(280%) skewX(0deg);
+    transform: translateX(400%) skewX(0deg);
   }
   70% {
-    transform: translateX(330%) skewX(0deg);
+    transform: translateX(450%) skewX(0deg);
   }
   100% {
     transform: translateX(-200%) skewX(-80deg);
@@ -13106,24 +13106,27 @@ body {
     flex: 1 1 50%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-  }
-  .footerTop-left > :not(:last-child) {
-    margin: 0;
   }
   .footerTop-left .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 25%;
+    width: 100%;
   }
   .footerTop-left .box a {
     color: #fff;
   }
   .footerTop-left .box ul {
+    display: flex;
     position: relative;
+    flex-wrap: wrap;
   }
   .footerTop-left .box ul li {
+    display: flex;
+    margin-right: 3vw;
     margin-bottom: 1vw;
   }
   .footerTop-left .box ul .box-title {
@@ -13132,7 +13135,8 @@ body {
     white-space: nowrap;
   }
   .footerTop-left .everyCar {
-    width: 25%;
+    width: 100%;
+    margin-right: 0;
   }
   .footerTop-left .everyCar ul {
     display: flex;
@@ -13140,11 +13144,14 @@ body {
     flex-wrap: wrap;
   }
   .footerTop-left .everyCar ul li {
-    flex: 1 1 50%;
+    flex: 0 0 15%;
   }
   .footerTop-left .everyCar ul .box-title {
     position: absolute;
     top: -7vw;
+  }
+  .footerTop-left > :not(:last-child) {
+    margin-bottom: 15vw;
   }
   .footerTop-right {
     margin-top: 5vw;
@@ -13312,24 +13319,26 @@ body {
     flex: 1 1 50%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-  }
-  .footerTop-left > :not(:last-child) {
-    margin: 0;
   }
   .footerTop-left .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 25%;
+    width: 100%;
   }
   .footerTop-left .box a {
     color: #fff;
   }
   .footerTop-left .box ul {
+    display: flex;
     position: relative;
   }
   .footerTop-left .box ul li {
+    display: flex;
+    margin-right: 4vw;
     margin-bottom: 1vw;
   }
   .footerTop-left .box ul .box-title {
@@ -13338,7 +13347,8 @@ body {
     white-space: nowrap;
   }
   .footerTop-left .everyCar {
-    width: 25%;
+    width: 100%;
+    margin-right: 0;
   }
   .footerTop-left .everyCar ul {
     display: flex;
@@ -13346,11 +13356,14 @@ body {
     flex-wrap: wrap;
   }
   .footerTop-left .everyCar ul li {
-    flex: 1 1 50%;
+    flex: 0 0 15%;
   }
   .footerTop-left .everyCar ul .box-title {
     position: absolute;
     top: -7vw;
+  }
+  .footerTop-left > :not(:last-child) {
+    margin-bottom: 15vw;
   }
   .footerTop-right {
     margin-top: 5vw;
@@ -13886,12 +13899,15 @@ body {
 }
 .buyIt1-para-right :nth-child(3) {
   color: #fcdfcd;
+  letter-spacing: 0.1em;
   text-align: justify;
   line-height: 1.7em;
   margin: 3vw 0;
   font-family: "Noto Serif TC", serif;
+  white-space: nowr;
 }
 .buyIt1-para-right :nth-child(4) {
+  letter-spacing: 0.1em;
   color: rgba(109, 86, 102, 0.8901960784);
   text-align: justify;
   line-height: 1.7em;
@@ -13994,12 +14010,57 @@ body {
   display: flex;
   width: 100%;
   margin-bottom: 1vw;
+  position: relative;
 }
-.buyIt3 img {
-  width: 50%;
+.buyIt3 .imgBox {
+  width: 100%;
+}
+.buyIt3 .imgBox img {
+  width: 100%;
   height: 28.5vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.buyIt3-para-left {
+  position: absolute;
+  left: 7vw;
+  top: -13vw;
+}
+.buyIt3-para-left .ch_text_s {
+  color: #bba290;
+  font-family: "Noto Serif TC", serif;
+}
+.buyIt3-para-left .s-title {
+  color: #33203f;
+  font-weight: 900;
+  font-family: "Noto Serif TC", serif;
+  margin-bottom: 1.5vw;
+}
+.buyIt3-para-left .s-para {
+  color: #a8a8a8;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
+}
+.buyIt3-para-right {
+  position: absolute;
+  z-index: 20;
+  right: 7vw;
+  top: -13vw;
+}
+.buyIt3-para-right .ch_text_s {
+  color: #bba290;
+  font-family: "Noto Serif TC", serif;
+}
+.buyIt3-para-right .s-title {
+  color: #33203f;
+  font-weight: 900;
+  font-family: "Noto Serif TC", serif;
+  margin-bottom: 1.5vw;
+}
+.buyIt3-para-right .s-para {
+  color: #a8a8a8;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
 }
 
 .buyIt4 {
@@ -14065,6 +14126,785 @@ body {
   background-color: #33203f;
 }
 
+@media all and (max-width: 850px) {
+  .buyIt .menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 120%;
+    height: 100%;
+    background-color: #33203f;
+    transform: skewX(-15deg);
+    overflow: hidden;
+  }
+  .buyIt footer {
+    background-image: url(../img/buyIt/2x/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 80vw;
+    position: relative;
+    padding: 0;
+  }
+  .buyIt footer .logo_item {
+    position: absolute;
+    width: 100%;
+  }
+  .buyIt footer .logo_item > a {
+    position: absolute;
+    left: 10vw;
+    top: -3.5vw;
+  }
+  .buyIt footer .logo_item > a .toTop {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .buyIt footer .logo_item > a .toTop img {
+    width: 30%;
+  }
+  .buyIt footer .logo_item > a .toTop::after {
+    content: "TOP";
+    display: block;
+    position: absolute;
+    bottom: -6vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .buyIt footer .logo_item .logo_box {
+    margin: 0;
+    overflow: visible;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: -45vw;
+  }
+  .buyIt footer .logo_item .logo_box img {
+    width: 30vw;
+  }
+  .buyIt footer .footer-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2.5vw;
+    color: #fff;
+    margin-top: 15vw;
+    font-weight: 300;
+  }
+  .buyIt footer .footer-para p {
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt footer .footer-para img {
+    width: 15vw;
+    margin-bottom: 25vw;
+  }
+  .buyIt footer .footer-para :nth-child(3) {
+    margin-bottom: 5vw;
+  }
+  .buyIt footer .share_box {
+    position: relative;
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .buyIt footer .share_box > :not(:last-child) {
+    margin-right: 5vw;
+  }
+  .buyIt footer .share_box a {
+    padding: 0.5vw 1vw;
+  }
+  .buyIt footer .share_box a img {
+    height: 1.1vw;
+    width: auto;
+    margin: 0;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(1) img {
+    height: 3.5vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(2) img {
+    height: 4vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(3) img {
+    height: 4vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(4) img {
+    height: 4vw;
+  }
+  .buyIt1 {
+    position: relative;
+    height: 175vw;
+    width: 100%;
+  }
+  .buyIt1-bg {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .buyIt1-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .buyIt1-para {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+  }
+  .buyIt1-para-left {
+    flex: auto;
+    margin-top: 1vw;
+    position: absolute;
+    right: 15vw;
+    top: 13vw;
+  }
+  .buyIt1-para-left img {
+    width: 16vw;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  .buyIt1-para-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 82%;
+    margin: 20vw auto 0;
+  }
+  .buyIt1-para-right :nth-child(1) {
+    color: #ffee00;
+    letter-spacing: 0.7vw;
+    font-family: "Noto Serif TC", serif;
+    font-size: 10vw;
+  }
+  .buyIt1-para-right :nth-child(2) {
+    color: #fff;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+    white-space: nowrap;
+  }
+  .buyIt1-para-right :nth-child(3) {
+    color: #fcdfcd;
+    font-size: 2.8vw;
+    text-align: justify;
+    line-height: 1.7em;
+    margin: 9vw 0 6vw;
+    white-space: nowrap;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt1-para-right :nth-child(4) {
+    color: rgba(109, 86, 102, 0.8901960784);
+    text-align: justify;
+    font-size: 2.8vw;
+    line-height: 1.7em;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt1::after {
+    display: none;
+  }
+  .buyIt2 {
+    position: relative;
+    background: linear-gradient(180deg, transparent 10%, #f4f3f1 80%);
+  }
+  .buyIt2-bg {
+    width: 100%;
+  }
+  .buyIt2-bg img {
+    width: 100%;
+  }
+  .buyIt2-bg2 {
+    width: 80vw;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    top: -20vw;
+    overflow: hidden;
+  }
+  .buyIt2-bg2 img {
+    opacity: 0.7;
+    width: 75vw;
+    position: relative;
+    right: -46vw;
+  }
+  .buyIt2-para {
+    right: auto;
+    left: 5vw;
+    top: -7vw;
+    color: #b29a8a;
+  }
+  .buyIt2-para img {
+    width: 10vw;
+    margin-bottom: 1.5vw;
+  }
+  .buyIt2-para h1 {
+    margin: 0.5vw 0;
+    letter-spacing: 0;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt2-para .ch_text_l {
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-bottom: 5px solid #b29a8a;
+    font-weight: 700;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt2-para .hot {
+    font-weight: 500;
+    border: none;
+  }
+  .buyIt3 {
+    display: flex;
+    width: 100%;
+    padding: 5vw;
+    margin-top: -8vw;
+    margin-bottom: 15vw;
+    background-color: #f4f3f1;
+  }
+  .buyIt3 .imgBox img {
+    width: 100%;
+    height: 25vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 3vw;
+  }
+  .buyIt3-para-left {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .buyIt3-para-left .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt3-para-left .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 1.5vw;
+  }
+  .buyIt3-para-left .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+  }
+  .buyIt3-para-right {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .buyIt3-para-right .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt3-para-right .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 1.5vw;
+  }
+  .buyIt3-para-right .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+  }
+  .buyIt4 {
+    margin-bottom: 20vw;
+    width: 100%;
+    background-color: #ecebef;
+  }
+  .buyIt4-para {
+    display: block;
+    background-color: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5vw 1vw;
+  }
+  .buyIt4-para .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt4-para .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 1.5vw;
+  }
+  .buyIt4-para .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+  }
+  .buyIt4 .swiper {
+    width: 100%;
+    padding-bottom: 15vw;
+  }
+  .buyIt4 .swiper .swiper-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide {
+    transition: all 0.5s;
+    opacity: 0.3;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    display: block;
+    height: 55vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide-active, .buyIt4 .swiper .swiper-wrapper .swiper-slide-prev, .buyIt4 .swiper .swiper-wrapper .swiper-slide-next {
+    opacity: 1;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide-prev, .buyIt4 .swiper .swiper-wrapper .swiper-slide-next {
+    opacity: 0.3;
+  }
+  .buyIt4 .swiper .swiper-scrollbar {
+    bottom: 2vw;
+    height: 1px;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #33203f;
+  }
+  .buyIt4 .swiper .swiper-scrollbar-drag {
+    background: none;
+    position: absolute;
+    top: -0.33vw;
+    height: 6px;
+    z-index: 21;
+    background-color: #33203f;
+  }
+}
+@media all and (max-width: 850px) and (max-width: 500px) {
+  .buyIt .menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 120%;
+    height: 100%;
+    background-color: #33203f;
+    transform: skewX(-15deg);
+    overflow: hidden;
+  }
+  .buyIt footer {
+    background-image: url(../img/buyIt/2x/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 80vw;
+    position: relative;
+    padding: 0;
+  }
+  .buyIt footer .logo_item {
+    position: absolute;
+    width: 100%;
+  }
+  .buyIt footer .logo_item > a {
+    position: absolute;
+    left: 10vw;
+    top: -3.5vw;
+  }
+  .buyIt footer .logo_item > a .toTop {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .buyIt footer .logo_item > a .toTop img {
+    width: 30%;
+  }
+  .buyIt footer .logo_item > a .toTop::after {
+    content: "TOP";
+    display: block;
+    position: absolute;
+    bottom: -6vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.5vw;
+  }
+  .buyIt footer .logo_item .logo_box {
+    margin: 0;
+    overflow: visible;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    bottom: -45vw;
+  }
+  .buyIt footer .logo_item .logo_box img {
+    width: 30vw;
+  }
+  .buyIt footer .footer-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2.5vw;
+    color: #fff;
+    margin-top: 15vw;
+    font-weight: 300;
+  }
+  .buyIt footer .footer-para p {
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt footer .footer-para img {
+    width: 15vw;
+    margin-bottom: 25vw;
+  }
+  .buyIt footer .footer-para :nth-child(3) {
+    margin-bottom: 5vw;
+  }
+  .buyIt footer .share_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .buyIt footer .share_box > :not(:last-child) {
+    margin-right: 5vw;
+  }
+  .buyIt footer .share_box a {
+    padding: 0.5vw 1vw;
+  }
+  .buyIt footer .share_box a img {
+    height: 1.1vw;
+    width: auto;
+    margin: 0;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(1) img {
+    height: 4.5vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(2) img {
+    height: 5vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(3) img {
+    height: 5vw;
+  }
+  .buyIt footer .share_box a:nth-last-of-type(4) img {
+    height: 5vw;
+  }
+  .buyIt1 {
+    position: relative;
+    height: 220vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .buyIt1-bg {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .buyIt1-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .buyIt1-para {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+  }
+  .buyIt1-para-left {
+    flex: auto;
+    margin-top: 1vw;
+    position: absolute;
+    right: 10vw;
+    top: 23vw;
+  }
+  .buyIt1-para-left img {
+    width: 18vw;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  .buyIt1-para-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: 33vw auto 0;
+  }
+  .buyIt1-para-right :nth-child(1) {
+    color: #ffee00;
+    letter-spacing: 0.7vw;
+    font-family: "Noto Serif TC", serif;
+    font-size: 11vw;
+  }
+  .buyIt1-para-right :nth-child(2) {
+    color: #fff;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+  .buyIt1-para-right :nth-child(3) {
+    color: #fcdfcd;
+    font-size: 2.8vw;
+    text-align: justify;
+    font-size: 3.1vw;
+    line-height: 1.8em;
+    margin: 9vw 0 6vw;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt1-para-right :nth-child(4) {
+    color: rgba(109, 86, 102, 0.8901960784);
+    text-align: justify;
+    font-size: 3.1vw;
+    line-height: 1.8em;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt1::after {
+    display: none;
+  }
+  .buyIt2 {
+    position: relative;
+    background: linear-gradient(180deg, transparent 10%, #f4f3f1 80%);
+  }
+  .buyIt2-bg {
+    width: 100%;
+  }
+  .buyIt2-bg img {
+    width: 100%;
+  }
+  .buyIt2-bg2 {
+    width: 80vw;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    top: -20vw;
+    overflow: hidden;
+  }
+  .buyIt2-bg2 img {
+    opacity: 0.7;
+    width: 75vw;
+    position: relative;
+    right: -46vw;
+  }
+  .buyIt2-para {
+    right: auto;
+    left: 5vw;
+    top: -10vw;
+    color: #b29a8a;
+  }
+  .buyIt2-para img {
+    width: 10vw;
+    margin-bottom: 1.5vw;
+  }
+  .buyIt2-para h1 {
+    margin: 0.5vw 0;
+    letter-spacing: 0;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt2-para .ch_text_xl {
+    font-size: 6vw;
+    font-weight: 900;
+  }
+  .buyIt2-para .ch_text_l {
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-bottom: 3px solid #b29a8a;
+    font-weight: 700;
+    font-family: "Noto Serif TC", serif;
+    font-size: 4vw;
+  }
+  .buyIt2-para .hot {
+    font-weight: 500;
+    border: none;
+  }
+  .buyIt3 {
+    display: flex;
+    width: 100%;
+    padding: 5vw;
+    margin-top: -8vw;
+    margin-bottom: 15vw;
+    background-color: #f4f3f1;
+  }
+  .buyIt3 .imgBox img {
+    width: 100%;
+    height: 25vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 3vw;
+  }
+  .buyIt3-para-left {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .buyIt3-para-left .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+    font-size: 3.2vw;
+  }
+  .buyIt3-para-left .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 1.5vw;
+    font-size: 3.5vw;
+  }
+  .buyIt3-para-left .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+  }
+  .buyIt3-para-right {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .buyIt3-para-right .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+    font-size: 3.2vw;
+  }
+  .buyIt3-para-right .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 1.5vw;
+    font-size: 3.5vw;
+  }
+  .buyIt3-para-right .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+  }
+  .buyIt4 {
+    margin-bottom: 20vw;
+    width: 100%;
+    background-color: #ecebef;
+  }
+  .buyIt4-para {
+    display: block;
+    background-color: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1.5vw 1vw;
+  }
+  .buyIt4-para .ch_text_s {
+    color: #bba290;
+    font-family: "Noto Serif TC", serif;
+  }
+  .buyIt4-para .s-title {
+    color: #33203f;
+    font-weight: 900;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 5vw;
+  }
+  .buyIt4-para .s-para {
+    color: #a8a8a8;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 500;
+  }
+  .buyIt4 .swiper {
+    width: 100%;
+    padding-bottom: 15vw;
+  }
+  .buyIt4 .swiper .swiper-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide {
+    transition: all 0.5s;
+    opacity: 0.3;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    display: block;
+    height: 70vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide .buyIt4-para {
+    padding: 5vw;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide-active, .buyIt4 .swiper .swiper-wrapper .swiper-slide-prev, .buyIt4 .swiper .swiper-wrapper .swiper-slide-next {
+    opacity: 1;
+  }
+  .buyIt4 .swiper .swiper-wrapper .swiper-slide-prev, .buyIt4 .swiper .swiper-wrapper .swiper-slide-next {
+    opacity: 0.3;
+  }
+  .buyIt4 .swiper .swiper-scrollbar {
+    bottom: 2vw;
+    height: 1px;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #33203f;
+  }
+  .buyIt4 .swiper .swiper-scrollbar-drag {
+    background: none;
+    position: absolute;
+    top: -0.5vw;
+    height: 5px;
+    z-index: 21;
+    background-color: #33203f;
+  }
+}
 * {
   margin: 0;
   padding: 0;
