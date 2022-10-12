@@ -171,7 +171,7 @@ footer .share_box a:nth-last-of-type(4) img {
   top: 53vw;
   justify-content: space-between;
   width: 83%;
-  z-index: 20;
+  z-index: 21;
 }
 .menu.fixed_menu {
   position: fixed;
@@ -914,6 +914,27 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .index1 {
   position: relative;
+}
+.index1 .click {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  border: 1px solid #E8EAEC;
+  color: #E8EAEC;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+}
+.index1 .follow-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3.5vw;
+  z-index: 21;
 }
 .index1 .swiper {
   width: 100%;
@@ -1907,6 +1928,9 @@ footer .share_box a:nth-last-of-type(4) img {
   }
 }
 @media all and (max-width: 850px) {
+  .index1 .swiper .click {
+    display: none;
+  }
   .index1 .swiper .swiper-slide .play-button {
     display: block;
     position: absolute;
@@ -14016,10 +14040,15 @@ body {
   background: url(../img/buyIt/2x/half-round.png);
   position: absolute;
   left: 0;
-  bottom: -11vw;
+  bottom: 5vw;
   background-repeat: no-repeat;
   z-index: -2;
   background-size: cover;
+  transition: bottom 1s;
+}
+
+.buyIt1Active::after {
+  bottom: -11vw;
 }
 
 .buyIt2 {
@@ -14040,6 +14069,7 @@ body {
   position: absolute;
   right: 10vw;
   top: 0;
+  z-index: 20;
   color: #b29a8a;
 }
 .buyIt2-para img {
@@ -14557,7 +14587,7 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 1.5vw 1vw;
+    padding: 2.5vw 2.5vw;
   }
   .buyIt4-para .ch_text_s {
     color: #bba290;

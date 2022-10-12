@@ -52,6 +52,16 @@
     </div>
 
     <section class="index1">
+            <div class="click">
+                <p>click</p>
+            </div>
+            <img src="./img/stock/SVG/lambor.svg" class="follow-img">
+            <img src="./img/stock/SVG/mini.svg" class="follow-img">
+            <img src="./img/stock/SVG/mazda.svg" class="follow-img">
+            <img src="./img/stock/SVG/bmw.svg" class="follow-img">
+            <img src="./img/stock/SVG/porshe.svg" class="follow-img">
+            <img src="./img/stock/SVG/genesis.svg" class="follow-img">
+            <img src="./img/stock/SVG/volk.svg" class="follow-img">
         <div class="top_logo_div">
             <div class="img_box">
               <img src="img/SVG/logo.svg" alt="">
@@ -1023,6 +1033,89 @@
                 }
                 swiper2Animation()
             // swiper2 animation
+
+            //banner logo fall
+            let FollowBox = $(".index1 .follow-img");
+            let clickCursor = $(".index1 .click")
+            gsap.set(FollowBox, {
+            xPercent: -50,
+            yPercent: -25,
+            opacity: 0
+            });
+           
+            // $(".index1").mousemove(function(e){
+
+            //     gsap.to(FollowBox, {
+            //     duration: 0.5,
+            //     overwrite: "auto",
+            //     x: e.pageX,
+            //     y: e.pageY,
+            //     stagger: 0.15,
+            //     ease: "none"
+            //     });
+
+            // let TL = gsap.timeline({
+            //     defaults: { duration: 0.5, ease: "none" }
+            // });
+            // TL.to(FollowBox, {
+            //    opacity:0.8,
+            //     overwrite: "auto",
+            //     stagger: { amount: 0.15, from: "start", ease: "none" }
+            // });
+            // TL.to(
+            //     FollowBox,
+            //     {
+            //     overwrite: "auto",
+            //    opacity: 0,
+            //     stagger: { amount: 0.15, from: "end", ease: "none" }
+            //     },
+            //     "<+=1.5"
+            // );
+            // })
+
+            $(".index1").mousemove(function(e){
+                gsap.set(clickCursor, {
+            xPercent: -50,
+            yPercent: -50,
+           
+            });
+                gsap.to(clickCursor, {
+                duration: 0.1,
+                overwrite: "auto",
+                x: e.pageX,
+                y: e.pageY,
+       
+                ease: "none"
+                });
+               
+            })
+
+            $(".index1").click((e)=>{
+                let random = Math.floor(Math.random()*FollowBox.length)
+                gsap.to(FollowBox[random],{
+                    x: e.pageX,
+                    y: e.pageY,
+                    stagger:0.3,
+                    duration:0.001,
+               
+                    overwrite:"auto"
+                })
+                let gg = gsap.timeline()
+               
+                gg.to(FollowBox[random],{
+                    y: e.pageY+100,
+                    stagger:0.3,
+                    opacity:1,
+                    duration:0.8,
+                    overwrite:"auto"
+                }).to(FollowBox[random],{
+                   opacity:0,
+                   duration:0.5,
+                   overwrite:"auto"
+                })
+            })
+         
+            //banner logo fall
         });
 
     </script>

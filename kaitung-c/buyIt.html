@@ -297,7 +297,204 @@
                 
             }
             });  
+            function firstPageAnimation(){
+                let gg = gsap.timeline()
+                gg.fromTo(".buyIt1-para-left img",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                    delay:2.7
+                }).fromTo(".buyIt1-para-right h1",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                  
+                },"<+0.5").fromTo(".buyIt1-para-right p",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                    stagger:0.3
+                },"<+0.3")
+            }
+            firstPageAnimation()
+            function secondPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".buyIt1",
+                        start:"bottom 80%",
+                        toggleClass: 'buyIt1Active'
+                    }
+                })
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".buyIt2",
+                        start:"top 60%",
+                    
+                    }
+                })
+
+                gg2.fromTo(".buyIt2-bg2 img",{
          
+                    x:"50%"
+                },{
+                    x:0,
+                    duration:1.5
+                }).fromTo(".buyIt2-bg img",{
+         
+                    y:100
+                },{
+               
+                    y:0,
+                    duration:1,
+             
+                },"<+0.5").fromTo(".buyIt2-para img",{
+                    opacity:0,
+                    transform:"rotateZ(90deg)"
+                },{
+                    opacity:1,
+                    transform:"rotateZ(0deg)",
+                    duration:1,
+             
+                },"<+0.8").fromTo(".buyIt2-para h1",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+             
+                },"<+0.5").fromTo(".buyIt2-para h3",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                    stagger:0.3
+                },"<+0.3")
+             
+            }
+            secondPageAnimation()
+
+            function thirdPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".buyIt3",
+                        start:"top bottom",
+                    
+                    }
+                })
+
+                gg.fromTo(".buyIt3 .word_level",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                    delay:0.8
+             
+                })
+
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".buyIt3",
+                        start:"top 90%",
+                    
+                    }
+                })
+
+                gg2.fromTo(".buyIt3 .imgBox img",{
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                    delay:0.8,
+                    stagger:0.3
+                })
+            }
+            thirdPageAnimation()
+
+            function forthPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".buyIt4",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(".buyIt4 .swiper-slide",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                }).fromTo(".buyIt4 .swiper-scrollbar",{
+                    y:"-15vw",
+                    zIndex:-1,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+               
+                },"<+2.5")
+            }
+            forthPageAnimation()
+            function footerAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:"footer",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo("footer .toTop",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+              
+                }).fromTo("footer .logo_box",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+              
+                },"<+0.3").fromTo(".footer-para img",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+              
+                },"<+0.1").fromTo(".footer-para p",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+0.3")
+            }
+            footerAnimation()
         });
 
     </script>

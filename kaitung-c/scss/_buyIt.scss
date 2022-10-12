@@ -214,10 +214,16 @@
         background: url(../img/buyIt/2x/half-round.png);
         position: absolute;
         left: 0;
-        bottom: -11vw;
+        bottom: 5vw;
         background-repeat: no-repeat;
         z-index: -2;
         background-size: cover;
+        transition: bottom 1s;
+    }
+}
+.buyIt1Active{
+    &::after{
+        bottom:-11vw;
     }
 }
 .buyIt2{
@@ -238,6 +244,7 @@
         position: absolute;
         right: 10vw;
         top: 0;
+        z-index: 20;
         color: #b29a8a;
         img{
             width: 5vw;
@@ -798,7 +805,7 @@
             display: block;
             background-color: #fff;
             height: fit-content;
-            padding: 1.5vw 1vw;
+            padding: 2.5vw 2.5vw;
             .ch_text_s{
                 color: #bba290;
                 font-family: 'Noto Serif TC', serif;
