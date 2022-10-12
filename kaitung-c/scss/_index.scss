@@ -20,7 +20,7 @@
         top: 0;
         left: 0;
         height: 3.5vw;
- 
+        pointer-events: none;
         z-index: 21;
     }
     .swiper{
@@ -1197,7 +1197,14 @@
 
 @media all and (max-width:850px){
     .index1{
-        
+        .follow-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 12vw;
+     
+            z-index: 21;
+        }
         .swiper{
        
         
@@ -2471,7 +2478,14 @@
     }
    @media all and (max-width:500px){
     .index1{
+        .follow-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 16vw;
      
+            z-index: 21;
+        }
         .swiper{
            
           

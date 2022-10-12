@@ -934,6 +934,7 @@ footer .share_box a:nth-last-of-type(4) img {
   top: 0;
   left: 0;
   height: 3.5vw;
+  pointer-events: none;
   z-index: 21;
 }
 .index1 .swiper {
@@ -1928,6 +1929,13 @@ footer .share_box a:nth-last-of-type(4) img {
   }
 }
 @media all and (max-width: 850px) {
+  .index1 .follow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12vw;
+    z-index: 21;
+  }
   .index1 .swiper .click {
     display: none;
   }
@@ -3020,6 +3028,13 @@ footer .share_box a:nth-last-of-type(4) img {
   }
 }
 @media all and (max-width: 850px) and (max-width: 500px) {
+  .index1 .follow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16vw;
+    z-index: 21;
+  }
   .index1 .swiper .swiper-slide .play-button {
     display: block;
     position: absolute;
