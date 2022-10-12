@@ -363,7 +363,89 @@
              
                e.target.classList.add("active")
             })
+            function firstPageAnimation(){
+               let gg =gsap.timeline()
+                gg.fromTo(".news1-left",{
+                   flex:"0 0 65%"
+                },{
+                   flex:"0 0 55%",
+                   duration:2,
+                   delay:2.5
+                })
+            }
+           firstPageAnimation()
+           function secondPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".news2",
+                        start:"top 80%",
+          
+                    }
+                })
+       
+                gg.fromTo(".news2-top-left ul",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                }).fromTo(".news2-top-right .box1",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                },"<+0.3").fromTo(".news2-top-right .box2",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8
+                },"<+0.3")
+
+                $(".card-ph").each((i,item)=>{
+                    let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:item,
+                        start:"top 80%",
+                      
+                    }
+                })
+      
+                gg2.fromTo(item,{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+        
+                })
+                })
+                let gg3 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".news2-button",
+                        start:"top 80%",
+          
+                    }
+                })
+       
+                gg3.fromTo(".news2-button",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+        
+                })
+           }
+           secondPageAnimation()
         });
+      
 
     </script>
 </body>

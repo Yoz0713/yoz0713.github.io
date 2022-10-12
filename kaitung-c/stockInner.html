@@ -68,21 +68,28 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./img/stockInner/1x/swiper1.png">
+                    <div class="slide-title">
+                        <img src="./img/stockInner/SVG/logo.svg" >
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/adv4-100.jpg">
+                    <div class="slide-title">
+                        <img src="./img/stockInner/SVG/logo.svg" >
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/banner1-100.jpg">
+                    <div class="slide-title">
+                        <img src="./img/stockInner/SVG/logo.svg" >
+                    </div>
                 </div>
             </div>
             <div class="swiper-pagination">
                 
             </div>
         </div>
-        <div class="stockInner1-logo">
-            <img src="./img/stockInner/SVG/logo.svg">
-        </div>
+      
     </section>
     <section class="stockInner2">
         <div class="stockInner2-left word_level">
@@ -395,12 +402,28 @@
         $(document).ready(function () {
             var mySwiper = new Swiper ('.swiper1', {
                 loop: true, // 循环模式选项
-                speed: 1000,
+                speed: 2000,
                 effect: 'fade',
                 autoplay: {
                     delay: 4000,
                 },
+                on:{
+                transitionStart: function(swiper){
+                    let gg = gsap.timeline()
+                    gg.fromTo(".swiper-slide-active .slide-title",{
+                 
+                    opacity:1
+                },{
+                    opacity:0,
+             
                 
+                    duration:0.5,
+                })
+                },
+                transitionEnd: function(swiper){
+                    firstPageAnimation()
+                },
+                },
                 // 如果需要分页器
                 pagination: {
                     el: '.swiper1 .swiper-pagination',
@@ -429,9 +452,9 @@
             },  
             }); 
             let swiper2_slide = $(".swiper2 .swiper-slide").length
-            console.log(mySwiper2.slides.length-slide+1)
+           
             $(".swiper2 .swiper-pagination").empty().append(`<span class="swiper-pagination-current">1</span><span class="swiper-pagination-total">${mySwiper2.slides.length-slide+1}</span>`)
-            console.log($(".swiper .swiper-pagination").html())
+           
        
             let prev = document.querySelector(".prev")
             let next = document.querySelector(".next")
@@ -441,6 +464,206 @@
             next.addEventListener("click",function(){
                 mySwiper2.slideNext()
             })
+
+            function firstPageAnimation(){
+                let gg = gsap.timeline()
+                gg.fromTo(".swiper-slide-active .slide-title",{
+                    y:50,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.5,
+                })
+            }
+            function secondPageAnimation(){
+
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner2-left-top",
+                        start:"top bottom",
+                        scrub:1,
+                        end:"+=500"
+                    }
+                })
+                gg.fromTo(".stockInner2-left-top",{
+                    y:"15vw"
+                },{
+                    y:0,
+                    duration:2.5
+                }).fromTo(".stockInner2-left-top > .imgBox",{
+                    y:"10vw"
+                },{
+                    y:0,
+                    duration:2.5
+                },"<+0.3")
+
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner2-left-bottom",
+                        start:"top bottom",
+                        scrub:1,
+                        end:"+=500"
+                    }
+                })
+                gg2.fromTo(".stockInner2-left-bottom img",{
+                    y:"15vw"
+                },{
+                    y:0,
+                   
+                })
+
+                let gg3 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner2-right img",
+                        start:"top bottom",
+                        scrub:1,
+                        end:"+=200"
+                    }
+                })
+                gg3.fromTo(".stockInner2-right :nth-child(1)",{
+                    y:"15vw"
+                },{
+                    y:0,
+                   
+                })
+                
+                let gg4 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner2-right :nth-child(2)",
+                        start:"top bottom",
+                        scrub:1,
+                        end:"+=500"
+                    }
+                })
+                gg4.fromTo(".stockInner2-right :nth-child(2)",{
+                    y:"15vw",
+                    zIndex:-1,
+                },{
+                    y:0,
+                 
+                })
+            }
+            secondPageAnimation()
+            function thirdPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner3",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(".stockInner3 :nth-child(2)",{
+                    opacity:0,
+                    y:30
+                },{
+                    y:0,
+                    duration:1,
+                    opacity:1,
+
+                }).fromTo(".stockInner3 :nth-child(1)",{
+                    opacity:0,
+                    x:30
+                },{
+                    x:0,
+                    duration:1,
+                    opacity:1,
+
+                },"<+0.8").fromTo(".stockInner3 :nth-child(3)",{
+                    opacity:0,
+                    x:-30
+                },{
+                    x:0,
+                    duration:1,
+                    opacity:1,
+
+                },"<")
+            }
+            thirdPageAnimation()
+            function forthPageAnimation(){
+                $(".stockInner4-imgBox").each((i,item)=>{
+                    let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:item,
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(item,{
+                    opacity:0,
+                    y:30
+                },{
+                    y:0,
+                    duration:1.5,
+                    opacity:1,
+
+                })
+                })
+               
+            }
+            forthPageAnimation()
+            function fifthPageAnimation(){
+                let split = $(".stockInner5-title h2").html().split("")
+                $(".stockInner5-title h2").html("")
+                split.forEach((item,i)=>{
+                  
+                    $(".stockInner5-title h2").append(`<span>${item}</span>`)
+
+                })
+        
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".stockInner5-title",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(".stockInner5-title h2 span",{
+                    display:"inline-block",
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.3,
+                  
+                    stagger:0.1
+                }).fromTo(".stockInner5 .swiper-slide",{
+            
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                  
+                    stagger:0.4
+                },"<+0.5").fromTo(".stockInner5 .swiper-pagination",{
+                
+                    opacity:0,
+                    y:30
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:1,
+                },"<+1").fromTo(".stockInner5 .prev",{
+                
+                opacity:0,
+                x:30
+            },{
+                opacity:1,
+                x:0,
+                duration:1,
+            },"<+0.5").fromTo(".stockInner5 .next",{
+                
+                opacity:0,
+                x:-30
+            },{
+                opacity:1,
+                x:0,
+                duration:1,
+            },"<")
+                
+              
+            }
+            fifthPageAnimation()
         });
 
     </script>

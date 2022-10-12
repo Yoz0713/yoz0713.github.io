@@ -172,13 +172,13 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transition:all 0.5s;
+                transition:color 0.5s, opacity 0.5s, bottom 0.5s;
                 cursor: pointer;
                 img{
            
                    height: 2vw;
                     pointer-events: none;
-                    transition: all 0.3s;
+                
                     opacity: 0.4;
                 }
                 p{
@@ -196,8 +196,8 @@ body{
                     position: absolute;
                     left:50%;
                     transform: translateX(-50%);
-                    transition: all 0.5s;
-                    bottom: -1.5vw;
+                    transition: 0.5s;
+                    bottom: 0vw;
                     border: 0.3vw solid ;
                     border-color:#0080C5 transparent transparent transparent;
                 }
@@ -240,7 +240,7 @@ body{
                 height:2vw;
                 color: #0080C5;
                 font-weight: 800;
-                transition: all 0.3s;
+                transition:color 0.3s,background-color 0.3s;
                 cursor: pointer;
                 &:hover{
                     background-color: #0080C5;
@@ -254,7 +254,7 @@ body{
                     left:50%;
                     transform: translateX(-50%);
                     transition: 0.5s;
-                    bottom: -1.5vw;
+                    bottom: 0vw;
                     border: 0.3vw solid ;
                     border-color:#0080C5 transparent transparent transparent;
                 }
@@ -288,6 +288,7 @@ body{
             position: relative;
             flex: 0 0 49%;
             margin-bottom: 1.5vw;
+            overflow: hidden;
             > img{
                 width: 100%;
             }
@@ -329,6 +330,29 @@ body{
         }
         .box{
             flex: 0 0 32%;
+            overflow: hidden;
+            &-bg{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #0080be;
+                pointer-events: none;
+                z-index: 21;
+            }
+            & > :nth-child(1){
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            & > :nth-child(2){
+                transition: 0.5s;
+                &:hover{
+                    transform: none;
+                }
+            }
         }
     }
     &-pagination{
@@ -859,14 +883,14 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    transition:all 0.5s;
+             
                     cursor: pointer;
                     img{
                       
                         width: 9vw;
                         height: 5vw;
                         pointer-events: none;
-                        transition: all 0.3s;
+              
                         opacity: 0.4;
                     }
                     p{
@@ -885,7 +909,7 @@ body{
                         position: absolute;
                         left:50%;
                         transform: translateX(-50%);
-                        transition: all 0.5s;
+                   
                         bottom: -1.5vw;
                         border: 0.3vw solid ;
                         border-color:#0080C5 transparent transparent transparent;
@@ -1560,13 +1584,13 @@ body{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        transition:all 0.5s;
+                     
                         cursor: pointer;
                         img{
                            
                             width: 13.5vw;
                             pointer-events: none;
-                            transition: all 0.3s;
+                         
                             opacity: 0.4;
                         }
                         p{
@@ -1584,7 +1608,7 @@ body{
                             position: absolute;
                             left:50%;
                             transform: translateX(-50%);
-                            transition: all 0.5s;
+                      
                             bottom: -1.5vw;
                             border: 0.3vw solid ;
                             border-color:#0080C5 transparent transparent transparent;

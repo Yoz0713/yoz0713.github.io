@@ -6023,6 +6023,7 @@ body {
   margin-bottom: 10vw;
   overflow: hidden;
   height: 57vw;
+  background-color: #021a35;
 }
 .news1 .top_logo_div {
   justify-content: flex-start;
@@ -6045,7 +6046,7 @@ body {
   height: 100%;
 }
 .news1-left .txt_box {
-  width: 65%;
+  width: 36vw;
   position: absolute;
   left: 5vw;
   bottom: 13vw;
@@ -7559,8 +7560,8 @@ body {
   margin: 0 auto 11vw;
   position: relative;
 }
-.newsInner4 :nth-child(1) {
-  margin-bottom: 0.3vw;
+.newsInner4 > :nth-child(1) {
+  margin-bottom: 2.5vw;
 }
 .newsInner4 > p {
   line-height: 1.8em;
@@ -7589,6 +7590,7 @@ body {
 .newsInner4-bg-box img {
   width: 2.5vw;
   cursor: pointer;
+  margin-bottom: 0.3vw;
 }
 .newsInner4-bg-box p {
   color: #fff;
@@ -8066,21 +8068,14 @@ body {
     flex: 0 0 100%;
   }
   .newsInner3-left img {
-    position: relative;
-    width: 100%;
-    -webkit-clip-path: polygon(0 0, 0 100%, 37% 100%, 37% 83%, 100% 83%, 100% 0);
-            clip-path: polygon(0 0, 0 100%, 37% 100%, 37% 83%, 100% 83%, 100% 0);
-    z-index: 2;
+    -webkit-clip-path: polygon(0 0, 0 100%, 41% 100%, 41% 83%, 100% 83%, 100% 0);
+            clip-path: polygon(0 0, 0 100%, 41% 100%, 41% 83%, 100% 83%, 100% 0);
   }
   .newsInner3-left-description {
-    position: absolute;
-    right: 0vw;
     bottom: 1.5vw;
-    background-color: #fff;
-    width: 62vw;
-    height: 10vw;
+    width: 58vw;
     padding: 0;
-    padding-left: 3vw;
+    padding-left: 1vw;
   }
   .newsInner3-left-description p {
     color: #808080;
@@ -8094,11 +8089,12 @@ body {
     margin: 0 auto 30vw;
     position: relative;
   }
-  .newsInner4 :nth-child(1) {
-    margin-bottom: 0.3vw;
+  .newsInner4 > :nth-child(1) {
+    margin-bottom: 5vw;
   }
   .newsInner4 > p {
     line-height: 1.8em;
+    text-align: justify;
   }
   .newsInner4-bg {
     position: absolute;
@@ -8153,11 +8149,25 @@ body {
 .stockInner1 .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
-.stockInner1 .swiper .swiper-wrapper .swiper-slide img {
+.stockInner1 .swiper .swiper-wrapper .swiper-slide > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 68vw;
+}
+.stockInner1 .swiper .swiper-wrapper .swiper-slide .slide-title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.stockInner1 .swiper .swiper-wrapper .swiper-slide .slide-title img {
+  width: 33vw;
+  margin-top: 13vw;
+  height: auto;
 }
 .stockInner1 .swiper .swiper-pagination {
   display: flex;
@@ -8178,16 +8188,6 @@ body {
 .stockInner1 .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: transparent;
   border: 2px solid #fff;
-}
-.stockInner1-logo {
-  position: absolute;
-  top: 12vw;
-  left: 50%;
-  z-index: 20;
-  transform: translateX(-50%);
-}
-.stockInner1-logo img {
-  width: 35vw;
 }
 
 .stockInner2 {
@@ -8507,11 +8507,15 @@ body {
     width: 100%;
     height: 100%;
   }
-  .stockInner1 .swiper .swiper-wrapper .swiper-slide img {
+  .stockInner1 .swiper .swiper-wrapper .swiper-slide > img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+  }
+  .stockInner1 .swiper .swiper-wrapper .swiper-slide .slide-title img {
+    width: 75vw;
+    margin-top: 32vw;
   }
   .stockInner1 .swiper .swiper-pagination {
     display: flex;
@@ -8533,16 +8537,6 @@ body {
   .stockInner1 .swiper .swiper-pagination .swiper-pagination-bullet-active {
     background-color: transparent;
     border: 3px solid #fff;
-  }
-  .stockInner1-logo {
-    position: absolute;
-    top: 30vw;
-    left: 50%;
-    z-index: 20;
-    transform: translateX(-50%);
-  }
-  .stockInner1-logo img {
-    width: 75vw;
   }
   .stockInner2 {
     display: flex;
@@ -8837,11 +8831,15 @@ body {
     width: 100%;
     height: 100%;
   }
-  .stockInner1 .swiper .swiper-wrapper .swiper-slide img {
+  .stockInner1 .swiper .swiper-wrapper .swiper-slide > img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+  }
+  .stockInner1 .swiper .swiper-wrapper .swiper-slide .slide-title img {
+    width: 90vw;
+    margin-top: 42vw;
   }
   .stockInner1 .swiper .swiper-pagination {
     display: flex;
@@ -8863,16 +8861,6 @@ body {
   .stockInner1 .swiper .swiper-pagination .swiper-pagination-bullet-active {
     background-color: transparent;
     border: 3px solid #fff;
-  }
-  .stockInner1-logo {
-    position: absolute;
-    top: 38vw;
-    left: 50%;
-    z-index: 20;
-    transform: translateX(-50%);
-  }
-  .stockInner1-logo img {
-    width: 90vw;
   }
   .stockInner2 {
     display: flex;
@@ -9229,13 +9217,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: color 0.5s, opacity 0.5s, bottom 0.5s;
   cursor: pointer;
 }
 .purchase2-top-switchCar .box img {
   height: 2vw;
   pointer-events: none;
-  transition: all 0.3s;
   opacity: 0.4;
 }
 .purchase2-top-switchCar .box p {
@@ -9253,8 +9240,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.5s;
-  bottom: -1.5vw;
+  transition: 0.5s;
+  bottom: 0vw;
   border: 0.3vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -9294,7 +9281,7 @@ body {
   height: 2vw;
   color: #0080C5;
   font-weight: 800;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
 }
 .purchase2-top-filter button:hover {
@@ -9309,7 +9296,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition: 0.5s;
-  bottom: -1.5vw;
+  bottom: 0vw;
   border: 0.3vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -9340,6 +9327,7 @@ body {
   position: relative;
   flex: 0 0 49%;
   margin-bottom: 1.5vw;
+  overflow: hidden;
 }
 .purchase2-bottom .box-suggest > img {
   width: 100%;
@@ -9376,6 +9364,29 @@ body {
 }
 .purchase2-bottom .box {
   flex: 0 0 32%;
+  overflow: hidden;
+}
+.purchase2-bottom .box-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0080be;
+  pointer-events: none;
+  z-index: 21;
+}
+.purchase2-bottom .box > :nth-child(1) {
+  transition: 0.5s;
+}
+.purchase2-bottom .box > :nth-child(1):hover {
+  transform: scale(1.1);
+}
+.purchase2-bottom .box > :nth-child(2) {
+  transition: 0.5s;
+}
+.purchase2-bottom .box > :nth-child(2):hover {
+  transform: none;
 }
 .purchase2-pagination {
   display: flex;
@@ -9837,14 +9848,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .purchase2-top-switchCar .box img {
     width: 9vw;
     height: 5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .purchase2-top-switchCar .box p {
@@ -9862,7 +9871,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
     bottom: -1.5vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
@@ -10465,13 +10473,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .purchase2-top-switchCar .box img {
     width: 13.5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .purchase2-top-switchCar .box p {
@@ -10489,7 +10495,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
     bottom: -1.5vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
@@ -11080,7 +11085,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: color 0.5s, opacity 0.5s, bottom 0.5s;
   width: 100%;
   height: 100%;
   padding-top: 3vw;
@@ -11090,7 +11095,7 @@ body {
 .rent2-top-switchCar .box img {
   width: 4vw;
   pointer-events: none;
-  transition: all 0.3s;
+  transition: 0.3s;
   opacity: 0.4;
   height: 100%;
 }
@@ -11115,8 +11120,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.5s;
-  bottom: -1.5vw;
+  transition: 0.5s;
+  bottom: 0vw;
   border: 0vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -11157,7 +11162,7 @@ body {
   height: 2vw;
   color: #0080C5;
   font-weight: 800;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s;
   margin-top: 3vw;
   cursor: pointer;
 }
@@ -11172,8 +11177,8 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: 0.5s;
-  bottom: -1.5vw;
+  transition: opacity 0.5s, bottom 0.5s;
+  bottom: 0vw;
   border: 0vw solid;
   border-color: #0080C5 transparent transparent transparent;
 }
@@ -11204,6 +11209,7 @@ body {
   position: relative;
   flex: 0 0 49%;
   margin-bottom: 1.5vw;
+  overflow: hidden;
 }
 .rent2-bottom .box-suggest > img {
   width: 100%;
@@ -11214,12 +11220,19 @@ body {
   top: -0.4vw;
   left: 1vw;
 }
+.rent2-bottom .box-suggest > :nth-child(2) {
+  transition: 0.5s;
+}
+.rent2-bottom .box-suggest > :nth-child(2):hover {
+  transform: scale(1.1);
+}
 .rent2-bottom .box-suggest-inform {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 1.5vw;
   background-color: #0080C5;
+  z-index: 20;
 }
 .rent2-bottom .box-suggest-inform > h2 {
   color: #fff;
@@ -11240,6 +11253,29 @@ body {
 }
 .rent2-bottom .box {
   flex: 0 0 32%;
+  overflow: hidden;
+}
+.rent2-bottom .box-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0080be;
+  pointer-events: none;
+  z-index: 21;
+}
+.rent2-bottom .box > :nth-child(1) {
+  transition: 0.5s;
+}
+.rent2-bottom .box > :nth-child(1):hover {
+  transform: scale(1.1);
+}
+.rent2-bottom .box > :nth-child(2) {
+  transition: 0.5s;
+}
+.rent2-bottom .box > :nth-child(2):hover {
+  transform: none;
 }
 .rent2-pagination {
   display: flex;
@@ -11703,14 +11739,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .rent2-top-switchCar .box img {
     width: 9vw;
     height: 5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .rent2-top-switchCar .box p {
@@ -11728,7 +11762,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
     bottom: -1.5vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
@@ -12331,13 +12364,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s;
     cursor: pointer;
   }
   .rent2-top-switchCar .box img {
     width: 13.5vw;
     pointer-events: none;
-    transition: all 0.3s;
     opacity: 0.4;
   }
   .rent2-top-switchCar .box p {
@@ -12355,8 +12386,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.5s;
-    bottom: -1.5vw;
+    bottom: 0vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
   }
@@ -12421,7 +12451,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
-    bottom: -1.5vw;
+    bottom: 0vw;
     border: 0.3vw solid;
     border-color: #0080C5 transparent transparent transparent;
   }
@@ -12808,6 +12838,7 @@ body {
   width: 100%;
   height: 55vw;
   position: relative;
+  background-color: #fff;
 }
 .contact1 .top_logo_div {
   justify-content: flex-start;
@@ -12820,10 +12851,13 @@ body {
 .contact1 .top_logo_div .img_box img {
   width: 14vw;
 }
+.contact1 .top_logo_div .share_box {
+  right: -1vw;
+}
 .contact1-bg {
   position: absolute;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 .contact1-bg img {
   width: 100%;
@@ -12833,13 +12867,15 @@ body {
   color: #fff;
   align-items: center;
   flex: 0 0 40%;
+  z-index: 2;
 }
 .contact1-left-para {
   height: 18vw;
   margin-left: 5vw;
+  margin-bottom: 5vw;
 }
 .contact1-left-para > p {
-  margin: 1vw 0 15vw;
+  margin: 1vw 0 10.5vw;
   font-weight: 300;
 }
 .contact1-left-para .booking {
@@ -12872,6 +12908,7 @@ body {
   justify-content: space-between;
   width: 70%;
   margin-bottom: 2vw;
+  z-index: 20;
 }
 .contact1-right form input {
   outline: none;
@@ -12902,6 +12939,7 @@ body {
   justify-content: flex-end;
   width: 100%;
   position: relative;
+  z-index: 20;
 }
 .contact1-right form .submit-box input {
   position: relative;
@@ -12977,7 +13015,7 @@ body {
 }
 .footerTop-left .everyCar ul .box-title {
   position: absolute;
-  top: -2.5vw;
+  top: -3.5vw;
 }
 .footerTop-right {
   flex: 0 0 45%;

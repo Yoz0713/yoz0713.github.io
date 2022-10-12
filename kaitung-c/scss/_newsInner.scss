@@ -246,8 +246,8 @@
     width: 66.4%;
     margin: 0 auto 11vw;
     position: relative;
-    & :nth-child(1){
-        margin-bottom: 0.3vw;
+    & > :nth-child(1){
+        margin-bottom:2.5vw;
     }
     > p{
         line-height:1.8em;
@@ -273,6 +273,7 @@
             img{
                 width: 2.5vw;
                 cursor: pointer;
+                margin-bottom: 0.3vw;
             }
             p{
                 color: #fff;
@@ -844,20 +845,19 @@
                 position: relative;
                 flex: 0 0 100%;
                 img{
-                    position: relative;
-                    width: 100%;
-                    clip-path: polygon(0 0, 0 100%, 37% 100%,37% 83%,100% 83%, 100% 0); 
-                    z-index: 2;
+                
+                    clip-path: polygon(0 0, 0 100%, 41% 100%,41% 83%,100% 83%, 100% 0); 
+                  
                 }
                 &-description{
-                    position: absolute;
-                    right: -0vw;
+                
+                 
                     bottom: 1.5vw;
-                    background-color: #fff;
-                    width: 62vw;
-                    height: 10vw;
+          
+                    width: 58vw;
+                  
                     padding: 0;
-                    padding-left: 3vw;
+                    padding-left: 1vw;
               
                     p{
                      
@@ -875,11 +875,12 @@
             width: 75%;
             margin: 0 auto 30vw;
             position: relative;
-            & :nth-child(1){
-                margin-bottom: 0.3vw;
+            & > :nth-child(1){
+                margin-bottom: 5vw;
             }
             > p{
                 line-height:1.8em;
+                text-align: justify;
             }
             &-bg{
           

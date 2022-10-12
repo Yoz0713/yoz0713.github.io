@@ -184,7 +184,229 @@
 
     <script>
         $(document).ready(function () {
-       
+            function firstPageAnimation(){
+                let gg = gsap.timeline()
+                gg.fromTo(".newsInner1-banner .banner",{
+                    x:"-15vw",
+                },{
+                    delay:2,
+                    x:0,
+                    duration:3.5
+                },"<+0.5").fromTo(".newsInner1-banner .img_box .svg2",{
+                    x:"-10vw",
+                    zIndex:20,
+                },{
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .img_box .svg1",{
+                    x:"-10vw",
+                    zIndex:20,
+                },{
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(1)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(2)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(3)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(4)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .line",{
+                    height:0,
+                    opacity:0
+                },{
+                    height:"100%",
+                    opacity:1,
+          
+                    duration:2
+                },"<+0.5")
+            }
+            function firstPageAnimation_ph(){
+                let gg = gsap.timeline()
+                gg.fromTo(".newsInner1-banner .txt_box .txt :nth-child(1)",{
+                    x:"5vw",
+                    opacity:0
+               
+                },{
+                    delay:2.8,
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(2)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(3)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .txt_box .txt :nth-child(4)",{
+                    x:"5vw",
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:2
+                },"<+0.5").fromTo(".newsInner1-banner .line",{
+                    height:0,
+                    opacity:0
+                },{
+                    height:"100%",
+                    opacity:1,
+          
+                    duration:2
+                },"<+0.5")
+            }
+            if(window.innerWidth > 850){
+                firstPageAnimation()
+            }else{
+                firstPageAnimation_ph()
+            }
+            function secondPageAnimation(){
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".newsInner2",
+                        start:"top 80%",
+                      
+                    }
+                })
+      
+                gg2.fromTo(".newsInner2-left ul li",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+                    stagger:0.3
+                }).fromTo(".newsInner2-left ul li p",{
+                    x:-30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    x:0,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+1").fromTo(".newsInner2-right",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                    y:0,
+                    duration:0.8,
+                    
+                },"<+0.3")
+
+                let gg3 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".newsInner2",
+                        start:"top 80%",
+                        scrub:1,
+                        end:"+=500"
+                    }
+                })
+      
+                gg3.fromTo(".newsInner2-bg",{
+                    y:"10vw",
+            
+                },{
+                   
+                    y:0,
+                
+                })
+
+                let gg4 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".newsInner3",
+                        start:"top 80%",
+                 
+                    }
+                })
+      
+                gg4.fromTo(".newsInner3-left",{
+                    y:100,
+                    opacity:0
+                },{
+                    opacity:1,
+                   duration:2,
+                    y:0,
+                
+                }).fromTo(".newsInner3-left-description",{
+                    x:"-100%",
+            
+                },{
+                   
+                    x:0,
+                    duration:"1"
+             
+                })
+            }
+            secondPageAnimation()
+            function forthPageAnimation(){
+                let gg = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".newsInner4",
+                        start:"top 80%",
+                 
+                    }
+                })
+      
+                gg.fromTo(".newsInner4 > p",{
+                    y:30,
+                    opacity:0
+                },{
+                    opacity:1,
+                   duration:1,
+                    y:0,
+                    stagger:0.3
+                })
+
+                let gg2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".newsInner4-bg",
+                        start:"top bottom",
+                 
+                    }
+                })
+      
+                gg2.fromTo(".newsInner4-bg-box",{
+                    y:"100%",
+                    opacity:0
+                },{
+                    opacity:1,
+                   duration:1,
+                    y:0,
+             
+                })
+            }
+            forthPageAnimation()
         });
 
     </script>
