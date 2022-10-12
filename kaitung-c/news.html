@@ -365,6 +365,52 @@
             })
             function firstPageAnimation(){
                let gg =gsap.timeline()
+                gg.fromTo(".news1-left .txt_box h2",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                   duration:0.8,
+                   delay:3.5
+                }).fromTo(".news1-left .txt_box p",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                   duration:0.8,
+                
+                },"<+0.3").fromTo(".news1-left .txt_box img",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                   duration:0.8,
+                
+                },"<+0.3")
+                let gg2 = gsap.timeline()
+                gg2.fromTo(".news1-right-bottom .txt_box h2",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                   duration:0.8,
+                   delay:3.5
+                }).fromTo(".news1-right-bottom .txt_box p",{
+                    y:30,
+                    opacity:0
+                },{
+                    y:0,
+                    opacity:1,
+                   duration:0.8,
+                
+                },"<+0.3")
+            }
+            if(window.innerWidth > 850){
+                let gg =gsap.timeline()
                 gg.fromTo(".news1-left",{
                    flex:"0 0 65%"
                 },{
@@ -373,7 +419,7 @@
                    delay:2.5
                 })
             }
-           firstPageAnimation()
+            firstPageAnimation()
            function secondPageAnimation(){
                 let gg = gsap.timeline({
                     scrollTrigger:{

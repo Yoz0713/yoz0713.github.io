@@ -801,7 +801,7 @@ footer .share_box a:nth-last-of-type(4) img {
             animation: car_move_phone 2.5s ease-in-out 0.5s infinite normal;
   }
   .word_level .date {
-    font-size: 0.7vw;
+    font-size: 3.2vw;
     letter-spacing: 0.1vw;
     font-weight: 600;
   }
@@ -6071,7 +6071,7 @@ body {
 }
 .news1-left .txt_box .more img {
   width: 6.5vw;
-  transition: 0.5s;
+  transition: filter 0.5s;
 }
 .news1-left .txt_box .more:hover img {
   filter: invert(20);
@@ -13377,7 +13377,7 @@ body {
     background: url(../img/contact/SVG/arrow.svg);
     position: absolute;
     background-repeat: no-repeat;
-    top: 3.7vw;
+    top: 3.8vw;
     right: 29.3vw;
   }
   .contact1-right form .message {
@@ -13666,7 +13666,7 @@ body {
     width: 100%;
     flex: 0 0 50%;
     position: relative;
-    filter: brightness(0.5);
+    filter: brightness(1);
     transition: all 0.5s;
   }
   .about1-left-para {
@@ -13699,7 +13699,7 @@ body {
     background-color: rgba(0, 0, 0, 0.596);
     color: #fff;
     margin-right: 1vw;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s;
     cursor: pointer;
     -webkit-animation: updown 3.5s linear forwards infinite;
@@ -13729,7 +13729,6 @@ body {
     flex: 0 0 50%;
     right: 0;
     transition: all 0.5s;
-    filter: brightness(0.5);
   }
   .about1-right-imgBox {
     width: 100%;
@@ -13798,9 +13797,6 @@ body {
   }
   .about1-right:hover .start {
     opacity: 1;
-  }
-  .about1-right:hover {
-    filter: brightness(1);
   }
 }
 @media all and (max-width: 850px) and (max-width: 500px) {

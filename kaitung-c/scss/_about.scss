@@ -194,7 +194,7 @@
             width: 100%;
             flex: 0 0 50%;
             position: relative;
-            filter: brightness(0.5);
+            filter: brightness(1);
             transition: all 0.5s;
             &-para{
                 display: flex;
@@ -219,7 +219,7 @@
                     background-color: rgba(0, 0, 0, 0.596);
                     color: #fff;
                     margin-right: 1vw;
-                    opacity: 0;
+                    opacity: 1;
                     transition: all 0.5s;
                     cursor: pointer;
                     animation: updown 3.5s linear forwards infinite;
@@ -251,7 +251,7 @@
             flex: 0 0 50%;
             right: 0;
             transition: all 0.5s;
-            filter: brightness(0.5);
+          
       
             &-imgBox{
                 width: 100%;
@@ -316,9 +316,7 @@
             &:hover .start{
                 opacity: 1;
             }
-            &:hover{
-                filter: brightness(1);
-            }
+           
         }
     }
     @media all and (max-width:500px){
