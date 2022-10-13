@@ -1096,11 +1096,13 @@
 
 .index6{
     .contact_us{
+        overflow: hidden;
         .form_box{
             position: relative;
             flex: 1 1 50%;
             padding: 3vw 7vw 5vw 10vw;
             box-sizing: border-box;
+ 
             h1{
                 margin: 0;
                 font-size: 2.5vw;
@@ -1266,6 +1268,7 @@
     
     
                     .txt{
+                        width: fit-content;
                         position: relative;
                         z-index: 10;
                         padding: 0;
@@ -1409,29 +1412,29 @@
                     .txt_box{
                         transform: translateX(0);
                         opacity: 1;
-                        transition-delay: 0.9s;
+                        transition-delay: 0;
     
                         .line{
                             transform: translateX(0) rotate(15deg);
-                            transition-delay: 1.5s;
+                            transition-delay: 0s;
                         }
     
                         .s_logo{
                             opacity: 1;
                             transform: translateX(0);
-                            transition-delay: 2.2s;
+                            transition-delay: 0s;
                         }
     
                         .txt{
                             h1{
                                 opacity: 1;
                                 transform: translateX(0);
-                                transition-delay: 2.4s;
+                                transition-delay: 0s;
                             }
                             p{
                                 opacity: 1;
                                 transform: translateX(0);
-                                transition-delay: 2.6s;
+                                transition-delay: 0s;
                             }
                         }
                     }
@@ -1439,7 +1442,7 @@
                     .img_box{
                         transform: translateX(0);
                         transition: all 5s;
-                        transition-delay: 1.9s;
+                        transition-delay: 0s;
                         
     
                         .svg1{
@@ -2705,29 +2708,28 @@
                     .txt_box{
                         transform: translateX(0);
                         opacity: 1;
-                        transition-delay: 0.9s;
+                 
     
                         .line{
                             transform: translateX(0) rotate(15deg);
-                            transition-delay: 1.5s;
+                 
                         }
     
                         .s_logo{
                             opacity: 1;
                             transform: translateX(0);
-                            transition-delay: 2.2s;
+               
                         }
     
                         .txt{
                             h1{
                                 opacity: 1;
                                 transform: translateX(0);
-                                transition-delay: 2.4s;
+                       
                             }
                             p{
                                 opacity: 1;
                                 transform: translateX(0);
-                                transition-delay: 2.6s;
                             }
                         }
                     }
