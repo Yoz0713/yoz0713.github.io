@@ -158,7 +158,7 @@ footer .share_box a:nth-last-of-type(4) img {
   overflow: hidden;
 }
 .loading_div .spinner_div img {
-  margin-top: 1vw;
+  margin-top: 0vw;
   width: 5vw;
   transform: translateX(1000%);
   -webkit-animation: car_move 2.5s ease-in-out 0.5s infinite normal;
@@ -5749,7 +5749,7 @@ body {
     margin-right: 25vw;
     color: #18567B;
     position: relative;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
   }
   .stock2-pagination-current::after {
     display: block;
@@ -5764,7 +5764,7 @@ body {
   }
   .stock2-pagination-total {
     color: #18567B;
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
   .stock2-pagination span {
     font-size: 3.5vw;
@@ -10677,7 +10677,7 @@ body {
     margin-right: 25vw;
     color: #18567B;
     position: relative;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
   }
   .purchase2-pagination-current::after {
     display: block;
@@ -10692,7 +10692,7 @@ body {
   }
   .purchase2-pagination-total {
     color: #18567B;
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
   .purchase2-pagination span {
     font-size: 3.5vw;
@@ -12568,7 +12568,7 @@ body {
     margin-right: 25vw;
     color: #18567B;
     position: relative;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
   }
   .rent2-pagination-current::after {
     display: block;
@@ -12583,7 +12583,7 @@ body {
   }
   .rent2-pagination-total {
     color: #18567B;
-    margin-right: 1.5vw;
+    margin-right: 3vw;
   }
   .rent2-pagination span {
     font-size: 3.5vw;
