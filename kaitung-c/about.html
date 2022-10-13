@@ -62,7 +62,7 @@
         <a href="./buyIt.html">
             <div class="about1-left">
                 <div class="about1-left-imgBox">
-                    <img src="./img/about/2x/banner-left.png">
+                    <img src="./img/about/2x/banner-left.webp">
                   
                 </div>
                 <a href="./buyIt.html">
@@ -79,7 +79,7 @@
             <div class="about1-right">
           
                 <div class="about1-right-imgBox">
-                    <img src="./img/about/2x/banner-right.png">
+                    <img src="./img/about/2x/banner-right.webp">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <?xml version="1.0" encoding="UTF-8"?>
                     
@@ -137,14 +137,18 @@
     <script>
         $(document).ready(function () {
             
-            $(".about1-right-imgBox").mouseenter(()=>{
+            if(window.innerWidth > 850 ){
+                $(".about1-right-imgBox").mouseenter(()=>{
                 $(".about1-right-para img").css("filter","brightness(1)")
             })
             $(".about1-right-imgBox").mouseleave(()=>{
                 $(".about1-right-para img").css("filter","brightness(0.3)")
             })
+            }
+           
 
             //firstPageAnimation
+         
                 function firstPageAnimation(){
                     let gg = gsap.timeline()
                     gg.fromTo(".about1-left-imgBox",{
@@ -154,11 +158,11 @@
                         duration:2,
                         delay:2.5,
                     }).fromTo(".about1-right-imgBox img",{
-                       transform:"scale(1.1)"
+                        width:"110%"
                     },{
-                        transform:"scale(1)",
-                        duration:2,
-                        ease:"none"
+                        width:"100%",
+                        duration:1,
+                  
                     },"<").fromTo(".about1-left-para",{
                         y:"1vw",
                         autoAlpha:0

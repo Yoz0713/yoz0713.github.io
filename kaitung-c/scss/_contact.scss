@@ -16,9 +16,7 @@
                 
             }
         }
-        .share_box{
-            right: -1vw;
-        }
+       
     }
     &-bg{
         position: absolute;
@@ -38,9 +36,7 @@
             height: 18vw;
             margin-left: 5vw;
             margin-bottom: 5vw;
-            h1{
-
-            }
+            
             > p{
                 margin: 1vw 0 10.5vw;
                 font-weight: 300;
@@ -208,7 +204,7 @@
 .contact{
     footer{
         position: relative;
-        background: url(../img/2x/engine.png);
+        background: url(../img/2x/engine.webp);
         &:after{
             content: "";
             display: block;
@@ -442,7 +438,7 @@
     .contact{
         footer{
             position: relative;
-            background: url(../img/2x/engine.png);
+            background: url(../img/2x/engine.webp);
             padding: 6vw 5vw;
             &:after{
                 content: "";
@@ -677,7 +673,7 @@
         .contact{
             footer{
                 position: relative;
-                background: url(../img/2x/engine.png);
+                background: url(../img/2x/engine.webp);
                 padding: 6vw 5vw;
                 &:after{
                     content: "";

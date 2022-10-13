@@ -1,8 +1,8 @@
 .index1{
     position: relative;
-  
+    cursor: none;
     .click{
-        display: none;
+        display:flex;
         justify-content: center;
         align-items: center;
         width:2vw;
@@ -39,7 +39,7 @@
             flex-wrap: wrap;
             height: fit-content;
             span{
-              
+                cursor: none;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;

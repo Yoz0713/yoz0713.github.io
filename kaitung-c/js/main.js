@@ -194,6 +194,69 @@ $(document).ready(function () {
   
         // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
     });
+
+
+    //markMenu
+    function markMenu(){
+        let pathname = window.location.pathname
+        let fileName = pathname.split(".")
+      
+        let reg = new RegExp(`([a-zA-Z]{0,25}.${fileName[fileName.length-1]})$`)
+        let path = reg.exec(pathname)
+        switch (path[0]){
+            case `about.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[0]).css("pointer-events","none")
+                $($(`.list_box a`)[0].childNodes).css("border-bottom","2px solid #fff")
+                break
+            }
+            case `buyIt.${fileName[fileName.length-1]}`:{
+              
+                break;
+            }
+            case `stock.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[1]).css("pointer-events","none")
+                $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `stockInner.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `purchase.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[2]).css("pointer-events","none")
+                $($(`.list_box a`)[2].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `rent.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[3]).css("pointer-events","none")
+                $($(`.list_box a`)[3].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `news.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[4]).css("pointer-events","none")
+                $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `newsInner.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+            case `contact.${fileName[fileName.length-1]}`:{
+                $($(`.list_box a`)[5]).css("pointer-events","none")
+                $($(`.list_box a`)[5].childNodes).css("border-bottom","2px solid #fff")
+                break;
+            }
+           
+         
+         
+            
+           
+          
+           
+        }
+    }
+    markMenu()
+    //markMenu
 });
 
 // $(window).on('load', function () {

@@ -305,50 +305,56 @@ body{
             flex: 0 0 49%;
             margin-bottom: 1.5vw;
             overflow: hidden;
-            > img{
-                width: 100%;
+            a{
+          
+                > img{
+                    display: block;
+                    width: 100%;
+                    transition: 0.5s;
+                   
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                .box-suggest-inform{
+                    display: flex;
+                    justify-content: space-between;
+                    width:100%;
+                    padding:1.5vw ;
+                    background-color: #0080C5;
+                    z-index: 20;
+                    position: relative;
+                    > h2{
+                        color: #fff;
+                        line-height: 1;
+                   
+                    }
+                    .price{
+                        display: flex;
+                        flex: 0 1 50%;
+                        justify-content: flex-end;
+                       
+                        img{
+                            height: 1.4vw;
+                        
+                        }
+                        h2{
+                        
+                            color: #00FFFF;
+                            margin-right: 0.2vw;
+                           line-height: 1;
+                        }
+                    }
+                }
             }
+          
             .suggest{
                 position: absolute;
                 width: 10vw;
                 top: -0.4vw;
                 left: 1vw;
             }
-            & > :nth-child(2){
-                transition: 0.5s;
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
-            &-inform{
-                display: flex;
-                justify-content: space-between;
-                width:100%;
-                padding:1.5vw ;
-                background-color: #0080C5;
-                z-index: 20;
-                > h2{
-                    color: #fff;
-                    line-height: 1;
-               
-                }
-                .price{
-                    display: flex;
-                    flex: 0 1 50%;
-                    justify-content: flex-end;
-                   
-                    img{
-                        height: 1.4vw;
-                    
-                    }
-                    h2{
-                    
-                        color: #00FFFF;
-                        margin-right: 0.2vw;
-                       line-height: 1;
-                    }
-                }
-            }
+           
         }
         .box{
             flex: 0 0 32%;
@@ -363,18 +369,21 @@ body{
                 pointer-events: none;
                 z-index: 21;
             }
-            & > :nth-child(1){
-                transition: 0.5s;
-                &:hover{
-                    transform: scale(1.1);
+            a{
+                & > :nth-child(1){
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                & > :nth-child(2){
+                    transition: 0.5s;
+                    &:hover{
+                        transform: none;
+                    }
                 }
             }
-            & > :nth-child(2){
-                transition: 0.5s;
-                &:hover{
-                    transform: none;
-                }
-            }
+            
         }
     }
     &-pagination{
@@ -1026,43 +1035,45 @@ body{
                 position: relative;
                 flex: 0 0 100%;
                 margin-bottom: 2.5vw;
-                > img{
-                    width: 100%;
-                }
-                .suggest{
-                    position: absolute;
-                    width: 16vw;
-                    top: -0.8vw;
-                    left: 2vw;
-                }
-                &-inform{
-                    display: flex;
-                    justify-content: space-between;
-                    width:100%;
-                    padding:1.5vw ;
-                    background-color: #0080C5;
-                   
-                    > h2{
-                        color: #fff;
-             
-                   
+                a{
+                    > img{
+                        width: 100%;
                     }
-                    .price{
+                    .suggest{
+                        position: absolute;
+                        width: 16vw;
+                        top: -0.8vw;
+                        left: 2vw;
+                    }
+                    .box-suggest-inform{
                         display: flex;
-                        flex: 0 1 50%;
-                        justify-content: flex-end;
-                        align-items:flex-start;
+                        justify-content: space-between;
+                        width:100%;
+                        padding:1.5vw ;
+                        background-color: #0080C5;
                        
-                        img{
-                            height: 4vw;
-                          margin: 0;
-                    
+                        > h2{
+                            color: #fff;
+                 
+                       
                         }
-                        h2{
-                          margin: 0;
-                            color: #00FFFF;
-                            margin-right: 1vw;
+                        .price{
+                            display: flex;
+                            flex: 0 1 50%;
+                            justify-content: flex-end;
+                            align-items:flex-start;
                            
+                            img{
+                                height: 4vw;
+                              margin: 0;
+                        
+                            }
+                            h2{
+                              margin: 0;
+                                color: #00FFFF;
+                                margin-right: 1vw;
+                               
+                            }
                         }
                     }
                 }
@@ -1722,46 +1733,49 @@ body{
                     position: relative;
                     flex: 0 0 100%;
                     margin-bottom: 4.5vw;
-                    > img{
-                        width: 100%;
-                    }
-                    .suggest{
-                        position: absolute;
-                        width: 25vw;
-                        top: -1.5vw;
-                        left: 2vw;
-                    }
-                    &-inform{
-                        display: flex;
-                        justify-content: space-between;
-                        width:100%;
-                        padding:1.5vw ;
-                        background-color: #0080C5;
-                       
-                        > h2{
-                            color: #fff;
-                            flex: 1 1  60%;
-                            line-height: 1.2;
+                    a{
+                        > img{
+                            width: 100%;
                         }
-                        .price{
+                        .suggest{
+                            position: absolute;
+                            width: 25vw;
+                            top: -1.5vw;
+                            left: 2vw;
+                        }
+                        .box-suggest-inform{
                             display: flex;
-                            flex: 1 1 40%;
-                            justify-content: flex-end;
-                          
+                            justify-content: space-between;
+                            width:100%;
+                            padding:1.5vw ;
+                            background-color: #0080C5;
                            
-                            img{
-                                height: 5.5vw;
-                              margin: 0;
-                           
+                            > h2{
+                                color: #fff;
+                                flex: 1 1  60%;
+                                line-height: 1.2;
                             }
-                            h2{
-                              margin: 0;
-                                color: #00FFFF;
-                                margin-right: 2vw;
-                            
+                            .price{
+                                display: flex;
+                                flex: 1 1 40%;
+                                justify-content: flex-end;
+                              
+                               
+                                img{
+                                    height: 5.5vw;
+                                  margin: 0;
+                               
+                                }
+                                h2{
+                                  margin: 0;
+                                    color: #00FFFF;
+                                    margin-right: 2vw;
+                                
+                                }
                             }
                         }
                     }
+                   
                 }
                 .box{
                     flex: 0 0 100%;

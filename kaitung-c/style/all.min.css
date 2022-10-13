@@ -41,7 +41,7 @@ body {
 
 footer {
   padding: 3vw 6vw;
-  background-image: url(../img/1x/footer_bg-100.jpg);
+  background-image: url(../img/1x/footer_bg-100.webp);
   background-size: cover;
 }
 footer .logo_item {
@@ -724,7 +724,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   footer {
     padding: 6vw 12vw;
-    background-image: url(../img/1x/footer_bg-100.jpg);
+    background-image: url(../img/1x/footer_bg-100.webp);
     background-size: cover;
   }
   footer .flex-box {
@@ -852,7 +852,7 @@ footer .share_box a:nth-last-of-type(4) img {
   }
   footer {
     padding: 6vw 12vw;
-    background-image: url(../img/1x/footer_bg-100.jpg);
+    background-image: url(../img/1x/footer_bg-100.webp);
     background-size: cover;
   }
   footer .flex-box {
@@ -914,9 +914,10 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .index1 {
   position: relative;
+  cursor: none;
 }
 .index1 .click {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 2vw;
@@ -955,6 +956,7 @@ footer .share_box a:nth-last-of-type(4) img {
   height: fit-content;
 }
 .index1 .swiper .swiper-pagination span {
+  cursor: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -4426,49 +4428,48 @@ body {
   flex-direction: column;
   position: relative;
   flex: 0 0 49%;
-  overflow: hidden;
   margin-bottom: 1.5vw;
+  overflow: hidden;
 }
-.stock2-bottom .box-suggest > img {
+.stock2-bottom .box-suggest a > img {
+  display: block;
   width: 100%;
-}
-.stock2-bottom .box-suggest > :nth-child(2) {
   transition: 0.5s;
 }
-.stock2-bottom .box-suggest > :nth-child(2):hover {
+.stock2-bottom .box-suggest a > img:hover {
   transform: scale(1.1);
 }
-.stock2-bottom .box-suggest .suggest {
-  position: absolute;
-  width: 10vw;
-  top: -0.4vw;
-  left: 1vw;
-  z-index: 20;
-}
-.stock2-bottom .box-suggest-inform {
+.stock2-bottom .box-suggest a .box-suggest-inform {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 1.5vw;
   background-color: #0080C5;
   z-index: 20;
+  position: relative;
 }
-.stock2-bottom .box-suggest-inform > h2 {
+.stock2-bottom .box-suggest a .box-suggest-inform > h2 {
   color: #fff;
   line-height: 1;
 }
-.stock2-bottom .box-suggest-inform .price {
+.stock2-bottom .box-suggest a .box-suggest-inform .price {
   display: flex;
   flex: 0 1 50%;
   justify-content: flex-end;
 }
-.stock2-bottom .box-suggest-inform .price img {
+.stock2-bottom .box-suggest a .box-suggest-inform .price img {
   height: 1.4vw;
 }
-.stock2-bottom .box-suggest-inform .price h2 {
+.stock2-bottom .box-suggest a .box-suggest-inform .price h2 {
   color: #00FFFF;
   margin-right: 0.2vw;
   line-height: 1;
+}
+.stock2-bottom .box-suggest .suggest {
+  position: absolute;
+  width: 10vw;
+  top: -0.4vw;
+  left: 1vw;
 }
 .stock2-bottom .box {
   flex: 0 0 32%;
@@ -4484,16 +4485,16 @@ body {
   pointer-events: none;
   z-index: 21;
 }
-.stock2-bottom .box > :nth-child(1) {
+.stock2-bottom .box a > :nth-child(1) {
   transition: 0.5s;
 }
-.stock2-bottom .box > :nth-child(1):hover {
+.stock2-bottom .box a > :nth-child(1):hover {
   transform: scale(1.1);
 }
-.stock2-bottom .box > :nth-child(2) {
+.stock2-bottom .box a > :nth-child(2) {
   transition: 0.5s;
 }
-.stock2-bottom .box > :nth-child(2):hover {
+.stock2-bottom .box a > :nth-child(2):hover {
   transform: none;
 }
 .stock2-pagination {
@@ -5074,36 +5075,36 @@ body {
     flex: 0 0 100%;
     margin-bottom: 2.5vw;
   }
-  .stock2-bottom .box-suggest > img {
+  .stock2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .stock2-bottom .box-suggest .suggest {
+  .stock2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 16vw;
     top: -0.8vw;
     left: 2vw;
   }
-  .stock2-bottom .box-suggest-inform {
+  .stock2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .stock2-bottom .box-suggest-inform > h2 {
+  .stock2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
   }
-  .stock2-bottom .box-suggest-inform .price {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 0 1 50%;
     justify-content: flex-end;
     align-items: flex-start;
   }
-  .stock2-bottom .box-suggest-inform .price img {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 4vw;
     margin: 0;
   }
-  .stock2-bottom .box-suggest-inform .price h2 {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 1vw;
@@ -5696,37 +5697,37 @@ body {
     flex: 0 0 100%;
     margin-bottom: 4.5vw;
   }
-  .stock2-bottom .box-suggest > img {
+  .stock2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .stock2-bottom .box-suggest .suggest {
+  .stock2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 25vw;
     top: -1.5vw;
     left: 2vw;
   }
-  .stock2-bottom .box-suggest-inform {
+  .stock2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .stock2-bottom .box-suggest-inform > h2 {
+  .stock2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
     flex: 1 1 60%;
     line-height: 1.2;
   }
-  .stock2-bottom .box-suggest-inform .price {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end;
   }
-  .stock2-bottom .box-suggest-inform .price img {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 5.5vw;
     margin: 0;
   }
-  .stock2-bottom .box-suggest-inform .price h2 {
+  .stock2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 2vw;
@@ -7469,7 +7470,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../img//newsInner/1x/banner1-cover.png);
+  background: url(../img//newsInner/1x/banner1-cover.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
@@ -9369,38 +9370,45 @@ body {
   margin-bottom: 1.5vw;
   overflow: hidden;
 }
-.purchase2-bottom .box-suggest > img {
+.purchase2-bottom .box-suggest a > img {
+  display: block;
   width: 100%;
+  transition: 0.5s;
+}
+.purchase2-bottom .box-suggest a > img:hover {
+  transform: scale(1.1);
+}
+.purchase2-bottom .box-suggest a .box-suggest-inform {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5vw;
+  background-color: #0080C5;
+  z-index: 20;
+  position: relative;
+}
+.purchase2-bottom .box-suggest a .box-suggest-inform > h2 {
+  color: #fff;
+  line-height: 1;
+}
+.purchase2-bottom .box-suggest a .box-suggest-inform .price {
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: flex-end;
+}
+.purchase2-bottom .box-suggest a .box-suggest-inform .price img {
+  height: 1.4vw;
+}
+.purchase2-bottom .box-suggest a .box-suggest-inform .price h2 {
+  color: #00FFFF;
+  margin-right: 0.2vw;
+  line-height: 1;
 }
 .purchase2-bottom .box-suggest .suggest {
   position: absolute;
   width: 10vw;
   top: -0.4vw;
   left: 1vw;
-}
-.purchase2-bottom .box-suggest-inform {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1.5vw;
-  background-color: #0080C5;
-}
-.purchase2-bottom .box-suggest-inform > h2 {
-  color: #fff;
-  line-height: 1;
-}
-.purchase2-bottom .box-suggest-inform .price {
-  display: flex;
-  flex: 0 1 50%;
-  justify-content: flex-end;
-}
-.purchase2-bottom .box-suggest-inform .price img {
-  height: 1.4vw;
-}
-.purchase2-bottom .box-suggest-inform .price h2 {
-  color: #00FFFF;
-  margin-right: 0.2vw;
-  line-height: 1;
 }
 .purchase2-bottom .box {
   flex: 0 0 32%;
@@ -9416,16 +9424,16 @@ body {
   pointer-events: none;
   z-index: 21;
 }
-.purchase2-bottom .box > :nth-child(1) {
+.purchase2-bottom .box a > :nth-child(1) {
   transition: 0.5s;
 }
-.purchase2-bottom .box > :nth-child(1):hover {
+.purchase2-bottom .box a > :nth-child(1):hover {
   transform: scale(1.1);
 }
-.purchase2-bottom .box > :nth-child(2) {
+.purchase2-bottom .box a > :nth-child(2) {
   transition: 0.5s;
 }
-.purchase2-bottom .box > :nth-child(2):hover {
+.purchase2-bottom .box a > :nth-child(2):hover {
   transform: none;
 }
 .purchase2-pagination {
@@ -10002,36 +10010,36 @@ body {
     flex: 0 0 100%;
     margin-bottom: 2.5vw;
   }
-  .purchase2-bottom .box-suggest > img {
+  .purchase2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .purchase2-bottom .box-suggest .suggest {
+  .purchase2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 16vw;
     top: -0.8vw;
     left: 2vw;
   }
-  .purchase2-bottom .box-suggest-inform {
+  .purchase2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .purchase2-bottom .box-suggest-inform > h2 {
+  .purchase2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
   }
-  .purchase2-bottom .box-suggest-inform .price {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 0 1 50%;
     justify-content: flex-end;
     align-items: flex-start;
   }
-  .purchase2-bottom .box-suggest-inform .price img {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 4vw;
     margin: 0;
   }
-  .purchase2-bottom .box-suggest-inform .price h2 {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 1vw;
@@ -10624,37 +10632,37 @@ body {
     flex: 0 0 100%;
     margin-bottom: 4.5vw;
   }
-  .purchase2-bottom .box-suggest > img {
+  .purchase2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .purchase2-bottom .box-suggest .suggest {
+  .purchase2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 25vw;
     top: -1.5vw;
     left: 2vw;
   }
-  .purchase2-bottom .box-suggest-inform {
+  .purchase2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .purchase2-bottom .box-suggest-inform > h2 {
+  .purchase2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
     flex: 1 1 60%;
     line-height: 1.2;
   }
-  .purchase2-bottom .box-suggest-inform .price {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end;
   }
-  .purchase2-bottom .box-suggest-inform .price img {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 5.5vw;
     margin: 0;
   }
-  .purchase2-bottom .box-suggest-inform .price h2 {
+  .purchase2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 2vw;
@@ -11251,45 +11259,45 @@ body {
   margin-bottom: 1.5vw;
   overflow: hidden;
 }
-.rent2-bottom .box-suggest > img {
+.rent2-bottom .box-suggest a > img {
+  display: block;
   width: 100%;
-}
-.rent2-bottom .box-suggest .suggest {
-  position: absolute;
-  width: 10vw;
-  top: -0.4vw;
-  left: 1vw;
-}
-.rent2-bottom .box-suggest > :nth-child(2) {
   transition: 0.5s;
 }
-.rent2-bottom .box-suggest > :nth-child(2):hover {
+.rent2-bottom .box-suggest a > img:hover {
   transform: scale(1.1);
 }
-.rent2-bottom .box-suggest-inform {
+.rent2-bottom .box-suggest a .box-suggest-inform {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 1.5vw;
   background-color: #0080C5;
   z-index: 20;
+  position: relative;
 }
-.rent2-bottom .box-suggest-inform > h2 {
+.rent2-bottom .box-suggest a .box-suggest-inform > h2 {
   color: #fff;
   line-height: 1;
 }
-.rent2-bottom .box-suggest-inform .price {
+.rent2-bottom .box-suggest a .box-suggest-inform .price {
   display: flex;
   flex: 0 1 50%;
   justify-content: flex-end;
 }
-.rent2-bottom .box-suggest-inform .price img {
+.rent2-bottom .box-suggest a .box-suggest-inform .price img {
   height: 1.4vw;
 }
-.rent2-bottom .box-suggest-inform .price h2 {
+.rent2-bottom .box-suggest a .box-suggest-inform .price h2 {
   color: #00FFFF;
   margin-right: 0.2vw;
   line-height: 1;
+}
+.rent2-bottom .box-suggest .suggest {
+  position: absolute;
+  width: 10vw;
+  top: -0.4vw;
+  left: 1vw;
 }
 .rent2-bottom .box {
   flex: 0 0 32%;
@@ -11305,16 +11313,16 @@ body {
   pointer-events: none;
   z-index: 21;
 }
-.rent2-bottom .box > :nth-child(1) {
+.rent2-bottom .box a > :nth-child(1) {
   transition: 0.5s;
 }
-.rent2-bottom .box > :nth-child(1):hover {
+.rent2-bottom .box a > :nth-child(1):hover {
   transform: scale(1.1);
 }
-.rent2-bottom .box > :nth-child(2) {
+.rent2-bottom .box a > :nth-child(2) {
   transition: 0.5s;
 }
-.rent2-bottom .box > :nth-child(2):hover {
+.rent2-bottom .box a > :nth-child(2):hover {
   transform: none;
 }
 .rent2-pagination {
@@ -11893,36 +11901,36 @@ body {
     flex: 0 0 100%;
     margin-bottom: 2.5vw;
   }
-  .rent2-bottom .box-suggest > img {
+  .rent2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .rent2-bottom .box-suggest .suggest {
+  .rent2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 16vw;
     top: -0.8vw;
     left: 2vw;
   }
-  .rent2-bottom .box-suggest-inform {
+  .rent2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .rent2-bottom .box-suggest-inform > h2 {
+  .rent2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
   }
-  .rent2-bottom .box-suggest-inform .price {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 0 1 50%;
     justify-content: flex-end;
     align-items: flex-start;
   }
-  .rent2-bottom .box-suggest-inform .price img {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 4vw;
     margin: 0;
   }
-  .rent2-bottom .box-suggest-inform .price h2 {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 1vw;
@@ -12515,37 +12523,37 @@ body {
     flex: 0 0 100%;
     margin-bottom: 4.5vw;
   }
-  .rent2-bottom .box-suggest > img {
+  .rent2-bottom .box-suggest a > img {
     width: 100%;
   }
-  .rent2-bottom .box-suggest .suggest {
+  .rent2-bottom .box-suggest a .suggest {
     position: absolute;
     width: 25vw;
     top: -1.5vw;
     left: 2vw;
   }
-  .rent2-bottom .box-suggest-inform {
+  .rent2-bottom .box-suggest a .box-suggest-inform {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1.5vw;
     background-color: #0080C5;
   }
-  .rent2-bottom .box-suggest-inform > h2 {
+  .rent2-bottom .box-suggest a .box-suggest-inform > h2 {
     color: #fff;
     flex: 1 1 60%;
     line-height: 1.2;
   }
-  .rent2-bottom .box-suggest-inform .price {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price {
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end;
   }
-  .rent2-bottom .box-suggest-inform .price img {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price img {
     height: 5.5vw;
     margin: 0;
   }
-  .rent2-bottom .box-suggest-inform .price h2 {
+  .rent2-bottom .box-suggest a .box-suggest-inform .price h2 {
     margin: 0;
     color: #00FFFF;
     margin-right: 2vw;
@@ -12891,9 +12899,6 @@ body {
 .contact1 .top_logo_div .img_box img {
   width: 14vw;
 }
-.contact1 .top_logo_div .share_box {
-  right: -1vw;
-}
 .contact1-bg {
   position: absolute;
   width: 100%;
@@ -13067,7 +13072,7 @@ body {
 
 .contact footer {
   position: relative;
-  background: url(../img/2x/engine.png);
+  background: url(../img/2x/engine.webp);
 }
 .contact footer:after {
   content: "";
@@ -13280,7 +13285,7 @@ body {
   }
   .contact footer {
     position: relative;
-    background: url(../img/2x/engine.png);
+    background: url(../img/2x/engine.webp);
     padding: 6vw 5vw;
   }
   .contact footer:after {
@@ -13491,7 +13496,7 @@ body {
   }
   .contact footer {
     position: relative;
-    background: url(../img/2x/engine.png);
+    background: url(../img/2x/engine.webp);
     padding: 6vw 5vw;
   }
   .contact footer:after {
@@ -13574,6 +13579,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+  transition: transform 5.5s;
 }
 .about1-left-imgBox .line {
   position: absolute;
@@ -13595,6 +13601,9 @@ body {
 }
 .about1-left:hover button {
   opacity: 1;
+}
+.about1-left:hover .about1-left-imgBox img {
+  transform: scale(1.08);
 }
 .about1-right {
   z-index: 2;
@@ -13618,12 +13627,16 @@ body {
 .about1-right-imgBox:hover {
   filter: brightness(1);
 }
+.about1-right-imgBox:hover img {
+  transform: scale(1.1);
+}
 .about1-right-imgBox img {
   display: block;
   width: 100%;
   height: 60.4vw;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 5.5s;
 }
 .about1-right-imgBox .line {
   position: absolute;
@@ -13762,6 +13775,9 @@ body {
        object-fit: cover;
     z-index: -1;
   }
+  .about1-left:hover .about1-left-imgBox img {
+    transform: none;
+  }
   .about1-right {
     z-index: 2;
     position: relative;
@@ -13783,6 +13799,10 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .about1-right-imgBox:hover img {
+    width: 100%;
+    height: 100%;
   }
   .about1-right-para {
     display: flex;
@@ -13887,7 +13907,7 @@ body {
   margin-bottom: 0.5vw;
 }
 .buyIt footer {
-  background-image: url(../img/buyIt/2x/footer-bg.png);
+  background-image: url(../img/buyIt/2x/footer-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -14053,7 +14073,7 @@ body {
   content: "";
   width: 45vw;
   height: 40vw;
-  background: url(../img/buyIt/2x/half-round.png);
+  background: url(../img/buyIt/2x/half-round.webp);
   position: absolute;
   left: 0;
   bottom: 5vw;
@@ -14293,7 +14313,6 @@ body {
     margin-bottom: 0.5vw;
   }
   .buyIt footer {
-    background-image: url(../img/buyIt/2x/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -14689,7 +14708,6 @@ body {
     margin-bottom: 0.5vw;
   }
   .buyIt footer {
-    background-image: url(../img/buyIt/2x/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
