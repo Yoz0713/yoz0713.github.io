@@ -1933,7 +1933,7 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: scaleinfinite(1);
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index1 .follow-img {
     position: absolute;
     top: 0;
@@ -2231,7 +2231,7 @@ footer .share_box a:nth-last-of-type(4) img {
     display: inline-block;
   }
 }
-@media (max-width: 850px) and (max-width: 850px) {
+@media (max-width: 1024px) and (max-width: 850px) {
   .index1 .swiper {
     height: 135vw;
   }
@@ -2289,7 +2289,7 @@ footer .share_box a:nth-last-of-type(4) img {
     font-size: 2.2vw;
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index2 .swiper {
     width: 100%;
   }
@@ -2325,7 +2325,7 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 100%;
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index3 {
     background-color: #E8EAEC;
   }
@@ -2616,7 +2616,7 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-left: 1vw;
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index4 .advantage {
     position: relative;
     background-color: #021A35;
@@ -2825,7 +2825,7 @@ footer .share_box a:nth-last-of-type(4) img {
     z-index: 0;
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index5 {
     background-color: #021A35;
   }
@@ -2954,7 +2954,7 @@ footer .share_box a:nth-last-of-type(4) img {
     opacity: 1;
   }
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1024px) {
   .index6 .contact_us {
     flex-direction: column;
     background-color: #021A34;
@@ -3035,7 +3035,7 @@ footer .share_box a:nth-last-of-type(4) img {
     order: -1;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index1 .follow-img {
     position: absolute;
     top: 0;
@@ -3340,7 +3340,7 @@ footer .share_box a:nth-last-of-type(4) img {
     display: inline-block;
   }
 }
-@media (max-width: 850px) and (max-width: 500px) and (max-width: 850px) {
+@media (max-width: 1024px) and (max-width: 500px) and (max-width: 850px) {
   .index1 .swiper {
     height: 220vw;
   }
@@ -3404,7 +3404,7 @@ footer .share_box a:nth-last-of-type(4) img {
     font-size: 3vw;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index2 .swiper {
     width: 100%;
   }
@@ -3438,7 +3438,7 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 100%;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index3 {
     background-color: #E8EAEC;
   }
@@ -3757,7 +3757,7 @@ footer .share_box a:nth-last-of-type(4) img {
     top: 4.3vw;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index4 .advantage {
     position: relative;
     background-color: #021A35;
@@ -3952,7 +3952,7 @@ footer .share_box a:nth-last-of-type(4) img {
     z-index: 0;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index5 {
     background-color: #021A35;
   }
@@ -4081,7 +4081,7 @@ footer .share_box a:nth-last-of-type(4) img {
     opacity: 1;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media all and (max-width: 1024px) and (max-width: 500px) {
   .index6 .contact_us {
     flex-direction: column;
     background-color: #021A34;
