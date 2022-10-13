@@ -920,14 +920,15 @@ footer .share_box a:nth-last-of-type(4) img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2vw;
-  height: 2vw;
+  width: 2.2vw;
+  height: 2.2vw;
   position: absolute;
   pointer-events: none;
   z-index: 2;
   border: 1px solid #E8EAEC;
   color: #E8EAEC;
   border-radius: 50%;
+  font-size: 0.5vw;
   mix-blend-mode: difference;
 }
 .index1 .follow-img {
