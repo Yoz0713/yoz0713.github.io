@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 768 60.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_新增漸層色票_1);
+      }
+    </style>
+    <linearGradient id="_新增漸層色票_1" data-name="新增漸層色票 1" x1="0" y1="30.17" x2="768" y2="30.17" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d75b34"/>
+      <stop offset="1" stop-color="#ce1747"/>
+    </linearGradient>
+  </defs>
+  <g id="_圖層_2-2" data-name="圖層 2">
+    <path class="cls-1" d="M60.34,0H707.66C740.96,0,768,27.04,768,60.34H0C0,27.04,27.04,0,60.34,0Z"/>
+  </g>
+</svg>
