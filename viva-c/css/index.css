@@ -1062,17 +1062,19 @@ footer img {
   }
   .index3-para .line-round {
     position: absolute;
-    top: 50vw;
-    right: 24vw;
+    top: 65vw;
+    right: 5vw;
   }
   .index3-para .line-round img {
-    right: 1vw;
+    right: 3vw;
     bottom: -12vw;
     position: absolute;
-    width: 3vw;
+    width: 5vw;
+    margin-top: 20vw;
+    margin-right: -1vw;
   }
   .index3-para .line-round svg {
-    width: 2.5vw;
+    width: 4.5vw;
   }
   .index4 {
     position: relative;
@@ -1084,10 +1086,13 @@ footer img {
     left: 0;
     top: 0;
     width: 100%;
+    overflow: hidden;
     height: 100%;
   }
   .index4-bg img {
-    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 170%;
     height: 100%;
   }
   .index4-para {
@@ -1099,17 +1104,18 @@ footer img {
   .index4-para > img {
     left: 0;
     right: 0;
-    margin: 18vw auto 0;
+    margin: 55vw auto 0;
     position: absolute;
-    width: 45vw;
+    width: 90vw;
   }
   .index4-para .line-round {
     position: absolute;
-    right: 31vw;
-    top: 26vw;
+    right: 12.5vw;
+    top: 69vw;
   }
   .index4-para .line-round img {
-    width: 3vw;
+    width: 6vw;
+    z-index: 5;
   }
   .index4-para .line-round:after {
     display: block;
@@ -1119,13 +1125,13 @@ footer img {
     margin: auto 0;
     content: "";
     width: 0;
-    left: -18vw;
+    left: -32vw;
     height: 2px;
     background-color: #fff;
     transition: 1.2s;
   }
   .index4-para .active::after {
-    width: 20vw;
+    width: 35vw;
   }
   .index5 {
     width: 100%;

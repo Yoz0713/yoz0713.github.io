@@ -1024,16 +1024,18 @@ footer{
             }
             .line-round{
                 position: absolute;
-                top:50vw;
-                right:24vw;
+                top:65vw;
+                right:5vw;
                 img{
-                    right: 1vw;
+                    right: 3vw;
                     bottom: -12vw;
                     position: absolute;
-                    width: 3vw;
+                    width: 5vw;
+                    margin-top: 20vw;
+                    margin-right: -1vw;
                 }
                 svg{
-                    width: 2.5vw;
+                    width: 4.5vw;
                 }
             }
         }
@@ -1048,12 +1050,13 @@ footer{
             left: 0;
             top: 0;
             width: 100%;
-          
+            overflow: hidden;
             height: 100%;
             img{
-                
-                width: 100%;
+                object-fit: cover;
+                width: 170%;
                 height: 100%;
+
             }
         }
         &-para{
@@ -1064,16 +1067,17 @@ footer{
             > img{
                 left: 0;
                 right: 0;
-                margin: 18vw auto 0;
+                margin: 55vw auto 0;
                 position: absolute;
-                width: 45vw;
+                width: 90vw;
             }
             .line-round{
                 position: absolute;
-                right:31vw;
-                top: 26vw;
+                right:12.5vw;
+                top: 69vw;
                 img{
-                    width: 3vw;
+                    width: 6vw;
+                    z-index: 5;
                 }
                 &:after{
                     display: block;
@@ -1083,7 +1087,7 @@ footer{
                     margin: auto 0;
                     content: "";
                     width: 0;
-                    left:-18vw;
+                    left:-32vw;
                     height: 2px;
                     background-color: #fff;
                     transition: 1.2s;
@@ -1091,7 +1095,7 @@ footer{
             }
             .active{
                 &::after{
-                    width: 20vw;
+                    width: 35vw;
                 }
             }
         }
