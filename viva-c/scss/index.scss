@@ -592,6 +592,113 @@ $para-txt:'Noto Serif JP', serif;
         height: fit-content;
     }
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 55vw;
+    position: relative;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        height: fit-content;
+        margin: auto 0;
+        .form-input{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .form-box{
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                margin-bottom: 3.5vw;
+                > p{
+                    margin-bottom: 1vw;
+                    font-size: 1vw;
+                    font-weight: 900;
+                    color: #4d4d4d;
+                }
+                input{
+                    border-radius: 40px;
+                    border: 1px solid #ff684d67;
+                    width: 15vw;
+                    outline: none;
+                    color: #4d4d4d;
+                    font-size:1.2vw;
+                    background-color: #fff;
+                   
+                    padding-left: 1vw;
+                   
+                }
+                select{
+                    border-radius: 40px;
+                    border: 1px solid #ff684d67;
+                    width: 15vw;
+                    font-size:1.2vw;
+                    background-color: #fff;
+                    color: #4d4d4d;
+                    outline: none;
+                    padding-left: 1vw;
+                    
+                }
+                textarea{
+                    border-radius: 40px;
+                    border: 1px solid #ff684d67;
+                    width: 100%;
+                    outline: none;
+                    color: #4d4d4d;
+                    font-size:1.2vw;
+                    background-color: #fff;
+                    padding: 1vw;
+                }
+            }
+            & :last-child{
+                flex: 0 0 100%;
+             
+            }
+        }
+        .form-para{
+            width: 90%;
+            margin: 0 auto;
+            p{
+                font-weight: 700;
+                font-size: 0.7vw;
+            }
+            & :nth-child(1){
+                margin-bottom: 2vw;
+            }
+            &-box{
+                display: flex;
+                margin-top: 3vw;
+                input{
+                    margin-left: -1vw;
+                    margin-right: 1vw;
+                  
+                }
+                p{
+                    line-height: 1;
+                }
+            }
+        }
+        > input{
+            font-size: 1.2vw;
+            padding: 0.3vw 2.2vw;
+            border-radius: 40px;
+            background: linear-gradient(45deg, $bg-orange 0% , $bg-red 100%);
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            margin-top: 2.5vw;
+            cursor: pointer;
+        }
+    }
+  
+}
 .index11{
     position: relative;
     display: flex;
@@ -1302,6 +1409,120 @@ footer{
             bottom: 1.5vw;
             z-index: 20;
         }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 150vw;
+        .toTop{
+            bottom: -12vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 75%;
+            height: fit-content;
+            margin: auto;
+            margin-top: 12vw;
+            .form-input{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .form-box{
+                    display: flex;
+                    flex-direction: column;
+                    width: fit-content;
+                    margin-bottom: 10vw;
+                    >　p{
+                        margin-bottom: 1vw;
+                        font-size: 3.3vw;
+                        font-weight: 900;
+                        color: #4d4d4d;
+                    }
+                    input{
+                        border-radius: 40px;
+                        border: 1px solid #ff684d67;
+                        width: 35vw;
+                        outline: none;
+                        color: #4d4d4d;
+                        font-size:3.5vw;
+                        background-color: #fff;
+                        
+                        padding-left: 2vw;
+                       
+                    }
+                    select{
+                        border-radius: 40px;
+                        border: 1px solid #ff684d67;
+                        width:35vw;
+                        font-size:3.5vw;
+                        background-color: #fff;
+                        color: #4d4d4d;
+                        outline: none;
+                        padding-left: 2vw;
+                        
+                    }
+                    textarea{
+                        border-radius: 40px;
+                        border: 1px solid #ff684d67;
+                        width: 100%;
+                        outline: none;
+                
+                        font-size:3.5vw;
+                        background-color: #fff;
+                        padding: 2vw 4vw;
+                    }
+                }
+                & :last-child{
+                    flex: 0 0 100%;
+                 
+                }
+            }
+            .form-para{
+                width: 95%;
+                margin: 0 auto;
+                p{
+                    font-weight: 700;
+                    font-size: 3.2vw;
+                }
+                & :nth-child(1){
+                    margin-bottom: 5vw;
+                }
+                & :nth-child(2){
+                    line-height: 1.5;
+                }
+                &-box{
+                    display: flex;
+                    margin-top: 7vw;
+                    input{
+                        margin-left: -3vw;
+                        margin-right: 3vw;
+                        margin-top: -4vw;
+                        width: 10vw;
+                    }
+                    p{
+                        line-height: 1.4;
+                    }
+                }
+            }
+            > input{
+                font-size: 3.5vw;
+                padding: 1.2vw 4.5vw;
+                border-radius: 40px;
+                background: linear-gradient(45deg, $bg-orange 0% , $bg-red 100%);
+                color: #fff;
+                font-weight: 700;
+                border: none;
+                margin-top: 10vw;
+                cursor: pointer;
+            }
+        }
+      
     }
     .index11{
         display: flex;

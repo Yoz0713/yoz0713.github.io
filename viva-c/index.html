@@ -67,7 +67,10 @@
             <img src="./img/SVG/button_01.svg">
         </div>
         <div class="index1-booking">
-            <img src="./img/SVG/booking.svg">
+            <a href="#form">
+                <img src="./img/SVG/booking.svg">
+            </a>
+   
         </div>
     </section>
     <section class="index2">
@@ -254,6 +257,68 @@
         </div>
         <a href="#">
             <img src="./img/SVG/toTop.svg" class="toTop">
+        </a>
+    </section>
+    <section class="form" id="form">
+        <form>
+            <div class="form-input">
+                <div class="form-box">
+                    <p>名字</p>
+                    <input type="text">
+                </div>
+                <div class="form-box">
+                    <p>電子信箱</p>
+                    <input type="text">
+                </div>
+                <div class="form-box">
+                    <p>聯絡電話</p>
+                    <input type="text">
+                </div>
+                <div class="form-box">
+                    <p>可通話時段</p>
+                    <select name="" id="">
+                        <option value="早上">早上8:00 ~ 12:00</option>
+                        <option value="中午">中午12:00 ~ 13:30</option>
+                        <option value="下午">下午13:30 ~ 17:00</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <p>目前居住地</p>
+                    <select name="" id="">
+                        <option value="台北">台北市</option>
+                        <option value="桃園">桃園市</option>
+                        <option value="台中">台中市</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <p>購屋預算</p>
+                    <select name="" id="">
+                        <option value="一千萬內">一千萬內</option>
+                        <option value="兩千萬內">兩千萬內</option>
+                        <option value="五千萬內">五千萬內</option>
+                    </select>
+                </div>
+                <div class="form-box">
+                    <p>其他想了解的資訊</p>
+                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                </div>
+                
+            </div>
+            <div class="form-para">
+                <p>※ 您所登錄的個人資料將做為以下用途：</p>
+                <p>（一）本網站所載之相關事項 通知 與 聯繫<br>
+                    （二）允許本公司蒐集個人資料客戶 管理 與 服務<br>
+                    （三）本公司行銷業務之推廣 或 本案實際內容以現場公布為準</p>
+                    <div class="form-para-box">
+                        <input type="checkbox" name="" id="">
+                        <p>※ 本人已閱讀並同意以上三項「個人資料蒐集聲明」。 
+                            因應個資保護法，當您選擇填寫資料，即表示您已同意接受</p>
+                    </div>
+            </div>
+            <input type="submit" value="諮詢表單提交">
+        </form>
+        <a href="#">
+            <img src="./img/SVG/toTop-R.svg" class="toTop">
         </a>
     </section>
     <section class="index11">
@@ -617,6 +682,48 @@
                 })
             }
             elethPageAnimation()
+            function formAnimation(){
+                let gg =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:"form",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo("form .form-box",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                }).fromTo("form .form-para p",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+2").fromTo("form .form-para input",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+0.5").fromTo("form > input",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8,
+                    stagger:0.3
+                },"<+0.5")
+            }
+            formAnimation()
             function footerAnimation(){
                 let gg =gsap.timeline({
                     scrollTrigger:{

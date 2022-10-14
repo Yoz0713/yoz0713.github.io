@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -591,6 +592,114 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 55vw;
+  position: relative;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+.form form .form-input {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form form .form-input .form-box {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 3.5vw;
+}
+.form form .form-input .form-box > p {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-weight: 900;
+  color: #4d4d4d;
+}
+.form form .form-input .form-box input {
+  border-radius: 40px;
+  border: 1px solid rgba(255, 104, 77, 0.4039215686);
+  width: 15vw;
+  outline: none;
+  color: #4d4d4d;
+  font-size: 1.2vw;
+  background-color: #fff;
+  padding-left: 1vw;
+}
+.form form .form-input .form-box select {
+  border-radius: 40px;
+  border: 1px solid rgba(255, 104, 77, 0.4039215686);
+  width: 15vw;
+  font-size: 1.2vw;
+  background-color: #fff;
+  color: #4d4d4d;
+  outline: none;
+  padding-left: 1vw;
+}
+.form form .form-input .form-box textarea {
+  border-radius: 40px;
+  border: 1px solid rgba(255, 104, 77, 0.4039215686);
+  width: 100%;
+  outline: none;
+  color: #4d4d4d;
+  font-size: 1.2vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+.form form .form-input :last-child {
+  flex: 0 0 100%;
+}
+.form form .form-para {
+  width: 90%;
+  margin: 0 auto;
+}
+.form form .form-para p {
+  font-weight: 700;
+  font-size: 0.7vw;
+}
+.form form .form-para :nth-child(1) {
+  margin-bottom: 2vw;
+}
+.form form .form-para-box {
+  display: flex;
+  margin-top: 3vw;
+}
+.form form .form-para-box input {
+  margin-left: -1vw;
+  margin-right: 1vw;
+}
+.form form .form-para-box p {
+  line-height: 1;
+}
+.form form > input {
+  font-size: 1.2vw;
+  padding: 0.3vw 2.2vw;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #d75b34 0%, #d8034a 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  margin-top: 2.5vw;
+  cursor: pointer;
 }
 
 .index11 {
@@ -1339,6 +1448,120 @@ footer .footer-para :nth-child(2) {
     right: 2vw;
     bottom: 1.5vw;
     z-index: 20;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150vw;
+  }
+  .form .toTop {
+    bottom: -12vw;
+  }
+  .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 12vw;
+  }
+  .form form .form-input {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form form .form-input .form-box {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 10vw;
+  }
+  .form form .form-input .form-box > 　p {
+    margin-bottom: 1vw;
+    font-size: 3.3vw;
+    font-weight: 900;
+    color: #4d4d4d;
+  }
+  .form form .form-input .form-box input {
+    border-radius: 40px;
+    border: 1px solid rgba(255, 104, 77, 0.4039215686);
+    width: 35vw;
+    outline: none;
+    color: #4d4d4d;
+    font-size: 3.5vw;
+    background-color: #fff;
+    padding-left: 2vw;
+  }
+  .form form .form-input .form-box select {
+    border-radius: 40px;
+    border: 1px solid rgba(255, 104, 77, 0.4039215686);
+    width: 35vw;
+    font-size: 3.5vw;
+    background-color: #fff;
+    color: #4d4d4d;
+    outline: none;
+    padding-left: 2vw;
+  }
+  .form form .form-input .form-box textarea {
+    border-radius: 40px;
+    border: 1px solid rgba(255, 104, 77, 0.4039215686);
+    width: 100%;
+    outline: none;
+    font-size: 3.5vw;
+    background-color: #fff;
+    padding: 2vw 4vw;
+  }
+  .form form .form-input :last-child {
+    flex: 0 0 100%;
+  }
+  .form form .form-para {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .form form .form-para p {
+    font-weight: 700;
+    font-size: 3.2vw;
+  }
+  .form form .form-para :nth-child(1) {
+    margin-bottom: 5vw;
+  }
+  .form form .form-para :nth-child(2) {
+    line-height: 1.5;
+  }
+  .form form .form-para-box {
+    display: flex;
+    margin-top: 7vw;
+  }
+  .form form .form-para-box input {
+    margin-left: -3vw;
+    margin-right: 3vw;
+    margin-top: -4vw;
+    width: 10vw;
+  }
+  .form form .form-para-box p {
+    line-height: 1.4;
+  }
+  .form form > input {
+    font-size: 3.5vw;
+    padding: 1.2vw 4.5vw;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #d75b34 0%, #d8034a 100%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-top: 10vw;
+    cursor: pointer;
   }
   .index11 {
     display: flex;
