@@ -1501,11 +1501,13 @@ footer{
                 &-box{
                     display: flex;
                     margin-top: 7vw;
+                    position: relative;
                     input{
-                        margin-left: -3vw;
-                        margin-right: 3vw;
-                        margin-top: -4vw;
+                        margin: 0;
+                        left: -8vw;
+                        top: 0.6vw;
                         width: 10vw;
+                        position: absolute;
                     }
                     p{
                         line-height: 1.4;
