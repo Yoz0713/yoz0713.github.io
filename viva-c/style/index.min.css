@@ -1539,17 +1539,20 @@ footer .footer-para :nth-child(2) {
   }
   .form form .form-para-box {
     display: flex;
+    justify-content: flex-end;
     margin-top: 7vw;
     position: relative;
+    width: 100%;
   }
   .form form .form-para-box input {
     margin: 0;
-    left: -8vw;
+    left: -3vw;
     top: 0.6vw;
     width: 10vw;
     position: absolute;
   }
   .form form .form-para-box p {
+    flex: 0 0 90%;
     line-height: 1.4;
   }
   .form form > input {
