@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.92 81.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e95a24;
+        font-family: jf-jinxuan-fresh-Medium-B5pc-H, jf-jinxuan-fresh;
+        font-size: 32.24px;
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <text class="cls-1" transform="translate(0 27.43)"><tspan x="0" y="0">預約</tspan><tspan x="0" y="44.21">鑑賞</tspan></text>
+  </g>
+</svg>
