@@ -621,9 +621,10 @@ footer {
   position: relative;
 }
 footer .footer-bg {
+  overflow: hidden;
   bottom: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
 }
 footer .footer-bg img {
   width: 100%;
