@@ -6,6 +6,17 @@
   text-decoration: none;
 }
 
+.toTopFix {
+  position: fixed;
+  right: 2vw;
+  bottom: 1vw;
+  z-index: 21;
+}
+.toTopFix img {
+  filter: drop-shadow(0 0 1px #000);
+  width: 3vw;
+}
+
 .index1 {
   display: block;
   width: 100%;
@@ -345,25 +356,25 @@
   width: 100%;
   height: 100%;
 }
-.index3-para img {
+.index3-para > img {
   position: absolute;
   width: 65vw;
-  top: 10vw;
+  top: 15vw;
   right: 5vw;
 }
 .index3-para .line-round {
   position: absolute;
-  top: 10.5vw;
+  top: 14vw;
   right: 23vw;
 }
 .index3-para .line-round img {
   right: 0.5vw;
-  bottom: -10vw;
+  bottom: -0.5vw;
   position: absolute;
-  width: 3vw;
+  width: 2vw;
 }
 .index3-para .line-round svg {
-  width: 2vw;
+  width: 1.5vw;
 }
 
 .index4 {
@@ -379,6 +390,14 @@
   height: 100%;
 }
 .index4-bg img {
+  width: 100%;
+  height: 100%;
+}
+.index4-bg .forth-page-round {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
   width: 100%;
   height: 100%;
 }
@@ -1324,14 +1343,6 @@ footer .footer-para :nth-child(2) {
     width: 170%;
     height: 100%;
   }
-  .index4-bg .forth-page-round {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-  }
   .index4-para {
     display: flex;
     flex-direction: column;
@@ -1377,7 +1388,7 @@ footer .footer-para :nth-child(2) {
   }
   .index5 {
     width: 100%;
-    height: 140vw;
+    height: 180vw;
     position: relative;
   }
   .index5 .swiper {
@@ -1398,7 +1409,7 @@ footer .footer-para :nth-child(2) {
     height: 100%;
   }
   .index5 .swiper .swiper-pagination {
-    bottom: 55vw;
+    bottom: 65vw;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -1474,6 +1485,9 @@ footer .footer-para :nth-child(2) {
   .index7 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
     height: 100%;
+  }
+  .index7 .swiper .swiper-pagination {
+    display: none;
   }
   .index7 .swiper .swiper-pagination .swiper-pagination-bullet {
     display: inline-block;

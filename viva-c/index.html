@@ -12,6 +12,9 @@
     <title>Viva</title>
 </head>
 <body>
+    <a href="#" class="toTopFix">
+        <img src="./img/SVG/toTop.svg" >
+    </a>
     <section class="index1">
         <div class="index1-bg">
             <img src="./img/1x/lava.webp" class="lava">
@@ -118,7 +121,7 @@
             <img src="./img/SVG/third-page-bg-ph.svg" class="third-page-round phone">
         </div>
         <div class="index3-para">
-            <img src="./img/SVG/txt_03.svg" class="computer">
+            <img src="./img/SVG/third-page-para.svg" class="computer">
             <img src="./img/SVG/third-page-para-ph.svg" class="phone">
             <img src="./img/SVG/third-page-para2-ph.svg" class="phone">
             <div class="line-round">
@@ -142,13 +145,12 @@
             </div>
         
         </div>
-        <a href="#">
-            <img src="./img/SVG/toTop.svg" class="toTop">
-        </a>
+     
     </section>
     <section class="index4">
         <div class="index4-bg">
             <img src="./img/1x/forth-page-bg.webp" >
+            <img src="./img/1x/third-page-round.webp" class="forth-page-round computer">
             <img src="./img/SVG/third-page-bg-ph.svg" class="forth-page-round phone">
         </div>
         <div class="index4-para">
@@ -161,10 +163,7 @@
         </div>
     </section>
     <section class="index5">
-        <a href="#">
-            <img src="./img/SVG/toTop.svg" class="toTop computer">
-            <img src="./img/SVG/toTop-R.svg" class="toTop phone">
-        </a>
+       
         
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -201,9 +200,7 @@
             <img src="./img/1x/bg_05.webp" class="computer">
             <img src="./img/1x/bg_05_ph.webp" class="phone">
         </div>
-        <a href="#">
-            <img src="./img/SVG/toTop-R.svg" class="toTop">
-        </a>
+       
     </section>
     <section class="index7">
         <div class="swiper">
@@ -236,18 +233,14 @@
             <div class="swiper-button-next swiper-button-white"></div><!--右箭头。如果放置在swiper外面，需要自定义样式。-->
             
         </div>
-        <a href="#">
-            <img src="./img/SVG/toTop-R.svg" class="toTop">
-        </a>
+     
     </section>
     <section class="index8">
         <div class="index8-bg">
             <img src="./img/1x/bg_06.webp" class="computer">
             <img src="./img/1x/bg_06_ph.webp" class="phone">
         </div>
-        <a href="#">
-            <img src="./img/SVG/toTop.svg" class="toTop">
-        </a>
+      
     </section>
     <section class="index9">
         <div class="index9-bg">
@@ -261,18 +254,14 @@
             <img src="https://ws.srl.tw/product_html/case202108251357572/img/img2021082515375891.png">
         </div>
         <img src="./img/1x/map.webp">
-        <a href="#">
-            <img src="./img/SVG/toTop.svg" class="toTop computer">
-        </a>
+      
     </section>
     <section class="index10">
         <div class="index10-bg">
             <img src="./img/1x/bg_08.webp" class="computer">
             <img src="./img/1x/bg_08_ph.webp" class="phone">
         </div>
-        <a href="#">
-            <img src="./img/SVG/toTop.svg" class="toTop">
-        </a>
+       
     </section>
     <section class="form" id="form">
         <form>
@@ -302,8 +291,8 @@
                     <select name="" id="">
                         <option value="台北">台北市</option>
                         <option value="桃園">桃園市</option>
-                        <option value="台中">台中市</option>
                         <option value="新竹">新竹市</option>
+                        <option value="台中">台中市</option>
                     </select>
                 </div>
                 <div class="form-box">
@@ -333,9 +322,7 @@
             </div>
             <input type="submit" value="諮詢表單提交">
         </form>
-        <a href="#">
-            <img src="./img/SVG/toTop-R.svg" class="toTop">
-        </a>
+    
     </section>
    
     <footer>
@@ -375,27 +362,7 @@
                 $(".index9-hand").remove();
                 });
       
-            function topAnimation(){
-           
-                $(".toTop").each((i,item)=>{
-                    let gg = gsap.timeline({
-                        scrollTrigger:{
-                            trigger:item,
-                            start:"top 80%"
-                        }
-                    })
-
-                    gg.fromTo(item,{
-                        opacity:0,
-                        y:20
-                    },{
-                        opacity:1,
-                        y:0,
-                        duration:0.8
-                    })
-                })
-            }
-            topAnimation()
+       
             function firstPageAniamtion(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
