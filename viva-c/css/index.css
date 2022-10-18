@@ -1241,11 +1241,11 @@ footer .footer-para :nth-child(2) {
     left: 0;
     right: 0;
     filter: drop-shadow(0 0 1px #000);
-    margin: 50vw auto 0;
+    margin: 20vw auto 0;
   }
   .index3-para .line-round {
     position: absolute;
-    top: 62vw;
+    top: 33vw;
     right: 5vw;
   }
   .index3-para .line-round img {
