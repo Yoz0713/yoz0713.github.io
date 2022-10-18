@@ -858,11 +858,11 @@ footer{
         left: 170vw;
     }
     80%{
-        left:215vw;
+        left:210vw;
         opacity:1
     }
     85%{
-        left:215vw;
+        left:210vw;
         opacity: 0;
     }
     100%{
@@ -881,7 +881,16 @@ footer{
     z-index: 20;
 }
 @media all and (max-width:500px){
-   
+    .toTopFix{
+        position: fixed;
+        right: 5vw;
+        bottom: 4vw;
+        z-index: 21;
+        img{
+            filter: drop-shadow(0 0 1px #000);
+            width: 9vw;
+        }
+    }
     .index1{
         display: block;
         width: 100%;
@@ -1378,7 +1387,7 @@ footer{
                     
                 }
                 & :nth-child(1){
-                    margin-right: 1.5vw;
+                    margin-right: 5vw;
                 }
                 .swiper-pagination-bullet-active{
                     background-color: transparent;
@@ -1386,15 +1395,15 @@ footer{
                 }
             }
             .swiper-button-next{
-                right: 5vw;
-                top: 40vw;
+                right: 4vw;
+                top: 55vw;
                 &::after{
                     color: #fff;
                 }
             }
             .swiper-button-prev{
                 left:5vw;
-                top: 40vw;
+                top: 55vw;
                 &::after{
                
                     color: #fff;
