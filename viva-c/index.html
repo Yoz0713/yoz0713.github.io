@@ -672,6 +672,18 @@
                     opacity:1,
                     duration:1.5
                 },"<")
+
+                let gg2 =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".index9",
+                        start:"top center"
+                    }
+                })
+
+                gg2.to(".index9-hand img",{
+                    opacity:0,
+                    delay:6,
+                })
             }
             ninthPageAnimation()
             function tenthPageAnimation(){

@@ -1320,12 +1320,12 @@ footer .footer-para :nth-child(2) {
   }
   .index3-para .line-round {
     position: absolute;
-    top: 10vw;
+    top: 15vw;
     right: -3vw;
   }
   .index3-para .line-round img {
     right: 3vw;
-    bottom: -12vw;
+    bottom: -5.5vw;
     position: absolute;
     width: 4vw;
     margin-top: 10vw;
