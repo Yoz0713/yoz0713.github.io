@@ -255,6 +255,7 @@ footer{
             }
             span{
                 display: inline-block;
+                pointer-events: none;
             }
             .s_txt_box{
                 overflow: hidden;
@@ -277,6 +278,9 @@ footer{
                 height: 3px;
                 width: 0%;
                 background-color: #fff;
+            }
+            &:hover .s_txt_box::after{
+                width: 100%;
             }
         }
     }

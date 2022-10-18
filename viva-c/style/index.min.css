@@ -1477,14 +1477,16 @@ footer .footer-para :nth-child(2) {
     width: 100%;
     height: 100%;
   }
+  .index9-bg {
+    display: none;
+  }
   .index9 > img {
-    position: absolute;
+    position: relative;
     width: auto;
     height: 100%;
     left: 0;
     top: 0;
     bottom: 0;
-    right: 0;
     margin: auto;
   }
   .index9-dot {

@@ -249,19 +249,53 @@ $(document).ready(function () {
          _this.append(`<span class="s_txt">${this}</span>`);
        });
     });
-
-    $('.menu .list_box a').mouseenter(function () { 
+    let menu_en = ['ABOUT US','CAR IN STOCK','PURCHASING','RENTAL CAR','NEWS','APPOINTMENT']
+  
+    $('.menu .list_box a').mouseenter(function (e) { 
         var tl_mu = gsap.timeline();
       
         $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
             tl_mu.to($(this), 0.4, {y:-24}, '<0.03');
         });
-        // $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
-        //     let display_num=index==0 ? '<0.2':'<0.03';
-        //     tl_mu.fromTo($(this), 0.4, {y:20},{y:0}, display_num);
-        // });
-        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
+        $(e).find(".s_txt_box").empty()
+       
+        menu_en.forEach((item,i)=>{
+            let arr = item.split("")
+         
+          
+                arr.forEach((item2)=>{
+                    if(item2 == " "){
+                        item2 = `<span class="s_txt">${"\xa0"}</span>`
+                    }else{
+                        item2 = `<span class="s_txt">${item2}</span>`
+                    }
+                    for(let a = 0 ; a < item.length ; a++){
+                        if(i == a ){
+                            $($(".list_box a")[a]).find(".s_txt_box").append(item2)
+                        }
+                    }
+                    
+                
+                    
+                })
+           
+           
+        })
+         $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
+             let display_num=index==0 ? '<0.2':'<0.03';
+             tl_mu.fromTo($(this), 0.4, {y:20,
+                opacity:0
+            },
+            {y:0,
+                opacity:1
+            }, display_num);
+         });
+
     });
+
+        $(".menu .list_box a").mouseleave(()=>{
+            
+        })
     }
     markMenu()
     //markMenu
