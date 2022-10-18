@@ -23,6 +23,7 @@
             <img src="./img/SVG/round-rotate.svg" class="round-hole-s">
             <img src="./img/1x/round-45deg.webp" class="round-45deg">
             <img src="./img/1x/round-180deg.webp" class="round2-180deg">
+           
         </div>
         <div class="index1-menu">
             <ul>
@@ -72,6 +73,7 @@
             </a>
    
         </div>
+        <img src="./img/SVG/first-page-glowing-ph.svg" class="glowing phone">
     </section>
     <section class="index2">
         <div class="index2-bg">
@@ -118,6 +120,7 @@
         <div class="index3-para">
             <img src="./img/SVG/txt_03.svg" class="computer">
             <img src="./img/SVG/third-page-para-ph.svg" class="phone">
+            <img src="./img/SVG/third-page-para2-ph.svg" class="phone">
             <div class="line-round">
                 <svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.51 380.8">
                     <defs>
@@ -145,10 +148,13 @@
     </section>
     <section class="index4">
         <div class="index4-bg">
-            <img src="./img/1x/forth-page-bg.webp">
+            <img src="./img/1x/forth-page-bg.webp" >
+            <img src="./img/SVG/third-page-bg-ph.svg" class="forth-page-round phone">
         </div>
         <div class="index4-para">
-            <img src="./img/SVG/txt_04.svg">
+            <img src="./img/SVG/txt_04.svg" class="computer">
+            <img src="./img/SVG/forth-page-para-ph.svg" class="phone">
+            <img src="./img/SVG/forth-page-para2-ph.svg" class="phone">
             <div class="line-round">
                 <img src="./img/1x/round-180deg-90.webp">
             </div>
@@ -251,6 +257,9 @@
         <div class="index9-dot">
             <img src="./img/SVG/map.svg" alt="">
         </div>
+        <div class="index9-hand phone">
+            <img src="https://ws.srl.tw/product_html/case202108251357572/img/img2021082515375891.png">
+        </div>
         <img src="./img/1x/map.webp">
         <a href="#">
             <img src="./img/SVG/toTop.svg" class="toTop computer">
@@ -307,7 +316,7 @@
                 </div>
                 <div class="form-box">
                     <p>其他想了解的資訊</p>
-                    <textarea name="" id="" cols="30" rows="1"></textarea>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
                 </div>
                 
             </div>
@@ -361,7 +370,10 @@
               
                 $('.index9').scrollLeft(Math.round(img_width / img_avg));
             }
-          
+        
+            $(".index9").on("swipe",function(){
+                $(".index9-hand").remove();
+                });
       
             function topAnimation(){
            
@@ -504,7 +516,7 @@
                 let gg =gsap.timeline({
                     scrollTrigger:{
                         trigger:".index3",
-                        start:"top 80%"
+                        start:"top center"
                     }
                 })
                 gg.fromTo(".index3-bg .third-page-round",{
@@ -547,14 +559,21 @@
                         start:"top 80%"
                     }
                 })
-                gg.fromTo(".index4-para",{
+                gg.fromTo(".index4 .forth-page-round",{
                     opacity:0,
                     y:15
                 },{
                     y:0,
                     opacity:1,
                     duration:1.5
-                }).fromTo(".index4 .line-round img",{
+                }).fromTo(".index4-para",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:1.5
+                },"<+0.8").fromTo(".index4 .line-round img",{
                     opacity:0,
                     x:-50
                 },{

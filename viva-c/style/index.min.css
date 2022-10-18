@@ -877,6 +877,40 @@ footer .footer-para :nth-child(2) {
     opacity: 1;
   }
 }
+@-webkit-keyframes wipe {
+  0% {
+    left: 170vw;
+  }
+  80% {
+    left: 215vw;
+    opacity: 1;
+  }
+  85% {
+    left: 215vw;
+    opacity: 0;
+  }
+  100% {
+    left: 170vw;
+    opacity: 0;
+  }
+}
+@keyframes wipe {
+  0% {
+    left: 170vw;
+  }
+  80% {
+    left: 215vw;
+    opacity: 1;
+  }
+  85% {
+    left: 215vw;
+    opacity: 0;
+  }
+  100% {
+    left: 170vw;
+    opacity: 0;
+  }
+}
 .phone {
   display: none;
 }
@@ -1110,6 +1144,14 @@ footer .footer-para :nth-child(2) {
     box-shadow: -0.4vw 0.4vw 0px 0px rgba(0, 0, 0, 0);
     transform: translateY(0.8vw);
   }
+  .index1 .glowing {
+    position: absolute;
+    left: 0;
+    top: -30vw;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
   .index2 {
     display: flex;
     justify-content: center;
@@ -1232,28 +1274,31 @@ footer .footer-para :nth-child(2) {
     z-index: 3;
   }
   .index3-para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 100%;
   }
   .index3-para img {
-    position: absolute;
-    width: 80vw;
-    left: 0;
-    right: 0;
+    position: relative;
+    width: 45vw;
     filter: drop-shadow(0 0 1px #000);
-    margin: 20vw auto 0;
+  }
+  .index3-para :nth-child(2) {
+    margin-bottom: 5vw;
   }
   .index3-para .line-round {
     position: absolute;
-    top: 33vw;
-    right: 5vw;
+    top: 10vw;
+    right: -3vw;
   }
   .index3-para .line-round img {
     right: 3vw;
     bottom: -12vw;
     position: absolute;
-    width: 5vw;
+    width: 4vw;
     margin-top: 10vw;
     margin-right: -1vw;
   }
@@ -1279,23 +1324,36 @@ footer .footer-para :nth-child(2) {
     width: 170%;
     height: 100%;
   }
-  .index4-para {
+  .index4-bg .forth-page-round {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
     width: 100%;
+    height: 100%;
+  }
+  .index4-para {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 90%;
     height: 100%;
     position: relative;
     z-index: 3;
   }
   .index4-para > img {
-    left: 0;
-    right: 0;
-    margin: 45vw auto 0;
-    position: absolute;
-    width: 90vw;
+    margin: 0vw;
+    position: relative;
+    width: 45vw;
+  }
+  .index4-para :nth-child(2) {
+    margin-bottom: 5vw;
+    margin-top: 10vw;
   }
   .index4-para .line-round {
     position: absolute;
-    right: 12.5vw;
-    top: 59vw;
+    right: -8vw;
+    top: 47vw;
   }
   .index4-para .line-round img {
     width: 6vw;
@@ -1469,7 +1527,9 @@ footer .footer-para :nth-child(2) {
   }
   .index9 {
     width: 100%;
-    height: 220vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     position: relative;
     overflow-x: auto;
   }
@@ -1483,11 +1543,26 @@ footer .footer-para :nth-child(2) {
   .index9 > img {
     position: relative;
     width: auto;
-    height: 100%;
+    height: 220vw;
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto;
+  }
+  .index9-hand {
+    z-index: 21;
+    position: absolute;
+    top: 90vw;
+    left: 160vw;
+    -webkit-animation: wipe 2.5s linear forwards infinite;
+            animation: wipe 2.5s linear forwards infinite;
+  }
+  .index9-hand img {
+    display: block;
+    width: 12vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .index9-dot {
     position: absolute;
@@ -1524,7 +1599,10 @@ footer .footer-para :nth-child(2) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 185vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 10vw;
   }
   .form form {
     display: flex;
@@ -1548,22 +1626,20 @@ footer .footer-para :nth-child(2) {
   }
   .form form .form-input .form-box {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: 10vw;
+    margin-bottom: 12vw;
   }
   .form form .form-input .form-box p {
-    margin-bottom: 1vw;
-    font-size: 3.3vw;
+    margin-bottom: 3vw;
+    font-size: 3.5vw;
     font-weight: 900;
     color: #4d4d4d;
   }
   .form form .form-input .form-box input {
     border-radius: 40px;
     border: 1px solid rgba(255, 104, 77, 0.4039215686);
-    width: 35vw;
+    width: 100%;
     outline: none;
     color: #4d4d4d;
     font-size: 3.5vw;
@@ -1573,7 +1649,7 @@ footer .footer-para :nth-child(2) {
   .form form .form-input .form-box select {
     border-radius: 40px;
     border: 1px solid rgba(255, 104, 77, 0.4039215686);
-    width: 35vw;
+    width: 100%;
     font-size: 3.5vw;
     background-color: #fff;
     color: #4d4d4d;
