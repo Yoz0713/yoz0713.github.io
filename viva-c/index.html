@@ -352,13 +352,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script>
+      
           $(document).ready(()=>{
             var img_width = $('.index9 > img').width();
-
             //console.log(img_width);
             var img_avg = 1.9;
-
-            $('.index9').scrollLeft(Math.round(img_width / img_avg));
+            if(window.innerWidth < 500){
+              
+                $('.index9').scrollLeft(Math.round(img_width / img_avg));
+            }
+          
+      
+          
+         
             function firstPageAniamtion(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
