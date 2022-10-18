@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="style/all.min.css">
 </head>
 <body>
-    <!-- loading -->
-    <div class="loading_div flex-box i-center j-center">
+    <div class="loading_div flex-box i-center j-center loading_div2">
         <div class="logo_div">
            <img class="w-100" src="img/SVG/logo.svg" alt="logo">
         </div>
@@ -23,8 +22,6 @@
            <img src="img/SVG/car_icon.svg" alt="">
         </div>
     </div>
-    <!-- loading END -->
-
     <div class="menu flex-box i-center " >
         <div class="btn_box">
             <button class="hamburger hamburger--stand is-active" type="button">
@@ -40,7 +37,7 @@
             <a href="rent.html"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
             <a href="./news.html"><span class="s_txt_box">新聞資訊</span><span class="a_line"></span></a>
             <a href="contact.html"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
-            <a href="./contact.html"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
+            <a href="./contact.html"><span class="s_txt_box" style="color:#01ffff ">高價收購電動車</span><span class="a_line"></span></a>
             <div class="ph share_box">
                 <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
                 <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="LINE"></a>
@@ -140,7 +137,7 @@
                             <img src="./img/stock/SVG/charger.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
                
             </div>
@@ -156,7 +153,7 @@
                             <img src="./img/stock/SVG/charger.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
                 
             </div>
@@ -171,7 +168,7 @@
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
                 </div>
-                <div class="box-bg"></div>
+                
                 </a>
                 
             </div>
@@ -186,7 +183,7 @@
                             <img src="./img/stock/SVG/oil.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
                
             </div>
@@ -201,7 +198,7 @@
                         <img src="./img/stock/SVG/car-oil.svg">
                     </div>
                 </div>
-                <div class="box-bg"></div>
+                
                 </a>
                 
             </div>
@@ -216,7 +213,7 @@
                             <img src="./img/stock/SVG/oil.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
               
             </div>
@@ -231,7 +228,7 @@
                         <img src="./img/stock/SVG/charger.svg">
                     </div>
                 </div>
-                <div class="box-bg"></div>
+                
                 </a>
                 
             </div>
@@ -246,7 +243,7 @@
                             <img src="./img/stock/SVG/charger.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
                
             </div>
@@ -261,7 +258,7 @@
                             <img src="./img/stock/SVG/charger.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
               
             </div>
@@ -276,7 +273,7 @@
                             <img src="./img/stock/SVG/oil.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
                
             </div>
@@ -291,7 +288,7 @@
                             <img src="./img/stock/SVG/car-oil.svg">
                         </div>
                     </div>
-                    <div class="box-bg"></div>
+                    
                 </a>
               
             </div>
@@ -595,7 +592,7 @@
                 gg.fromTo(".stock1-banner .banner",{
                     x:"-15vw",
                 },{
-                    delay:2,
+                  
                     x:0,
                     duration:3.5
                 },"<+0.5").fromTo(".stock1-banner .img_box .svg2",{
@@ -641,7 +638,7 @@
                     opacity:0
                
                 },{
-                    delay:2.8,
+             
                     opacity:1,
                     x:0,
                     duration:2
@@ -681,7 +678,7 @@
                     gg.fromTo(".stock2-top .box",{
                         x:-30,
                         opacity:0,
-                        ease:"none",
+              
                     },{
                         opacity:1,
                         x:0,
@@ -741,12 +738,7 @@
                         opacity:1,
                         y:0,
                         duration:0.6
-                    }).to($(item).find(".box-bg"),{
-                        opacity:0.6,
-                        y:"-100%",
-                     
-                        duration:1
-                    },"<+0.2")
+                    })
                 })
                 
             }
@@ -883,7 +875,7 @@
                     opacity:1,
                     y:0,
                     duration:0.8,
-                    stagger:0.3
+                    stagger:0.15
                 }).fromTo(".stock4 .swiper .swiper-pagination",{
                     y:30,
                     opacity:0
@@ -911,6 +903,11 @@
                 },"<")
             }
             stock4Animation()
+            let top_tl = gsap.timeline({delay:0.5});
+                top_tl.from('.top_logo_div .img_box img', 1, {y:100});
+                $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
+                    top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
+                });
         });
 
     </script>

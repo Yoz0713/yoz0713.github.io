@@ -189,12 +189,7 @@ body{
                     opacity: 0.4;
                     height: 100%;
                 }
-                .hot{
-                    position: absolute;
-                    right: 0.8vw;
-                    top:-1.2vw;
-                    transform: rotate(20deg);
-                }
+             
                 p{
                     pointer-events: none;
                     white-space: nowrap;
@@ -326,7 +321,7 @@ body{
                     position: relative;
                     > h2{
                         color: #fff;
-                        line-height: 1;
+                        line-height: 1.1;
                    
                     }
                     .price{
@@ -335,8 +330,9 @@ body{
                         justify-content: flex-end;
                        
                         img{
-                            height: 1.4vw;
-                        
+                            height: 1.3vw;
+                            margin-top: 0.09vw;
+                            margin-left: 0.2vw;
                         }
                         h2{
                         
@@ -353,6 +349,10 @@ body{
                 width: 10vw;
                 top: -0.4vw;
                 left: 1vw;
+                z-index: 20;
+                &:hover{
+                    transform: none;
+                }
             }
            
         }

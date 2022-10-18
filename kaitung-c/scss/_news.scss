@@ -190,7 +190,7 @@
             justify-content: flex-end;
             align-items: center;
             .box1{
-                margin-right: 3vw;
+                
                button{
                 position: relative;
                 margin-right:0.5vw;
@@ -215,7 +215,7 @@
                     left: 50%;
                     transform: translateX(-50%);
                     opacity: 0;
-                    bottom: -1.5vw;
+                    bottom: 0vw;
                     border: 0.3vw solid ;
                     border-color:#0080C5 transparent transparent transparent;
                 }
@@ -263,7 +263,7 @@
                         position: absolute;
                         left: 0.72vw;
                         opacity: 0;
-                        bottom: -1.4vw;
+                        bottom: 0vw;
                         border: 0.3vw solid ;
                         border-color:#0080C5 transparent transparent transparent;
                     }
@@ -321,16 +321,27 @@
                 transform: rotate(180deg);
             }
         }
+        a{
+            display: flex;
+            color: #000;
+            height: 100%;
+        }
+        .card-ph{
+            overflow: hidden;
+            a{
+                & > :nth-child(2){
+                    height: 30vw;
+                }
+            }
+           
+        }
         .card-1{
             display: flex;
             grid-column: 1 / 3;
             grid-row: 1;
             .imgBox{
                 flex: 0 0 50%;
-                img{
-        
-                 
-                }
+              
                 &:after{
                     right: 0;
                     top: 0.6vw;
@@ -373,10 +384,12 @@
         }
         .card-2{
             display: flex;
-            flex-direction: column;
+        
             grid-column: 3 / 4;
             grid-row: 1 / 3;
-
+            a{
+                flex-direction: column;
+            }
             .imgBox{
                 background-color: #fff;
                 flex: 1 1 50%;
@@ -431,8 +444,11 @@
             flex-direction: column;
             grid-column: 1 / 2;
             grid-row: 2 / 4;
+            a{
+                flex-direction: column;
+            }
             .imgBox{
-         
+               
                 img{
                     width: 100%;
                     
@@ -485,6 +501,9 @@
             flex-direction: column;
             grid-column: 2 / 3;
             grid-row: 2 / 4;
+            a{
+                flex-direction: column;
+            }
             .imgBox{
              
                 img{
@@ -536,7 +555,9 @@
             flex-direction: column;
             grid-column: 3 / 4;
             grid-row: 3 / 5;
-           
+            a{
+                flex-direction: column;
+            }
             .imgBox{
               
                 img{
@@ -641,9 +662,11 @@
             flex-direction: column;
             grid-column: 1 / 2;
             grid-row: 5 / 7;
-           
+            a{
+                flex-direction: column;
+            }
             .imgBox{
-              
+       
                 img{
                     width: 100%;
                     
@@ -662,6 +685,7 @@
                 flex-direction: column;
                 background-color: #fff;
                 padding:1vw 3vw;
+         
                 .hash-tag{
                     display: flex;
                     color: #0080C5;
@@ -695,7 +719,9 @@
             flex-direction: column;
             grid-column: 2 / 3;
             grid-row: 5 / 7;
-           
+            a{
+                flex-direction: column;
+            }
             .imgBox{
               
                 img{
@@ -748,7 +774,9 @@
             flex-direction: column;
             grid-column: 3 / 4;
             grid-row: 5 / 7;
-           
+            a{
+                flex-direction: column;
+            }
             .imgBox{
               
                 img{
@@ -876,7 +904,7 @@
                     cursor: pointer;
                     img{
                         width: 20vw;
-                        transition: 0.5s;
+                    
                     }
                     &:hover img{
              
@@ -1012,7 +1040,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 .box1{
-                    margin-right: 3vw;
+                
                    button{
                     position: relative;
                     margin-right:1vw;
@@ -1138,6 +1166,9 @@
                 margin-bottom: 5vw;
                 grid-column:none;
                 grid-row: none;
+                a{
+                    flex-direction: column;
+                }
                 & > :nth-child(2){
                     padding: 5vw;
                 }
@@ -1233,7 +1264,7 @@
                         cursor: pointer;
                         img{
                             width: 30vw;
-                            transition: 0.5s;
+                      
                         }
                         &:hover img{
                  
@@ -1305,7 +1336,7 @@
                     justify-content: flex-start;
                     align-items: center;
                     .box1{
-                        margin-right: 3vw;
+                    
                        button{
                         position: relative;
                         margin-right:1vw;

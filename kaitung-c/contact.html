@@ -13,17 +13,15 @@
     <link rel="stylesheet" href="style/all.min.css">
 </head>
 <body>
-    <!-- loading -->
-    <div class="loading_div flex-box i-center j-center">
-        <div class="logo_div">
-           <img class="w-100" src="img/SVG/logo.svg" alt="logo">
-        </div>
-        <div class="spinner_div">
-           <img src="img/SVG/car_icon.svg" alt="">
-        </div>
+  
+  <div class="loading_div flex-box i-center j-center loading_div2">
+    <div class="logo_div">
+       <img class="w-100" src="img/SVG/logo.svg" alt="logo">
     </div>
-    <!-- loading END -->
-
+    <div class="spinner_div">
+       <img src="img/SVG/car_icon.svg" alt="">
+    </div>
+</div>
     <div class="menu flex-box i-center " >
         <div class="btn_box">
             <button class="hamburger hamburger--stand is-active" type="button">
@@ -39,7 +37,7 @@
             <a href="rent.html"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
             <a href="./news.html"><span class="s_txt_box">新聞資訊</span><span class="a_line"></span></a>
             <a href="contact.html"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
-            <a href="./contact.html"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
+            <a href="./contact.html"><span class="s_txt_box" style="color:#01ffff ;">高價收購電動車</span><span class="a_line"></span></a>
             <div class="ph share_box">
                 <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
                 <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="LINE"></a>
@@ -71,10 +69,10 @@
                   歡迎留言給我們!</p> 
               <div class="booking">
                   <div class="booking-left">
-                    <p class="ch_text_m">預約鑑價</p>
+                    <p class="ch_text_m">預約試乘</p>
                   </div>
                   <div class="booking-right">
-                    <p class="ch_text_m">預約試乘</p>
+                    <p class="ch_text_m">預約鑑價</p>
                   </div>
               </div>
             </div>
@@ -299,13 +297,12 @@
            function firstPageAnimation(){
             let gg = gsap.timeline()
             gg.fromTo(".contact1-bg",{
-    
-                x:"10vw"
+              width:"150%"
             },{
-              x:0,
+              width:"100%",
 
-              duration:1.5,
-              delay:2.5
+              duration:2,
+      
             }).fromTo(".contact1-left-para h1",{
                 opacity:0,
                 y:30
@@ -339,18 +336,17 @@
               y:0,
               opacity:1,
               duration:1,
-              delay:3.5,
-              stagger:0.3
+              delay:1.5,
+    
             }).fromTo(".contact1-right .form-box input",{
-                width:0,
-            
+              opacity:0,
+                y:30
             },{
-         
-       
+              y:0,
+              opacity:1,
               duration:1,
-              width:"100%",
-              stagger:0.3
-            },"<+1").fromTo(".contact1-right .submit-box",{
+      
+            },"<").fromTo(".contact1-right .submit-box",{
                 y:30,
                 opacity:0
             
@@ -360,54 +356,15 @@
        
               duration:1,
          
-            },"<+1.5")
+            },"<+0.3")
            }
            firstPageAnimation()
-           function secondPageAnimation(){
-            let gg = gsap.timeline({
-                    scrollTrigger:{
-                        trigger:".footerTop",
-                        start:"top 80%",
-                      
-                    }
-                })
-      
-                gg.fromTo(".footerTop .box-title",{
-                    x:-30,
-                    opacity:0
-                },{
-                    opacity:1,
-                    x:0,
-                    duration:1.2,
-        
-                }).fromTo(".footerTop .box .ch_text_xs",{
-                    y:15,
-                    opacity:0
-                },{
-                    opacity:1,
-                    y:0,
-                    duration:0.5,
-             
-                })
-                let gg2 = gsap.timeline({
-                    scrollTrigger:{
-                        trigger:".footerTop",
-                        start:"top 80%",
-                      
-                    }
-                })
-      
-                gg2.fromTo(".footerTop-right img",{
-                    y:30,
-                    opacity:0
-                },{
-                    opacity:1,
-                    y:0,
-                    duration:1.2,
-        
-                })
-           }
-           secondPageAnimation()
+   
+           let top_tl = gsap.timeline({delay:0.5});
+                top_tl.from('.top_logo_div .img_box img', 1, {y:100});
+                $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
+                    top_tl.from($(this).find('img'), 1, {y:60}, '<0.2');
+                });
         });
 
     </script>

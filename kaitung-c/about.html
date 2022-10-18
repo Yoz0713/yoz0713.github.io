@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- loading -->
-    <div class="loading_div flex-box i-center j-center">
+    <div class="loading_div flex-box i-center j-center loading_div2">
         <div class="logo_div">
            <img class="w-100" src="img/SVG/logo.svg" alt="logo">
         </div>
@@ -40,7 +40,7 @@
             <a href="rent.html"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
             <a href="./news.html"><span class="s_txt_box">新聞資訊</span><span class="a_line"></span></a>
             <a href="contact.html"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
-            <a href="./contact.html"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
+            <a href="./contact.html"><span class="s_txt_box" style="color:#01ffff ;">高價收購電動車</span><span class="a_line"></span></a>
             <div class="ph share_box">
                 <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
                 <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="LINE"></a>
@@ -110,7 +110,10 @@
         <div class="flex-box">
           <div class="logo_item flex-box">
             <div class="logo_box">
-                <img class=" w-100" src="img/SVG/logo.svg" alt="">
+                <a href="./index.html">
+                    <img class=" w-100" src="img/SVG/logo.svg" alt="">
+                </a>
+
             </div>
             <div class="item_box flex-box i-center">
                <a href="">鎧騰國際車業</a>
@@ -145,7 +148,7 @@
                 $(".about1-right-para img").css("filter","brightness(0.3)")
             })
             }
-           
+ 
 
             //firstPageAnimation
          
@@ -156,11 +159,11 @@
                     },{
                         transform:"scale(1)",
                         duration:2,
-                        delay:2.5,
+                  
                     }).fromTo(".about1-right-imgBox img",{
-                        width:"110%"
+                        transform:"scale(1.1)"
                     },{
-                        width:"100%",
+                        transform:"scale(1)",
                         duration:1,
                   
                     },"<").fromTo(".about1-left-para",{
@@ -217,7 +220,13 @@
                 if(window.innerWidth <= 850 ){
                     firstPageAnimationPh()
                 }
-               
+                let top_tl = gsap.timeline({delay:0.5});
+                top_tl.from('.top_logo_div .img_box img', 1, {y:100});
+                $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
+                    top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
+                });
+
+             
             //firstPageAnimation
         });
 

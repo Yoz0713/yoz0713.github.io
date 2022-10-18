@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="js/plugins/swiper8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/hamburgers.min.css">
     <link rel="stylesheet" href="style/all.min.css">
+    
 </head>
 <body>
     <!-- loading -->
@@ -41,7 +43,7 @@
             <a href="rent.html"><span class="s_txt_box">租賃專區</span><span class="a_line"></span></a>
             <a href="./news.html"><span class="s_txt_box">新聞資訊</span><span class="a_line"></span></a>
             <a href="contact.html"><span class="s_txt_box">預約試乘</span><span class="a_line"></span></a>
-            <a href="./contact.html"><span class="s_txt_box">高價收購電動車</span><span class="a_line"></span></a>
+            <a href="./contact.html"><span class="s_txt_box" style="color:#01ffff ;">高價收購電動車</span><span class="a_line"></span></a>
             <div class="ph share_box">
                 <a href="#" target="_blank"><img src="img/SVG/fb_icon.svg" alt="FB"></a>
                 <a href="#" target="_blank"><img src="img/SVG/line_icon.svg" alt="LINE"></a>
@@ -52,16 +54,8 @@
     </div>
 
     <section class="index1">
-            <div class="click">
-                <p>click</p>
-            </div>
-            <img src="./img/stock/SVG/lambor.svg" class="follow-img">
-            <img src="./img/stock/SVG/mini.svg" class="follow-img">
-            <img src="./img/stock/SVG/mazda.svg" class="follow-img">
-            <img src="./img/stock/SVG/bmw.svg" class="follow-img">
-            <img src="./img/stock/SVG/porshe.webp" class="follow-img">
-            <img src="./img/stock/SVG/genesis.svg" class="follow-img">
-            <img src="./img/stock/SVG/volk.webp" class="follow-img">
+
+   
         <div class="top_logo_div">
             <div class="img_box">
               <img src="img/SVG/logo.svg" alt="">
@@ -105,10 +99,9 @@
                         </picture>
                       </div>
                       <div class="video-play play-button">
-                        <a href="#">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=uTNxbjazqkI&ab_channel=Volkswagen" class="fancybox">
                             <img src="./img/news/SVG/big-play-button.svg">
                         </a>
-                     
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -640,9 +633,9 @@
           </div>
         </div>
     </footer>
-    
-
     <script src="js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="./js/plugins/fancyBox.min.js"></script>
+
     <script src="js/plugins/gsap3/dist/gsap.min.js"></script>
     <script src="js/plugins/gsap3/dist/ScrollTrigger.min.js"></script>
     <script src="js/plugins/swiper8/swiper-bundle.min.js"></script>
@@ -840,9 +833,9 @@
             });
 
             $.each($('.index3 .hotcar .car_list .item'), function (index, valueOfElement) { 
-                hotcar_tl.from($(this).find('.mv_square'), 0.8, {x:'100%'}, '<0.1');
-                hotcar_tl.to($(this).find('.mv_square'), 0.8, {x:'-100%'}, '<0.1');
-                hotcar_tl.from($(this).find('a img'), 0.8, {opacity:0}, '<0.1');
+                hotcar_tl.from($(this).find('.mv_square'), 0.8, {x:'100%'}, '<');
+                hotcar_tl.to($(this).find('.mv_square'), 0.8, {x:'-100%'}, '<');
+                hotcar_tl.from($(this).find('a img'), 0.8, {opacity:0}, '<');
             });
 
             let search_tl=gsap.timeline({
@@ -868,7 +861,7 @@
             let advantage_tl=gsap.timeline({
                 scrollTrigger: {
                     trigger: ".index4 .advantage",
-                    //once:true, // 執行1次
+                    once:true, // 執行1次
                     //pin: true,   // 固定畫面
                     start: "top bottom", // 開始位置
                     end: "bottom bottom", // 結束位移距離
@@ -1072,50 +1065,34 @@
             //     "<+=1.5"
             // );
             // })
-
-            $(".index1").mousemove(function(e){
-                gsap.set(clickCursor, {
-            xPercent: -50,
-            yPercent: -50,
-           
+            $('[data-fancybox]').fancybox({
+                youtube : {
+                    controls : 0,
+                    showinfo : 0,
+                    
+                },
+                fullScreen : {
+                    autoStart: true
+                }
             });
-                gsap.to(clickCursor, {
-                duration: 0.1,
-                overwrite: "auto",
-                x: e.pageX,
-                y: e.pageY,
-       
-                ease: "none"
+        
+                    setTimeout(() => {
+                 $('.loading_div').addClass('close');
+                 setTimeout(()=>{
+                     $('.loading_div').css("display","none")
+                 },2500)
+            
+                //-- top LOGO 動態 --
+                let top_tl = gsap.timeline({delay:0.5});
+                top_tl.from('.top_logo_div .img_box img', 1, {y:100});
+                $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
+                    top_tl.from($(this).find('img'), 1, {y:60}, '<0.2');
                 });
-                
-            })
 
-            $(".index1").click((e)=>{
-                let random = Math.floor(Math.random()*FollowBox.length)
-                gsap.to(FollowBox[random],{
-                    x: e.pageX,
-                    y: e.pageY,
-                    stagger:0.3,
-                    duration:0.001,
-               
-                    overwrite:"auto"
-                })
-                let gg = gsap.timeline()
-               
-                gg.to(FollowBox[random],{
-                    y: e.pageY+100,
-                    stagger:0.3,
-                    opacity:1,
-                    duration:0.8,
-                    overwrite:"auto"
-                }).to(FollowBox[random],{
-                   opacity:0,
-                   duration:0.5,
-                   overwrite:"auto"
-                })
-            })
-         
+            }, 2000);
             //banner logo fall
+       
+
         });
 
     </script>

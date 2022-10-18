@@ -20,7 +20,7 @@
             <img src="./img/1x/round-180deg-90.webp" class="round2-180deg-90">
             <img src="./img/1x/round-180deg.webp" class="round-180deg">
             <img src="./img/1x/round-yellow.webp" class="round-yellow">
-            <img src="./img/1x/round-hole-s.webp" class="round-hole-s">
+            <img src="./img/SVG/round-rotate.svg" class="round-hole-s">
             <img src="./img/1x/round-45deg.webp" class="round-45deg">
             <img src="./img/1x/round-180deg.webp" class="round2-180deg">
         </div>
@@ -223,7 +223,9 @@
                     <img src="./img/1x/Slide_10_ph.webp" class="phone">
                 </div>
             </div>
-   
+            <div class="swiper-pagination">
+                
+            </div>
             <div class="swiper-button-prev swiper-button-white"></div><!--左箭头。如果放置在swiper外面，需要自定义样式。-->
             <div class="swiper-button-next swiper-button-white"></div><!--右箭头。如果放置在swiper外面，需要自定义样式。-->
             
@@ -289,14 +291,15 @@
                         <option value="台北">台北市</option>
                         <option value="桃園">桃園市</option>
                         <option value="台中">台中市</option>
+                        <option value="新竹">新竹市</option>
                     </select>
                 </div>
                 <div class="form-box">
                     <p>購屋預算</p>
                     <select name="" id="">
-                        <option value="一千萬內">一千萬內</option>
-                        <option value="兩千萬內">兩千萬內</option>
-                        <option value="五千萬內">五千萬內</option>
+                        <option value="一千萬內">1000~1200萬</option>
+                        <option value="兩千萬內">1200~1500萬</option>
+                        <option value="五千萬內">1500萬以上</option>
                     </select>
                 </div>
                 <div class="form-box">
@@ -322,12 +325,7 @@
             <img src="./img/SVG/toTop-R.svg" class="toTop">
         </a>
     </section>
-    <section class="index11">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.8487526554953!2d120.6577435292627!3d24.192941422339647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469164911d473d9%3A0x3302721d0fb4b1a4!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5rCR6Iiq6LevNDjomZ8!5e0!3m2!1szh-TW!2stw!4v1665731741791!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <a href="#">
-            <img src="./img/SVG/toTop-R.svg" class="toTop">
-        </a>
-    </section>
+   
     <footer>
         <div class="footer-bg">
             <img src="./img/1x/footer-bg.png">
@@ -352,6 +350,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script>
           $(document).ready(()=>{
+            var img_width = $('.index9 > img').width();
+
+            //console.log(img_width);
+            var img_avg = 3.5;
+
+            $('.index9').scrollLeft(Math.round(img_width / img_avg));
             function firstPageAniamtion(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
@@ -371,6 +375,11 @@
                 },{
                     opacity:window.innerWidth > 850 ? 1 : 0,
                     stagger:0.2
+                },"<").fromTo(".index1-booking img",{
+                    opacity:1
+                },{
+                    opacity:1,
+                    duration:0.001
                 },"<")
                 let gg2 = gsap.timeline()
                 gg2.fromTo(".index1-bg img",{
@@ -409,13 +418,6 @@
                  
                     opacity:1,
                    duration:1
-                },"<-0.8").fromTo(".index1-booking",{
-                    opacity:0,
-                 
-                },{
-                 
-                    opacity:1,
-                   duration:1
                 },"<-0.8")
 
                 let gg3 = gsap.timeline()
@@ -431,9 +433,7 @@
             }
             firstPageAniamtion()
             
-            let scene = document.querySelector(".index2-para-imgBox")
-            let parallax = new Parallax(scene);
-            parallax.limit(false, 10);
+           
             function secondPageAniamtion(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
@@ -459,8 +459,10 @@
                     duration:0.8
                 },"<+0.5").fromTo(".index2-para-imgBox img",{
                     opacity:0,
-                    scale:5
+                    filter:"blur(2)",
+                    scale:1.2
                 },{
+                    filter:"blur(1)",
                     scale:1,
                     opacity:1,
                     duration:0.8,
@@ -690,6 +692,21 @@
                         start:"top 80%"
                     }
                 })
+                let gg2 =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:"form",
+                        start:"top 80%",
+                        toggleActions:"play none none reverse"
+                    }
+                })
+                gg2.fromTo(".index1-booking",{
+                    opacity:1,
+                    
+                },{
+                    opacity:0,
+                    duration:0.5,
+                })
+
                 gg.fromTo("form .form-box",{
                     opacity:0,
                     y:15
@@ -698,7 +715,7 @@
                     opacity:1,
                     duration:0.8,
                     stagger:0.3
-                }).fromTo("form .form-para p",{
+                },"<").fromTo("form .form-para p",{
                     opacity:0,
                     y:15
                 },{
@@ -769,7 +786,10 @@
                 speed: 1000,
                 effect : 'fade',
                 loop:true,
-                
+                pagination: {
+                el: '.index7 .swiper-pagination',
+             
+            },
             navigation: {
                 nextEl: '.index7 .swiper-button-next',
                 prevEl: '.index7 .swiper-button-prev',

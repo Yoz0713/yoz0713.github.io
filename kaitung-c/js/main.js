@@ -3,20 +3,16 @@ $(document).ready(function () {
     let loading_tl=gsap.timeline({delay:0.4});
         loading_tl.to('.loading_div .logo_div img', 0.5, {y: 0});
 
-     setTimeout(() => {
-         $('.loading_div').addClass('close');
         setTimeout(()=>{
-            $('.loading_div').css("display","none")
-        },2500)
-    
-         //-- top LOGO 動態 --
-         let top_tl = gsap.timeline({delay:0.5});
-         top_tl.from('.top_logo_div .img_box img', 1, {y:100});
-         $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
-             top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
-         });
-
-     }, 2000);
+            $(document).ready(function () {
+                let gg = gsap.timeline()
+                gg.to(".loading_div2",{
+                    opacity:0,
+                    duration:0.3,
+                    pointerEvents:"none"
+                })
+        });
+        },500)
 
 
 
@@ -112,29 +108,7 @@ $(document).ready(function () {
             tl.to($('.menu .list_box'), 0.5, {opacity: menu_obj.opacity, x: menu_obj.x, visibility: menu_obj.visibility}, '<0.4');
         }
     });
-    //-- menu拆字 --
-    $.each($('.menu .list_box a>span'), function (index, valueOfElement) { 
-       let _this=$(this);
-       let txt=$(this).html();
-       let txt_arr= txt.split(''); 
-       $(this).html('');
-       $.each(txt_arr, function (index, valueOfElement) { 
-         _this.append(`<span class="s_txt">${this}</span>`);
-       });
-    });
-
-    $('.menu .list_box a').mouseenter(function () { 
-        var tl_mu = gsap.timeline();
-      
-        $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
-            tl_mu.to($(this), 0.4, {y:-20}, '<0.03');
-        });
-        $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
-            let display_num=index==0 ? '<0.2':'<0.03';
-            tl_mu.fromTo($(this), 0.4, {y:20},{y:0}, display_num);
-        });
-        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
-    });
+  
    
 
     
@@ -205,8 +179,11 @@ $(document).ready(function () {
         let path = reg.exec(pathname)
         switch (path[0]){
             case `about.${fileName[fileName.length-1]}`:{
+               
+                $($($(`.list_box a`)[0])).html(`<p>ABOUT\xa0 US</p>`)
                 $($(`.list_box a`)[0]).css("pointer-events","none")
                 $($(`.list_box a`)[0].childNodes).css("border-bottom","2px solid #fff")
+              
                 break
             }
             case `buyIt.${fileName[fileName.length-1]}`:{
@@ -214,34 +191,41 @@ $(document).ready(function () {
                 break;
             }
             case `stock.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($(`.list_box a`)[1]).css("pointer-events","none")
                 $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `stockInner.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `purchase.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[2]).find("span").eq(0)).text("PURCHASING")
                 $($(`.list_box a`)[2]).css("pointer-events","none")
                 $($(`.list_box a`)[2].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `rent.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[3])).html(`<p>RENTAL\xa0CAR</p>`)
                 $($(`.list_box a`)[3]).css("pointer-events","none")
                 $($(`.list_box a`)[3].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `news.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
                 $($(`.list_box a`)[4]).css("pointer-events","none")
                 $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `newsInner.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
                 $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
                 break;
             }
             case `contact.${fileName[fileName.length-1]}`:{
+                $($($(`.list_box a`)[5]).find("span").eq(0)).text("APPOINTMENT")
                 $($(`.list_box a`)[5]).css("pointer-events","none")
                 $($(`.list_box a`)[5].childNodes).css("border-bottom","2px solid #fff")
                 break;
@@ -254,6 +238,30 @@ $(document).ready(function () {
           
            
         }
+
+          //-- menu拆字 --
+    $.each($('.menu .list_box a>span'), function (index, valueOfElement) { 
+       let _this=$(this);
+       let txt=$(this).html();
+       let txt_arr= txt.split(''); 
+       $(this).html('');
+       $.each(txt_arr, function (index, valueOfElement) { 
+         _this.append(`<span class="s_txt">${this}</span>`);
+       });
+    });
+
+    $('.menu .list_box a').mouseenter(function () { 
+        var tl_mu = gsap.timeline();
+      
+        $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
+            tl_mu.to($(this), 0.4, {y:-24}, '<0.03');
+        });
+        // $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
+        //     let display_num=index==0 ? '<0.2':'<0.03';
+        //     tl_mu.fromTo($(this), 0.4, {y:20},{y:0}, display_num);
+        // });
+        // tl_mu.to($(this).find('.a_line'), 0.3, {width: '50%'}, 'start');
+    });
     }
     markMenu()
     //markMenu
