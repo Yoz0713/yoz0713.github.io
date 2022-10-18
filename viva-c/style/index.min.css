@@ -563,12 +563,22 @@
 
 .index9 {
   width: 100%;
-  height: 100vh;
+  height: 50vw;
   position: relative;
 }
 .index9 img {
   width: 100%;
   height: 100%;
+}
+.index9-dot {
+  position: absolute;
+  top: 13.5vw;
+  left: 61vw;
+  z-index: 20;
+  filter: drop-shadow(0 0 5px rgba(216, 3, 74, 0.4392156863));
+}
+.index9-dot img {
+  width: 0.8vw;
 }
 .index9 > img {
   position: absolute;
@@ -1475,6 +1485,16 @@ footer .footer-para :nth-child(2) {
     bottom: 0;
     right: 0;
     margin: auto;
+  }
+  .index9-dot {
+    position: absolute;
+    top: 50vw;
+    left: 192vw;
+    z-index: 20;
+    filter: drop-shadow(0 0 5px rgba(216, 3, 74, 0.4392156863));
+  }
+  .index9-dot img {
+    width: 4vw;
   }
   .index10 {
     width: 100%;

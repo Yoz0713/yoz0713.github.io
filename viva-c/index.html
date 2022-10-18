@@ -248,6 +248,9 @@
             <img src="./img/1x/bg_07.webp" class="computer">
             <img src="./img/1x/bg_07_ph.webp" class="phone">
         </div>
+        <div class="index9-dot">
+            <img src="./img/SVG/map.svg" alt="">
+        </div>
         <img src="./img/1x/map.webp">
         <a href="#">
             <img src="./img/SVG/toTop.svg" class="toTop computer">
@@ -353,7 +356,7 @@
             var img_width = $('.index9 > img').width();
 
             //console.log(img_width);
-            var img_avg = 3.5;
+            var img_avg = 1.9;
 
             $('.index9').scrollLeft(Math.round(img_width / img_avg));
             function firstPageAniamtion(){
@@ -643,7 +646,14 @@
                     y:0,
                     opacity:1,
                     duration:1.5
-                },"<+0.8")
+                },"<+0.8").fromTo(".index9-dot",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:1.5
+                },"<+0.5")
             }
             ninthPageAnimation()
             function tenthPageAnimation(){
