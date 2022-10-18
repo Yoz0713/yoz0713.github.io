@@ -1367,6 +1367,26 @@ footer{
                     }
                 }
             }
+            .swiper-pagination{
+            
+               
+                .swiper-pagination-bullet{
+                    display: inline-block;
+                    background-color: #e92848;
+                    width: 2vw;
+                    height: 2vw;
+                    margin-right: 0.6vw;
+                    opacity: 1;
+                    
+                }
+                & :nth-child(1){
+                    margin-right: 1.5vw;
+                }
+                .swiper-pagination-bullet-active{
+                    background-color: transparent;
+                    border: 2px solid #e92848;
+                }
+            }
             .swiper-button-next{
                 top: 80vw;
                 &::after{
