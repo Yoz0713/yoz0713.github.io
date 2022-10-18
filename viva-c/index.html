@@ -363,8 +363,27 @@
             }
           
       
-          
-         
+            function topAnimation(){
+           
+                $(".toTop").each((i,item)=>{
+                    let gg = gsap.timeline({
+                        scrollTrigger:{
+                            trigger:item,
+                            start:"top 80%"
+                        }
+                    })
+
+                    gg.fromTo(item,{
+                        opacity:0,
+                        y:20
+                    },{
+                        opacity:1,
+                        y:0,
+                        duration:0.8
+                    })
+                })
+            }
+            topAnimation()
             function firstPageAniamtion(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
