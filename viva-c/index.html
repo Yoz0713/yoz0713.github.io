@@ -390,7 +390,8 @@
         <div class="index9-hand phone">
             <img src="https://ws.srl.tw/product_html/case202108251357572/img/img2021082515375891.png">
         </div>
-        <img src="./img/1x/map.webp">
+        <img src="./img/1x/map.png" class="computer">
+        <img src="./img/1x/map.webp" class="phone">
       
     </section>
     <section class="index10" id="future">
@@ -495,13 +496,11 @@
             //console.log(img_width);
             var img_avg = 1.9;
             if(window.innerWidth < 500){
-              
-                $('.index9').scrollLeft(Math.round(img_width / img_avg));
+                $(".index9").scrollLeft(img_width / img_avg)
+                
             }
-        
-            $(".index9").on("swipe",function(){
-                $(".index9-hand").remove();
-                });
+            
+          
       
        
             function firstPageAniamtion(){
@@ -728,24 +727,31 @@
                 let gg =gsap.timeline({
                     scrollTrigger:{
                         trigger:".index5",
-                        start:"top center"
+                        start:"top bottom"
                     }
                 })
-                gg.fromTo(".index5 .situation",{
-                    opacity:0,
-                    y:15
-                },{
-                    y:0,
-                    opacity:1,
-                    duration:1.5
-                },"<+0.3").fromTo(".index5 .swiper2 .swiper-pagination",{
+                gg.fromTo(".index5 .swiper2 .swiper-slide > img",{
                     opacity:0,
                     y:15
                 },{
                     y:0,
                     opacity:1,
                     duration:1
-                },"<+0.5").fromTo(".index5 .swiper2 .swiper-slide img",{
+                }).fromTo(".index5 .situation",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:0.8
+                },"<+0.5").fromTo(".index5 .swiper2 .swiper-pagination",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:1
+                },"<+0.5").fromTo(".index5 .swiper2 .para img",{
                     opacity:0,
                     y:15
                 },{
@@ -759,21 +765,21 @@
                     y:0,
                     opacity:1,
                     duration:1
-                },"<+0.5").fromTo(".index5 .half-round",{
+                },"<+0.5").fromTo(".index5 .round",{
                     opacity:0,
                     y:30
                 },{
                     y:0,
                     opacity:1,
                  
-                },"<+0.6").fromTo(".index5 .round",{
+                },"<").fromTo(".index5 .half-round",{
                     opacity:0,
                     y:30
                 },{
                     y:0,
                     opacity:1,
                  
-                },"<")
+                },"<+0.8")
                 
               
                 
