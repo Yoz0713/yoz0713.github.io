@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 402.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#_未命名漸層_2);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" width="91" height="402.25"/>
+    </clipPath>
+    <linearGradient id="_未命名漸層_2" data-name="未命名漸層 2" x1="545.54" y1="112.83" x2="927.84" y2="112.83" gradientTransform="translate(329.58 -545.54) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d65a34"/>
+      <stop offset="1" stop-color="#cd1547"/>
+    </linearGradient>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g class="cls-3">
+      <g>
+        <circle class="cls-1" cx="202.15" cy="196.99" r="191.15"/>
+        <circle class="cls-2" cx="216.75" cy="191.15" r="191.15"/>
+      </g>
+    </g>
+  </g>
+</svg>
