@@ -57,6 +57,7 @@ $para-txt:'Noto Serif JP', serif;
     background: linear-gradient(90deg, $bg-orange 0%, $bg-red 100%);
     opacity: 0;
     transition: 0.8s;
+    pointer-events: none;
     ul{
        
         width: 95%;
@@ -85,6 +86,7 @@ $para-txt:'Noto Serif JP', serif;
     }
 }
 .menu-active{
+    pointer-events: all;
     top: 0;
     opacity: 1;
 }

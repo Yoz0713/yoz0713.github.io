@@ -54,6 +54,7 @@
   background: linear-gradient(90deg, #d75b34 0%, #d8034a 100%);
   opacity: 0;
   transition: 0.8s;
+  pointer-events: none;
 }
 .hamburger-menu ul {
   width: 95%;
@@ -86,6 +87,7 @@
 }
 
 .menu-active {
+  pointer-events: all;
   top: 0;
   opacity: 1;
 }
