@@ -494,9 +494,8 @@
     <script>
       
           $(document).ready(()=>{
-            var img_width = $('.index9 > img').width();
-            //console.log(img_width);
-            var img_avg = 1.9;
+           
+          
             if(window.innerWidth < 500){
                 let flag = false
                 document.addEventListener("scroll",((e)=>{
@@ -1227,6 +1226,9 @@
 
 
           $(document).load(()=>{
+            var img_width = $('.index9 > img').width();
+     
+            var img_avg = 1.9;
             $(".index9").scrollLeft(img_width / img_avg)
                   
           })
