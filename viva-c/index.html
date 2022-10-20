@@ -502,8 +502,7 @@
                 document.addEventListener("scroll",((e)=>{
                  
                     
-                    $(".index9").scrollLeft(img_width / img_avg)
-                  
+                   
             
                 }),{once:true})
                 
@@ -1227,7 +1226,10 @@
           })
 
 
-          
+          $(document).load(()=>{
+            $(".index9").scrollLeft(img_width / img_avg)
+                  
+          })
     </script>
 </body>
 </html>
