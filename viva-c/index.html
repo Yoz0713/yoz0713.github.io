@@ -498,7 +498,14 @@
             //console.log(img_width);
             var img_avg = 1.9;
             if(window.innerWidth < 500){
-                $(".index9").scrollLeft(img_width / img_avg)
+                let flag = false
+                document.addEventListener("scroll",((e)=>{
+                 
+                    
+                    $(".index9").scrollLeft(img_width / img_avg)
+                  
+            
+                }),{once:true})
                 
             }
             
@@ -625,7 +632,7 @@
                 let gg =gsap.timeline({
                     scrollTrigger:{
                         trigger:".index3",
-                        start:"top center"
+                        start:"top 80%"
                     }
                 })
                 gg.fromTo(".index3-bg .third-page-round",{
@@ -729,17 +736,24 @@
                 let gg =gsap.timeline({
                     scrollTrigger:{
                         trigger:".index5",
-                        start:"top bottom"
+                        start:"top center"
                     }
                 })
-                gg.fromTo(".index5 .swiper2 .swiper-slide > img",{
+                gg.fromTo(".index5 .swiper2 .swiper-wrapper",{
                     opacity:0,
                     y:15
                 },{
                     y:0,
                     opacity:1,
                     duration:1
-                }).fromTo(".index5 .situation",{
+                }).fromTo(".index5 .swiper2 .swiper-button-white",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:1,
+                    duration:1
+                },"<").fromTo(".index5 .situation",{
                     opacity:0,
                     y:15
                 },{
@@ -781,7 +795,7 @@
                     y:0,
                     opacity:1,
                  
-                },"<+0.8")
+                },"<+0.6")
                 
               
                 

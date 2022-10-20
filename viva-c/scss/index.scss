@@ -554,13 +554,14 @@ $para-txt:'Noto Serif JP', serif;
         }
         .swiper-button-next{
             right: 21vw;
+            filter: drop-shadow(0 0 1px #000);
             &::after{
                 color: #fff;
             }
         }
         .swiper-button-prev{
             left: 18vw;
-            
+            filter: drop-shadow(0 0 1px #000);
             &::after{
            
                 color: #fff;
@@ -1373,6 +1374,9 @@ footer{
             & :nth-child(2){
                 margin-bottom: 5vw;
             }
+            & :nth-child(3){
+                width: 55vw;
+            }
             .line-round{
                 position: absolute;
                 top:15vw;
@@ -1429,6 +1433,9 @@ footer{
             & :nth-child(2){
                 margin-bottom: 5vw;
                 margin-top: 10vw;
+            }
+            & :nth-child(3){
+                width: 55vw;
             }
             .line-round{
                 position: absolute;

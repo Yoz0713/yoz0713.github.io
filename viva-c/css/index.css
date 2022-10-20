@@ -555,12 +555,14 @@
 }
 .index5 .swiper .swiper-button-next {
   right: 21vw;
+  filter: drop-shadow(0 0 1px #000);
 }
 .index5 .swiper .swiper-button-next::after {
   color: #fff;
 }
 .index5 .swiper .swiper-button-prev {
   left: 18vw;
+  filter: drop-shadow(0 0 1px #000);
 }
 .index5 .swiper .swiper-button-prev::after {
   color: #fff;
@@ -1436,6 +1438,9 @@ footer .footer-para :nth-child(2) {
   .index3-para :nth-child(2) {
     margin-bottom: 5vw;
   }
+  .index3-para :nth-child(3) {
+    width: 55vw;
+  }
   .index3-para .line-round {
     position: absolute;
     top: 15vw;
@@ -1489,6 +1494,9 @@ footer .footer-para :nth-child(2) {
   .index4-para :nth-child(2) {
     margin-bottom: 5vw;
     margin-top: 10vw;
+  }
+  .index4-para :nth-child(3) {
+    width: 55vw;
   }
   .index4-para .line-round {
     position: absolute;
