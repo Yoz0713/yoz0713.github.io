@@ -275,7 +275,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:"-5vw",
+                y:"-5.85vw",
                 duration:0.5,
                 stagger:0.03,
            
