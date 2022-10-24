@@ -212,6 +212,7 @@
 .newsInner3{
     display: flex;
     margin-bottom: 5vw;
+    overflow-x: hidden;
     &-left{
         position: relative;
         flex: 0 0 80%;
