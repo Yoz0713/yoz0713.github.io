@@ -311,7 +311,94 @@
 
     <script>
         $(document).ready(function () {
+            function firstPageAnimation(){
+                let gg = gsap.timeline()
+                gg.fromTo(".aboutKai1 .para1 p",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1,
+                    delay:0.5
+                }).fromTo(".aboutKai1 .para1 h1",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1
+                },"<+0.3").fromTo(".aboutKai1 .para1 h4",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1
+                },"<+0.3")
+            }
+        
+            window.onload = function(){
+                firstPageAnimation()
+            }
+            function secondPageAnimation(){
+                let gg =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".aboutKai2-left",
+                        start:"top 80%"
+                    }
+                })
+                gg.fromTo(".aboutKai2-left .para1",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1,
+                
+                }).fromTo(".aboutKai2-left .para2",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1,
+                
+                },"<+0.5")
+                let gg2 =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".aboutKai2-right",
+                        start:"top 80%"
+                    }
+                })
+                gg2.fromTo(".aboutKai2-right .para1",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1,
+                
+                }).fromTo(".aboutKai2-right .para2",{
+                    opacity:0,
+                    y:30,
+                },{
+                    y:0,
+                    duration:0.8,
+                    opacity:1,
+                
+                },"<+0.5").fromTo(".aboutKai2-right .para3",{
+                    opacity:0,
+            
+                },{
+              
+                    duration:1.2,
+                    opacity:1,
+                
+                },"<+0.6")
 
+            }
+            secondPageAnimation()
             var mySwiper3 = new Swiper ('.aboutKai3 .swiper', {
                 loop: true, // 循环模式选项
                 //direction: 'vertical',

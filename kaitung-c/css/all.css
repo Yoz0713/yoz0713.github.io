@@ -15867,6 +15867,10 @@ body {
     height: -moz-fit-content;
     height: fit-content;
     margin-top: -1vw;
+    text-align: justify;
+  }
+  .aboutKai2 br {
+    display: none;
   }
   .aboutKai2-left {
     display: flex;

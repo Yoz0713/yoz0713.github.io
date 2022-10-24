@@ -760,6 +760,10 @@
         letter-spacing: 0.2em;
         height: fit-content;
         margin-top: -1vw;
+        text-align: justify;
+        br{
+            display: none;
+        }
         &-left{
             display: flex;
             flex-direction: column;
