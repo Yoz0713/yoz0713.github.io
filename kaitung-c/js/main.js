@@ -276,15 +276,15 @@ $(document).ready(function () {
             },{
                 y:-30,
                 duration:0.5,
-                stagger:0.1,
+                stagger:0.05,
            
             }).fromTo($(this).find(".s_txt_box2 .s_txt"),{
                 y:0,
                 
             },{
                 y:-50,
-                duration:0.2,
-                stagger:0.1,
+                duration:0.5,
+                stagger:0.03,
            
             },"<+")
             ggMenu.play()
