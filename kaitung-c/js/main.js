@@ -194,6 +194,7 @@ $(document).ready(function () {
             case `stockInner.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[1]).find("p")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `purchase.${fileName[fileName.length-1]}`:{
