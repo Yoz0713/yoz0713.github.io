@@ -75,7 +75,7 @@
             </div>
         </a>
       
-        <a href="./index.html">
+        <a href="./aboutKai.html">
             <div class="about1-right">
           
                 <div class="about1-right-imgBox">
@@ -84,7 +84,7 @@
                     <?xml version="1.0" encoding="UTF-8"?>
                     
                 </div>
-                <a href="./index.html">
+                <a href="./aboutKai.html">
                     <div class="about1-right-para">
                         <img src="./img/SVG/logo.svg">
                         <img src="./img/about/SVG/right-para-logo.svg" class="start">
@@ -184,7 +184,10 @@
                     
                     },"<")
                 }
-                firstPageAnimation()
+                $(window).on("load",function () {
+                    firstPageAnimation()
+        });
+           
                 function firstPageAnimationPh(){
                     let gg = gsap.timeline({
                         scrollTrigger:{

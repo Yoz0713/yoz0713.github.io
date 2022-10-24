@@ -198,36 +198,47 @@ footer .share_box a:nth-last-of-type(4) img {
   z-index: 10;
 }
 .menu .list_box a {
+  position: relative;
   text-decoration: none;
   color: #fff;
   font-size: 0.95vw;
   letter-spacing: 3px;
   line-height: 1;
-  padding: 2vw;
-  white-space: nowrap;
+  padding: 2vw 0vw;
   position: relative;
-}
-.menu .list_box a p {
-  padding-bottom: 0.6vw;
+  width: 9vw;
 }
 .menu .list_box a:hover .s_txt_box::after {
   width: 100%;
 }
+.menu .list_box a P {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 0.3vw;
+}
 .menu .list_box a span {
   display: inline-block;
   pointer-events: none;
+  padding-bottom: 0.3vw;
 }
 .menu .list_box a .s_txt_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-}
-.menu .list_box a .s_txt_box::after {
-  display: block;
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  margin-top: 0.5vw;
-  transition: 0.7s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
 }
 .menu .list_box a .a_line {
   position: absolute;
@@ -1597,15 +1608,15 @@ footer .share_box a:nth-last-of-type(4) img {
 .index4 .advantage {
   position: relative;
   background-color: #021A35;
-  padding: 10vw 5vw 41vw 5vw;
+  padding: 10vw 9vw 10vw 9vw;
 }
 .index4 .advantage .txt_box {
-  width: 35%;
+  width: 23%;
 }
 .index4 .advantage .txt_box h1 {
   color: #fff;
   margin: 0;
-  font-size: 3.3vw;
+  font-size: 2.8vw;
   font-style: italic;
   font-weight: 800;
   letter-spacing: 0.2vw;
@@ -1613,10 +1624,11 @@ footer .share_box a:nth-last-of-type(4) img {
 .index4 .advantage .txt_box p {
   color: #fff;
   margin: 0;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   letter-spacing: 0.1vw;
   line-height: 1.6;
   font-weight: 100;
+  text-align: justify;
 }
 .index4 .advantage .item_box {
   position: relative;
@@ -1674,40 +1686,42 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(1) {
   position: absolute;
-  width: 28.5%;
-  top: -56%;
-  right: 24%;
+  width: 24.5%;
+  top: -66%;
+  right: 28.7%;
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(2) {
   position: absolute;
-  width: 14.5%;
-  right: 6.5%;
-  top: -22.5%;
+  width: 13%;
+  left: 0;
+  top: 0;
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(3) {
-  width: 59%;
+  width: 39.5%;
   margin-top: 7%;
-  margin-left: 17%;
+  height: 25%;
+  margin-left: 31.8%;
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(4) {
   position: absolute;
-  width: 20%;
-  top: 107%;
-  left: 17%;
+  width: 17.5%;
+  top: -49%;
+  left: 28.2%;
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(5) {
   position: absolute;
-  width: 18.2%;
-  top: 107%;
-  left: 40%;
+  width: 16%;
+  top: 0;
+  left: 14.5%;
 }
 .index4 .advantage .item_box .adv_item:nth-of-type(6) {
   position: absolute;
-  width: 32.2%;
-  right: 6.5%;
-  top: 64%;
+  width: 27.5%;
+  right: 0;
+  top: -46.5%;
 }
 .index4 .advantage .item_box .square_box {
+  display: none;
   position: absolute;
   width: 5.5%;
   height: 18%;
@@ -6159,15 +6173,30 @@ body {
 }
 .news1-right-top .play-button {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-animation: playbutton 5s linear infinite;
+          animation: playbutton 5s linear infinite;
+}
+.news1-right-top .play-button a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.news1-right-top .play-button a img {
+  position: absolute;
   width: 8vw;
   left: 0;
   bottom: 0;
   top: 0;
   right: 0;
   margin: auto;
-  cursor: pointer;
-  -webkit-animation: playbutton 5s linear infinite;
-          animation: playbutton 5s linear infinite;
 }
 .news1-right-top .play-button:hover {
   filter: invert(10);
@@ -15136,6 +15165,676 @@ body {
     height: 5px;
     z-index: 21;
     background-color: #33203f;
+  }
+}
+.aboutKai1 {
+  width: 100%;
+  height: 50vw;
+  position: relative;
+}
+.aboutKai1 .top_logo_div {
+  justify-content: flex-start;
+}
+.aboutKai1 .top_logo_div .img_box {
+  margin-left: 5vw;
+}
+.aboutKai1-bg {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.aboutKai1-bg img {
+  width: 100%;
+  height: 100%;
+}
+.aboutKai1-para {
+  color: #FFF;
+  left: 12vw;
+  top: 20vw;
+  position: absolute;
+}
+.aboutKai1-para .para1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.aboutKai1-para .para1 h1 {
+  font-size: 5vw;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+}
+.aboutKai1-para .para1 p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: -0.1em;
+  font-weight: 300;
+}
+.aboutKai1-para .para1 h4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.1em;
+}
+.aboutKai1::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vw;
+  background: linear-gradient(180deg, transparent 0%, #000 100%);
+}
+
+.aboutKai2 {
+  display: flex;
+  padding: 15vw 7vw;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  height: 58vw;
+  margin-top: -1vw;
+}
+.aboutKai2-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 50%;
+}
+.aboutKai2-left .para .para1 {
+  margin-bottom: 10vw;
+}
+.aboutKai2-left .para .para1 p {
+  line-height: 1.8em;
+}
+.aboutKai2-left .para .para2 p {
+  font-weight: 500;
+  margin-bottom: 1.3vw;
+}
+.aboutKai2-left .para .para2 ul {
+  margin-left: 1.2vw;
+}
+.aboutKai2-left .para .para2 ul li {
+  list-style: disc;
+}
+.aboutKai2-left .para .para2 ul :not(:last-child) {
+  margin-bottom: 0.5vw;
+}
+.aboutKai2-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 50%;
+  position: relative;
+}
+.aboutKai2-right .para .para1 {
+  margin-bottom: 8vw;
+}
+.aboutKai2-right .para .para1 p {
+  line-height: 1.8em;
+}
+.aboutKai2-right .para .para2 {
+  margin-bottom: 4.5vw;
+}
+.aboutKai2-right .para .para3 h3 {
+  color: #0080c0;
+}
+.aboutKai2-right::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 105%;
+  position: absolute;
+  left: 0;
+  top: -2vw;
+  background-color: rgba(73, 73, 73, 0.445);
+}
+
+.aboutKai3 {
+  -webkit-clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vw;
+}
+.aboutKai3 .advantage {
+  position: relative;
+  background-color: #021A35;
+  padding: 15vw 9vw 10vw 9vw;
+}
+.aboutKai3 .advantage .txt_box {
+  width: 23%;
+}
+.aboutKai3 .advantage .txt_box h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 2.8vw;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.2vw;
+}
+.aboutKai3 .advantage .txt_box p {
+  color: #fff;
+  margin: 0;
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+  line-height: 1.6;
+  font-weight: 100;
+  text-align: justify;
+}
+.aboutKai3 .advantage .item_box {
+  position: relative;
+  z-index: 10;
+}
+.aboutKai3 .advantage .item_box .adv_item {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.aboutKai3 .advantage .item_box .adv_item a {
+  display: block;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: rgba(0, 128, 197, 0.9);
+  pointer-events: none;
+  opacity: 0;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+  flex-direction: row;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+  margin: 0 1vw;
+  font-size: 7.5vw;
+  letter-spacing: -0.3vw;
+  line-height: 1.1;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4);
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+  text-align: center;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+  margin: 0;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.3vw;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.9vw;
+  margin-top: 0.2vw;
+  margin-bottom: 1vw;
+  letter-spacing: 0.1vw;
+}
+.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+  width: 30px;
+  transform: rotate(180deg);
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(1) {
+  position: absolute;
+  width: 24.5%;
+  top: -66%;
+  right: 28.7%;
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(2) {
+  position: absolute;
+  width: 13%;
+  left: 0;
+  top: 0;
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(3) {
+  width: 39.5%;
+  margin-top: 7%;
+  height: 25%;
+  margin-left: 31.8%;
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(4) {
+  position: absolute;
+  width: 17.5%;
+  top: -49%;
+  left: 28.2%;
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(5) {
+  position: absolute;
+  width: 16%;
+  top: 0;
+  left: 14.5%;
+}
+.aboutKai3 .advantage .item_box .adv_item:nth-of-type(6) {
+  position: absolute;
+  width: 27.5%;
+  right: 0;
+  top: -46.5%;
+}
+.aboutKai3 .advantage .item_box .square_box {
+  display: none;
+  position: absolute;
+  width: 5.5%;
+  height: 18%;
+  top: 150%;
+  left: 19%;
+  background-color: #1A5A80;
+  border-radius: 8px;
+  transform: skewX(-11deg);
+}
+.aboutKai3 .advantage .bg_car {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .aboutKai3 .advantage {
+    position: relative;
+    background-color: #021A35;
+    padding: 0;
+    padding: 7vw 8vw;
+  }
+  .aboutKai3 .advantage .txt_box {
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+  .aboutKai3 .advantage .txt_box h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 7vw;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    margin-bottom: 2vw;
+  }
+  .aboutKai3 .advantage .txt_box p {
+    color: #fff;
+    margin: 0;
+    width: 60%;
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+    line-height: 1.6;
+    font-weight: 100;
+  }
+  .aboutKai3 .advantage .item_box {
+    position: relative;
+    z-index: 10;
+  }
+  .aboutKai3 .advantage .item_box .adv_item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .aboutKai3 .advantage .item_box .adv_item a {
+    display: block;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 128, 197, 0.9);
+    pointer-events: none;
+    opacity: 0;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+    flex-direction: row;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+    margin: 0 1vw;
+    font-size: 7.5vw;
+    letter-spacing: -0.3vw;
+    line-height: 1.1;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+    text-align: center;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.3vw;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+    margin: 0;
+    color: #fff;
+    font-size: 0.9vw;
+    margin-top: 0.2vw;
+    margin-bottom: 1vw;
+    letter-spacing: 0.1vw;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+    width: 30px;
+    transform: rotate(180deg);
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(1) {
+    position: absolute;
+    width: 28.5%;
+    top: -56%;
+    right: 24%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(2) {
+    position: absolute;
+    width: 14.5%;
+    right: 6.5%;
+    top: -22.5%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(3) {
+    width: 59%;
+    margin-top: 7%;
+    margin-left: 17%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(4) {
+    position: absolute;
+    width: 20%;
+    top: 107%;
+    left: 17%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(5) {
+    position: absolute;
+    width: 18.2%;
+    top: 107%;
+    left: 40%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(6) {
+    position: absolute;
+    width: 32.2%;
+    right: 6.5%;
+    top: 64%;
+  }
+  .aboutKai3 .advantage .item_box .square_box {
+    position: absolute;
+    width: 5.5%;
+    height: 18%;
+    top: 150%;
+    left: 19%;
+    background-color: #1A5A80;
+    border-radius: 8px;
+    transform: skewX(-11deg);
+  }
+  .aboutKai3 .advantage .swiper {
+    position: relative;
+    padding: 0vw 0 16vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper {
+    position: relative;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 35vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .page {
+    position: absolute;
+    left: -0.1vw;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    background-color: #0080C5;
+    -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .page p {
+    font-size: 11vw;
+    letter-spacing: -0.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    color: #fff;
+    opacity: 0.3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para {
+    position: absolute;
+    left: 0;
+    bottom: -8.5vw;
+    height: 5vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para p {
+    display: flex;
+    align-items: center;
+    line-height: 5vw;
+    color: #fff;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .slide-para p span {
+    display: inline-block;
+    margin-left: 1vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination :not(:last-child) {
+    margin-right: 2.5vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination-bullet {
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #0080be;
+    opacity: 1;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination-bullet-active {
+    background-color: transparent;
+    border: 2.5px solid #0080C5;
+  }
+  .aboutKai3 .advantage .bg_car {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}
+@media all and (max-width: 1024px) and (max-width: 500px) {
+  .aboutKai3 .advantage {
+    position: relative;
+    background-color: #021A35;
+    padding: 0;
+    padding: 7vw 8vw;
+  }
+  .aboutKai3 .advantage .txt_box {
+    width: 100%;
+    margin-bottom: 8vw;
+  }
+  .aboutKai3 .advantage .txt_box h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 7vw;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.2vw;
+    margin-bottom: 2vw;
+  }
+  .aboutKai3 .advantage .txt_box p {
+    position: relative;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    line-height: 1.6;
+    font-weight: 100;
+    z-index: 20;
+  }
+  .aboutKai3 .advantage .item_box {
+    position: relative;
+    z-index: 10;
+  }
+  .aboutKai3 .advantage .item_box .adv_item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .aboutKai3 .advantage .item_box .adv_item a {
+    display: block;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 128, 197, 0.9);
+    pointer-events: none;
+    opacity: 0;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+    flex-direction: row;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+    margin: 0 1vw;
+    font-size: 7.5vw;
+    letter-spacing: -0.3vw;
+    line-height: 1.1;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+    text-align: center;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+    margin: 0;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.3vw;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+    margin: 0;
+    color: #fff;
+    font-size: 0.9vw;
+    margin-top: 0.2vw;
+    margin-bottom: 1vw;
+    letter-spacing: 0.1vw;
+  }
+  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+    width: 30px;
+    transform: rotate(180deg);
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(1) {
+    position: absolute;
+    width: 28.5%;
+    top: -56%;
+    right: 24%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(2) {
+    position: absolute;
+    width: 14.5%;
+    right: 6.5%;
+    top: -22.5%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(3) {
+    width: 59%;
+    margin-top: 7%;
+    margin-left: 17%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(4) {
+    position: absolute;
+    width: 20%;
+    top: 107%;
+    left: 17%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(5) {
+    position: absolute;
+    width: 18.2%;
+    top: 107%;
+    left: 40%;
+  }
+  .aboutKai3 .advantage .item_box .adv_item:nth-of-type(6) {
+    position: absolute;
+    width: 32.2%;
+    right: 6.5%;
+    top: 64%;
+  }
+  .aboutKai3 .advantage .item_box .square_box {
+    position: absolute;
+    width: 5.5%;
+    height: 18%;
+    top: 150%;
+    left: 19%;
+    background-color: #1A5A80;
+    border-radius: 8px;
+    transform: skewX(-11deg);
+  }
+  .aboutKai3 .advantage .swiper {
+    position: relative;
+    padding: 0vw 0 16vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper {
+    position: relative;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 35vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .page {
+    position: absolute;
+    left: -0.1vw;
+    top: 0;
+    width: 20vw;
+    height: 100%;
+    background-color: #0080C5;
+    -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
+  }
+  .aboutKai3 .advantage .swiper .swiper-wrapper .swiper-slide .page p {
+    font-size: 11vw;
+    letter-spacing: -0.2vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    color: #fff;
+    opacity: 0.3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination :not(:last-child) {
+    margin-right: 2.5vw;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination-bullet {
+    width: 2vw;
+    height: 2vw;
+    background-color: #0080be;
+    opacity: 1;
+  }
+  .aboutKai3 .advantage .swiper .swiper-pagination-bullet-active {
+    background-color: transparent;
+    border: 2.5px solid #0080C5;
+  }
+  .aboutKai3 .advantage .bg_car {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
   }
 }
 * {

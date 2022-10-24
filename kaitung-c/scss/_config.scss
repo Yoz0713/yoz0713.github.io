@@ -60,6 +60,7 @@ body{
 }
 
 footer{
+  
     padding: 3vw 6vw;
     background-image: url(../img/1x/footer_bg-100.webp);
     background-size: cover;
@@ -237,37 +238,44 @@ footer{
 
     .list_box {
         z-index: 10;
-       
+ 
         a{
+            position: relative;
             text-decoration: none;
             color: #fff;
             font-size: 0.95vw;
             letter-spacing: 3px;
             line-height: 1;
-            padding: 2vw;
-            white-space: nowrap;
+            padding: 2vw 0vw;
             position: relative;
-            p{
-                padding-bottom: 0.6vw;
-            }
+            width: 9vw;
+        
             &:hover .s_txt_box::after{
                 width: 100%;
+            }
+            P{
+                width: fit-content;
+                padding-bottom: 0.3vw;
             }
             span{
                 display: inline-block;
                 pointer-events: none;
+                padding-bottom: 0.3vw;
             }
             .s_txt_box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 overflow: hidden;
-                &::after{
-                    display: block;
-                    content: "";
-                    width:0;
-                    height: 2px;
-                    background-color: #fff;
-                    margin-top: 0.5vw;
-                    transition: 0.7s;
-                }
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: fit-content;
+                height: fit-content;
+                margin: auto;
+              
                
                 
             }

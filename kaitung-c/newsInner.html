@@ -285,9 +285,13 @@
                 },"<+0.5")
             }
             if(window.innerWidth > 850){
-                firstPageAnimation()
+                $(window).on("load",function () {
+                    firstPageAnimation()
+        });
             }else{
-                firstPageAnimation_ph()
+                $(window).on("load",function () {
+                    firstPageAnimation_ph()
+        });
             }
             function secondPageAnimation(){
                 let gg2 = gsap.timeline({

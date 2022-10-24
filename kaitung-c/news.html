@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style/hamburgers.min.css">
     <link rel="stylesheet" href="style/all.min.css">
 </head>
@@ -80,7 +81,11 @@
         <div class="news1-right">
             <div class="news1-right-top">
                 <video src="" poster="./img/news/1x/banner-video.webp"></video>
-                <img src="./img/news/SVG/big-play-button.svg" class="play-button">
+                <div class="video-play play-button">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=5rWgceixbpU&ab_channel=ToyotaUSA" class="fancybox">
+                        <img src="./img/news/SVG/big-play-button.svg">
+                    </a>
+                  </div>
             </div>
             <div class="news1-right-bottom">
                 <img src="./img/news/1x/banner-car2.webp">
@@ -360,6 +365,7 @@
     
 
     <script src="js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="./js/plugins/fancyBox.min.js"></script>
     <script src="js/plugins/gsap3/dist/gsap.min.js"></script>
     <script src="js/plugins/gsap3/dist/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
@@ -439,7 +445,9 @@
              
                 })
             }
-            firstPageAnimation()
+            $(window).on("load",function () {
+                    firstPageAnimation()
+        });
            function secondPageAnimation(){
                 let gg = gsap.timeline({
                     scrollTrigger:{
@@ -515,6 +523,16 @@
                 $.each($('.top_logo_div .share_box a'), function (index, valueOfElement) { 
                     top_tl.from($(this).find('img'), 1, {y:50}, '<0.2');
                 });
+                $('[data-fancybox]').fancybox({
+                youtube : {
+                    controls : 0,
+                    showinfo : 0,
+                    
+                },
+                fullScreen : {
+                    autoStart: true
+                }
+            });
         });
       
 

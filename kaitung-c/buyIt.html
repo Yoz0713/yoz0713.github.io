@@ -325,7 +325,9 @@
                     stagger:0.3
                 },"<+0.3")
             }
-            firstPageAnimation()
+            $(window).on("load",function () {
+                    firstPageAnimation()
+        });
             function secondPageAnimation(){
                 let gg = gsap.timeline({
                     scrollTrigger:{

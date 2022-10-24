@@ -1,56 +1,13 @@
 $(document).ready(()=>{
-    $('.index1-menu ul li, .index1-booking a, .index1-scroll, hamburger-menu ul > nth-child(2) a, hamburger-menu ul > nth-child(3) a').click(function (e) { 
-        var anchor_id=$(this).attr('anchor');
-        $('html,body').animate({
-            scrollTop: $('#'+anchor_id).offset().top
-        },1000);
-    });
-
-    
-    
-    $('.toTopFix, hamburger-menu ul > nth-child(1) a').click(function (e) { 
-        var anchor_id=$(this).attr('anchor');
-        $('html,body').animate({
-            scrollTop:  0
-        },1000);
-    });
-    var img_width = $('.index9 > img').width();
-    //console.log(img_width);
-    var img_avg = 1.9;
-    if(window.innerWidth < 500){
-        let flag = false
-        document.addEventListener("scroll",((e)=>{
-         
-            
-           
-    
-        }),{once:true})
-        
-    }
+   
+  
+   
     
   
 
 
     function firstPageAniamtion(){
-        let gg = gsap.timeline({
-            scrollTrigger:{
-                trigger:".index1",
-                start:"bottom 95%",
-                scrub:3,
-                end:"+=500"
-            }
-        })
-        gg.fromTo(".index1-para .line-round",{
-            opacity:1,
-        },{
-            opacity:window.innerWidth > 850 ? 1 : 0,
-        
-        }).fromTo(".index1-booking img",{
-            opacity:1
-        },{
-            opacity:1,
-            duration:0.001
-        },"<")
+       
         let gg2 = gsap.timeline()
         gg2.fromTo(".index1-bg img",{
             opacity:0,
@@ -349,112 +306,152 @@ $(document).ready(()=>{
         },{
             y:0,
             opacity:1,
-            duration:1.8
-        }).fromTo(".index6 .swiper",{
-            opacity:0,
-            y:15
-        },{
-            y:0,
-            opacity:1,
-            duration:1.5
-        },"<+0.7").fromTo(".index6-bg .round1",{
-           
-        },{
-        
-    
-            duration:0.5
-        },"<+0.65").fromTo(".index6-bg .round2",{
-           
-        },{
-        
-    
-            duration:0.5
-        },"<+0.65")
-        $(".index6 .imgBox").each((i,item)=>{
-            let gg =gsap.timeline({
-            scrollTrigger:{
-                trigger:item,
-                start:"top center"
-            }
-        })
-            gg.fromTo(item,{
+            duration:0.8
+        }).fromTo(".index6 .roundBox",{
                 y:30,
                 opacity:0
             },{
                 y:0,
                 opacity:1,
                 duration:0.8,
-
-            })
-        })
+                stagger:0.15,
+                overwrite:true
+        },"<+0.5")
+      
+          
+  
         $(".index6 .round").each((i,item)=>{
             let gg2 =gsap.timeline({
             scrollTrigger:{
-                trigger:item,
+                trigger:".index6 .round",
                 start:"top center"
             }
         })
             if(i==0){
                 gg2.to(item,{
-                x:"-8vw",
-                y:"2.5vw",
+                x:"-12vw",
+                y:"5vw",
                 duration:0.8,
                 opacity:1,
-                delay:1,
-            })
+                delay:1.5,
+            }).to(item.nextElementSibling,{
+                x:"-20vw",
+                y:"-40vw",
+                duration:0.8,
+                opacity:1,
+           
+            },"<").to(item.nextElementSibling,{
+           
+                    keyframes: {
+                
+                    y: ["-40vw","-46vw","-40vw"],
+            
+                },
+                    duration:2.5,
+                    opacity:1,
+                repeat:-1
+                },"<+1")
             }else if(i==1){
                 gg2.to(item,{
-                x:"5vw",
-                y:"2.5vw",
+                x:"6vw",
+                y:"-10vw",
                 duration:0.8,
-                delay:1,
+                delay:1.5,
                 opacity:1,
                 
-            })
+            }).to(item.nextElementSibling,{
+                x:"-15vw",
+                y:"10vw",
+                duration:0.8,
+                opacity:1,
+           
+            },"<").to(item.nextElementSibling.nextElementSibling,{
+                x:"25vw",
+                y:"20vw",
+                duration:0.8,
+                opacity:1,
+           
+            },"<").to(item.nextElementSibling,{
+           
+                    keyframes: {
+                
+                    y: ["10vw","15vw","10vw"],
+            
+                },
+                    duration:3,
+                    opacity:1,
+                repeat:-1
+                },"<+1").to(item.nextElementSibling.nextElementSibling,{
+                    keyframes: {
+                
+                    y: ["20vw","23vw","20vw"],
+            
+                },
+                    duration:2,
+                    opacity:1,
+                repeat:-1
+            },"<")
             }else if(i==2){
                 gg2.to(item,{
-                x:"-3vw",
-                y:"2.5vw",
+                x:"7vw",
+                y:"2vw",
                 duration:0.8,
-                delay:1,
+                delay:1.5,
                 opacity:1,
             })
             }else if(i==3){
                 gg2.to(item,{
-                x:"6vw",
-                y:"4vw",
-                duration:0.8,
-                delay:1,
-                opacity:1,
-            })
-            }else if(i==4){
-                gg2.to(item,{
-                x:"-9vw",
+                x:"-8vw",
                 y:"-8vw",
                 duration:0.8,
-                delay:1,
+                delay:1.5,
                 opacity:1,
-            })
+            }).to(item.nextElementSibling,{
+                x:"16vw",
+                y:"30vw",
+                duration:0.8,
+                opacity:1,
+           
+            },"<").to(item.nextElementSibling,{
+           
+                    keyframes: {
+                
+                    y: ["30vw","36vw","30vw"],
+            
+                },
+                    duration:4,
+                    opacity:1,
+                repeat:-1
+                },"<+1")
+            }else if(i==4){
+                gg2.to(item,{
+                x:"10vw",
+                y:"3vw",
+                duration:0.8,
+                delay:1.5,
+                opacity:1,
+            }).to(item.nextElementSibling,{
+                x:"-38vw",
+                y:"-6vw",
+                duration:0.8,
+                opacity:1,
+           
+            },"<").to(item.nextElementSibling,{
+           
+                keyframes: {
+          
+                y: ["-6vw","2vw","-6vw"],
+       
+            },
+                duration:5,
+                opacity:1,
+            repeat:-1
+            },"<+1")
             }
             
         })
-        $(".index6 .para").each((i,item)=>{
-            let gg3 =gsap.timeline({
-            scrollTrigger:{
-                trigger:item,
-                start:"top center"
-            }
-        })
-            gg3.fromTo(item,{
-                    y:30,
-                    opacity:0
-                },{
-                    y:0,
-                    opacity:1,
-                    duration:1.2,
+       
 
-                })
-        })
     }
     if(window.innerWidth > 500){
         sixthPageAnimation()
@@ -588,15 +585,17 @@ $(document).ready(()=>{
     }
     elethPageAnimation()
     function formAnimation(){
+        console.log(1)
         let gg =gsap.timeline({
             scrollTrigger:{
-                trigger:"form",
-                start:"top center"
+                trigger:"#call2022101509295865",
+                start:"top center",
+       
             }
         })
         let gg2 =gsap.timeline({
             scrollTrigger:{
-                trigger:"form",
+                trigger:"#call2022101509295865",
                 start:"top center",
                 toggleActions:"play none none reverse"
             }
@@ -609,7 +608,7 @@ $(document).ready(()=>{
             duration:0.5,
         })
 
-        gg.fromTo("form .form-box",{
+        gg.fromTo("#call2022101509295865 .form-box ",{
             opacity:0,
             y:15
         },{
@@ -617,7 +616,7 @@ $(document).ready(()=>{
             opacity:1,
             duration:0.8,
             stagger:0.25
-        },"<").fromTo("form .form-para p",{
+        },"<").fromTo("#call2022101509295865 .form-para p",{
             opacity:0,
             y:15
         },{
@@ -625,7 +624,7 @@ $(document).ready(()=>{
             opacity:1,
             duration:0.8,
             stagger:0.25
-        },"<+1.7").fromTo("form .form-para input",{
+        },"<+1.7").fromTo("#call2022101509295865 .form-para input",{
             opacity:0,
             y:15
         },{
@@ -633,7 +632,7 @@ $(document).ready(()=>{
             opacity:1,
             duration:0.8,
             stagger:0.25
-        },"<+0.5").fromTo("form > input",{
+        },"<+0.5").fromTo("#call2022101509295865 > input",{
             opacity:0,
             y:15
         },{
@@ -643,7 +642,10 @@ $(document).ready(()=>{
             stagger:0.25
         },"<+0.5")
     }
-    formAnimation()
+    setTimeout(()=>{
+        formAnimation()
+    },500)
+
     function footerAnimation(){
         let gg =gsap.timeline({
             scrollTrigger:{
@@ -732,6 +734,7 @@ $(document).ready(()=>{
     })
     //swiper2
 
+
     //hambuger
     $(".hamburger").click((e)=>{
         e.target.classList.toggle("is-active")
@@ -743,10 +746,29 @@ $(document).ready(()=>{
     })
     
     //hamburger
+   
+    $('.hamburger-menu ul > :nth-child(2) a, .hamburger-menu ul > :nth-child(3) a').click(function (e) { 
+        console.log(e)
+        var anchor_id=$(this).attr('anchor');
+        $('html,body').animate({
+            scrollTop: $('#'+anchor_id).offset().top
+        },1000);
+    });
+
+    
+    $('.toTopFix, .hamburger-menu ul > :nth-child(1) a').click(function (e) { 
+        var anchor_id=$(this).attr('anchor');
+        $('html,body').animate({
+            scrollTop:  0
+        },1000);
+    });
   })
 
 
   $(document).load(()=>{
+    var img_width = $('.index9 > img').width();
+    //console.log(img_width);
+    var img_avg = 1.9;
     $(".index9").scrollLeft(img_width / img_avg)
           
   })

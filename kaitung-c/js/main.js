@@ -1,18 +1,19 @@
+
 $(document).ready(function () {
 
     let loading_tl=gsap.timeline({delay:0.4});
         loading_tl.to('.loading_div .logo_div img', 0.5, {y: 0});
 
-        setTimeout(()=>{
-            $(document).ready(function () {
-                let gg = gsap.timeline()
-                gg.to(".loading_div2",{
-                    opacity:0,
-                    duration:0.3,
-                    pointerEvents:"none"
-                })
+        $(window).on("load",function () {
+            let gg = gsap.timeline()
+            gg.to(".loading_div2",{
+                opacity:0,
+                duration:0.3,
+                pointerEvents:"none"
+            })
         });
-        },500)
+           
+    
 
 
 
@@ -115,6 +116,7 @@ $(document).ready(function () {
 
     //---------------- Footer 動態 ---------------------
     let footer_tl=gsap.timeline({
+    
         scrollTrigger: {
             trigger: "footer",
             //once:true, // 執行1次
@@ -240,65 +242,132 @@ $(document).ready(function () {
         }
 
           //-- menu拆字 --
-    $.each($('.menu .list_box a>span'), function (index, valueOfElement) { 
-       let _this=$(this);
-       let txt=$(this).html();
-       let txt_arr= txt.split(''); 
-       $(this).html('');
-       $.each(txt_arr, function (index, valueOfElement) { 
-         _this.append(`<span class="s_txt">${this}</span>`);
-       });
-    });
-    let menu_en = ['ABOUT US','CAR IN STOCK','PURCHASING','RENTAL CAR','NEWS','APPOINTMENT']
-  
-    $('.menu .list_box a').mouseenter(function (e) { 
-        var tl_mu = gsap.timeline();
       
-        $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
-            tl_mu.to($(this), 0.4, {y:-24}, '<0.03');
-        });
-        $(e).find(".s_txt_box").empty()
-       
-        menu_en.forEach((item,i)=>{
-            let arr = item.split("")
-         
-          
-                arr.forEach((item2)=>{
-                    if(item2 == " "){
-                        item2 = `<span class="s_txt">${"\xa0"}</span>`
-                    }else{
-                        item2 = `<span class="s_txt">${item2}</span>`
-                    }
-                    for(let a = 0 ; a < item.length ; a++){
-                        if(i == a ){
-                            $($(".list_box a")[a]).find(".s_txt_box").append(item2)
-                        }
-                    }
-                    
-                
-                    
-                })
-           
-           
-        })
-         $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
-             let display_num=index==0 ? '<0.2':'<0.03';
-             tl_mu.fromTo($(this), 0.4, {y:20,
-                opacity:0
-            },
-            {y:0,
-                opacity:1
-            }, display_num);
-         });
 
-    });
-
-        $(".menu .list_box a").mouseleave(()=>{
-            
-        })
     }
     markMenu()
     //markMenu
+    setTimeout(() => {
+        menuAnimation()
+    },500);
+    function menuAnimation(){
+        $.each($('.menu .list_box a>span'), function (index, valueOfElement) { 
+            let _this=$(this);
+            let txt=$(this).html();
+            let txt_arr= txt.split(''); 
+            $(this).html('');
+            $.each(txt_arr, function (index, valueOfElement) { 
+              _this.append(`<span class="s_txt">${this}</span>`);
+            });
+         });
+         let menu_en = ['ABOUT US','CAR IN STOCK','PURCHASING','RENTAL CAR','NEWS','APPOINTMENT','APPOINTMENT']
+         let menu_ch = ['關於我們','現有車款','代購專區','租賃專區','新聞資訊','預約試乘','高價收購電動車']
+         let flag = true;
+       
+         $('.menu .list_box a').mouseenter(function (e) { 
+              if(flag){
+                flag=false
+                var tl_mu = gsap.timeline();
+           
+                $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
+                    tl_mu.to($(this), 0.3, {y:-24}, '<0.03');
+                });
+                    setTimeout(() => {
+                        $(e.target).find(".s_txt").remove()
+                        
+                    for( i = 0 ; i < menu_en.length ; i++){
+                        if(e.target == $('.menu .list_box a')[i]){
+                            let en = menu_en[i].split("")
+                            
+                            en.forEach((item)=>{
+                                if(item == " "){
+                                    $(e.target).find(".s_txt_box").append(`<span class=s_txt>\xa0</span>`)
+                                }else {
+                                    $(e.target).find(".s_txt_box").append(`<span class=s_txt>${item}</span>`)
+                                }
+            
+                            })
+                        
+                        }
+                    }
+                   
+              
+               
+              
+               
+                 $.each($(this).find('.s_txt'), function (index, valueOfElement) { 
+                     let display_num=index==0 ? '<0.2':'<0.05';
+                     tl_mu.fromTo($(this), 0.3, {y:20,
+                        opacity:0
+                    },
+                    {y:0,
+                        opacity:1
+                    }, display_num);
+                 });
+         
+                    }, 300);
+              
+                 
+            }
+           
+         });
+     
+                 $(".menu .list_box a").mouseleave((e)=>{
+                    if(!flag){
+                        flag = true;
+                        let gg = gsap.timeline({paused:true})
+                        let a = $(e.target).find(".s_txt")
+        
+                        gg.fromTo(a,{
+                            y:0,
+                            opacity:1
+                        },{
+                            opacity:0,
+                            y:45,
+                            duration:0.8,
+                            stagger:0.03,
+                            overwrite:true
+                        })
+                        gg.play()
+                        setTimeout(()=>{
+                            $(e.target).find(".s_txt").remove()
+                            for( i = 0 ; i < menu_ch.length ; i++){
+                                if(e.target == $('.menu .list_box a')[i]){
+                                    let ch = menu_ch[i].split("")
+                                    
+                                    ch.forEach((item)=>{
+                                        if(item == " "){
+                                            $(e.target).find(".s_txt_box").append(`<span class=s_txt>\xa0</span>`)
+                                        }else {
+                                            $(e.target).find(".s_txt_box").append(`<span class=s_txt>${item}</span>`)
+                                        }
+                    
+                                    })
+                                    let a = $(e.target).find(".s_txt")
+                                   
+                                   gg.fromTo(a,{
+                                       y:-45,
+                                       opacity:0
+                                   },{
+                                       opacity:1,
+                                       y:0,
+                                       duration:0.3,
+                                       stagger:0.03,
+                                  
+                                   })
+                                }
+                            }
+                  
+                        },800)
+               
+                    
+                    
+                    }
+                      
+                      
+                       
+                 })
+      }
 });
 
 // $(window).on('load', function () {

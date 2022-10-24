@@ -9,6 +9,9 @@
 $bg-orange:#d75b34;
 $bg-red:#d8034a;
 $para-txt:'Noto Serif JP', serif;
+#top_arrow{
+    display:none !important;
+  }
 .toTopFix{
     position: fixed;
     right: 2vw;
@@ -958,20 +961,20 @@ footer{
         opacity: 0;
     }
 }
-@keyframes glowing{
-    0%{
+// @keyframes glowing{
+//     0%{
     
-    }
-    80%{
-        transform: scale(3);
-        opacity: 0;
-    }
+//     }
+//     80%{
+//         transform: scale(3);
+//         opacity: 0;
+//     }
     
-    100%{
-        opacity: 0;
-        transform: scale(1);
-    }
-}
+//     100%{
+//         opacity: 0;
+//         transform: scale(1);
+//     }
+// }
 .phone{
     display: none;
 }
@@ -989,7 +992,7 @@ footer{
     .toTopFix{
         position: fixed;
         right: 5vw;
-        bottom: 4vw;
+        bottom:15vw;
         z-index: 21;
         img{
             filter: drop-shadow(0 0 1px #000);
@@ -1159,12 +1162,12 @@ footer{
             left: 0;
             right: 0;
             margin: 0 auto;
-            bottom: 25vw;
+            bottom: 36vw;
             width: fit-content;
             z-index: 6;
             img{
-                display: none;
-                width: 12vw;
+                display: block;
+                width: 40vw !important;
                 cursor: pointer;
                 &:hover{
                     filter: saturate(50);
@@ -1634,9 +1637,9 @@ footer{
         width: 100%;
         height:fit-content;
         padding: 20vw 0;
-        margin-top: 20vw;
-        overflow: hidden;
-        height: 200vw;
+        margin-top: 25vw;
+        
+        height:200vw;
         &-bg{
             position: absolute;
             left: 0;
@@ -1655,12 +1658,7 @@ footer{
                 animation-iteration-count: infinite;
                 padding: 1vw;
             }
-            img{
-                width: 112vw;
-                height: 100%;
-                object-fit: contain;
-                margin-left: -8vw;
-            }
+         
             .round1{
            
                 top: 154vw;
@@ -1725,23 +1723,68 @@ footer{
         }
         &-title{
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             width: 100%;
-            margin-bottom: 40vw;
+            margin-bottom: 38vw;
+           
             img{
-            
-                width: 60vw;
+                margin-right: 5vw;
+                width: 40vw;
             }
         }
         &-imgBox{
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
+            margin: 0 auto;
             .roundBox{
                 position: relative;
                 width: fit-content;
                 height: fit-content;
+                .round{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    z-index: -1;
+                    opacity: 0;
+                }
+                .round-bg{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    z-index: -1;
+                    opacity: 0;
+                    object-fit: contain;
+               
+                }
+                .round-bg1{
+                    width: 5vw;
+                
+                }
+                .round-bg2{
+                    width: 3vw;
+             
+                }
+                .round-bg3{
+                    width: 8vw;
+             
+                }
+                .round-bg4{
+                    width: 9vw;
+             
+                }
+                .round-bg5{
+                    width:10.5vw;
+             
+                }
                 .imgBox{
                     width: 50vw;
                     height: 50vw;
@@ -1751,30 +1794,85 @@ footer{
                         border-radius: 50%;
                         object-fit: cover;
                     }
-                    margin-bottom: 7vw;
+                    margin-bottom: 3vw;
                 }
                 .para{
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     img{
-                        height: 5vw;
+                        height: 4vw;
                     }
                 }
               
             }
-         
-            & > :not(:last-child){
-                margin-bottom: 15vw;
+            & > :nth-child(1){
+                margin-top: -60vw;
+                margin-left: -5vw;
+                .imgBox{
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .round{
+                
+                    width: 30vw;
+                    height: 30vw;
+                }
+            }
+            & > :nth-child(2){
+                margin-top: -10vw;
+                margin-left: 5vw;
+                .imgBox{
+                    width: 30vw;
+                    height: 30vw;
+                }
+                .round{
+                
+                    width: 20vw;
+                    height: 20vw;
+                }
+            }
+            & > :nth-child(3){
+                margin-top: -5vw;
+                margin-right: 15vw;
+                .imgBox{
+                    width: 30vw;
+                    height: 30vw;
+                }
+                .round{
+                    
+                    width: 20vw;
+                    height: 20vw;
+                }
+            }
+            & > :nth-child(4){
+                margin-bottom: -25vw;
+                margin-right: -4vw;
+                .imgBox{
+                    width: 35vw;
+                    height: 35vw;
+                }
+                .round{
+                
+                    width: 25vw;
+                    height: 25vw;
+                }
+            }
+            & > :nth-child(5){
+                margin-bottom: -60vw;
+                margin-right: 20vw;
+                .imgBox{
+                    width: 40vw;
+                    height: 40vw;
+                }
+                .round{
+                
+                    width: 25vw;
+                    height: 25vw;
+                }
             }
         }
-        .round{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0;
-        }
+       
     }
     .index7{
         width: 100%;
@@ -1894,19 +1992,21 @@ footer{
             top: 51vw;
             left:197vw;
             z-index: 20;
-            
-           
+          
         }
         .dot1{
             background-color: #DE1A43;
+            
         }
         .dot2{
             background-color: #DE1A43;
             animation-delay: 0.5s;
+            z-index: 21;
         }
         .dot3{
             background-color: #DE1A43;
             animation-delay: 1s;
+            z-index: 22;
         }
     }
     .index10{

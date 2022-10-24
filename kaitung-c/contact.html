@@ -358,7 +358,9 @@
          
             },"<+0.3")
            }
-           firstPageAnimation()
+           $(window).on("load",function () {
+                    firstPageAnimation()
+        });
    
            let top_tl = gsap.timeline({delay:0.5});
                 top_tl.from('.top_logo_div .img_box img', 1, {y:100});

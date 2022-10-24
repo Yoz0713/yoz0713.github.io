@@ -198,23 +198,23 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./img/1x/Slide_01.webp" class="computer">
-                    <img src="./img/1x/Slide_01_ph.webp" class="phone">
+                   
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/Slide_02.webp" class="computer">
-                    <img src="./img/1x/Slide_02_ph.webp" class="phone">
+                
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/Slide_03.webp" class="computer">
-                    <img src="./img/1x/Slide_03_ph.webp" class="phone">
+                   
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/Slide_04.webp" class="computer">
-                    <img src="./img/1x/Slide_04_ph.webp" class="phone">
+                
                 </div>
                 <div class="swiper-slide">
                     <img src="./img/1x/Slide_05.webp" class="computer">
-                    <img src="./img/1x/Slide_05_ph.webp" class="phone">
+                   
                 </div>
             </div>
             <div class="swiper-pagination">
@@ -270,19 +270,9 @@
     <section class="index6" id="life">
         <div class="index6-bg">
             <img src="./img/1x/bg_05.webp" class="computer">
-            <img src="./img/1x/百味潮生活.jpg" class="phone">
-            <!-- <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round1">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round2">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round3">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round4">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round5">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round6">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round7">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round8">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round9">
-            <img src="./img/SVG/sixth-page-round-ph.svg" class="phone round10"> -->
+          
         </div>
-        <!-- <div class="index6-title phone">
+       <div class="index6-title phone">
             <img src="./img/SVG/sixth-page-para-ph.svg">
         </div>
         <div class="index6-imgBox phone">
@@ -294,6 +284,19 @@
                     <img src="./img/SVG/txt_tech.svg">
                 </div>
                 <img src="./img/SVG/sixth-page-round-ph.svg" class="round">
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round-bg round-bg1">
+            </div>
+            <div class="roundBox">
+               
+                <div class="imgBox">
+                    <img src="./img/1x/classmate.webp">
+                </div>
+                <div class="para">
+                    <img src="./img/SVG/txt_student.svg">
+                </div>
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round">
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round-bg round-bg2">
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round-bg round-bg3">
             </div>
             <div class="roundBox">
                 <div class="imgBox">
@@ -306,21 +309,14 @@
             </div>
             <div class="roundBox">
                 <div class="imgBox">
-                    <img src="./img/1x/classmate.webp">
-                </div>
-                <div class="para">
-                    <img src="./img/SVG/txt_student.svg">
-                </div>
-                <img src="./img/SVG/sixth-page-round-ph.svg" class="round">
-            </div>
-            <div class="roundBox">
-                <div class="imgBox">
                     <img src="./img/1x/slash.webp">
                 </div>
                 <div class="para">
                     <img src="./img/SVG/txt_slash.svg">
                 </div>
                 <img src="./img/SVG/sixth-page-round-ph.svg" class="round">
+               
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round-bg round-bg4">
             </div>
             <div class="roundBox">
                 <div class="imgBox">
@@ -330,8 +326,9 @@
                     <img src="./img/SVG/txt_landlord.svg">
                 </div>
                 <img src="./img/SVG/sixth-page-round-ph.svg" class="round">
-            </div> -->
-        <!-- </div> -->
+                <img src="./img/SVG/sixth-page-round-ph.svg" class="round-bg round-bg5">
+            </div>
+        </div> 
     </section>
 
     <section class="index7">
@@ -828,112 +825,152 @@
                 },{
                     y:0,
                     opacity:1,
-                    duration:1.8
-                }).fromTo(".index6 .swiper",{
-                    opacity:0,
-                    y:15
-                },{
-                    y:0,
-                    opacity:1,
-                    duration:1.5
-                },"<+0.7").fromTo(".index6-bg .round1",{
-                   
-                },{
-                
-            
-                    duration:0.5
-                },"<+0.65").fromTo(".index6-bg .round2",{
-                   
-                },{
-                
-            
-                    duration:0.5
-                },"<+0.65")
-                $(".index6 .imgBox").each((i,item)=>{
-                    let gg =gsap.timeline({
-                    scrollTrigger:{
-                        trigger:item,
-                        start:"top center"
-                    }
-                })
-                    gg.fromTo(item,{
+                    duration:0.8
+                }).fromTo(".index6 .roundBox",{
                         y:30,
                         opacity:0
                     },{
                         y:0,
                         opacity:1,
                         duration:0.8,
-
-                    })
-                })
+                        stagger:0.15,
+                        overwrite:true
+                },"<+0.5")
+              
+             
+          
                 $(".index6 .round").each((i,item)=>{
                     let gg2 =gsap.timeline({
                     scrollTrigger:{
                         trigger:item,
-                        start:"top center"
+                        start:"top bottom"
                     }
                 })
                     if(i==0){
                         gg2.to(item,{
-                        x:"-8vw",
-                        y:"2.5vw",
+                        x:"-12vw",
+                        y:"5vw",
                         duration:0.8,
                         opacity:1,
-                        delay:1,
-                    })
+                        delay:1.5,
+                    }).to(item.nextElementSibling,{
+                        x:"-20vw",
+                        y:"-40vw",
+                        duration:0.8,
+                        opacity:1,
+                   
+                    },"<").to(item.nextElementSibling,{
+                   
+                            keyframes: {
+                        
+                            y: ["-40vw","-46vw","-40vw"],
+                    
+                        },
+                            duration:2.5,
+                            opacity:1,
+                        repeat:-1
+                        },"<+1")
                     }else if(i==1){
                         gg2.to(item,{
-                        x:"5vw",
-                        y:"2.5vw",
+                        x:"6vw",
+                        y:"-10vw",
                         duration:0.8,
-                        delay:1,
+                        delay:1.5,
                         opacity:1,
                         
-                    })
+                    }).to(item.nextElementSibling,{
+                        x:"-15vw",
+                        y:"10vw",
+                        duration:0.8,
+                        opacity:1,
+                   
+                    },"<").to(item.nextElementSibling.nextElementSibling,{
+                        x:"25vw",
+                        y:"20vw",
+                        duration:0.8,
+                        opacity:1,
+                   
+                    },"<").to(item.nextElementSibling,{
+                   
+                            keyframes: {
+                        
+                            y: ["10vw","15vw","10vw"],
+                    
+                        },
+                            duration:3,
+                            opacity:1,
+                        repeat:-1
+                        },"<+1").to(item.nextElementSibling.nextElementSibling,{
+                            keyframes: {
+                        
+                            y: ["20vw","23vw","20vw"],
+                    
+                        },
+                            duration:2,
+                            opacity:1,
+                        repeat:-1
+                    },"<")
                     }else if(i==2){
                         gg2.to(item,{
-                        x:"-3vw",
-                        y:"2.5vw",
+                        x:"7vw",
+                        y:"2vw",
                         duration:0.8,
-                        delay:1,
+                        delay:1.5,
                         opacity:1,
                     })
                     }else if(i==3){
                         gg2.to(item,{
-                        x:"6vw",
-                        y:"4vw",
-                        duration:0.8,
-                        delay:1,
-                        opacity:1,
-                    })
-                    }else if(i==4){
-                        gg2.to(item,{
-                        x:"-9vw",
+                        x:"-8vw",
                         y:"-8vw",
                         duration:0.8,
-                        delay:1,
+                        delay:1.5,
                         opacity:1,
-                    })
+                    }).to(item.nextElementSibling,{
+                        x:"16vw",
+                        y:"30vw",
+                        duration:0.8,
+                        opacity:1,
+                   
+                    },"<").to(item.nextElementSibling,{
+                   
+                            keyframes: {
+                        
+                            y: ["30vw","36vw","30vw"],
+                    
+                        },
+                            duration:4,
+                            opacity:1,
+                        repeat:-1
+                        },"<+1")
+                    }else if(i==4){
+                        gg2.to(item,{
+                        x:"10vw",
+                        y:"3vw",
+                        duration:0.8,
+                        delay:1.5,
+                        opacity:1,
+                    }).to(item.nextElementSibling,{
+                        x:"-38vw",
+                        y:"-6vw",
+                        duration:0.8,
+                        opacity:1,
+                   
+                    },"<").to(item.nextElementSibling,{
+                   
+                        keyframes: {
+                  
+                        y: ["-6vw","2vw","-6vw"],
+               
+                    },
+                        duration:5,
+                        opacity:1,
+                    repeat:-1
+                    },"<+1")
                     }
                     
                 })
-                $(".index6 .para").each((i,item)=>{
-                    let gg3 =gsap.timeline({
-                    scrollTrigger:{
-                        trigger:item,
-                        start:"top center"
-                    }
-                })
-                    gg3.fromTo(item,{
-                            y:30,
-                            opacity:0
-                        },{
-                            y:0,
-                            opacity:1,
-                            duration:1.2,
+               
 
-                        })
-                })
             }
             if(window.innerWidth > 500){
                 sixthPageAnimation()
@@ -999,14 +1036,7 @@
                     y:0,
                     opacity:1,
                     duration:1.5
-                },"<+0.8").fromTo(".index9-dot",{
-                    opacity:0,
-                    y:15
-                },{
-                    y:0,
-                    opacity:1,
-                    duration:1.5
-                },"<+0.5").fromTo(".index9-hand img",{
+                },"<+0.8").fromTo(".index9-hand img",{
                     opacity:0,
               
                 },{
@@ -1026,8 +1056,50 @@
                     opacity:0,
                     delay:12,
                 })
+
+                let gg3 =gsap.timeline({
+                    scrollTrigger:{
+                        trigger:".index9",
+                        start:"top center"
+                    }
+                })
+
+                gg3.fromTo(".index9-dot",{
+                    opacity:0,
+                    y:15
+                },{
+                    y:0,
+                    opacity:0,
+                    duration:1.5,
+                   
+                }).fromTo((".index9 .dot1"),{
+                    opacity:1
+                },{
+                    scale:2,
+                    duration:1.8,
+                   
+                    repeat:-1,
+                    opacity:0
+                }).fromTo((".index9 .dot2"),{
+                    opacity:1
+                },{
+                    scale:2,
+                    duration:1.8,
+                
+                    repeat:-1,
+                    opacity:0
+                },"<+0.5").fromTo((".index9 .dot3"),{
+                    opacity:1
+                },{
+                    scale:2,
+                    duration:1.8,
+                
+                    repeat:-1,
+                    opacity:0
+                },"<+0.3")
             }
             ninthPageAnimation()
+        
             function tenthPageAnimation(){
                 let gg =gsap.timeline({
                     scrollTrigger:{
@@ -1222,14 +1294,30 @@
             })
             
             //hamburger
+
+            $('.hamburger-menu ul > :nth-child(2) a, .hamburger-menu ul > :nth-child(3) a').click(function (e) { 
+              
+                var anchor_id=$(this).attr('anchor');
+                $('html,body').animate({
+                    scrollTop: $('#'+anchor_id).offset().top
+                },1000);
+            });
           })
 
 
-          $(document).load(()=>{
+          $(window).on("load",()=>{
             var img_width = $('.index9 > img').width();
-     
+      
             var img_avg = 1.9;
-            $(".index9").scrollLeft(img_width / img_avg)
+            setTimeout(()=>{
+              
+                document.addEventListener("scroll",(()=>{
+            
+                $(".index9").scrollLeft(img_width / img_avg)
+            }),{once:true})
+            },"500")
+      
+       
                   
           })
     </script>

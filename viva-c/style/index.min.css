@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+#top_arrow {
+  display: none !important;
+}
+
 .toTopFix {
   position: fixed;
   right: 2vw;
@@ -1022,26 +1026,6 @@ footer .footer-para :nth-child(2) {
     opacity: 0;
   }
 }
-@-webkit-keyframes glowing {
-  80% {
-    transform: scale(3);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
-@keyframes glowing {
-  80% {
-    transform: scale(3);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
 .phone {
   display: none;
 }
@@ -1061,7 +1045,7 @@ footer .footer-para :nth-child(2) {
   .toTopFix {
     position: fixed;
     right: 5vw;
-    bottom: 4vw;
+    bottom: 15vw;
     z-index: 21;
   }
   .toTopFix img {
@@ -1687,8 +1671,7 @@ footer .footer-para :nth-child(2) {
     height: -moz-fit-content;
     height: fit-content;
     padding: 20vw 0;
-    margin-top: 20vw;
-    overflow: hidden;
+    margin-top: 25vw;
     height: 200vw;
   }
   .index6-bg {
@@ -1715,13 +1698,6 @@ footer .footer-para :nth-child(2) {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     padding: 1vw;
-  }
-  .index6-bg img {
-    width: 112vw;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin-left: -8vw;
   }
   .index6-bg .round1 {
     top: 154vw;
@@ -1794,18 +1770,21 @@ footer .footer-para :nth-child(2) {
   }
   .index6-title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
-    margin-bottom: 40vw;
+    margin-bottom: 38vw;
   }
   .index6-title img {
-    width: 60vw;
+    margin-right: 5vw;
+    width: 40vw;
   }
   .index6-imgBox {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   .index6-imgBox .roundBox {
     position: relative;
@@ -1816,10 +1795,47 @@ footer .footer-para :nth-child(2) {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .index6-imgBox .roundBox .round {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+    opacity: 0;
+  }
+  .index6-imgBox .roundBox .round-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+    opacity: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .index6-imgBox .roundBox .round-bg1 {
+    width: 5vw;
+  }
+  .index6-imgBox .roundBox .round-bg2 {
+    width: 3vw;
+  }
+  .index6-imgBox .roundBox .round-bg3 {
+    width: 8vw;
+  }
+  .index6-imgBox .roundBox .round-bg4 {
+    width: 9vw;
+  }
+  .index6-imgBox .roundBox .round-bg5 {
+    width: 10.5vw;
+  }
   .index6-imgBox .roundBox .imgBox {
     width: 50vw;
     height: 50vw;
-    margin-bottom: 7vw;
+    margin-bottom: 3vw;
   }
   .index6-imgBox .roundBox .imgBox img {
     width: 100%;
@@ -1834,17 +1850,67 @@ footer .footer-para :nth-child(2) {
     width: 100%;
   }
   .index6-imgBox .roundBox .para img {
-    height: 5vw;
+    height: 4vw;
   }
-  .index6-imgBox > :not(:last-child) {
-    margin-bottom: 15vw;
+  .index6-imgBox > :nth-child(1) {
+    margin-top: -60vw;
+    margin-left: -5vw;
   }
-  .index6 .round {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
+  .index6-imgBox > :nth-child(1) .imgBox {
+    width: 50vw;
+    height: 50vw;
+  }
+  .index6-imgBox > :nth-child(1) .round {
+    width: 30vw;
+    height: 30vw;
+  }
+  .index6-imgBox > :nth-child(2) {
+    margin-top: -10vw;
+    margin-left: 5vw;
+  }
+  .index6-imgBox > :nth-child(2) .imgBox {
+    width: 30vw;
+    height: 30vw;
+  }
+  .index6-imgBox > :nth-child(2) .round {
+    width: 20vw;
+    height: 20vw;
+  }
+  .index6-imgBox > :nth-child(3) {
+    margin-top: -5vw;
+    margin-right: 15vw;
+  }
+  .index6-imgBox > :nth-child(3) .imgBox {
+    width: 30vw;
+    height: 30vw;
+  }
+  .index6-imgBox > :nth-child(3) .round {
+    width: 20vw;
+    height: 20vw;
+  }
+  .index6-imgBox > :nth-child(4) {
+    margin-bottom: -25vw;
+    margin-right: -4vw;
+  }
+  .index6-imgBox > :nth-child(4) .imgBox {
+    width: 35vw;
+    height: 35vw;
+  }
+  .index6-imgBox > :nth-child(4) .round {
+    width: 25vw;
+    height: 25vw;
+  }
+  .index6-imgBox > :nth-child(5) {
+    margin-bottom: -60vw;
+    margin-right: 20vw;
+  }
+  .index6-imgBox > :nth-child(5) .imgBox {
+    width: 40vw;
+    height: 40vw;
+  }
+  .index6-imgBox > :nth-child(5) .round {
+    width: 25vw;
+    height: 25vw;
   }
   .index7 {
     width: 100%;
@@ -1974,11 +2040,13 @@ footer .footer-para :nth-child(2) {
     background-color: #DE1A43;
     -webkit-animation-delay: 0.5s;
             animation-delay: 0.5s;
+    z-index: 21;
   }
   .index9 .dot3 {
     background-color: #DE1A43;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
+    z-index: 22;
   }
   .index10 {
     width: 100%;
