@@ -218,7 +218,7 @@ $(document).ready(function () {
             case `news.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
                 $($(`.list_box a`)[4]).css("pointer-events","none")
-                $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
+                $($(`.list_box a`)[4]).css("border-bottom","2px solid #fff")
                 break;
             }
             case `newsInner.${fileName[fileName.length-1]}`:{
@@ -282,7 +282,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:-50,
+                y:"-5vw",
                 duration:0.5,
                 stagger:0.03,
            
