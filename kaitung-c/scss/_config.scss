@@ -251,17 +251,19 @@ footer{
             width: 9.5vw;
             overflow: hidden;
             height: fit-content;
+            padding-bottom: 0.4vw;
             &:hover .s_txt_box::after{
                 width: 100%;
             }
             P{
                 width: fit-content;
-                padding-bottom: 0.3vw;
+                padding-bottom: 0.4vw;
             }
             span{
                 display: inline-block;
                 pointer-events: none;
-                padding-bottom: 0.3vw;
+          
+                
             }
             .menu_box{
                 width: 100%;
@@ -278,7 +280,7 @@ footer{
                     width: fit-content;
                     height: fit-content;
                     margin: auto;
-           
+                    padding-bottom: 0.4vw;
                     
                 }
                 .s_txt_box2{
