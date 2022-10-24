@@ -195,41 +195,41 @@ $(document).ready(function () {
             case `stock.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($(`.list_box a`)[1]).css("pointer-events","none")
-                $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[1]).find("p")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `stockInner.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
-                $($(`.list_box a`)[1].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `purchase.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[2]).find("span").eq(0)).text("PURCHASING")
                 $($(`.list_box a`)[2]).css("pointer-events","none")
-                $($(`.list_box a`)[2].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[2]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `rent.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[3])).html(`<p>RENTAL\xa0CAR</p>`)
                 $($(`.list_box a`)[3]).css("pointer-events","none")
-                $($(`.list_box a`)[3].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[3]).find("p")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `news.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
                 $($(`.list_box a`)[4]).css("pointer-events","none")
-                $($(`.list_box a`)[4]).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `newsInner.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
-                $($(`.list_box a`)[4].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `contact.${fileName[fileName.length-1]}`:{
                 $($($(`.list_box a`)[5]).find("span").eq(0)).text("APPOINTMENT")
                 $($(`.list_box a`)[5]).css("pointer-events","none")
-                $($(`.list_box a`)[5].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[5]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
            
