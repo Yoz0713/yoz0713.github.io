@@ -15237,7 +15237,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.2em;
   height: 58vw;
-  margin-top: -1vw;
+  margin-top: 0vw;
 }
 .aboutKai2-left {
   display: flex;
@@ -15295,6 +15295,7 @@ body {
 }
 
 .aboutKai3 {
+  position: relative;
   -webkit-clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 14%, 100% 100%, 0 100%, 0 0);
   margin-top: -10vw;
@@ -15434,11 +15435,153 @@ body {
 }
 
 @media all and (max-width: 1024px) {
+  .aboutKai1 {
+    width: 100%;
+    height: 175vw;
+    position: relative;
+  }
+  .aboutKai1 .top_logo_div {
+    justify-content: flex-end;
+  }
+  .aboutKai1 .top_logo_div .img_box {
+    margin-right: 5vw;
+  }
+  .aboutKai1-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .aboutKai1-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aboutKai1-para {
+    color: #FFF;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 50vw;
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutKai1-para .para1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  .aboutKai1-para .para1 h1 {
+    font-size: 11vw;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+  .aboutKai1-para .para1 p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: -0.1em;
+    font-weight: 300;
+  }
+  .aboutKai1-para .para1 h4 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: 0.1em;
+  }
+  .aboutKai1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vw;
+    background: linear-gradient(180deg, transparent 0%, #000 100%);
+  }
+  .aboutKai2 {
+    display: flex;
+    padding: 30vw 7vw;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: -1vw;
+  }
+  .aboutKai2-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50%;
+    margin-bottom: 15vw;
+  }
+  .aboutKai2-left .para .para1 {
+    margin-bottom: 10vw;
+  }
+  .aboutKai2-left .para .para1 p {
+    line-height: 1.8em;
+  }
+  .aboutKai2-left .para .para2 p {
+    font-weight: 500;
+    margin-bottom: 1.3vw;
+  }
+  .aboutKai2-left .para .para2 ul {
+    margin-left: 3.5vw;
+  }
+  .aboutKai2-left .para .para2 ul li {
+    list-style: disc;
+  }
+  .aboutKai2-left .para .para2 ul :not(:last-child) {
+    margin-bottom: 0.5vw;
+  }
+  .aboutKai2-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50%;
+    position: relative;
+  }
+  .aboutKai2-right .para .para1 {
+    margin-bottom: 8vw;
+  }
+  .aboutKai2-right .para .para1 p {
+    line-height: 1.8em;
+  }
+  .aboutKai2-right .para .para2 {
+    margin-bottom: 4.5vw;
+  }
+  .aboutKai2-right .para .para3 h3 {
+    color: #0080c0;
+  }
+  .aboutKai2-right::before {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -7.5vw;
+    background-color: rgba(73, 73, 73, 0.445);
+  }
+  .aboutKai3 {
+    margin-top: -15vw;
+    -webkit-clip-path: polygon(100% 8%, 100% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 8%, 100% 100%, 0% 100%, 0 0);
+  }
   .aboutKai3 .advantage {
     position: relative;
     background-color: #021A35;
     padding: 0;
-    padding: 7vw 8vw;
+    padding: 10vw 8vw;
   }
   .aboutKai3 .advantage .txt_box {
     width: 100%;
@@ -15643,11 +15786,153 @@ body {
   }
 }
 @media all and (max-width: 1024px) and (max-width: 500px) {
+  .aboutKai1 {
+    width: 100%;
+    height: 220vw;
+    position: relative;
+  }
+  .aboutKai1 .top_logo_div {
+    justify-content: flex-end;
+  }
+  .aboutKai1 .top_logo_div .img_box {
+    margin-right: 5vw;
+  }
+  .aboutKai1-bg {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .aboutKai1-bg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .aboutKai1-para {
+    color: #FFF;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 70vw;
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .aboutKai1-para .para1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  .aboutKai1-para .para1 h1 {
+    font-size: 12.5vw;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+  .aboutKai1-para .para1 p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: -0.1em;
+    font-weight: 300;
+  }
+  .aboutKai1-para .para1 h4 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    letter-spacing: 0.1em;
+  }
+  .aboutKai1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vw;
+    background: linear-gradient(180deg, transparent 0%, #000 100%);
+  }
+  .aboutKai2 {
+    display: flex;
+    padding: 30vw 7vw;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: -1vw;
+  }
+  .aboutKai2-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50%;
+    margin-bottom: 15vw;
+  }
+  .aboutKai2-left .para .para1 {
+    margin-bottom: 10vw;
+  }
+  .aboutKai2-left .para .para1 p {
+    line-height: 2em;
+  }
+  .aboutKai2-left .para .para2 p {
+    font-weight: 500;
+    margin-bottom: 1.3vw;
+  }
+  .aboutKai2-left .para .para2 ul {
+    margin-left: 5vw;
+  }
+  .aboutKai2-left .para .para2 ul li {
+    list-style: disc;
+  }
+  .aboutKai2-left .para .para2 ul :not(:last-child) {
+    margin-bottom: 0.5vw;
+  }
+  .aboutKai2-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50%;
+    position: relative;
+  }
+  .aboutKai2-right .para .para1 {
+    margin-bottom: 10vw;
+  }
+  .aboutKai2-right .para .para1 p {
+    line-height: 2em;
+  }
+  .aboutKai2-right .para .para2 {
+    margin-bottom: 10vw;
+    line-height: 2em;
+  }
+  .aboutKai2-right .para .para3 h3 {
+    color: #0080c0;
+  }
+  .aboutKai2-right::before {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -7.5vw;
+    background-color: rgba(73, 73, 73, 0.445);
+  }
+  .aboutKai3 {
+    -webkit-clip-path: polygon(100% 6%, 100% 100%, 0% 100%, 0 0);
+            clip-path: polygon(100% 6%, 100% 100%, 0% 100%, 0 0);
+  }
   .aboutKai3 .advantage {
     position: relative;
     background-color: #021A35;
     padding: 0;
-    padding: 7vw 8vw;
+    padding: 20vw 8vw;
   }
   .aboutKai3 .advantage .txt_box {
     width: 100%;
