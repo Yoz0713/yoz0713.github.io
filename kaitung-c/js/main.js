@@ -268,7 +268,7 @@ $(document).ready(function () {
                 
             },{
                 y:-30,
-                duration:0.5,
+                duration:0.3,
                 stagger:0.05,
            
             }).fromTo($(this).find(".s_txt_box2 .s_txt"),{
