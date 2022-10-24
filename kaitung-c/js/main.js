@@ -4,14 +4,7 @@ $(document).ready(function () {
     let loading_tl=gsap.timeline({delay:0.4});
         loading_tl.to('.loading_div .logo_div img', 0.5, {y: 0});
 
-        $(window).on("load",function () {
-            let gg = gsap.timeline()
-            gg.to(".loading_div2",{
-                opacity:0,
-                duration:0.3,
-                pointerEvents:"none"
-            })
-        });
+      
            
     
 
@@ -302,7 +295,14 @@ $(document).ready(function () {
 
  
 });
-
+$(window).on("load",function () {
+    let gg = gsap.timeline()
+    gg.to(".loading_div2",{
+        opacity:0,
+        duration:0.3,
+        pointerEvents:"none"
+    })
+});
 // $(window).on('load', function () {
 //     $('.loading_div').addClass('close');
 // });
