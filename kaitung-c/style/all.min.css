@@ -1659,6 +1659,24 @@ footer .share_box a:nth-last-of-type(4) img {
   position: relative;
   z-index: 10;
 }
+.index4 .advantage .item_box > :nth-child(1) {
+  height: 11.2vw;
+}
+.index4 .advantage .item_box > :nth-child(2) {
+  height: 18vw;
+}
+.index4 .advantage .item_box > :nth-child(3) {
+  height: 18vw;
+}
+.index4 .advantage .item_box > :nth-child(4) {
+  height: 8.11vw;
+}
+.index4 .advantage .item_box > :nth-child(5) {
+  height: 22vw;
+}
+.index4 .advantage .item_box > :nth-child(6) {
+  height: 26.6vw;
+}
 .index4 .advantage .item_box .adv_item {
   position: relative;
   border-radius: 6px;
@@ -1666,6 +1684,11 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .index4 .advantage .item_box .adv_item a {
   display: block;
+}
+.index4 .advantage .item_box .adv_item a img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .index4 .advantage .item_box .adv_item .adv_txt {
   position: absolute;
@@ -15354,6 +15377,24 @@ body {
   position: relative;
   z-index: 10;
 }
+.aboutKai3 .advantage .item_box > :nth-child(1) {
+  height: 11.2vw;
+}
+.aboutKai3 .advantage .item_box > :nth-child(2) {
+  height: 18vw;
+}
+.aboutKai3 .advantage .item_box > :nth-child(3) {
+  height: 18vw;
+}
+.aboutKai3 .advantage .item_box > :nth-child(4) {
+  height: 8.11vw;
+}
+.aboutKai3 .advantage .item_box > :nth-child(5) {
+  height: 22vw;
+}
+.aboutKai3 .advantage .item_box > :nth-child(6) {
+  height: 26.6vw;
+}
 .aboutKai3 .advantage .item_box .adv_item {
   position: relative;
   border-radius: 6px;
@@ -15361,6 +15402,11 @@ body {
 }
 .aboutKai3 .advantage .item_box .adv_item a {
   display: block;
+}
+.aboutKai3 .advantage .item_box .adv_item a img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutKai3 .advantage .item_box .adv_item .adv_txt {
   position: absolute;

@@ -296,7 +296,10 @@ $(document).ready(function () {
 
          });
       }
-      menuAnimation()
+      if(window.innerWidth > 850){
+        menuAnimation()
+      }
+
  
 });
 
