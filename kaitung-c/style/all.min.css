@@ -9680,8 +9680,8 @@ body {
 }
 .purchase3 .search_car .search_box .sel_div .sel_box {
   position: relative;
-  padding: 5px 20px;
   border-right: 1px solid #bdbdbd;
+  padding: 0 1vw;
 }
 .purchase3 .search_car .search_box .sel_div .sel_box p {
   margin: 0;
@@ -9689,7 +9689,6 @@ body {
   font-size: 1.1vw;
   font-weight: 400;
   letter-spacing: 0.15vw;
-  padding: 0 10px;
 }
 .purchase3 .search_car .search_box .sel_div .sel_box select {
   font-weight: 700;
@@ -9702,7 +9701,6 @@ body {
      -moz-appearance: none;
           appearance: none;
   min-width: 20vw;
-  padding: 5px 10px;
 }
 .purchase3 .search_car .search_box .sel_div .sel_box select option {
   font-size: 1.2vw;
@@ -9710,12 +9708,12 @@ body {
 .purchase3 .search_car .search_box .sel_div .sel_box .svg_arrow {
   position: absolute;
   right: 10%;
-  bottom: 12%;
+  bottom: 0.6vw;
   filter: brightness(0.85);
   pointer-events: none;
 }
 .purchase3 .search_car .search_box .sel_div .sel_box .svg_arrow img {
-  width: 13px;
+  width: 0.6vw;
   transform: rotate(-90deg);
 }
 .purchase3 .search_car .search_box .sel_div .sel_box:nth-of-type(2) {

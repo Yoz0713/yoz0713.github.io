@@ -495,16 +495,16 @@ body{
                 padding: 1.8vw 3vw;
                 .sel_box{
                     position: relative;
-                    padding: 5px 20px;
+             
                     border-right: 1px solid #bdbdbd;
-    
+                    padding: 0 1vw;
                     p{
                         margin: 0;
                         color: #aeaeae;
                         font-size: 1.1vw;
                         font-weight: 400;
                         letter-spacing: 0.15vw;
-                        padding: 0 10px;
+               
                     }
     
                     select{
@@ -518,7 +518,7 @@ body{
                         appearance: none;
                         min-width: 20vw;
 
-                        padding: 5px 10px;
+                     
 
                         option{
                             font-size: 1.2vw;
@@ -528,11 +528,11 @@ body{
                     .svg_arrow{
                         position:absolute;
                         right: 10%;
-                        bottom: 12%;
+                        bottom: 0.6vw;
                         filter: brightness(0.85);
                         pointer-events: none;
                         img{
-                            width: 13px;
+                            width: 0.6vw;
                             transform: rotate(-90deg);
                         }
                     }
