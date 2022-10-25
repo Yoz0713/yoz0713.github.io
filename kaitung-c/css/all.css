@@ -152,6 +152,7 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .loading_div .logo_div img {
   transform: translateY(100%);
+  width: 12vw;
 }
 .loading_div .spinner_div {
   width: 25vw;
@@ -159,7 +160,7 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .loading_div .spinner_div img {
   margin-top: 0vw;
-  width: 5vw;
+  width: 3.5vw;
   transform: translateX(1000%);
   -webkit-animation: car_move 2.5s ease-in-out 0.5s infinite normal;
           animation: car_move 2.5s ease-in-out 0.5s infinite normal;
@@ -608,10 +609,10 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: translateX(1000%) skewX(80deg);
   }
   30% {
-    transform: translateX(200%) skewX(0deg);
+    transform: translateX(260%) skewX(0deg);
   }
   70% {
-    transform: translateX(250%) skewX(0deg);
+    transform: translateX(320%) skewX(0deg);
   }
   100% {
     transform: translateX(-200%) skewX(-80deg);
@@ -623,10 +624,10 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: translateX(1000%) skewX(80deg);
   }
   30% {
-    transform: translateX(200%) skewX(0deg);
+    transform: translateX(260%) skewX(0deg);
   }
   70% {
-    transform: translateX(250%) skewX(0deg);
+    transform: translateX(320%) skewX(0deg);
   }
   100% {
     transform: translateX(-200%) skewX(-80deg);
@@ -1151,7 +1152,7 @@ footer .share_box a:nth-last-of-type(4) img {
   position: absolute;
   width: 20vw;
   top: 18vw;
-  left: -1.5vw;
+  left: -1.9vw;
   transform: translateX(-50px);
   opacity: 0;
   transition: all 1.5s;
@@ -1221,7 +1222,7 @@ footer .share_box a:nth-last-of-type(4) img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 44.7%;
+  width: 44.7vw;
   height: 100%;
   background-color: #1A1A1A;
   -webkit-clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);

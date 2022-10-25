@@ -798,11 +798,7 @@
                 let DOM=$(this).parent().find('.adv_txt');
                 console.log(DOM)
                 let tl = gsap.timeline();
-                tl.to(DOM, 0.5, {opacity: 1})
-                  .fromTo(DOM.find('h2'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1')
-                  .fromTo(DOM.find('h4'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1')
-                  .fromTo(DOM.find('p'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1')
-                  .fromTo(DOM.find('.adv_icon'), 0.5, {opacity: 0, rotate:180},{opacity: 1, rotate:0}, '<0.1');
+                tl.to(DOM, 0.5, {opacity: 1}).fromTo(DOM.find('h2'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1').fromTo(DOM.find('h4'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1').fromTo(DOM.find('p'), 0.5, {opacity: 0, x:-30},{opacity: 1, x:0}, '<0.1').fromTo(DOM.find('.adv_icon'), 0.5, {opacity: 0, rotate:180},{opacity: 1, rotate:0}, '<0.1');
             });
             
             $('.adv_item a').mouseleave(function () { 
