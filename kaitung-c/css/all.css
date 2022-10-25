@@ -692,7 +692,7 @@ footer .share_box a:nth-last-of-type(4) img {
   display: none;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .phone {
     display: block;
   }
@@ -830,7 +830,7 @@ footer .share_box a:nth-last-of-type(4) img {
     height: 3.4vw;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .loading_div .logo_div img {
     width: 70%;
     margin: 0 auto;
@@ -2002,7 +2002,7 @@ footer .share_box a:nth-last-of-type(4) img {
     transform: scaleinfinite(1);
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index1 .follow-img {
     position: absolute;
     top: 0;
@@ -2302,7 +2302,7 @@ footer .share_box a:nth-last-of-type(4) img {
     display: inline-block;
   }
 }
-@media (max-width: 1024px) and (max-width: 850px) {
+@media screen and (max-width: 1024px) and (max-width: 850px) {
   .index1 .swiper {
     height: 135vw;
   }
@@ -2360,7 +2360,7 @@ footer .share_box a:nth-last-of-type(4) img {
     font-size: 2.2vw;
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index2 .swiper {
     width: 100%;
   }
@@ -2396,7 +2396,7 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 100%;
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index3 {
     background-color: #E8EAEC;
   }
@@ -2691,7 +2691,7 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-left: 1vw;
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index4 .advantage {
     position: relative;
     background-color: #021A35;
@@ -2900,7 +2900,7 @@ footer .share_box a:nth-last-of-type(4) img {
     z-index: 0;
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index5 {
     background-color: #021A35;
   }
@@ -3029,7 +3029,7 @@ footer .share_box a:nth-last-of-type(4) img {
     opacity: 1;
   }
 }
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .index6 .contact_us {
     flex-direction: column;
     background-color: #021A34;
@@ -3110,7 +3110,7 @@ footer .share_box a:nth-last-of-type(4) img {
     order: -1;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index1 .follow-img {
     position: absolute;
     top: 0;
@@ -3417,7 +3417,7 @@ footer .share_box a:nth-last-of-type(4) img {
     display: inline-block;
   }
 }
-@media (max-width: 1024px) and (max-width: 500px) and (max-width: 850px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) and (max-width: 850px) {
   .index1 .swiper {
     height: 220vw;
   }
@@ -3481,7 +3481,7 @@ footer .share_box a:nth-last-of-type(4) img {
     font-size: 3vw;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index2 .swiper {
     width: 100%;
   }
@@ -3515,7 +3515,7 @@ footer .share_box a:nth-last-of-type(4) img {
     width: 100%;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index3 {
     background-color: #E8EAEC;
   }
@@ -3837,7 +3837,7 @@ footer .share_box a:nth-last-of-type(4) img {
     top: 4.3vw;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index4 .advantage {
     position: relative;
     background-color: #021A35;
@@ -4032,7 +4032,7 @@ footer .share_box a:nth-last-of-type(4) img {
     z-index: 0;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index5 {
     background-color: #021A35;
   }
@@ -4161,7 +4161,7 @@ footer .share_box a:nth-last-of-type(4) img {
     opacity: 1;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .index6 .contact_us {
     flex-direction: column;
     background-color: #021A34;
@@ -4876,7 +4876,7 @@ body {
   filter: brightness(30);
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .stock1 {
     position: relative;
     height: -webkit-fit-content;
@@ -5513,7 +5513,7 @@ body {
     filter: brightness(30);
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .stock1 {
     position: relative;
     height: -webkit-fit-content;
@@ -6907,7 +6907,7 @@ body {
   color: #fff;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .news1 {
     display: flex;
     position: relative;
@@ -7249,7 +7249,7 @@ body {
     color: #fff;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .news1 {
     height: 220vw;
   }
@@ -7764,7 +7764,7 @@ body {
   font-weight: 400;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .newsInner1 {
     position: relative;
     height: -webkit-fit-content;
@@ -8042,7 +8042,7 @@ body {
     font-weight: 400;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .newsInner1 {
     position: relative;
     height: -webkit-fit-content;
@@ -8645,7 +8645,7 @@ body {
   filter: brightness(30);
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .stockInner1 {
     width: 100%;
     position: relative;
@@ -8970,7 +8970,7 @@ body {
     filter: brightness(30);
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .stockInner1 {
     width: 100%;
     position: relative;
@@ -9856,7 +9856,7 @@ body {
   filter: brightness(30);
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .purchase1 {
     position: relative;
     height: -webkit-fit-content;
@@ -10491,7 +10491,7 @@ body {
     filter: brightness(30);
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .purchase1 {
     position: relative;
     height: -webkit-fit-content;
@@ -11745,7 +11745,7 @@ body {
   filter: brightness(30);
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .rent1 {
     position: relative;
     height: -webkit-fit-content;
@@ -12382,7 +12382,7 @@ body {
     filter: brightness(30);
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .rent1 {
     position: relative;
     height: -webkit-fit-content;
@@ -13050,12 +13050,12 @@ body {
   margin-bottom: 5vw;
 }
 .contact1-left-para > p {
-  margin: 1vw 0 10.5vw;
   font-weight: 300;
 }
 .contact1-left-para .booking {
   display: flex;
   font-weight: 300;
+  margin: 1vw 0 10.5vw;
 }
 .contact1-left-para .booking-left {
   position: relative;
@@ -13224,7 +13224,7 @@ body {
   left: 0;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .contact1 {
     display: flex;
     flex-direction: column;
@@ -13440,7 +13440,7 @@ body {
     left: 0;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .contact1 {
     display: flex;
     flex-direction: column;
@@ -13833,7 +13833,7 @@ body {
   opacity: 1;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .about1 {
     display: flex;
     position: relative;
@@ -13990,7 +13990,7 @@ body {
     opacity: 1;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .about1 {
     height: 220vw;
   }
@@ -14412,7 +14412,7 @@ body {
   background-color: #33203f;
 }
 
-@media all and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   .buyIt .menu::before {
     content: "";
     position: absolute;
@@ -14807,7 +14807,7 @@ body {
     background-color: #33203f;
   }
 }
-@media all and (max-width: 850px) and (max-width: 500px) {
+@media screen and (max-width: 850px) and (max-width: 500px) {
   .buyIt .menu::before {
     content: "";
     position: absolute;
@@ -15505,7 +15505,7 @@ body {
   z-index: 0;
 }
 
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .aboutKai1 {
     width: 100%;
     height: 175vw;
@@ -15856,7 +15856,7 @@ body {
     z-index: 0;
   }
 }
-@media all and (max-width: 1024px) and (max-width: 500px) {
+@media screen and (max-width: 1024px) and (max-width: 500px) {
   .aboutKai1 {
     width: 100%;
     height: 220vw;

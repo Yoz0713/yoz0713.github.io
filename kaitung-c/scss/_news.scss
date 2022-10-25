@@ -867,7 +867,7 @@
     }
 }
 
-@media all and (max-width:850px){
+@media screen and (max-width:850px){
     .news1{
         display: flex;
         position: relative;
@@ -1231,7 +1231,7 @@
           
         }
     }
-    @media all and (max-width:500px){
+    @media screen and (max-width:500px){
         .news1{
         
             height: 220vw;

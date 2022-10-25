@@ -184,7 +184,7 @@
 }
 
 
-@media all and (max-width:850px){
+@media screen and (max-width:850px){
     .about1{
         display: flex;
         position: relative;
@@ -336,7 +336,7 @@
            
         }
     }
-    @media all and (max-width:500px){
+    @media screen and (max-width:500px){
         .about1{
             height: 220vw;
             &-left{

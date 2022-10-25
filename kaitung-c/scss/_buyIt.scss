@@ -430,7 +430,7 @@
     }
 }
 
-@media all and (max-width:850px){
+@media screen and (max-width:850px){
     .buyIt{
         .menu{
             &::before{
@@ -871,7 +871,7 @@
             }
         }
     }
-    @media all and (max-width:500px){
+    @media screen and (max-width:500px){
         .buyIt{
             .menu{
                 &::before{

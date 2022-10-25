@@ -784,7 +784,7 @@ footer{
     display:none;
 }
 
-@media all and (max-width:850px){
+@media screen and (max-width:850px){
    
     .phone{
         display: block;
@@ -960,7 +960,7 @@ footer{
         }
       
     }
-    @media all and (max-width:500px){
+    @media screen and (max-width:500px){
         .loading_div{
             .logo_div{
                 img{
