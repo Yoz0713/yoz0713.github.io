@@ -303,7 +303,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:"-5.8vw",
+                y:"-5vw",
                 duration:0.5,
                 stagger:0.03,
            

@@ -258,7 +258,7 @@ footer{
             padding: 0vw 0vw;
             position: relative;
             width: fit-content;
-            overflow: hidden;
+   
        
             height: 2.5vw;
             &:hover .s_txt_box::after{
@@ -307,9 +307,13 @@ footer{
                     left: 0;
                     right: 0;
                     margin: 0 auto;
-                    bottom: -5vw;
+                    overflow: hidden;
                     width:fit-content;
                     height:fit-content;
+                    .s_txt{
+                        position:relative;
+                        bottom: -5vw;
+                    }
                 }
             }
            
@@ -326,7 +330,7 @@ footer{
             }
             &:last-of-type{
                 margin: 0;
-                margin-left: 1.5vw;
+          
             }
         }
        
