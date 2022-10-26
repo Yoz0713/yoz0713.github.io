@@ -207,12 +207,12 @@ $(document).ready(function () {
                 $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
-            case `stockInner.${fileName[fileName.length-1]}`:{
-                // $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
-                $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
+            // case `stockInner.${fileName[fileName.length-1]}`:{
+            //     // $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
+            //     $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
            
-                break;
-            }
+            //     break;
+            // }
             case `purchase.${fileName[fileName.length-1]}`:{
                 // $($($(`.list_box a`)[2])).html(`<p>PURCHASING</p>`)
                 $($(`.list_box a`)[2]).css("pointer-events","none")
@@ -231,11 +231,11 @@ $(document).ready(function () {
                 $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
-            case `newsInner.${fileName[fileName.length-1]}`:{
-                // $($($(`.list_box a`)[4])).html(`<p>NEWS</p>`)
-                $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
-                break;
-            }
+            // case `newsInner.${fileName[fileName.length-1]}`:{
+            //     // $($($(`.list_box a`)[4])).html(`<p>NEWS</p>`)
+            //     $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
+            //     break;
+            // }
             case `contact.${fileName[fileName.length-1]}`:{
                 let v = sessionStorage.getItem(flag)
                 console.log(v)
