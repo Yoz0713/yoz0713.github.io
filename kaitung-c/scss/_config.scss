@@ -240,8 +240,9 @@ footer{
     }
 
     .list_box {
-        justify-content: flex-end;
-        width: 85%;
+        justify-content: space-between;
+      
+        width:80%;
         z-index: 10;
  
         a{
@@ -257,15 +258,15 @@ footer{
             padding: 0vw 0vw;
             position: relative;
             width: fit-content;
-            overflow-y: hidden;
-            margin-right: 1.5vw;
+            overflow: hidden;
+       
             height: 2.5vw;
             &:hover .s_txt_box::after{
                 width: 100%;
             }
             P{
                 width: fit-content;
-                padding-bottom: 0.4vw;
+               padding: 0.4vw 0;
             }
             span{
                 display: inline-block;
@@ -274,15 +275,20 @@ footer{
                 
             }
             .menu_box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 width:fit-content;
-                height: 100%;
+                padding: 0vw 2vw;
+        
                 
                 pointer-events: none;
                 .s_txt_box{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    position: absolute;
+                    position: relative;
                     top: 0;
                     left: 0;
                     bottom: 0;
@@ -290,19 +296,19 @@ footer{
                     width: fit-content;
                     height: fit-content;
                     margin: auto;
-                    padding-bottom: 0.4vw;
+                    padding: 0.4vw 0;
                     overflow: hidden;
                 }
                 .s_txt_box2{
                     display: flex;
                     justify-content: center;
-                    position:relative;
+                    position:absolute;
                     white-space: nowrap;
                     left: 0;
                     right: 0;
                     margin: 0 auto;
                     bottom: -5vw;
-                    width:9.8vw;
+                    width:fit-content;
                     height:fit-content;
                 }
             }

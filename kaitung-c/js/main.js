@@ -191,7 +191,7 @@ $(document).ready(function () {
         switch (path[0]){
             case `about.${fileName[fileName.length-1]}`:{
                
-                $($($(`.list_box a`)[0])).html(`<p>ABOUT\xa0 US</p>`)
+                // $($($(`.list_box a`)[0])).html(`<p>ABOUT\xa0 US</p>`)
                 $($(`.list_box a`)[0]).css("pointer-events","none")
                 $($(`.list_box a`)[0].childNodes).css("border-bottom","2px solid #fff")
               
@@ -202,37 +202,37 @@ $(document).ready(function () {
                 break;
             }
             case `stock.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
+                // $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($(`.list_box a`)[1]).css("pointer-events","none")
-                $($($(`.list_box a`)[1]).find("p")).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `stockInner.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
+                // $($($(`.list_box a`)[1])).html(`<p>CAR\xa0IN\xa0STOCK</p>`)
                 $($($(`.list_box a`)[1]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
-                $($($(`.list_box a`)[1]).find("p")).css("border-bottom","2px solid #fff")
+           
                 break;
             }
             case `purchase.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[2]).find("span").eq(0)).text("PURCHASING")
+                // $($($(`.list_box a`)[2])).html(`<p>PURCHASING</p>`)
                 $($(`.list_box a`)[2]).css("pointer-events","none")
                 $($($(`.list_box a`)[2]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `rent.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[3])).html(`<p>RENTAL\xa0CAR</p>`)
+                // $($($(`.list_box a`)[3])).html(`<p>RENTAL\xa0CAR</p>`)
                 $($(`.list_box a`)[3]).css("pointer-events","none")
-                $($($(`.list_box a`)[3]).find("p")).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[3]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `news.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
+                // $($($(`.list_box a`)[4])).html(`<p>NEWS</p>`)
                 $($(`.list_box a`)[4]).css("pointer-events","none")
                 $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
             case `newsInner.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[4]).find("span").eq(0)).text("NEWS")
+                // $($($(`.list_box a`)[4])).html(`<p>NEWS</p>`)
                 $($($(`.list_box a`)[4]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 break;
             }
@@ -243,11 +243,11 @@ $(document).ready(function () {
             
     
                 if(v == "electric"){
-                    $($($(`.list_box a`)[6])).html(`<p style="color:#01ffff">APPOINTMENT</p>`)
+                    // $($($(`.list_box a`)[6])).html(`<p style="color:#01ffff">APPOINTMENT</p>`)
                     $($(`.list_box a`)[6]).css("pointer-events","none")
                     $($($(`.list_box a`)[6]).find("p")).css("border-bottom","2px solid #01ffff")
                 }else{
-                    $($($(`.list_box a`)[5])).html(`<p>APPOINTMENT</p>`)
+                    // $($($(`.list_box a`)[5])).html(`<p>APPOINTMENT</p>`)
                     $($(`.list_box a`)[5]).css("pointer-events","none")
                     $($($(`.list_box a`)[5]).find("p")).css("border-bottom","2px solid #fff")
                 }
@@ -295,7 +295,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:-30,
+                y:-40,
                 duration:0.3,
                 stagger:0.05,
            
@@ -303,7 +303,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:"-4.45vw",
+                y:"-5.8vw",
                 duration:0.5,
                 stagger:0.03,
            
