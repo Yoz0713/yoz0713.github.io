@@ -257,8 +257,8 @@ footer{
             padding: 0vw 0vw;
             position: relative;
             width: fit-content;
-            overflow: hidden;
-        
+            overflow-y: hidden;
+            margin-right: 1.5vw;
             height: 2.5vw;
             &:hover .s_txt_box::after{
                 width: 100%;
@@ -276,6 +276,7 @@ footer{
             .menu_box{
                 width:fit-content;
                 height: 100%;
+                
                 pointer-events: none;
                 .s_txt_box{
                     display: flex;
@@ -301,7 +302,7 @@ footer{
                     right: 0;
                     margin: 0 auto;
                     bottom: -5vw;
-                    width:12vw;
+                    width:9.5vw;
                     height:fit-content;
                 }
             }
