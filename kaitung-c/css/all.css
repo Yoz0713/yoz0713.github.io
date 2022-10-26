@@ -216,7 +216,6 @@ footer .share_box a:nth-last-of-type(4) img {
   width: -moz-fit-content;
   width: fit-content;
   overflow: hidden;
-  margin-right: 1.5vw;
   height: 2.5vw;
 }
 .menu .list_box a:hover .s_txt_box::after {
@@ -233,7 +232,9 @@ footer .share_box a:nth-last-of-type(4) img {
   pointer-events: none;
 }
 .menu .list_box a .menu_box {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 100%;
   pointer-events: none;
 }
@@ -265,7 +266,7 @@ footer .share_box a:nth-last-of-type(4) img {
   right: 0;
   margin: 0 auto;
   bottom: -5vw;
-  width: 8.3vw;
+  width: 12vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -14059,6 +14060,9 @@ body {
 .buyIt .menu .list_box > :first-child img {
   width: 7vw;
   margin-bottom: 0.5vw;
+}
+.buyIt .menu .list_box > :nth-child(8) {
+  width: 10vw;
 }
 .buyIt footer {
   background-image: url(../img/buyIt/2x/footer-bg.webp);
