@@ -193,7 +193,7 @@ $(document).ready(function () {
                
                 // $($($(`.list_box a`)[0])).html(`<p>ABOUT\xa0 US</p>`)
                 $($(`.list_box a`)[0]).css("pointer-events","none")
-                $($(`.list_box a`)[0].childNodes).css("border-bottom","2px solid #fff")
+                $($($(`.list_box a`)[0]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
               
                 break
             }
