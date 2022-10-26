@@ -384,7 +384,8 @@ footer{
             top: 0%;
             background-color: #0080c5;
             padding: 5vw ;
-            padding-top: 12vw;
+            padding-top: 18vw;
+            height: 120vw;
             width: 50vw;
             & > :not(:last-child){
                 margin-bottom: 7vw;
@@ -393,8 +394,10 @@ footer{
                 font-size: 3vw;
                 width: fit-content;
                 padding-left: 0;
+
                 .menu_box{
                     .s_txt_box2{
+                        display: none;
                         bottom: -15vw;
                     }
                 }
@@ -406,19 +409,21 @@ footer{
                 justify-content:space-between;
                 overflow: hidden;
                 margin-top: 7vw;
-
+            
                 &.fixed_share_box{
                     position: fixed;
                     flex-direction: column;
                     top: 1vw;
                     right: 1vw;
-
+                    height: fit-content;
                     a{
+                        height: fit-content;
                         filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.4));
                     }
                 }
 
                 a{
+                    height: fit-content;
                     padding: 0;
                     padding-left: 0;
                     display: inline-block;
