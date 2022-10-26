@@ -245,11 +245,11 @@ $(document).ready(function () {
                 if(v == "electric"){
                     // $($($(`.list_box a`)[6])).html(`<p style="color:#01ffff">APPOINTMENT</p>`)
                     $($(`.list_box a`)[6]).css("pointer-events","none")
-                    $($($(`.list_box a`)[6]).find("p")).css("border-bottom","2px solid #01ffff")
+                    $($($(`.list_box a`)[6]).find(".s_txt_box")).css("border-bottom","2px solid #01ffff")
                 }else{
                     // $($($(`.list_box a`)[5])).html(`<p>APPOINTMENT</p>`)
                     $($(`.list_box a`)[5]).css("pointer-events","none")
-                    $($($(`.list_box a`)[5]).find("p")).css("border-bottom","2px solid #fff")
+                    $($($(`.list_box a`)[5]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
                 }
                 break;
             }
