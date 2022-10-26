@@ -172,6 +172,22 @@ $(document).ready(function () {
       
         let reg = new RegExp(`([a-zA-Z]{0,25}.${fileName[fileName.length-1]})$`)
         let path = reg.exec(pathname)
+        let flag;
+      
+        $($(".list_box a")[6]).click((e)=>{
+           
+            sessionStorage.removeItem(flag)
+            window.sessionStorage.setItem(flag,"electric")
+        })
+        $($(".list_box a")[5]).click((e)=>{
+       
+            sessionStorage.removeItem(flag)
+            window.sessionStorage.setItem(flag,"contact")
+            
+        })
+        
+        
+        console.log(sessionStorage)
         switch (path[0]){
             case `about.${fileName[fileName.length-1]}`:{
                
@@ -221,9 +237,20 @@ $(document).ready(function () {
                 break;
             }
             case `contact.${fileName[fileName.length-1]}`:{
-                $($($(`.list_box a`)[5]).find("span").eq(0)).text("APPOINTMENT")
-                $($(`.list_box a`)[5]).css("pointer-events","none")
-                $($($(`.list_box a`)[5]).find(".s_txt_box")).css("border-bottom","2px solid #fff")
+                let v = sessionStorage.getItem(flag)
+                console.log(v)
+              
+            
+    
+                if(v == "electric"){
+                    $($($(`.list_box a`)[6])).html(`<p style="color:#01ffff">APPOINTMENT</p>`)
+                    $($(`.list_box a`)[6]).css("pointer-events","none")
+                    $($($(`.list_box a`)[6]).find("p")).css("border-bottom","2px solid #01ffff")
+                }else{
+                    $($($(`.list_box a`)[5])).html(`<p>APPOINTMENT</p>`)
+                    $($(`.list_box a`)[5]).css("pointer-events","none")
+                    $($($(`.list_box a`)[5]).find("p")).css("border-bottom","2px solid #fff")
+                }
                 break;
             }
            
@@ -276,7 +303,7 @@ $(document).ready(function () {
                 y:0,
                 
             },{
-                y:"-5.85vw",
+                y:"-4.45vw",
                 duration:0.5,
                 stagger:0.03,
            

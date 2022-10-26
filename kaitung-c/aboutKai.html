@@ -155,7 +155,7 @@
                         預見2040年純電車大爆發的新時代。</p>
                 </div>
                 <div class="para2">
-                    <p class="ch_text_s">「鎧藤車業」率先領潮，成為台灣獨家專營<span style="color:#01ffff">EV純電車</span>的專業車商，<br>
+                    <p class="ch_text_s">「鎧騰車業」率先領潮，成為台灣獨家專營<span style="color:#01ffff">EV純電車</span>的專業車商，<br>
                         與其跟著趨勢走，不如走在 <span style="color:#01ffff">EV</span>前面。</p>
                 </div>
                 <div class="para3">
@@ -166,19 +166,19 @@
         </div>
     </div>
     <section class="aboutKai3">
-        <div class="advantage">
+        <div class="advantage" id="betterService">
           <div class="txt_box">
               <h1>鎧騰服務優勢</h1>
               <p>鎧騰車業為您嚴格把關，每輛車都擁有第三方認證、里程保證、保固服務，放心挑選專屬於您的好車。</p>
           </div>
           <div class="item_box computer">
              <div class="adv_item">
-               <div class="adv_txt sp flex-box i-center j-center">
+               <div class="bs_txt sp flex-box i-center j-center">
                   <h2 class="en_i">02</h2>
                   <div class="dt">
                       <h4>維修與服務</h4>
                       <p>完善的設備與專業維修團隊</p>
-                      <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                      
                   </div>
                </div>
                <a href="javascript:;">
@@ -186,12 +186,12 @@
                </a>
              </div>
              <div class="adv_item">
-               <div class="adv_txt flex-box i-center j-center">
+               <div class="bs_txt flex-box i-center j-center">
                   <h2 class="en_i">03</h2>
                   <div class="dt">
                     <h4>認證二手車</h4>
                     <p>為何要買經過認證的車</p>
-                    <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                    
                   </div>
                 </div>
               <a href="javascript:;">
@@ -199,12 +199,12 @@
               </a>
             </div>
             <div class="adv_item">
-              <div class="adv_txt flex-box i-center j-center">
+              <div class="bs_txt flex-box i-center j-center">
                 <h2 class="en_i">01</h2>
                 <div class="dt">
                   <h4>獨家電車</h4>
                   <p>全台唯一獨家引進純電車款</p>
-                  <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                  
                 </div>
               </div>
               <a href="javascript:;">
@@ -212,12 +212,12 @@
               </a>
             </div>
             <div class="adv_item">
-              <div class="adv_txt sp flex-box i-center j-center">
+              <div class="bs_txt sp flex-box i-center j-center">
                   <h2 class="en_i">06</h2>
                   <div class="dt">
                     <h4>據點</h4>
                     <p></p>
-                    <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                    
                   </div>
               </div>
               <a href="javascript:;">
@@ -225,12 +225,12 @@
               </a>
             </div>
             <div class="adv_item">
-              <div class="adv_txt flex-box i-center j-center">
+              <div class="bs_txt flex-box i-center j-center">
                   <h2 class="en_i">05</h2>
                   <div class="dt">
                     <h4>買車</h4>
                     <p>查看我們安心的銷售流程</p>
-                    <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                    
                   </div>
               </div>
               <a href="javascript:;">
@@ -238,12 +238,12 @@
               </a>
             </div>
             <div class="adv_item">
-              <div class="adv_txt flex-box i-center j-center">
+              <div class="bs_txt flex-box i-center j-center">
                   <h2 class="en_i">04</h2>
                   <div class="dt">
                     <h4>充電站</h4>
                     <p>查找離你最近的充電站</p>
-                    <img class="adv_icon" src="img/SVG/adv_icon.svg" alt="">
+                    
                   </div>
               </div>
               <a href="javascript:;">
@@ -474,7 +474,7 @@
 
             $('.adv_item a').mouseenter(function () { 
                
-               let DOM=$(this).parent().find('.adv_txt');
+               let DOM=$(this).parent().find('.bs_txt');
                console.log(DOM)
                let tl = gsap.timeline();
                tl.to(DOM, 0.5, {opacity: 1})
@@ -485,7 +485,7 @@
            });
            
            $('.adv_item a').mouseleave(function () { 
-               let DOM=$(this).parent().find('.adv_txt');
+               let DOM=$(this).parent().find('.bs_txt');
                let tl = gsap.timeline();
                tl.to(DOM.find('h2'), 0.5, {opacity: 0, x:30})
                  .to(DOM.find('h4'), 0.5, {opacity: 0, x:30}, '<0')

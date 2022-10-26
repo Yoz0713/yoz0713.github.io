@@ -152,7 +152,7 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .loading_div .logo_div img {
   transform: translateY(100%);
-  width: 12vw;
+  width: 11vw;
 }
 .loading_div .spinner_div {
   width: 25vw;
@@ -171,7 +171,7 @@ footer .share_box a:nth-last-of-type(4) img {
   left: 0;
   top: 53vw;
   justify-content: space-between;
-  width: 83%;
+  width: 85%;
   z-index: 21;
 }
 .menu.fixed_menu {
@@ -183,7 +183,7 @@ footer .share_box a:nth-last-of-type(4) img {
   position: absolute;
   top: 0;
   left: -15%;
-  width: 120%;
+  width: 119%;
   height: 100%;
   background-color: #0080c5;
   transform: skewX(-15deg);
@@ -196,9 +196,14 @@ footer .share_box a:nth-last-of-type(4) img {
   padding: 3vw;
 }
 .menu .list_box {
+  justify-content: flex-end;
+  width: 85%;
   z-index: 10;
 }
 .menu .list_box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   text-decoration: none;
   color: #fff;
@@ -207,12 +212,12 @@ footer .share_box a:nth-last-of-type(4) img {
   line-height: 1;
   padding: 0vw 0vw;
   position: relative;
-  width: 9.5vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   overflow: hidden;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-bottom: 0.4vw;
+  margin-right: 1.5vw;
+  height: 2.5vw;
 }
 .menu .list_box a:hover .s_txt_box::after {
   width: 100%;
@@ -230,12 +235,13 @@ footer .share_box a:nth-last-of-type(4) img {
 .menu .list_box a .menu_box {
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 .menu .list_box a .menu_box .s_txt_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -248,16 +254,18 @@ footer .share_box a:nth-last-of-type(4) img {
   height: fit-content;
   margin: auto;
   padding-bottom: 0.4vw;
+  overflow: hidden;
 }
 .menu .list_box a .menu_box .s_txt_box2 {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
   left: 0;
   right: 0;
   margin: 0 auto;
   bottom: -5vw;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 8.3vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -272,6 +280,10 @@ footer .share_box a:nth-last-of-type(4) img {
 }
 .menu .list_box a:hover .s_txt_box::after {
   width: 100%;
+}
+.menu .list_box a:last-of-type {
+  margin: 0;
+  margin-left: 1.5vw;
 }
 .menu .hamburger {
   outline: none;
@@ -1049,7 +1061,6 @@ footer .share_box a:nth-last-of-type(4) img {
           clip-path: polygon(0 0, 0 67vw, 42.5vw 67vw, 53vw 18vw, 56vw 18vw, 60vw 0, 0 0);
   z-index: 15;
   opacity: 0;
-  transform: translateX(-100px);
   transition: all 1.5s;
 }
 .index1 .swiper .swiper-slide .txt_box .line {
@@ -1700,7 +1711,7 @@ footer .share_box a:nth-last-of-type(4) img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.index4 .advantage .item_box .adv_item .adv_txt {
+.index4 .advantage .item_box .adv_item .bs_txt {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1709,10 +1720,10 @@ footer .share_box a:nth-last-of-type(4) img {
   pointer-events: none;
   opacity: 0;
 }
-.index4 .advantage .item_box .adv_item .adv_txt.sp {
+.index4 .advantage .item_box .adv_item .bs_txt.sp {
   flex-direction: row;
 }
-.index4 .advantage .item_box .adv_item .adv_txt h2 {
+.index4 .advantage .item_box .adv_item .bs_txt h2 {
   margin: 0 1vw;
   font-size: 5.5vw;
   letter-spacing: -0.3vw;
@@ -1720,17 +1731,17 @@ footer .share_box a:nth-last-of-type(4) img {
   font-style: italic;
   color: rgba(255, 255, 255, 0.4);
 }
-.index4 .advantage .item_box .adv_item .adv_txt .dt {
+.index4 .advantage .item_box .adv_item .bs_txt .dt {
   text-align: center;
 }
-.index4 .advantage .item_box .adv_item .adv_txt .dt h4 {
+.index4 .advantage .item_box .adv_item .bs_txt .dt h4 {
   margin: 0;
   font-size: 1vw;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.3vw;
 }
-.index4 .advantage .item_box .adv_item .adv_txt .dt p {
+.index4 .advantage .item_box .adv_item .bs_txt .dt p {
   margin: 0;
   color: #fff;
   font-size: 0.8vw;
@@ -1738,7 +1749,7 @@ footer .share_box a:nth-last-of-type(4) img {
   margin-bottom: 1vw;
   letter-spacing: 0.1vw;
 }
-.index4 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+.index4 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
   width: 30px;
   transform: rotate(180deg);
 }
@@ -2741,7 +2752,7 @@ footer .share_box a:nth-last-of-type(4) img {
   .index4 .advantage .item_box .adv_item a {
     display: block;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt {
+  .index4 .advantage .item_box .adv_item .bs_txt {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2750,10 +2761,10 @@ footer .share_box a:nth-last-of-type(4) img {
     pointer-events: none;
     opacity: 0;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt.sp {
+  .index4 .advantage .item_box .adv_item .bs_txt.sp {
     flex-direction: row;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt h2 {
+  .index4 .advantage .item_box .adv_item .bs_txt h2 {
     margin: 0 1vw;
     font-size: 7.5vw;
     letter-spacing: -0.3vw;
@@ -2761,17 +2772,17 @@ footer .share_box a:nth-last-of-type(4) img {
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt {
     text-align: center;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt h4 {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt h4 {
     margin: 0;
     font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.3vw;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt p {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt p {
     margin: 0;
     color: #fff;
     font-size: 0.9vw;
@@ -2779,7 +2790,7 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-bottom: 1vw;
     letter-spacing: 0.1vw;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
     width: 30px;
     transform: rotate(180deg);
   }
@@ -3889,7 +3900,7 @@ footer .share_box a:nth-last-of-type(4) img {
   .index4 .advantage .item_box .adv_item a {
     display: block;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt {
+  .index4 .advantage .item_box .adv_item .bs_txt {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3898,10 +3909,10 @@ footer .share_box a:nth-last-of-type(4) img {
     pointer-events: none;
     opacity: 0;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt.sp {
+  .index4 .advantage .item_box .adv_item .bs_txt.sp {
     flex-direction: row;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt h2 {
+  .index4 .advantage .item_box .adv_item .bs_txt h2 {
     margin: 0 1vw;
     font-size: 7.5vw;
     letter-spacing: -0.3vw;
@@ -3909,17 +3920,17 @@ footer .share_box a:nth-last-of-type(4) img {
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt {
     text-align: center;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt h4 {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt h4 {
     margin: 0;
     font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.3vw;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt p {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt p {
     margin: 0;
     color: #fff;
     font-size: 0.9vw;
@@ -3927,7 +3938,7 @@ footer .share_box a:nth-last-of-type(4) img {
     margin-bottom: 1vw;
     letter-spacing: 0.1vw;
   }
-  .index4 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+  .index4 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
     width: 30px;
     transform: rotate(180deg);
   }
@@ -4343,6 +4354,8 @@ body {
 .stock1-banner .img_box .banner {
   width: 95%;
   height: 63vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .stock1-banner .img_box .svg1 {
   position: absolute;
@@ -4706,8 +4719,8 @@ body {
 }
 .stock3 .search_car .search_box .sel_div .sel_box {
   position: relative;
-  padding: 5px 20px;
   border-right: 1px solid #bdbdbd;
+  padding: 0 1vw;
 }
 .stock3 .search_car .search_box .sel_div .sel_box p {
   margin: 0;
@@ -4715,7 +4728,6 @@ body {
   font-size: 1.1vw;
   font-weight: 400;
   letter-spacing: 0.15vw;
-  padding: 0 10px;
 }
 .stock3 .search_car .search_box .sel_div .sel_box select {
   font-weight: 700;
@@ -4728,7 +4740,6 @@ body {
      -moz-appearance: none;
           appearance: none;
   min-width: 20vw;
-  padding: 5px 10px;
 }
 .stock3 .search_car .search_box .sel_div .sel_box select option {
   font-size: 1.2vw;
@@ -4736,12 +4747,12 @@ body {
 .stock3 .search_car .search_box .sel_div .sel_box .svg_arrow {
   position: absolute;
   right: 10%;
-  bottom: 12%;
+  bottom: 0.6vw;
   filter: brightness(0.85);
   pointer-events: none;
 }
 .stock3 .search_car .search_box .sel_div .sel_box .svg_arrow img {
-  width: 13px;
+  width: 0.6vw;
   transform: rotate(-90deg);
 }
 .stock3 .search_car .search_box .sel_div .sel_box:nth-of-type(2) {
@@ -8383,6 +8394,7 @@ body {
   position: relative;
   background-color: #fff;
   width: 70%;
+  height: 41vw;
 }
 .stockInner2-left-top img {
   height: 2.7vw;
@@ -8440,42 +8452,48 @@ body {
 }
 .stockInner2-left-bottom {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .stockInner2-left-bottom img {
+  display: block;
   width: 100%;
-  height: 50vw;
+  height: 50.4vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .stockInner2-right {
   display: flex;
   flex: 0 0 45%;
+  height: 83.6vw;
   padding-top: 16.2vw;
   flex-direction: column;
 }
 .stockInner2-right img {
+  display: block;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .stockInner2-right :nth-child(1) {
   width: 100%;
-  flex: 0 0 60%;
+  height: 55%;
 }
 .stockInner2-right :nth-child(2) {
   width: 100%;
-  flex: 0 0 40%;
+  height: 45%;
 }
 
 .stockInner3 {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vw;
+  height: 87vw;
   background: url(../img/stockInner/1x/car8.webp);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   align-items: flex-start;
 }
 .stockInner3 img {
@@ -8483,15 +8501,13 @@ body {
 }
 .stockInner3 :nth-child(1) {
   margin-right: -1.7vw;
-  margin-top: -0.8vw;
 }
 .stockInner3 :nth-child(2) {
-  margin-top: -2.5vw;
+  z-index: 20;
   width: 38vw;
 }
 .stockInner3 :nth-child(3) {
   margin-left: -1.7vw;
-  margin-top: -0.7vw;
 }
 
 .stockInner4 {
@@ -9342,6 +9358,8 @@ body {
 .purchase1-banner .img_box .banner {
   width: 95%;
   height: 63vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .purchase1-banner .img_box .svg1 {
   position: absolute;
@@ -11220,6 +11238,8 @@ body {
 .rent1-banner .img_box .banner {
   width: 95%;
   height: 63vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rent1-banner .img_box .svg1 {
   position: absolute;
@@ -11577,8 +11597,8 @@ body {
 }
 .rent3 .search_car .search_box .sel_div .sel_box {
   position: relative;
-  padding: 5px 20px;
   border-right: 1px solid #bdbdbd;
+  padding: 0 1vw;
 }
 .rent3 .search_car .search_box .sel_div .sel_box p {
   margin: 0;
@@ -11586,7 +11606,6 @@ body {
   font-size: 1.1vw;
   font-weight: 400;
   letter-spacing: 0.15vw;
-  padding: 0 10px;
 }
 .rent3 .search_car .search_box .sel_div .sel_box select {
   font-weight: 700;
@@ -11599,7 +11618,6 @@ body {
      -moz-appearance: none;
           appearance: none;
   min-width: 20vw;
-  padding: 5px 10px;
 }
 .rent3 .search_car .search_box .sel_div .sel_box select option {
   font-size: 1.2vw;
@@ -11607,12 +11625,12 @@ body {
 .rent3 .search_car .search_box .sel_div .sel_box .svg_arrow {
   position: absolute;
   right: 10%;
-  bottom: 12%;
+  bottom: 0.6vw;
   filter: brightness(0.85);
   pointer-events: none;
 }
 .rent3 .search_car .search_box .sel_div .sel_box .svg_arrow img {
-  width: 13px;
+  width: 0.6vw;
   transform: rotate(-90deg);
 }
 .rent3 .search_car .search_box .sel_div .sel_box:nth-of-type(2) {
@@ -14028,13 +14046,15 @@ body {
   overflow: hidden;
 }
 .buyIt .menu .list_box {
+  width: 90%;
   background-color: #33203f;
 }
 .buyIt .menu .list_box > :first-child {
   padding: 0;
   display: flex;
   align-items: center;
-  margin-right: 1.5vw;
+  margin-right: 1.7vw;
+  width: 8vw;
 }
 .buyIt .menu .list_box > :first-child img {
   width: 7vw;
@@ -15417,7 +15437,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -15426,10 +15446,10 @@ body {
   pointer-events: none;
   opacity: 0;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt.sp {
   flex-direction: row;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt h2 {
   margin: 0 1vw;
   font-size: 5.5vw;
   letter-spacing: -0.3vw;
@@ -15437,17 +15457,17 @@ body {
   font-style: italic;
   color: rgba(255, 255, 255, 0.4);
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt .dt {
   text-align: center;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt .dt h4 {
   margin: 0;
   font-size: 1vw;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.3vw;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt .dt p {
   margin: 0;
   color: #fff;
   font-size: 0.8vw;
@@ -15455,7 +15475,7 @@ body {
   margin-bottom: 1vw;
   letter-spacing: 0.1vw;
 }
-.aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+.aboutKai3 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
   width: 30px;
   transform: rotate(180deg);
 }
@@ -15697,7 +15717,7 @@ body {
   .aboutKai3 .advantage .item_box .adv_item a {
     display: block;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -15706,10 +15726,10 @@ body {
     pointer-events: none;
     opacity: 0;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt.sp {
     flex-direction: row;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt h2 {
     margin: 0 1vw;
     font-size: 7.5vw;
     letter-spacing: -0.3vw;
@@ -15717,17 +15737,17 @@ body {
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt {
     text-align: center;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt h4 {
     margin: 0;
     font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.3vw;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt p {
     margin: 0;
     color: #fff;
     font-size: 0.9vw;
@@ -15735,7 +15755,7 @@ body {
     margin-bottom: 1vw;
     letter-spacing: 0.1vw;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
     width: 30px;
     transform: rotate(180deg);
   }
@@ -16054,7 +16074,7 @@ body {
   .aboutKai3 .advantage .item_box .adv_item a {
     display: block;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -16063,10 +16083,10 @@ body {
     pointer-events: none;
     opacity: 0;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt.sp {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt.sp {
     flex-direction: row;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt h2 {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt h2 {
     margin: 0 1vw;
     font-size: 7.5vw;
     letter-spacing: -0.3vw;
@@ -16074,17 +16094,17 @@ body {
     font-style: italic;
     color: rgba(255, 255, 255, 0.4);
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt {
     text-align: center;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt h4 {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt h4 {
     margin: 0;
     font-size: 1.3vw;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.3vw;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt p {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt p {
     margin: 0;
     color: #fff;
     font-size: 0.9vw;
@@ -16092,7 +16112,7 @@ body {
     margin-bottom: 1vw;
     letter-spacing: 0.1vw;
   }
-  .aboutKai3 .advantage .item_box .adv_item .adv_txt .dt .adv_icon {
+  .aboutKai3 .advantage .item_box .adv_item .bs_txt .dt .adv_icon {
     width: 30px;
     transform: rotate(180deg);
   }
