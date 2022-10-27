@@ -433,6 +433,7 @@
     .stockInner2{
         display: flex;
         flex-direction: column;
+        position: relative;
         &-left{
             display: flex;
             flex-direction: column;
@@ -442,6 +443,7 @@
             position: relative;
             margin: -6vw auto 0;
             z-index: 2;
+            height: fit-content;
             &-top{
                 display: flex;
                 flex-direction: column;
@@ -449,6 +451,7 @@
                 background-color: #fff;
                 width: 80%;
                 margin: 0 auto;
+                height: fit-content;
                 img{
                     height: 6vw;
                     margin-right: 2vw;
@@ -505,6 +508,7 @@
             flex: 0 0 100%;
             padding-top:0;
             flex-direction: column;
+            position: relative;
             img{
                 width: 100%;
                 object-fit: cover;
@@ -535,15 +539,15 @@
         }
         & :nth-child(1){
             margin-right: -2.5vw;
-            margin-top: -0.5vw;
+         
         }
         & :nth-child(2){
-            margin-top: -3vw;
+        
             width: 55vw;
         }
         & :nth-child(3){
             margin-left: -2.5vw;
-            margin-top: -0.5vw;
+            margin-top: 0.1vw;
         }
     }
     .stockInner4{
@@ -566,14 +570,14 @@
         & > :nth-child(odd){
             & :nth-child(1){
                 object-fit: contain;
-                padding: 2vw;
+            
                 order: 3;
             }
         }
         & > :nth-child(even){
             & :nth-child(2){
                 object-fit: contain;
-                padding: 2vw;
+                background-color:transparent ;
             }
         }
         & > :nth-child(1){
