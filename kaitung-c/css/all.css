@@ -1080,7 +1080,6 @@ footer .share_box a:nth-last-of-type(4) img {
   -webkit-clip-path: polygon(0 0, 0 67vw, 42.5vw 67vw, 53vw 18vw, 56vw 18vw, 60vw 0, 0 0);
           clip-path: polygon(0 0, 0 67vw, 42.5vw 67vw, 53vw 18vw, 56vw 18vw, 60vw 0, 0 0);
   z-index: 15;
-  opacity: 0;
   transition: all 1.5s;
 }
 .index1 .swiper .swiper-slide .txt_box .line {
