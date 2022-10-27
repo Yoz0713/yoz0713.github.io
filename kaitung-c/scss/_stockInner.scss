@@ -213,22 +213,14 @@
         img{
            flex: 0 0 50%;
            width: 50%;
-            object-fit: cover;
-            height: 30vw;
+
+            
         }
     
     }
-    & > :nth-child(odd){
-        & :nth-child(1){
-            object-fit: contain;
-            padding: 2vw;
-        }
-    }
+
     & > :nth-child(even){
-        & :nth-child(2){
-            object-fit: contain;
-            padding: 2vw;
-        }
+        background-color:#eef5fa ;
     }
     & > :nth-child(1){
         img{
